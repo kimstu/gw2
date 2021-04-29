@@ -1,0 +1,624 @@
+.gw2-tooltip{
+	cursor: default;
+}
+
+.tooltip-info {
+    max-width: 400px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 10000;
+    display: none;
+    overflow: hidden;
+}
+
+/* @media (max-width: 768px){
+    .tooltip-info{
+        position: fixed;
+        top: 76px !important;
+        left: 5px !important;
+    }
+} */
+
+
+/* gw2-info-box */
+.gw2-info{
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.gw2-info-box {
+    padding: 5px 7px 5px;
+    border-top: 1px solid #151718;
+    border-left: 1px solid #151718;
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 1px 2px #151718; 
+    box-shadow: 1px 1px 2px #151718;
+    background-color: #151818;
+    background-clip: padding-box;
+    background-image: url(../images/ui/gw2-info-bg.jpg);
+    
+    color: #aaa;
+    font-size: 14px;
+    margin: 0 5px 5px 0;
+    float: left;
+}
+
+
+.gw2-info-icon a{
+	  width: 100%;
+	  height: 100%;
+	  display: inline-block;
+}
+.gw2-info-icon a:after{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    content: "" !important;
+    font-family: 'Material Design Icons';
+    font-size: 14px;
+    color: #555;
+}
+@media (max-width: 576px){
+  .gw2-info-icon a{
+      display: none;
+  }
+}
+
+
+.gw2-info-box .gw2-info-Junk {
+    color: #aaa;
+}
+.gw2-info-box .gw2-info-Basic {
+    color: #ddd;
+}
+.gw2-info-box .gw2-info-Fine {
+    color: #62a4da;
+}
+.gw2-info-box .gw2-info-Masterwork {
+    color: #2dc50e;
+}
+.gw2-info-box .gw2-info-Rare {
+    color: #fcd00b;
+}
+.gw2-info-box .gw2-info-Exotic {
+    color: #ffa405;
+}
+.gw2-info-box .gw2-info-Ascended {
+    color: #fb3e8d;
+}
+.gw2-info-box .gw2-info-Legendary {
+    color: #9b6bde;
+}
+
+
+
+.items-image{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.color-Legendary{
+	color: #9b6bde !important;
+}
+.items-border-Legendary{
+    border: 1px solid #9b6bde;
+}
+
+.color-Ascended{
+	color: #fb3e8d !important;
+}
+.items-border-Ascended{
+    border: 1px solid #fb3e8d;
+}
+
+.color-Exotic{
+	color: #fda500 !important;
+}
+.items-border-Exotic{
+    border: 1px solid #fda500;
+}
+
+.color-Rare{
+	color: #ffe51f !important;
+}
+.items-border-Rare{
+    border: 1px solid #ffe51f;
+}
+
+.color-Masterwork{
+	color: #2dc50e !important;
+}
+.items-border-Masterwork{
+    border: 1px solid #2dc50e;
+}
+
+.color-Fine{
+	color: #71a3d8 !important;
+}
+.items-border-Fine{
+    border: 1px solid #71a3d8;
+}
+
+.color-Basic{
+	color: #ccc !important;
+}
+.items-border-Basic{
+    border: 1px solid #aaa;
+}
+
+.color-Junk{
+	color: #aaa !important;
+}
+.items-border-Junk{
+    border: 1px solid #aaa;
+}
+
+.color-description{
+  color: #9ee1e7;
+}
+
+
+.gw2-info-icon{
+  width: 100%;
+  height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	float: left;
+}
+
+.child-black-border .gw2-info-icon{
+  border: 1px solid #151718;
+}
+.child-no-border .gw2-info-icon, 
+.article-content .no-border .gw2-info-icon{
+  border: none !important;
+}
+.child-no-background-image .gw2-info-icon{
+  background-image: none !important;
+}
+.gw2-empty-lock{
+	background-image: url('/images/ui/icon/empty-lock.png');
+	background-color: #171717;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	float: left;
+}
+
+/* Items */
+
+.gw2-info-box .gw2-info-box-items-title {
+	width: 300px;
+    height: 40px;
+    float: none;
+}
+.gw2-info-box .gw2-info-box-items-title .gw2-info-box-items-icon {
+    width: 32px;
+	height: 32px;
+	border-radius: 1px;
+    border-left: 1px solid #9d9e9f;
+    border-top: 1px solid #9d9e9f;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    float: left;
+    margin-top: 3px;
+    margin-right: 7px;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.gw2-info-box .gw2-info-box-items-title .gw2-info-box-items-name {
+	height: 40px;
+	display: table-cell;
+    vertical-align: middle;
+    box-sizing: content-box;
+    font-size: 16px;
+}
+.gw2-info-box-items-name {
+  color: #E6BA5A;
+}
+.gw2-info-box-items-content{
+  max-width: 250px;
+  position: relative;
+  border: 3px solid #303030;
+  display: inline-block;
+}
+.tooltip-info .gw2-info-box-items-content{
+  border: none;
+}
+.gw2-info-box-items-rows{
+  padding-bottom: 15px;
+  color: #eeeeee;
+}
+.gw2-info-box-items-content .gw2-info-box-items-rows:last-child{
+  padding-bottom: 0;
+}
+
+.gw2-info-box-items-row{
+  width: 100%;
+  font-size: 13px;
+  color: #eee;
+  padding-bottom: 1px;
+  position: relative;
+  overflow: hidden;
+}
+.gw2-info-box-items-row-icon{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: cover no-repeat center center;
+  float: left;
+}
+.gw2-info-box-items-row-description{
+  display: table-cell;
+  height: 32px;
+  padding-left: 3px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+.gw2-info-box-items-price{
+  display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 16px 0 2px;
+}
+.price-gold {
+    color: #dab71e;
+    background: url('/images/ui/icon/price-gold.png') no-repeat center right;
+}
+.price-silver {
+    color: #999;
+    background: url('/images/ui/icon/price-silver.png') no-repeat center right;
+}
+.price-copper {
+    color: #a65718;
+    background: url('/images/ui/icon/price-copper.png') no-repeat center right;
+}
+
+.gw2-info-box-items-infusion{
+  padding-left: 25px;
+  background: url('/images/ui/icon/infusion.png') no-repeat center left;
+}
+.gw2-info-box-items-enrichment{
+  padding-left: 25px;
+  background: url('/images/ui/icon/enrichment.png') no-repeat center left;
+}
+.gw2-info-box-items-suffix-icon{
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-size: cover;
+  position: relative;
+  top: 2px;
+}
+
+/* Skills */
+.gw2-info-box-skills-content{
+  width: 300px;
+  position: relative;
+}
+.gw2-info-box-skills-name {
+  margin-bottom: 0;
+  line-height: 30px;
+  font-size: 16px;
+  color: #E6BA5A;
+}
+.gw2-info-box-skills-description{
+  margin-bottom: 0;
+  line-height: 20px;
+  font-size: 13px;
+  color: #eee;
+}
+.gw2-info-box-skills-facts{
+  padding-top: 7px;
+}
+.gw2-info-box-skills-fact{
+  width: 100%;
+  padding-bottom: 3px;
+  position: relative;
+}
+.skills-fact-image{
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 2px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+}
+.skills-fact-word{
+  display: table-cell;
+  max-width: 300px;
+  height: 32px;
+  font-size: 13px;
+  color: #aaa;
+  vertical-align: middle;
+}
+
+.skills-fact-apply-count{
+  width: 18px;
+  font-size: 12px;
+  text-align: right;
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  color: #eee;
+  text-shadow: 1px 0 2px #000,-1px 0 2px #000,0 -1px 2px #000,0 1px 2px #000; 
+}
+.skills-fact-Recharge{
+  width: auto;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  overflow: hidden;
+}
+.skills-fact-recharge-image{
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  margin-left: 2px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: right;
+}
+.skills-fact-recharge-word{
+  line-height: 26px;
+  color: #eee;
+  float: right;
+}
+.gw2-skills{
+  background: url('/images/ui/skill_bg.jpg') no-repeat top left;
+}
+
+
+
+
+/* Specializations */
+.gw2-info.gw2-specializations{
+    width: 640px;
+    height: 140px;
+    margin: 0 auto 10px;
+    display: block;
+}
+.gw2-info-specializations-bg{
+	position: absolute;
+	width: 640px;
+	height: 140px;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	float: left;
+	background-size: auto;
+	top: 0;
+	left: 0;
+}
+.gw2-info-specializations-name{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: .75rem;
+  z-index: 6;
+  padding: 3px 8px 4px 7px;
+  border-bottom-right-radius: 4px;
+  color: #ffffff;
+}
+.gw2-info-specializations-bg-layer{
+	position: relative;
+	width: 640px;
+	height: 140px;
+	top: 0;
+	left: 0;
+	background-image: url('/images/ui/gw2-info-specializations-bg.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 5;
+}
+
+
+.gw2-info-specializations {
+  position: absolute;
+  width: 100px;
+  height: 58px;
+  background-position: -73px -158px;
+  -webkit-box-shadow: 0 0 30px #000000, inset 0 0 30px #ffffff;
+          box-shadow: 0 0 30px #000000, inset 0 0 30px #ffffff;
+  border-left: solid 2px rgba(21, 23, 24, 0.5);
+  border-right: solid 2px rgba(21, 23, 24, 0.5);
+  background-color: #9d9e9f;
+  background-size: auto;
+  left: 70px;
+  top: 40px;
+  z-index: 10;
+}
+.gw2-info-specializations:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 96px;
+  height: 55px;
+  z-index: 10;
+  background: inherit;
+}
+.gw2-info-specializations-top,
+.gw2-info-specializations-bottom {
+  position: absolute;
+  z-index: 10;
+  width: 71px;
+  height: 71px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.6) rotate(-45deg);
+      -ms-transform: scaleY(0.6) rotate(-45deg);
+          transform: scaleY(0.6) rotate(-45deg);
+  background: inherit;
+  left: 12px;
+  -webkit-box-shadow: 0 0 30px #000000, inset 0 0 30px #ffffff;
+          box-shadow: 0 0 30px #000000, inset 0 0 30px #ffffff;
+}
+.gw2-info-specializations-top:after,
+.gw2-info-specializations-bottom:after {
+  content: "";
+  position: absolute;
+  width: 98px;
+  height: 54px;
+  -webkit-transform: rotate(45deg) scaleY(1.8) translateY(-27px);
+      -ms-transform: rotate(45deg) scaleY(1.8) translateY(-27px);
+          transform: rotate(45deg) scaleY(1.8) translateY(-27px);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  background: inherit;
+}
+.gw2-info-specializations-top {
+  top: -35.5px;
+  border-top: solid 2px;
+  border-right: solid 2px;
+  border-image: url('/images/ui/gw2-info-specializations-border-bg.png');
+}
+.gw2-info-specializations-top:after {
+  background-position: -72px -130px;
+}
+.gw2-info-specializations-bottom {
+  bottom: -35.5px;
+  border-bottom: solid 2px;
+  border-left: solid 2px;
+  border-image: url('/images/ui/gw2-info-specializations-border-bg.png');
+}
+.gw2-info-specializations-bottom:after {
+  background-position: -72px -185px;
+}
+
+
+
+
+/* Trait */
+.gw2-info-trait-Minor{
+	position: absolute;
+	width: 40px;
+    height: 40px;
+    opacity: 1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border: 1px solid #151718;
+    background-image: -webkit-radial-gradient(circle,#606468,#333);
+    background-image: -o-radial-gradient(circle,#606468,#333);
+    background-image: radial-gradient(circle,#606468,#333);
+    z-index: 10;
+    -webkit-clip-path: polygon(50% 0,93% 25%,93% 75%,50% 100%,7% 75%,7% 25%);
+    clip-path: polygon(50% 0,93% 25%,93% 75%,50% 100%,7% 75%,7% 25%);
+    -moz-transition: opacity 0.5s; /* Firefox 4 */
+	-webkit-transition: opacity 0.5s; /* Safari and Chrome */
+	-o-transition: opacity 0.5s; /* Opera */
+	transition: opacity 0.5s;
+}
+
+.gw2-info-trait-Minor-order-0{
+	top: 50px;
+}
+.gw2-info-trait-Minor-tier-0{
+	top: 90px;
+	left: 125px;
+}
+.gw2-info-trait-Minor-tier-1{
+	left: 205px;
+}
+.gw2-info-trait-Minor-tier-2{
+	left: 345px;
+}
+.gw2-info-trait-Minor-tier-3{
+	left: 487px;
+}
+
+.gw2-info-trait-Major{
+	position: absolute;
+	width: 38px;
+    height: 38px;
+    opacity: .1;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    border: 1px solid #151718;
+    background-image: -webkit-radial-gradient(circle,#606468,#333);
+    background-image: -o-radial-gradient(circle,#606468,#333);
+    background-image: radial-gradient(circle,#606468,#333);
+    background-size: 110%;
+    z-index: 10;
+    -moz-transition: opacity 0.5s; /* Firefox 4 */
+	-webkit-transition: opacity 0.5s; /* Safari and Chrome */
+	-o-transition: opacity 0.5s; /* Opera */
+	transition: opacity 0.5s;
+	backface-visibility: hidden;
+}
+.gw2-info-trait-Major:hover{
+	opacity: 1;
+	-moz-transition: opacity 0.5s; /* Firefox 4 */
+	-webkit-transition: opacity 0.5s; /* Safari and Chrome */
+	-o-transition: opacity 0.5s; /* Opera */
+	transition: opacity 0.5s;
+	backface-visibility: hidden;
+}
+
+.gw2-info-trait-Major-order-0{
+	top: 8px;
+}
+.gw2-info-trait-Major-order-1{
+	top: 50px;
+}
+.gw2-info-trait-Major-order-2{
+	top: 92px;
+}
+.gw2-info-trait-Major-tier-1{
+	left: 275px;
+}
+.gw2-info-trait-Major-tier-2{
+	left: 418px;
+}
+.gw2-info-trait-Major-tier-3{
+	left: 560px;
+}
+
+
+.gw2-info-box-achievement-tier-points-row{
+	width: 100%;
+    height: 39px;
+    padding: 10px 0 0 0;
+    font-size: 14px;
+    color: #ccc;
+}
+.gw2-info-box-achievement-tier-points-row span{
+	width: auto;
+    height: 39px;
+    line-height: 40px;
+    color: #ecbd6f;
+    float: left;
+}
+.gw2-info-box-achievement-tier-points-icon{
+	width: 39px;
+    height: 39px;
+    background-image: url(https://images.gw2data.cn/Retired_Achievements.png);
+    background-position: center center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    float: left;
+}
+.gw2-info-box-achievements-rows{
+	width: 100%;
+	height: 7px;
+}
+
+.onmouse-trait{
+	opacity: .1 !important;
+}
+.onmouse-highlight-trait{
+	opacity: 1 !important;
+	box-shadow: 0px 0px 15px #fff;
+}
+
+
+

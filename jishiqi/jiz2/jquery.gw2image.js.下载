@@ -1,0 +1,114 @@
+$.fn.gw2image = function() {
+
+    var $this = $('.gw2-image');
+    $this.empty();
+    var length = $('.gw2-image').length;
+    var ids = '';
+
+    for( i = 0 ; i <= length - 1 ; i++ ){
+        ids += $this.eq(i).attr('image-id') + ',';
+    }
+
+    //表格图片添加class
+    var table_img = $('table img');
+    var table_img_length = $('table img').length;
+
+    for( i = 0 ; i <= table_img_length - 1 ; i++ ){
+        table_img.eq(i).attr('image-compress-type', '0');
+        table_img.eq(i).addClass('original-size');
+    }
+
+if( ids != '' )
+    $.ajax({ 
+        headers: { 
+            'X-CSRF-TOKEN': $('input[name="csrf-token"]').attr('content') 
+        },
+        type: 'POST',
+        url: "/data/image", 
+        data: 'ids=' + ids,
+        success: function(data){
+
+            //自定义参数（压缩格式）
+            var compress_type = new Array();
+
+            compress_type[0] = new Array()
+            compress_type[0][0] = '';
+            compress_type[0][1] = '';
+
+            compress_type[1] = new Array();
+            compress_type[1][0] = '?imageView2/2/w/600/q/100|imageslim';
+            compress_type[1][1] = '?imageMogr2/blur/1x0/quality/100|watermark/2/text/5r-A5oiYMiDms7DnkZ7kuprmjqLpmanlrrbljY_kvJo=/font/5b6u6L2v6ZuF6buR/fontsize/440/fill/I0ZGRkZGRg==/dissolve/77/gravity/SouthEast/dx/13/dy/13|imageslim';
+
+            compress_type[2] = new Array();
+            compress_type[2][0] = '?imageView2/2/w/600/format/jpg/q/100|imageslim';
+            compress_type[2][1] = '?imageMogr2/format/jpg/blur/1x0/quality/100|watermark/2/text/5r-A5oiYMiDms7DnkZ7kuprmjqLpmanlrrbljY_kvJo=/font/5b6u6L2v6ZuF6buR/fontsize/440/fill/I0ZGRkZGRg==/dissolve/77/gravity/SouthEast/dx/13/dy/13|imageslim';
+
+            for(var i in data.data){
+                image = $.parseJSON( data.data[i] );
+
+                type = parseInt( $(".gw2-image[image-id='" + image.id + "']").attr('image-compress-type') );
+
+                //缩略
+                src = image.src + compress_type[type][0];
+                $(".gw2-image[image-id='" + image.id + "']").attr('data-original', src);
+
+                //大图
+                src = image.src + compress_type[type][1];
+                $(".gw2-image[image-id='" + image.id + "']").attr('original', src);
+
+                //表格图
+                $("table .gw2-image[image-id='" + image.id + "']").attr('src', image.src);
+            }
+        }
+    }).then(function(){
+        $(document).ready(function() {
+
+            if( $("#content-0").length > 0 ){
+
+                //非表格图片
+                $("#content-0 img:not(table img)").lazyload({
+                    placeholder : "https://www.gw2data.cn/images/loadimg.jpg",
+                    effect: "fadeIn"
+                });
+                $("#content-0 table img").lazyload({
+                    effect: "fadeIn"
+                });
+
+                $("#content-0").attr("lazyload-data","true");
+                var img = document.getElementById('content-0');
+                new Viewer( img, {
+                    url: 'original',
+                    navbar: false,
+                    title: function (image) {
+                        return image.width + ' × ' + image.height;
+                    },
+                });
+    
+                //表格图片
+                $("#article-content .nav li.nav-item a").click(function(){
+                    content_id = $(this).attr("href");
+    
+                    if( $(content_id).attr("lazyload-data") != "true" ){
+                        $(content_id + " img:not(table img)").lazyload({
+                            placeholder : "https://www.gw2data.cn/images/loadimg.jpg", //用图片提前占位
+                            effect: "fadeIn"
+                        });
+                        $(content_id + " table img").lazyload({
+                            effect: "fadeIn"
+                        });
+                        $(content_id).attr("lazyload-data","true");
+                    }
+    
+                    var img = document.getElementById(content_id.substring(1));
+                    new Viewer( img, {
+                        url: 'original',
+                        navbar: false,
+                        title: function (image) {
+                            return image.width + ' × ' + image.height;
+                        },
+                    });
+                });
+            }
+        });
+    });
+}

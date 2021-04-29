@@ -1,0 +1,1227 @@
+.icon-weapon-swap{
+  width: 40px;
+  height: 40px;
+  background-image: url(https://images.gw2data.cn/Icon_Weapon_Swap.jpg);
+  background-color: #282832;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  position: absolute;
+  top: -36px;
+  left: 7px;
+  display: inline-block;
+}
+.icon-food{
+  padding-left: 20px;
+  background-image: url(https://images.gw2data.cn/Icon_Food.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  display: inline-block;
+}
+.icon-utility{
+  padding-left: 20px;
+  background-image: url(https://images.gw2data.cn/Icon_Utility.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  display: inline-block;
+}
+
+
+
+
+.specializations-box{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+.specializations-box::-webkit-scrollbar {
+  width: 10px;
+  background-color: #3e4348;
+}
+.specializations-box::-webkit-scrollbar-thumb {
+  background-color: #202225;
+}
+.specializations-box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #3e4348;
+}
+.build-skills-box{
+    height: 60px;
+}
+
+.build-skill-icon .gw2-info .gw2-info-icon{
+    background-size: 120%;
+}
+
+.build-info-box{
+    width: 100%;
+    min-height: 60px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    position: relative;
+}
+.build-icon{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    float: left;
+}
+.build-icon .gw2-info{
+    width: 56px;
+    height: 56px;
+}
+.build-icon .gw2-info .gw2-info-icon{
+    width: 54px;
+    height: 54px;
+}
+
+.build-info-right{
+    margin-left: 4px;
+    display: inline-block;
+    float: left;
+}
+.build-info-title{
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+.build-info-title span{
+    color: #95a5a6;
+}
+.build-sm-icon{
+    width: 22px;
+    height: 22px;
+    margin-right: 2px;
+    display: inline-block;
+    float: left;
+}
+.build-sm-icon .gw2-info{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #151718;
+}
+.build-sm-icon .gw2-info .gw2-info-icon{
+    width: 18px;
+    height: 18px;
+}
+.build-info-suffix-title{
+    margin-right: 8px;
+    display: inline-block;
+    float: left;
+    font-size: .8rem;
+    line-height: 22px;
+    color: #c3c3c3;
+}
+
+.build-info-content{
+}
+.build-info-content > table{
+    width: 100%;
+}
+.build-info-content hr{
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(19,19,19,.33);
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content a{
+    color: #c4b998;
+}
+.article-content a:hover{
+    color: #e74c3c;
+}
+.article-content a:after {
+    padding-left: 5px;
+    padding-right: 5px;
+    content: "\F339";
+    font-family: 'Material Design Icons';
+    font-size: 14px;
+    color: #555;
+}
+
+
+.article-content .doc-table-wrap{
+  width: 100%;
+  margin-bottom: 25px;
+}
+.article-content .doc-table-wrap table{
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  border-top: 2px solid #303030;
+}
+@media (max-width: 576px){
+  .article-content .doc-table-wrap {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .article-content .doc-doc-table-wrap::-webkit-scrollbar {
+    width: 8px;
+    background-color: #2e3338;
+  }
+  .article-content .doc-table-wrap::-webkit-scrollbar-thumb {
+    background-color: #202225;
+  }
+  .article-content .doc-table-wrap::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #2e3338;
+  }
+  .article-content .doc-table-wrap table {
+    width: auto;
+    min-width: 800px;
+  }
+}
+
+
+.build-info-content p{
+    font-size: 1rem;
+    line-height: 30px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+.build-info-content p:last-child{
+  margin-bottom: 0;
+}
+.build-info-content a{
+  color: #c4b998;
+}
+.build-info-content a:hover{
+  color: #e74c3c;
+}
+.build-info-content h1, .build-info-content h2, .build-info-content h3, .build-info-content h4{
+  color: #ccc;
+  margin-bottom: 5px;
+}
+.build-info-content span, .build-info-content li{
+  font-size: 1rem;
+}
+.build-info-content span{
+  font-size: 1rem;
+}
+.build-info-content ul, .build-info-content ol{
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.build-info-content ul:last-child, .build-info-content ol:last-child{
+    margin-bottom: 0;
+}
+.build-info-content ul li{
+    padding-left: 0px;
+    margin-bottom: 7px;
+    color: #ddd;
+    vertical-align: middle;
+    background-image: url(/images/bd-li-bg.png);
+    background-position: 2px 12px;
+    background-repeat: no-repeat;
+    padding: 2px 7px 2px 22px;
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: justify;
+}
+.build-info-content ol li {
+  margin: 0 0 0 24px;
+  padding: 0 5px 0 8px;
+  list-style-type: decimal;
+  font-size: 1rem;
+  line-height: 34px;
+  color: #c3c3c3;
+  vertical-align: middle;
+  background-color: rgba(10,10,10,0.2);
+}
+.build-info-content ol li:nth-child(odd) {
+  background-color: rgba(10,10,10,0.4);
+}
+
+.build-info-content th {
+padding: 10px 10px;
+  vertical-align: baseline;
+  border-right: 2px solid #303030;
+  border-bottom: 2px solid #303030;
+  background-color: rgba(10,10,10,0.4);
+  font-size: .95rem;
+  color: #c3c3c3;
+  text-align: left;
+}
+
+.build-info-content td {
+  padding: 5px 10px;
+  border-right: 2px solid #303030;
+  border-bottom: 2px solid #303030;
+  background-color: rgba(10,10,10,0.4);
+  line-height: 30px;
+  font-size: .95rem;
+  color: #ccc;
+  vertical-align: middle;
+  text-align: left;
+}
+.build-info-content tr:nth-child(odd) td{
+  background-color: rgba(10,10,10,0.2);
+}
+.build-info-content tr th:last-child, .build-info-content tr td:last-child{
+  border-right: none;
+}
+
+.build-info-content-weaver table tr td:first-child{
+  width: 80px;
+}
+.build-info-content-tempest table tr td:first-child{
+  width: 110px;
+}
+.build-info-content table td ul li{
+  margin: 0 0 0 19px;
+  padding: 0;
+  list-style-type: disc;
+  background-image: none;
+  font-size: .95rem;
+}
+
+
+
+.mini-skills .gw2-info, 
+.mini-traits .gw2-info, 
+
+.mini-items .gw2-info, 
+.mini-skins .gw2-info, 
+.mini-weapons .gw2-info, 
+.mini-armors .gw2-info, 
+.mini-trinkets .gw2-info, 
+.mini-runes .gw2-info, 
+.mini-sigils .gw2-info, 
+.mini-gems .gw2-info, 
+.mini-infusions .gw2-info,
+.mini-food .gw2-info,
+.mini-ascended_food .gw2-info,
+.mini-utility .gw2-info,
+
+.mini-currencies .gw2-info, 
+.mini-pvp_amulets .gw2-info, 
+.mini-pvp_sigils .gw2-info, 
+.mini-pvp_runes .gw2-info, 
+.mini-professions_icon .gw2-info, 
+.mini-raid_boss .gw2-info,
+.mini-mistlock_instability .gw2-info,
+.mini-achievements .gw2-info,
+.mini-masteries .gw2-info,
+
+.mini-skills_icon .gw2-info,
+.mini-effects_icon .gw2-info,
+.mini-attribute_icon .gw2-info,
+.mini-mini_icon .gw2-info
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+  position: relative;
+  top: 4px;
+  background-repeat: no-repeat;  
+}
+
+.mini-traits span, 
+.mini-currencies span {
+  color: #ec986f;
+}
+.mini-pvp_amulets span, 
+.mini-pvp_sigils span, 
+.mini-pvp_runes span, 
+.mini-professions_icon span, 
+.mini-raid_boss span,
+.mini-mistlock_instability span,
+.mini-skills_icon span,
+.mini-effects_icon span,
+.mini-attribute_icon span,
+.mini-mini_icon span
+{
+  color: #ceb895;
+}
+.mini-skills span.color-default,
+.mini-pets span,
+.mini-items span, 
+.mini-weapons span, 
+.mini-armors span, 
+.mini-trinkets span, 
+.mini-runes span, 
+.mini-sigils span, 
+.mini-gems span, 
+.mini-infusions span,
+.mini-food span,
+.mini-ascended_food span,
+.mini-utility span,
+.mini-achievements span,
+.mini-masteries span
+{
+  color: #ecbd6f;
+}
+
+.mini-skills span, 
+.mini-traits span,
+.mini-skills_icon span,
+.mini-effects_icon span,
+.mini-attribute_icon span,
+.mini-mini_icon span,
+.mini-raid_boss span, 
+.mini-mistlock_instability span{
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gw2-achievements-icon{
+  background-image: url(https://images.gw2data.cn/Retired_Achievements.png);
+}
+.mini-skills .gw2-info-icon,
+.mini-skills_icon .gw2-info-icon{
+  background-size: 110%;
+}
+.mini-pets {
+  display: inline-block;
+  height: 20px;
+}
+.mini-pets .gw2-info {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 20px;
+}
+.mini-pets.mini-big-icon {
+  display: inline-block;
+  height: 50px;
+}
+.mini-pets.mini-big-icon .gw2-info {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+/* raid boss */
+.build-overview-wrap{
+  padding-right: 30px;
+}
+@media(max-width: 991px){
+  .col-lg-8.build-overview-wrap{
+    padding: 0 20px 20px;
+  }
+  .col-lg-4.build-raid-boss-wrap{
+    padding: 30px 20px 0;
+  }
+}
+
+.build-raid-wing{
+  width: 240px;
+  float: left;
+}
+.build-raid-boss{
+	width: 48px;
+  height: 48px;
+  position: relative;
+  margin: 0 5px 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  overflow: hidden;
+}
+
+.raid-boss-score-S{
+  border: 4px solid #c0392b;
+  color: #c0392b;
+}
+.raid-boss-score-S .icon-raid-boss-cover{
+  background-color: #c0392b;
+}
+.raid-boss-score-A{
+  border: 4px solid #eb4d4b;
+  color: #eb4d4b;
+}
+.raid-boss-score-A .icon-raid-boss-cover{
+  background-color: #eb4d4b;
+}
+.raid-boss-score-B{
+  border: 4px solid #fa8231;
+  color: #fa8231;
+}
+.raid-boss-score-B .icon-raid-boss-cover{
+  background-color: #fa8231;
+}
+.raid-boss-score-C{
+  border: 4px solid #8ea53a;
+  color: #8ea53a;
+}
+.raid-boss-score-C .icon-raid-boss-cover{
+  background-color: #8ea53a;
+}
+.raid-boss-score-D{
+  border: 4px solid #3498db;
+  color: #3498db;
+}
+.raid-boss-score-D .icon-raid-boss-cover{
+  background-color: #3498db;
+}
+
+.icon-raid-boss-cover{
+  position: absolute;
+  right: -27px;
+  bottom: -10px;
+  width: 50px;
+  height: 30px;
+  -ms-transform:rotate(-45deg); 	/* IE 9 */
+  -moz-transform:rotate(-45deg); 	/* Firefox */
+  -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+  -o-transform:rotate(-45deg); 	/* Opera */
+}
+.icon-raid-boss-score{
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  color: #fff;
+  font: 400 13px Arial;
+}
+
+
+
+.icon-raid-boss{
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+.icon-raid-boss-01{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Vale_Guardian.jpg);
+}
+.icon-raid-boss-02{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Gorseval_the_Multifarious.jpg);
+}
+.icon-raid-boss-03{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Sabetha.jpg);
+}
+
+.icon-raid-boss-04{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Slothasor.jpg);
+}
+.icon-raid-boss-05{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Berg.jpg);
+}
+.icon-raid-boss-06{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Matthias_Abomination.jpg);
+}
+
+.icon-raid-boss-07{
+  background-image: url(https://images.gw2data.cn/40px-Mini_McLeod_the_Silent.jpg);
+}
+.icon-raid-boss-08{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Keep_Construct.jpg);
+}
+.icon-raid-boss-09{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Xera.jpg);
+}
+
+.icon-raid-boss-10{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Cairn_the_Indomitable.jpg);
+}
+.icon-raid-boss-11{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Mursaat_Overseer.jpg);
+}
+.icon-raid-boss-12{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Samarog.jpg);
+}
+.icon-raid-boss-13{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Ragged_White_Mantle_Figurehead.jpg);
+}
+
+.icon-raid-boss-14{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Desmina.jpg);
+}
+.icon-raid-boss-15{
+  background-image: url(https://images.gw2data.cn/40px-Silver_River_of_Souls_Trophy.jpg);
+}
+.icon-raid-boss-16{
+  background-image: url(https://images.gw2data.cn/40px-Bronze_Statue_of_Grenth_Trophy.jpg);
+}
+.icon-raid-boss-17{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Dhuum.jpg);
+}
+
+.icon-raid-boss-18{
+  background-image: url(https://images.gw2data.cn/40px-Gold_Conjured_Amalgamate_Trophy.jpg);
+}
+.icon-raid-boss-19{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Nikare.jpg);
+}
+.icon-raid-boss-20{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Qadim.jpg);
+}
+
+.icon-raid-boss-21{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Air_Djinn.jpg);
+}
+.icon-raid-boss-22{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Earth_Djinn.jpg);
+}
+.icon-raid-boss-23{
+  background-image: url(https://images.gw2data.cn/40px-Mini_Qadim_the_Peerless.jpg);
+}
+
+.icon-coin{
+  display: inline-block;
+  position: relative;
+  bottom: -2px;
+  width: 18px;
+  height: 16px;
+  margin-left: 2px;
+  margin-right: 5px;
+  background-size: 100%;
+}
+.icon-gold{
+  background-image: url(https://images.gw2data.cn/Gold_coin.png);
+}
+.icon-silver{
+  background-image: url(https://images.gw2data.cn/Silver_coin.png);
+}
+.icon-copper{
+  background-image: url(https://images.gw2data.cn/Copper_coin.png);
+}
+.icon-karma{
+  background-image: url(https://static.gw2data.cn/file/94953FA23D3E0D23559624015DFEA4CFAA07F0E5/155026.png);
+}
+
+
+
+
+
+/* profession */
+.icon-profession{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+
+.icon-Elementalist{
+	background-image: url('https://images.gw2data.cn/Elementalist_tango_icon_200px.png');
+}
+.icon-white-Elementalist{
+	background-image: url('/images/ui/white_icon/elementalist-white.png');
+}
+.icon-Tempest{
+	background-image: url('https://images.gw2data.cn/Tempest_tango_icon_200px.png');
+}
+.icon-white-Tempest{
+	background-image: url('/images/ui/white_icon/tempest-white.png');
+}
+.icon-Weaver{
+	background-image: url('https://images.gw2data.cn/Weaver_tango_icon_200px.png');
+	background-size: 106%; 
+}
+.icon-white-Weaver{
+	background-image: url('/images/ui/white_icon/weaver-white.png');
+}
+.icon-Warrior{
+	background-image: url('https://images.gw2data.cn/Warrior_tango_icon_200px.png'); 
+}
+.icon-white-Warrior{
+	background-image: url('/images/ui/white_icon/warrior-white.png');
+}
+.icon-Berserker{
+	background-image: url('https://images.gw2data.cn/Berserker_tango_icon_200px.png'); 
+}
+.icon-white-Berserker{
+	background-image: url('/images/ui/white_icon/berserker-white.png');
+}
+.icon-Spellbreaker{
+	background-image: url('https://images.gw2data.cn/Spellbreaker_tango_icon_200px.png');
+}
+.icon-white-Spellbreaker{
+	background-image: url('/images/ui/white_icon/spellbreaker-white.png');
+}
+.icon-Ranger{
+	background-image: url('https://images.gw2data.cn/Ranger_tango_icon_200px.png'); 
+}
+.icon-white-Ranger{
+	background-image: url('/images/ui/white_icon/ranger-white.png');
+}
+.icon-Druid{
+	background-image: url('https://images.gw2data.cn/Druid_tango_icon_200px.png'); 
+}
+.icon-white-Druid{
+	background-image: url('/images/ui/white_icon/druid-white.png');
+}
+.icon-Soulbeast{
+	background-image: url('https://images.gw2data.cn/Soulbeast_tango_icon_200px.png'); 
+}
+.icon-white-Soulbeast{
+	background-image: url('/images/ui/white_icon/soulbeast-white.png');
+}
+.icon-Necromancer{
+	background-image: url('https://images.gw2data.cn/Necromancer_tango_icon_200px.png'); 
+}
+.icon-white-Necromancer{
+	background-image: url('/images/ui/white_icon/necromancer-white.png');
+}
+.icon-Reaper{
+	background-image: url('https://images.gw2data.cn/Reaper_tango_icon_200px.png'); 
+}
+.icon-white-Reaper{
+	background-image: url('/images/ui/white_icon/reaper-white.png');
+}
+.icon-Scourge{
+	background-image: url('https://images.gw2data.cn/Scourge_tango_icon_200px.png'); 
+}
+.icon-white-Scourge{
+	background-image: url('/images/ui/white_icon/scourge-white.png');
+}
+.icon-Thief{
+	background-image: url('https://images.gw2data.cn/Thief_tango_icon_200px.png'); 
+}
+.icon-white-Thief{
+	background-image: url('/images/ui/white_icon/thief-white.png');
+}
+.icon-Daredevil{
+	background-image: url('https://images.gw2data.cn/Daredevil_tango_icon_200px.png'); 
+}
+.icon-white-Daredevil{
+	background-image: url('/images/ui/white_icon/daredevil-white.png');
+}
+.icon-Deadeye{
+	background-image: url('https://images.gw2data.cn/Deadeye_tango_icon_200px.png'); 
+}
+.icon-white-Deadeye{
+	background-image: url('/images/ui/white_icon/deadeye-white.png');
+}
+.icon-Guardian{
+	background-image: url('https://images.gw2data.cn/Guardian_tango_icon_200px.png'); 
+}
+.icon-white-Guardian{
+	background-image: url('/images/ui/white_icon/guardian-white.png');
+}
+.icon-Dragonhunter{
+	background-image: url('https://images.gw2data.cn/Dragonhunter_tango_icon_200px.png'); 
+}
+.icon-white-Dragonhunter{
+	background-image: url('/images/ui/white_icon/dragonhunter-white.png');
+}
+.icon-Firebrand{
+	background-image: url('https://images.gw2data.cn/Firebrand_tango_icon_200px.png'); 
+}
+.icon-white-Firebrand{
+	background-image: url('/images/ui/white_icon/firebrand-white.png');
+}
+.icon-Engineer{
+	background-image: url('https://images.gw2data.cn/Engineer_tango_icon_200px.png'); 
+}
+.icon-white-Engineer{
+	background-image: url('/images/ui/white_icon/engineer-white.png');
+}
+.icon-Scrapper{
+	background-image: url('https://images.gw2data.cn/Scrapper_tango_icon_200px.png'); 
+}
+.icon-white-Scrapper{
+	background-image: url('/images/ui/white_icon/scrapper-white.png');
+}
+.icon-Holosmith{
+	background-image: url('https://images.gw2data.cn/Holosmith_tango_icon_200px.png');
+}
+.icon-white-Holosmith{
+	background-image: url('/images/ui/white_icon/holosmith-white.png');
+}
+.icon-Mesmer{
+	background-image: url('https://images.gw2data.cn/Mesmer_tango_icon_200px.png'); 
+}
+.icon-white-Mesmer{
+	background-image: url('/images/ui/white_icon/mesmer-white.png');
+}
+.icon-Chronomancer{
+	background-image: url('https://images.gw2data.cn/Chronomancer_tango_icon_200px.png'); 
+}
+.icon-white-Chronomancer{
+	background-image: url('/images/ui/white_icon/chronomancer-white.png');
+}
+.icon-Mirage{
+	background-image: url('https://images.gw2data.cn/Mirage_tango_icon_200px.png');
+}
+.icon-white-Mirage{
+	background-image: url('/images/ui/white_icon/mirage-white.png');
+}
+.icon-Revenant{
+	background-image: url('https://images.gw2data.cn/Revenant_tango_icon_200px.png'); 
+}
+.icon-white-Revenant{
+	background-image: url('/images/ui/white_icon/revenant-white.png');
+}
+.icon-Herald{
+	background-image: url('https://images.gw2data.cn/Herald_tango_icon_200px.png'); 
+}
+.icon-white-Herald{
+	background-image: url('/images/ui/white_icon/herald-white.png');
+}
+.icon-Renegade{
+	background-image: url('https://images.gw2data.cn/Renegade_tango_icon_200px.png');
+}
+.icon-white-Renegade{
+	background-image: url('/images/ui/white_icon/renegade-white.png');
+}
+
+
+.profession-icon-bg{
+	background-size: cover;
+}
+.profession-icon-bg-Elementalist{
+	background-image: url('https://images.gw2data.cn/elementalist_icon_bg.jpg');
+}
+.profession-icon-bg-Tempest{
+	background-image: url('https://images.gw2data.cn/tempest_icon_bg.jpg');
+}
+.profession-icon-bg-Weaver{
+	background-image: url('https://images.gw2data.cn/weaver_icon_bg.jpg');
+}
+.profession-icon-bg-Warrior{
+	background-image: url('https://images.gw2data.cn/warrior_icon_bg.jpg');
+}
+.profession-icon-bg-Berserker{
+	background-image: url('https://images.gw2data.cn/berserker_icon_bg.jpg');
+}
+.profession-icon-bg-Spellbreaker{
+	background-image: url('https://images.gw2data.cn/spellbreaker_icon_bg.jpg');
+}
+.profession-icon-bg-Ranger{
+	background-image: url('https://images.gw2data.cn/ranger_icon_bg.jpg');
+}
+.profession-icon-bg-Druid{
+	background-image: url('https://images.gw2data.cn/druid_icon_bg.jpg');
+}
+.profession-icon-bg-Soulbeast{
+	background-image: url('https://images.gw2data.cn/soulbeast_icon_bg.jpg');
+}
+.profession-icon-bg-Necromancer{
+	background-image: url('https://images.gw2data.cn/necromancer_icon_bg.jpg');
+}
+.profession-icon-bg-Reaper{
+	background-image: url('https://images.gw2data.cn/reaper_icon_bg.jpg');
+}
+.profession-icon-bg-Scourge{
+	background-image: url('https://images.gw2data.cn/scourge_icon_bg.jpg');
+}
+.profession-icon-bg-Thief{
+	background-image: url('https://images.gw2data.cn/thief_icon_bg.jpg');
+}
+.profession-icon-bg-Daredevil{
+	background-image: url('https://images.gw2data.cn/daredevil_icon_bg.jpg');
+}
+.profession-icon-bg-Deadeye{
+	background-image: url('https://images.gw2data.cn/deadeye_icon_bg.jpg');
+}
+.profession-icon-bg-Guardian{
+	background-image: url('https://images.gw2data.cn/guardian_icon_bg.jpg');
+}
+.profession-icon-bg-Dragonhunter{
+	background-image: url('https://images.gw2data.cn/dragonhunter_icon_bg.jpg');
+}
+.profession-icon-bg-Firebrand{
+	background-image: url('https://images.gw2data.cn/firebrand_icon_bg.jpg');
+}
+.profession-icon-bg-Engineer{
+	background-image: url('https://images.gw2data.cn/engineer_icon_bg.jpg');
+}
+.profession-icon-bg-Scrapper{
+	background-image: url('https://images.gw2data.cn/scrapper_icon_bg.jpg');
+}
+.profession-icon-bg-Holosmith{
+	background-image: url('https://images.gw2data.cn/holosmith_icon_bg.jpg');
+}
+.profession-icon-bg-Mesmer{
+	background-image: url('https://images.gw2data.cn/mesmer_icon_bg.jpg');
+}
+.profession-icon-bg-Chronomancer{
+	background-image: url('https://images.gw2data.cn/chronomancer_icon_bg.jpg');
+}
+.profession-icon-bg-Mirage{
+	background-image: url('https://images.gw2data.cn/mirage_icon_bg.jpg');
+}
+.profession-icon-bg-Revenant{
+	background-image: url('https://images.gw2data.cn/revenant_icon_bg.jpg');
+}
+.profession-icon-bg-Herald{
+	background-image: url('https://images.gw2data.cn/herald_icon_bg.jpg');
+}
+.profession-icon-bg-Renegade{
+	background-image: url('https://images.gw2data.cn/renegade_icon_bg.jpg');
+}
+
+
+
+
+.color-Elementalist{
+	color: #c54838;
+}
+.color-Warrior{
+	color: #bc8d16;
+}
+.color-Ranger{
+	color: #adc35d;
+}
+.color-Necromancer{
+	color: #6bb098;
+}
+.color-Guardian{
+	color: #71c1d6;
+}
+.color-Thief{
+	color: #b28a8f;
+}
+.color-Engineer{
+	color: #ce7f4b;
+}
+.color-Mesmer{
+	color: #e697f9;
+}
+.color-Revenant{
+	color: #ae6678;
+}
+
+
+.bg-color-profession{
+	color: #fff;
+}
+.bg-color-profession:hover{
+	color: #fff;
+}
+.bg-color-Elementalist{
+	/* background-color: #f34e5c !important; */
+	background-color: #c0392b !important;
+}
+.bg-color-Warrior{
+	background-color: #bc8d16 !important;
+}
+.bg-color-Ranger{
+	background-color: #8ea53a !important;
+}
+.bg-color-Necromancer{
+	background-color: #3f5847 !important;
+}
+.bg-color-Guardian{
+	background-color: #2980b9 !important;
+}
+.bg-color-Thief{
+	background-color: #623a3f !important;
+}
+.bg-color-Engineer{
+	background-color: #98692c !important;
+}
+.bg-color-Mesmer{
+	background-color: #724192 !important;
+}
+.bg-color-Revenant{
+	background-color: #572435 !important;
+}
+
+
+.nav-link.nav-link-Elementalist.active{
+	background-color: #c0392b;
+}
+.nav-link.nav-link-Warrior.active{
+	background-color: #bc8d16;
+}
+.nav-link.nav-link-Ranger.active{
+	background-color: #8ea53a;
+}
+.nav-link.nav-link-Necromancer.active{
+	background-color: #3f5847;
+}
+.nav-link.nav-link-Guardian.active{
+	background-color: #2980b9;
+}
+.nav-link.nav-link-Thief.active{
+	background-color: #623a3f;
+}
+.nav-link.nav-link-Engineer.active{
+	background-color: #98692c;
+}
+.nav-link.nav-link-Mesmer.active{
+	background-color: #724192;
+}
+.nav-link.nav-link-Revenant.active{
+	background-color: #572435;
+}
+
+
+.score-SSS{
+	color: #c0392b;
+}
+.score-S{
+	color: #eb4d4b;
+}
+.score-A{
+	color: #fa8231;
+}
+.score-B{
+	color: #8ea53a;
+}
+.score-C{
+	color: #3498db;
+}
+
+
+
+/* mounts */
+.icon-mount{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.icon-raptor{
+	background-image: url('https://images.gw2data.cn/raptor_icon.png');
+	background-size: 150% !important;
+}
+.icon-springer{
+	background-image: url('https://images.gw2data.cn/springer_icon.png');
+}
+.icon-skimmer{
+  background-image: url('https://images.gw2data.cn/skimmer_icon.png');
+  background-size: 135% !important;
+}
+.icon-jackal{
+	background-image: url('https://images.gw2data.cn/jackal_icon.png');
+}
+.icon-griffon{
+	background-image: url('https://images.gw2data.cn/griffon_icon.png');
+	background-size: 150% !important;
+}
+.icon-roller-beetle{
+	background-image: url('https://images.gw2data.cn/roller_beetle_icon.png');
+	background-size: 120% !important;
+}
+.icon-warclaw{
+	background-image: url('https://images.gw2data.cn/warclaw_icon.png');
+	background-size: 130% !important;
+}
+.icon-skyscale{
+	background-image: url('https://images.gw2data.cn/skyscale_icon.png');
+	background-size: 120% !important;
+}
+
+
+
+/* crafting */
+.icon-crafting{
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.icon-crafting-guild{
+  background-image: url('https://images.gw2data.cn/Crafting.png');
+  background-size: cover;
+}
+.icon-armorsmith{
+	background-image: url('https://images.gw2data.cn/Armorsmith_tango_icon_20px.png');
+}
+.icon-artificer{
+	background-image: url('https://images.gw2data.cn/Artificer_tango_icon_20px.png');
+}
+.icon-chef{
+	background-image: url('https://images.gw2data.cn/Chef_tango_icon_20px.png');
+}
+.icon-huntsman{
+	background-image: url('https://images.gw2data.cn/Huntsman_tango_icon_20px.png');
+}
+.icon-jeweler{
+	background-image: url('https://images.gw2data.cn/Jeweler_tango_icon_20px.png');
+}
+.icon-leatherworker{
+	background-image: url('https://images.gw2data.cn/Leatherworker_tango_icon_20px.png');
+}
+.icon-scribe{
+	background-image: url('https://images.gw2data.cn/Scribe_tango_icon_20px.png');
+}
+.icon-tailor{
+	background-image: url('https://images.gw2data.cn/Tailor_tango_icon_20px.png');
+}
+.icon-weaponsmith{
+	background-image: url('https://images.gw2data.cn/Weaponsmith_tango_icon_20px.png');
+}
+
+
+/* guild_mission */
+.icon-guild-bounty{
+  background-image: url('https://images.gw2data.cn/20px-Guild_Bounty_icon.png');
+}
+.icon-guild-trek{
+  background-image: url('https://images.gw2data.cn/20px-Guild_Trek_icon.png');
+}
+.icon-guild-challenge{
+  background-image: url('https://images.gw2data.cn/20px-Guild_Challenge_icon.png');
+}
+.icon-guild-race{
+  background-image: url('https://images.gw2data.cn/20px-Guild_Race_icon.png');
+}
+.icon-guild-puzzle{
+  background-image: url('https://images.gw2data.cn/20px-Guild_Puzzle.png');
+}
+
+
+
+/* fractal */
+.bg-color-fractal{
+  background-color: #40739e !important;
+}
+.color-fractal{
+  color: #40739e !important;
+}
+.content-fractal{
+  background-image: url('https://doc.gw2data.cn/SpringQ2Update_HomeBanner.jpg');
+  background-position: right center;
+  background-size: cover;
+}
+
+/* raid */
+.bg-color-raid{
+  background-color: #948968 !important;
+}
+.color-raid{
+  color: #b4a988 !important;
+}
+
+/* strike_mission */
+.bg-color-strike_mission{
+  background-color: #454b58 !important;
+}
+.color-strike_mission{
+  color: #7f8fa6 !important;
+}
+
+
+
+/* legendary_equipment */
+.button-color-legendary_equipment.active{
+  background-color: #8e44ad !important;
+}
+.color-legendary_equipment{
+  color: #9b59b6 !important;
+}
+.btn-color-legendary_equipment{
+  background-color: #8e44ad !important;
+  color: #fff;
+}
+
+
+/* collection */
+.button-color-collection.active{
+  background-color: #c0392b !important;
+}
+.color-collection{
+  color: #c5433b !important;
+}
+.btn-color-collection{
+  background-color: #c0392b !important;
+  color: #fff;
+}
+
+
+/* achievement */
+.icon-achievement{
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center center;
+}
+.icon-achievements{
+  background-image: url('https://images.gw2data.cn/Achievements.png');
+}
+.icon-daily{
+  background-image: url('https://images.gw2data.cn/Daily.png');
+}
+.icon-jumping-puzzle{
+  background-image: url('https://images.gw2data.cn/Jumping_Puzzles.png');
+}
+.icon-explorer{
+  background-image: url('https://images.gw2data.cn/Explorer.png');
+}
+.icon-fractal{
+  background-image: url('https://images.gw2data.cn/Fractal.png');
+}
+.icon-raid{
+  background-image: url('https://images.gw2data.cn/Raid.png');
+}
+.icon-strike-mission{
+  background-image: url('https://images.gw2data.cn/Strike_Mission.png');
+}
+
+
+/* icon-discipline */
+.icon-discipline{
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center center;
+}
+.icon-mystic-forge{
+  background-image: url('https://images.gw2data.cn/mystic_forge_icon.png');
+}
+.icon-merchant{
+  background-image: url('https://images.gw2data.cn/merchant_icon.png');
+}
+
+
+.button-color-jumping-puzzles.active{
+  background-color: #16a085 !important;
+}
+.color-jumping-puzzles{
+  color: #16a085 !important;
+}
+.btn-color-jumping-puzzles{
+  background-color: #069075 !important;
+  color: #fff;
+}
+
+.achievement-item{
+  position: relative;
+  width: 100%;
+  background-color: #373737;
+  padding: 15px 0 15px 15px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.achievement-item > .thumb{
+  width: 160px;
+  height: 90px;
+  margin-right: 15px;
+  background-size: cover;
+  float: left;
+  overflow: hidden;
+}
+.achievement-item .content-right{
+  float: left;
+}
+.achievement-item > .content-right > .title{
+  font-size: 16px;
+  color: #eee;
+}
+.achievement-item > .content-right > .map{
+  color: #999;
+  font-size: 12px;
+}
+.achievement-map{
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.achievement-search{
+  width: 100%;
+  height: 38px;
+  padding: 6px 10px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #000;
+  background-color: #ccc;
+  background-image: none;
+  border: 1px solid #aaa;
+  outline: none;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 7px #000;
+  box-shadow: inset 0 0 7px #000;
+}
+

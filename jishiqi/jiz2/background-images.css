@@ -1,0 +1,443 @@
+/* bg */
+.bg-lg{
+	position: relative;
+}
+
+.header-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center 30px;
+    filter: blur(3px);
+    margin: -30px;
+    overflow: hidden;
+}
+.header-bg-shadow{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    width: 100%;
+	height: 70px;
+    background-image: linear-gradient(to right,rgba(10,10,12,0.9) 5%,rgba(10,10,12,.2) 50%,rgba(10,10,12,0.9) 95%);
+    background-color: rgba(0,0,0,0.35);
+}
+.index-header-bg .header-bg-shadow{
+	background-image: linear-gradient(to right,rgba(10,10,12,0.3) 5%,rgba(10,10,12,.05) 50%,rgba(10,10,12,0.3) 95%);
+}
+
+.bg-lg-shadow{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to right,rgba(10,10,12,0.9) 5%,rgba(10,10,12,.5) 50%,rgba(10,10,12,0.9) 95%);
+	z-index: 1;
+}
+
+.header-bg-build-Elementalist::before{
+	background-image: url(https://images.gw2data.cn/elementalist_bg.jpg);
+	background-position: center -10px;
+}
+.bg-lg-Elementalist{
+	background-image: url(https://images.gw2data.cn/elementalist_bg.jpg);
+	background-position: center -110px;
+}
+.header-bg-build-Warrior::before{
+	background-image: url(https://images.gw2data.cn/warrior_bg.jpg);
+	background-position: left 30px top -330px;
+}
+.bg-lg-Warrior{
+	background-image: url(https://images.gw2data.cn/warrior_bg.jpg);
+	background-position: left 0 top -430px;
+}
+.header-bg-build-Ranger::before{
+	background-image: url(https://images.gw2data.cn/ranger_bg.jpg);
+	background-position: right 30px top -50px;
+}
+.bg-lg-Ranger{
+	background-image: url(https://images.gw2data.cn/ranger_bg.jpg);
+	background-position: right 0 top -150px;
+}
+.header-bg-build-Necromancer::before{
+	background-image: url(https://images.gw2data.cn/necromancer_bg.jpg);
+	background-position: right -70px top 30px;
+}
+.bg-lg-Necromancer{
+	background-image: url(https://images.gw2data.cn/necromancer_bg.jpg);
+	background-position: right -100px top -70px;
+}
+.header-bg-build-Guardian::before{
+	background-image: url(https://images.gw2data.cn/guardian_bg.jpg);
+	background-position: right 30px top 30px;
+}
+.bg-lg-Guardian{
+	background-image: url(https://images.gw2data.cn/guardian_bg.jpg);
+	background-position: right 0 top -70px;
+}
+.header-bg-build-Thief::before{
+	background-image: url(https://images.gw2data.cn/thief_bg.jpg);
+	background-position: center 30px;
+}
+.bg-lg-Thief{
+	background-image: url(https://images.gw2data.cn/thief_bg.jpg);
+	background-position: center -70px;
+}
+.header-bg-build-Engineer::before{
+	background-image: url(https://images.gw2data.cn/engineer_bg.jpg);
+	background-position: center -180px;
+}
+.bg-lg-Engineer{
+	background-image: url(https://images.gw2data.cn/engineer_bg.jpg);
+	background-position: center -280px;
+}
+.header-bg-build-Mesmer::before{
+	background-image: url(https://images.gw2data.cn/mesmer_bg.jpg);
+	background-position: right 30px top 0;
+}
+.bg-lg-Mesmer{
+	background-image: url(https://images.gw2data.cn/mesmer_bg.jpg);
+	background-position: right 0 top -100px;
+}
+.header-bg-build-Revenant::before{
+	background-image: url(https://images.gw2data.cn/revenant_bg.jpg);
+	background-position: center -170px;
+}
+.bg-lg-Revenant{
+	background-image: url(https://images.gw2data.cn/revenant_bg.jpg);
+	background-position: center -270px;
+}
+
+
+.header-bg-home::before{
+	background-image: url(https://images.gw2data.cn/HomepageBanner-1600-743.jpg);
+	background-position: center -80px;
+}
+.bg-lg-home{
+	background-image: url(https://images.gw2data.cn/HomepageBanner-1600-743.jpg);
+    background-position: center -180px;
+	background-repeat: no-repeat;
+	height: 370px;
+	
+}
+
+
+.header-bg-benchmarks::before{
+	background-image: url(https://images.gw2data.cn/1501270941-POF_Wallpaper_1920x1200_5-1920x1080.jpg);
+	background-position: center -30px;
+}
+.bg-lg-benchmarks{
+	background-image: url(https://images.gw2data.cn/1501270941-POF_Wallpaper_1920x1200_5-1920x1080.jpg);
+    background-position: center -130px;
+}
+.bg-lg-fixed{
+	position: fixed;
+    top: 70px;
+    left: 240px;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+.mini-sidebar .bg-lg-fixed{
+    left: 50px;
+}
+@media (max-width: 768px){
+	.mini-sidebar .bg-lg-fixed{
+		left: 0;
+	}
+}
+
+/* database */
+.bg-database-search{
+	background-image: url(/images/ui/database_search_bg.jpg);
+    background-size: 130%; 
+    background-repeat: repeat-y;
+    background-position: left top;
+}
+
+/* database-item */
+.header-bg-database-item::before{
+	background-image: url(https://images.gw2data.cn/POF_Wallpaper_1920x1200_2.jpg);
+	background-position: center top -200px;
+}
+.bg-lg-database-item{
+	background-image: url(https://images.gw2data.cn/POF_Wallpaper_1920x1200_2.jpg);
+	background-position: center top -300px;
+}
+
+/* database-skin */
+.header-bg-database-skin::before{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+	background-position: center top -200px;
+}
+.bg-lg-database-skin{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+	background-position: center top -300px;
+}
+
+/* database-equipment */
+.header-bg-database-equipment::before{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+	background-position: center top -200px;
+}
+.bg-lg-database-equipment{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+	background-position: center top -300px;
+}
+
+/* database-glyph */
+.header-bg-database-glyph::before{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+	background-position: center top -200px;
+}
+.bg-lg-database-glyph{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+	background-position: center top -300px;
+}
+
+/* database-dye_kit */
+.header-bg-database-dye_kit::before{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+	background-position: center top -200px;
+}
+.bg-lg-database-dye_kit{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+	background-position: center top -300px;
+}
+
+/* database-recipe */
+.header-bg-database-recipe::before{
+	background-image: url(https://doc.gw2data.cn/themes/gw2/assets/images/bg/document/crafting_bg.jpg);
+	background-position: center top -200px;
+}
+.bg-lg-database-recipe{
+	background-image: url(https://doc.gw2data.cn/themes/gw2/assets/images/bg/document/crafting_bg.jpg);
+	background-position: center top -300px;
+}
+
+/* database-achievement */
+.header-bg-database-achievement::before{
+	background-image: url(https://doc.gw2data.cn/eda57052014_FotFW-1920x1200.jpg);
+	background-position: center top -450px;
+}
+.bg-lg-database-achievement{
+	background-image: url(https://doc.gw2data.cn/eda57052014_FotFW-1920x1200.jpg);
+	background-position: center top -550px;
+}
+
+
+
+/* tool */
+.header-bg-tool::before{
+	background-image: url(https://images.gw2data.cn/timer_bg.jpg);
+	background-position: center top -200px;
+}
+.bg-lg-tool{
+	background-image: url(https://images.gw2data.cn/timer_bg.jpg);
+	background-position: center top -300px;
+}
+
+
+/* user */
+.header-bg-user-login::before{
+	background-image: url(https://images.gw2data.cn/POF_Wallpaper_1920x1200_1_Login.jpg);
+	background-position: left 20px top -30px;
+}
+.bg-lg-user-login{
+	background-image: url(https://images.gw2data.cn/POF_Wallpaper_1920x1200_1_Login.jpg);
+    background-position: left 0 top -130px;
+}
+
+/* crafting */
+.header-bg-crafting::before{
+	background-image: url(https://doc.gw2data.cn/themes/gw2/assets/images/bg/document/crafting_bg.jpg);
+    background-position: center -50px;
+}
+.bg-lg-crafting{
+	background-image: url(https://doc.gw2data.cn/themes/gw2/assets/images/bg/document/crafting_bg.jpg);
+    background-position: center -150px;
+}
+
+/* legendary_equipment */
+.header-bg-legendary_equipment::before{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+    background-position: center top -200px;
+}
+.bg-lg-legendary_equipment{
+	background-image: url(https://doc.gw2data.cn/d86f4b1d7f02-1920x1200.jpg);
+    background-position: center top -300px;
+}
+
+/* fractal */
+.header-bg-fractal::before{
+	background-image: url(https://doc.gw2data.cn/fractal_loading.jpg);
+    background-position: center -250px;
+}
+.bg-lg-fractal{
+	background-image: url(https://doc.gw2data.cn/fractal_loading.jpg);
+    background-position: center -350px;
+}
+
+/* raid */
+.header-bg-raid::before{
+	background-image: url(https://doc.gw2data.cn/raid_bg-1920x1200.jpg);
+    background-position: center -450px;
+}
+.bg-lg-raid{
+	background-image: url(https://doc.gw2data.cn/raid_bg-1920x1200.jpg);
+    background-position: center -550px;
+}
+
+/* strike_mission */
+.header-bg-strike_mission::before{
+	background-image: url(https://doc.gw2data.cn/strike_mission_header-bg-1920x1200.jpg);
+    background-position: center -450px;
+}
+.bg-lg-strike_mission{
+	background-image: url(https://doc.gw2data.cn/strike_mission_header-bg-1920x1200.jpg);
+    background-position: center -550px;
+}
+
+
+
+
+/* achievement */
+.header-bg-jumping_puzzle::before{
+	background-image: url(https://doc.gw2data.cn/Sylvari-01-1920x1200.jpg);
+    background-position: center -350px;
+}
+.bg-lg-jumping_puzzle{
+	background-image: url(https://doc.gw2data.cn/Sylvari-01-1920x1200.jpg);
+    background-position: center -450px;
+}
+.header-bg-explorer::before{
+	background-image: url(https://doc.gw2data.cn/Sylvari-01-1920x1200.jpg);
+    background-position: center -350px;
+}
+.bg-lg-explorer{
+	background-image: url(https://doc.gw2data.cn/Sylvari-01-1920x1200.jpg);
+    background-position: center -450px;
+}
+
+
+/* guild */
+.header-bg-guild_mission::before{
+	background-image: url(https://doc.gw2data.cn/bf5d703-04_BfLA-1920x1200.jpg);
+    background-position: center -450px;
+}
+.bg-lg-guild_mission{
+	background-image: url(https://doc.gw2data.cn/bf5d703-04_BfLA-1920x1200.jpg);
+    background-position: center -550px;
+}
+
+
+/* collection */
+.header-bg-collection::before{
+	background-image: url(https://images.gw2data.cn/af6953a10506-1920x1200.jpg);
+    background-position: center -150px;
+}
+.bg-lg-collection{
+	background-image: url(https://images.gw2data.cn/af6953a10506-1920x1200.jpg);
+    background-position: center -250px;
+}
+
+
+/* chat */
+.header-bg-chat-room::before{
+	background-image: url(https://images.gw2data.cn/CharrBarr-1920x1200.jpg);
+    background-position: center -460px;
+}
+.bg-lg-chat-room{
+	background-image: url(https://images.gw2data.cn/CharrBarr-1920x1200.jpg);
+    background-position: center -560px;
+}
+
+
+/* living world */
+.header-bg-no-quarter::before{
+	background-image: url(https://images.gw2data.cn/06a83200501-GW2-No-Quarter-ReleaseHub.jpg);
+    background-position: center -50px;
+}
+.bg-lg-no-quarter{
+	background-image: url(https://images.gw2data.cn/06a83200501-40-GW2-No-Quarter-ReleaseHub.jpg);
+    background-position: center -150px;
+}
+
+.header-bg-jormag-rising::before{
+	background-image: url(https://images.gw2data.cn/64646200714-GW2-Jormag-Rising-ReleaseHub.jpg);
+    background-position: center -120px;
+}
+.bg-lg-jormag-rising{
+	background-image: url(https://images.gw2data.cn/64646200714-GW2-Jormag-Rising-ReleaseHub.jpg);
+    background-position: center -220px;
+}
+
+.header-bg-THE-ICEBROOD-SAGA-E5C3-balance::before{
+	background-image: url(https://images.gw2data.cn/db5d5210302-GW2-EP5-C-ReleaseHub.jpg);
+	background-color: #000000;
+    background-position: center -10px;
+}
+.bg-lg-THE-ICEBROOD-SAGA-E5C3-balance{
+	background-image: url(https://images.gw2data.cn/db5d5210302-GW2-EP5-C-ReleaseHub.jpg);
+	background-color: #000000;
+    background-position: center -110px;
+}
+
+
+
+
+
+
+
+
+
+/* festival */
+.header-bg-festival-four-winds::before{
+	background-image: url(https://images.gw2data.cn/5872frelease_header_190730-GW2-ReleaseHub-Festival-Four-Winds.jpg);
+    background-position: center -50px;
+}
+.bg-lg-festival-four-winds{
+	background-image: url(https://images.gw2data.cn/5872frelease_header_190730-GW2-ReleaseHub-Festival-Four-Winds.jpg);
+    background-position: center -150px;
+}
+
+
+.header-bg-shadow-of-the-mad-king::before{
+	background-image: url(https://images.gw2data.cn/shadow-of-the-mad-king-3db90backdrop-top.3689217901.jpg);
+    background-position: center -50px;
+}
+.bg-lg-shadow-of-the-mad-king{
+	background-image: url(https://images.gw2data.cn/shadow-of-the-mad-king-3db90backdrop-top.3689217901.jpg);
+    background-position: center -150px;
+}
+
+
+
+.header-bg-wintersday::before{
+	background-image: url(https://images.gw2data.cn/73fcfgw2_wintersday_releasepageheader2019-v3.jpg);
+	background-position: center -50px;
+	background-color: #000;
+}
+.bg-lg-wintersday{
+	background-image: url(https://images.gw2data.cn/73fcfgw2_wintersday_releasepageheader2019-v3.jpg);
+	background-position: center -150px;
+	background-color: #000;
+}
+
+
+.header-bg-lunar-new-year::before{
+	background-image: url(https://images.gw2data.cn/0f1a1200107-GW2-Lunar-New-Year-ReleaseHub.jpg);
+	background-position: center -100px;
+	background-color: #000;
+}
+.bg-lg-lunar-new-year{
+	background-image: url(https://images.gw2data.cn/0f1a1200107-GW2-Lunar-New-Year-ReleaseHub.jpg);
+	background-position: center -200px;
+	background-color: #000;
+}
+
