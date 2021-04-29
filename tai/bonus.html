@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>加成效果 | 数据整理 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+ 
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #e74c3c !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #e74c3c !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">数据整理</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">加成效果<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+加成效果 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;激战2官方wiki（转载 + 译制）</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2020.05.09</div>
+
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div> </div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li>已经绝版的消耗品将不被列出。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">经验值</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">业力</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">宝物寻获率</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">制作暴击率（副职业）</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">世界之战奖励分支</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-6" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">世界之战经验值</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-7" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">移动速度</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-8" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">采集率</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-9" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">金币获取率</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">经验增幅</h2>
+<ul>
+<li>不计入 <strong>账号加成</strong> 的经验奖励提升，理论可最高可获得 530% 的经验增幅。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">Buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">相关物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">账号加成</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1818" image-compress-type="1" class="original-size"> 账号加成</td>
+<td style="text-align:right">3%</td>
+<td style="text-align:left">每 2500 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="42"></span><span>成就点数</span>
+</span> 获得一次</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1819" image-compress-type="1" class="original-size"> 黑狮增幅剂</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="82060"></span><span>黑狮增幅剂</span>
+</span></td>
+<td style="text-align:left">双击 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span> 兑换</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1820" image-compress-type="1" class="original-size"> 50%经验增幅</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49871"></span><span>经验增幅剂</span>
+</span>（优质）、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="41741"></span><span>分享型增幅篝火</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9251"></span><span>附魔奖励增幅剂</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1821" image-compress-type="1" class="original-size"> 连歼增幅</td>
+<td style="text-align:right">0 ~ 100%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49872"></span><span>连歼经验增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9251"></span><span>附魔奖励增幅剂</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1820" image-compress-type="1" class="original-size"> 经验增幅<br><img class="gw2-image" image-id="1822" image-compress-type="1" class="original-size"> 连歼增幅</td>
+<td style="text-align:right">50 ~ 150%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70250"></span><span>经验增幅剂</span>
+</span>（精制）、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70235"></span><span>经验增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70242"></span><span>英雄增幅剂</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1823" image-compress-type="1" class="original-size"> 欢庆加成</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45003"></span><span>生日增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67836"></span><span>庆典增幅剂</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1824" image-compress-type="1" class="original-size"> 冬日祝福</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77656"></span><span>冬日祝福</span>
+</span></td>
+<td style="text-align:left">在 <strong>冬幕节</strong> 活动期间，完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2789"></span><span>捐赠冲动</span>
+</span>（每日限完成一次，可重复）获得。</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1825" image-compress-type="1" class="original-size"> 营养品</td>
+<td style="text-align:right">10-15%</td>
+<td style="text-align:left">食物</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1826" image-compress-type="1" class="original-size"> 通用效果</td>
+<td style="text-align:right">10-15%</td>
+<td style="text-align:left">通用效果</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1827" image-compress-type="1" class="original-size"> 新年礼物</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">农历新年烟花，如：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77750"></span><span>幸运龙蜥尾巴</span>
+</span></td>
+<td style="text-align:left">开启各种 <strong>幸运红包</strong> 获得</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1827" image-compress-type="1" class="original-size"> 新年祝福</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77762"></span><span>好运爆竹</span>
+</span></td>
+<td style="text-align:left">开启各种 <strong>幸运红包</strong> 获得</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">公会旗帜</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1828" image-compress-type="1" class="original-size"> 公会经验奖励</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39698"></span><span>公会经验旗帜</span>
+</span></td>
+<td style="text-align:left">不与其他增加经验的公会旗帜效果叠加</td>
+</tr>
+<tr>
+<td style="text-align:left">公会旗帜</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1828" image-compress-type="1" class="original-size"> 公会经验旗帜</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39710"></span><span>公会业力与经验旗帜</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39706"></span><span>公会英雄旗帜</span>
+</span></td>
+<td style="text-align:left">不与其他增加经验的公会旗帜效果叠加</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1829" image-compress-type="1" class="original-size"> 血石强化</td>
+<td style="text-align:right">10 ~ 30%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79092"></span><span>血石强化</span>
+</span></td>
+<td style="text-align:left">从 <strong>血石沼泽</strong> 守魂者飞船上的未受约束魔法商人处购买，最高可升级3次。<br>仅在 <strong>血石沼泽</strong> 享受经验加成</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1830" image-compress-type="1" class="original-size"> 毅力</td>
+<td style="text-align:right">10 ~ 30%</td>
+<td style="text-align:left">完成 <strong>余烬海湾</strong> 爱心任务后获得</td>
+<td style="text-align:left">仅在 <strong>余烬海湾</strong> 享受经验加成，可堆叠层数</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1831" image-compress-type="1" class="original-size"> 炽天使士气</td>
+<td style="text-align:right">1 ~ 10%</td>
+<td style="text-align:left">完成 <strong>多里克湖</strong> 地图事件后获得</td>
+<td style="text-align:left">仅在 <strong>多里克湖</strong> 享受经验加成，可堆叠层数</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1829" image-compress-type="1" class="original-size"> 巨龙之山强化</td>
+<td style="text-align:right">10 ~ 30%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81076"></span><span>巨龙之山强化</span>
+</span></td>
+<td style="text-align:left">从 <strong>巨龙之山</strong> 的未受约束魔法商人处购买，最高可升级3次。<br>仅在 <strong>巨龙之山</strong> 享受经验加成</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1820" image-compress-type="1" class="original-size"> 探险家的喘息</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">修会历史学家伊莉莎的篝火</td>
+<td style="text-align:left">帮助伊莉莎为篝火收集木材后获得，离开地图后消失。<br>buff 持续时间3小时，返回活跃的篝火附近时，将刷新持续时间。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1825" image-compress-type="1" class="original-size"> 许愿池的恩惠</td>
+<td style="text-align:right">3%</td>
+<td style="text-align:left">在 <strong>瓦比领域 - 塞伯辛花园</strong> 的许愿池丢入金币后有几率获得</td>
+<td style="text-align:left">最多可叠加5层（15%），离开 <strong>瓦比领域</strong> 后消失。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1829" image-compress-type="1" class="original-size"> 强化</td>
+<td style="text-align:right">10 ~ 30%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="85762"></span><span>伊斯坦强化</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87219"></span><span>沙掠强化</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88002"></span><span>克南领域强化</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88807"></span><span>亚哈悬崖强化</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89889"></span><span>雷云高峰强化</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90896"></span><span>坠龙之地强化</span>
+</span></td>
+<td style="text-align:left">从 <strong>世界动态第四季</strong> 地图的烈性魔法商人处购买，最高可升级3次。<br>仅在对应地图可享受经验加成。</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1823" image-compress-type="1" class="original-size"> 周末活动奖励</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅在 <strong>开放世界地图</strong> 与 <strong>战场地图</strong> 有效，<strong>副本</strong> 与 <strong>地下城</strong> 无法获得加成</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1832" image-compress-type="1" class="original-size"> 额外生命增幅</td>
+<td style="text-align:right">3%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">2018年，<strong>额外生命</strong> 事件结束后，为每个账户提供7层奖励。</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1832" image-compress-type="1" class="original-size"> 额外生命增幅</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">2019年，<strong>额外生命</strong> 事件结束后，为每个账户提供10层奖励。</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1833" image-compress-type="1" class="original-size"> 公会经验获取</td>
+<td style="text-align:right">3 ~ 10%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71771"></span><span>公会经验获取</span>
+</span></td>
+<td style="text-align:left">公会酒保处免费提供，根据公会升级决定提供的百分比</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1834" image-compress-type="1" class="original-size"> 经验富集</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39330"></span><span>经验富集</span>
+</span></td>
+<td style="text-align:left">从各大主城的桂冠商人处，花费 10 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span> 购买，<br>安插于 <strong>升华</strong> 或 <strong>传奇</strong> 品质的项链上</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">业力增幅</h2>
+<ul>
+<li>不计算 <strong>账号加成</strong> 和 <strong>地图强化</strong>，最高可获得 140% 的业力增幅加成。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">Buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">持续时间</th>
+<th style="text-align:left">相关物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">账号加成</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1835" image-compress-type="1" class="original-size"> 账号加成</td>
+<td style="text-align:right">0 ~ 48%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">伴随 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="42"></span><span>成就点数</span>
+</span> 增加而逐步提升</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1836" image-compress-type="1" class="original-size"> 50% 业力增幅</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">1小时</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20001"></span><span>业力增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92195"></span><span>额外生命业力增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="41741"></span><span>分享型增幅篝火</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67393"></span><span>玉米糖大胃王</span>
+</span></td>
+<td style="text-align:left">从多个来源获得的效果可叠加持续时间。<br>玉米糖大胃王随机提供 15分钟的业力增幅。<br>业力增幅剂可以作为 38级的升级奖励获得。</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">公会加成</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1837" image-compress-type="1" class="original-size"> 公会业力增幅</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39700"></span><span>公会业力旗帜</span>
+</span></td>
+<td style="text-align:left">不与其他公会旗帜效果叠加</td>
+</tr>
+<tr>
+<td style="text-align:left">公会加成</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1837" image-compress-type="1" class="original-size"> 公会业力旗帜增幅</td>
+<td style="text-align:right">15%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39710"></span><span>公会业力与经验旗帜</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39706"></span><span>公会英雄旗帜</span>
+</span></td>
+<td style="text-align:left">不与其他公会旗帜效果叠加</td>
+</tr>
+<tr>
+<td style="text-align:left">公会加成</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1838" image-compress-type="1" class="original-size"> 灵魂旗帜增幅</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39710"></span><span>公会业力与经验旗帜</span>
+</span>、<span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39706"></span><span>公会英雄旗帜</span>
+</span></td>
+<td style="text-align:left">与其他公会旗帜效果叠加</td>
+</tr>
+<tr>
+<td style="text-align:left">公会加成</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1839" image-compress-type="1" class="original-size"> 公会业力增幅</td>
+<td style="text-align:right">3 ~ 10%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71894"></span><span>公会业力增幅</span>
+</span></td>
+<td style="text-align:left">公会酒保处免费提供，根据公会升级决定提供的百分比</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">富集</td>
+<td style="text-align:left">-</td>
+<td style="text-align:right">15%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39332"></span><span>业力富集</span>
+</span></td>
+<td style="text-align:left">从各大主城的桂冠商人处，花费 10 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span> 购买，<br>安插于 <strong>升华</strong> 或 <strong>传奇</strong> 品质的项链上</td>
+</tr>
+<tr>
+<td style="text-align:left">富集</td>
+<td style="text-align:left">-</td>
+<td style="text-align:right">15%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79926"></span><span>克丹温暖富集</span>
+</span></td>
+<td style="text-align:left">完成成就 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3239"></span><span>克达的祝福</span>
+</span> 获得，<br>安插于 <strong>升华</strong> 或 <strong>传奇</strong> 品质的项链上</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1840" image-compress-type="1" class="original-size"> 食物</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77643"></span><span>薄荷怪异莓棒</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77579"></span><span>热带薄荷蛋糕</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77630"></span><span>勺装薄荷果甜筒冰淇淋</span>
+</span>、<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79541"></span><span>碟装岛屿布丁</span>
+</span>、<span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="66961"></span><span>生日爆破枪</span>
+</span></td>
+<td style="text-align:left">同一时间只有一种食物可以生效</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1841" image-compress-type="1" class="original-size"> 通用效果</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77632"></span><span>薄荷保养油</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77569"></span><span>罐装水果蛋糕</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77567"></span><span>协调冰柱</span>
+</span></td>
+<td style="text-align:left">同一时间只有一种通用效果可以生效</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1836" image-compress-type="1" class="original-size"> 探险家的温暖</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">3小时</td>
+<td style="text-align:left">修会历史学家伊莉莎的篝火</td>
+<td style="text-align:left">帮助伊莉莎为篝火收集木材后获得，离开地图后消失。<br>buff 持续时间3小时，返回活跃的篝火附近时，将刷新持续时间。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1825" image-compress-type="1" class="original-size"> 许愿池的恩惠</td>
+<td style="text-align:right">2 ~ 10%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left">在 <strong>瓦比领域 - 塞伯辛花园</strong> 的许愿池丢入金币后有几率获得</td>
+<td style="text-align:left">最多可叠加5层（10%），离开 <strong>瓦比领域</strong> 后消失。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1842" image-compress-type="1" class="original-size"> 群众爱戴的骑手</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">15分钟</td>
+<td style="text-align:left">在 <strong>冬幕节</strong> 期间参加 <strong>神佑之城</strong> 的竞速比赛获得</td>
+<td style="text-align:left">离开 <strong>神佑之城</strong> 后消失。</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1843" image-compress-type="1" class="original-size"> 拐杖糖</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">1 ~ 30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77651"></span><span>拐杖糖</span>
+</span></td>
+<td style="text-align:left">每使用一次叠加 1分钟，最多可堆叠 30分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1844" image-compress-type="1" class="original-size"> 冬日祝福</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">1小时</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77656"></span><span>冬日祝福</span>
+</span></td>
+<td style="text-align:left">在 <strong>冬幕节</strong> 活动期间，完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2789"></span><span>捐赠冲动</span>
+</span>获得。<br>每日限完成一次，可重复。</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1845" image-compress-type="1" class="original-size"> 志愿者祝福</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">10分钟</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">活动期间登录游戏后自动获得</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">最大宝物寻获率提升</h2>
+<ul>
+<li><strong>宝物寻获率</strong> 是角色属性，用于增加击杀敌人后获取战利品的机会。除极个别的个例以外，它不会影响各类战利品包（包括首领战利品包）、宝箱、大型事件奖励（包括世界BOSS奖励）。</li>
+<li>不计算通过 <strong>账号加成</strong> 的宝物寻获率，理论可获得最高 465% 的提升。</li>
+<li>根据玩家实测显示（详见：<a href="javascript:window.open('https://en-forum.guildwars2.com/discussion/35063/research-drop-rates-of-materials-from-foes-and-influence-of-magic-find');" target="_blank" rel="nofollow noopener noreferrer">敌人材料掉落与寻宝率的影响</a>），只有寻宝率达到 1000%时，才能使宝物获得概率翻倍。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">Buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">持续时间</th>
+<th style="text-align:left">相关物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">账号加成</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1846" image-compress-type="1" class="original-size"> 幸运精华</td>
+<td style="text-align:right">0 ~ 300%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45175"></span><span>幸运精华</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45176"></span><span>幸运精华</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45177"></span><span>幸运精华</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45178"></span><span>幸运精华</span>
+</span></td>
+<td style="text-align:left">拆解优质（蓝装）以上装备 或 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> 获得</td>
+</tr>
+<tr>
+<td style="text-align:left">账号加成</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1846" image-compress-type="1" class="original-size"> 成就奖励</td>
+<td style="text-align:right">0 ~ 24%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left">伴随 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="42"></span><span>成就点数</span>
+</span> 增加而逐步提升</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1847" image-compress-type="1" class="original-size"> 宝物寻获率提升</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">1小时</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="41741"></span><span>分享型增幅篝火</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20006"></span><span>宝物寻获率增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9251"></span><span>附魔奖励增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="42876"></span><span>龙福烟花</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1847" image-compress-type="1" class="original-size"> 物品增幅剂</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">1 ~ 2小时</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20003"></span><span>物品增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20005"></span><span>英雄增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9251"></span><span>附魔奖励增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67393"></span><span>玉米糖大胃王</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1848" image-compress-type="1" class="original-size"> 30% 宝物寻获率提升</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:left">1小时</td>
+<td style="text-align:left">桂冠宝物寻获率增幅剂</td>
+<td style="text-align:left">2015年9月15日更新后，已绝版</td>
+</tr>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1849" image-compress-type="1" class="original-size"> 欢庆加成</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left">1天 或 1小时30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45003"></span><span>生日增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67836"></span><span>庆典增幅剂</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1850" image-compress-type="1" class="original-size"> 黑狮增幅剂</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="82060"></span><span>黑狮增幅剂</span>
+</span></td>
+<td style="text-align:left">双击 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span> 兑换</td>
+</tr>
+<tr>
+<td style="text-align:left">公会</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1851" image-compress-type="1" class="original-size"> 公会宝物寻获</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72371"></span><span>公会宝物寻获</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1852" image-compress-type="1" class="original-size"> 公会宝物寻获旗帜</td>
+<td style="text-align:right">15%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39701"></span><span>公会宝物寻获旗帜</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39706"></span><span>公会英雄旗帜</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1853" image-compress-type="1" class="original-size"> 灵魂旗帜增幅</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91146"></span><span>灵魂旗帜</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">富集</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1854" image-compress-type="1" class="original-size"> 魔法富集</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39333"></span><span>魔法富集</span>
+</span></td>
+<td style="text-align:left">从各大主城的桂冠商人处，花费 20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span> 购买，<br>安插于 <strong>升华</strong> 或 <strong>传奇</strong> 品质的项链上</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1855" image-compress-type="1" class="original-size"> 新年礼物</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77750"></span><span>幸运龙蜥尾巴</span>
+ </span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77686"></span><span>幸运公会烟花</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77699"></span><span>春节烟花</span>
+</span>、<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77747"></span><span>幸运绚烂火箭</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77692"></span><span>大型猴年烟花</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68626"></span><span>大型羊年烟花</span>
+</span>、<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80080"></span><span>雄鸡烟花面罩</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86964"></span><span>大型狗年烟花</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90011"></span><span>大型猪年烟花</span>
+</span></td>
+<td style="text-align:left">每次使用持续时间叠加 5分钟，最高可堆叠至 2小时</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left">食物</td>
+<td style="text-align:right">40%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12453"></span><span>巧克力怪异莓奶油</span>
+</span></td>
+<td style="text-align:left">可拍卖行购买，400级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span> 探索解锁：<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12229"></span><span>巧克力棒</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12137"></span><span>杯装奶香黄油</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12155"></span><span>袋装白糖</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12128"></span><span>怪异莓</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left">通用效果</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67371"></span><span>小瓶装南瓜油</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67367"></span><span>块状晶化牛轧糖</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67368"></span><span>锐磨颅骨</span>
+</span></td>
+<td style="text-align:left">可拍卖行购买，主要通过万圣节 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36038"></span><span>捣蛋包</span>
+</span> 开出</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">其他宝物寻获率提升</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">Buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">持续时间</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">世界之战</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1856" image-compress-type="1" class="original-size"> 领地光环8：宝物寻获率</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">具有 <strong>领地光环8：宝物寻获率</strong> 的公会宣夺目标后，在所属区域内活动时获得</td>
+</tr>
+<tr>
+<td style="text-align:left">世界之战</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1857" image-compress-type="1" class="original-size"> 寡不敌众</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">仅当在永恒战场、边境之地、黑曜石庇护所、迷雾边界敌方兵力远高于我方时自动触发，<br>将持续保持到下次 5分钟间隔结算后，才再次判定是否符合要求。<br>获得该 buff 后切换战场地图，将导致 buff 丢失。</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1858" image-compress-type="1" class="original-size"> 废物英雄</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">离开地图消失</td>
+<td style="text-align:left">击败 <strong>白银荒地</strong> 的 <strong>墨德摩暴怒藤</strong> 获得，离开 <strong>白银荒地</strong> 后消失。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1830" image-compress-type="1" class="original-size"> 毅力</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:left">1小时</td>
+<td style="text-align:left">进入 <strong>白银荒地</strong> 时获得一层。在 <strong>白银荒地</strong> 每完成一个事件可堆叠一层，最多5层（+150%）。<br>打开 <strong>遗失的强盗宝箱</strong> 可获得翻倍金币奖励。离开 <strong>白银荒地</strong> 后消失。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1830" image-compress-type="1" class="original-size"> 毅力</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">2小时</td>
+<td style="text-align:left">完成 <strong>余烬海湾</strong> 爱心任务后获得，仅在 <strong>余烬海湾</strong> 享受经验加成，最多可堆叠5层（+125%）。离开 <strong>余烬海湾</strong> 后消失。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1859" image-compress-type="1" class="original-size"> 国王的运气</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">2小时</td>
+<td style="text-align:left">完成 <strong>海妖平台</strong> 大型地图事件 <strong>欧尔神殿能量网</strong> 后获得，每完成一个子事件可堆叠一层。<br>仅在 <strong>海妖平台</strong> 享受经验加成，离开 <strong>海妖平台</strong> 后消失。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1847" image-compress-type="1" class="original-size"> 探险家的光芒</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">3小时</td>
+<td style="text-align:left">帮助 <strong>修会历史学家伊莉莎</strong> 为篝火收集木材后获得，离开地图后消失。<br>buff 持续时间3小时，返回活跃的篝火附近时，将刷新持续时间。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1860" image-compress-type="1" class="original-size"> 许愿池的恩惠</td>
+<td style="text-align:right">6%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left">在 <strong>瓦比领域 - 塞伯辛花园</strong> 的许愿池丢入金币后有几率获得，最多可叠加5层（30%）。<br>离开 <strong>瓦比领域</strong> 后消失。</td>
+</tr>
+<tr>
+<td style="text-align:left">地图强化</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1860" image-compress-type="1" class="original-size"> 王牌骑手</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">15分钟</td>
+<td style="text-align:left">通过 <strong>万圣节</strong>、<strong>农历新年</strong>、<strong>四风节</strong> 的竞速事件获得。离开地图后消失。</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1861" image-compress-type="1" class="original-size"> 迷雾呼唤</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left">活动期间获得</td>
+<td style="text-align:left">在团队活动中获得PvP奖励，适用于 <strong>迷雾之心</strong> 中的任何PvP模式的匹配</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1862" image-compress-type="1" class="original-size"> 战争呼唤</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">活动期间获得</td>
+<td style="text-align:left">活动期间在WvW中获得奖励</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1861" image-compress-type="1" class="original-size"> 大型迷雾呼唤</td>
+<td style="text-align:right">200%</td>
+<td style="text-align:left">活动期间获得</td>
+<td style="text-align:left">在 <strong>国际锦标赛</strong> 期间获得PvP奖励，适用于 <strong>迷雾之心</strong> 中的任何PvP模式的匹配</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1862" image-compress-type="1" class="original-size"> 迷雾召唤</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">活动期间获得</td>
+<td style="text-align:left">适用于WvW特殊活动期间的所有事件，仅限WvW活动</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1863" image-compress-type="1" class="original-size"> 家的记忆</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">2小时</td>
+<td style="text-align:left">农历新年期间登录游戏后获得</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1862" image-compress-type="1" class="original-size"> 额外生命增幅</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">活动期间获得</td>
+<td style="text-align:left">2018年，<strong>额外生命</strong> 事件结束后，为每个账户提供7层奖励。</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1862" image-compress-type="1" class="original-size"> 额外生命增幅</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">活动期间获得</td>
+<td style="text-align:left">2019年，<strong>额外生命</strong> 事件结束后，为每个账户提供10层奖励。</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1862" image-compress-type="1" class="original-size"> 活动奖励</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">活动期间获得</td>
+<td style="text-align:left">在 <strong>迎接回归</strong> 的活动中，为账号下的全部角色提供。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">制作暴击率提升</h2>
+<ul>
+<li><strong>副职业</strong> 升级过程中，触发 <strong>制作暴击</strong> 可额外获得 50% 的副职业经验。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">暴击率提升</th>
+<th style="text-align:left">获取方法</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left">50%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20008"></span><span>制作增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20005"></span><span>英雄增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70237"></span><span>物品增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9251"></span><span>附魔奖励增幅剂</span>
+</span></td>
+<td style="text-align:left">效果不重复叠加，仅使用一个即可</td>
+</tr>
+<tr>
+<td style="text-align:left">公会强化</td>
+<td style="text-align:left">6 ~ 20%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76475"></span><span>公会制作增幅</span>
+</span></td>
+<td style="text-align:left">公会酒保处免费提供，根据公会升级决定提供的百分比</td>
+</tr>
+<tr>
+<td style="text-align:left">专精</td>
+<td style="text-align:left">10%</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="54"></span><span>契约团指挥官：连续生产</span>
+</span></td>
+<td style="text-align:left">基于专精等级</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">世界之战奖励分支增幅</h2>
+<ul>
+<li>使用下列分支增幅后，世界之战地图最高每 5分钟可获得 439分支奖励点，迷雾边界地图最高每 5分钟可获得 329分支奖励点。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">Buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">持续时间</th>
+<th style="text-align:left">相关物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="494" image-compress-type="1" class="original-size"> 经验增幅剂</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">30分钟 或 2小时</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70235"></span><span>经验增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20005"></span><span>英雄增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67393"></span><span>玉米糖大胃王</span>
+</span></td>
+<td style="text-align:left">双击 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span> 兑换，持续时间可叠加</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="496" image-compress-type="1" class="original-size"> 欢庆加成</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">1小时 或 24小时</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45003"></span><span>生日增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67836"></span><span>庆典增幅剂</span>
+</span></td>
+<td style="text-align:left">持续时间可堆叠</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="549" image-compress-type="1" class="original-size"> 黑狮增幅剂</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="82060"></span><span>黑狮增幅剂</span>
+</span></td>
+<td style="text-align:left">持续时间可叠加</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="550" image-compress-type="1" class="original-size"> 冬幕节增幅剂</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">15分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92553"></span><span>雪花吞食者的祝福</span>
+</span></td>
+<td style="text-align:left">持续时间可堆叠至 24小时，<br>黑狮商城购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92585"></span><span>雪花吞食者</span>
+</span>，双击消耗 5 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> 随机提供</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="551" image-compress-type="1" class="original-size"> 公会世界之战奖励分支增幅</td>
+<td style="text-align:right">4% ~ 10%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78979"></span><span>公会世界之战奖励分支增幅</span>
+</span></td>
+<td style="text-align:left">公会酒保处免费提供，根据公会升级决定提供的百分比</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">灌注</td>
+<td style="text-align:left"><img class="gw2-image" image-id="552" image-compress-type="1" class="original-size"> 世界之战奖励富集</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87398"></span><span>世界之战奖励富集</span>
+</span></td>
+<td style="text-align:left">花费 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span>，125 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span> 从战场桂冠商人处购买，<br>安插在升华 或 传奇项链上</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="500" image-compress-type="1" class="original-size"> 征战号角</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅在活动期间参与 <strong>世界之战</strong> 有效，<strong>迷雾之地</strong> 地图除外</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-6" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">世界之战经验增幅</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">Buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">相关物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="494" image-compress-type="1" class="original-size"> 经验增幅剂</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70235"></span><span>经验增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20005"></span><span>英雄增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67393"></span><span>玉米糖大胃王</span>
+</span></td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="495" image-compress-type="1" class="original-size"> 50％WvW经验奖励</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45057"></span><span>世界之战经验增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43485"></span><span>迷你世界之战经验增幅剂</span>
+</span></td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="496" image-compress-type="1" class="original-size"> 欢庆加成</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45003"></span><span>生日增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67836"></span><span>庆典增幅剂</span>
+</span></td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="497" image-compress-type="1" class="original-size"> 升华食物</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">各类升华食物</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">地图机制</td>
+<td style="text-align:left"><img class="gw2-image" image-id="498" image-compress-type="1" class="original-size"> 领地光环2：世界之战经验（或更高）</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">领地光环</td>
+<td style="text-align:left">具有 <strong>领地光环2：世界之战经验</strong> 的公会宣夺目标后，在所属区域内活动时获得</td>
+</tr>
+<tr>
+<td style="text-align:left">地图机制</td>
+<td style="text-align:left"><img class="gw2-image" image-id="499" image-compress-type="1" class="original-size"> 寡不敌众</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅当在永恒战场、边境之地、黑曜石庇护所、迷雾边界敌方兵力远高于我方时自动触发，<br>将持续保持到下次 5分钟间隔结算后，才再次判定是否符合要求。<br>获得该 buff 后切换战场地图，将导致 buff 丢失。</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="498" image-compress-type="1" class="original-size"> 周末奖励</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅在 <strong>开放世界地图</strong> 与 <strong>战场地图</strong> 有效</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="500" image-compress-type="1" class="original-size"> 征战号角</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅在活动期间参与 <strong>世界之战</strong> 有效，<strong>迷雾之地</strong> 地图除外</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="500" image-compress-type="1" class="original-size"> 迷雾之战召唤</td>
+<td style="text-align:right">15%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅在活动期间参与 <strong>世界之战</strong> 有效，<strong>迷雾之地</strong> 地图除外</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="501" image-compress-type="1" class="original-size"> 公会世界之战经验获得</td>
+<td style="text-align:right">3 ~ 10％</td>
+<td style="text-align:left">公会世界之战经验获得</td>
+<td style="text-align:left">公会大厅内，酒保处购买，基于公会强化的等级决定增加幅度</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="502" image-compress-type="1" class="original-size"> 世界之战经验富集</td>
+<td style="text-align:right">10％</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87417"></span><span>世界之战经验富集</span>
+</span></td>
+<td style="text-align:left">在战场内的桂冠商人处花费 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span>、125 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span> 购买，<br>安插于 <strong>升华</strong> 或 <strong>传奇</strong> 品质的项链上</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="503" image-compress-type="1" class="original-size"> 石牦牛祝福</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">石牦牛比赛雕像</td>
+<td style="text-align:left">与庇护所内的石牦牛雕像互动获得，每个账号仅限获取一次</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-7" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">移速加成</h2>
+<ul>
+<li><strong>移动速度</strong> 的封顶值为 400 单位 / 秒。在非战斗状态下，你需要有 36% 以上的移速加成才能达到这一速度，而战斗状态下，需要有 90% 以上的移速加成才能达到这一速度。</li>
+<li>同一时间，只有一种移速加成效果可以生效。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">buff</th>
+<th style="text-align:left">移速影响</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="112" image-compress-type="1" class="original-size"> 奔驰疾速</td>
+<td style="text-align:left">+100%</td>
+<td style="text-align:left">各类技能、特性、符文提供</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="113" image-compress-type="1" class="original-size"> 迷雾形态</td>
+<td style="text-align:left">+66%</td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5554"></span><span>迷雾形态</span>
+</span>（<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="1"></span><span>元素使</span>
+</span>）</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="114" image-compress-type="1" class="original-size"> 编织空气</td>
+<td style="text-align:left">+50%</td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43638"></span><span>自我编织</span>
+</span>（<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span>）</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="115" image-compress-type="1" class="original-size"> 极速菇</td>
+<td style="text-align:left">+40%</td>
+<td style="text-align:left">通过触碰 <strong>极速菇</strong> 获得，需要 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="55"></span><span>决战迈古玛专精</span>
+</span>：精伊策尔蛙知识 - 极速菇。<br>该 BUFF 持续 20秒，不可堆叠持续时间，再次触碰 <strong>极速菇</strong> 会重置为 20秒持续时间。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="116" image-compress-type="1" class="original-size"> 元素祝福</td>
+<td style="text-align:left">+40%</td>
+<td style="text-align:left"><strong>世界之战 - 沙漠边境之地</strong> 地图中的 <strong>元素祭坛</strong> 互动获得。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="116" image-compress-type="1" class="original-size"> 火焰拥抱</td>
+<td style="text-align:left">+40%</td>
+<td style="text-align:left"><strong>世界之战 - 沙漠边境之地</strong> 地图中，所在阵营占领两座 <strong>元素祭坛</strong> 获得。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="117" image-compress-type="1" class="original-size"> 迅捷</td>
+<td style="text-align:left">+33%</td>
+<td style="text-align:left">各类技能、特性、符文提供</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="118" image-compress-type="1" class="original-size"> 契约团领袖</td>
+<td style="text-align:left">+5%（I）<br>+15%（II）<br>+33%（III）</td>
+<td style="text-align:left">需要 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="54"></span><span>泰瑞亚中心专精</span>
+</span>：契约团指挥官 - 契约团导师（I）、补给管理（II）、高级后勤（III）。<br>所在的队伍在城市中拥有永久迅捷奖励。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1864" image-compress-type="1" class="original-size"> 速度令状</td>
+<td style="text-align:left">+10% <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71928"></span><span>基础速度令状</span>
+</span><br>+15% <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74920"></span><span>专业速度令状</span>
+</span><br>+25% <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71691"></span><span>大师速度令状</span>
+</span></td>
+<td style="text-align:left">由 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="51"></span><span>抄写员</span>
+</span> 制作。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1865" image-compress-type="1" class="original-size"> 速度增幅剂</td>
+<td style="text-align:left">+15%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="8454"></span><span>速度增幅剂</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="119" image-compress-type="1" class="original-size"> 速度增益</td>
+<td style="text-align:left">+15%</td>
+<td style="text-align:left">从主城中的 <strong>速度增益</strong> NPC处获取，每次持续 5分钟。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="120" image-compress-type="1" class="original-size"> 升腾动能</td>
+<td style="text-align:left">+5%</td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1716"></span><span>升腾动能</span>
+</span>（ <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="19"></span><span>预告者</span>
+</span>），基于维持点出提供移速。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-8" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">采集率增幅</h2>
+<ul>
+<li>有多种方法可以增加采集额外资源的概率，有些增幅还能提供其他效果。</li>
+<li>主要分为两种采集加成：一种是额外采集几率，另一种是稀有采集几率。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">相关物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">额外采集</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1866" image-compress-type="1" class="original-size"> 采集增幅剂</td>
+<td style="text-align:right">33%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37214"></span><span>采集增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9251"></span><span>附魔奖励增幅剂</span>
+</span></td>
+<td style="text-align:left">采集后获得 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span>（可多次堆叠）</td>
+</tr>
+<tr>
+<td style="text-align:left">额外采集</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1867" image-compress-type="1" class="original-size"> 物品增幅剂</td>
+<td style="text-align:right">33%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70237"></span><span>物品增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20003"></span><span>物品增幅剂</span>
+</span>、<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20005"></span><span>英雄增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9251"></span><span>附魔奖励增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67393"></span><span>玉米糖大胃王</span>
+</span></td>
+<td style="text-align:left">采集后获得 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span>（可多次堆叠）</td>
+</tr>
+<tr>
+<td style="text-align:left">额外采集</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1868" image-compress-type="1" class="original-size"> 周末活动奖励</td>
+<td style="text-align:right">33%</td>
+<td style="text-align:left">活动期间自动获得</td>
+<td style="text-align:left">仅在 开放世界地图 与 战场地图 有效，副本 与 地下城 无法获得加成。</td>
+</tr>
+<tr>
+<td style="text-align:left">额外采集</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1869" image-compress-type="1" class="original-size"> 赏金雕文</td>
+<td style="text-align:right">33%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87455"></span><span>赏金采矿镐</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87406"></span><span>赏金伐木斧</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87472"></span><span>赏金收割镰</span>
+</span>、<br>其他安插 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87462"></span><span>赏金雕文</span>
+</span> 的采集工具</td>
+<td style="text-align:left">在采集工具安插雕文后获得，无次数限制</td>
+</tr>
+<tr>
+<td style="text-align:left">额外采集</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1870" image-compress-type="1" class="original-size"> 过载效果</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left">安插 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92953"></span><span>过载雕文</span>
+</span> 的采集工具</td>
+<td style="text-align:left">仅在采集完成时获得一次效果</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">稀有采集</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1871" image-compress-type="1" class="original-size"> 公会采集增幅</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39699"></span><span>公会采集旗帜</span>
+</span></td>
+<td style="text-align:left">不与其他公会旗帜效果叠加。</td>
+</tr>
+<tr>
+<td style="text-align:left">稀有采集</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1871" image-compress-type="1" class="original-size"> 公会采集旗帜增幅</td>
+<td style="text-align:right">15%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39707"></span><span>公会采集与迅捷旗帜</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39706"></span><span>公会英雄旗帜</span>
+</span></td>
+<td style="text-align:left">不与其他公会旗帜效果叠加。</td>
+</tr>
+<tr>
+<td style="text-align:left">稀有采集</td>
+<td style="text-align:left"><img class="gw2-image" image-id="1872" image-compress-type="1" class="original-size"> 公会采集增幅</td>
+<td style="text-align:right">6 ~ 20%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72641"></span><span>公会采集增幅</span>
+</span></td>
+<td style="text-align:left">与其他效果叠加。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>由于采集节点不可能只采集一次，如果某项加成拥有 33%的概率会触发，则采集这个节点时有接近 70%的概率至少触发一次。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-9" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">金币获取率</h2>
+<ul>
+<li>不计算通过 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="42"></span><span>成就点数</span>
+</span> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68111"></span><span>金币精华</span>
+</span> 获得的 <strong>金币寻获率</strong>，最高可堆叠至 210% 的加成。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">相关物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1873" image-compress-type="1" class="original-size"> 30%金币加成</td>
+<td style="text-align:right">30%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39111"></span><span>桂冠钱币增幅剂</span>
+</span></td>
+<td style="text-align:left">从各大主城桂冠商人处花费 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span> 购买</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1874" image-compress-type="1" class="original-size"> 欢庆加成</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45003"></span><span>生日增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67836"></span><span>庆典增幅剂</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1875" image-compress-type="1" class="original-size"> 公会金币旗帜增幅</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39709"></span><span>公会金币旗帜</span>
+</span></td>
+<td style="text-align:left">不与其他公会旗帜效果叠加</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1876" image-compress-type="1" class="original-size"> 公会金币旗帜增幅</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39708"></span><span>公会金币与宝物寻获旗帜</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39706"></span><span>公会英雄旗帜</span>
+</span></td>
+<td style="text-align:left">不与其他公会旗帜效果叠加</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1877" image-compress-type="1" class="original-size"> 灵魂旗帜增幅</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91146"></span><span>灵魂旗帜</span>
+</span></td>
+<td style="text-align:left">与其他公会旗帜效果叠加</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1878" image-compress-type="1" class="original-size"> 食物</td>
+<td style="text-align:right">40%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12452"></span><span>怪异莓棒</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77643"></span><span>薄荷怪异莓棒</span>
+</span></td>
+<td style="text-align:left">同一时间只有一种食物可以生效</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1879" image-compress-type="1" class="original-size"> 金晶富集</td>
+<td style="text-align:right">20%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39331"></span><span>金晶富集</span>
+</span></td>
+<td style="text-align:left">从各大主城的桂冠商人处，花费 20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span> 购买，<br>安插于 <strong>升华</strong> 或 <strong>传奇</strong> 品质的项链上</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1880" image-compress-type="1" class="original-size"> 金币精华</td>
+<td style="text-align:right">2%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68111"></span><span>金币精华</span>
+</span></td>
+<td style="text-align:left">完成 <a href="javascript:window.open('http://do.gw2.kongzhong.com/kungen/login');" target="_blank" rel="nofollow noopener noreferrer" target="_blank" rel="nofollow noopener noreferrer">鲲艮福利社</a> 每日签到从 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68326"></span><span>忠诚宝箱</span>
+</span> 获得，可重复获取。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="1881" image-compress-type="1" class="original-size"> 金币寻获率</td>
+<td style="text-align:right">~</td>
+<td style="text-align:left">成就奖励</td>
+<td style="text-align:left">伴随 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="42"></span><span>成就点数</span>
+</span> 增加而逐步提升金币寻获率。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

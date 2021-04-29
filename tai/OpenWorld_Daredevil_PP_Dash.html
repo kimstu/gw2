@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>直伤双枪独行侠 | 潜行者 | 职业配置 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg header-bg-build-Thief">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<div class="row page-titles bg-lg bg-lg-Thief m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="color-Thief pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">职业配置</li>
+<li class="breadcrumb-item active"><a href="javascript:window.open('https://www.gw2data.cn/build/Thief');" class="color-Thief pjax-link">潜行者</a></li>
+<li class="breadcrumb-item active"><span class="color-Thief">直伤双枪独行侠<span></span></span></li>
+</ol>
+<h2 class="page-title color-Thief m-t-15">
+<i class="profession-icon icon-profession icon-Daredevil"></i> . 独行侠 . Daredevil </h2>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title color-Thief m-t-20 m-b-20">
+直伤双枪独行侠 </h1>
+<div class="page-titles-details">
+
+<div class="view" title="编辑"><i class="mdi mdi-account-edit"></i>&nbsp;&nbsp;泰协内容维护小组</div>
+<div class="updatetime" title="最后更新"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2020.04.06</div>
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div>
+</div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30 p-b-10">
+<div class="card-text">
+<label class="label label-position bg-color-profession bg-color-Thief">萌新野外</label><label class="label label-position bg-color-profession bg-color-Thief">直伤</label><label class="label label-position bg-color-profession bg-color-Thief">打怪</label> </div>
+</div>
+<div class="card card-body m-t-30">
+<div class="row">
+<div class="col-lg-12 build-overview-wrap">
+<h3 class="card-title">概述</h3>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="15"></span><span>直伤双枪独行侠</span>
+</span> 是一套野外配置，它拥很高的远程伤害能力，不错的机动性，并能轻易的规避很多危险。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-box-shadow  m-t-30">
+<div class="card-body p-b-0">
+<h3 class="card-title">特性 与 技能</h3>
+<hr>
+<div class="tab-content br-n pn">
+<div id="traits-skills-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">特性
+<button type="button" id="trait_code_116_md" class="btn waves-effect waves-light btn-xs float-right d-md-none copy-build-code" data-clipboard-text="直伤双枪独行侠 通用 [&DQUjHywaByuUEgAAVwEAADMBAAAZAQAAnwEAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<button type="button" id="trait_code_116" class="btn waves-effect waves-light btn-xs float-right d-none d-md-inline-block copy-build-code" data-clipboard-text="[&DQUjHywaByuUEgAAVwEAADMBAAAZAQAAnwEAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<input type="text" value="[&DQUjHywaByuUEgAAVwEAADMBAAAZAQAAnwEAAAAAAAAAAAAAAAAAAAAAAAA=]" class="copy-build-code-text float-right" readonly="">
+</h4>
+</div>
+<div class="card-body">
+<div class="specializations-box">
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="35" gw2-specializations-traits="1268,1299,1904"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="44" gw2-specializations-traits="1252,1286,1187"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="7" gw2-specializations-traits="1949,1893,1964"></div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1702"></span><span>重生精准</span>
+</span>：暴击时提供小额治疗，使用该特性时，建议点出 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1163"></span><span>致命快感</span>
+</span>，以保持 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="5"></span><span>激怒</span>
+</span> 的覆盖。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1904"></span><span>越战越勇</span>
+</span>：如果不需要 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1702"></span><span>重生精准</span>
+</span> 的小额治疗，可以点出 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1904"></span><span>越战越勇</span>
+</span> 和 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1252"></span><span>敏捷爆发</span>
+</span>，以提升输出能力。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">技能</h4>
+</div>
+<div class="card-body">
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30400"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="13062"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="13046"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="13035"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="13085"></div>
+</div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<p>通用技能（可选）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13002"></span><span>暗影疾步</span>
+</span>：可用于解除昏迷 或 清除症状，是一个机动能力很强的技能。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13035"></span><span>先攻翻滚</span>
+</span>：另一个可用于解除昏迷的技能。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13065"></span><span>障眼烟幕</span>
+</span>：使敌人 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="20"></span><span>目盲</span>
+</span> 并格挡投射物。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30661"></span><span>强横防御</span>
+</span>→<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30519"></span><span>反身打击</span>
+</span>：短CD的解控技能，成功格挡可反控敌人。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13057"></span><span>绊索陷阱</span>
+</span>：一个强力的控制技能。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13117"></span><span>暗影庇护</span>
+</span>：获得 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="37"></span><span>潜行</span>
+</span>，可以利用隐身效果与周围有精英怪的 英雄点 或 专精点 交流，从而避免鏖战。</li>
+</ul>
+<hr>
+<p>精英技能（可选）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13082"></span><span>同仇敌忾</span>
+</span>：伤害能力更为出色。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13132"></span><span>石蜥毒液</span>
+</span>：一个强力的控制技能，附近有盟友时，施放该技能后他们也可获得技能效果。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-box-shadow  m-t-30">
+<div class="card-body p-b-0">
+<h3 class="card-title">装备 与 消耗品</h3>
+<hr>
+<ul class="nav nav-pills m-t-20 m-b-20">
+<li class="nav-item"> <a href="#gear-food-1" class="nav-link nav-link-Thief active" data-toggle="tab" aria-expanded="true">通用</a> </li>
+<li class="nav-item"> <a href="#gear-food-2" class="nav-link nav-link-Thief" data-toggle="tab" aria-expanded="false">极限输出</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="gear-food-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">装备说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<p>这套配装更容易与其他进阶配置的装备切换，推荐使用。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">武器</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Pistol_Ascended_1"></div>
+</div>
+<div class="build-info-right">
+ <div class="build-info-title color-Thief">狂战士 - 卓加 - 手枪 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24615"></div>
+</div>
+<div class="build-info-suffix-title">超级武勇法印</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Pistol_Ascended_1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 手枪 - 副手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24868"></div>
+</div>
+<div class="build-info-suffix-title">超级冲击法印</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<p>注意：</p>
+<ul>
+<li>将两把手枪分别放在两个武器组，战斗中切换武器可以获得先攻值。</li>
+<li>短弓：跑图时可以预备一把短弓，用于增加机动能力，并可利用组合技触发 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="37"></span><span>潜行</span>
+</span>。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">护甲</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Helm_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 头部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Shoulders_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 肩部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Coat_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 胸部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Gloves_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 手部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Leggings_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 腿部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Boots_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 足部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">背部 与 首饰</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Back_Ascended_1" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 背部</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Amulet_Ascended_1" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 项链</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_1_Left" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_1_Right" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_1_Left" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_1_Right" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">消耗品 与 灌注</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-food black-border" gw2-type="food" gw2-ids="12467"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">碟装松露牛排</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-utility black-border" gw2-type="utility" gw2-ids="9443"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">超级磨刀石</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">通用效果</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="gear-food-2" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">装备说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<p>这套配装是该配置的极限输出选择，但不容易与其他进阶配置的装备切换，如果你长期混迹于野外，可以考虑选用。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">武器</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Pistol_Ascended_3"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">刺客 - 索罗斯 - 手枪 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24575"></div>
+</div>
+<div class="build-info-suffix-title">超级嗜血法印</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Pistol_Ascended_3"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">刺客 - 索罗斯 - 手枪 - 副手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24618"></div>
+</div>
+<div class="build-info-suffix-title">超级精确法印</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">护甲</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Helm_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 头部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Shoulders_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 肩部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Coat_Ascended_3_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">刺客 - 萨菲尔 - 中甲 - 胸部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+ </div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Gloves_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 手部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Leggings_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 腿部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Boots_Ascended_1_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 卓加 - 中甲 - 足部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24836"></div>
+</div>
+<div class="build-info-suffix-title">超级学者符文</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">背部 与 首饰</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Back_Ascended_3" gw2-itemstats="3"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">刺客 - 背部</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Amulet_Ascended_3" gw2-itemstats="3"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">刺客 - 项链</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_1_Left" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_1_Right" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_1_Left" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_1_Right" gw2-itemstats="1"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">狂战士 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">消耗品 与 灌注</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-food black-border" gw2-type="food" gw2-ids="12467"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">碟装松露牛排</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-utility black-border" gw2-type="utility" gw2-ids="9443"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Thief">超级磨刀石</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">通用效果</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-box-shadow  m-t-30">
+<div class="card-body p-b-0">
+<h3 class="card-title">配置说明</h3>
+<hr>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">技能使用</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><p>输出技能：</p>
+<ul>
+<li>使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13011"></span><span>弹幕倾泻</span>
+</span> 与普攻可以轻易将普通小怪杀死，并确保打满8次射击，以便返还先攻值。</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13014"></span><span>顺手牵羊</span>
+</span> 以及使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13035"></span><span>先攻翻滚</span>
+</span> 都可以获得先攻值。</li>
+<li>先攻值不足时，使用普攻填充先攻值，然后再使用技能。</li>
+</ul>
+<hr>
+<p>防御技能：</p>
+<ul>
+<li>使用手枪进行移动攻击并风筝敌人，尽可能避免近身作战。</li>
+<li>如果被多名敌人围攻，施放 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13113"></span><span>火药喷射</span>
+</span> 或 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13065"></span><span>障眼烟幕</span>
+</span> 对他们施加 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="20"></span><span>目盲</span>
+</span>。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13012"></span><span>爆头射击</span>
+</span> 是一个没有冷却时间的晕眩技能，可以用于中断敌人的技能施放。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13085"></span><span>匕首风暴</span>
+</span> 可以在制造伤害的同时，反射投射物很长时间。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13065"></span><span>障眼烟幕</span>
+</span> 可以格挡投射物。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13035"></span><span>先攻翻滚</span>
+</span> 解除昏迷，清除移动限制类症状，并向身后闪避。</li>
+<li>尽可能使用闪避躲避敌人的攻击。</li>
+</ul>
+<hr>
+<p>机动性：</p>
+<ul>
+<li>在野外，高机动性往往意味着快速脱战，重新集结。在个人史诗中，高机动性也是一个巨大的优势。</li>
+<li>使用 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="44"></span><span>闪避</span>
+</span> 时触发 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1964"></span><span>神行无阻</span>
+</span>，将演变为远距离冲刺，并获得 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span> 增加33%的移动速度。</li>
+<li>你可以在 6秒内使用全部的可用冲刺，位移超过 3150码的距离。先施放 3次冲刺，接着使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30400"></span><span>活力引导</span>
+</span>，再施放 2次冲刺，然后使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13062"></span><span>敏捷纹章</span>
+</span>，再施放 2次冲刺。在个人史诗中，穿插使用这样的位移连招，以确保获得高额的机动能力。</li>
+<li>如果使用特性 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1187"></span><span>快速切换</span>
+</span>（其他两个特性有伤害效果），则可在 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13014"></span><span>顺手牵羊</span>
+</span> 敌人或中立怪物时，快速位移 1200码的距离并且不会进入战斗。</li>
+<li>可以使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13002"></span><span>暗影疾步</span>
+</span> 替换 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13046"></span><span>刺客纹章</span>
+</span> 以获得额外的移动能力。或者，你可以使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13025"></span><span>渗透暗箭</span>
+</span> 消耗先攻值获得位移。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13035"></span><span>先攻翻滚</span>
+</span> 可以作为一个重新找位置输出的技能，这个技能囊括 闪避、解除昏迷、清症、恢复先攻值 等多种功能。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Thief">
+<h4 class="m-b-0 text-white">说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content"><p>常规：</p>
+<ul>
+<li>可以根据个人喜好进行设置：<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13011"></span><span>弹幕倾泻</span>
+</span> 是你单体输出最高的技能，8次射击都命中敌人将返还先攻值。从设置选项中，勾选 “常规选项 - 战斗/移动 - 自动选择目标”，避免敌人残血不能打满8次，确保可以将剩余弹药打在其附近的敌人身上，并返还先攻值。</li>
+<li>个别情况下，你需要设置 “禁用自动选择目标”，比如空放 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13014"></span><span>顺手牵羊</span>
+</span> 用于触发 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1163"></span><span>致命快感</span>
+</span>，或 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13113"></span><span>火药喷射</span>
+</span> 与其他技能触发组合技获得 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="37"></span><span>潜行</span>
+</span>。</li>
+</ul>
+</li>
+<li>当你利用技能或特性恢复先攻值时，尽可能不要让先攻值封顶，避免浪费其持续性的恢复。</li>
+</ul>
+<hr>
+<p>潜行：</p>
+<ul>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="37"></span><span>潜行</span>
+</span> 是 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="5"></span><span>潜行者</span>
+</span> 非常有用的一项特殊能力，使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13117"></span><span>暗影庇护</span>
+</span> 获得 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="37"></span><span>潜行</span>
+</span> 可以更方便的与 英雄点 或 专精点 进行交流。</li>
+<li>如果 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13117"></span><span>暗影庇护</span>
+</span> 的隐身时间依然不够用，可以装备短弓，对 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13065"></span><span>障眼烟幕</span>
+ </span> 的烟雾区域施放 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13041"></span><span>集束炸弹</span>
+</span>，通过触发组合技获得长时间的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="37"></span><span>潜行</span>
+</span>。</li>
+</ul>
+<hr>
+<p>控制技能（破蔑视）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13012"></span><span>爆头射击</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13057"></span><span>绊索陷阱</span>
+</span> / <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41205"></span><span>束缚暗影</span>
+</span> / <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="46335"></span><span>暗影疾风</span>
+</span> / <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13132"></span><span>石蜥毒液</span>
+</span>（如果携带）</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function() {
+    $(".copy-build-code").click(function(){
+        if( $(this).attr('data-clipboard-text') == "" ){
+            layer.msg('未添加模板代码！', {time: 1500, icon: 0});
+        }
+        else{
+            var clipboard = new ClipboardJS( "#" + $(this).attr('id') );
+            clipboard.on('success', function(e) {
+                e.clearSelection();
+                layer.msg('复制成功！', {time: 1000, icon: 1});
+                clipboard.destroy();
+            });
+            clipboard.on('error', function(e) {
+                layer.msg('复制失败，请使用 Ctrl + C 手动复制！', {time: 1500, icon: 2});
+            });
+        }
+    });
+
+    eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('6(5.8.7!=\'2.1.4\'){$(\'.3-e-d-0\').g(\'\');$(\'f a\').9(\'c-b-0\',\'\')}',17,17,'text|gw2data|www|copy|cn|window|if|host|location|attr|button|clipboard|data|code|build|h4|val'.split('|'),0,{}))
+
+
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

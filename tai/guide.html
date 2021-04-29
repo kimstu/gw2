@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>副职业升级必读 | 副职业升级 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/crafting_bg.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/crafting_bg.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #c5433b !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #c5433b !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">副职业升级</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">副职业升级必读<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+副职业升级必读 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;暴君之刃</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2019.10.24</div>
+
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div> </div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li><strong>大师级副职业训练师</strong> 各大主城均有，通过与他们对话来解锁学习相应的副职业。</li>
+<li>不同于大多数游戏，激战2 的副职业升级主要通过从制作台 <strong>探索配方</strong> 来获取经验。</li>
+<li><strong>探索</strong> 是在制作台左边第一栏，类似于铁毡的图标，可以把数个可能构成新配方的素材放在一起进行探索，可以直接解锁新的配方，获得的经验量多，每个配方只允许探索一次，且账号共享。</li>
+<li><strong>制作</strong> 是在制作台左边第二栏，类似于铁锤的图标，可以根据你当前掌握了的配方进行制作，右边部分材料可以直接右键购买，下面的数量可以根据自己需求自行更改制作多少。</li>
+<li>推荐在 <strong>狮子拱门 [&amp;BBAEAAA=]</strong> 或 <strong>拉塔索姆 [&amp;BLYEAAA=]</strong> 进行升级，因为制作台距离拍卖行比较近。</li>
+<li>注意！当前版本 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="49"></span><span>珠宝匠</span>
+</span> 无法制作升华品质的首饰。首饰的获取来源请查看：<a href="ascended_equipment.html" class="pjax-link">升华装备获取</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">副职业种类</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">制作台</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">副职业经验获取</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">制作暴击率提升</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">角色经验获取</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-6" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">原材料</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-7" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">配方获取</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<ul>
+<li>通过与 主城 或 初级地图 中的副职业制作师对话，花费 10 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span><span>铜币</span>
+</span> 来学习新的副职业。</li>
+<li>每个角色可学习的副职业种数没有限制，但同一时间只能激活两种副职业（购买 <strong>制作专业证书</strong> 可以增加到四个），多个副职业可通过大师级制作师进行切换，每次需花费 50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span><span>银币</span>
+</span>。</li>
+<li>如果你需要多种副职业，建议使用多个角色学习。</li>
+</ul>
+<hr>
+<ul>
+<li>以下列出每个副职业的主要制作物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">副职业</th>
+<th style="text-align:left">最高等级</th>
+<th style="text-align:left">装备</th>
+<th style="text-align:left">升级组件</th>
+<th style="text-align:left">其他</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span></td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">染料、食物</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="49"></span><span>珠宝匠</span>
+</span></td>
+<td style="text-align:left">400</td>
+<td style="text-align:left">戒指、耳环、项链</td>
+<td style="text-align:left">珠宝</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="53"></span><span>武器锻造师</span>
+</span></td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">巨剑、单手剑、巨锤、匕首、斧、钉锤、长矛、盾牌</td>
+<td style="text-align:left">法印</td>
+<td style="text-align:left">磨刀石</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span></td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">重甲护甲</td>
+<td style="text-align:left">符文</td>
+<td style="text-align:left">金属盒</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span></td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">步枪、手枪、战号、火炬、短弓、长弓、鱼叉枪</td>
+<td style="text-align:left">法印</td>
+<td style="text-align:left">保养油</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span></td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">中甲护甲</td>
+<td style="text-align:left">符文</td>
+<td style="text-align:left">皮质背包</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="46"></span><span>工艺制作师</span>
+</span></td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">法杖、节杖、聚能器、三叉戟</td>
+<td style="text-align:left">法印</td>
+<td style="text-align:left">聚能水晶</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span></td>
+<td style="text-align:left">500</td>
+<td style="text-align:left">轻甲护甲</td>
+<td style="text-align:left">符文</td>
+<td style="text-align:left">布质背包</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="51"></span><span>抄写员</span>
+</span></td>
+<td style="text-align:left">400</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">法印</td>
+<td style="text-align:left">公会物品，消耗品</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>每个副职业还可以制作与他们相对应的背部。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<ul>
+<li>每个主城都有与副职业对应的制作台，打开地图（M），通过勾选左下角的 <strong>制作</strong>，即可从地图上查看主城中制作台的位置。<strong>抄写员制作台</strong> 位于公会大厅内。</li>
+<li>每个制作台左上角都包含五个选项：</li>
+</ul>
+<p><img class="gw2-image" image-id="713" image-compress-type="0" alt=""></p>
+<ul>
+<li><strong>探索</strong>：通过原材料组合探索物品配方，这是升级副职业的主要经验获取方式。</li>
+<li><strong>生产</strong>：将原材料通过已拥有的配方加工成物品。</li>
+<li><strong>银行</strong>：可以对银行存储进行直接访问。</li>
+<li><strong>材料存储空间</strong>：存储原材料，通过购买 <strong>存储空间扩展</strong>，可以提升存储堆叠上限。</li>
+<li><strong>衣柜存储空间</strong>：可以对衣柜存储进行直接访问。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">升级经验</h2>
+<ul>
+<li>除 <strong>珠宝匠</strong> 和 <strong>抄写员</strong> 最高等级为 400级 外，其他副职业的等级最高均为 500级。</li>
+<li>每提升 75级即可达到下一个配方等级，可以在低等级时获得高级的配方，但需要达到配方等级以上才能制作。</li>
+</ul>
+<hr>
+<ul>
+<li>副职业从 0级升至 1级需要 500经验，后续每升一级，将需要比前一级多 1%的经验，升级公式如下：</li>
+</ul>
+<blockquote>
+<p>升至 n 级所需经验 = ( n - 1 ) 级单级升级经验 × 101%<br>注意，这里每一级计算得到的结果都经过四舍五入，因此并不能粗略的计算为 500 × 1.01 ^ ( n - 1 )</p>
+</blockquote>
+<ul>
+<li>在 0~400 级时，将遵循该公式，401~500 每级所需经验为固定的 24,028 点。</li>
+<li>通过计算可以得知，0~400级共需要 2,396,677点经验，0~500级共需要 4,799,477 点经验。</li>
+</ul>
+<h2 id="-">制作经验</h2>
+<ul>
+<li>通过配方制作物品获得的副职业经验值，将根据以下公式计算：</li>
+</ul>
+<blockquote>
+<p>获得副职业经验 = 单级升级所需总经验 × 系数 × ( 1 - ( 当前等级 - 配方等级 ) / 等级范围 )</p>
+</blockquote>
+<ul>
+<li>其中，<strong>系数</strong> 和 <strong>等级范围</strong> 取决于制造物品所属的分类，具体如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">系数</th>
+<th style="text-align:left">有效等级范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">原材料加工，例如各种布卷、锭、皮革片、木板</td>
+<td style="text-align:left">0.3</td>
+<td style="text-align:left">25</td>
+</tr>
+<tr>
+<td style="text-align:left">制作组件，即合成成品的部件</td>
+<td style="text-align:left">0.6</td>
+<td style="text-align:left">25</td>
+</tr>
+<tr>
+<td style="text-align:left">成品 / 食物</td>
+<td style="text-align:left">1.4</td>
+<td style="text-align:left">40</td>
+</tr>
+<tr>
+<td style="text-align:left">特异装备</td>
+<td style="text-align:left">1.85</td>
+<td style="text-align:left">250</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>如果 <strong>副职业当前等级</strong> 高于 <strong>配方等级</strong> 与 <strong>有效等级范围</strong> 之和，则无法通过制作该配方来获取经验。</li>
+</ul>
+<h2 id="-">奖励经验</h2>
+<ul>
+<li>探索一个配方会获得 100 ~150% 的奖励经验。</li>
+<li>触发一次暴击可以获得 50% 的奖励经验。</li>
+<li>制作一个大师级（450级）以上的物品，可以获得 100% 的奖励经验，如果通过探索，则将共计获得 200% 的经验奖励。</li>
+<li>制作一个稀有品质以上的物品可以获得 225% 的经验，通过探索则获得 325% 的经验。</li>
+<li>制作特异物品不会有额外的经验奖励，仅能通过探索获得 200% 的经验。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">获取方法</th>
+<th style="text-align:left">暴击率提升</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20008"></span><span>制作增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20005"></span><span>英雄增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70237"></span><span>物品增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9251"></span><span>附魔奖励增幅剂</span>
+</span></td>
+<td style="text-align:left">50%</td>
+<td style="text-align:left">效果不重复叠加，仅使用一个即可</td>
+</tr>
+<tr>
+<td style="text-align:left">公会强化</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76475"></span><span>公会制作增幅</span>
+</span></td>
+<td style="text-align:left">6 ~ 20%</td>
+<td style="text-align:left">基于公会强化的等级</td>
+</tr>
+<tr>
+<td style="text-align:left">专精</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="54"></span><span>契约团指挥官：连续生产</span>
+</span></td>
+<td style="text-align:left">10%</td>
+<td style="text-align:left">基于专精等级</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<ul>
+<li>副职业在升级时，还会根据你当前的副职业等级给予角色百分比经验。具体公式如下：</li>
+</ul>
+<blockquote>
+<p>给予的角色经验值 = ( 当前副职业等级 / 100 ) * 角色当前等级最大经验值</p>
+</blockquote>
+<ul>
+<li>其中， ( 前副职业等级 / 100 ) 不足1时补全为1。</li>
+<li>通过计算可以得知，在 0~100 级时，副职业每升一级将给予角色 1％ 升一级所需的经验值，101~200是 2％，201-300是 3％，301-400是4％。</li>
+</ul>
+<hr>
+<ul>
+<li>因此，一个副职业升级到 400 级就可以使角色增加相当于 <strong>10级</strong> 的经验（经验值会四舍五入），400 ~ 500 增加相当于 <strong>5级</strong> 的经验。如果使用其他经验加成效果，将可以提升更多。</li>
+<li>不建议角色在 20级以下时使用副职业冲级升级，经验值在四舍五入后会丢失很多。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-6" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<ul>
+<li>通过采集、伐木、开各种包裹、分解物品 以及 完成任务，可以获得原材料。</li>
+<li>原材料分为不同的层级，高等级的地图可以获得更高层级的材料。</li>
+<li>通过开包裹获取的装备等级，与角色的等级有关，而装备的等级越高，分解获得的材料层级就越高。</li>
+<li>68级以上的装备，通过分解出的材料层级与物品品质有关。</li>
+</ul>
+<hr>
+<ul>
+<li>以下举例列出除 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span>、<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="51"></span><span>抄写员</span>
+</span> 以外的一些普通材料层级划分：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:left">布料</th>
+<th style="text-align:left">皮革</th>
+<th style="text-align:left">金属锭</th>
+<th style="text-align:left">木材</th>
+<th style="text-align:left">宝石</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T1</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19720"></span><span>黄麻布卷</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19738"></span><span>拉伸生皮皮革片</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19679"></span><span>青铜锭</span>
+</span>，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19680"></span><span>铜锭</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19710"></span><span>新生木板</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24464"></span><span>石榴卵石</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">T2</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19740"></span><span>羊毛布卷</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19733"></span><span>熟化薄皮皮革片</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19683"></span><span>铁锭</span>
+</span>，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19687"></span><span>银锭</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19713"></span><span>软芯木板</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24469"></span><span>红玉髓残片</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">T3</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19742"></span><span>棉布布卷</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19734"></span><span>熟化粗糙皮革片</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19688"></span><span>钢锭</span>
+</span>，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19682"></span><span>金锭</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19714"></span><span>风干木板</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24472"></span><span>红玉髓碎片</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">T4</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19744"></span><span>亚麻布卷</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19731"></span><span>熟化耐磨皮革片</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19681"></span><span>暗钢锭</span>
+</span>，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19686"></span><span>白金锭</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19711"></span><span>硬质木板</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24873"></span><span>红宝石碎块</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">T5</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19747"></span><span>丝绸布卷</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19735"></span><span>熟化厚实皮革片</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19684"></span><span>秘银锭</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19709"></span><span>上古木板</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24474"></span><span>红宝石晶体</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">T6</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19746"></span><span>薄纱布卷</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19737"></span><span>熟化硬质皮革片</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19685"></span><span>星陨锭</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19712"></span><span>远古木板</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24508"></span><span>红宝石宝珠</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">T7</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46741"></span><span>绸缎布卷</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46739"></span><span>伊伦娜皮革片</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span>，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46743"></span><span>桑莱电金锭</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46736"></span><span>灵木木板</span>
+</span></td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-7" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+ <div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<ul>
+<li><p>配方的解锁方式主要包含三类：</p>
+</li>
+<li><p><strong>自动解锁</strong>：在副职业升到指定等级后，自动解锁。</p>
+</li>
+<li><strong>探索解锁</strong>：大多数配方需要通过制作台探索获取。</li>
+<li><strong>图纸解锁</strong>：一些特定的配方图纸，需要使用代币进行购买获得。</li>
+</ul>
+<hr>
+<ul>
+<li>多个角色间 以及 不同副职业间 都可以共享一些配方（例如铭文、徽章的配方）。</li>
+<li>一些高等级的特殊配方将有每日制作次数限制，这些限制将在每天 早晨8点 进行重置。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

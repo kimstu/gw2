@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+ <li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+ 
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg header-bg-champions-2">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<div class="row page-titles bg-lg bg-lg-home bg-lg-champions-2 m-b-10 p-b-0 p-l-0 p-r-0">
+<div class="home-shadow"></div>
+<div class="home-banner-title">首领环伺 - 第二章 - 权力</div>
+<div class="home-banner-description">泰瑞亚正在发生的故事</div>
+<div class="home-banner-text">1月22日</div>
+</div>
+<div class="row home-banner">
+<div class="col-xl-8 col-lg-12 col-md-12 m-b-30">
+<div class="card  m-b-0">
+<div class="card-body p-b-0">
+<div class="row">
+<div class="col-xl-7 col-lg-7 col-md-12 m-b-15">
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<a href="javascript:window.open('http://gw2.kongzhong.com/act/2020/202007/newLead/');" target="_blank" rel="nofollow noopener noreferrer">
+<img src="static/picture/GW2-banner-01-2020.12.15.jpg" alt="从普通人到传奇英雄，开启你的传奇之旅">
+</a>
+</div>
+</div>
+
+<div class="swiper-pagination swiper-pagination-white"></div>
+
+<div class="swiper-button-prev swiper-button-white"></div>
+<div class="swiper-button-next swiper-button-white"></div>
+</div>
+
+<script>
+                        $(document).ready(function() {
+                            var swiper = new Swiper('.swiper-container', {
+                                autoplay: {
+                                    delay: 5000,
+                                    disableOnInteraction: false,
+                                },
+                                loop: true,
+                                pagination: {
+                                    el: '.swiper-container .swiper-pagination',
+                                    dynamicBullets: true,
+                                },
+                                navigation: {
+                                    nextEl: '.swiper-container .swiper-button-next',
+                                    prevEl: '.swiper-container .swiper-button-prev',
+                                },
+                                effect: 'fade',
+                            });
+                        });
+                        </script>
+</div>
+<div class="col-xl-5 col-lg-5 col-md-12 m-b-15">
+<div class="build-info-content">
+最新动态
+<hr>
+<ul>
+<li><a href="2021_01_17.html" target="_blank" rel="nofollow noopener noreferrer">关于近期网站运营的公告 及 问卷调查</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/av801141029');" target="_blank" rel="nofollow noopener noreferrer">2020-07 最新全职业DPS测试（搬运+自制补全）</a></li>
+<li>网页日常：<a href="javascript:window.open('http://gw2.kongzhong.com/commander/code/');" target="_blank" rel="nofollow noopener noreferrer">指挥官手册</a>，<a href="javascript:window.open('http://do.gw2.kongzhong.com/gw2task/login');" target="_blank" rel="nofollow noopener noreferrer">网页积分</a>，<a href="javascript:window.open('http://gw2.kongzhong.com/activity_center/');" target="_blank" rel="nofollow noopener noreferrer">活动中心</a></li>
+<li>WeGame账号：<a href="javascript:window.open('https://www.wegame.com.cn/store/2001206');" target="_blank" rel="nofollow noopener noreferrer">烈焰征途dlc</a></li>
+<li>空中网账号：<a href="javascript:window.open('http://k.kongzhong.com/');" target="_blank" rel="nofollow noopener noreferrer">口袋密令</a></li>
+<li>官网活动：<a href="javascript:window.open('http://gw2.kongzhong.com/act/2020/202007/coins/');" target="_blank" rel="nofollow noopener noreferrer">传奇硬币</a>，<a href="javascript:window.open('http://do.gw2.kongzhong.com/hlg/login');" target="_blank" rel="nofollow noopener noreferrer">惠乐购</a>，<a href="javascript:window.open('https://vipgame.kongzhong.com/swim.html');" target="_blank" rel="nofollow noopener noreferrer">大客户</a>，<a href="javascript:window.open('http://do.gw2.kongzhong.com/gw2xlg/login');" target="_blank" rel="nofollow noopener noreferrer">坐骑</a></li>
+<li>官网活动：<a href="javascript:window.open('http://do.gw2.kongzhong.com/onepercentmall/login');" target="_blank" rel="nofollow noopener noreferrer">一折</a>，<a href="javascript:window.open('http://do.gw2.kongzhong.com/drgo/login');" target="_blank" rel="nofollow noopener noreferrer">巨龙宝藏</a>，<a href="javascript:window.open('http://do.gw2.kongzhong.com/weeklysales/login');" target="_blank" rel="nofollow noopener noreferrer">女王宝库</a>，<a href="javascript:window.open('http://gw2.kongzhong.com/act/2016/august/blunta/');" target="_blank" rel="nofollow noopener noreferrer">首充</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-12 col-md-12 m-b-30">
+<div class="card m-b-0">
+<div class="card-body p-b-15">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="build-info-content">
+站点公告
+<hr>
+<ul>
+<li>风月（PvE）：<a target="_blank" href="javascript:window.open('https://space.bilibili.com/3350718');" rel="nofollow noopener noreferrer">Bilibili空间</a></li>
+<li>忆宇流云（PvP）：<a target="_blank" href="javascript:window.open('https://www.douyu.com/3454522');" rel="nofollow noopener noreferrer">斗鱼直播</a>，<a target="_blank" href="javascript:window.open('https://space.bilibili.com/1840130');" rel="nofollow noopener noreferrer">Bilibili空间</a></li>
+<li>激友群（1群）：<a href="javascript:window.open('https://shang.qq.com/wpa/qunwpa?idkey=5617b2581f8ba428c02ced1122ba959bb802b45f471595ed2dce3ab351974921');" target="_blank" rel="nofollow noopener noreferrer">304035847</a></li>
+<li>激友群（2群）：<a href="javascript:window.open('https://shang.qq.com/wpa/qunwpa?idkey=ac30c030b66d385fd87f3ff24a1d83df9b945cd8d5768b0a338303b67bac300b');" target="_blank" rel="nofollow noopener noreferrer">479132996</a></li>
+<li>激友群（3群）：<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=sqbsyFyG');" target="_blank" rel="nofollow noopener noreferrer">1126562619</a></li>
+<li>激友群（4群）：<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" rel="nofollow noopener noreferrer">1128662309</a></li>
+<li>副本进阶交流群：<a target="_blank" href="javascript:window.open('https://shang.qq.com/wpa/qunwpa?idkey=23c785398cc20d56e374b7218827db5ee330440a7c17a2562afd5b3b7d53482c');">923508924</a>（请勿发布代练信息）</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row m-t-20 p-b-30">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="home-title"><i class="mdi mdi-hexagon-multiple"></i> 配置 · Builds</div>
+<div class="bd-container m-t-20">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<a href="elementalist.html" class="pjax-link">
+<img src="static/picture/specsHoverElementalist.png" width="160" alt="元素使">
+<span class="color-Elementalist">元素使</span>
+<span class="color-Elementalist">Elementalist</span>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="warrior.html" class="pjax-link">
+<img src="static/picture/specsHoverWarrior.png" width="160" alt="战士">
+<span class="color-Warrior">战&nbsp;&nbsp;士</span>
+<span class="color-Warrior">Warrior</span>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="ranger.html" class="pjax-link">
+<img src="static/picture/specsHoverRanger.png" width="160" alt="游侠">
+<span class="color-Ranger">游&nbsp;&nbsp;侠</span>
+<span class="color-Ranger">Ranger</span>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="necromancer.html" class="pjax-link">
+<img src="static/picture/specsHoverNecro.png" width="160" alt="唤灵师">
+<span class="color-Necromancer">唤灵师</span>
+<span class="color-Necromancer">Necromancer</span>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="guardian.html" class="pjax-link">
+<img src="static/picture/specsHoverGuardian.png" width="160" alt="守护者">
+<span class="color-Guardian">守护者</span>
+<span class="color-Guardian">Guardian</span>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="thief.html" class="pjax-link">
+<img src="static/picture/specsHoverThief.png" width="160" alt="潜行者">
+<span class="color-Thief">潜行者</span>
+<span class="color-Thief">Thief</span>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="engineer.html" class="pjax-link">
+<img src="static/picture/specsHoverEngineer.png" width="160" alt="工程师">
+<span class="color-Engineer">工程师</span>
+<span class="color-Engineer">Engineer</span>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="mesmer.html" class="pjax-link">
+ <img src="static/picture/specsHoverMesmer.png" width="160" alt="幻术师">
+<span class="color-Mesmer">幻术师</span>
+<span class="color-Mesmer">Mesmer</span>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="revenant.html" class="pjax-link">
+<img src="static/picture/specsHoverRevenant.png" width="160" alt="魂武者">
+<span class="color-Revenant">魂武者</span>
+<span class="color-Revenant">Revenant</span>
+</a>
+</div>
+</div>
+</div>
+
+<script>
+        $(document).ready(function() {
+            var bd = new Swiper('.bd-container', {
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+            });
+        });
+        </script>
+</div>
+</div>
+<div class="row m-t-20 p-b-30">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="home-title"><i class="mdi mdi-apple-safari"></i> 工具 · Tools</div>
+<div class="card m-t-10 m-b-0">
+<div class="card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#tools-1" class="nav-link home-button-color active" data-toggle="tab" aria-expanded="true">地图与导航</a> </li>
+<li class="nav-item m-r-10"> <a href="#tools-2" class="nav-link home-button-color" data-toggle="tab" aria-expanded="false">数据库</a> </li>
+<li class="nav-item m-r-10"> <a href="#tools-3" class="nav-link home-button-color" data-toggle="tab" aria-expanded="false">副职业动态升级</a> </li>
+<li class="nav-item m-r-10"> <a href="#tools-4" class="nav-link home-button-color" data-toggle="tab" aria-expanded="false">游戏插件</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="tools-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="timer.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Mesmer">事件计时器</div>
+<p class="ribbon-content">泰瑞亚的大型地图事件，以时间轴的方式展示查看。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="npc.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Necromancer">常用NPC位置</div>
+<p class="ribbon-content">一些收藏成就的NPC位置，部分NPC需要解锁专精。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="guild_bounty.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Thief">公会任务：赏金</div>
+<p class="ribbon-content">公会成员要在限定时间内，找到并击败地图中的悬赏通缉犯。</p>
+</div>
+ </a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="guild_trek.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon ribbon-info">公会任务：跋涉</div>
+<p class="ribbon-content">公会成员要在限定时间内，找到泰瑞亚的几处随机地点。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<div class="ribbon-wrapper card">
+<a href="guild_race.html" class="pjax-link">
+<div class="ribbon bg-color-Warrior">公会任务：竞速</div>
+<p class="ribbon-content">公会成员要在限定时间内，穿越障碍，到达任务的终点线。</p>
+</a>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Revenant">神油离线地图</div>
+<p class="ribbon-content">采用 ArenaNet 官方API与地图贴图制作，帮助玩家解锁地图。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<div class="ribbon-wrapper card">
+<a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">
+<div class="ribbon bg-color-Ranger">富资源采集点</div>
+<p class="ribbon-content">GW2Timer.com 富资源采集点分布导航，支持多国语言。</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tools-2" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="item.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Guardian">物品数据库</div>
+<p class="ribbon-content">提供物品查询功能，包含配方、细节展示、wiki链接。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="equipment.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Ranger">装备数据库</div>
+<p class="ribbon-content">提供装备属性、配方的查询功能，方便快速制作。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="skin.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Engineer">皮肤数据库</div>
+<p class="ribbon-content">根据皮肤名称、类型反查询原装备，并提供wiki链接。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="recipe.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Mesmer">配方数据库</div>
+<p class="ribbon-content">查询物品配方，并连接物价数据库，进行物价排序。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="dye_kit.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Necromancer">染料包数据库</div>
+<p class="ribbon-content">染料包内包含的具体染料展示，支持染料集合查询。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="glyph.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Revenant">采集雕文数据库</div>
+<p class="ribbon-content">列出各种采集雕文的功能，并展示相关采集工具。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="bonus.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Warrior">加成效果数据</div>
+<p class="ribbon-content">各种加成效果的汇总，已绝版的消耗品不被列出。</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div id="tools-3" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="guide.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Guardian">副职业升级前必读</div>
+<p class="ribbon-content">这里列出 激战2副职业 的说明简介、与其他游戏的区别。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="chef.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Ranger">厨师（0 ~ 500）</div>
+<p class="ribbon-content">厨师主要制作各种染料、食物。厨师是副职业中升级成本最低的。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="weaponsmith.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Engineer">武器锻造师（0 ~ 500）</div>
+<p class="ribbon-content">武器锻造师主要制作各类金属武器。推荐战士、守护者、魂武者学习。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="armorsmith.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Mesmer">盔甲锻造师（0 ~ 500）</div>
+<p class="ribbon-content">盔甲锻造师主要制作各类重甲护甲。推荐战士、守护者、魂武者学习。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="artificer.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Necromancer">工艺制作师（0 ~ 500）</div>
+<p class="ribbon-content">工艺制作师主要制作各类魔法武器。推荐元素使、唤灵师、幻术师学习。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="tailor.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Revenant">裁缝（0 ~ 500）</div>
+<p class="ribbon-content">裁缝主要制作各类轻甲护甲。推荐元素使、唤灵师、幻术师学习。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="huntsman.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Warrior">猎手（0 ~ 500）</div>
+<p class="ribbon-content">猎手主要制作各类弓类枪械武器。推荐游侠、潜行者、工程师学习。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="leatherworker.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Guardian">皮革匠（0 ~ 500）</div>
+<p class="ribbon-content">皮革匠主要制作各类中甲护甲。推荐游侠、潜行者、工程师学习。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="jeweler.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Ranger">珠宝匠（0 ~ 400）</div>
+<p class="ribbon-content">珠宝匠主要制作各类首饰，目前不支持制作粉色升华首饰。</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div id="tools-4" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Guardian">神油插件合集</div>
+<p class="ribbon-content">由神油君开发，内含各类插件及扩展包，并附带插件升级功能。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="Arcdps.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Ranger">Arcdps</div>
+<p class="ribbon-content">Arcdps 是一款团队DPS监控插件，通过读取本地的战斗记录获取数据。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="YoloMouse.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Engineer">YoloMouse</div>
+<p class="ribbon-content">YoloMouse 是一款鼠标指针图标覆盖插件，避免在战斗中找不到光标。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="ReShade.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Mesmer">ReShade</div>
+<p class="ribbon-content">ReShade 是一款画面锐化滤镜插件，它可以消除游戏渲染过程中产生的迷雾。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="D912pxy.html" class="pjax-link">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Necromancer">D912pxy</div>
+<p class="ribbon-content">D912pxy 是一款 DX12 代理转换工具，通过加强显卡利用于从而提高游戏帧数。</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row m-t-20 p-b-30">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="home-title"><i class="mdi mdi-link"></i> 友情链接 · Links</div>
+<div class="card m-t-10 m-b-0">
+<div class="card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#links-1" class="nav-link home-button-color active" data-toggle="tab" aria-expanded="true">国内</a> </li>
+<li class="nav-item m-r-10"> <a href="#links-2" class="nav-link home-button-color" data-toggle="tab" aria-expanded="false">国外</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="links-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('http://gw2.kongzhong.com/index.html');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Warrior">激战2官网（国服）</div>
+<p class="ribbon-content">《激战2》中国官方网站——颠覆级3D魔幻热血巨作。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://bbs.nga.cn/gw2');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Mesmer">和风议会</div>
+<p class="ribbon-content">激战2国服各界精英玩家、会长、大佬自发组建的玩家同盟。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://mists.cn/');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Thief">迷雾网</div>
+<p class="ribbon-content">激战2玩家分享交流社区，支持团体入住，2020年全新改版上线。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://gw2sy.top/');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon ribbon-info">神油插件</div>
+<p class="ribbon-content">由神油君开发，内含各类插件及扩展包，并附带插件升级功能。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://www.mimogl.com/');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Ranger">明眸游戏网</div>
+<p class="ribbon-content">攻略大神明眸主导，国服更新速度最快的激战2文字成就攻略平台。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://tieba.baidu.com/f?kw=激战2');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Necromancer">激战2百度贴吧</div>
+<p class="ribbon-content">激战2中文社区，玩家交流汇集地。</p>
+</div>
+</a>
+ </div>
+</div>
+</div>
+<div id="links-2" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://wiki.guildwars2.com/');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Warrior">激战2官方维基</div>
+<p class="ribbon-content">由 ArenaNet 官方维护的维基资料平台，支持4种语言。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('http://metabattle.com/wiki/MetaBattle_Wiki');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Guardian">MetaBattle</div>
+<p class="ribbon-content">外服BD攻略配装资料平台，涵盖多种游戏模式。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://www.snowcrows.com/');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Ranger">SnowCrows</div>
+<p class="ribbon-content">SnowCrows 公会旗下大型地下城BD配装推荐平台。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://lucky-noobs.com/');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Engineer">LuckyNoobs</div>
+<p class="ribbon-content">Lucky Noobs是德国PvE速刷公会，主要内容是大型地下城和迷雾碎层。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('https://gw2.ninja/');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Mesmer">GW2 Ninja</div>
+<p class="ribbon-content">激战2小工具平台，涵盖事件计时器、插件、实时物价等多项功能。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Necromancer">GW2 Timer</div>
+<p class="ribbon-content">激战2离线地图，涵盖事件计时器、资源坐标、公会任务等功能。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('http://en.gw2skills.net/editor/');" target="_blank">
+<div class="ribbon-wrapper card">
+ <div class="ribbon bg-color-Revenant">GW2 Skills</div>
+<p class="ribbon-content">激战2离线BD配装模拟器，可覆盖多种游戏模式。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('http://www.gw2style.com/');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Warrior">GW2 Style</div>
+<p class="ribbon-content">激战2幻化分享平台，内置种族、风格、染料检索。</p>
+</div>
+</a>
+</div>
+<div class="col-lg-4 col-md-6 col-xlg-3 col-xs-12">
+<a href="javascript:window.open('http://gw2mb.com/');" target="_blank">
+<div class="ribbon-wrapper card">
+<div class="ribbon bg-color-Guardian">GW2 Music Box</div>
+<p class="ribbon-content">激战2乐器模拟器，可实现在线试听、编辑乐谱等功能。</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function() {
+    swal({
+        title: "真诚邀请您参与此问卷调查!",
+        type : "warning",
+        text: '<a href="https://www.gw2data.cn/doc/page/2021_01_17" target="_blank" style="color: #c4b998">>>点击前往</a>',
+        icon: "warning",
+        html: true,
+        confirmButtonText : "残忍关闭"
+    });
+});
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

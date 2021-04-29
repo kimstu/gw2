@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>传奇戒指：汇流 | 传奇装备 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/d86f4b1d7f02-1920x1200.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/d86f4b1d7f02-1920x1200.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #e74c3c !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #e74c3c !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">传奇装备</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">传奇戒指：汇流<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+传奇戒指：汇流 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;泰协内容维护小组</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2020.03.18</div>
+
+</div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li><strong>传奇戒指：汇流</strong> 由 <strong>传奇戒指：蛰伏汇流</strong> 从神秘熔炉合成，<strong>蛰伏汇流</strong> 没有外观特效，<strong>汇流</strong> 有外观特效。</li>
+<li>制作 <strong>汇流</strong>，你需要通过 <strong>世界之战</strong> 来获取相关合成物品。</li>
+<li><strong>传奇戒指：蛰伏汇流</strong> 总计需消耗 1850 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span>。战场每周最多可获得 365 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span>，最快需要 6周才能获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93128"></span><span>蛰伏汇流</span>
+</span>。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">蛰伏汇流</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">汇流</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">神秘熔炉合成</h2>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71820"></span><span>神秘供品</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93190"></span><span>世界礼赠</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81371"></span><span>征服礼赠</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80058"></span><span>迷雾指环（灌注）</span>
+</span> 通过神秘熔炉合成，即可得到 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93128"></span><span>蛰伏汇流</span>
+</span>。</li>
+</ul>
+<h2>神秘供品</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">神秘熔炉材料</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">备注</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 250</td>
+<td colspan="2">可拍卖行购买，主要通过 <a href="javascript:window.open('http://do.gw2.kongzhong.com/kungen/login');" target="_blank" rel="nofollow noopener noreferrer" target="_blank" rel="nofollow noopener noreferrer">鲲艮福利社</a> 签到、魔径异常体（跑男）、迷雾碎层有几率掉落</td>
+</tr>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19675"></span><span>神秘四叶草</span>
+</span> × 77</td>
+<td>
+熔炉配方1：<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19925"></span><span>黑曜石碎块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20796"></span><span>点金石</span>
+</span> × 6<br><br>
+熔炉配方2：<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19925"></span><span>黑曜石碎块</span>
+</span> × 10 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 10 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 10 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 10<br><br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20796"></span><span>点金石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> 从神秘熔炉旁的<strong>米亚妮</strong>处使用 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="23"></span><span>灵魂碎片</span>
+</span> 购买。<br>
+预计材料消耗：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 231、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 231、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19925"></span><span>黑曜石碎块</span>
+</span> × 231、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="23"></span><span>灵魂碎片</span>
+</span> × 139
+</td>
+<td>配方1 成功合成可获得1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19675"></span><span>神秘四叶草</span>
+</span><br>配方2 成功合成可获得10个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19675"></span><span>神秘四叶草</span>
+</span><br>成功合成几率均为 33%左右</td>
+</tr>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70867"></span><span>浓缩力量礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70801"></span><span>钩爪礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24350"></span><span>大型钩爪</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24349"></span><span>尖锐钩爪</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24348"></span><span>中型钩爪</span>
+</span> × 100</td>
+<td rowspan="4">神秘熔炉旁的米亚妮处购买各种小礼赠图纸，<br>武器类副职业制作，然后从神秘熔炉合成</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75299"></span><span>鳞片礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24288"></span><span>大型鳞片</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24287"></span><span>光滑鳞片</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24286"></span><span>中型鳞片</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71123"></span><span>骨骼礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24341"></span><span>大型骨骼</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24345"></span><span>重型骨骼</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24344"></span><span>中型骨骼</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75744"></span><span>牙齿礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24357"></span><span>恶毒牙齿</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24356"></span><span>大型牙齿</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24355"></span><span>尖锐牙齿</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24354"></span><span>中型牙齿</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76530"></span><span>浓缩魔法礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71655"></span><span>血瓶礼赠</span>
+ </span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24294"></span><span>强效血瓶</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24293"></span><span>浓稠血瓶</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24292"></span><span>通用血瓶</span>
+</span> × 100</td>
+<td rowspan="4">神秘熔炉旁的米亚妮处购买各种小礼赠图纸，<br>武器类副职业制作，然后从神秘熔炉合成</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71787"></span><span>毒囊礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24282"></span><span>强效毒囊</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24281"></span><span>完整毒囊</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24280"></span><span>中型毒囊</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73236"></span><span>图腾礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24299"></span><span>精致图腾</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24363"></span><span>雕蚀图腾</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24298"></span><span>中型图腾</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73196"></span><span>尘堆礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24276"></span><span>炽光尘堆</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24275"></span><span>高亮尘堆</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24274"></span><span>光明尘堆</span>
+</span> × 100</td>
+</tr>
+</tbody>
+</table>
+<h2>世界礼赠</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">神秘熔炉材料</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left" colspan="3">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76427"></span><span>迷雾礼赠</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19678"></span><span>战斗礼赠</span>
+</span></td>
+<td colspan="2">世界之战 - 战斗礼赠奖励分支，奖励进度升满获得</td>
+<td rowspan="4">神秘熔炉合成</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70528"></span><span>荣誉礼赠</span>
+</span></td>
+<td colspan="2">神秘熔炉旁的米亚妮处购买，花费 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70820"></span><span>荣誉碎片</span>
+</span> × 250（可拍卖行购买）</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71008"></span><span>战争礼赠</span>
+</span></td>
+<td colspan="2">神秘熔炉旁的米亚妮处购买，花费 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 250（可拍卖行购买）</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73137"></span><span>稳定黑暗能量立方体</span>
+</span></td>
+<td colspan="2">
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71994"></span><span>黑暗能量球体</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73248"></span><span>稳定基质</span>
+</span> × 75（500级 武器 或 护甲 类副职业制作）<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71994"></span><span>黑暗能量球体</span>
+</span> 主要通过拆解升华武器或护甲获得，拆解升华首饰、背部、呼吸器有极小几率获得。<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73248"></span><span>稳定基质</span>
+</span> 主要通过拆解迷雾碎层掉落的首饰获得，可拍卖行购买。
+</td>
+</tr>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19676"></span><span>寒地符文石</span>
+</span> × 100</td>
+<td colspan="3"><strong>霜谷之音 - 地震传送点</strong>[&BHoCAAA=]，从卓玛之爪降落地南边营地的<strong>忏悔者洛占</strong>处购买（避开事件），总花费 100<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span><span>金币</span>
+</span></td>
+</tr>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="83259"></span><span>全力战争礼赠</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="83082"></span><span>球形浓缩灵魂能量</span>
+</span></td>
+<td colspan="3">战场商人<strong>传奇 指挥官战争剃刀</strong>处购买，花费：100 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="23"></span><span>灵魂碎片</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="83620"></span><span>荣誉证书</span>
+</span></td>
+<td colspan="3">战场商人<strong>传奇 指挥官战争剃刀</strong>处购买，花费：500 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84099"></span><span>英雄证书</span>
+</span></td>
+<td colspan="3">战场商人<strong>传奇 指挥官战争剃刀</strong>处购买，花费：250 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="36"></span><span>英雄证词</span>
+</span> 或 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="31"></span><span>英雄证明</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 250</td>
+<td colspan="3">主要通过<strong>世界之战突袭奖励</strong>或<strong>世界之战奖励分支</strong>获得。可通过拍卖行购买。</td>
+</tr>
+<tr>
+<td rowspan="7"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93101"></span><span>战争奖状</span>
+</span></td>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81478"></span><span>战火礼赠</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81319"></span><span>神秘战略精华</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 20 <br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24294"></span><span>强效血瓶</span>
+</span> × 50<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46731"></span><span>血石尘</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81326"></span><span>神秘战略精华</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81326"></span><span>神秘战略精华</span>
+</span> 从战场商人<strong>传奇 指挥官战争剃刀</strong>处购买，<br>花费：1000 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81494"></span><span>神秘敌意精华</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 20 <br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24341"></span><span>大型骨骼</span>
+</span> × 50<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46735"></span><span>至纯裂片</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81522"></span><span>敌意精华</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81522"></span><span>敌意精华</span>
+</span> 从战场商人<strong>传奇 指挥官战争剃刀</strong>处购买，<br>花费：500 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="36"></span><span>英雄证词</span>
+</span> 或 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="31"></span><span>英雄证明</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81449"></span><span>神秘杀戮精华</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 20 <br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24288"></span><span>大型鳞片</span>
+</span> × 50<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46733"></span><span>龙岩矿</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81469"></span><span>杀戮精华</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81469"></span><span>杀戮精华</span>
+</span> 从战场商人<strong>传奇 指挥官战争剃刀</strong>处购买，<br>花费：500 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81407"></span><span>神秘歼灭精华</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 20 <br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24350"></span><span>大型钩爪</span>
+</span> × 50<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46681"></span><span>球形暗物质</span>
+</span> × 10<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81320"></span><span>歼灭精华</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81320"></span><span>歼灭精华</span>
+</span> 从战场商人<strong>传奇 指挥官战争剃刀</strong>处购买，<br>花费：350 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93147"></span><span>迷雾珍珠</span>
+</span></td>
+<td colspan="3">战场商人<strong>传奇 指挥官战争剃刀</strong>处购买，花费：750 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> + 250 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93248"></span><span>迷雾强化秘银</span>
+</span></td>
+<td colspan="3">战场商人<strong>传奇 指挥官战争剃刀</strong>处购买，花费：750 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> + 250 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93146"></span><span>征服者徽印</span>
+</span></td>
+<td colspan="3">完成成就 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="5220"></span><span>征服者徽印</span>
+</span>（占领总计 100 次 营地、塔楼、要塞 或 城堡）后获得。</td>
+</tr>
+</tbody>
+</table>
+<h2>征服礼赠</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">神秘熔炉材料</th>
+<th colspan="2" style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81296"></span><span>传奇尖刺</span>
+</span></td>
+<td colspan="2">击杀战场守卫有几率掉落。</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19678"></span><span>战斗礼赠</span>
+</span> × 4</td>
+<td colspan="2"><strong>世界之战 - 战斗礼赠奖励分支</strong>，升满获得。</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 250</td>
+<td colspan="2">主要通过<strong>世界之战突袭奖励</strong>或<strong>世界之战奖励分支</strong>获得。可通过拍卖行购买。</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46746"></span><span>幻景水晶</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46752"></span><span>预言者之石</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46730"></span><span>血石砖</span>
+</span> × 10<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46734"></span><span>至纯之星</span>
+</span> × 10<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46732"></span><span>龙岩锭</span>
+</span> × 10</td>
+<td>500级 副职业制作，或通过 <a href="javascript:window.open('http://do.gw2.kongzhong.com/kungen/login');" target="_blank" rel="nofollow noopener noreferrer" target="_blank" rel="nofollow noopener noreferrer">鲲艮福利社</a> 获取。</td>
+</tr>
+</tbody>
+</table>
+<h2>迷雾指环（灌注）</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">获取方式</th>
+<th style="text-align:left">花费</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PvE</td>
+<td>100 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="24"></span><span>原始碎层古物</span>
+</span> + 2 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span></td>
+<td>从<strong>迷雾碎层</strong>商人<strong>BUY-2046 PFR型</strong>（黄色魔像）处购买</td>
+</tr>
+<tr>
+<td>PvP</td>
+<td>200 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="33"></span><span>升华荣誉碎片</span>
+</span> + 170 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70820"></span><span>荣誉碎片</span>
+</span></td>
+<td>从<strong>迷雾之心</strong>（PvP大厅）内的<strong>升华护甲联赛商贩</strong>处购买</td>
+</tr>
+<tr>
+<td>PvP</td>
+<td>5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="46"></span><span>PvP联赛兑换券</span>
+</span></td>
+<td>从<strong>迷雾之心</strong>（PvP大厅）内的<strong>迟到的兰博丁</strong>处购买</td>
+</tr>
+<tr>
+<td>WvW</td>
+<td>350 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> + 250 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span></td>
+<td>从<strong>战场</strong>内的<strong>突袭监管员</strong>处购买</td>
+</tr>
+</tbody>
+</table> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">神秘熔炉材料</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93128"></span><span>蛰伏汇流</span>
+</span></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="21299"></span><span>已鉴定的染料</span>
+</span> × 250</td>
+<td>主要通过战场 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> 开出，也可从拍卖行购买 <strong>未鉴定的染料</strong>，使用 <strong>染料鉴定器</strong> 鉴定后获得。</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93075"></span><span>复仇者徽印</span>
+</span></td>
+<td>完成成就 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="5198"></span><span>复仇者徽印</span>
+</span>（在战场击败 100 名玩家）后获得。</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="21159"></span><span>阿尔法攻城魔像蓝图</span>
+</span></td>
+<td>方法1：拍卖行购买。<br>方法2：战场<strong>攻城商人</strong>处花费 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span><span>金币</span>
+</span> 或 100 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span> 购买。<br>方法3：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> 中开出。</td>
+</tr>
+</tbody>
+</table> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

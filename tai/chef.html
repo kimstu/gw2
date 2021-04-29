@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>厨师（0 ~ 500） | 副职业升级 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/crafting_bg.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/crafting_bg.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #c5433b !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #c5433b !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">副职业升级</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">厨师（0 ~ 500）<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+厨师（0 ~ 500） </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;暴君之刃</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2019.11.01</div>
+
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div> </div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span> 是一个专门制作 食物 和 染料 的副职业，这对于所有主职业都有帮助和提升。</li>
+<li>由于 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span> 的升级制作材料种类繁多，本文将提供一套用于参考的固定升级路线。</li>
+<li>升级至 500级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span> 可以完成以下成就：<strong>厨师</strong>40 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="42"></span></span>，<strong>美食家训练</strong>5 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="42"></span></span>，<strong>宗师级厨师</strong>40 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="42"></span></span>。</li>
+<li>注意：本攻略必须从 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="8439"></span><span>制作增幅剂</span>
+</span> 以及 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76475"></span><span>公会制作增幅</span>
+</span> 提升制作暴击率后方可参阅，防止升级途中卡等级。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">0 ~ 440 材料清单</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">( 0 ~ 100 )</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">( 100 ~ 200 )</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">( 200 ~ 300 )</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">( 300 ~ 400 )</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-6" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">( 400 ~ 440 )</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-7" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">美食家训练 ( 440 ~ 500 )</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-npc-">大师级厨师 或 爱心NPC 处购买材料</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">材料名称</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">210</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span></td>
+<td style="text-align:left">16 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> 80 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:right">185</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span></td>
+<td style="text-align:left">14 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> 80 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:right">100</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12153"></span><span>盐包</span>
+</span></td>
+<td style="text-align:left">8 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:right">75</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12155"></span><span>袋装白糖</span>
+</span></td>
+<td style="text-align:left">6 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12158"></span><span>罐装植物油</span>
+</span></td>
+<td style="text-align:left">2 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12157"></span><span>罐装醋</span>
+</span></td>
+<td style="text-align:left">2 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:right">10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12271"></span><span>瓶装酱油</span>
+</span></td>
+<td style="text-align:left">80 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:right">4</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12804"></span><span>散装酵母</span>
+</span></td>
+<td style="text-align:left">35 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span>（双击获得 25个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12152"></span><span>酵母包</span>
+</span>）</td>
+</tr>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12801"></span><span>散装奶香黄油</span>
+</span></td>
+<td style="text-align:left">35 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span>（双击获得 25个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12137"></span><span>杯装奶香黄油</span>
+</span>）</td>
+</tr>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12768"></span><span>散装姜根</span>
+</span></td>
+<td style="text-align:left">77 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span>（双击获得 25个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12328"></span><span>姜根</span>
+</span>）</td>
+</tr>
+<tr>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12795"></span><span>散装柠檬</span>
+</span></td>
+<td style="text-align:left">35 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span>（双击获得 25个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12252"></span><span>柠檬</span>
+</span>），<strong>甘达拉战区 - 丰饶之地传送点</strong> [&amp;BOMAAAA=] 北边爱心（米尔顿·布克）购买</td>
+</tr>
+<tr>
+<td style="text-align:right">1</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12771"></span><span>散装蜜桃</span>
+</span></td>
+<td style="text-align:left">154 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span>（双击获得 25个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12503"></span><span>蜜桃</span>
+</span>），<strong>炎心高地 - 叛变者传送点</strong> [&amp;BB0CAAA=] 北边爱心（诺罗克酋长）购买</td>
+</tr>
+<tr>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">合计：50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> 40 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span>，441 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-">基础材料（可通过拍卖行购买）</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">材料名称</th>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">材料名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">225</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12138"></span><span>黄油棒</span>
+</span></td>
+<td style="text-align:right">60</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12547"></span><span>藏红花纤维</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">125</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12142"></span><span>洋葱</span>
+</span></td>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12351"></span><span>香橙</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">100</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12236"></span><span>黑胡椒</span>
+</span></td>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12532"></span><span>花椰菜头</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">100</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12134"></span><span>胡萝卜</span>
+</span></td>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12537"></span><span>黑莓</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">75</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span></td>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12506"></span><span>龙蒿叶</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">50</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span></td>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12505"></span><span>芦笋茎</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">50</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12143"></span><span>蛋</span>
+</span></td>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12504"></span><span>卡宴辣椒</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">50</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12229"></span><span>巧克力棒</span>
+</span></td>
+<td style="text-align:right">10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12342"></span><span>芝麻种子</span>
+</span></td>
+</tr> 
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12327"></span><span>蛤蚌</span>
+</span></td>
+<td style="text-align:right">10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12163"></span><span>大蒜头</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12334"></span><span>洋菇</span>
+</span></td>
+<td style="text-align:right"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">制作暴击率提升</h2>
+<ul>
+<li>升级副职业前，请尽可能通过以下途径提升制作暴击率，以获取更多副职业经验：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">获取方法</th>
+<th style="text-align:left">暴击率提升</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">增幅剂</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20008"></span><span>制作增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20005"></span><span>英雄增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70237"></span><span>物品增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9251"></span><span>附魔奖励增幅剂</span>
+</span></td>
+<td style="text-align:left">50%</td>
+<td style="text-align:left">效果不重复叠加，仅使用一个即可</td>
+</tr>
+<tr>
+<td style="text-align:left">公会强化</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76475"></span><span>公会制作增幅</span>
+</span></td>
+<td style="text-align:left">6 ~ 20%</td>
+<td style="text-align:left">基于公会强化的等级</td>
+</tr>
+<tr>
+<td style="text-align:left">专精</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="54"></span><span>契约团指挥官：连续生产</span>
+</span></td>
+<td style="text-align:left">10%</td>
+<td style="text-align:left">基于专精等级</td>
+</tr>
+</tbody>
+</table>
+<h2 id="0-25">0 ~ 25</h2>
+<ul>
+<li>制作以下物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">物品名称</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">50</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12166"></span><span>面团</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12138"></span><span>黄油棒</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">50</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12202"></span><span>碗装鸟肉汤</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12142"></span><span>洋葱</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12134"></span><span>胡萝卜</span>
+</span> × 2</td>
+</tr>
+<tr>
+<td style="text-align:right">100</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12178"></span><span>椒盐堆</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12153"></span><span>盐包</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91824"></span><span>黑胡椒</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="25-50">25 ~ 50</h2>
+<ul>
+<li>制作以下物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">物品名称</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12176"></span><span>瓶装简易调味汁</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12158"></span><span>罐装植物油</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12157"></span><span>罐装醋</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12178"></span><span>椒盐堆</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="50-75">50 ~ 75</h2>
+<ul>
+<li>制作以下物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">物品名称</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12263"></span><span>曲奇饼面团</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12138"></span><span>黄油棒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12143"></span><span>蛋</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12155"></span><span>袋装白糖</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="75-100">75 ~ 100</h2>
+<ul>
+<li>制作以下物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">物品名称</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12267"></span><span>碗装乳酪糊</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12138"></span><span>黄油棒</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="100-125">100 ~ 125</h2>
+<ul>
+<li>制作以下物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">物品名称</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12268"></span><span>碗装奶油汤底料</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12137"></span><span>杯装奶香黄油</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12267"></span><span>碗装乳酪糊</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12178"></span><span>椒盐堆</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12202"></span><span>碗装鸟肉汤</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="125-150">125 ~ 150</h2>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12347"></span><span>蛤蚌蛋糕</span>
+</span>，并在随后制作 24次。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12202"></span><span>碗装鸟肉汤</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12143"></span><span>蛋</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12327"></span><span>蛤蚌</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="150-175">150 ~ 175</h2>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12314"></span><span>碎巧克力曲奇饼</span>
+</span>，并在随后制作 24次</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12229"></span><span>巧克力棒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12263"></span><span>曲奇饼面团</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="175-200">175 ~ 200</h2>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12295"></span><span>碗装奶油洋菇汤</span>
+</span>，并在随后制作 24次</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12268"></span><span>碗装奶油汤底料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12334"></span><span>洋菇</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12142"></span><span>洋葱</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="200-225">200 ~ 225</h2>
+<ul>
+<li>制作以下物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">物品名称</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12275"></span><span>瓶装芝麻姜汁</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12342"></span><span>芝麻种子</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12271"></span><span>瓶装酱油</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12328"></span><span>姜根</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12163"></span><span>大蒜头</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="225-250">225 ~ 250</h2>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12381"></span><span>巧克力香橙</span>
+</span>，并在随后制作 24次</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12351"></span><span>香橙</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12229"></span><span>巧克力棒</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="250-275">250 ~ 275</h2>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12405"></span><span>碗装爆炒花椰菜</span>
+</span>，并在随后制作 24次</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12532"></span><span>花椰菜头</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12138"></span><span>黄油棒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12178"></span><span>椒盐堆</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="275-300">275 ~ 300</h2>
+<ul>
+<li>制作以下物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">物品名称</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12524"></span><span>碗装黑莓馅饼填料</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12537"></span><span>黑莓</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12155"></span><span>袋装白糖</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12252"></span><span>柠檬</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12385"></span><span>黑莓馅饼</span>
+</span>，并在随后制作 24次。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12524"></span><span>碗装黑莓馅饼填料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12138"></span><span>黄油棒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12166"></span><span>面团</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="300-325">300 ~ 325</h2>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12437"></span><span>龙蒿面包</span>
+</span>，并在随后制作 24次。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12506"></span><span>龙蒿叶</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12152"></span><span>酵母包</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="325-350">325 ~ 350</h2>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12430"></span><span>碟装芦笋牛排</span>
+</span>，并在随后制作 24次。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12505"></span><span>芦笋茎</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+ </span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12138"></span><span>黄油棒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12178"></span><span>椒盐堆</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="350-375">350 ~ 375</h2>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12429"></span><span>火辣牛腩排</span>
+</span>，并在随后制作 24次。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12504"></span><span>卡宴辣椒</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="375-400">375 ~ 400</h2>
+<ul>
+<li>制作以下物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">物品名称</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">25</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12498"></span><span>碗装蜜桃馅饼填料</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12503"></span><span>蜜桃</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12155"></span><span>袋装白糖</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12138"></span><span>黄油棒</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-6" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="400-440">400 ~ 440</h2>
+<ul>
+<li>探索 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12474"></span><span>藏红花面包</span>
+</span>，并在随后制作 59次。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">探索配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12152"></span><span>酵母包</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12547"></span><span>藏红花纤维</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-7" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">概览</h2>
+<ul>
+<li>你需要完成 <strong>美食家训练</strong> 成就后，才能制作 500级 的粉色升华食物。</li>
+</ul>
+<p>提前准备以下物品：</p>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span> × 5</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46736"></span><span>灵木木板</span>
+</span> × 5</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46739"></span><span>伊伦娜皮革片</span>
+</span> × 1</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67015"></span><span>热力石</span>
+</span> × 3</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46732"></span><span>龙岩锭</span>
+</span> × 5</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46730"></span><span>血石砖</span>
+</span> × 10</li>
+<li>15 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span> 50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span></li>
+</ul>
+<blockquote>
+<p><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="66997"></span><span>配方：热力石</span>
+</span>（需要护甲类副职业） 在 <strong>干涸高地入口传送点</strong> [&amp;BIAHAAA=] 的风裔商人处购买，需要 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="66600"></span><span>风裔恩典（T3）</span>
+</span>，可以找公会老人帮忙制作，每天只能制作一个。</p>
+</blockquote>
+<hr>
+<ul>
+<li>完成整个收藏成就会使你固定提升 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span> 50级，算上任务过程中制作各种食材，整个流程大概可以提升 60级。</li>
+<li>如果你 400级时探索的配方比较多，尽量将 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span> 升级到 445级以上吧，避免出现做完收藏没有升到 500级的尴尬状况。</li>
+<li>收藏开始时使用 <strong>增幅剂</strong> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76475"></span><span>公会制作增幅</span>
+</span> 提升制作暴击率。</li>
+</ul>
+<h2 id="-">解锁收藏</h2>
+<ul>
+<li>在 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span> 升级至 425 级时，会收到 <strong>瑟姆·牛骨</strong> 的来信，你需要制作一份 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91689"></span><span>厨师品尝盘</span>
+</span>，然后前往任意 <strong>种族主城</strong> 的 <strong>家园副本</strong> 找他对话，用以解锁 <strong>美食家训练</strong> 收藏成就。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91689"></span><span>厨师品尝盘</span>
+</span> 由以下物品制作，你可以 直接从拍卖行购买 或 通过探索获得相应物品，点击图标可查看详细配方：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91689"></span><span>厨师品尝盘</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12486"></span><span>碗装咖喱冬南瓜汤</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12465"></span><span>碗装松露拌饭</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12432"></span><span>碟装芦笋牛排晚宴</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12452"></span><span>怪异莓棒</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12486"></span><span>碗装咖喱冬南瓜汤</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12350"></span><span>椰子</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12511"></span><span>冬南瓜</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12542"></span><span>罐装红咖喱酱</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12491"></span><span>碗装香草蔬菜汤</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12465"></span><span>碗装松露拌饭</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12392"></span><span>碗装蘑菇拌饭</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12545"></span><span>欧尔松露</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12144"></span><span>雪地松露</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12432"></span><span>碟装芦笋牛排晚宴</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12430"></span><span>碟装芦笋牛排</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12441"></span><span>碗装爆炒茄子</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12144"></span><span>雪地松露</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12452"></span><span>怪异莓棒</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12458"></span><span>怪异莓羹</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12169"></span><span>碗装烘焙师干料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12170"></span><span>碗装烘焙师湿料</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>与 <strong>家园副本</strong> 中的 <strong>瑟姆·牛骨</strong> 对话后，前往各大主城寻找 <strong>大师级厨师</strong> NPC，通过烹饪台制作各种族的独家菜肴，解锁相应物品完成收藏。</li>
+</ul>
+<h2 id="-">诺恩（推荐先做）</h2>
+<p>1 ~ 3、诺恩烹饪技术展示</p>
+<ul>
+<li><strong>霍布雷克 - 商贸集市传送点</strong> [&amp;BIYDAAA=]，找到 <strong>大师级厨师 雷莫</strong>，在她旁边的烹饪台探索或制作以下物品（不能去别处制作，否则无法完成收藏）。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12445"></span><span>碗装雪地松露汤</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12268"></span><span>碗装奶油汤底料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12517"></span><span>火葱</span>
+</span> + <span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12144"></span><span>雪地松露</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12517"></span><span>火葱</span>
+</span>，<strong>林线瀑布 - 鲜血托领地传送点</strong> [&amp;BEoCAAA=] 旁的爱心购买</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12305"></span><span>芝麻烧烤晚宴</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12304"></span><span>芝麻烤肉片</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12284"></span><span>碗装香辣番薯泥</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12301"></span><span>鼠尾草八宝鸟肉</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12132"></span><span>面包</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12243"></span><span>鼠尾草叶</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12202"></span><span>碗装鸟肉汤</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>4、德里莫钢锭货物<br>5、龙岩锭货物<br>6、灵木木板货物</p>
+<ul>
+<li><strong>避难岩地传送点</strong> [&amp;BIsDAAA=]</li>
+<li>来到 <strong>黑炉大师的庄园</strong> [&amp;BHgDAAA=]，将 5个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span>、5个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46732"></span><span>龙岩锭</span>
+</span>、1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46736"></span><span>灵木木板</span>
+</span> 交付给 <strong>埃纳尔·黑炉</strong>，分别解锁 <strong>德里莫钢锭货物</strong>、<strong>龙岩锭货物</strong>、<strong>灵木木板货物</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="714" image-compress-type="2" alt=""></p>
+<hr>
+<p>7、升华厨具</p>
+<ul>
+<li>交付材料获得两小时的 <strong>等待埃纳尔</strong> 状态，两小时后再找埃纳尔对话，即可解锁 <strong>升华厨具</strong>。</li>
+</ul>
+<h2 id="-">希尔瓦里</h2>
+<p>1 ~ 3、希尔瓦里烹饪技术展示</p>
+<ul>
+<li><strong>圣林之地 - 审计平台传送点</strong> [&amp;BLsEAAA=]，找到 <strong>大师级厨师 比亚</strong>，在她旁边的烹饪台探索或制作以下物品（不能去别处制作，否则无法完成收藏）。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12306"></span><span>迷迭香烤肉片</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12335"></span><span>迷迭香嫩叶</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12248"></span><span>百里香叶</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12163"></span><span>大蒜头</span>
+</span></td>
+<td style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12450"></span><span>碗装洋蓟汤</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12268"></span><span>碗装奶油汤底料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12512"></span><span>洋蓟</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12179"></span><span>简易汤煲药草堆</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12167"></span><span>碗装蔬菜原汤</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12424"></span><span>碗装鸟肉龙蒿叶意粉</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12500"></span><span>碗装龙蒿叶奶油汁</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12171"></span><span>意粉面条</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>4、收割课程</p>
+<ul>
+<li>来到 <strong>圣林之地 - 审计平台传送点</strong> [&amp;BLsEAAA=] 在西北方找到 <strong>修护者伊瑞</strong>，对话解锁 <strong>收割课程</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="715" image-compress-type="2" alt=""></p>
+<hr>
+<p>5、变种药草种子</p>
+<ul>
+<li>泰瑞亚各处采集 <strong>青翠草药</strong> 和 <strong>成熟草药</strong> 均有几率获得。</li>
+<li>推荐在 <strong>旋窝山 - 锻造基地</strong> [&amp;BI8GAAA=] 或者 <strong>沙掠群岛 - 阿索尔玛传送点</strong> [&amp;BEMLAAA=] 附近采集，该处 <strong>草药</strong> 比较密集。</li>
+</ul>
+<hr>
+<p>6、便携式堆肥器<br>7、花园地契</p>
+<ul>
+<li>回去找 <strong>修护者伊瑞</strong> 对话，获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91866"></span><span>配方：便携式堆肥器</span>
+</span>。</li>
+<li>去烹饪台，使用 4个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46736"></span><span>灵木木板</span>
+</span> 和 1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46739"></span><span>伊伦娜皮革片</span>
+</span> 合成 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91745"></span><span>便携式堆肥器</span>
+</span>，然后与 <strong>修护者伊瑞</strong> 对话，解锁 <strong>花园地契</strong>。</li>
+</ul>
+<blockquote>
+<p>注意！<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91745"></span><span>便携式堆肥器</span>
+</span> 后期用于分解食材获得 <strong>营养提取物</strong>，不要乱丢。</p>
+</blockquote>
+<h2 id="-">夏尔</h2>
+<p>1 ~ 3、夏尔烹饪技术展示</p>
+<ul>
+<li><strong>黑烟壁垒 - 底耶沙大门传送点</strong> [&amp;BKgDAAA=]，找到 <strong>大师级厨师 格吉斯·燃掌</strong>，在她旁边的烹饪台探索或制作以下物品（不能去别处制作，否则无法完成收藏）。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12447"></span><span>碗装辛辣烧肉辣酱汤</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12260"></span><span>碗装简易辣酱汤底料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12504"></span><span>卡宴辣椒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span></td>
+<td style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12462"></span><span>盘装柠檬草鸟肉</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12546"></span><span>柠檬草</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12544"></span><span>断魂椒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12271"></span><span>瓶装酱油</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12466"></span><span>碟装火焰牛腩排</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12544"></span><span>断魂椒</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>4、屠宰课程</p>
+<ul>
+<li>来到 <strong>底耶沙高地 - 屠夫区传送点</strong> [&amp;BF8BAAA=]，找到 <strong>屠肉者瓦斯塔斯</strong>。</li>
+<li>根据他的提示，到 <strong>波瓦林庄园</strong> [&amp;BBABAAA=] 帮助 <strong>凯伯兹·速食者</strong> 将奶牛护送到屠夫村，并在之后观看 <strong>瓦斯塔斯</strong> 屠牛，解锁 <strong>屠宰课程</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="716" image-compress-type="2" alt=""></p>
+<hr>
+<p>5、高品质红肉<br>6、厚鸟肉</p>
+<ul>
+<li>来到 <strong>死人岩传送点</strong> [&amp;BMkDAAA=] 击杀附近的 <strong>黑熊</strong>，获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91751"></span><span>高品质红肉</span>
+</span>，解锁 <strong>高品质红肉</strong>。</li>
+<li>来到 <strong>血崖传送点</strong> [&amp;BMQDAAA=] 击杀附近的 <strong>深红陆行鸟</strong>，获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span>，解锁 <strong>厚鸟肉</strong>。</li>
+</ul>
+<hr>
+<p>7、夏尔肉类加工技术</p>
+<ul>
+<li>解锁以上两件物品后，回到屠夫村找 <strong>屠肉者瓦斯塔斯</strong> 对话，解锁 <strong>夏尔肉类加工技术</strong>。</li>
+</ul>
+<h2 id="-">人类</h2>
+<p>1 ~ 3、人类烹饪技术展示</p>
+<ul>
+<li><strong>神佑之城 - 平民区传送点</strong> [&amp;BCoDAAA=]，找到 <strong>大师级厨师 萨吉</strong>，使用 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76603"></span><span>薄饼</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73781"></span><span>配方：袋装木薯面粉</span>
+</span> 配方。</li>
+<li>在她旁边的烹饪台探索或制作以下物品（不能去别处制作，否则无法完成收藏）。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12475"></span><span>碗装烤莲藕</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12510"></span><span>莲藕</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12163"></span><span>大蒜头</span>
+</span> + <span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12158"></span><span>罐装植物油</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12271"></span><span>瓶装酱油</span>
+</span></td>
+<td style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76603"></span><span>薄饼</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74242"></span><span>袋装木薯面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12153"></span><span>盐包</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12152"></span><span>酵母包</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76839"></span><span>磨盆</span>
+</span> 在大师级厨师处可购买</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12460"></span><span>巧克力怪异莓蛋糕</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12541"></span><span>碗装巧克力怪异莓霜糖</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12169"></span><span>碗装烘焙师干料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12170"></span><span>碗装烘焙师湿料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12128"></span><span>怪异莓</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>4、热力石货物</p>
+<ul>
+<li>提前制作或拍卖行购买 3个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67015"></span><span>热力石</span>
+</span>，来到 <strong>德薇娜传送点</strong> [&amp;BCMDAAA=]，在北边找到 <strong>烘焙师乐伦</strong>，与他对话，解锁 <strong>热力石货物</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="717" image-compress-type="2" alt=""></p>
+<hr>
+<p>5、强化的热力石</p>
+<ul>
+<li>携带上一步未使用的 3个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67015"></span><span>热力石</span>
+</span> 前往 <strong>漩涡山 - 阿瓦兰传送点</strong> [&amp;BM8CAAA=]，走到 <strong>地狱之口瀑布</strong> [&amp;BJUGAAA=]，互动解锁 <strong>强化的热力石</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="718" image-compress-type="2" alt=""></p>
+<hr>
+<p>6、血石砖货物</p>
+<ul>
+<li>前往 <strong>德薇娜传送点</strong> [&amp;BCMDAAA=]，将 10个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46730"></span><span>血石砖</span>
+</span> 交给 <strong>烘焙师乐伦</strong>，解锁 <strong>血石砖货物</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="717" image-compress-type="2" alt=""></p>
+<hr>
+<p>7、血石砖烤炉</p>
+<ul>
+<li>回到 <strong>家园副本</strong>，等待 <strong>送货员</strong> 将烤炉运送安装完毕，解锁 <strong>血石砖烤炉</strong>。</li>
+</ul>
+<h2 id="-">阿苏拉</h2>
+<p>1 ~ 3、阿苏拉烹饪技术展示</p>
+<ul>
+<li><strong>拉塔索姆 - 会计学传送点</strong> [&amp;BLYEAAA=]，找到 <strong>大师级厨师 帕拉兹</strong>，在他旁边的烹饪台探索或制作以下物品（不能去别处制作，否则无法完成收藏）。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36841"></span><span>碗装热带慕斯</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12170"></span><span>碗装烘焙师湿料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12155"></span><span>袋装白糖</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12136"></span><span>袋装面粉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36793"></span><span>碗装热带水果沙拉</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12772"></span><span>散装芒果</span>
+</span> 从 <strong>浩劫海峡 - 三体堡垒传送点</strong> [&amp;BO4CAAA=] 旁的业力商人处购买</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12478"></span><span>碗装爆炒松露</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12545"></span><span>欧尔松露</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12144"></span><span>雪地松露</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12138"></span><span>黄油棒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12178"></span><span>椒盐堆</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36083"></span><span>怪异莓幽灵</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12128"></span><span>怪异莓</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12229"></span><span>巧克力棒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36052"></span><span>碗装玉米糖衣</span>
+</span></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>4、普里克的沉浸式循环系统</p>
+<ul>
+<li>前往 <strong>辅助传送点</strong> [&amp;BLkEAAA=]，找到 <strong>美食家普里克</strong>，使用 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91859"></span><span>普里克的沉浸式循环系统</span>
+</span>，并解锁相应物品。</li>
+</ul>
+<hr>
+<p>5、真空烹调肉片</p>
+<ul>
+<li>前往烹饪台，使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91751"></span><span>高品质红肉</span>
+</span> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span>，制作 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91765"></span><span>真空烹调肉片</span>
+</span>，并解锁相应物品。</li>
+</ul>
+<hr>
+<p>6、普里克的流体瓦斯注入装置<br>7、普里克的食物形态操控器</p>
+<ul>
+<li>前往 <strong>辅助传送点</strong> [&amp;BLkEAAA=]，找到 <strong>美食家普里克</strong>，使用 10 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91762"></span><span>普里克的流体瓦斯注入装置</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91712"></span><span>普里克的食物形态操控器</span>
+</span>，并解锁相应物品。</li>
+</ul>
+<blockquote>
+<p>注意！<br>此处游戏内存在 BUG。如果你买了第6、第7 步其中一个物品，然后游戏下线，上号时你将无法从 <strong>美食家普里克</strong> 处购买另一个物品，此时需要重新制作第 5 步的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91765"></span><span>真空烹调肉片</span>
+</span>，再去找 <strong>美食家普里克</strong> 购买即可。</p>
+</blockquote>
+<h2 id="-500-">什么！没升到 500级？？？</h2>
+<ul>
+<li>别慌，在背包内找到 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91745"></span><span>便携式堆肥器</span>
+</span> 将之前做的一些无价值食材右键分解成 <strong>营养提取物</strong>，然后制作 <strong>变种种子袋</strong>（如 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91776"></span><span>变种丁香种子袋</span>
+</span>） 升到500级即可。</li>
+<li>注意，<strong>营养提取物</strong> 的品质与食材等级有关：</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91838"></span><span>优质营养提取物</span>
+</span>，0 ~ 50 级食材分解必出，0 ~ 125 级可分解出。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91697"></span><span>精制营养提取物</span>
+</span>，150 ~ 225 级食材分解必出，75 ~ 275 级可分解出。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91684"></span><span>稀有营养提取物</span>
+</span>，300 ~ 375 级食材分解必出，250 ~ 375 级可分解出。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91726"></span><span>特异营养提取物</span>
+</span>，400 ~ 450 级食材可分解出。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

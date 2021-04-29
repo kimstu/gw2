@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>测试列表 | DPS 输出测试 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+ 
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg header-bg-benchmarks">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<div class="row bg-lg bg-lg-benchmarks bg-lg-fixed m-b-10 p-b-0">
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="main-content-benchmarks">
+<div class="main-benchmarks-list-content">
+<div class="main-benchmarks-list-title m-t-0">DPS 测试排名</div>
+<div class="build-info-content"><ul>
+<li>本排行榜整理自 2020.07.10 职业平衡后的游戏版本，全部使用 PVE 大型地下城 配置，所有测试结果均附带视频。</li>
+<li>本榜单使用400万血量魔像进行测试，所有配置都使用了 全身+5灌注、食物 及 通用效果，点击横条即可查看详细资料。详细增益、职业BUFF 及 魔像症状 使用情况，请通过 <a href="buffs.html" class="pjax-link">BUFF使用说明</a> 查阅。</li>
+<li>“最高伤害” 是指经过多次测试后的最高测试伤害值，如果你使用正确的输出循环，有可能超越这一数字。</li>
+<li>“平均伤害” 是指受武器平均威力影响的参考伤害值。</li>
+<li>由于国服服务器存在物理上的丢包问题，因此本榜单将尽可能采用外服木桩数据。</li>
+<li>本榜单通过以下外服公会的 站点资料 或 视频 整理：<a target="_blank" href="javascript:window.open('https://snowcrows.com/benchmarks');" rel="nofollow noopener noreferrer">SC - Benchmarks</a> / CnD / sN / BATS / cL / LN</li>
+<li>战斗日志 及 BGM 参见：<a href="benchmarks_info_2020_07_07.html">2020.07.07 更新后测试列表信息</a></li>
+<li>最后更新：2021.01.07</li>
+</ul>
+</div>
+<div class="main-benchmarks-list-title">超大体积魔像</div>
+<div class="main-benchmarks-list-content" id="large_hitbox"></div>
+<div class="main-benchmarks-list-title">小体积魔像</div>
+<div class="main-benchmarks-list-content" id="small_hitbox"></div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+  $('#large_hitbox').empty();
+  $('#small_hitbox').empty();
+  
+  //
+  function addCom(x) {
+    x = x.toString();
+    var pattern = /(-?\d+)(\d{3})/;
+    while (pattern.test(x))
+        x = x.replace(pattern, "$1,$2");
+    return x;
+  }
+
+  //predefined chart data - array/object literal
+  var masterData = [];
+  //category 1 - data01
+  var data01 = [
+          {
+        'title': '编织者 - 直伤 - 剑匕 - 穿心一箭 - 闪电巨锤',
+        'profession_type': 'Elementalist',
+        'profession': 'Weaver',
+        'max': 39587,
+        'avg': 39100,
+        'peak': 39737,
+        'peak_second': 20,
+        'build_link': 'Raid_Weaver_Sword',
+        'video_link': 'https://www.youtube.com/watch?v=fsX60FsUCqo'
+      },
+          {
+        'title': '编织者 - 直伤 - 剑匕 - 穿心一箭 - 秘法爆弹',
+        'profession_type': 'Elementalist',
+        'profession': 'Weaver',
+        'max': 38943,
+        'avg': 38300,
+        'peak': 40969,
+        'peak_second': 19,
+        'build_link': 'Raid_Weaver_Sword',
+        'video_link': 'https://www.youtube.com/watch?v=NqHisj-ddUI'
+      },
+          {
+        'title': '编织者 - 直伤 - 剑匕 - 清新气流 - 秘法爆弹',
+        'profession_type': 'Elementalist',
+        'profession': 'Weaver',
+        'max': 38051,
+        'avg': 37500,
+        'peak': 45823,
+        'peak_second': 17,
+        'build_link': 'Raid_Weaver_Sword',
+        'video_link': 'https://www.youtube.com/watch?v=zrtMoDkHqnQ'
+      },
+          {
+        'title': '编织者 - 直伤 - 剑匕 - 清新气流 - 闪电巨锤',
+        'profession_type': 'Elementalist',
+        'profession': 'Weaver',
+        'max': 38658,
+        'avg': 38000,
+        'peak': 40411,
+        'peak_second': 19,
+        'build_link': 'Raid_Weaver_Sword',
+        'video_link': 'https://www.youtube.com/watch?v=zrtMoDkHqnQ'
+      },
+          {
+        'title': '编织者 - 直伤 - 法杖 - 穿心一箭',
+        'profession_type': 'Elementalist',
+        'profession': 'Weaver',
+        'max': 35748,
+        'avg': 35200,
+        'peak': 37920,
+        'peak_second': 21,
+        'build_link': 'Raid_Weaver_Staff',
+        'video_link': 'https://www.youtube.com/watch?v=FKjXM_J-Krw'
+      },
+          {
+        'title': '编织者 - 直伤 - 法杖 - 清新气流',
+        'profession_type': 'Elementalist',
+        'profession': 'Weaver',
+        'max': 34753,
+        'avg': 34200,
+        'peak': 42484,
+        'peak_second': 19,
+        'build_link': 'Raid_Weaver_Staff',
+        'video_link': 'https://www.youtube.com/watch?v=hNp85c5Z7Jk'
+      },
+          {
+        'title': '编织者 - 直伤 - 法杖 - 秘法',
+        'profession_type': 'Elementalist',
+        'profession': 'Weaver',
+        'max': 32091,
+        'avg': 31500,
+        'peak': 37568,
+        'peak_second': 21,
+        'build_link': 'Raid_Weaver_Staff',
+        'video_link': 'https://www.youtube.com/watch?v=eXFhCVL3aoI'
+      },
+          {
+        'title': '编织者 - 症状 - 匕聚 - 元素能量雕文',
+        'profession_type': 'Elementalist',
+        'profession': 'Weaver',
+        'max': 41035,
+        'avg': 40700,
+        'peak': 43507,
+        'peak_second': 19,
+        'build_link': 'Raid_Weaver_Condition',
+        'video_link': 'https://www.youtube.com/watch?v=is7uQC5tzGQ'
+      },
+          {
+        'title': '编织者 - 症状 - 剑聚 - 元素能量雕文',
+        'profession_type': 'Elementalist',
+        'profession': 'Weaver',
+        'max': 38379,
+        'avg': 38000,
+        'peak': 44035,
+        'peak_second': 18,
+        'build_link': 'Raid_Weaver_Condition',
+        'video_link': 'https://www.youtube.com/watch?v=vT1OBvueRSU'
+      },
+          {
+        'title': '暴风使 - 直伤 - 节号',
+        'profession_type': 'Elementalist',
+        'profession': 'Tempest',
+        'max': 38069,
+        'avg': 37400,
+        'peak': 44583,
+        'peak_second': 18,
+        'build_link': 'Raid_Tempest_Power',
+        'video_link': 'https://www.youtube.com/watch?v=7tF8y7bUoQU'
+      },
+          {
+        'title': '暴风使 - 症状 - 匕号',
+        'profession_type': 'Elementalist',
+        'profession': 'Tempest',
+        'max': 38130,
+        'avg': 37800,
+        'peak': 35306,
+        'peak_second': 23,
+        'build_link': 'Raid_Tempest_Condition',
+        'video_link': 'https://www.youtube.com/watch?v=Rh8gTWyoaXA'
+      },
+          {
+        'title': '魂兽师 - 直伤 - 长弓',
+        'profession_type': 'Ranger',
+        'profession': 'Soulbeast',
+        'max': 37893,
+        'avg': 37300,
+        'peak': 48772,
+        'peak_second': 16,
+        'build_link': 'Raid_Soulbeast_Power',
+        'video_link': ''
+      },
+          {
+        'title': '龙魂使 - 症状敏捷 - 唤魂 - 龙魂姿态 - 无队友',
+        'profession_type': 'Revenant',
+        'profession': 'Renegade',
+        'max': 34853,
+        'avg': 34500,
+        'peak': 31685,
+        'peak_second': 25,
+        'build_link': 'Raid_Renegade_Condition_Alacrity',
+        'video_link': 'https://www.youtube.com/watch?v=dDGBuBAHwys'
+      },
+          {
+        'title': '猎龙者 - 直伤 - 剑聚 - 美德 - 热诚',
+        'profession_type': 'Guardian',
+        'profession': 'Dragonhunter',
+        'max': 38448,
+        'avg': 38000,
+        'peak': 41597,
+        'peak_second': 19,
+        'build_link': 'Raid_Dragonhunter_Power',
+        'video_link': 'https://www.youtube.com/watch?v=WMkoNd-8IEg'
+      },
+          {
+        'title': '猎龙者 - 直伤 - 剑聚 - 光辉',
+        'profession_type': 'Guardian',
+        'profession': 'Dragonhunter',
+        'max': 35132,
+        'avg': 34900,
+        'peak': 38986,
+        'peak_second': 20,
+        'build_link': 'Raid_Dragonhunter_Power',
+        'video_link': 'https://www.youtube.com/watch?v=C98JaabU6_c'
+      },
+          {
+        'title': '猎龙者 - 直伤 - 节聚 - 光辉',
+        'profession_type': 'Guardian',
+        'profession': 'Dragonhunter',
+        'max': 33313,
+        'avg': 33150,
+        'peak': 39016,
+        'peak_second': 20,
+        'build_link': 'Raid_Dragonhunter_Power',
+        'video_link': 'https://www.youtube.com/watch?v=7Czz-FYyL_c'
+      },
+          {
+        'title': '守护者 - 直伤 - 剑聚 - 美德',
+        'profession_type': 'Guardian',
+        'profession': 'Guardian',
+        'max': 38372,
+        'avg': 37900,
+        'peak': 42901,
+        'peak_second': 19,
+        'build_link': 'Raid_Guardian_Power',
+        'video_link': 'https://www.youtube.com/watch?v=3nX_H0pJ6Dw'
+      },
+          {
+        'title': '龙魂使 - 症状 - 唤魂 - 龙魂姿态 - 无队友',
+        'profession_type': 'Revenant',
+        'profession': 'Renegade',
+        'max': 38011,
+        'avg': 37500,
+        'peak': 34523,
+        'peak_second': 23,
+        'build_link': 'Raid_Renegade_Condition',
+        'video_link': 'https://www.youtube.com/watch?v=fBYzCIj7RAU'
+      },
+          {
+        'title': '龙魂使 - 症状 - 唤魂 - 刺客姿态 - 无队友',
+        'profession_type': 'Revenant',
+        'profession': 'Renegade',
+        'max': 38048,
+        'avg': 37700,
+        'peak': 35452,
+        'peak_second': 22,
+        'build_link': 'Raid_Renegade_Condition',
+        'video_link': 'https://www.youtube.com/watch?v=RWO0Wnn-0J4'
+      },
+          {
+        'title': '龙魂使 - 症状 - 毁灭 - 龙魂姿态 - 无队友',
+        'profession_type': 'Revenant',
+        'profession': 'Renegade',
+        'max': 36445,
+        'avg': 36200,
+        'peak': 34849,
+        'peak_second': 23,
+        'build_link': 'Raid_Renegade_Condition',
+        'video_link': 'https://www.youtube.com/watch?v=9cYdYsSYIPM'
+      },
+          {
+        'title': '龙魂使 - 症状 - 单短弓 - 唤魂 - 刺客姿态 - 无队友',
+        'profession_type': 'Revenant',
+        'profession': 'Renegade',
+        'max': 32892,
+        'avg': 32600,
+        'peak': 29415,
+        'peak_second': 27,
+        'build_link': 'Raid_Renegade_Condition',
+        'video_link': 'https://www.youtube.com/watch?v=1mXm7BL71Zw'
+      },
+          {
+        'title': '龙魂使 - 直伤敏捷',
+        'profession_type': 'Revenant',
+        'profession': 'Renegade',
+        'max': 23973,
+        'avg': 23500,
+        'peak': 33219,
+        'peak_second': 24,
+        'build_link': 'Raid_Renegade_Power_Alacrity',
+        'video_link': 'https://www.youtube.com/watch?v=p4D96l_GVPg'
+      },
+      ];
+  
+  var data02 = [
+      	{
+      'title': '编织者 - 直伤 - 剑匕 - 穿心一箭 - 秘法爆弹',
+      'profession_type': 'Elementalist',
+      'profession': 'Weaver',
+      'max': 38483,
+      'avg': 38000,
+      'peak': 39266,
+      'peak_second': 20,
+      'build_link': 'Raid_Weaver_Sword',
+      'video_link': 'https://www.youtube.com/watch?v=ZtEY4lXt6Hc'
+    },
+      	{
+      'title': '编织者 - 直伤 - 剑匕 - 清新气流 - 秘法爆弹',
+      'profession_type': 'Elementalist',
+      'profession': 'Weaver',
+      'max': 37776,
+      'avg': 37300,
+      'peak': 40270,
+      'peak_second': 19,
+      'build_link': 'Raid_Weaver_Sword',
+      'video_link': 'https://www.youtube.com/watch?v=9gTwIz3Ltl8'
+    },
+      	{
+      'title': '狂战士 - 症状旗帜 - 纪律',
+      'profession_type': 'Warrior',
+      'profession': 'Berserker',
+      'max': 34127,
+      'avg': 33600,
+      'peak': 32711,
+      'peak_second': 24,
+      'build_link': 'Raid_Berserker_Banner',
+      'video_link': 'https://www.youtube.com/watch?v=DwsA0Rzzi44'
+    },
+      	{
+      'title': '狂战士 - 症状',
+      'profession_type': 'Warrior',
+      'profession': 'Berserker',
+      'max': 37122,
+      'avg': 36600,
+      'peak': 33409,
+      'peak_second': 24,
+      'build_link': 'Raid_Berserker_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=NxowBP5nH5E'
+    },
+      	{
+      'title': '狂战士 - 直伤旗帜 - 双斧 - 力量',
+      'profession_type': 'Warrior',
+      'profession': 'Berserker',
+      'max': 33349,
+      'avg': 32800,
+      'peak': 36153,
+      'peak_second': 23,
+      'build_link': 'Raid_Berserker_Power_Banner',
+      'video_link': 'https://www.youtube.com/watch?v=4tKu5_7qzLM'
+    },
+      	{
+      'title': '狂战士 - 直伤旗帜 - 战术',
+      'profession_type': 'Warrior',
+      'profession': 'Berserker',
+      'max': 29191,
+      'avg': 28700,
+      'peak': 31366,
+      'peak_second': 24,
+      'build_link': 'Raid_Berserker_Power_Banner',
+      'video_link': 'https://www.youtube.com/watch?v=NWFNpWoXqpw'
+    },
+      	{
+      'title': '狂战士 - 直伤 - 双斧',
+      'profession_type': 'Warrior',
+      'profession': 'Berserker',
+      'max': 36836,
+      'avg': 36300,
+      'peak': 38014,
+      'peak_second': 21,
+      'build_link': 'Raid_Berserker_Power',
+      'video_link': 'https://www.youtube.com/watch?v=ry9Bf5vmndA'
+    },
+      	{
+      'title': '破法者 - 直伤旗帜',
+      'profession_type': 'Warrior',
+      'profession': 'Spellbreaker',
+      'max': 28071,
+      'avg': 27500,
+      'peak': 27442,
+      'peak_second': 29,
+      'build_link': 'Raid_Spellbreaker_Banner',
+      'video_link': 'https://www.youtube.com/watch?v=x_WDtG-wLt0'
+    },
+      	{
+      'title': '破法者 - 直伤',
+      'profession_type': 'Warrior',
+      'profession': 'Spellbreaker',
+      'max': 30652,
+      'avg': 30100,
+      'peak': 29851,
+      'peak_second': 27,
+      'build_link': 'Raid_Spellbreaker_Power',
+      'video_link': 'https://www.youtube.com/watch?v=lDVsNY6jiQo'
+    },
+      	{
+      'title': '魂兽师 - 直伤 - 巨剑',
+      'profession_type': 'Ranger',
+      'profession': 'Soulbeast',
+      'max': 38380,
+      'avg': 37900,
+      'peak': 44548,
+      'peak_second': 18,
+      'build_link': 'Raid_Soulbeast_Power',
+      'video_link': ''
+    },
+      	{
+      'title': '魂兽师 - 直伤 - 长弓',
+      'profession_type': 'Ranger',
+      'profession': 'Soulbeast',
+      'max': 37371,
+      'avg': 36900,
+      'peak': 48425,
+      'peak_second': 16,
+      'build_link': 'Raid_Soulbeast_Power',
+      'video_link': 'https://www.youtube.com/watch?v=5fdGV8WzAH0'
+    },
+      	{
+      'title': '魂兽师 - 症状 - 匕火 - 短弓 - 猞猁',
+      'profession_type': 'Ranger',
+      'profession': 'Soulbeast',
+      'max': 34567,
+      'avg': 34200,
+      'peak': 37691,
+      'peak_second': 21,
+      'build_link': 'Raid_Soulbeast_Condition',
+      'video_link': ''
+    },
+      	{
+      'title': '魂兽师 - 症状 - 斧匕 - 匕火 - 猞猁',
+      'profession_type': 'Ranger',
+      'profession': 'Soulbeast',
+      'max': 35827,
+      'avg': 35500,
+      'peak': 39411,
+      'peak_second': 20,
+      'build_link': 'Raid_Soulbeast_Condition',
+      'video_link': ''
+    },
+      	{
+      'title': '德鲁伊 - 症状辅助',
+      'profession_type': 'Ranger',
+      'profession': 'Druid',
+      'max': 13082,
+      'avg': 12500,
+      'peak': 13427,
+      'peak_second': 14,
+      'build_link': 'Raid_Druid_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=5Wipvn8loPk'
+    },
+      	{
+      'title': '灾厄师 - 症状',
+      'profession_type': 'Necromancer',
+      'profession': 'Scourge',
+      'max': 29347,
+      'avg': 29000,
+      'peak': 27252,
+      'peak_second': 29,
+      'build_link': 'Raid_Scourge_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=yG7ZuiBZTtE'
+    },
+      	{
+      'title': '夺魂者 - 直伤',
+      'profession_type': 'Necromancer',
+      'profession': 'Reaper',
+      'max': 34302,
+      'avg': 33800,
+      'peak': 32107,
+      'peak_second': 25,
+      'build_link': 'Raid_Reaper_Power',
+      'video_link': 'https://www.youtube.com/watch?v=I1Tjyfk-DKI'
+    },
+      	{
+      'title': '燃火者 - 症状 - 队友',
+      'profession_type': 'Guardian',
+      'profession': 'Firebrand',
+      'max': 36732,
+      'avg': 36300,
+      'peak': 40227,
+      'peak_second': 20,
+      'build_link': 'Raid_Firebrand_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=U1yYDskt3Cw'
+    },
+      	{
+      'title': '燃火者 - 症状 - 无队友',
+      'profession_type': 'Guardian',
+      'profession': 'Firebrand',
+      'max': 32796,
+      'avg': 32400,
+      'peak': 36362,
+      'peak_second': 22,
+      'build_link': 'Raid_Firebrand_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=U1yYDskt3Cw'
+    },
+      	{
+      'title': '燃火者 - 症状急速 - 队友',
+      'profession_type': 'Guardian',
+      'profession': 'Firebrand',
+      'max': 30201,
+      'avg': 29800,
+      'peak': 33932,
+      'peak_second': 23,
+      'build_link': 'Raid_Firebrand_Condition_Quickness',
+      'video_link': 'https://www.youtube.com/watch?v=OROgrpfbI1I'
+    },
+      	{
+      'title': '燃火者 - 症状急速 - 无队友',
+      'profession_type': 'Guardian',
+      'profession': 'Firebrand',
+      'max': 28293,
+      'avg': 27900,
+      'peak': 31059,
+      'peak_second': 25,
+      'build_link': 'Raid_Firebrand_Condition_Quickness',
+      'video_link': 'https://www.youtube.com/watch?v=OROgrpfbI1I'
+    },
+      	{
+      'title': '独行侠 - 直伤 - 法杖',
+      'profession_type': 'Thief',
+      'profession': 'Daredevil',
+      'max': 35070,
+      'avg': 34600,
+      'peak': 37714,
+      'peak_second': 21,
+      'build_link': 'Raid_Daredevil_Power',
+      'video_link': 'https://www.youtube.com/watch?v=UD7TaxND8vc'
+    },
+      	{
+      'title': '独行侠 - 直伤 - 法杖 - 陷阱',
+      'profession_type': 'Thief',
+      'profession': 'Daredevil',
+      'max': 35013,
+      'avg': 34500,
+      'peak': 38889,
+      'peak_second': 20,
+      'build_link': 'Raid_Daredevil_Power',
+      'video_link': 'https://www.youtube.com/watch?v=u3j6eFCTX0c'
+    },
+      	{
+      'title': '神枪手 - 直伤 - 步枪',
+      'profession_type': 'Thief',
+      'profession': 'Deadeye',
+      'max': 39044,
+      'avg': 38700,
+      'peak': 39806,
+      'peak_second': 20,
+      'build_link': 'Raid_Deadeye_Rifle',
+      'video_link': 'https://www.youtube.com/watch?v=si71D-O4kf8'
+    },
+      	{
+      'title': '神枪手 - 直伤 - 匕匕',
+      'profession_type': 'Thief',
+      'profession': 'Deadeye',
+      'max': 33451,
+      'avg': 32900,
+      'peak': 35658,
+      'peak_second': 24,
+      'build_link': 'Raid_Deadeye_Power',
+      'video_link': 'https://www.youtube.com/watch?v=Xg80uDq3JZE'
+    },
+      	{
+      'title': '神枪手 - 症状 - 队友',
+      'profession_type': 'Thief',
+      'profession': 'Deadeye',
+      'max': 35800,
+      'avg': 35500,
+      'peak': 35453,
+      'peak_second': 22,
+      'build_link': 'Raid_Deadeye_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=urfApEApnLU'
+    },
+      	{
+      'title': '全息师 - 直伤 - 步枪',
+      'profession_type': 'Engineer',
+      'profession': 'Holosmith',
+      'max': 37783,
+      'avg': 37200,
+      'peak': 39486,
+      'peak_second': 20,
+      'build_link': 'Raid_Holosmith_Power_Rifle',
+      'video_link': 'https://www.youtube.com/watch?v=9GSXkwyQUyg'
+    },
+      	{
+      'title': '全息师 - 直伤 - 剑枪 - 存储单元 - 45热量起手',
+      'profession_type': 'Engineer',
+      'profession': 'Holosmith',
+      'max': 38143,
+      'avg': 37600,
+      'peak': 42150,
+      'peak_second': 19,
+      'build_link': 'Raid_Holosmith_Power_Sword_Pistol',
+      'video_link': 'https://www.youtube.com/watch?v=9GSXkwyQUyg'
+    },
+      	{
+      'title': '全息师 - 直伤 - 剑枪 - 存储单元 - 90热量起手',
+      'profession_type': 'Engineer',
+      'profession': 'Holosmith',
+      'max': 38137,
+      'avg': 37600,
+      'peak': 40388,
+      'peak_second': 20,
+      'build_link': 'Raid_Holosmith_Power_Sword_Pistol',
+      'video_link': 'https://www.youtube.com/watch?v=-mNRVyXj01Y'
+    },
+      	{
+      'title': '全息师 - 症状 - 简单循环',
+      'profession_type': 'Engineer',
+      'profession': 'Holosmith',
+      'max': 36422,
+      'avg': 36100,
+      'peak': 35887,
+      'peak_second': 22,
+      'build_link': 'Raid_Holosmith_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=ZuBId0hZ0mo'
+    },
+      	{
+      'title': '全息师 - 症状 - 复杂循环',
+      'profession_type': 'Engineer',
+      'profession': 'Holosmith',
+      'max': 36864,
+      'avg': 36500,
+      'peak': 38316,
+      'peak_second': 21,
+      'build_link': 'Raid_Holosmith_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=7EkJk-A9xa4'
+    },
+      	{
+      'title': '全息师 - 症状 - 初学者',
+      'profession_type': 'Engineer',
+      'profession': 'Holosmith',
+      'max': 35460,
+      'avg': 35100,
+      'peak': 36038,
+      'peak_second': 22,
+      'build_link': 'Raid_Holosmith_Condition',
+      'video_link': ''
+    },
+      	{
+      'title': '工程师 - 症状',
+      'profession_type': 'Engineer',
+      'profession': 'Engineer',
+      'max': 35352,
+      'avg': 35000,
+      'peak': 31598,
+      'peak_second': 25,
+      'build_link': 'Raid_Engineer_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=J6sdN_CI59Y'
+    },
+      	{
+      'title': '时空术士 - 直伤 - 剑聚',
+      'profession_type': 'Mesmer',
+      'profession': 'Chronomancer',
+      'max': 42943,
+      'avg': 42500,
+      'peak': 56463,
+      'peak_second': 14,
+      'build_link': 'Raid_Chronomancer_Power',
+      'video_link': 'https://www.youtube.com/watch?v=2hrMH2BhAr4'
+    },
+      	{
+      'title': '时空术士 - 直伤增益 - 巨剑 - 决斗支配 - 机不可失',
+      'profession_type': 'Mesmer',
+      'profession': 'Chronomancer',
+      'max': 32068,
+      'avg': 31600,
+      'peak': 35199,
+      'peak_second': 23,
+      'build_link': 'Raid_Chronomancer_Power_Boon',
+      'video_link': 'https://www.youtube.com/watch?v=52HRvWBxJUk'
+    },
+      	{
+      'title': '时空术士 - 直伤增益 - 剑聚 - 决斗支配 - 机不可失',
+      'profession_type': 'Mesmer',
+      'profession': 'Chronomancer',
+      'max': 31470,
+      'avg': 30840,
+      'peak': 35625,
+      'peak_second': 23,
+      'build_link': 'Raid_Chronomancer_Power_Boon',
+      'video_link': 'https://www.youtube.com/watch?v=Z7VqDNh1IGg'
+    },
+      	{
+      'title': '时空术士 - 直伤增益 - 剑剑 - 灵感支配 - 机不可失',
+      'profession_type': 'Mesmer',
+      'profession': 'Chronomancer',
+      'max': 21457,
+      'avg': 21000,
+      'peak': 22761,
+      'peak_second': 35,
+      'build_link': 'Raid_Chronomancer_Power_Boon',
+      'video_link': 'https://www.youtube.com/watch?v=mCQk8R-5t1w'
+    },
+      	{
+      'title': '时空术士 - 症状增益 - 平均28层困惑',
+      'profession_type': 'Mesmer',
+      'profession': 'Chronomancer',
+      'max': 6230,
+      'avg': 5900,
+      'peak': 6226,
+      'peak_second': 31,
+      'build_link': 'Raid_Chronomancer_Condition_Boon',
+      'video_link': 'https://www.youtube.com/watch?v=-IaWBWCgrys'
+    },
+      	{
+      'title': '幻象术士 - 症状 - 平均24.9层困惑',
+      'profession_type': 'Mesmer',
+      'profession': 'Mirage',
+      'max': 29194,
+      'avg': 28900,
+      'peak': 26920,
+      'peak_second': 30,
+      'build_link': 'Raid_Mirage_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=KMNR40z8KDo'
+    },
+      	{
+      'title': '预告者 - 直伤增益',
+      'profession_type': 'Revenant',
+      'profession': 'Herald',
+      'max': 28360,
+      'avg': 28000,
+      'peak': 30701,
+      'peak_second': 26,
+      'build_link': 'Raid_Herald_Boon',
+      'video_link': 'https://www.youtube.com/watch?v=foEqWHloZoc'
+    },
+      	{
+      'title': '全息师 - 直伤 - 剑枪 - 光能爆破 - 0热量起手',
+      'profession_type': 'Engineer',
+      'profession': 'Holosmith',
+      'max': 37543,
+      'avg': 37000,
+      'peak': 46987,
+      'peak_second': 17,
+      'build_link': 'Raid_Holosmith_Power_Sword_Pistol',
+      'video_link': 'https://www.youtube.com/watch?v=W8kuWfyADh0'
+    },
+      	{
+      'title': '时空术士 - 症状 - 平均38.25层困惑',
+      'profession_type': 'Mesmer',
+      'profession': 'Chronomancer',
+      'max': 15281,
+      'avg': 15000,
+      'peak': 0,
+      'peak_second': 0,
+      'build_link': 'Raid_Chronomancer_Condition',
+      'video_link': 'https://www.youtube.com/watch?v=Yt_1NK4ZVK8'
+    },
+      	{
+      'title': '魂兽师 - 症状 - 单短弓 - 猞猁',
+      'profession_type': 'Ranger',
+      'profession': 'Soulbeast',
+      'max': 33607,
+      'avg': 33100,
+      'peak': 36426,
+      'peak_second': 21,
+      'build_link': 'Raid_Soulbeast_Condition',
+      'video_link': ''
+    },
+      	{
+      'title': '狂战士 - 症状旗帜 - 战术',
+      'profession_type': 'Warrior',
+      'profession': 'Berserker',
+      'max': 29211,
+      'avg': 28800,
+      'peak': 28324,
+      'peak_second': 29,
+      'build_link': 'Raid_Berserker_Banner',
+      'video_link': 'https://www.youtube.com/watch?v=xUtMQFKkj0Y'
+    },
+      	{
+      'title': '狂战士 - 直伤旗帜 - 巨剑 - 双斧 - 力量',
+      'profession_type': 'Warrior',
+      'profession': 'Berserker',
+      'max': 34075,
+      'avg': 33600,
+      'peak': 36653,
+      'peak_second': 22,
+      'build_link': 'Raid_Berserker_Power_Banner',
+      'video_link': ''
+    },
+      	{
+      'title': '魂兽师 - 症状 - 斧匕 - 匕火 - 压迫优势 - 伊波茄',
+      'profession_type': 'Ranger',
+      'profession': 'Soulbeast',
+      'max': 32675,
+      'avg': 32300,
+      'peak': 33892,
+      'peak_second': 24,
+      'build_link': 'Raid_Soulbeast_Condition',
+      'video_link': ''
+    },
+      	{
+      'title': '魂兽师 - 症状 - 斧匕 - 匕火 - 群体领袖 - 伊波茄',
+      'profession_type': 'Ranger',
+      'profession': 'Soulbeast',
+      'max': 31794,
+      'avg': 31300,
+      'peak': 29545,
+      'peak_second': 27,
+      'build_link': 'Raid_Soulbeast_Condition',
+      'video_link': ''
+    },
+      	{
+      'title': '狂战士 - 直伤 - 巨剑 - 双斧',
+      'profession_type': 'Warrior',
+      'profession': 'Berserker',
+      'max': 36890,
+      'avg': 36400,
+      'peak': 38568,
+      'peak_second': 21,
+      'build_link': '',
+      'video_link': ''
+    },
+      ];
+  
+  //nested array - master data
+  masterData.push(data01, data02);
+
+  function buildChart(element,data){
+    //calculating the highest number to determine the scale
+    var scaleMax = Math.max.apply(null,data.map(function(o){return o.max;}));
+    //sort array highest to lowest (optional)
+    data.sort(function(a, b) {
+      return parseFloat(b.max) - parseFloat(a.max);
+    });
+    for (i = 0; i < data.length; i++) {
+      var max = (data[i].max / scaleMax) * 100,
+          avg = (data[i].avg / scaleMax) * 100;
+     //building the element structure
+      var benchmarkbar =         
+        `<div class="benchmarkbar">
+            <a href="/build/` + data[i].profession_type.toLowerCase() + `/` + data[i].build_link + `" class="pjax-link">
+                <div class="benchmarkbar-icon icon-white-` + data[i].profession + ` benchmarkbar-dark-` + data[i].profession_type + `"></div>
+                <div class="benchmarkbar-right">
+                    <div class="benchmarkbar-top benchmarkbar-dark-` + data[i].profession_type + `" style="width: ` + max + `%">
+                        <span class="benchmarkbar-title">` + data[i].title + `</span>
+                        <span class="benchmarkbar-highest">` + addCom(data[i].max) + `</span>
+                    </div>
+                    <div class="benchmarkbar-bottom benchmarkbar-light-` + data[i].profession_type + `" style="width: ` + avg + `%">
+                        <span class="benchmarkbar-avg">平均&nbsp;&nbsp;` + addCom(data[i].avg) + `</span>
+                    </div>
+                </div>
+                <div class="benchmarkbar-peak">
+                    <div class="benchmarkbar-top benchmarkbar-dark-` + data[i].profession_type + `">
+                        <span class="benchmarkbar-peak-num">` + addCom(data[i].peak) + `</span>
+                    </div>
+                    <div class="benchmarkbar-bottom benchmarkbar-light-` + data[i].profession_type + `">
+                        <span class="benchmarkbar-peak-second">` + data[i].peak_second + `&nbsp;秒</span>
+                    </div>
+                </div>
+            </a>
+        </div>`
+        
+      $(element).append(benchmarkbar);
+    }
+  }
+  
+  buildChart('#large_hitbox',masterData[0]);
+  buildChart('#small_hitbox',masterData[1]);
+});
+
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

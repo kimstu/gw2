@@ -1,0 +1,2979 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>传奇手枪：优品 | 传奇装备 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/d86f4b1d7f02-1920x1200.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/d86f4b1d7f02-1920x1200.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #e74c3c !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #e74c3c !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">传奇装备</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">传奇手枪：优品<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+传奇手枪：优品 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;淘淘王</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2020.02.07</div>
+
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div> </div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li>传奇手枪 <strong>优品</strong> 隶属于 <strong>第二套传奇武器</strong>（拾取绑定），需要通过资料片 <strong>决战迈古玛</strong> 来获取各种相关收藏物品。</li>
+<li>需要拥有 500级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 才能完成 <strong>优品</strong> 的全部收藏。</li>
+<li>推荐在拥有 <strong>飞天鳞龙</strong> 坐骑后再来做收藏，可以节省很多时间。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">1级优品：研究</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">2级优品：开发</a> </li>
+ <li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">3级优品：原型</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">4级优品：催化（卓越能量）</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">4级优品：催化（炼金催化剂）</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-6" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">4级优品：催化（催化转换器）</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-7" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">合成配方</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">收藏解锁</h2>
+<ul>
+<li><strong>狮子拱门 - 商人广场传送点</strong> [&amp;BBAEAAA=]</li>
+<li>找 <strong>宗师级制作师霍布斯</strong> 花费 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span><span>金币</span>
+</span> 和 10003 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76204"></span><span>优品：第1卷</span>
+</span> 即可解锁 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2450"></span><span>1级优品：研究</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="719" image-compress-type="1" alt=""></p>
+<ul>
+<li>注意：<span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2450"></span><span>1级优品：研究</span>
+</span> 不用按物品顺序来完成收藏。</li>
+</ul>
+<h2 id="1-">1、哈克蛙炼金术学徒之书</h2>
+<ul>
+<li><strong>林线瀑布 - 鲜血托领地传送点</strong> [&amp;BEoCAAA=]</li>
+<li>与 <strong>大师级炼金师阿特拉利</strong> 对话获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="720" image-compress-type="1" alt=""> <img class="gw2-image" image-id="721" image-compress-type="1" alt=""></p>
+<h2 id="2-1-">2、哈克蛙炼金术第1章：毒素</h2>
+<ul>
+<li><strong>林线瀑布 - 鲜血托领地传送点</strong> [&amp;BEoCAAA=]</li>
+<li>完成 <strong>3 ~ 6</strong>，制作 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73976"></span><span>瓶装强效哈克蛙毒素</span>
+</span> 后，与 <strong>大师级炼金师阿特拉利</strong> 对话测试毒素，并在之后击败他。</li>
+</ul>
+<p><img class="gw2-image" image-id="722" image-compress-type="1" alt=""></p>
+<h2 id="3-">3、瓶装强效哈克蛙毒素</h2>
+<ul>
+<li><strong>卡勒顿之森 - 卡勒顿避难所传送点</strong> [&amp;BDwBAAA=]</li>
+<li>按下图路线走，前往迷你地下城 <strong>悲伤托之泪</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="723" image-compress-type="1" alt=""></p>
+<ul>
+<li>捡起地上的 <strong>巨石</strong> 砸右边的 <strong>铜锣</strong>，即可打开大门。</li>
+</ul>
+<p><img class="gw2-image" image-id="724" image-compress-type="1" alt=""></p>
+<ul>
+<li>里面精锐怪很多，提前带好解控、稳固类技能，按下图路线跑（不打怪），先往左再往右，到达 <strong>悲伤托之泪</strong> 小游戏的地方。</li>
+</ul>
+<p><img class="gw2-image" image-id="725" image-compress-type="1" alt=""></p>
+<ul>
+<li>抬头能看到雕像脸上有左右两个点阵，按照 <strong>先左后右</strong> 的顺序，将地上的 <strong>悲伤托之泪</strong> 摆放在与点阵对应的地板上（左右两个图案，分开两次摆放，多余的眼泪拿走），即可点亮大门上的火炬。</li>
+<li>点亮左边门上的两个火炬后，稍等片刻，雕像脸上的点阵会重置，继续按照 <strong>先左后右</strong> 的顺序摆放，将雕像右边的两个火炬点亮，即可打开大门。</li>
+</ul>
+<p><img class="gw2-image" image-id="726" image-compress-type="1" alt=""> <img class="gw2-image" image-id="727" image-compress-type="1" alt=""></p>
+<ul>
+<li>进门后即可看到 <strong>炼金补给</strong> 就在宝箱旁边，交流以获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73976"></span><span>瓶装强效哈克蛙毒素</span>
+</span> 配方。</li>
+</ul>
+<p><img class="gw2-image" image-id="728" image-compress-type="1" alt=""></p>
+<ul>
+<li>完成 <strong>4 ~ 6</strong> 收藏后，使用 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 副职业制作 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73976"></span><span>瓶装强效哈克蛙毒素</span>
+</span>，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73976"></span><span>瓶装强效哈克蛙毒素</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71446"></span><span>致命龙葵</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73582"></span><span>蚊子血液</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72154"></span><span>哈克蛙毒腺</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-">4、蚊子血液</h2>
+<ul>
+<li><strong>卡勒顿之森 - 斯雷弗传送点</strong> [&amp;BP4FAAA=]</li>
+<li>完成事件 <strong>阻止那只雌蚊，别让她冲进雄蚊群里</strong>，击杀 <strong>雌蚊</strong> 获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73582"></span><span>蚊子血液</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="729" image-compress-type="1" alt=""> <img class="gw2-image" image-id="730" image-compress-type="1" alt=""></p>
+<ul>
+<li>之后顺手将 <strong>6、哈克蛙毒腺</strong> 做完。</li>
+</ul>
+<h2 id="5-">5、致命龙葵</h2>
+<ul>
+<li><strong>浩劫海峡 - 三体堡垒传送点</strong> [&amp;BO4CAAA=]</li>
+<li>采摘 <strong>致命龙葵</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="731" image-compress-type="1" alt=""> <img class="gw2-image" image-id="732" image-compress-type="1" alt=""></p>
+<h2 id="6-">6、哈克蛙毒腺</h2>
+<ul>
+<li><strong>卡勒顿之森 - 蛇妖之祸避难所传送点</strong> [&amp;BEABAAA=]</li>
+<li>击杀 <strong>哈克蛙</strong> 有几率掉落。</li>
+</ul>
+<p><img class="gw2-image" image-id="733" image-compress-type="1" alt=""> <img class="gw2-image" image-id="734" image-compress-type="1" alt=""></p>
+<h2 id="7-2-">7、哈克蛙炼金术第2章：治愈吐息</h2>
+<ul>
+<li><strong>林线瀑布 - 鲜血托领地传送点</strong> [&amp;BEoCAAA=]</li>
+<li>完成 <strong>8 ~ 13</strong>，制作 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71269"></span><span>瓶装哈克蛙治愈吐息</span>
+</span> 后，与 <strong>大师级炼金师阿特拉利</strong> 对话测试日光之神吐息，使用1技能击杀五只 <strong>河流萤火虫</strong> 后获得。</li>
+</ul>
+<h2 id="8-">8、瓶装哈克蛙治愈吐息</h2>
+<ul>
+<li><strong>凯西斯山 - 埃里科贸易站传送点</strong> [&amp;BAoAAAA=]</li>
+<li>爱心商人处购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72069"></span><span>配方：瓶装哈克蛙治愈吐息</span>
+</span>，花费：4249 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="735" image-compress-type="1" alt=""></p>
+<ul>
+<li>完成 <strong>9 ~ 13</strong> 收藏后，使用 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 副职业制作 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71269"></span><span>瓶装哈克蛙治愈吐息</span>
+</span>，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71269"></span><span>瓶装哈克蛙治愈吐息</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73881"></span><span>秘行托部落的草药</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70861"></span><span>罐装地虫草</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72672"></span><span>精炼蜂蜜</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76523"></span><span>异样芦荟</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-">9、秘行托部落的草药</h2>
+<ul>
+<li><strong>度量领域 - 秘行托领地传送点</strong> [&amp;BLEEAAA=]</li>
+<li>爱心商人处购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73881"></span><span>秘行托部落的草药</span>
+</span>，花费：1071 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="736" image-compress-type="1" alt=""></p>
+<h2 id="10-">10、罐装地虫草</h2>
+<ul>
+<li><strong>卡勒顿之森 - 暮光之根传送点</strong> [&amp;BEEFAAA=]</li>
+<li>击败世界 BOSS <strong>巨型丛林地虫</strong> 后获得，刷新时间请参阅：<a href="timer.html" target="_blank">事件计时器</a></li>
+</ul>
+<p><img class="gw2-image" image-id="737" image-compress-type="1" alt=""></p>
+<h2 id="11-">11、原蜜</h2>
+<ul>
+<li><strong>女王谷 - 溪谷传送点</strong> [&amp;BPQAAAA=]</li>
+<li>完成事件 <strong>保护蜂巢，赶走饥饿的熊</strong> 后，同 <strong>费欧娜·黑斯汀</strong> 购买，花费：5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> 28 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span></li>
+</ul>
+<p><img class="gw2-image" image-id="738" image-compress-type="1" alt=""></p>
+<h2 id="12-">12、精炼蜂蜜</h2>
+<ul>
+<li><strong>林线瀑布 - 鲜血托领地传送点</strong> [&amp;BEoCAAA=]</li>
+<li>从 <strong>大师级炼金师阿特拉利</strong> 处购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75560"></span><span>配方：精炼蜂蜜</span>
+</span>。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72672"></span><span>精炼蜂蜜</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70940"></span><span>原蜜</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> × 25、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19750"></span><span>煤块</span>
+</span> × 250、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46741"></span><span>绸缎布卷</span>
+</span> × 5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="13-">13、异样芦荟</h2>
+<ul>
+<li><strong>干涸高地 - 繁盛之地传送点</strong> [&amp;BHoHAAA=]</li>
+<li>打败 <strong>重力</strong> 后对话获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="739" image-compress-type="1" alt=""> <img class="gw2-image" image-id="740" image-compress-type="1" alt=""></p>
+<h2 id="14-3-">14、哈克蛙炼金术第3章：日光之神吐息</h2>
+<ul>
+<li><strong>林线瀑布 - 鲜血托领地传送点</strong> [&amp;BEoCAAA=]</li>
+<li>完成 <strong>15 ~ 19</strong>，制作 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70893"></span><span>哈克蛙日光之神吐息药瓶</span>
+</span> 后，与 <strong>大师级炼金师阿特拉利</strong> 对话测试日光之神吐息，使用1技能击杀五只 <strong>河流萤火虫</strong> 后获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="741" image-compress-type="1" alt=""> <img class="gw2-image" image-id="742" image-compress-type="1" alt=""></p>
+<h2 id="15-">15、哈克蛙日光之神吐息药瓶</h2>
+<ul>
+<li><strong>闪萤沼泽 - 水居托神圣领地传送点</strong> [&amp;BMgBAAA=]</li>
+<li>爱心商人处购买配方，花费：5600 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="743" image-compress-type="1" alt=""></p>
+<ul>
+<li>完成 <strong>16 ~ 19</strong> 收藏后，使用 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 副职业制作 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70893"></span><span>哈克蛙日光之神吐息药瓶</span>
+</span>，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70893"></span><span>哈克蛙日光之神吐息药瓶</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74253"></span><span>火虫幼体</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75232"></span><span>日光之神瓶子</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70447"></span><span>青蛙吐息</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74596"></span><span>噬灵巨木脓水</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="16-">16、青蛙吐息</h2>
+<ul>
+<li><strong>苍翠边界 - 伊策尔蛙查卡村传送点</strong> [&amp;BOAHAAA=]</li>
+<li>首先你需要 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="55"></span><span>迈古玛专精：伊策尔蛙先导</span>
+</span>，然后对话伊策尔蛙剑舞者开启战斗，打败后开启宝箱即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70447"></span><span>青蛙吐息</span>
+</span>，新手建议二人以上，老手单刷。</li>
+<li>注意，必须自己拥有 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="55"></span><span>迈古玛专精：伊策尔蛙先导</span>
+</span>，否则即使击杀后也无法开启宝箱。</li>
+</ul>
+<p><img class="gw2-image" image-id="744" image-compress-type="1" alt=""> <img class="gw2-image" image-id="745" image-compress-type="1" alt=""></p>
+<h2 id="17-">17、日光之神瓶子</h2>
+<ul>
+<li><strong>卡勒顿之森 - 山际传送点</strong> [&amp;BDkBAAA=]</li>
+<li>爱心购买，花费：1821 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="746" image-compress-type="1" alt=""></p>
+<h2 id="18-">18、火虫幼体</h2>
+<ul>
+<li><strong>苍翠边界 - 空难峰传送点</strong> [&amp;BN4HAAA=]</li>
+<li>苍翠边界 <strong>树间除虫</strong> 小游戏白银以上宝箱获取。</li>
+</ul>
+<p><img class="gw2-image" image-id="747" image-compress-type="1" alt=""></p>
+<h2 id="19-">19、噬灵巨木脓水</h2>
+<ul>
+<li>任意 <strong>沼泽碎层</strong>，击杀最终 BOSS <strong>噬灵巨木</strong> 后获得。</li>
+</ul>
+<h2 id="20-">20、完整哈克蛙炼金术书</h2>
+<ul>
+<li>完成 <strong>1 ~ 19</strong> 后，自动获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75861"></span><span>完整哈克蛙炼金术书</span>
+</span>。</li>
+</ul>
+<h2 id="-2-">制作 研究，解锁 2级优品：开发</h2>
+<ul>
+<li><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2450"></span><span>1级优品：研究</span>
+</span> 完成后，会获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70448"></span><span>合剂宝箱</span>
+</span>（内含 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76806"></span><span>合剂精华</span>
+</span> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71495"></span><span>配方盒：研究</span>
+</span>）</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70960"></span><span>研究</span>
+</span> 需要 450级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76806"></span><span>合剂精华</span>
+</span></td>
+<td>完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2450"></span><span>1级优品：研究</span>
+</span> 后，开启 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70448"></span><span>合剂宝箱</span>
+</span> 获得</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75330"></span><span>试验性手枪枪柄</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46736"></span><span>灵木木板</span>
+</span> × 10<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 50<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70820"></span><span>荣誉碎片</span>
+</span> × 50</td>
+<td>450级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70874"></span><span>试验性手枪管</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span> × 10<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 50<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70820"></span><span>荣誉碎片</span>
+</span> × 50</td>
+<td>450级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72261"></span><span>传奇铭文</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 10<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12988"></span><span>星陨板甲榫</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46739"></span><span>伊伦娜皮革片</span>
+</span> × 10</td>
+<td>配方图纸从<strong>宗师级制作师霍布斯</strong>处购买（左侧第5个）<br>450级 武器类副职业 制作</td>
+</tr>
+</tbody>
+</table> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="6-">6、基础手枪需求订单</h2>
+<ul>
+<li>制作 250 个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74917"></span><span>基础秘银手枪</span>
+</span>，交付给主城中的 <strong>大师级猎手</strong> 即可完成。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74917"></span><span>基础秘银手枪</span>
+</span> 配方如下，总计需要消耗 1500 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19700"></span><span>秘银矿石</span>
+</span> 和 1500 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19722"></span><span>上古原木</span>
+</span>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">组件</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">基础材料总计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12923"></span><span>秘银手枪管</span>
+</span> × 250</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19684"></span><span>秘银锭</span>
+</span> × 750</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19700"></span><span>秘银矿石</span>
+</span> × 1500</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12956"></span><span>上古手枪枪柄</span>
+</span> × 250</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19709"></span><span>上古木板</span>
+</span> × 500</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19722"></span><span>上古原木</span>
+</span> × 1500</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-">5、精准手枪锻造工具</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71818"></span><span>精准手枪锻造工具</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19684"></span><span>秘银锭</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19685"></span><span>星陨锭</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span> × 10</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-2-">1、木工技艺（手枪枪柄版）：第2卷</h2>
+<ul>
+<li>完成 <strong>6、基础手枪需求订单</strong> 后，制作下列组件，交付给 <strong>大师级猎手</strong> 即可完成。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">组件</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">基础材料总计</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12957"></span><span>新木手枪枪柄</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19710"></span><span>新生木板</span>
+</span> × 20</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19723"></span><span>新生原木</span>
+</span> × 60</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12960"></span><span>软木手枪枪柄</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19713"></span><span>软芯木板</span>
+</span> × 20</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19726"></span><span>软芯原木</span>
+</span> × 40</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12961"></span><span>干木手枪枪柄</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19714"></span><span>风干木板</span>
+</span> × 20</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19727"></span><span>风干原木</span>
+</span> × 60</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12958"></span><span>硬木手枪枪柄</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19711"></span><span>硬质木板</span>
+</span> × 20</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19724"></span><span>硬质原木</span>
+</span> × 60</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12956"></span><span>上古手枪枪柄</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19709"></span><span>上古木板</span>
+</span> × 20</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19722"></span><span>上古原木</span>
+</span> × 60</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12959"></span><span>远古手枪枪柄</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19712"></span><span>远古木板</span>
+</span> × 20</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19725"></span><span>远古原木</span>
+</span> × 60</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45835"></span><span>灵木手枪枪柄</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46736"></span><span>灵木木板</span>
+</span> × 10<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> × 25<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span> × 250</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-">2、机械手枪枪柄</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74900"></span><span>机械手枪枪柄</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19709"></span><span>上古木板</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19684"></span><span>秘银锭</span>
+</span> × 50 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46736"></span><span>灵木木板</span>
+</span> × 5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-2-">3、锻造技艺（手枪枪管版）：第2卷</h2>
+<ul>
+<li>制作下列组件，交付给 <strong>大师级猎手</strong> 即可完成。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">组件</th>
+<th style="text-align:left">材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12920"></span><span>青铜手枪管</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19679"></span><span>青铜锭</span>
+</span> × 30</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12922"></span><span>铁质手枪管</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19683"></span><span>铁锭</span>
+</span> × 30</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12925"></span><span>钢质手枪管</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19688"></span><span>钢锭</span>
+</span> × 30</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12921"></span><span>暗钢手枪管</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19681"></span><span>暗钢锭</span>
+</span> × 30</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12923"></span><span>秘银手枪管</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19684"></span><span>秘银锭</span>
+</span> × 30</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12924"></span><span>星陨手枪管</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19685"></span><span>星陨锭</span>
+</span> × 30</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45833"></span><span>德里莫钢质手枪管</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span> × 15<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> × 25<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span> × 250</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-">4、精准手枪枪管</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76018"></span><span>精准手枪枪管</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19684"></span><span>秘银锭</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19924"></span><span>原基块</span>
+</span> × 10 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span> × 10</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-12">7 ~ 12</h2>
+<ul>
+<li><strong>狮子拱门 - 商人广场传送点</strong> [&amp;BBAEAAA=]</li>
+<li>将下述物品交付给 <strong>学者摩西</strong> 即可完成。</li>
+</ul>
+<p><img class="gw2-image" image-id="719" image-compress-type="1" alt=""></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">#</th>
+<th style="text-align:left">收藏名称</th>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:left">沙漠魔法（手枪版）：第2卷</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="27"></span><span>强盗徽饰</span>
+</span> × 1000</td>
+<td style="text-align:left">白银荒地各种事件获得</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:left">丛林魔法（手枪版）：第2卷</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="25"></span><span>晶块</span>
+</span> × 400</td>
+<td style="text-align:left">干涸高地各种事件获得</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:left">旧世界魔法（手枪版）：第2卷</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19925"></span><span>黑曜石碎块</span>
+</span> × 100</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:left">远古流水魔法（手枪版）：第2卷</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37897"></span><span>喀壳虫壳</span>
+</span> × 100</td>
+<td style="text-align:left">南阳海湾击杀喀壳虫有几率掉落，可拍卖行购买</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:left">草药魔法（手枪版）：第2卷</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37907"></span><span>西番莲</span>
+</span> × 25</td>
+<td style="text-align:left">采集获得，可拍卖行购买</td>
+</tr>
+<tr>
+<td style="text-align:center">12</td>
+<td style="text-align:left">稳定魔法（手枪版）：第2卷</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73248"></span><span>稳定基质</span>
+</span> × 25</td>
+<td style="text-align:left">拆解迷雾碎层升华首饰获得，可拍卖行购买</td>
+</tr>
+</tbody>
+</table>
+<h2 id="13-2-">13、优品：第2卷</h2>
+<ul>
+<li><strong>狮子拱门 - 商人广场传送点</strong> [&amp;BBAEAAA=]</li>
+<li>找 <strong>宗师级制作师霍布斯</strong> 花费 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="23"></span><span>灵魂碎片</span>
+</span> 和 10003 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75780"></span><span>优品：第2卷</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="719" image-compress-type="1" alt=""></p>
+<h2 id="14-">14、研究</h2>
+<ul>
+<li>已获得。</li>
+</ul>
+<h2 id="-3-">制作 开发，解锁 3级优品：原型</h2>
+<ul>
+<li><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2354"></span><span>2级优品：开发</span>
+</span> 完成后，会获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74682"></span><span>机械手枪制作技巧与提示</span>
+</span>（内含 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75982"></span><span>精通高级手枪制作</span>
+</span> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74375"></span><span>配方盒：开发</span>
+</span>）</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70743"></span><span>开发</span>
+</span> 需要 450级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72458"></span><span>研究之灵</span>
+</span></td>
+<td>拆解 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70960"></span><span>研究</span>
+</span> 获得</td>
+</tr>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75982"></span><span>精通高级手枪制作</span>
+</span></td>
+<td>完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2354"></span><span>2级优品：开发</span>
+</span> 后，开启 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74682"></span><span>机械手枪制作技巧与提示</span>
+</span> 获得</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75316"></span><span>罐装冷光抛光剂</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46731"></span><span>血石尘</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68063"></span><span>合成宝石</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span> × 10<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9461"></span><span>大师保养油</span>
+</span> × 10</td>
+<td>通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74375"></span><span>配方盒：开发</span>
+</span> 解锁配方，400级 武器类副职业制作<br><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9461"></span><span>大师保养油</span>
+</span> 由 400级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 探索配方：<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> × 3 + <span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span> × 20</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73517"></span><span>炫彩磁石</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24320"></span><span>冰川磁石</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24315"></span><span>熔火磁石</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24310"></span><span>玛瑙磁石</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24305"></span><span>充能磁石</span>
+</span></td>
+<td>通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74375"></span><span>配方盒：开发</span>
+</span> 解锁配方，400级 武器类副职业制作</td>
+</tr>
+</tbody>
+</table> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="1-">1、实验性反应器</h2>
+<ul>
+<li>完成 <strong>2 ~ 6</strong> 后携带这几件物品，来到 <strong>拉塔索姆 - 魔术庭院传送点</strong> [&amp;BLQEAAA=]，使用 <strong>协同力工作台</strong>，使用五个物品合成。</li>
+</ul>
+<p><img class="gw2-image" image-id="748" image-compress-type="1" alt=""> <img class="gw2-image" image-id="749" image-compress-type="1" alt=""> <img class="gw2-image" image-id="750" image-compress-type="1" alt=""></p>
+<h2 id="2-">2、损坏的反应器壳罩</h2>
+<ul>
+<li><strong>度量领域 - 子午线传送点</strong> [&amp;BEcAAAA=]</li>
+<li>击败世界 BOSS <strong>火焰元素</strong> 获得，刷新时间参见：<a href="timer.html" target="_blank">事件计时器</a></li>
+</ul>
+<p><img class="gw2-image" image-id="751" image-compress-type="1" alt=""></p>
+<h2 id="3-">3、魔像电容</h2>
+<ul>
+<li><strong>漩涡山 - 旧锤据点传送点</strong> [&amp;BNQCAAA=]</li>
+<li>击败世界 BOSS <strong>魔像马克II型</strong> 获得，刷新时间参见：<a href="timer.html" target="_blank">事件计时器</a></li>
+</ul>
+<p><img class="gw2-image" image-id="752" image-compress-type="1" alt=""></p>
+<h2 id="4-">4、汤姆大叔的新反应器</h2>
+<ul>
+<li>迷雾碎层 <strong>未识别</strong>，最终宝箱开出。</li>
+</ul>
+<h2 id="5-">5、天相元素反应器</h2>
+<ul>
+<li><strong>干涸高地 - 修理站传送点</strong> [&amp;BJcHAAA=]</li>
+<li>打败 <strong>实验性天相机甲</strong> 后自动获取，箭头位置有个洞跳下去。BOSS 比较猛，建议两人以上组队击杀。</li>
+</ul>
+<p><img class="gw2-image" image-id="753" image-compress-type="1" alt=""> <img class="gw2-image" image-id="754" image-compress-type="1" alt=""></p>
+<h2 id="6-">6、以太电容器</h2>
+<ul>
+<li>迷雾碎层 <strong>美琴船长头目</strong>，最终宝箱开出。</li>
+</ul>
+<h2 id="7-">7、奇术新星异能体火花</h2>
+<ul>
+<li>迷雾碎层 <strong>奇术新星反应堆</strong>，最终宝箱开出。</li>
+</ul>
+<h2 id="8-">8、永动能量漩涡</h2>
+<ul>
+<li>获得 <strong>1、实验性反应器</strong> 并且 完成 <strong>9 ~ 17</strong> 后，前往 <strong>闪荧沼泽 - 破碎海岸传送点</strong> [&amp;BNABAAA=]，从爱心商人处购买配方制作出来。</li>
+<li>配方花费：924 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span>，由 450级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作。</li>
+</ul>
+<p><img class="gw2-image" image-id="755" image-compress-type="1" alt=""> <img class="gw2-image" image-id="756" image-compress-type="1" alt=""></p>
+<h2 id="9-">9、无尽螺旋装置</h2>
+<ul>
+<li><strong>漩涡山 - 铁拳传送点</strong> [&amp;BNMCAAA=]</li>
+<li>击败 <strong>无限电圈指挥官</strong> 后获得，需要完成 <strong>夺取电圈之战</strong> 的系列事件，才能刷出目标 BOSS。</li>
+</ul>
+<hr>
+<ul>
+<li>首先来到 <strong>铁拳传送点</strong> [&amp;BNMCAAA=] 左侧，完成事件 <strong>消灭洞穴巨魔，阻止他们对勇士之愚的进攻</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="757" image-compress-type="1" alt=""></p>
+<ul>
+<li>然后护送 <strong>指挥官风暴之足</strong>，完成事件 <strong>攻入无限电圈</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="758" image-compress-type="1" alt=""></p>
+<ul>
+<li>之后将 <strong>无限电圈反应堆</strong> 四个角刷出的首领击杀。</li>
+</ul>
+<p><img class="gw2-image" image-id="759" image-compress-type="1" alt=""></p>
+<ul>
+<li>最后来到 <strong>无限电圈反应堆</strong> 中央，击杀目标首领 <strong>无限电圈指挥官</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="760" image-compress-type="1" alt=""></p>
+<h2 id="10-">10、破坏的武器零件</h2>
+<ul>
+<li><strong>漩涡山 - 欧文岛传送点</strong> [&amp;BNICAAA=]</li>
+<li>爱心商人处购买，花费：2160 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="761" image-compress-type="1" alt=""></p>
+<h2 id="11-">11、充盈能量烙印水晶</h2>
+<ul>
+<li>完成 <strong>12 ~ 17</strong> 后获得。后续收藏还要使用该物品，切勿摧毁。</li>
+</ul>
+<h2 id="12-">12、枯竭的烙印水晶</h2>
+<ul>
+<li><strong>裂脊草原 - 灼热盆地传送点</strong> [&amp;BE4DAAA=]</li>
+<li>击败世界 BOSS <strong>碎裂巨兽</strong> 获得，刷新时间参见：<a href="timer.html" target="_blank">事件计时器</a></li>
+</ul>
+<p><img class="gw2-image" image-id="762" image-compress-type="1" alt=""></p>
+<h2 id="13-">13、欧麦德水晶充能</h2>
+<ul>
+<li><strong>干涸高地 - 修理站传送点</strong> [&amp;BJcHAAA=]</li>
+<li>到达闪光洞穴后，双击 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71872"></span><span>枯竭的烙印水晶</span>
+</span> 完成。</li>
+</ul>
+<p><img class="gw2-image" image-id="763" image-compress-type="1" alt=""></p>
+<h2 id="14-17-">14、查克水晶充能 和 17、魔径水晶充能</h2>
+<ul>
+<li><strong>缠藤深渊 - 魔径汇流点传送点</strong> [&amp;BPUHAAA=]</li>
+<li>在小游戏区域双击 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71872"></span><span>枯竭的烙印水晶</span>
+</span> 完成 <strong>查克水晶充能</strong>，<strong>魔径水晶充能</strong> 需要完成小游戏后，达到白银以上才能完成。</li>
+</ul>
+<p><img class="gw2-image" image-id="764" image-compress-type="1" alt=""></p>
+<h2 id="15-">15、混乱水晶充能</h2>
+<ul>
+<li><strong>钢铁平原 - 派肯遗迹传送点</strong> [&amp;BOQBAAA=]</li>
+<li><strong>跳跳乐：混乱晶窟</strong> 终点宝箱处双击 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71872"></span><span>枯竭的烙印水晶</span>
+</span> 获得。</li>
+<li>攻略参见：<a href="jumping_puzzles.html" target="_blank">成就合集：跳跳乐</a></li>
+</ul>
+<p><img class="gw2-image" image-id="765" image-compress-type="1" alt=""></p>
+<h2 id="16-">16、禁术工厂水晶充能</h2>
+<ul>
+<li><strong>闪萤沼泽 - 黑天传送点</strong> [&amp;BM0BAAA=]</li>
+<li><strong>跳跳乐：禁术工厂</strong> 终点宝箱处双击 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71872"></span><span>枯竭的烙印水晶</span>
+</span> 获得。</li>
+<li>攻略参见：<a href="jumping_puzzles.html" target="_blank">成就合集：跳跳乐</a></li>
+</ul>
+<p><img class="gw2-image" image-id="766" image-compress-type="1" alt=""></p>
+<h2 id="18-">18、错杂能量方块</h2>
+<ul>
+<li><strong>漩涡山 - 格沃冉传送点</strong> [&amp;BMgCAAA=]</li>
+<li><strong>跳跳乐：方块迷阵</strong> 终点宝箱获取。</li>
+<li>攻略参见：<a href="jumping_puzzles.html" target="_blank">成就合集：跳跳乐</a></li>
+</ul>
+<p><img class="gw2-image" image-id="767" image-compress-type="1" alt=""></p>
+<h2 id="19-">19、碱性合剂</h2>
+<ul>
+<li>完成 <strong>20 ~ 23</strong> 后，前往 <strong>林线瀑布 - 鲜血托领地传送点</strong> [&amp;BEoCAAA=]，找 <strong>大师级炼金师阿特拉利</strong> 购买配方。</li>
+<li>配方花费：9499 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span>。由 450级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作出来。</li>
+</ul>
+<p><img class="gw2-image" image-id="720" image-compress-type="1" alt=""> <img class="gw2-image" image-id="768" image-compress-type="1" alt=""></p>
+<h2 id="20-">20、充能赤金粒子</h2>
+<ul>
+<li><strong>赤金盆地 - 北部守望哨站传送点</strong> [&amp;BN0HAAA=]</li>
+<li>小游戏 <strong>金翼翱翔</strong> 达到白银后宝箱获取。</li>
+</ul>
+<p><img class="gw2-image" image-id="769" image-compress-type="1" alt=""></p>
+<h2 id="21-">21、金色氧化物质</h2>
+<ul>
+<li><strong>赤金盆地 - 西部守望哨站传送点</strong> [&amp;BAYIAAA=]</li>
+<li>击败 <strong>前哨：西部守望哨站</strong> 的最终 BOSS <strong>黄金软泥怪</strong> 获取。</li>
+</ul>
+<hr>
+<ul>
+<li>首先完成 <strong>前哨：西部守望哨站</strong> 的三个前置事件：<strong>保护塔洛奇其，让他搜索箱子寻找失踪的镜子碎片</strong>、<strong>击败匍匐藤蔓，收复镜子碎片</strong>、<strong>保护斯克鼠觅食者，让他们带着补给安全离开丛林</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="770" image-compress-type="1" alt=""> <img class="gw2-image" image-id="771" image-compress-type="1" alt=""> <img class="gw2-image" image-id="772" image-compress-type="1" alt=""></p>
+<ul>
+<li>随后护送 <strong>斯皮伦克</strong> 前往山洞，击杀 <strong>黄金软泥怪奥燃</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="773" image-compress-type="1" alt=""> <img class="gw2-image" image-id="774" image-compress-type="1" alt=""> <img class="gw2-image" image-id="775" image-compress-type="1" alt=""></p>
+<h2 id="22-">22、魔径水银化合物</h2>
+<ul>
+<li><strong>缠藤深渊 - 魔径汇流点传送点</strong> [&amp;BPUHAAA=]</li>
+<li>推荐从 <strong>缠藤深渊 - 魔径汇流点传送点</strong> 附近击杀 <strong>精锐 查克虫抛投者</strong> 有几率掉落。</li>
+</ul>
+<p><img class="gw2-image" image-id="776" image-compress-type="1" alt=""></p>
+<h2 id="23-">23、奴霍奇蛙唾液</h2>
+<ul>
+<li><strong>苍翠边界 - 契约团营地传送点</strong> [&amp;BAgIAAA=]</li>
+<li>穿过 <strong>奴霍奇蛙泥塘</strong> 或 直接飞到谷底，与英雄点旁的 <strong>奴霍奇蛙痰盂</strong> 交流获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="777" image-compress-type="1" alt=""> <img class="gw2-image" image-id="778" image-compress-type="1" alt=""></p>
+<h2 id="24-">24、协同力生成器</h2>
+<ul>
+<li>获得 <strong>7、奇术新星异能体火花</strong>、<strong>8、永动能量漩涡</strong>、<strong>18、错杂能量方块</strong>、<strong>19、碱性合剂</strong> 后，携带这几件物品，来到 <strong>拉塔索姆 - 魔术庭院传送点</strong> [&amp;BLQEAAA=]，使用 <strong>协同力工作台</strong>，使用五个物品合成。</li>
+</ul>
+<p><img class="gw2-image" image-id="748" image-compress-type="1" alt=""> <img class="gw2-image" image-id="749" image-compress-type="1" alt=""> <img class="gw2-image" image-id="750" image-compress-type="1" alt=""></p>
+<h2 id="25-">25、临近测试：吞噬托</h2>
+<ul>
+<li><strong>闪荧沼泽 - 破碎海岸传送点</strong> [&amp;BNABAAA=]</li>
+<li>击杀世界 BOSS <strong>吞噬托</strong> 后，在宝箱位置双击使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73563"></span><span>协同力生成器</span>
+</span> 获得。</li>
+<li>刷新时间参见：<a href="timer.html" target="_blank">事件计时器</a></li>
+</ul>
+<p><img class="gw2-image" image-id="779" image-compress-type="1" alt=""></p>
+<h2 id="26-">26、临近测试：格姆的实验室</h2>
+<ul>
+<li><strong>度量领域 - 贪吃托传送点</strong> [&amp;BLIEAAA=]</li>
+<li>完成 <strong>跳跳乐：格姆的实验室</strong>，在终点宝箱位置，双击使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73563"></span><span>协同力生成器</span>
+</span> 获得。</li>
+<li>攻略参见：<a href="jumping_puzzles.html" target="_blank">成就合集：跳跳乐</a></li>
+</ul>
+<p><img class="gw2-image" image-id="780" image-compress-type="1" alt=""> <img class="gw2-image" image-id="781" image-compress-type="1" alt=""></p>
+<h2 id="27-">27、临近测试：审讯团专员</h2>
+<ul>
+<li><strong>干涸高地 - 繁盛之地传送点</strong> [&amp;BHoHAAA=]</li>
+<li>如图，进入山洞前需要先做完两个前置事件。</li>
+</ul>
+<p><img class="gw2-image" image-id="782" image-compress-type="1" alt=""></p>
+<ul>
+<li>两个前置事件分别是：<strong>抢在审讯团前面收集水晶碎片，送还给风裔</strong>、<strong>营救被俘虏的风裔</strong></li>
+</ul>
+<p><img class="gw2-image" image-id="783" image-compress-type="1" alt=""> <img class="gw2-image" image-id="784" image-compress-type="1" alt=""></p>
+<ul>
+<li>随后按下 <strong>审讯团协同力面板</strong> 按钮，即可刷出 <strong>审讯团协同学专家</strong>，将其击杀后，双击使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73563"></span><span>协同力生成器</span>
+</span> 获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="785" image-compress-type="1" alt=""></p>
+<h2 id="28-">28、临近测试：超能毁灭者</h2>
+<ul>
+<li><strong>漩涡山 - 漩涡传送点</strong> [&amp;BM0CAAA=]</li>
+<li>击杀世界 BOSS <strong>超能毁灭者</strong> 后，在宝箱位置双击使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73563"></span><span>协同力生成器</span>
+</span> 获得。</li>
+<li>偶尔会出现从宝箱位置不能双击获得的情况，此时前往 <strong>超能毁灭者</strong> 尸体位置双击即可获得。</li>
+<li>刷新时间参见：<a href="timer.html" target="_blank">事件计时器</a></li>
+</ul>
+<p><img class="gw2-image" image-id="786" image-compress-type="1" alt=""></p>
+<h2 id="29-">29、临近测试：菌菇群落</h2>
+<ul>
+<li><strong>赤金盆地 - 南部哨站传送点</strong> [&amp;BI4DAAA=]</li>
+<li>小游戏白银以上后，在终点位置双击使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73563"></span><span>协同力生成器</span>
+</span> 获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="787" image-compress-type="1" alt=""></p>
+<h2 id="30-3-">30、优品：第3卷</h2>
+<ul>
+<li><strong>狮子拱门 - 商人广场传送点</strong> [&amp;BBAEAAA=]</li>
+<li>找 <strong>宗师级制作师霍布斯</strong> 花费 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="23"></span><span>灵魂碎片</span>
+</span> 和 10003 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71004"></span><span>优品：第3卷</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="719" image-compress-type="1" alt=""></p>
+<h2 id="31-">31、开发</h2>
+<ul>
+<li>已获得。</li>
+</ul>
+<h2 id="-4-">制作 原型，解锁 4级优品：催化</h2>
+<ul>
+<li><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2556"></span><span>3级优品：原型</span>
+</span> 完成后，会获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71096"></span><span>异能宝箱</span>
+</span>（内含 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77082"></span><span>异能精华</span>
+</span> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75724"></span><span>配方盒：原型</span>
+</span>）</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76399"></span><span>原型</span>
+</span> 需要 500级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76083"></span><span>开发之灵</span>
+</span></td>
+<td>拆解 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70743"></span><span>开发</span>
+</span> 获得</td>
+</tr>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77082"></span><span>异能精华</span>
+</span></td>
+<td>完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2556"></span><span>3级优品：原型</span>
+</span> 后，开启 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71096"></span><span>异能宝箱</span>
+</span> 获得</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74802"></span><span>精调撞针</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19684"></span><span>秘银锭</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19685"></span><span>星陨锭</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span> × 10</td>
+<td>通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75724"></span><span>配方盒：原型</span>
+</span> 解锁配方，500级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72535"></span><span>高级弹药圆柱</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19681"></span><span>暗钢锭</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19684"></span><span>秘银锭</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19685"></span><span>星陨锭</span>
+</span> × 50</td>
+<td>通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75724"></span><span>配方盒：原型</span>
+</span> 解锁配方，500级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作</td>
+</tr>
+</tbody>
+</table> </div>
+</div>
+</div>
+</div>
+</div>
+ <div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="1-">1、卓越能量</h2>
+<ul>
+<li>需要先完成 <strong>2 ~ 22</strong> 后，才能完成该步。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>马尔科之跃 - 荒芜凹地传送点</strong> [&amp;BKgCAAA=]</li>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75944"></span><span>充能矮人法术捕获器</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76280"></span><span>充能灵魂电池裂片</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74752"></span><span>盒装腐化晶体瓶管</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72047"></span><span>混沌魔法</span>
+</span> 与 <strong>黄铁半岛</strong> 的英雄点对话后，即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76498"></span><span>卓越能量</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="788" image-compress-type="1" alt=""> <img class="gw2-image" image-id="789" image-compress-type="1" alt=""></p>
+<h2 id="2-">2、矮人法术捕获器</h2>
+<ul>
+<li><strong>罗纳通道 - 德曼修会传送点</strong> [&amp;BOkAAAA=]</li>
+<li>进入 <strong>德曼修会</strong>，找到 <strong>欧格登</strong> 对话获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="790" image-compress-type="1" alt=""> <img class="gw2-image" image-id="791" image-compress-type="1" alt=""> <img class="gw2-image" image-id="792" image-compress-type="1" alt=""> <img class="gw2-image" image-id="793" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li>完成 <strong>3 ~ 5</strong> 后，会将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75338"></span><span>矮人法术捕获器</span>
+</span> 转变为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75944"></span><span>充能矮人法术捕获器</span>
+</span>，并将 <strong>57、充能矮人法术捕获器</strong> 完成。</li>
+</ul>
+<h2 id="3-">3、血肉收割者魔法</h2>
+<ul>
+<li><strong>炎心高地 - 锈碗传送点</strong> [&amp;BB4CAAA=]</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75338"></span><span>矮人法术捕获器</span>
+</span> 获得激活状态，随后前往击杀 <strong>血肉收割者</strong> 即可获得。</li>
+<li>该地区偶尔会刷新一些无关的事件，你需要将事件清理掉，才能刷出 <strong>血肉收割者</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="794" image-compress-type="1" alt=""> <img class="gw2-image" image-id="795" image-compress-type="1" alt=""></p>
+<h2 id="4-">4、喀壳虫女王魔法</h2>
+<ul>
+<li><strong>南阳海湾 - 喀壳营地传送点</strong> [&amp;BNcGAAA=]</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75338"></span><span>矮人法术捕获器</span>
+</span> 获得激活状态，随后前往击杀世界 BOSS <strong>喀壳虫女王</strong> 即可获得。</li>
+<li><strong>喀壳虫女王</strong>刷新时间请参阅：<a href="timer.html" target="_blank">事件计时器</a></li>
+</ul>
+<h2 id="5-">5、血肉啃食者魔法</h2>
+<ul>
+<li><strong>掘洞悬崖 - 特弗伦传送点</strong> [&amp;BGQCAAA=]</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75338"></span><span>矮人法术捕获器</span>
+</span> 获得激活状态，击败 <strong>凄凉财宝</strong> 迷你地下城中的 <strong>血肉啃食者</strong>。</li>
+<li><strong>凄凉财宝</strong> 洞穴内可以使用坐骑，详细流程请参阅： <a href="explorer.html" target="_blank">成就合集：探险家</a></li>
+</ul>
+<p><img class="gw2-image" image-id="796" image-compress-type="1" alt=""> <img class="gw2-image" image-id="797" image-compress-type="1" alt=""></p>
+<h2 id="6-">6、灵魂电池裂片</h2>
+<ul>
+<li><strong>神佑之城 - 皇宫传送点</strong> [&amp;BCkDAAA=]</li>
+<li>在 <strong>女王的王座室</strong> 中与 <strong>阿妮丝</strong> 交谈获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="798" image-compress-type="1" alt=""> <img class="gw2-image" image-id="799" image-compress-type="1" alt=""> <img class="gw2-image" image-id="800" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li>可以顺手将 <strong>11、纯净晶体瓶管</strong> 完成。</li>
+<li>完成 <strong>7 ~ 10</strong> 后，会将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77237"></span><span>灵魂电池裂片</span>
+</span> 转变为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76280"></span><span>充能灵魂电池裂片</span>
+</span>，并将 <strong>56、充能灵魂电池裂片</strong> 完成。</li>
+</ul>
+<h2 id="7-">7、复生高阶巫师灵魂能量</h2>
+<ul>
+<li><strong>诅咒海岸 - 干预者传送点</strong> [&amp;BB4DAAA=]</li>
+<li>完成 <strong>亚拉之门</strong> 大型团队事件，并在最后刷新出 <strong>复生高阶巫师</strong> 时，双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77237"></span><span>灵魂电池裂片</span>
+</span> 获得buff，随后击杀他用以捕获能量。</li>
+</ul>
+<h2 id="8-">8、复生国王灵魂能量</h2>
+<ul>
+<li><strong>诅咒海岸 - 干预者传送点</strong> [&amp;BB4DAAA=]</li>
+<li>前往下图位置，等待 <strong>探险家罗娜</strong> 刷新出事件，随后护送她前往 <strong>棺椁地窖</strong>，并打开地窖大门。在最后刷出 <strong>复生国王</strong> 时，双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77237"></span><span>灵魂电池裂片</span>
+</span> 获得buff，然后击杀他用以捕获能量。</li>
+<li>这个事件不需要做完 <strong>亚拉之门</strong> 大型事件就会刷新。注意护送途中 <strong>探险家罗娜</strong> 不可阵亡，否则事件会失败。</li>
+</ul>
+<p><img class="gw2-image" image-id="801" image-compress-type="1" alt=""> <img class="gw2-image" image-id="802" image-compress-type="1" alt=""></p>
+<h2 id="9-">9、复生骑士灵魂能量</h2>
+<ul>
+<li><strong>马尔科之跃 - 瘟疫拱门传送点</strong> [&amp;BK4CAAA=]</li>
+<li>前往下图 <strong>英雄点</strong> 位置，找到潜伏隐身的 <strong>复生骑士</strong>，双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77237"></span><span>灵魂电池裂片</span>
+ </span> 获得buff，然后击杀他用以捕获能量。</li>
+</ul>
+<p><img class="gw2-image" image-id="803" image-compress-type="1" alt=""></p>
+<h2 id="10-">10、不死者卡拉斯灵魂能量</h2>
+<ul>
+<li><strong>马尔科之跃 - 帕加传送点</strong> [&amp;BKYCAAA=]</li>
+<li>前往下图位置的棺材处，随后在聊天框中输入命令 <strong>/跪下</strong>，此时会刷出 <strong>不死者卡拉斯</strong>。</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77237"></span><span>灵魂电池裂片</span>
+</span> 获得buff，然后击杀他用以捕获能量。</li>
+</ul>
+<p><img class="gw2-image" image-id="804" image-compress-type="1" alt=""></p>
+<h2 id="11-">11、纯净晶体瓶管</h2>
+<ul>
+<li><strong>神佑之城 - 德薇娜传送点</strong> [&amp;BCMDAAA=]</li>
+<li>前往 <strong>德威娜女祭司</strong> 处花费 1001 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span> 购买。</li>
+</ul>
+<p><img class="gw2-image" image-id="805" image-compress-type="1" alt=""> <img class="gw2-image" image-id="806" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>12 ~ 16</strong> 需要你携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74294"></span><span>纯净晶体瓶管</span>
+</span> 完成收藏，每一步收藏都会获得一个收藏物品放入背包内，注意不要摧毁或丢弃掉，后续还需要将它们双击合成 <strong>17、盒装腐化晶体瓶管</strong>。</li>
+</ul>
+<h2 id="12-">12、烙印晶体瓶管</h2>
+<ul>
+<li><strong>裂脊草原 - 灼热盆地传送点</strong> [&amp;BE4DAAA=]</li>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74294"></span><span>纯净晶体瓶管</span>
+</span>，击败 <strong>精锐 烙印火花</strong> 后获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72285"></span><span>烙印晶体瓶管</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="807" image-compress-type="1" alt=""> <img class="gw2-image" image-id="808" image-compress-type="1" alt=""></p>
+<h2 id="13-">13、冰巢腐化晶体瓶管</h2>
+<ul>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74294"></span><span>纯净晶体瓶管</span>
+</span>，击败 <strong>霜谷之音</strong> 任意一个 <strong>首领 冰巢鲲艮</strong> 后获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74520"></span><span>冰巢腐化晶体瓶管</span>
+</span>。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>霜谷之音 - 远空山庄传送点</strong> [&amp;BIECAAA=]</li>
+<li>下图 <strong>豹尾谷</strong> 的位置会刷出一个 <strong>首领 冰巢鲲艮</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="809" image-compress-type="1" alt=""></p>
+<ul>
+<li>如果世界 BOSS <strong>卓玛之爪</strong> 的参与人数足够多，在事件第二阶段可能会刷出 <strong>首领 冰巢鲲艮</strong>。</li>
+</ul>
+<h2 id="14-">14、复生晶体瓶管</h2>
+<ul>
+<li><strong>马尔科之跃 - 丽莎传送点</strong> [&amp;BK0CAAA=]</li>
+<li>先将 <strong>永恒光辉大教堂</strong> 3个角落的事件做完，随后前往教堂中心击杀 <strong>复生丽莎女祭司</strong>。</li>
+<li>该事件比较繁杂，单人完成难度较高，推荐至少组队 3人完成。</li>
+</ul>
+<p><img class="gw2-image" image-id="810" image-compress-type="1" alt=""></p>
+<ul>
+<li>击杀 <strong>复生丽莎女祭司</strong> 后，等待 10分钟左右，会在教堂中间偏北的位置刷出 <strong>首领 复生怨灵</strong>，携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74294"></span><span>纯净晶体瓶管</span>
+</span>，击败 <strong>首领 复生怨灵</strong> 后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76900"></span><span>复生晶体瓶管</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="811" image-compress-type="1" alt=""> <img class="gw2-image" image-id="812" image-compress-type="1" alt=""></p>
+<h2 id="15-">15、墨德摩藤感染晶体瓶管</h2>
+<ul>
+<li><strong>赤金盆地 - 东部守望哨站传送点</strong> [&amp;BGwIAAA=]</li>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74294"></span><span>纯净晶体瓶管</span>
+</span>，完成东部哨站的前哨事件 <strong>击败防护藤，保护圣贤寇林，让他激活能量塔</strong> 后，前往 <strong>藤牙巢穴</strong> 击杀首领 <strong>藤牙首脑</strong> 后获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74620"></span><span>墨德摩藤感染晶体瓶管</span>
+</span>。</li>
+<li><strong>藤牙首脑</strong> 击杀难度非常大，建议至少组队 5人完成。</li>
+</ul>
+<p><img class="gw2-image" image-id="813" image-compress-type="1" alt=""> <img class="gw2-image" image-id="814" image-compress-type="1" alt=""></p>
+<h2 id="16-">16、德姆感染晶体瓶管</h2>
+<ul>
+<li><strong>女王谷 - 迷神传送点</strong> [&amp;BPwAAAA=]</li>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74294"></span><span>纯净晶体瓶管</span>
+</span>，击败世界 BOSS <strong>暗影巨兽</strong> 后获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72286"></span><span>德姆感染晶体瓶管</span>
+</span>。</li>
+<li><strong>暗影巨兽</strong> 刷新时间请参阅：<a href="timer.html" target="_blank">事件计时器</a></li>
+</ul>
+<p><img class="gw2-image" image-id="815" image-compress-type="1" alt=""> <img class="gw2-image" image-id="816" image-compress-type="1" alt=""></p>
+<h2 id="17-">17、盒装腐化晶体瓶管</h2>
+<ul>
+<li>将 <strong>12 ~ 16</strong> 获得的物品双击合成 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74752"></span><span>盒装腐化晶体瓶管</span>
+</span>。</li>
+</ul>
+<h2 id="18-">18、混沌魔法</h2>
+<ul>
+<li>先将完成 <strong>19、晶化魔法</strong> 获得后，携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73630"></span><span>晶化魔法</span>
+</span> 完成 <strong>20 ~ 22</strong>，然后双击获得的收藏物品即可得到 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72047"></span><span>混沌魔法</span>
+</span>。</li>
+</ul>
+<h2 id="19-">19、晶化魔法</h2>
+<ul>
+<li><strong>卡勒顿之森 - 拾穗者峡谷传送点</strong> [&amp;BDcBAAA=]</li>
+<li>完成 <strong>跳跳乐：斯派克斯的研究所</strong> 后从最终宝箱获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73630"></span><span>晶化魔法</span>
+</span>。</li>
+<li>详细流程请参阅：<a href="jumping_puzzles.html" target="_blank">成就合集：跳跳乐</a></li>
+</ul>
+<p><img class="gw2-image" image-id="817" image-compress-type="1" alt=""></p>
+<h2 id="20-">20、灼晶之力</h2>
+<ul>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73630"></span><span>晶化魔法</span>
+</span> 完成任意 <strong>城市站场</strong> 碎层后，从最终宝箱获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75243"></span><span>灼晶之力</span>
+</span>。</li>
+</ul>
+<h2 id="21-">21、灵质蒸汽</h2>
+<ul>
+<li><strong>钢铁平原 - 派肯遗迹传送点</strong> [&amp;BOQBAAA=]</li>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73630"></span><span>晶化魔法</span>
+</span>，从附近的碎石内拾取武器，然后与附近的石棺互动，将激怒的幽灵击败后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71601"></span><span>灵质蒸汽</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="818" image-compress-type="1" alt=""></p>
+<h2 id="22-">22、魔径枢纽辐射</h2>
+<ul>
+<li><strong>干涸高地 - 修理站传送点</strong> [&amp;BJcHAAA=]</li>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73630"></span><span>晶化魔法</span>
+</span>，击败 <strong>闪光山洞</strong> 中的 <strong>大地元素</strong> 后获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71192"></span><span>魔径枢纽辐射</span>
+</span>。</li>
+<li><strong>闪光山洞</strong> 中偶尔会刷出事件 <strong>清除魔径枢纽肆虐的墨德摩藤</strong>，你需要将该事件完成后，稍等片刻才能刷新出 <strong>大地元素</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="819" image-compress-type="1" alt=""> <img class="gw2-image" image-id="820" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="23-">23、炼金催化剂</h2>
+<ul>
+<li><strong>林线瀑布 - 陆行鸟禁湖传送点</strong> [&amp;BEkCAAA=]</li>
+<li>需要先完成 <strong>24 ~ 49</strong> 后，才能完成该步。</li>
+</ul>
+<hr>
+<ul>
+<li>从 <strong>大师级炼金师阿特拉利</strong> 旁边的 <strong>炼金调和板</strong> 处，将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75649"></span><span>浓缩烈性物质</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76395"></span><span>脓水万物融化剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71877"></span><span>蛛类毒素玻璃瓶</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71081"></span><span>浓缩迈古玛细菌</span>
+</span> 合成 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73832"></span><span>炼金催化剂</span>
+</span>。 </li>
+</ul>
+<p><img class="gw2-image" image-id="720" image-compress-type="1" alt=""> <img class="gw2-image" image-id="821" image-compress-type="1" alt=""></p>
+<h2 id="24-">24、浓缩烈性物质</h2>
+<ul>
+<li>将 <strong>25 ~ 29</strong> 完成后，双击这些收藏物品，即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75649"></span><span>浓缩烈性物质</span>
+</span>。</li>
+</ul>
+<h2 id="25-">25、空哈克蛙药剂瓶</h2>
+<ul>
+<li><strong>鲜血托领地传送点</strong> [&amp;BEoCAAA=]</li>
+<li>找到 <strong>大师级炼金师阿特拉利</strong> 花费 12495 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77209"></span><span>配方：空哈克蛙药瓶</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="720" image-compress-type="1" alt=""> <img class="gw2-image" image-id="822" image-compress-type="1" alt=""></p>
+<ul>
+<li>500级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76760"></span><span>空哈克蛙药剂瓶</span>
+</span>，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76760"></span><span>空哈克蛙药剂瓶</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71641"></span><span>粗糙沙堆</span>
+</span> × 10 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46738"></span><span>德里莫钢锭</span>
+</span> × 3 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 10 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> × 25</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>制作 4个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76760"></span><span>空哈克蛙药剂瓶</span>
+</span> 以备后续收藏使用，为了避免收藏物品无法获得，请务必随身携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76760"></span><span>空哈克蛙药剂瓶</span>
+</span> 完成以下收藏。</li>
+</ul>
+<hr>
+<ul>
+<li>顺手将 <strong>31、脓水萃取技术</strong> 一并完成。</li>
+</ul>
+<h2 id="26-">26、硫磺蛋</h2>
+<ul>
+<li><strong>裂脊草原 - 守护石传送点</strong> [&amp;BP8BAAA=]</li>
+<li>前往下图位置，完成事件 <strong>为沃克的香水项目收集鹰身女妖的腺体</strong>（单人完成需要收集 10个腺体）。</li>
+</ul>
+<p><img class="gw2-image" image-id="823" image-compress-type="1" alt=""></p>
+<ul>
+<li>然后返回营地，等待触发事件 <strong>从入迷的鹰身女妖族母的手中救出沃克</strong>，打败 <strong>精锐 族母</strong> 后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73523"></span><span>硫磺蛋</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="824" image-compress-type="1" alt=""></p>
+<h2 id="27-">27、黏菌</h2>
+<ul>
+<li><strong>女王谷 - 甲虫郡传送点</strong> [&amp;BPoAAAA=]</li>
+<li>从下图位置的管道中，击杀 <strong>剧毒软泥怪</strong> 获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71970"></span><span>黏菌</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="825" image-compress-type="1" alt=""></p>
+<h2 id="28-">28、晶化混沌</h2>
+<ul>
+<li><strong>漂流雪境 - 学者之角传送点</strong> [&amp;BLcAAAA=]</li>
+<li>前往下图位置的山洞内击杀 <strong>韦尔尼娅·影歌</strong> 后获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76132"></span><span>晶化混沌</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="826" image-compress-type="1" alt=""></p>
+<h2 id="29-">29、环烷酸</h2>
+<ul>
+<li><strong>苍翠边界 - 契约团营地传送点</strong> [&amp;BAgIAAA=]</li>
+<li>击杀夜间 BOSS 母龙后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72477"></span><span>环烷酸</span>
+</span>。</li>
+<li>母龙刷新时间：双数点 10分</li>
+</ul>
+<p><img class="gw2-image" image-id="827" image-compress-type="1" alt=""></p>
+<h2 id="30-">30、脓水万物融化剂</h2>
+<ul>
+<li>完成 <strong>31 ~ 35</strong> 后，携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76760"></span><span>空哈克蛙药剂瓶</span>
+</span> 与 这四个收藏物品，双击即可合成 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76395"></span><span>脓水万物融化剂</span>
+</span>。</li>
+</ul>
+<h2 id="31-">31、脓水萃取技术</h2>
+<ul>
+<li><strong>鲜血托领地传送点</strong> [&amp;BEoCAAA=]</li>
+<li>找到 <strong>大师级炼金师阿特拉利</strong> 对话获得 <strong>脓水萃取技术</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="720" image-compress-type="1" alt=""> <img class="gw2-image" image-id="828" image-compress-type="1" alt=""></p>
+<h2 id="32-">32、普通查克虫脓水</h2>
+<ul>
+<li><strong>缠藤深渊 - 魔径汇流点传送点</strong> [&amp;BPUHAAA=]</li>
+<li>小游戏 <strong>大战暴走自动拳击手</strong> 达到白银或黄金后，开宝箱获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75450"></span><span>普通查克虫脓水</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="829" image-compress-type="1" alt=""></p>
+<h2 id="33-">33、皇家黄蜂脓水</h2>
+<ul>
+<li><strong>废墟原野 - 至高传送点</strong> [&amp;BNUAAAA=]</li>
+<li>打败 <strong>首领 黄蜂女王</strong> 后获得 <span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71656"></span><span>皇家黄蜂脓水</span>
+</span>。</li>
+<li>该位置会同时刷新两个首领怪，可以两人以上组队完成，击杀难度不算非常大。</li>
+</ul>
+<p><img class="gw2-image" image-id="830" image-compress-type="1" alt=""></p>
+<h2 id="34-">34、烙印噬蝎脓水</h2>
+<ul>
+<li><strong>废墟原野 - 秃鹰传送点</strong> [&amp;BE0BAAA=]</li>
+<li>打败 <strong>巨型烙印噬蝎</strong> 后获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75124"></span><span>烙印噬蝎脓水</span>
+</span>。</li>
+<li>注意躲好技能，不难击杀。</li>
+</ul>
+<p><img class="gw2-image" image-id="831" image-compress-type="1" alt=""></p>
+<h2 id="35-">35、皇家查克虫脓水</h2>
+<ul>
+<li><strong>缠藤深渊 - 魔径汇流点传送点</strong> [&amp;BPUHAAA=]</li>
+<li>完成大型团队事件 <strong>丛林之王</strong> 后，即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72040"></span><span>皇家查克虫脓水</span>
+</span>。</li>
+<li>如果做完事件后没有得到 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72040"></span><span>皇家查克虫脓水</span>
+</span>，等待通往巨龙阵地的通道被轰开后，开启 <strong>晶化补给箱</strong> 即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72040"></span><span>皇家查克虫脓水</span>
+</span>。</li>
+<li>虫王事件刷新时间：双数点 30分。</li>
+</ul>
+<p><img class="gw2-image" image-id="832" image-compress-type="1" alt=""></p>
+<h2 id="36-">36、蛛类毒素玻璃瓶</h2>
+<ul>
+<li>完成 <strong>37 ~ 41</strong> 后，携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76760"></span><span>空哈克蛙药剂瓶</span>
+</span> 与 4种毒素，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71877"></span><span>蛛类毒素玻璃瓶</span>
+</span>。</li>
+</ul>
+<h2 id="37-">37、蜘蛛毒素萃取技术</h2>
+<ul>
+<li><strong>女王谷 - 果园传送点</strong> [&amp;BEQDAAA=]</li>
+<li>爱心商人处对话获得（无需做爱心）。</li>
+</ul>
+<p><img class="gw2-image" image-id="833" image-compress-type="1" alt=""> <img class="gw2-image" image-id="834" image-compress-type="1" alt=""></p>
+<h2 id="38-">38、卡冈都娅毒素</h2>
+<ul>
+<li><strong>哈拉希腹地 - 维乔娜集结点传送点</strong> [&amp;BKgAAAA=]</li>
+<li>做完 <strong>营救人质</strong> 事件后，山洞内才会刷出 <strong>卡冈都娅</strong>，将其打败即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71500"></span><span>卡冈都娅毒素</span>
+</span>。</li>
+<li>注意 <strong>卡冈都娅</strong> 会在 75%、50%、25% 时进入无敌并满血一次，随后召唤小蜘蛛，需要将小蜘蛛全部击杀后，<strong>卡冈都娅</strong> 才能解除无敌状态，提前带一些 AOE技能出来。</li>
+</ul>
+<p><img class="gw2-image" image-id="835" image-compress-type="1" alt=""> <img class="gw2-image" image-id="836" image-compress-type="1" alt=""></p>
+<h2 id="39-">39、剧毒蜘蛛女王毒素</h2>
+<ul>
+<li><strong>凯西斯山 - 裂口传送点</strong> [&amp;BLoDAAA=]</li>
+<li>两处位置随机刷新 <strong>蜘蛛女王</strong>，打败后获得 <span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71353"></span><span>剧毒蜘蛛女王毒素</span>
+</span>，建议两人以上组队完成。</li>
+</ul>
+<p><img class="gw2-image" image-id="837" image-compress-type="1" alt=""></p>
+<h2 id="40-">40、峡谷蜘蛛女王毒素</h2>
+<ul>
+<li><strong>炎心高地 - 雪岭营传送点</strong> [&amp;BCECAAA=]</li>
+<li>先查看上方的 <strong>沃格斯要塞传送点</strong> [&amp;BCICAAA=] 是否处于争夺中（2号位置的那个传送点），如果争夺中请按下图顺序做护送事件，开启传送点后才会刷新目标事件。</li>
+</ul>
+<p><img class="gw2-image" image-id="838" image-compress-type="1" alt=""></p>
+<ul>
+<li>将 <strong>沃格斯要塞</strong> 占领后，与 <strong>新兵 衮凯尔</strong> 对话，前往 3号位置击杀 <strong>首领 蜘蛛女王</strong>，即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73063"></span><span>峡谷蜘蛛女王毒素</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="839" image-compress-type="1" alt=""></p>
+<h2 id="41-">41、暴怒的蜘蛛女王毒素</h2>
+<ul>
+<li><strong>甘达拉战区 - 阿姆顿传送点</strong> [&amp;BJQBAAA=]</li>
+<li>摧毁标记通道内的 <strong>蜘蛛卵囊</strong>，自动刷新 <strong>首领 暴怒的蜘蛛女王</strong>，将其击杀后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77202"></span><span>暴怒的蜘蛛女王毒素</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="840" image-compress-type="1" alt=""> <img class="gw2-image" image-id="841" image-compress-type="1" alt=""></p>
+<h2 id="42-m-pec">42、M-PEC</h2>
+<ul>
+<li><strong>赤金盆地 - 南部守望哨站传送点</strong> [&amp;BAIIAAA=]</li>
+<li>与 NPC <strong>捷特</strong> 对话获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73661"></span><span>M-PEC</span>
+</span>。</li>
+<li>注意，完成 <strong>44 ~ 48</strong> 时，切勿双击背包内获得的这几个收藏物品，否则 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73661"></span><span>M-PEC</span>
+</span> 会被烧毁。若不慎被烧毁，你需要返回 <strong>捷特</strong> 处重新对话获得一个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73661"></span><span>M-PEC</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="842" image-compress-type="1" alt=""> <img class="gw2-image" image-id="843" image-compress-type="1" alt=""></p>
+<h2 id="43-">43、浓缩迈古玛细菌</h2>
+<ul>
+<li>完成 <strong>44 ~ 49</strong> 后，携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76760"></span><span>空哈克蛙药剂瓶</span>
+</span> 与 收集的五个物品双击合成 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71081"></span><span>浓缩迈古玛细菌</span>
+</span>。</li>
+</ul>
+<h2 id="44-">44、帝王菇的烈性孢子</h2>
+<ul>
+<li><strong>缠藤深渊 - 密语教团营地传送点</strong> [&amp;BA4IAAA=]</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73661"></span><span>M-PEC</span>
+</span> 获得buff，前往击杀 <strong>首领 帝王菇</strong> 后即可获得 <span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73825"></span><span>帝王菇的烈性孢子</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="844" image-compress-type="1" alt=""></p>
+<h2 id="45-">45、吸血兽酶</h2>
+<ul>
+<li><strong>赤金盆地 - 东部守望哨站传送点</strong> [&amp;BGwIAAA=]</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73661"></span><span>M-PEC</span>
+</span> 获得buff，打败 <strong>精锐 水蛭吸血兽</strong> 后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73941"></span><span>吸血兽酶</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="845" image-compress-type="1" alt=""> <img class="gw2-image" image-id="846" image-compress-type="1" alt=""></p>
+<h2 id="46-">46、甲虫汁液</h2>
+<ul>
+<li><strong>赤金盆地 - 游荡者传送点</strong> [&amp;BNYHAAA=]</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73661"></span><span>M-PEC</span>
+</span> 获得buff，在上方平台处打败 <strong>精锐 水居托追随者</strong> 后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73341"></span><span>甲虫汁液</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="847" image-compress-type="1" alt=""> <img class="gw2-image" image-id="848" image-compress-type="1" alt=""></p>
+<h2 id="47-">47、巨魔起泡唾液</h2>
+<ul>
+<li><strong>赤金盆地 - 南部守望哨站传送点</strong> [&amp;BAIIAAA=]</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73661"></span><span>M-PEC</span>
+</span> 获得buff，打败 <strong>精锐 深洞巨魔</strong> 后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75681"></span><span>巨魔起泡唾液</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="849" image-compress-type="1" alt=""></p>
+<h2 id="48-">48、恶臭黏液</h2>
+<ul>
+<li><strong>赤金盆地 - 北部守望哨站传送点</strong> [&amp;BN0HAAA=]</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73661"></span><span>M-PEC</span>
+</span> 获得buff，打败 <strong>首领 箭首蜥</strong> 后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71417"></span><span>恶臭黏液</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="850" image-compress-type="1" alt=""> <img class="gw2-image" image-id="851" image-compress-type="1" alt=""></p>
+<h2 id="49-">49、涎石</h2>
+<ul>
+<li><strong>赤金盆地 - 南部守望哨站传送点</strong> [&amp;BAIIAAA=]</li>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73661"></span><span>M-PEC</span>
+</span> 获得buff，打败 <strong>石首蜥</strong> 后即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75907"></span><span>涎石</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="852" image-compress-type="1" alt=""></p>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-6" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="50-">50、催化转换器</h2>
+<ul>
+<li>将 <strong>51 ~ 55</strong> 完成后，才能进行该步。</li>
+</ul>
+<hr>
+<ul>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75165"></span><span>未完成的催化转换器</span>
+</span>、 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46746"></span><span>幻景水晶</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76364"></span><span>剑术大师核心</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76384"></span><span>战斧大师核心</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75078"></span><span>法杖大师核心</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72586"></span><span>墨德摩斯核心</span>
+</span>，前往 <strong>缠藤深渊</strong> 右上角的 <strong>英雄点</strong> 位置，互动合成 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76886"></span><span>催化转换器</span>
+</span>。</li>
+<li>从 <strong>拉塔新城</strong> 下水点游过去。</li>
+</ul>
+<p><img class="gw2-image" image-id="853" image-compress-type="1" alt=""></p>
+<h2 id="51-">51、未完成的催化转换器</h2>
+<ul>
+<li><strong>缠藤深渊 - 拉塔新城传送点</strong> [&amp;BAMIAAA=]</li>
+<li>在 <strong>津恩的办公室</strong> 中与 GOX2.0 对话获得。</li>
+<li><strong>津恩的办公室</strong> 大门会在 <strong>前哨：拉塔新城</strong> 完成后开启。</li>
+</ul>
+<p><img class="gw2-image" image-id="854" image-compress-type="1" alt=""> <img class="gw2-image" image-id="855" image-compress-type="1" alt=""></p>
+<ul>
+<li>如果你有 <strong>弹跳兔</strong> 或 <strong>飞天鳞龙</strong>，也可以从台阶对面的开口处下去，然后在 <strong>津恩的办公室</strong> 正下方踩着蘑菇跳上去。</li>
+</ul>
+<p><img class="gw2-image" image-id="856" image-compress-type="1" alt=""></p>
+<h2 id="52-55-">52 ~ 55、剑术大师核心、战斧大师核心、法杖大师核心、墨德摩斯核心</h2>
+<ul>
+<li><strong>巨龙阵地 - 契约团基地大营传送点</strong> [&amp;BBAIAAA=]</li>
+<li>获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75165"></span><span>未完成的催化转换器</span>
+</span> 后，参与巨龙阵地大型团队事件。刷新时间：单数点 30分。</li>
+<li>推进到瘟疫之塔后，参与击杀（需要有参与度，可以一次事件混到3个）三个大师后分别获得：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75078"></span><span>法杖大师核心</span>
+</span>（上路）、<span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76364"></span><span>剑术大师核心</span>
+</span>（中路）、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76384"></span><span>战斧大师核心</span>
+</span>（下路）</li>
+</ul>
+<p><img class="gw2-image" image-id="857" image-compress-type="1" alt=""></p>
+<ul>
+<li>击败最终首领 <strong>墨德摩斯之口</strong> 后，开启最终的大宝箱获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72586"></span><span>墨德摩斯核心</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="858" image-compress-type="1" alt=""></p>
+<h2 id="56-">56、充能灵魂电池裂片</h2>
+<ul>
+<li>完成 <strong>7 ~ 10</strong> 后获得。</li>
+</ul>
+<h2 id="57-">57、充能矮人法术捕获器</h2>
+<ul>
+<li>完成 <strong>3 ~ 5</strong> 后获得。</li>
+</ul>
+<h2 id="58-4-">58、优品：第4卷</h2>
+<ul>
+<li><strong>狮子拱门 - 商人广场传送点</strong> [&amp;BBAEAAA=]</li>
+<li>找 <strong>宗师级制作师霍布斯</strong> 花费 80 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75742"></span><span>优品：第4卷</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="719" image-compress-type="1" alt=""></p>
+<h2 id="59-">59、原型</h2>
+<ul>
+<li>已获得。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-7" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">神秘熔炉合成</h2>
+<p>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73239"></span><span>迈古玛专精礼赠</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71820"></span><span>神秘供品</span>
+</span>、 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77086"></span><span>优品礼赠</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76399"></span><span>原型</span>
+</span> 通过神秘熔炉合成，即可得到 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72713"></span><span>优品</span>
+</span>。</p>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73239"></span><span>迈古玛专精礼赠</span>
+</span>，参见下文</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71820"></span><span>神秘供品</span>
+</span>，参见下文</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77086"></span><span>优品礼赠</span>
+</span>，参见下文</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76399"></span><span>原型</span>
+</span>，完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2556"></span><span>3级优品：原型</span>
+</span> 获得配方后，由 500级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span> 制作。</li>
+</ul>
+<h2>迈古玛专精礼赠</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">神秘熔炉材料</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">备注</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74927"></span><span>迈古玛礼赠</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70797"></span><span>舰队礼赠</span>
+</span></td>
+<td><strong>苍翠边界</strong>跑完全图后，地图宝箱奖励获得</td>
+<td rowspan="4">神秘熔炉合成</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71943"></span><span>塔瑞尔礼赠</span>
+</span></td>
+<td><strong>赤金盆地</strong>跑完全图后，地图宝箱奖励获得</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74528"></span><span>查克虫礼赠</span>
+</span></td>
+<td><strong>缠藤深渊</strong>跑完全图后，地图宝箱奖励获得</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70698"></span><span>丛林礼赠</span>
+</span></td>
+<td><strong>巨龙阵地</strong>跑完全图后，地图宝箱奖励获得</td>
+</tr>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72964"></span><span>见解礼赠</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73469"></span><span>伊策尔蛙礼赠</span>
+</span></td>
+<td><strong>苍翠边界 - 空难峰传送点</strong>[&BN4HAAA=]，伊策尔蛙专精商贩出售，花费：500 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="19"></span><span>飞船部件</span>
+</span> + 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span><span>金币</span>
+</span></td>
+<td rowspan="4">神秘熔炉合成</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76636"></span><span>尊者礼赠</span>
+</span></td>
+<td><strong>赤金盆地 - 遗忘之都传送点</strong>[&BMYHAAA=]，尊者专精商贩出售，花费：500 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="22"></span><span>块状赤金元素</span>
+</span> + 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span><span>金币</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76767"></span><span>奴霍奇蛙礼赠</span>
+</span></td>
+<td><strong>缠藤深渊 - 密语教团营地传送点</strong>[&BA4IAAA=]，奴霍奇蛙专精商贩出售，花费：500 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="20"></span><span>魔径水晶</span>
+</span> + 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span><span>金币</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71311"></span><span>滑翔礼赠</span>
+</span></td>
+<td>神秘熔炉旁的<strong>米亚妮</strong>处购买，花费：300 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="19"></span><span>飞船部件</span>
+</span> + 300 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="22"></span><span>块状赤金元素</span>
+</span> + 300 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="20"></span><span>魔径水晶</span>
+</span></td>
+</tr>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46683"></span><span>晶石锭</span>
+</span> × 250</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46682"></span><span>晶石矿</span>
+</span></td>
+<td>使用 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="38"></span><span>大砍刀</span>
+</span> 在<strong>巨龙阵地</strong>开<strong>毒荚</strong>获得，暴击一次可开出10个</td>
+<td rowspan="4">500级 武器 或 护甲 类副职业制作</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76933"></span><span>闪电岩</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19925"></span><span>黑曜石碎块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69434"></span><span>瓶装飞船机油</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69432"></span><span>赤金尘堆</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69392"></span><span>魔径火花</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span></td>
+<td>拆解 稀有 或 特异 品质等等装备有几率获得。</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68063"></span><span>合成宝石</span>
+</span></td>
+<td>
+主要通过各种<strong>迈古玛</strong>或<strong>水晶沙漠</strong>的大型地图事件奖励宝箱获得。<br><br>
+神秘熔炉配方1：<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68063"></span><span>合成宝石</span>
+</span> × 1 = 3种T6宝石（宝珠、稀有徽饰、古币），每种3个 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span><br>
+10%概率可以暴击出 5个<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68063"></span><span>合成宝石</span>
+</span><br><br>
+神秘熔炉配方2（推荐）：<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68063"></span><span>合成宝石</span>
+</span> × 10 = 3种T6宝石（宝珠、稀有徽饰、古币），每种25个 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5<br>
+10%概率可以暴击出 25个<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68063"></span><span>合成宝石</span>
+</span>
+</td>
+</tr>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20797"></span><span>血石碎片</span>
+</span></td>
+<td colspan="2">神秘熔炉旁的<strong>米亚妮</strong>处购买，花费 200 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="23"></span><span>灵魂碎片</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2>神秘供品</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">神秘熔炉材料</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">备注</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 250</td>
+<td colspan="2">可拍卖行购买，主要通过 <a href="javascript:window.open('http://do.gw2.kongzhong.com/kungen/login');" target="_blank" rel="nofollow noopener noreferrer" target="_blank" rel="nofollow noopener noreferrer">鲲艮福利社</a> 签到、魔径异常体（跑男）、迷雾碎层有几率掉落</td>
+</tr>
+ <tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19675"></span><span>神秘四叶草</span>
+</span> × 77</td>
+<td>
+熔炉配方1：<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19925"></span><span>黑曜石碎块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20796"></span><span>点金石</span>
+</span> × 6<br><br>
+熔炉配方2：<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19925"></span><span>黑曜石碎块</span>
+</span> × 10 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 10 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 10 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 10<br><br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20796"></span><span>点金石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> 从神秘熔炉旁的<strong>米亚妮</strong>处使用 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="23"></span><span>灵魂碎片</span>
+</span> 购买。<br>
+预计材料消耗：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 231、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 231、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19925"></span><span>黑曜石碎块</span>
+</span> × 231、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="23"></span><span>灵魂碎片</span>
+</span> × 139
+</td>
+<td>配方1 成功合成可获得1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19675"></span><span>神秘四叶草</span>
+</span><br>配方2 成功合成可获得10个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19675"></span><span>神秘四叶草</span>
+ </span><br>成功合成几率均为 33%左右</td>
+</tr>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70867"></span><span>浓缩力量礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70801"></span><span>钩爪礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24350"></span><span>大型钩爪</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24349"></span><span>尖锐钩爪</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24348"></span><span>中型钩爪</span>
+</span> × 100</td>
+<td rowspan="4">神秘熔炉旁的米亚妮处购买各种小礼赠图纸，<br>武器类副职业制作，然后从神秘熔炉合成</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75299"></span><span>鳞片礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24288"></span><span>大型鳞片</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24287"></span><span>光滑鳞片</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24286"></span><span>中型鳞片</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71123"></span><span>骨骼礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24341"></span><span>大型骨骼</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24345"></span><span>重型骨骼</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24344"></span><span>中型骨骼</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75744"></span><span>牙齿礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24357"></span><span>恶毒牙齿</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24356"></span><span>大型牙齿</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24355"></span><span>尖锐牙齿</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24354"></span><span>中型牙齿</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76530"></span><span>浓缩魔法礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71655"></span><span>血瓶礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24294"></span><span>强效血瓶</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24293"></span><span>浓稠血瓶</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24292"></span><span>通用血瓶</span>
+</span> × 100</td>
+<td rowspan="4">神秘熔炉旁的米亚妮处购买各种小礼赠图纸，<br>武器类副职业制作，然后从神秘熔炉合成</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71787"></span><span>毒囊礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24282"></span><span>强效毒囊</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24281"></span><span>完整毒囊</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24280"></span><span>中型毒囊</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73236"></span><span>图腾礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24299"></span><span>精致图腾</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24363"></span><span>雕蚀图腾</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24298"></span><span>中型图腾</span>
+</span> × 100</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73196"></span><span>尘堆礼赠</span>
+</span> × 2</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24276"></span><span>炽光尘堆</span>
+</span> × 500<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24275"></span><span>高亮尘堆</span>
+</span> × 100<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24274"></span><span>光明尘堆</span>
+</span> × 100</td>
+</tr>
+</tbody>
+</table>
+<h2>优品礼赠</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">神秘熔炉材料</th>
+<th style="text-align:left">材料</th>
+<th style="text-align:left">备注</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76427"></span><span>迷雾礼赠</span>
+</span></td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19678"></span><span>战斗礼赠</span>
+</span></td>
+<td>世界之战 - 战斗礼赠奖励分支，奖励进度升满获得</td>
+<td rowspan="4">神秘熔炉合成</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70528"></span><span>荣誉礼赠</span>
+</span></td>
+<td>神秘熔炉旁的米亚妮处购买，花费 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70820"></span><span>荣誉碎片</span>
+</span> × 250（可拍卖行购买）</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71008"></span><span>战争礼赠</span>
+</span></td>
+<td>神秘熔炉旁的米亚妮处购买，花费 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 250（可拍卖行购买）</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73137"></span><span>稳定黑暗能量立方体</span>
+</span></td>
+<td>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71994"></span><span>黑暗能量球体</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73248"></span><span>稳定基质</span>
+</span> × 75（500级 武器 或 护甲 类副职业制作）<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71994"></span><span>黑暗能量球体</span>
+</span> 主要通过拆解升华武器或护甲获得，拆解升华首饰、背部、呼吸器有极小几率获得。<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73248"></span><span>稳定基质</span>
+</span> 主要通过拆解迷雾碎层掉落的首饰获得，可拍卖行购买。
+</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19622"></span><span>古木礼赠</span>
+</span></td>
+<td>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19712"></span><span>远古木板</span>
+</span> × 250<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19709"></span><span>上古木板</span>
+</span> × 250<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19711"></span><span>硬质木板</span>
+</span> × 250<br>
+<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19714"></span><span>风干木板</span>
+</span> × 250
+</td>
+<td colspan="2">从神秘熔炉旁的<strong>米亚妮</strong>处花费 10 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span>购买配方，<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span>（400级）制作</td>
+</tr>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19676"></span><span>寒地符文石</span>
+</span> × 100</td>
+<td colspan="2"><strong>霜谷之音 - 地震传送点</strong>[&BHoCAAA=]，从卓玛之爪降落地南边营地的<strong>忏悔者洛占</strong>处购买（避开事件），总花费 100<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span><span>金币</span>
+</span></td>
+</tr>
+<tr>
+<td colspan="2"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76442"></span><span>催化礼赠</span>
+</span></td>
+<td colspan="2">完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2250"></span><span>4级优品：催化</span>
+</span> 获得</td>
+</tr>
+</tbody>
+</table> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

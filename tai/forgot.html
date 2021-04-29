@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>忘记密码 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+ </ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<div class="row bg-lg bg-lg-user-login bg-lg-fixed m-b-10 p-b-0">
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="main-content-user-login p-b-0">
+<div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
+<div class="card ">
+<div class="card-header bg-color-benchmarks">
+<h4 class="m-b-0 text-center" style="color:#333;">忘记密码</h4>
+</div>
+<div class="card-body">
+<form class="form-horizontal form-material" id="forgotform" action="index.html">
+<div class="form-group m-t-20">
+<div class="col-xs-12">
+<input class="form-control" type="text" name="frontend_mobile_number" required="" placeholder="中国大陆：手机号码" autocomplete="off">
+<small class="form-control-feedback">&nbsp;</small>
+</div>
+</div>
+<div class="form-group">
+<div class="row">
+<div class="col-8 p-r-5">
+<input class="form-control" type="text" name="frontend_verification" placeholder="验证码" autocomplete="off">
+<small class="form-control-feedback">&nbsp;</small>
+</div>
+<div class="col-4 p-l-5">
+<button class="btn waves-effect waves-light btn-secondary btn-block text-uppercase login-getcode" type="button" count-down="" id="submit_getcode" disabled="">获取</button>
+</div>
+</div>
+</div>
+<div class="form-group text-center m-t-20">
+<div class="col-xs-12">
+<input type="hidden" name="action" class="form-control" value="forgot">
+<input type="hidden" name="frompage" class="form-control" value="">
+<input type="hidden" name="__token__" value="" id="token">
+<button class="btn btn-lg waves-effect waves-light btn-secondary btn-block text-uppercase login-button" type="button" id="submit_forgot" disabled="">下一步</button>
+</div>
+</div>
+<div class="form-group m-b-0">
+<div class="col-xs-12">
+<p style="color: #eee">
+<a href="login.html" class="pjax-link">账号登录</a>
+<a href="" class="float-right pjax-link">注册账号</a>
+</p>
+</div>
+</div>
+</form>
+<form class="form-horizontal form-material" id="resetpasswordform" action="index.html" style="display: none;">
+<div class="form-group m-t-20">
+<div class="col-xs-12">
+<input class="form-control" type="password" name="frontend_new_password" required="" placeholder="新密码" autocomplete="off">
+<small class="form-control-feedback">&nbsp;</small>
+</div>
+</div>
+<div class="form-group">
+<div class="col-xs-12">
+<input class="form-control" type="password" name="frontend_new_password_confirmation" required="" placeholder="确认密码" autocomplete="off">
+<small class="form-control-feedback">&nbsp;</small>
+</div>
+</div>
+<div class="form-group text-center m-t-20">
+<div class="col-xs-12">
+<input type="hidden" name="action" class="form-control" value="resetpassword">
+<input type="hidden" name="frontend_mobile_number" class="form-control" value="">
+<input type="hidden" name="frontend_verification" class="form-control" value="">
+<input type="hidden" name="__token__" value="" id="token_resetpassword">
+<button class="btn btn-lg waves-effect waves-light btn-secondary btn-block text-uppercase login-button" type="button" id="submit_resetpassword" disabled="">确认修改</button>
+</div>
+</div>
+
+<div class="form-group m-b-0">
+<div class="col-xs-12">
+<p style="color: #eee">
+<a href="register.html" class="pjax-link">注册账号</a>
+<a href="" class="float-right pjax-link">忘记密码</a>
+</p>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a href="" class="submit-link pjax-link" style="display:none"></a>
+<script>
+$(document).ready(function(){
+        
+    var allow_frontend_mobile_number = false;
+    var allow_frontend_verification = false;
+
+    function allow_submit(){
+        if( 
+            allow_frontend_mobile_number && 
+            allow_frontend_verification
+            ){
+            $('#submit_forgot').attr("disabled",false);
+        }
+        else{
+            $('#submit_forgot').attr("disabled",true);
+        }
+    }
+
+    function count_down( count_down_time ){
+        if( count_down_time > 0 ){
+            $('#submit_getcode').attr('count-down',count_down_time);
+            $('#submit_getcode').text('获取(' + count_down_time + '秒)');
+            $('#submit_getcode').attr("disabled",true);
+        }
+        else if( count_down_time == 0 ) {
+            $('#submit_getcode').attr('count-down','');
+            $('#submit_getcode').text('获取');
+            $('#submit_getcode').attr("disabled",false);
+        }
+    }
+
+    function validate_mobile_number(){
+        $mobile_number = $('input[name="frontend_mobile_number"]').val();
+        if( $mobile_number.length == 11 ){
+            var re = new RegExp("^1[3-9]{1}[0-9]{9}$");
+            if( !re.test($mobile_number) ) {
+                $('input[name="frontend_mobile_number"]').next('small').html('手机号码格式错误！').addClass('color-Elementalist');
+                $('#submit_getcode').attr("disabled","disabled");
+                allow_frontend_mobile_number = false;
+                return false;
+            }
+            else{
+                $('input[name="frontend_mobile_number"]').next('small').html('&nbsp;').addClass('color-Elementalist');
+                $('#submit_getcode').attr("disabled",false);
+                allow_frontend_mobile_number = true;
+                return true;
+            }
+        }
+        else{
+            $('input[name="frontend_mobile_number"]').next('small').html('手机号码长度错误！').addClass('color-Elementalist');
+            $('#submit_getcode').attr("disabled","disabled");
+            allow_frontend_mobile_number = false;
+            return false;
+        }
+    }
+
+    function validate_verification(){
+        $verification = $('input[name="frontend_verification"]').val();
+        if( $verification.length == 6 ){
+            var re = new RegExp("^[0-9]{6}$");
+            if( !re.test($verification) ) {
+                $('input[name="frontend_verification"]').next('small').html('验证码格式错误！').addClass('color-Elementalist');
+                allow_frontend_verification = false;
+                return false;
+            }
+            else{
+                $('input[name="frontend_verification"]').next('small').html('&nbsp;').addClass('color-Elementalist');
+
+                $.ajax({ 
+                    type: 'POST',
+                    url: "/user/forgot/validateverification",
+                    data: "frontend_mobile_number=" + $('input[name="frontend_mobile_number"]').val() + "&frontend_verification=" + $('input[name="frontend_verification"]').val(),
+                    success: function(data){
+                        if( data.type == 'error' ){
+                            $('input[name="frontend_verification"]').next('small').html(data.msg).addClass('color-Elementalist');
+                            allow_frontend_verification = false;
+                            allow_submit();
+                        }
+                        else if( data.type == 'success'){
+                            $('input[name="frontend_verification"]').next('small').html('&nbsp;').removeClass('color-Elementalist');
+                            allow_frontend_verification = true;
+                            allow_submit();
+
+                            $('#forgotform input[name="frontend_mobile_number"]').val( $('#forgotform input[name="frontend_mobile_number"]').val() );
+                            $('#resetpasswordform input[name="frontend_verification"]').val( $('#resetpasswordform input[name="frontend_verification"]').val() );
+                        }
+                    }
+                });
+                return true;
+            }
+        }
+        else{
+            $('input[name="frontend_verification"]').next('small').html('验证码长度错误！').addClass('color-Elementalist');
+            allow_frontend_verification = false;
+            return false;
+        }
+    }
+
+    function submit_getcode(){
+        var submit_ajax = true;
+
+        if( submit_ajax ){
+
+            $('#forgot_token').val($.cookie("_forgot"));
+
+            $('#submit_getcode').attr("disabled",true);
+
+            $.ajax({ 
+                type: 'POST',
+                url: "/token",
+                success: function(data){
+                    $('#token').val(data.token);
+
+                    var max_count_down_time = 60;
+                    count_down(max_count_down_time);
+                    var int = setInterval(function(){
+                        max_count_down_time--;
+                        if( max_count_down_time >= 0 )
+                            count_down(max_count_down_time);
+                        else
+                            clearInterval( int );
+                    },1000);
+
+                    $.ajax({ 
+                        type: 'POST',
+                        url: "/user/forgot/applysendcode",
+                        data: $('#forgotform').serialize(),
+                        success: function(data){
+                            if( data.type == 'error' ){
+                                $('#submit_getcode').attr('count-down','');
+                                $('#submit_getcode').text('获取');
+                                $('#submit_getcode').attr("disabled",false);
+                                
+                                swal({   
+                                    title: data.msg,
+                                    text: "您的输入有误！", 
+                                    type: "warning",
+                                    timer: 1500,
+                                    showConfirmButton: false 
+                                });
+                            }
+                            else if( data.type == 'success' ){
+                                $('input[name="frontend_verification"]').next('small').html('请在5分钟内完成验证');
+                                $.cookie("_forgot", data.data.token, { expires: 1 });
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+    function submit_forgot(){
+        var submit_ajax = true;
+
+        //SUBMIT AJAX
+        if( submit_ajax ){
+
+            $.ajax({ 
+                type: 'POST',
+                url: "/token",
+                success: function(data){
+                    $('#token').val(data.token);
+
+                    $.ajax({ 
+                        type: 'POST',
+                        url: "/user/forgot",
+                        data: $('#forgotform').serialize(),
+                        success: function(data){
+                            if( data.type == 'error' ){
+                                swal({   
+                                    title: data.msg,
+                                    text: "您的输入有误！", 
+                                    type: "warning",
+                                    timer: 1500,
+                                    showConfirmButton: false 
+                                });
+                            }
+                            else if( data.type == 'success' ){
+                                // 验证成功
+                                $('#forgotform').hide();
+                                $('#resetpasswordform').show();
+
+                                $("#resetpasswordform input[name='frontend_mobile_number']").val( $("#forgotform input[name='frontend_mobile_number']").val() );
+                                $("#resetpasswordform input[name='frontend_verification']").val( $("#forgotform input[name='frontend_verification']").val() );
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+    $('#submit_forgot').click(function(){ submit_forgot() });
+    $('#submit_getcode').click(function(){ submit_getcode() });
+    $('input[name="frontend_mobile_number"]').bind('input propertychange',function(){ validate_mobile_number();allow_submit(); });
+    $('input[name="frontend_verification"]').bind('input propertychange',function(){ validate_verification();allow_submit(); });
+
+    //新密码 ==================================================
+    
+    var allow_frontend_new_password_confirmation = false;
+
+    function allow_resetpassword_submit(){
+        if( 
+            allow_frontend_new_password_confirmation
+            ){
+            $('#submit_resetpassword').attr("disabled",false);
+        }
+        else{
+            $('#submit_resetpassword').attr("disabled",true);
+        }
+    }
+
+    function validate_new_password(){
+        $new_password = $('input[name="frontend_new_password"]').val();
+        $new_password_confirmation = $('input[name="frontend_new_password_confirmation"]').val();
+
+        if( $new_password.length < 6 || $new_password_confirmation.length < 6 ){
+            $('input[name="frontend_password"]').next('small').html('密码不能小于6个字符！').addClass('color-Elementalist');
+            allow_frontend_password = false;
+            return false;
+        }
+        else if( $new_password.length > 16 || $new_password_confirmation.length > 16 ){
+            $('input[name="frontend_password"]').next('small').html('密码不能超过16个字符！').addClass('color-Elementalist');
+            allow_frontend_password = false;
+            return false;
+        }
+        else{
+            if( $new_password !== $new_password_confirmation ){
+                $('input[name="frontend_new_password_confirmation"]').next('small').html("新密码与确认密码不相同").addClass('color-Elementalist');
+                allow_frontend_new_password_confirmation = false;
+                allow_resetpassword_submit();
+            }
+            else{
+                $('input[name="frontend_new_password_confirmation"]').next('small').html("&nbsp;").addClass('color-Elementalist');
+                allow_frontend_new_password_confirmation = true;
+                allow_resetpassword_submit();
+            }
+        }
+    }
+
+    function submit_resetpassword(){
+        var submit_ajax = true;
+
+        //SUBMIT AJAX
+        if( submit_ajax ){
+
+            $.ajax({ 
+                type: 'POST',
+                url: "/token",
+                success: function(data){
+                    $('#token_resetpassword').val(data.token);
+
+                    $.ajax({ 
+                        type: 'POST',
+                        url: "/user/resetpassword",
+                        data: $('#resetpasswordform').serialize(),
+                        success: function(data){
+                            if( data.type == 'error' ){
+                                $('#submit_forgot').text('下一步');
+
+                                swal({   
+                                    title: data.msg,
+                                    text: "您的输入有误！", 
+                                    type: "warning",
+                                    timer: 1500,
+                                    showConfirmButton: false 
+                                });
+                            }
+                            else if( data.type == 'success' ){
+                                // 改密成功
+                                layer.msg('密码修改成功!', {time: 1000, icon:6});
+
+                                $(".submit-link").attr("href",'/user/login');
+                                window.setTimeout('$(".submit-link").trigger("click")',1500);
+                            }
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+    $('#submit_resetpassword').click(function(){ submit_resetpassword(); });
+    $('input[name="frontend_new_password"]').bind('input propertychange',function(){ validate_new_password();allow_resetpassword_submit(); });
+    $('input[name="frontend_new_password_confirmation"]').bind('input propertychange',function(){ validate_new_password();allow_resetpassword_submit(); });
+});
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script> 
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

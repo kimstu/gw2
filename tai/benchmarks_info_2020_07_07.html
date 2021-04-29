@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>2020.07.07 更新后 魔像测试信息 | 说明文档 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/guildwars-18x975-1920.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/guildwars-18x975-1920.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #e74c3c  !important;
+}
+.article-button-color.active{
+    background-color: #e74c3c !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #e74c3c  !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #e74c3c  !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #e74c3c  !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #e74c3c !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">说明文档</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">2020.07.07 更新后 魔像测试信息<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+2020.07.07 更新后 魔像测试信息 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;泰协内容维护小组</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2020.07.08</div>
+
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div> </div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li>B站视频地址：<a href="javascript:window.open('https://www.bilibili.com/video/BV15y4y1H7XY');" target="_blank">【激战2】全职业输出循环（搬运+整理）2020.07.07</a></li>
+<li>通过以下外服公会，以及一些骨灰级玩家的测试视频 整理：SnowCrows(SC) / LuckyNoobs(LN) / Crits N Dips(CnD) / dP / CoF</li>
+<li>2020.07.07 更新后测试列表，包含日志文件 及 BGM</li>
+<li>文字版循环更新暂定在 2020.07.18</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">元素使</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">战士</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">游侠</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">唤灵师</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">守护者</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-6" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">潜行者</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-7" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">工程师</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-8" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">幻术师</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-9" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">魂武者</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 直伤（剑匕 穿心一箭 闪电巨锤）- 超大体积 - 39.6k - [SC.Fallen] - GW2 - 2020.07.07<br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5624"></span><span>闪电巨锤</span>
+</span>：最高：39587，平均：39100<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=fsX60FsUCqo');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=fsX60FsUCqo</a><br>歌曲：DNMO - Broken Record (ft. MOONZz)</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 直伤（剑匕 穿心一箭 秘法爆弹）- 超大体积 - 38.9k - [SC.Fallen] - GW2 - 2020.07.07<br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5539"></span><span>秘法爆弹</span>
+</span>：最高：38943，平均：38300<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=NqHisj-ddUI');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=NqHisj-ddUI</a><br>日志：<a href="javascript:window.open('https://dps.report/HUQD-20200719-133309_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/HUQD-20200719-133309_golem</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 直伤（剑匕 穿心一箭 秘法爆弹）- 小体积 - 38.5k - [SC.Fallen] - GW2 - 2020.07.07<br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5539"></span><span>秘法爆弹</span>
+</span>：最高：38,483，平均：38,000<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=ZtEY4lXt6Hc');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=ZtEY4lXt6Hc</a><br>日志：<a href="javascript:window.open('https://dps.report/8ZP4-20200716-224028_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/8ZP4-20200716-224028_golem</a><br>歌曲：Stonefox - White Caps</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 直伤（剑匕 清新气流）- 超大体积 - 38.6k - [SC.Roul] - GW2 - 2020.07.07<br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5539"></span><span>秘法爆弹</span>
+</span>：最高：38,051，平均：37,500<br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5624"></span><span>闪电巨锤</span>
+</span>：最高：38,658，平均：38,000<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=zrtMoDkHqnQ');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=zrtMoDkHqnQ</a><br>日志：<a href="javascript:window.open('https://dps.report/QAiv-20200708-194518_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/QAiv-20200708-194518_golem</a><br>歌曲：Between The Devil And The Deep Blue Sea (Skrux Remix) - Skrux / XYLØ</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 直伤（剑匕 清新气流）- 小体积 - 37.8k - [SC.Roul] - GW2 - 2020.07.07<br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5539"></span><span>秘法爆弹</span>
+</span>：最高：37,776，平均：37,300<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=9gTwIz3Ltl8');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=9gTwIz3Ltl8</a><br>日志：<a href="javascript:window.open('https://dps.report/4xf4-20200709-021453_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/4xf4-20200709-021453_golem</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 直伤（法杖 + 穿心一箭）- 超大体积 - 35.7k - [SC.Roul] - GW2 - 2020.07.07<br>最高：35,748，平均：35,200<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=FKjXM_J-Krw');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=FKjXM_J-Krw</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 直伤（法杖 + 清新气流）- 超大体积 - 34.7k - [Mw.Saule] - GW2 - 2020.07.07<br>最高：34,753，平均：34,200<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=hNp85c5Z7Jk');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=hNp85c5Z7Jk</a><br>日志：<a href="javascript:window.open('https://dps.report/FY3J-20200710-160111_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/FY3J-20200710-160111_golem</a><br>配置：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PGQAYFTkRxkYn4ors+yA-zxQYhog+afHCMiyo2EoiCw2DiYsB6rjnUghDaowZE-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PGQAYFTkRxkYn4ors+yA-zxQYhog+afHCMiyo2EoiCw2DiYsB6rjnUghDaowZE-e</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 直伤（法杖 + 秘法）- 超大体积 - 32k - [Mw.Saule] - GW2 - 2020.07.07<br>最高：32,091，平均：31,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=eXFhCVL3aoI');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=eXFhCVL3aoI</a><br>日志：<a href="javascript:window.open('https://dps.report/GUCh-20200708-102730_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/GUCh-20200708-102730_golem</a><br>歌曲：HOLD ME TIGHT OR DON’T (Sweater Beats Remix) - Fall Out Boy</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 症状（剑聚）- 超大体积 - 38.4k - [SC.Roul] - GW2 - 2020.07.07<br>最高：38,379，平均：38,000<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=vT1OBvueRSU');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=vT1OBvueRSU</a><br>日志：<a href="javascript:window.open('https://dps.report/DGT0-20200709-133839_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/DGT0-20200709-133839_golem</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span> - 症状（匕聚 元素能量雕文）- 超大体积 - 41k - [WIP.Crone] - GW2 - 2020.07.07<br>最高：41,035，平均：40,700<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=is7uQC5tzGQ');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=is7uQC5tzGQ</a><br>日志：<a href="javascript:window.open('https://dps.report/kW84-20200709-165345_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/kW84-20200709-165345_golem</a><br>配置：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PGgAg2lZwmYXMJmJOqOmvKA-zRJYmRTfZEXC0RRo5BRE2MI6to7ZF-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PGgAg2lZwmYXMJmJOqOmvKA-zRJYmRTfZEXC0RRo5BRE2MI6to7ZF-e</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="11"></span><span>暴风使</span>
+</span> - 直伤（节号）- 超大体积 - 38k - [SC.Roul] - GW2 - 2020.07.07<br>最高：38,069，平均：37,400<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=7tF8y7bUoQU');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=7tF8y7bUoQU</a><br>歌曲：Be Kind - Marshmello / Halsey</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="11"></span><span>暴风使</span>
+</span> - 症状（匕号）- 超大体积 - 38.1k - [WIP.Crone] - GW2 - 2020.07.07<br>最高：38130，平均：37800<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=Rh8gTWyoaXA');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=Rh8gTWyoaXA</a><br>日志：<a href="javascript:window.open('https://dps.report/hiLP-20200709-000703_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/hiLP-20200709-000703_golem</a><br>配置：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PGgEgEWGBjidxmYk4o6Y2uA-zRJYmRDfZkQC0RBo5BRE2AI6to7ZF-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PGgEgEWGBjidxmYk4o6Y2uA-zRJYmRDfZkQC0RBo5BRE2AI6to7ZF-e</a><br>歌曲：2U - Bad Computer</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="11"></span><span>暴风使</span>
+</span> - 直伤治疗（匕号 三种BD） - 超大体积 - [SC.Roul] - GW2 - 2020.07.07</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="12"></span><span>狂战士</span>
+</span> - 症状旗帜 - 小体积 - 34.1k - [TheCryophoenix] - GW2 - 2020.07.07<br>最高：34,112，平均：33,600<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=nS7ovGfD-Qg');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=nS7ovGfD-Qg</a><br>日志：<a href="javascript:window.open('https://dps.report/Nrn9-20191003-150603_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/Nrn9-20191003-150603_golem</a><br>歌曲：Our Fire Inside - My Dear Addiction</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="12"></span><span>狂战士</span>
+</span> - 症状 - 小体积 - 37k - [TheCryophoenix] - GW2 - 2020.07.07<br>最高：37,086，平均：36,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=wK3dGVAWo_M');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=wK3dGVAWo_M</a><br>日志：<a href="javascript:window.open('https://dps.report/sMiJ-20191003-044550_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/sMiJ-20191003-044550_golem</a><br>歌曲：Our Fire Inside - My Dear Addiction</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="12"></span><span>狂战士</span>
+</span> - 直伤旗帜（力量） - 小体积 - 33k - [SC.Allan Hu] - GW2 - 2019.12.03<br>最高：33,349，平均：32,800<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=4tKu5_7qzLM');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=4tKu5_7qzLM</a><br>日志：<a href="javascript:window.open('https://dps.report/m9vZ-20191203-183949_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/m9vZ-20191203-183949_golem</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="12"></span><span>狂战士</span>
+</span> - 直伤旗帜（纪律） - 小体积 - 29.2k - [SC.Elu] - GW2 - 2019.12.03<br>最高：29,191，平均：28,700<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=NWFNpWoXqpw');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=NWFNpWoXqpw</a><br>日志：<a href="javascript:window.open('https://dps.report/2Jgp-20191003-151806_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/2Jgp-20191003-151806_golem</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="12"></span><span>狂战士</span>
+</span> - 直伤 - 小体积 - 36.8k - [TheCryophoenix] - GW2 - 2019.12.03<br>最高：36,836，平均：36,300<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=ry9Bf5vmndA');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=ry9Bf5vmndA</a><br>歌曲：SEMARGL - Credo Revolution (Zardonic Remix)</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="22"></span><span>破法者</span>
+</span> - 直伤 - 小体积 - 30.6k - [SC.Target] - GW2 - 2019.03.22<br>最高：30,652，平均：30,100<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=lDVsNY6jiQo');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=lDVsNY6jiQo</a><br>日志：<a href="javascript:window.open('https://dps.report/gAzz-20190309-144925_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/gAzz-20190309-144925_golem</a><br>歌曲：Emkay - Bonobo</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="22"></span><span>破法者</span>
+</span> - 直伤旗帜 - 小体积 - 28k - [LN.Switch] - GW2 - 2020.07.07<br>最高：28,071，平均：27,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=x_WDtG-wLt0');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=x_WDtG-wLt0</a><br>歌曲：Off the Pot - Goose</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>魂兽师</span>
+</span> - 直伤（巨剑）- 小体积 - 38.3k - [LEFT] - GW2 - 2020.07.10<br>最高：38,380，平均：37,900<br>日志：<a href="javascript:window.open('https://dps.report/5NuM-20200308-111133_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/5NuM-20200308-111133_golem</a><br>配置：<a href="javascript:window.open('http://en.gw2skills.net/editor/?POwAEhflZwAZbsLmJWuX7PfA-zRIYRUzXIdGC1mAVUB2+QCj9wbJizI-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?POwAEhflZwAZbsLmJWuX7PfA-zRIYRUzXIdGC1mAVUB2+QCj9wbJizI-e</a><br>歌曲：Cafe de Touhou - Smiling Girl of History</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>魂兽师</span>
+</span> - 直伤（长弓）- 超大体积 - 37.9k - [Muju] - GW2 - 2020.07.10<br>最高：37,893，平均：36,300<br>歌曲：Lost Within by A Himitsu</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>魂兽师</span>
+</span> - 直伤（长弓）- 小体积 - 37.4k - [CnD.ShèènaFujibayashi] - GW2 - 2020.07.10<br>最高：37,371，平均：36,800<br>日志：<a href="javascript:window.open('https://dps.report/czZC-20200307-005617_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/czZC-20200307-005617_golem</a><br>歌曲：Loituma - Ievan Polkka</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>魂兽师</span>
+</span> - 症状（匕火 短弓）- 小体积 - 34.6k - [DxD.皮皮茶] - GW2 - 2020.07.10<br>最高：34,567，平均：34,200<br>日志：<a href="javascript:window.open('https://dps.report/nteg-20200723-200712_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/nteg-20200723-200712_golem</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>魂兽师</span>
+</span> - 症状（斧匕 匕火） - 小体积 - 35.8k - [DxD.皮皮茶] - GW2 - 2020.07.10<br>最高：35,827，平均：35,500<br>日志：<a href="javascript:window.open('https://dps.report/gSW5-20200718-073108_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/gSW5-20200718-073108_golem</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="13"></span><span>德鲁伊</span>
+</span> - 症状辅助 - 小体积 - 13k - [SC.Target] - GW2 - 2020.07.07<br>最高：13,082，平均：12,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=5Wipvn8loPk');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=5Wipvn8loPk</a><br>日志：<a href="javascript:window.open('https://dps.report/1JuO-20190119-132522_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/1JuO-20190119-132522_golem</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="24"></span><span>灾厄师</span>
+</span> - 症状 - 小体积 - 29.3k - [LN.DerBaer] - GW2 - 2020.07.07<br>最高：29,347，平均：28,000<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=yG7ZuiBZTtE');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=yG7ZuiBZTtE</a><br>日志（实战）：<a href="javascript:window.open('https://dps.report/6Ycq-20200709-175123_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/6Ycq-20200709-175123_golem</a><br>日志（满 BUFF）：<a href="javascript:window.open('https://dps.report/TeVG-20200709-181653_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/TeVG-20200709-181653_golem</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="14"></span><span>夺魂者</span>
+</span> - 直伤 - 小体积 - 34.3k - [bAd.Westet] - GW2 - 2020.07.07<br>最高：34,302，平均：33,800<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=I1Tjyfk-DKI');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=I1Tjyfk-DKI</a><br>日志：<a href="javascript:window.open('https://dps.report/1MCV-20200715-182303_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/1MCV-20200715-182303_golem</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="17"></span><span>猎龙者</span>
+</span> - 直伤（剑聚 美德 热诚）- 超大体积 - 38.4k - [SC] - GW2 - 2020.02.25<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=WMkoNd-8IEg');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=WMkoNd-8IEg</a><br>日志：<a href="javascript:window.open('https://dps.report/xN03-20200227-015705_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/xN03-20200227-015705_golem</a><br>歌曲：Flora Cash You&#39;re Somebody Else [Official HQ Audio]</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="17"></span><span>猎龙者</span>
+</span> - 直伤（剑聚 光辉）- 超大体积 - 35.1k - [SC] - GW2 - 2020.02.25<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=C98JaabU6_c');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=C98JaabU6_c</a><br>歌曲：Holding Out for a Hero (From &quot;Footloose&quot; Soundtrack) - Bonnie Tyler</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="17"></span><span>猎龙者</span>
+</span> - 直伤（节聚 光辉） - 超大体积 - 33.3k - [SC.Roul] - GW2 - 2020.02.25<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=7Czz-FYyL_c');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=7Czz-FYyL_c</a><br>日志：<a href="javascript:window.open('https://dps.report/xODB-20200226-152327_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/xODB-20200226-152327_golem</a><br>歌曲：Crazy in Love (Feat. Leah Kelly) - 艺术家 The Eden Project</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="7"></span><span>守护者</span>
+</span> - 直伤（美德 剑聚）- 超大体积 - 38.4k - [CnD.Lunar] - GW2 - 2020.02.25<br>最高：38,372，平均：37,900<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=3nX_H0pJ6Dw');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=3nX_H0pJ6Dw</a><br>日志：<a href="javascript:window.open('https://dps.report/Pu9s-20200228-002929_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/Pu9s-20200228-002929_golem</a><br>循环：<a href="javascript:window.open('https://i.gyazo.com/d88f5429268f0e0a9812fa46c51e74f7.png');" target="_blank" rel="nofollow noopener noreferrer">https://i.gyazo.com/d88f5429268f0e0a9812fa46c51e74f7.png</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="27"></span><span>燃火者</span>
+</span> - 症状 - 小体积 - 36.7k(有队友) - 32.8k(无队友) - [cL.TJ] - GW2 - 2020.07.07<br>有队友：最高：36,732，平均：36,400<br>无队友：最高：32,796，平均：32,400<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=U1yYDskt3Cw');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=U1yYDskt3Cw</a><br>日志（有队友）：<a href="javascript:window.open('https://dps.report/XoNr-20200712-172540_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/XoNr-20200712-172540_golem</a><br>日志（无队友）：<a href="javascript:window.open('https://dps.report/7kgO-20200710-222609_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/7kgO-20200710-222609_golem</a><br>歌曲：Gareth Emery - End of days，Gareth Emery - Gunshots</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="27"></span><span>燃火者</span>
+</span> - 症状急速 - 小体积 - 30.2k(有队友) - 28.3k(无队友) - [cL.TJ] - GW2 - 2020.07.07<br>有队友：最高：30,201，平均：29,900<br>无队友：最高：28,293，平均：28,000<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=OROgrpfbI1I');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=OROgrpfbI1I</a><br>日志（有队友）：<a href="javascript:window.open('https://dps.report/pCEk-20200712-174828_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/pCEk-20200712-174828_golem</a><br>日志（无队友）：<a href="javascript:window.open('https://dps.report/pT6z-20200712-180110_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/pT6z-20200712-180110_golem</a><br>歌曲：John de Sohn - Lovers for the weekend，LVNDSCAPE Feat. Tannergard - No one nobody</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-6" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="15"></span><span>独行侠</span>
+</span> - 直伤（法杖）- 小体积 - 35.1k - [CoF.Left] - GW2 - 2020.07.07<br>最高：35,070，平均：34,600<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=UD7TaxND8vc');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=UD7TaxND8vc</a><br>日志：<a href="javascript:window.open('https://dps.report/iSRR-20200320-131145_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/iSRR-20200320-131145_golem</a><br>歌曲：a_hisa - Cotton Candy Syndrome</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="15"></span><span>独行侠</span>
+</span> - 直伤（法杖 + 陷阱）- 小体积 - 35k - [CoF.Left] - GW2 - 2020.07.07<br>最高：35,013，平均：34,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=u3j6eFCTX0c');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=u3j6eFCTX0c</a><br>日志：<a href="javascript:window.open('https://dps.report/aAsu-20200708-095319_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/aAsu-20200708-095319_golem</a><br>配置：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PagAYVlZwaYYsJ2JO6LbtcA-zxQYhog2eHiUZUbCURBY7BRM2A9NpAZJilN-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PagAYVlZwaYYsJ2JO6LbtcA-zxQYhog2eHiUZUbCURBY7BRM2A9NpAZJilN-e</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="25"></span><span>神枪手</span>
+</span> - 直伤（步枪）- 小体积 - 39k - [CnD.Lunar] - GW2 - 2020.07.07<br>最高：39,044，平均：38,700<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=si71D-O4kf8');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=si71D-O4kf8</a><br>日志：<a href="javascript:window.open('https://dps.report/9Bpy-20200721-034734_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/9Bpy-20200721-034734_golem</a><br>配置：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PawAQhjlFweYSMMmJO6LbvOA-zxQYhomYfHaSZUbKURFY7BJM2DvlIOjA-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PawAQhjlFweYSMMmJO6LbvOA-zxQYhomYfHaSZUbKURFY7BJM2DvlIOjA-e</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="25"></span><span>神枪手</span>
+</span> - 直伤（匕匕）- 小体积 - 35.45k - [LN.Mankel] - GW2 - 2020.07.07<br>最高：35,451，平均：34,900<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=Xg80uDq3JZE');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=Xg80uDq3JZE</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="25"></span><span>神枪手</span>
+</span> - 症状（有队友） - 小体积 - 35.8k - [TKoJ.Quentin] - GW2 - 2020.06.15<br>最高：35,800，平均：35,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=urfApEApnLU');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=urfApEApnLU</a><br>日志：<a href="javascript:window.open('https://dps.report/wIlp-20200615-100341_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/wIlp-20200615-100341_golem</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-7" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="26"></span><span>全息师</span>
+</span> - 直伤（步枪） - 小体积 - 37.8k - [SC.Fallen] - GW2 - 2020.03.03<br>最高：37,783，平均：37,200<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=9GSXkwyQUyg');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=9GSXkwyQUyg</a><br>日志：<a href="javascript:window.open('https://dps.report/qPZT-20200305-193820_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/qPZT-20200305-193820_golem</a><br>音乐：Egzod &amp; Alter. - Believe I&#39;m Leaving</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="26"></span><span>全息师</span>
+</span> - 直伤（剑枪 存储单元 45热量起手） - 小体积 - 38.1k - [SC.TJ] - GW2 - 2020.03.03<br>最高：38,143，平均：37,600<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=p6mZtHhu7GM');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=p6mZtHhu7GM</a><br>日志：<a href="javascript:window.open('https://dps.report/5zoi-20200303-165229_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/5zoi-20200303-165229_golem</a><br>音乐：Gareth Emery Feat Emily Vaughn - You are</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="26"></span><span>全息师</span>
+</span> - 直伤（剑枪 存储单元 60热量起手） - 小体积 - 38.1k - [SC.Crone] - GW2 - 2020.03.03<br>最高：38,137，平均：37,600<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=-mNRVyXj01Y');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=-mNRVyXj01Y</a><br>日志：<a href="javascript:window.open('https://dps.report/VfFM-20200303-003335_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/VfFM-20200303-003335_golem</a><br>音乐：Nasty <em> Nasty </em> Spell - Camellia</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="26"></span><span>全息师</span>
+</span> - 直伤（剑枪 强化存储单元） - 小体积 - 37.8k - [SC.TJ] - GW2 - 2020.07.07<br>最高：38,143，平均：37,600<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=p6mZtHhu7GM');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=p6mZtHhu7GM</a><br>日志：<a href="javascript:window.open('https://dps.report/5zoi-20200303-165229_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/5zoi-20200303-165229_golem</a><br>音乐：Gareth Emery Feat Emily Vaughn - You are</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="26"></span><span>全息师</span>
+</span> - 症状（简单循环） - 小体积 - 36.4k（实战有困惑可达 37.8k-42.2k）- [CnD.Lunar] - GW2 - 2020.07.07<br>最高：36,422，平均：36,100<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=ZuBId0hZ0mo');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=ZuBId0hZ0mo</a><br>日志：<a href="javascript:window.open('https://dps.report/mVzO-20200715-025640_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/mVzO-20200715-025640_golem</a><br>基准：<a href="javascript:window.open('https://i.gyazo.com/651e1e37566f480a0197359cf78c0242.png');" target="_blank" rel="nofollow noopener noreferrer">https://i.gyazo.com/651e1e37566f480a0197359cf78c0242.png</a><br>循环：<a href="javascript:window.open('https://i.gyazo.com/6f126d41f2e1f0584965b43c8a85a866.png');" target="_blank" rel="nofollow noopener noreferrer">https://i.gyazo.com/6f126d41f2e1f0584965b43c8a85a866.png</a><br>音乐：Hidden Citizens - Beethoven Like You&#39;ve Never Heard Before</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="26"></span><span>全息师</span>
+</span> - 症状（复杂循环） - 小体积 - 36.9k（实战有困惑可达 38.2k-42.7k）- [CnD.Lunar] - GW2 - 2020.07.07<br>最高：36,864，平均：36,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=7EkJk-A9xa4');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=7EkJk-A9xa4</a><br>日志：<a href="javascript:window.open('https://dps.report/SNDk-20200714-225511_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/SNDk-20200714-225511_golem</a><br>基准：<a href="javascript:window.open('https://i.gyazo.com/9843e3282bdf1db84b2dcb9f0c8b3ec8.png');" target="_blank" rel="nofollow noopener noreferrer">https://i.gyazo.com/9843e3282bdf1db84b2dcb9f0c8b3ec8.png</a><br>循环：<a href="javascript:window.open('https://i.gyazo.com/609d6b8ac4af38f845803298ce96745b.png');" target="_blank" rel="nofollow noopener noreferrer">https://i.gyazo.com/609d6b8ac4af38f845803298ce96745b.png</a><br>音乐：MusicalBasics - Bach; Prelude in C minor</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="26"></span><span>全息师</span>
+</span> - 症状（起手爆发） - 小体积 - 35.5k（实战有困惑可达 36.6k-40.3k）- [CnD.Lunar] - GW2 - 2020.07.07<br>最高：35,460，平均：35,100<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=8yJFF_PsTK4');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=8yJFF_PsTK4</a><br>日志：<a href="javascript:window.open('https://dps.report/Ytys-20200716-004543_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/Ytys-20200716-004543_golem</a><br>基准：<a href="javascript:window.open('https://i.gyazo.com/7eadf9fc5b108de9521acec75efa244c.png');" target="_blank" rel="nofollow noopener noreferrer">https://i.gyazo.com/7eadf9fc5b108de9521acec75efa244c.png</a><br>音乐：MusicalBasics - Beethoven Virus X Sonata Pathetique</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="6"></span><span>工程师</span>
+</span> - 症状 - 小体积 - 35.4k（实战有困惑可达 36.8k-41.7k）- [CnD.Lunar] - GW2 - 2020.07.07<br>最高：35,352，平均：35,000<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=J6sdN_CI59Y');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=J6sdN_CI59Y</a><br>日志：<a href="javascript:window.open('https://dps.report/vnTC-20200714-173442_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/vnTC-20200714-173442_golem</a><br>基准：<a href="javascript:window.open('https://i.gyazo.com/312e551b7aa58bce1cee640fcf3a6e7a.png');" target="_blank" rel="nofollow noopener noreferrer">https://i.gyazo.com/312e551b7aa58bce1cee640fcf3a6e7a.png</a><br>循环：<a href="javascript:window.open('https://i.gyazo.com/47fd46b58e5ab96ed6c6790cceac74f8.png');" target="_blank" rel="nofollow noopener noreferrer">https://i.gyazo.com/47fd46b58e5ab96ed6c6790cceac74f8.png</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-8" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="18"></span><span>时空术士</span>
+</span> - 直伤增益（决斗支配 + 巨剑 + 机不可失） - 小体积 - 32k - [CnD.Daed Dee] - GW2 - 2020.07.07<br>最高：32,068，平均：31,600<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=52HRvWBxJUk');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=52HRvWBxJUk</a><br>日志：<a href="javascript:window.open('https://dps.report/KMP0-20200710-221413_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/KMP0-20200710-221413_golem</a><br>配置（学者符文）：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PiwAwyFlVw2YMsJ2IOyKdNTA-zxQYhoje7cHCKsyoiKI9Uw2DSYsHeLRcGB-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PiwAwyFlVw2YMsJ2IOyKdNTA-zxQYhoje7cHCKsyoiKI9Uw2DSYsHeLRcGB-e</a><br>配置（雄鹰符文）：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PiwAwyFlVw2YMsJ2IOyKdNTA-zxQYhoj7bHEYZURFkeKYyBJM2DvlIOjA-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PiwAwyFlVw2YMsJ2IOyKdNTA-zxQYhoj7bHEYZURFkeKYyBJM2DvlIOjA-e</a><br>歌曲：Sway With Me (GALXARA Version)</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="18"></span><span>时空术士</span>
+</span> - 直伤增益（决斗支配 + 剑聚 + 机不可失） - 小体积 - 31.5k - [CnD.Daed Dee] - GW2 - 2020.07.07<br>最高：31,470，平均：30,840<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=Z7VqDNh1IGg');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=Z7VqDNh1IGg</a><br>日志：<a href="javascript:window.open('https://dps.report/TuMf-20200711-085128_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/TuMf-20200711-085128_golem</a><br>配置（学者符文）：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PiABwyx3lVw2YesJ2IO0KdNTA-zxQYhone7cHCKsyoiKI9Uw2DSYsHeL7OuB-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PiABwyx3lVw2YesJ2IO0KdNTA-zxQYhone7cHCKsyoiKI9Uw2DSYsHeL7OuB-e</a><br>配置（雄鹰符文）：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PiABwyx3lVw2YesJ2IO0KdNTA-zxQYhon7bHEYZURFkeKYyBJM2DvldH3A-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PiABwyx3lVw2YesJ2IO0KdNTA-zxQYhon7bHEYZURFkeKYyBJM2DvldH3A-e</a><br>歌曲：KILLA KILLA - GALXARA</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="18"></span><span>时空术士</span>
+</span> - 直伤增益（灵感支配 + 剑剑 + 机不可失） - 小体积 - 21.4k - [CnD.Daed Dee] - GW2 - 2020.07.07<br>最高：21,457，平均：21,000<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=mCQk8R-5t1w');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=mCQk8R-5t1w</a><br>日志：<a href="javascript:window.open('https://dps.report/amLc-20200708-124137_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/amLc-20200708-124137_golem</a><br>配置（学者符文）：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PiABwyx7lVw2YLsD2IO0S7NTA-zxQYhone7cHCKsyoiKI9Uw2DSYsHeLRcGB-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PiABwyx7lVw2YLsD2IO0S7NTA-zxQYhone7cHCKsyoiKI9Uw2DSYsHeLRcGB-e</a><br>配置（雄鹰符文）：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PiABwyx7lVw2YLsD2IO0S7NTA-zxQYhon7bHEYZURFkeKYyBJM2DvlIOjA-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PiABwyx7lVw2YLsD2IO0S7NTA-zxQYhon7bHEYZURFkeKYyBJM2DvlIOjA-e</a><br>歌曲：Sabrina Claudio - Cross Your Mind (Official Audio) | Fifty Shades Freed</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="18"></span><span>时空术士</span>
+</span> - 症状增益（平均28层困惑） - 小体积 - 21.4k - [dP.Brokenyew] - GW2 - 2020.07.07<br>平均：28层困惑<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=-IaWBWCgrys');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=-IaWBWCgrys</a><br>日志：<a href="javascript:window.open('https://dps.report/jFV4-20200311-171802_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/jFV4-20200311-171802_golem</a><br>配置：<a href="javascript:window.open('http://en.gw2skills.net/editor/?PiABsqt7lVwcYHMN2JWOX+tXA-zRRYkRPt1JaIywKj0ThQqAtPICQFIsHyfNm4cD-e');" target="_blank" rel="nofollow noopener noreferrer">http://en.gw2skills.net/editor/?PiABsqt7lVwcYHMN2JWOX+tXA-zRRYkRPt1JaIywKj0ThQqAtPICQFIsHyfNm4cD-e</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="18"></span><span>时空术士</span>
+</span> - 直伤（剑聚） - 小体积 - 42.9k - [CorporatePanda] - GW2 - 2020.07.07<br>最高：42,943，平均：42,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=2hrMH2BhAr4');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=2hrMH2BhAr4</a><br>日志：<a href="javascript:window.open('https://dps.report/fRoi-20200712-184859_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/fRoi-20200712-184859_golem</a><br>歌曲：T &amp; Sugah x NCT - Stardust (feat. Miyoki) [NCS Release]</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="28"></span><span>幻象术士</span>
+</span> - 症状（平均24.9层困惑） - 小体积 - 29.1 - [sN.Ryan] - GW2 - 2020.07.07<br>最高：29,194，平均：28,900<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=KMNR40z8KDo');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=KMNR40z8KDo</a><br>日志：<a href="javascript:window.open('https://dps.report/onkq-20191110-051319_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/onkq-20191110-051319_golem</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-9" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="29"></span><span>龙魂使</span>
+</span> - 症状（唤魂 龙魂姿态 无队友） - 超大体积 - 38k - [Le Mós] - GW2 - 2020.02.25<br>最高：38,011，平均：37,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=fBYzCIj7RAU');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=fBYzCIj7RAU</a><br>日志：<a href="javascript:window.open('https://dps.report/zoHp-20200318-221120_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/zoHp-20200318-221120_golem</a><br>歌曲：Fractures - Feel</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="29"></span><span>龙魂使</span>
+</span> - 症状（唤魂 刺客姿态 无队友） - 超大体积 - 38k - [Le Mós] - GW2 - 2020.02.25<br>最高：38048，平均：37700<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=RWO0Wnn-0J4');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=RWO0Wnn-0J4</a><br>日志：<a href="javascript:window.open('https://dps.report/Qb3A-20200318-222753_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/Qb3A-20200318-222753_golem</a><br>歌曲：Shura - Touch</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="29"></span><span>龙魂使</span>
+</span> - 症状（毁灭 龙魂姿态 无队友） - 超大体积 - 36.2k - [Le Mós] - GW2 - 2020.02.25<br>最高：36445，平均：36200<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=9cYdYsSYIPM');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=9cYdYsSYIPM</a><br>日志：<a href="javascript:window.open('https://dps.report/WsnS-20200318-223607_golem');" target="_blank" rel="nofollow noopener noreferrer">https://dps.report/WsnS-20200318-223607_golem</a><br>歌曲：DNCE - TV in the Morning</p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="29"></span><span>龙魂使</span>
+</span> - 症状（单短弓 唤魂 刺客姿态 无队友） - 超大体积 - 33k - [SSC.Fusion] - GW2 - 2020.07.07<br>最高：32,892，平均：32,600<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=1mXm7BL71Zw');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=1mXm7BL71Zw</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="29"></span><span>龙魂使</span>
+</span> - 直伤敏捷 - 超大体积 - 24k - [BATS] - GW2 - 2020.07.07<br>最高：23,973，平均：23,500<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=p4D96l_GVPg');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=p4D96l_GVPg</a></p>
+<hr>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="19"></span><span>预告者</span>
+</span> - 直伤增益 - 小体积 - 28.4k - [SC.Stijn] - GW2 - 2020.03.04<br>最高：28,360，平均：28,000<br>地址：<a href="javascript:window.open('https://www.youtube.com/watch?v=foEqWHloZoc');" target="_blank" rel="nofollow noopener noreferrer">https://www.youtube.com/watch?v=foEqWHloZoc</a><br>歌曲：Asking Alexandria - Rise Up (Original Demo)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

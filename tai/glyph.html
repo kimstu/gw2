@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>雕文数据库 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+ </ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg header-bg-database-glyphs">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<div class="row page-titles bg-lg bg-lg-database-glyphs m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="color-database"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">工具</li>
+<li class="breadcrumb-item active">数据库</li>
+<li class="breadcrumb-item active"><a href="" class="color-database">雕文数据库</a></li>
+</ol>
+<h1 class="page-title color-write-linear-gradient">
+雕文数据库
+</h1>
+</div>
+<div class="page-titles-description col-md-12 m-t-30">
+<div class="card">
+<div class="card-body collapse show p-t-10 p-b-10 p-l-20 p-r-20">
+<div class="row">
+<div class="col-md-12 col-12 text-content m-t-5 page-titles-description-small">
+<p>雕文 是一类升级组件，可将其安插在采集工具上，以便在采集时获得额外采集效果。</p>
+<p>购买附带 雕文 的采集工具后，可以右键将 雕文 直接取下，但取下的 雕文 是账号绑定的。</p>
+<p>大多数非绑定的 雕文 都来自 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20313"></span><span>黑狮宝箱</span>
+</span>。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-outline-inverse card-box-shadow overflow-hidden m-t-30 m-b-0">
+<div class="bg-light-gray card-body collapse show">
+<div class="content-database-search">
+ <form id="form">
+<dl class="search-name">
+<dt>雕文名称：</dt>
+<dd><input type="search" name="name" id="name" class="form-control" autocomplete="off"></dd>
+</dl>
+<dl class="content-database-form-submit">
+<dt>&nbsp;</dt>
+<dd class="content-database-checkbox-warp">
+<div id="submit" class="content-database-checkbox"> 提 交 查 询 </div>
+</dd>
+</dl>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-outline-inverse card-box-shadow overflow-hidden m-t-30">
+<div class="bg-light-gray card-body collapse show">
+<div class="database-list" id="list"></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+    var dataSource = [{"id":87407,"name":"\u88c1\u7f1d\u96d5\u6587","name_en":"Glyph of the Tailor","data":"{\"id\": 87407, \"icon\": \"https:\/\/static.gw2data.cn\/file\/4EDD0117B4F558139C079FD2B14E9534E7AB28D2\/1972350.png\", \"name\": \"\u88c1\u7f1d\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u88c1\u7f1d\", \"gatherings\": [89084], \"infix_upgrade\": {\"id\": 1443, \"buff\": {\"skill_id\": 50358, \"description\": \"\u5728\u91c7\u96c6\u65f6\u670933%\u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u7684\u8863\u7269\u5e9f\u6599\u3002\u6750\u6599\u7684\u7c7b\u578b\u53d6\u51b3\u4e8e\u4eba\u7269\u7684\u7b49\u7ea7\u4ee5\u53ca\u6240\u5728\u7684\u533a\u57df\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgFvVQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u5728\u91c7\u96c6\u65f6\u6709 33% \u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u7684\u8863\u7269\u5e9f\u6599\u3002<br>\r\n\u8863\u7269\u5e9f\u6599\u7684\u5956\u52b1\u7ea7\u522b\uff0c\u7531\u89d2\u8272\u6240\u5728\u5730\u56fe\u7ecf\u8fc7\u52a8\u6001\u5e73\u8861\u540e\u7684\u7b49\u7ea7\u51b3\u5b9a\u3002<br><br>\r\n\r\n1-15 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19718\"><\/span><span>\u9ec4\u9ebb\u788e\u6599<\/span>\r\n        <\/span><br>\r\n16-40 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19739\"><\/span><span>\u7f8a\u6bdb\u788e\u6599<\/span>\r\n        <\/span><br>\r\n41-55 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19741\"><\/span><span>\u68c9\u5e03\u788e\u6599<\/span>\r\n        <\/span><br>\r\n56-70 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19743\"><\/span><span>\u4e9a\u9ebb\u788e\u6599<\/span>\r\n        <\/span><br>\r\n71-80 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19748\"><\/span><span>\u4e1d\u7ef8\u788e\u6599<\/span>\r\n        <\/span>\uff0c\u5076\u5c14\u4f1a\u83b7\u5f97 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19745\"><\/span><span>\u8584\u7eb1\u788e\u6599<\/span>\r\n        <\/span>","icon":"https:\/\/static.gw2data.cn\/file\/4EDD0117B4F558139C079FD2B14E9534E7AB28D2\/1972350.png","rarity":"Rare","chat_link":"[&AgFvVQEA]","gathering":[{"item_id":89084,"name":"\u64bc\u5730\u8005\u91c7\u77ff\u5de5\u5177","rarity":"Rare"}]},{"id":87428,"name":"\u65e0\u7f81\u96d5\u6587","name_en":"Glyph of the Unbound","data":"{\"id\": 87428, \"icon\": \"https:\/\/static.gw2data.cn\/file\/C42DD7E193022157F04F1D61700FFBBDD5C55CBA\/1972351.png\", \"name\": \"\u65e0\u7f81\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u65e0\u7f81\", \"gatherings\": [87443, 87420, 87396], \"infix_upgrade\": {\"id\": 1450, \"buff\": {\"skill_id\": 50354, \"description\": \"\u5728\u91c7\u96c6\u65f6\u5956\u52b1\u989d\u5916\u672a\u53d7\u7ea6\u675f\u7684\u9b54\u6cd5\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGEVQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u6bcf\u6b21\u6536\u5272\u53ef\u83b7\u5f97 3-9 <span class=\"mini-currencies\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"currencies\" gw2-ids=\"32\"><\/span><span>\u672a\u53d7\u7ea6\u675f\u7684\u9b54\u6cd5<\/span>\r\n        <\/span>\uff08\u5e73\u5747 6\uff09<br>\r\n\u6bcf\u6b21\u4f10\u6728\u53ef\u83b7\u5f97 1-3 <span class=\"mini-currencies\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"currencies\" gw2-ids=\"32\"><\/span><span>\u672a\u53d7\u7ea6\u675f\u7684\u9b54\u6cd5<\/span>\r\n        <\/span>\uff08\u5e73\u5747 2\uff09<br>\r\n\u6bcf\u6b21\u91c7\u77ff\u53ef\u83b7\u5f97 1-3 <span class=\"mini-currencies\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"currencies\" gw2-ids=\"32\"><\/span><span>\u672a\u53d7\u7ea6\u675f\u7684\u9b54\u6cd5<\/span>\r\n        <\/span>\uff08\u5e73\u5747 2\uff09","icon":"https:\/\/static.gw2data.cn\/file\/C42DD7E193022157F04F1D61700FFBBDD5C55CBA\/1972351.png","rarity":"Rare","chat_link":"[&AgGEVQEA]","gathering":[{"item_id":87443,"name":"\u672a\u53d7\u7ea6\u675f\u7684\u9b54\u6cd5\u91c7\u77ff\u9707\u6ce2","rarity":"Rare"},{"item_id":87420,"name":"\u672a\u53d7\u7ea6\u675f\u7684\u9b54\u6cd5\u4f10\u6728\u8109\u51b2","rarity":"Rare"},{"item_id":87396,"name":"\u672a\u53d7\u7ea6\u675f\u7684\u9b54\u6cd5\u6536\u5272\u5149\u675f","rarity":"Rare"}]},{"id":87432,"name":"\u5de5\u4e1a\u96d5\u6587","name_en":"Glyph of Industry","data":"{\"id\": 87432, \"icon\": \"https:\/\/static.gw2data.cn\/file\/63C3601669A0DAA958CB2BBA5E3ABCC07450C7FF\/1972347.png\", \"name\": \"\u5de5\u4e1a\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u5de5\u4e1a\", \"gatherings\": [89086], \"infix_upgrade\": {\"id\": 762, \"buff\": {\"skill_id\": 21820, \"description\": \"\u91c7\u96c6\u5b8c\u6210\u901f\u5ea6\u63d0\u9ad850%\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGIVQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u4f7f\u7528\u5b89\u63d2\u6b64\u96d5\u6587\u7684\u91c7\u96c6\u5de5\u5177\u65f6\uff0c\u83b7\u5f97\u6301\u7eed 8\u79d2\u7684 \u5de5\u4e1a\u96d5\u6587 \u6548\u679c\uff08\u91c7\u96c6\u901f\u5ea6\u63d0\u9ad8 50%\uff09\u3002<br>\r\n\u82e5\u6253\u65ad\u91c7\u96c6\uff0c\u5219\u8be5\u6548\u679c\u4f1a\u63d0\u524d\u6d88\u5931\u3002\u91c7\u96c6\u5b8c\u6bd5\u540e\uff0c\u8be5\u6548\u679c\u81ea\u52a8\u6d88\u5931\u3002","icon":"https:\/\/static.gw2data.cn\/file\/63C3601669A0DAA958CB2BBA5E3ABCC07450C7FF\/1972347.png","rarity":"Rare","chat_link":"[&AgGIVQEA]","gathering":[{"item_id":89086,"name":"\u706b\u7130\u98ce\u66b4\u4f10\u6728\u5de5\u5177","rarity":"Rare"}]},{"id":87433,"name":"\u98de\u7fd4\u96d5\u6587","name_en":"Glyph of Flight","data":"{\"id\": 87433, \"icon\": \"https:\/\/static.gw2data.cn\/file\/6231120C0FCFC908C24505CF7C74F502384A7104\/1972346.png\", \"name\": \"\u98de\u7fd4\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u98de\u884c\", \"infix_upgrade\": {\"id\": 1447, \"buff\": {\"skill_id\": 50349, \"description\": \"\u5728\u91c7\u96c6\u5b8c\u6210\u540e\u76845\u79d2\u5185\uff0c\u79fb\u52a8\u901f\u5ea6\u63d0\u9ad8100%\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGJVQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u91c7\u96c6\u5b8c\u6210\u540e\u83b7\u5f97 5\u79d2 \u98de\u7fd4\u96d5\u6587 \u6548\u679c\uff08\u79fb\u52a8\u901f\u5ea6\u63d0\u9ad8 100%\uff09\u3002<br>\r\n\u8be5\u6548\u679c\u4e0d\u4e0e\u5176\u4ed6\u79fb\u901f\u52a0\u6210\u7c7b\u6548\u679c\u53e0\u52a0\u3002","icon":"https:\/\/static.gw2data.cn\/file\/6231120C0FCFC908C24505CF7C74F502384A7104\/1972346.png","rarity":"Rare","chat_link":"[&AgGJVQEA]"},{"id":87438,"name":"\u5b88\u671b\u9a91\u58eb\u96d5\u6587","name_en":"Glyph of the Watchknight","data":"{\"id\": 87438, \"icon\": \"https:\/\/static.gw2data.cn\/file\/32B6336166CF1CA43C75984367CD201B786BA359\/1972352.png\", \"name\": \"\u5b88\u671b\u9a91\u58eb\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u5b88\u671b\u9a91\u58eb\", \"gatherings\": [87422], \"infix_upgrade\": {\"id\": 1446, \"buff\": {\"skill_id\": 50368, \"description\": \"\u5728\u91c7\u96c6\u65f6\u670933%\u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u949f\u8868\u6263\u94fe\u9f7f\u8f6e\u7684\u5956\u52b1\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGOVQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u6bcf\u6b21\u91c7\u96c6\u6709 33% \u7684\u51e0\u7387\u83b7\u5f97\u4e00\u4e2a <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"44941\"><\/span><span>\u949f\u8868\u6263\u94fe\u9f7f\u8f6e<\/span>\r\n        <\/span>\u3002","icon":"https:\/\/static.gw2data.cn\/file\/32B6336166CF1CA43C75984367CD201B786BA359\/1972352.png","rarity":"Rare","chat_link":"[&AgGOVQEA]","gathering":[{"item_id":87422,"name":"\u949f\u8868\u91c7\u77ff\u9550","rarity":"Rare"}]},{"id":87442,"name":"\u5206\u89e3\u8005\u96d5\u6587","name_en":"Glyph of the Scavenger","data":"{\"id\": 87442, \"icon\": \"https:\/\/static.gw2data.cn\/file\/DEC4F5BACE107A53B61035C217B74FB30525A46D\/1972349.png\", \"name\": \"\u5206\u89e3\u8005\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u5206\u89e3\u8005\", \"gatherings\": [87397], \"infix_upgrade\": {\"id\": 1452, \"buff\": {\"skill_id\": 50348, \"description\": \"\u5728\u91c7\u96c6\u65f6\u670933%\u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u4f18\u8d28\u5236\u4f5c\u6750\u6599\u7684\u5956\u52b1\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGSVQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u6709 33% \u7684\u51e0\u7387\uff0c\u91c7\u96c6\u5355\u4e2a\u8282\u70b9\u4f1a\u83b7\u5f97 T1 ~ T6 \u7ea7\u522b\u7684\u4e2d\u7ea7\u5236\u4f5c\u6750\u6599\uff08\u5982\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"24290\"><\/span><span>\u5f31\u6548\u8840\u74f6<\/span>\r\n        <\/span>\uff09\u3002<br>\r\n\u4f4e\u7b49\u7ea7\u7684\u6750\u6599\u83b7\u53d6\u51e0\u7387\u8f83\u9ad8\u3002<br><br>\r\n\u5927\u591a\u6570 33% \u989d\u5916\u6750\u6599\u91c7\u96c6\u7c7b\u96d5\u6587\uff0c\u4f1a\u6309\u7167\u6bcf\u6b21\u6536\u5272\u3001\u4f10\u6728\u3001\u91c7\u77ff\u52a8\u4f5c\u8fdb\u884c\u7ed3\u7b97\u3002<br>\r\n\u4f46\u8be5\u96d5\u6587\u7684\u989d\u5916\u51e0\u7387\u5c06\u6309\u7167\u5355\u4e2a\u8282\u70b9\u8ba1\u7b97\u3002","icon":"https:\/\/static.gw2data.cn\/file\/DEC4F5BACE107A53B61035C217B74FB30525A46D\/1972349.png","rarity":"Rare","chat_link":"[&AgGSVQEA]","gathering":[{"item_id":87397,"name":"\u5e78\u8fd0\u72d7\u5e74\u91c7\u96c6\u5de5\u5177","rarity":"Rare"}]},{"id":87462,"name":"\u8d4f\u91d1\u96d5\u6587","name_en":"Glyph of Bounty","data":"{\"id\": 87462, \"icon\": \"https:\/\/static.gw2data.cn\/file\/D24C6C3559DC0C2C565CB36506BE49F3FEEF6466\/1972345.png\", \"name\": \"\u8d4f\u91d1\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u8d4f\u91d1\", \"gatherings\": [87425], \"infix_upgrade\": {\"id\": 1451, \"buff\": {\"skill_id\": 50345, \"description\": \"\u5728\u91c7\u96c6\u65f6\u670933%\u7684\u51e0\u7387\u8fdb\u884c\u4e00\u6b21\u989d\u5916\u7684\u91c7\u96c6\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGmVQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"33% \u7684\u51e0\u7387\u83b7\u5f97\u4e00\u6b21\u989d\u5916\u91c7\u96c6\u3002\u4ee5\u4e0b\u8282\u70b9\u4e0d\u53d7\u8be5\u96d5\u6587\u6548\u679c\u5f71\u54cd\uff1a<br><br>\r\n\u5bcc\u8d44\u6e90\u8282\u70b9<br>\r\n<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"86786\"><\/span><span>\u9ed1\u72ee\u82b1\u56ed\u5730\u5951<\/span>\r\n        <\/span> \u4e2d\u7684\u690d\u7269\u8282\u70b9<br>\r\n\u516c\u4f1a\u91c7\u96c6\u8282\u70b9<br>\r\n<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"81706\"><\/span><span>\u6b27\u5c14\u7261\u86ce<\/span>\r\n        <\/span><br>\r\n<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"43773\"><\/span><span>\u77f3\u82f1\u6676\u4f53<\/span>\r\n        <\/span><br>\r\n<span class=\"mini-achievements\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"achievements\" gw2-ids=\"3436\"><\/span><span>\u80cc\u4e95\u79bb\u4e61<\/span>\r\n        <\/span> \u89e3\u9501\u7684\u91ce\u5916 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"81127\"><\/span><span>\u539f\u59cb\u5170\u82b1<\/span>\r\n        <\/span> \u8282\u70b9<br>\r\n<span class=\"mini-achievements\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"achievements\" gw2-ids=\"2383\"><\/span><span>3\u7ea7\u845b\u85e4\u82b1\u8bed\uff1a\u845b\u53f6<\/span>\r\n        <\/span>  \u89e3\u9501\u7684 \u9690\u79d8\u82b1\u56ed \u8df3\u8df3\u4e50\u4e2d\u7684\u690d\u7269\u8282\u70b9","icon":"https:\/\/static.gw2data.cn\/file\/D24C6C3559DC0C2C565CB36506BE49F3FEEF6466\/1972345.png","rarity":"Rare","chat_link":"[&AgGmVQEA]","gathering":[{"item_id":87425,"name":"\u6d41\u6c99\u91c7\u77ff\u9550","rarity":"Rare"}]},{"id":87473,"name":"\u76ae\u9769\u5320\u96d5\u6587","name_en":"Glyph of the Leatherworker","data":"{\"id\": 87473, \"icon\": \"https:\/\/static.gw2data.cn\/file\/5CFD36CC160D1DF045C2579CB5392695112324A6\/1972348.png\", \"name\": \"\u76ae\u9769\u5320\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u76ae\u9769\u5320\", \"gatherings\": [89370], \"infix_upgrade\": {\"id\": 1444, \"buff\": {\"skill_id\": 50339, \"description\": \"\u5728\u91c7\u96c6\u65f6\u670933%\u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u7684\u76ae\u9769\u5e9f\u6599\u3002\u6750\u6599\u7684\u7c7b\u578b\u53d6\u51b3\u4e8e\u4eba\u7269\u7684\u7b49\u7ea7\u4ee5\u53ca\u6240\u5728\u7684\u533a\u57df\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGxVQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u5728\u91c7\u96c6\u65f6\u6709 33% \u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u7684\u76ae\u9769\u5e9f\u6599\u3002<br>\r\n\u76ae\u9769\u5e9f\u6599\u7684\u5956\u52b1\u7ea7\u522b\uff0c\u7531\u89d2\u8272\u6240\u5728\u5730\u56fe\u7ecf\u8fc7\u52a8\u6001\u5e73\u8861\u540e\u7684\u7b49\u7ea7\u51b3\u5b9a\u3002<br><br>\r\n\r\n1-15 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19719\"><\/span><span>\u751f\u76ae\u76ae\u9769\u8fb9\u6599<\/span>\r\n        <\/span><br>\r\n16-40 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19728\"><\/span><span>\u8584\u76ae\u76ae\u9769\u8fb9\u6599<\/span>\r\n        <\/span><br>\r\n41-55 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19730\"><\/span><span>\u7c97\u7cd9\u76ae\u9769\u8fb9\u6599<\/span>\r\n        <\/span><br>\r\n56-70 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19731\"><\/span><span>\u8010\u78e8\u76ae\u9769\u8fb9\u6599<\/span>\r\n        <\/span><br>\r\n71-80 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19729\"><\/span><span>\u539a\u5b9e\u76ae\u9769\u8fb9\u6599<\/span>\r\n        <\/span>\uff0c\u5076\u5c14\u4f1a\u83b7\u5f97 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19732\"><\/span><span>\u786c\u8d28\u76ae\u9769\u8fb9\u6599<\/span>\r\n        <\/span>","icon":"https:\/\/static.gw2data.cn\/file\/5CFD36CC160D1DF045C2579CB5392695112324A6\/1972348.png","rarity":"Rare","chat_link":"[&AgGxVQEA]","gathering":[{"item_id":89370,"name":"\u96f7\u9706\u9739\u96f3\u6536\u5272\u5de5\u5177","rarity":"Rare"}]},{"id":87534,"name":"\u52d8\u63a2\u8005\u96d5\u6587","name_en":"Glyph of the Prospector","data":"{\"id\": 87534, \"icon\": \"https:\/\/static.gw2data.cn\/file\/CFBB58E041A823F4AE6CA1B9F71A46C6523956F2\/1983551.png\", \"name\": \"\u52d8\u63a2\u8005\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u52d8\u63a2\u8005\", \"gatherings\": [87530], \"infix_upgrade\": {\"id\": 1468, \"buff\": {\"skill_id\": 50391, \"description\": \"\u5728\u91c7\u96c6\u65f6\u670933%\u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u7684\u77ff\u77f3\u3002\u6750\u6599\u7684\u7c7b\u578b\u53d6\u51b3\u4e8e\u4eba\u7269\u7684\u7b49\u7ea7\u4ee5\u53ca\u6240\u5728\u7684\u533a\u57df\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgHuVQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u5728\u91c7\u96c6\u65f6\u6709 33% \u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u7684\u77ff\u77f3\u3002<br>\r\n\u77ff\u77f3\u7684\u5956\u52b1\u7ea7\u522b\uff0c\u7531\u89d2\u8272\u6240\u5728\u5730\u56fe\u7ecf\u8fc7\u52a8\u6001\u5e73\u8861\u540e\u7684\u7b49\u7ea7\u51b3\u5b9a\u3002<br><br>\r\n\r\n1-20 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19697\"><\/span><span>\u94dc\u77ff\u77f3<\/span>\r\n        <\/span><br>\r\n21-40 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19699\"><\/span><span>\u94c1\u77ff\u77f3<\/span>\r\n        <\/span>\u3001<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19703\"><\/span><span>\u94f6\u77ff\u77f3<\/span>\r\n        <\/span><br>\r\n41-60 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19698\"><\/span><span>\u91d1\u77ff\u77f3<\/span>\r\n        <\/span><br>\r\n61-74 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19702\"><\/span><span>\u767d\u91d1\u77ff\u77f3<\/span>\r\n        <\/span><br>\r\n75-80 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19700\"><\/span><span>\u79d8\u94f6\u77ff\u77f3<\/span>\r\n        <\/span>\uff0c\u5076\u5c14\u4f1a\u83b7\u5f97 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19701\"><\/span><span>\u661f\u9668\u77ff\u77f3<\/span>\r\n        <\/span><br>","icon":"https:\/\/static.gw2data.cn\/file\/CFBB58E041A823F4AE6CA1B9F71A46C6523956F2\/1983551.png","rarity":"Rare","chat_link":"[&AgHuVQEA]","gathering":[{"item_id":87530,"name":"\u4e18\u7259\u517d\u4f10\u6728\u5de5\u5177","rarity":"Rare"}]},{"id":87550,"name":"\u62a4\u6797\u5458\u96d5\u6587","name_en":"Glyph of the Forester","data":"{\"id\": 87550, \"icon\": \"https:\/\/static.gw2data.cn\/file\/D6C5915A046A95693A0B5202B06A68F6D90546EA\/1986193.png\", \"name\": \"\u62a4\u6797\u5458\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u62a4\u6797\u5458\", \"gatherings\": [87554], \"infix_upgrade\": {\"id\": 1482, \"buff\": {\"skill_id\": 50498, \"description\": \"\u5728\u91c7\u96c6\u65f6\u670933%\u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u7684\u539f\u6728\u3002\u6750\u6599\u7684\u7c7b\u578b\u53d6\u51b3\u4e8e\u4eba\u7269\u7684\u7b49\u7ea7\u4ee5\u53ca\u6240\u5728\u7684\u533a\u57df\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgH+VQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u5728\u91c7\u96c6\u65f6\u6709 33% \u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u7684\u539f\u6728\u3002<br>\r\n\u539f\u6728\u7684\u5956\u52b1\u7ea7\u522b\uff0c\u7531\u89d2\u8272\u6240\u5728\u5730\u56fe\u7ecf\u8fc7\u52a8\u6001\u5e73\u8861\u540e\u7684\u7b49\u7ea7\u51b3\u5b9a\u3002<br><br>\r\n\r\n1-20 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19723\"><\/span><span>\u65b0\u751f\u539f\u6728<\/span>\r\n        <\/span><br>\r\n21-40 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19726\"><\/span><span>\u8f6f\u82af\u539f\u6728<\/span>\r\n        <\/span><br>\r\n41-60 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19727\"><\/span><span>\u98ce\u5e72\u539f\u6728<\/span>\r\n        <\/span><br>\r\n61-74 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19724\"><\/span><span>\u786c\u8d28\u539f\u6728<\/span>\r\n        <\/span><br>\r\n75-80 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19722\"><\/span><span>\u4e0a\u53e4\u539f\u6728<\/span>\r\n        <\/span>\uff0c\u5076\u5c14\u4f1a\u83b7\u5f97 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19725\"><\/span><span>\u8fdc\u53e4\u539f\u6728<\/span>\r\n        <\/span>\r\n\r\n","icon":"https:\/\/static.gw2data.cn\/file\/D6C5915A046A95693A0B5202B06A68F6D90546EA\/1986193.png","rarity":"Rare","chat_link":"[&AgH+VQEA]","gathering":[{"item_id":87554,"name":"\u4e18\u7259\u517d\u6536\u5272\u5de5\u5177","rarity":"Rare"}]},{"id":87698,"name":"\u70c8\u6027\u96d5\u6587","name_en":"Glyph of Volatility","data":"{\"id\": 87698, \"icon\": \"https:\/\/static.gw2data.cn\/file\/1A97067CB6B41D3E777CA805D271DF74F2F57943\/1998930.png\", \"name\": \"\u70c8\u6027\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u70c8\u6027\", \"gatherings\": [87954, 87841, 87701], \"infix_upgrade\": {\"id\": 1483, \"buff\": {\"skill_id\": 50670, \"description\": \"\u91c7\u96c6\u65f6\u83b7\u5f97\u5956\u52b1\u7684\u70c8\u6027\u9b54\u6cd5\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGSVgEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u6bcf\u6b21\u6536\u5272\u53ef\u83b7\u5f97 3-9 <span class=\"mini-currencies\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"currencies\" gw2-ids=\"45\"><\/span><span>\u70c8\u6027\u9b54\u6cd5<\/span>\r\n        <\/span>\uff08\u5e73\u5747 6\uff09<br>\r\n\u6bcf\u6b21\u4f10\u6728\u53ef\u83b7\u5f97 1-3 <span class=\"mini-currencies\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"currencies\" gw2-ids=\"45\"><\/span><span>\u70c8\u6027\u9b54\u6cd5<\/span>\r\n        <\/span>\uff08\u5e73\u5747 2\uff09<br>\r\n\u6bcf\u6b21\u91c7\u77ff\u53ef\u83b7\u5f97 1-3 <span class=\"mini-currencies\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"currencies\" gw2-ids=\"45\"><\/span><span>\u70c8\u6027\u9b54\u6cd5<\/span>\r\n        <\/span>\uff08\u5e73\u5747 2\uff09","icon":"https:\/\/static.gw2data.cn\/file\/1A97067CB6B41D3E777CA805D271DF74F2F57943\/1998930.png","rarity":"Rare","chat_link":"[&AgGSVgEA]","gathering":[{"item_id":87954,"name":"\u70c8\u6027\u9b54\u6cd5\u4f10\u6728\u5de5\u5177","rarity":"Rare"},{"item_id":87841,"name":"\u70c8\u6027\u9b54\u6cd5\u91c7\u77ff\u5de5\u5177","rarity":"Rare"},{"item_id":87701,"name":"\u70c8\u6027\u9b54\u6cd5\u6536\u5272\u5de5\u5177","rarity":"Rare"}]},{"id":88241,"name":"\u836f\u5242\u5e08\u96d5\u6587","name_en":"Glyph of the Herbalist","data":"{\"id\": 88241, \"icon\": \"https:\/\/static.gw2data.cn\/file\/28F04FBF79AB1509162FAB5E5003E94C1F69E871\/2022142.png\", \"name\": \"\u836f\u5242\u5e08\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u836f\u5242\u5e08\", \"gatherings\": [88355], \"infix_upgrade\": {\"id\": 1487, \"buff\": {\"skill_id\": 51637, \"description\": \"\u5728\u91c7\u96c6\u65f6\u670933%\u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u539f\u6599\u56ca\u7684\u5956\u52b1\u3002\u539f\u6599\u56ca\u7684\u7c7b\u578b\u53d6\u51b3\u4e8e\u4eba\u7269\u7684\u7b49\u7ea7\u4ee5\u53ca\u6240\u5728\u7684\u533a\u57df\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGxWAEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u5728\u91c7\u96c6\u65f6\u6709 33% \u7684\u51e0\u7387\u83b7\u5f97\u989d\u5916\u539f\u6599\u56ca\uff08\u5185\u542b\u5404\u79cd\u74dc\u679c\u852c\u83dc\uff09\u7684\u5956\u52b1\u3002<br>\r\n\u539f\u6599\u56ca\u7684\u5956\u52b1\u7ea7\u522b\uff0c\u7531\u89d2\u8272\u6240\u5728\u5730\u56fe\u7ecf\u8fc7\u52a8\u6001\u5e73\u8861\u540e\u7684\u7b49\u7ea7\u51b3\u5b9a\u3002<br><br>\r\n1-20 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"88282\"><\/span><span>\u666e\u901a\u539f\u6599\u56ca<\/span>\r\n        <\/span><br>\r\n21-40 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"88294\"><\/span><span>\u7f55\u89c1\u539f\u6599\u56ca<\/span>\r\n        <\/span><br>\r\n41-60 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"88286\"><\/span><span>\u9ad8\u7ea7\u539f\u6599\u56ca<\/span>\r\n        <\/span><br>\r\n61-74 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"88255\"><\/span><span>\u5353\u8d8a\u539f\u6599\u56ca<\/span>\r\n        <\/span><br>\r\n75-80 \u7ea7\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"88253\"><\/span><span>\u8d85\u7ea7\u539f\u6599\u56ca<\/span>\r\n        <\/span>\uff0c\u5076\u5c14\u4f1a\u83b7\u5f97 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"88336\"><\/span><span>\u7cbe\u81f4\u539f\u6599\u56ca<\/span>\r\n        <\/span>","icon":"https:\/\/static.gw2data.cn\/file\/28F04FBF79AB1509162FAB5E5003E94C1F69E871\/2022142.png","rarity":"Rare","chat_link":"[&AgGxWAEA]","gathering":[{"item_id":88355,"name":"\u4e18\u7259\u517d\u91c7\u77ff\u5de5\u5177","rarity":"Rare"}]},{"id":90488,"name":"\u78e8\u7ec3\u96d5\u6587","name_en":"Glyph of the Crucible","data":"{\"id\": 90488, \"icon\": \"https:\/\/static.gw2data.cn\/file\/C10B35809710FF4D5DC700D623E247CB12E739D0\/2175019.png\", \"name\": \"\u78e8\u7ec3\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u78e8\u7ec3\", \"gatherings\": [91379], \"infix_upgrade\": {\"id\": 1544, \"buff\": {\"skill_id\": 55271, \"description\": \"\u5c06\u91c7\u96c6\u6240\u5f97\u7684\u6750\u6599\u66ff\u6362\u4e3a\u4f4e\u7b49\u7ea7\u5236\u4f5c\u914d\u65b9\u6240\u9700\u7684\u6750\u6599\u3002\u6750\u6599\u7c7b\u578b\u7531\u91c7\u96c6\u8282\u70b9\u7684\u7c7b\u578b\u51b3\u5b9a\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgF4YQEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u91c7\u96c6\u5230\u7684\u8d44\u6e90\u7acb\u5373\u8f6c\u6362\u4e3a\u4f4e\u4e00\u7ea7\u7684\u8d44\u6e90\uff0c\u4f46\u4e0d\u4f1a\u5f71\u54cd\u91c7\u96c6\u51fa\u7684\u7a00\u6709\u7269\u54c1\uff08\u5982\uff1a\u5b9d\u77f3\uff09\u3002<br><br>\r\n\r\n\u90e8\u5206\u5730\u56fe\u4ee3\u5e01\u8282\u70b9\u4e0d\u53d7\u5f71\u54cd\uff1a<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"48884\"><\/span><span>\u5267\u6bd2\u5b62\u5b50<\/span>\r\n        <\/span>\u3001<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"79899\"><\/span><span>\u51ac\u6d46\u679c\u704c\u6728<\/span>\r\n        <\/span>\u3001<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"90783\"><\/span><span>\u96fe\u51dd\u5fae\u5c18<\/span>\r\n        <\/span>\u3002<br>\r\n\u91c7\u96c6\u5230\u7684 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"43773\"><\/span><span>\u77f3\u82f1\u6676\u4f53<\/span>\r\n        <\/span> \u548c <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"92272\"><\/span><span>\u6c38\u6052\u4e4b\u51b0\u788e\u7247<\/span>\r\n        <\/span> \u4f1a\u88ab\u8f6c\u6362\u4e3a <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19700\"><\/span><span>\u79d8\u94f6\u77ff\u77f3<\/span>\r\n        <\/span>\u3002<br><br>\r\n\r\n\u4ece <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"79469\"><\/span><span>\u77f3\u5316\u6728\u6869<\/span>\r\n        <\/span>\u3001<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"81127\"><\/span><span>\u539f\u59cb\u5170\u82b1<\/span>\r\n        <\/span> \u91c7\u96c6\u5230\u7684 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"46735\"><\/span><span>\u81f3\u7eaf\u88c2\u7247<\/span>\r\n        <\/span> \u4f1a\u88ab\u8f6c\u6362\u4e3a <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19722\"><\/span><span>\u4e0a\u53e4\u539f\u6728<\/span>\r\n        <\/span>\uff0c\u800c\u91c7\u96c6\u51fa\u7684\u5730\u56fe\u4ee3\u5e01\u4e0d\u53d7\u5f71\u54cd\u3002<br><br>\r\n\r\n\u4ece <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"81706\"><\/span><span>\u6b27\u5c14\u7261\u86ce<\/span>\r\n        <\/span> \u4e0a\u91c7\u96c6\u5230\u7684 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"46733\"><\/span><span>\u9f99\u5ca9\u77ff<\/span>\r\n        <\/span> \u4f1a\u88ab\u8f6c\u6362\u4e3a <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"12508\"><\/span><span>\u5927\u8471<\/span>\r\n        <\/span> \u6216 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"12254\"><\/span><span>\u6811\u8393<\/span>\r\n        <\/span>\uff0c\u800c\u91c7\u96c6\u51fa\u7684\u5730\u56fe\u4ee3\u5e01\u4e0d\u53d7\u5f71\u54cd\u3002<br><br>\r\n\r\n\u4ece\u4e0b\u8ff0\u8282\u70b9\u91c7\u96c6\u5230\u7684 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"46731\"><\/span><span>\u8840\u77f3\u5c18<\/span>\r\n        <\/span>\u3001<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"46735\"><\/span><span>\u81f3\u7eaf\u88c2\u7247<\/span>\r\n        <\/span>\u3001<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"46733\"><\/span><span>\u9f99\u5ca9\u77ff<\/span>\r\n        <\/span> \u4f1a\u88ab\u8f6c\u6362\u4e3a <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19700\"><\/span><span>\u79d8\u94f6\u77ff\u77f3<\/span>\r\n        <\/span>\uff0c\u800c\u91c7\u96c6\u51fa\u7684\u5730\u56fe\u4ee3\u5e01\u4e0d\u53d7\u5f71\u54cd\uff1a<br>\r\n <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"79280\"><\/span><span>\u8840\u77f3\u6676\u4f53<\/span>\r\n        <\/span><br><span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"80332\"><\/span><span>\u7fe0\u7389\u788e\u7247<\/span>\r\n        <\/span><br><span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"86977\"><\/span><span>\u6c1f\u5316\u6c34\u6676<\/span>\r\n        <\/span><br><span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"88955\"><\/span><span>\u5757\u72b6\u8ff7\u96fe\u7edc\u5408\u7269<\/span>\r\n        <\/span><br><span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"89537\"><\/span><span>\u9f99\u65cf\u6c34\u6676\u8282\u70b9<\/span>\r\n        <\/span>","icon":"https:\/\/static.gw2data.cn\/file\/C10B35809710FF4D5DC700D623E247CB12E739D0\/2175019.png","rarity":"Rare","chat_link":"[&AgF4YQEA]","gathering":[{"item_id":91379,"name":"\u98de\u5929\u9cde\u9f99\u5e7c\u5d3d\u4f10\u6728\u5de5\u5177","rarity":"Rare"}]},{"id":90805,"name":"\u70bc\u91d1\u96d5\u6587","name_en":"Glyph of Alchemy","data":"{\"id\": 90805, \"icon\": \"http:\/\/\/\/static.gw2.voids.cn\/file\/E2047B083C4AC30C296203CF01FFB347479C1402\/2155917.png\", \"name\": \"\u70bc\u91d1\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u70bc\u91d1\", \"gatherings\": [91145], \"infix_upgrade\": {\"id\": 1543, \"buff\": {\"skill_id\": 55164, \"description\": \"\u5c06\u91c7\u96c6\u6240\u5f97\u7684\u6750\u6599\u66ff\u6362\u4e3a\u9ad8\u7b49\u7ea7\u5236\u4f5c\u914d\u65b9\u6240\u9700\u7684\u6750\u6599\u3002\u6750\u6599\u7c7b\u578b\u7531\u91c7\u96c6\u8282\u70b9\u7684\u7c7b\u578b\u51b3\u5b9a\u3002\u6bcf\u5929\u53ef\u4ee5\u5bf9\u79d8\u94f6\u77ff\u77f3\u3001\u4e0a\u53e4\u539f\u6728\u548c\u7cbe\u9009\u7684\u70f9\u996a\u6750\u6599\u8fdb\u884c\u4e00\u5b9a\u6b21\u6570\u7684\u6539\u8fdb\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgG1YgEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u91c7\u96c6\u5230\u7684\u8d44\u6e90\u7acb\u5373\u8f6c\u6362\u4e3a\u9ad8\u4e00\u7ea7\u7684\u8d44\u6e90\uff0cT6\u7ea7\u6750\u6599\u4e0d\u53d7\u5f71\u54cd\u3002<br>\r\n\u8be5\u6548\u679c\u4e0d\u4f1a\u5f71\u54cd\u91c7\u96c6\u51fa\u7684\u989d\u5916\u7a00\u6709\u7269\u54c1\uff08\u5982\uff1a\u5b9d\u77f3\u5b9d\u73e0 \u7b49\uff09\u3002<br>\r\n\u5730\u56fe\u4ee3\u5e01\u7c7b\u8282\u70b9\u4e0d\u53d7\u6b64\u96d5\u6587\u5f71\u54cd\uff0c\u5982\uff1a\u51ef\u897f\u65af\u5c71\u7684\u5267\u6bd2\u5e7c\u82d7\u3002<br>\r\n<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"36041\"><\/span><span>\u7389\u7c73\u7cd6\u5757<\/span>\r\n        <\/span> \u8282\u70b9\u3001\u73ca\u745a\u7c7b\u8282\u70b9\u3001\u76db\u653e\u7684\u897f\u756a\u83b2\u8282\u70b9\u4e0d\u53d7\u5f71\u54cd\u3002<br><br>\r\n\u6bcf\u65e5\u53ef\u5bf9 <span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19700\"><\/span><span>\u79d8\u94f6\u77ff\u77f3<\/span>\r\n        <\/span>\u3001<span class=\"mini-items\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"items\" gw2-ids=\"19722\"><\/span><span>\u4e0a\u53e4\u539f\u6728<\/span>\r\n        <\/span> \u8f6c\u6362 150\u6b21\uff0c<br>\u8d85\u8fc7\u540e\u4f1a\u63d0\u793a \u201c\u8be5\u96d5\u6587\u4eca\u65e5\u65e0\u6cd5\u8f6c\u6362\u4efb\u4f55\u4f4e\u7b49\u7ea7\u77ff\u77f3 \/ \u539f\u6728\u201d\u3002","icon":"http:\/\/\/\/static.gw2.voids.cn\/file\/E2047B083C4AC30C296203CF01FFB347479C1402\/2155917.png","rarity":"Rare","chat_link":"[&AgG1YgEA]","gathering":[{"item_id":91145,"name":"\u98de\u5929\u9cde\u9f99\u5e7c\u5d3d\u91c7\u77ff\u5de5\u5177","rarity":"Rare"}]},{"id":90950,"name":"\u6536\u5272\u96d5\u6587","name_en":"Glyph of Reaping","data":"{\"id\": 90950, \"icon\": \"http:\/\/\/\/static.gw2.voids.cn\/file\/E44B5D2570B3F371250BB840B654531E26709FFB\/2140567.png\", \"name\": \"\u6536\u5272\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"NoSell\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u6536\u5272\", \"gatherings\": [90288], \"infix_upgrade\": {\"id\": 1546, \"buff\": {\"skill_id\": 55591, \"description\": \"\u4ece\u9644\u8fd1\u6240\u6709\u8be5\u5de5\u5177\u53ef\u91c7\u96c6\u7684\u8d44\u6e90\u8282\u70b9\u6536\u96c6\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgFGYwEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u4ece\u9644\u8fd1 900 \u8303\u56f4\u5185\u6240\u6709\u8be5\u5de5\u5177\u53ef\u91c7\u96c6\u7684\u8282\u70b9\u4e0a\u6536\u96c6\u8d44\u6e90\u3002<br>\r\n\u5728\u5bb6\u56ed\u526f\u672c\u4e2d\uff0c\u975e\u5bb6\u56ed\u6240\u6709\u8005\u65e0\u6cd5\u89e6\u53d1\u8be5\u6548\u679c\u3002<br>\r\n\u516c\u4f1a\u91c7\u96c6\u8282\u70b9\u53d7\u8be5\u96d5\u6587\u5f71\u54cd\u3002","icon":"http:\/\/\/\/static.gw2.voids.cn\/file\/E44B5D2570B3F371250BB840B654531E26709FFB\/2140567.png","rarity":"Rare","chat_link":"[&AgFGYwEA]","gathering":[{"item_id":90288,"name":"\u98de\u5929\u9cde\u9f99\u5e7c\u5d3d\u91c7\u96c6\u5de5\u5177","rarity":"Rare"}]},{"id":92680,"name":"\u8ba1\u65f6\u5458\u96d5\u6587","name_en":"Glyph of the Timekeeper","data":"{\"id\": 92680, \"icon\": \"https:\/\/static.gw2data.cn\/file\/30E034ACDD556BB65FBBDBA90295E15402173920\/2242665.png\", \"name\": \"\u8ba1\u65f6\u5458\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u8ba1\u65f6\u5458\", \"gatherings\": [92634], \"infix_upgrade\": {\"id\": 1600, \"buff\": {\"skill_id\": 59016, \"description\": \"33%\u51e0\u7387\u7acb\u5373\u5b8c\u6210\u91c7\u96c6\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgEIagEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [\"Female\"], \"vendor_value\": 0}","content_html":"33% \u7684\u51e0\u7387\u7acb\u5373\u5b8c\u6210\u91c7\u96c6","icon":"https:\/\/static.gw2data.cn\/file\/30E034ACDD556BB65FBBDBA90295E15402173920\/2242665.png","rarity":"Rare","chat_link":"[&AgEIagEA]","gathering":[{"item_id":92634,"name":"\u51b0\u5ddd\u4f10\u6728\u5de5\u5177","rarity":"Rare"}]},{"id":92820,"name":"\u7f8e\u5fb7\u96d5\u6587","name_en":"Glyph of Virtue","data":"{\"id\": 92820, \"icon\": \"https:\/\/static.gw2data.cn\/file\/D3FF64617F0C430C12985253F57355D2C7445D5B\/2256420.png\", \"name\": \"\u7f8e\u5fb7\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"content\": \"\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u7f8e\u5fb7\", \"gatherings\": [92822], \"infix_upgrade\": {\"id\": 1602, \"buff\": {\"skill_id\": 59499, \"description\": \"\u5728\u91c7\u96c6\u65f6\u5956\u52b1\u989d\u5916\u7684\u4e1a\u529b\uff0c\u5e76\u83b7\u5f97\u989d\u5916\u7684\u91c7\u96c6\u6536\u83b7\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgGUagEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u6bcf\u6b21\u6536\u5272\u53ef\u83b7\u5f97 3-5 <span class=\"mini-currencies\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"currencies\" gw2-ids=\"2\"><\/span><span>\u4e1a\u529b<\/span>\r\n        <\/span><br>\r\n\u6bcf\u6b21\u4f10\u6728\u53ef\u83b7\u5f97 1-3 <span class=\"mini-currencies\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"currencies\" gw2-ids=\"2\"><\/span><span>\u4e1a\u529b<\/span>\r\n        <\/span><br>\r\n\u6bcf\u6b21\u91c7\u77ff\u53ef\u83b7\u5f97 1-3 <span class=\"mini-currencies\">\r\n            <span class=\"gw2-tooltip gw2-info no-border\" gw2-type=\"currencies\" gw2-ids=\"2\"><\/span><span>\u4e1a\u529b<\/span>\r\n        <\/span>","icon":"https:\/\/static.gw2data.cn\/file\/D3FF64617F0C430C12985253F57355D2C7445D5B\/2256420.png","rarity":"Rare","chat_link":"[&AgGUagEA]","gathering":[{"item_id":92822,"name":"\u51b0\u5ddd\u91c7\u96c6\u5de5\u5177","rarity":"Rare"}]},{"id":92953,"name":"\u8fc7\u8f7d\u96d5\u6587","name_en":"Glyph of Overload","data":"{\"id\": 92953, \"icon\": \"https:\/\/static.gw2data.cn\/file\/B05A41DEB31164EBC835CA1562366D02512EB1FA\/2261377.png\", \"name\": \"\u8fc7\u8f7d\u96d5\u6587\", \"type\": \"UpgradeComponent\", \"flags\": [\"AccountBound\", \"NoMysticForge\", \"NoSalvage\", \"DeleteWarning\", \"AccountBindOnUse\"], \"level\": 0, \"rarity\": \"Rare\", \"details\": {\"type\": \"Default\", \"flags\": [], \"suffix\": \"\u8fc7\u8f7d\", \"gatherings\": [92892], \"infix_upgrade\": {\"id\": 1603, \"buff\": {\"skill_id\": 59516, \"description\": \"\u5b8c\u5168\u5145\u80fd\u540e\u63d0\u4f9b\u8fc7\u8f7d\u7279\u6b8a\u6280\u80fd\uff0c\u5e26\u6709\u5145\u80fd\u6548\u679c\u65f6\u989d\u5916\u91c7\u96c6\u6253\u51fb\u51e0\u7387\u589e\u52a0100%\u3002\u5728\u8d44\u6e90\u70b9\u91c7\u96c6\u80fd\u591f\u79ef\u7d2f\u5145\u80fd\u5c42\u6570\u3002\u91c7\u96c6\u8d44\u6e90\u70b9\u5c06\u6d88\u8017\u989d\u5916\u5145\u80fd\u5c42\u6570\u3002\"}, \"attributes\": []}, \"infusion_upgrade_flags\": []}, \"chat_link\": \"[&AgEZawEA]\", \"game_types\": [\"Pvp\", \"PvpLobby\", \"Activity\", \"Wvw\", \"Dungeon\", \"Pve\"], \"description\": \"\u53cc\u51fb\u5c06\u5176\u5e94\u7528\u5230\u4e00\u4ef6\u91c7\u96c6\u5de5\u5177\u4e0a\u3002\", \"restrictions\": [], \"vendor_value\": 0}","content_html":"\u6bcf\u6b21\u91c7\u96c6\u5b8c\u8282\u70b9\u540e\uff0c\u83b7\u5f97\u4e00\u5c42 \u79d8\u6cd5\u706b\u82b1 \u5145\u80fd\uff0c\u6301\u7eed1\u5c0f\u65f6\uff08\u5806\u53e0\u53ef\u91cd\u7f6e\u65f6\u95f4\uff09\uff0c\u6700\u9ad8\u53ef\u53e0 25\u5c42\u3002<br>\r\n\u7d2f\u79ef 10\u5c42\u4ee5\u4e0a\u5145\u80fd\u540e\uff0c\u83b7\u5f97\u7279\u6b8a\u6280\u80fd \u8fc7\u8f7d\uff0c\u6fc0\u6d3b\u53ef\u4ee5\u5c06\u6240\u6709\u79d8\u6cd5\u706b\u82b1\u8f6c\u5316\u4e3a\u8fc7\u8f7d\u5145\u80fd\u3002<br><br>\r\n\u6fc0\u6d3b \u8fc7\u8f7d \u540e\uff0c\u5b8c\u6210\u8282\u70b9\u91c7\u96c6\u5c06\u6d88\u8017\u5145\u80fd\uff0c\u5e76\u5728\u91c7\u96c6\u7ed3\u675f\u65f6\u83b7\u5f97\u4e00\u6b21\u989d\u5916\u91c7\u96c6\u3002<br>\r\n\u6bcf\u4e2a\u77ff\u77f3\u548c\u6728\u6750\u8282\u70b9\u6d88\u8017 2\u5c42\u8fc7\u8f7d\u5145\u80fd\uff0c\u6bcf\u4e2a\u690d\u7269\u8282\u70b9\u6d88\u8017 3\u5c42\u8fc7\u8f7d\u5145\u80fd\u3002<br><br>\r\n\u76f4\u5230\u5c06 \u8fc7\u8f7d\u5145\u80fd \u5168\u90e8\u6d88\u8017\u6b86\u5c3d\u540e\uff0c\u624d\u80fd\u518d\u83b7\u5f97 \u79d8\u6cd5\u706b\u82b1 \u5145\u80fd\u3002<br>\r\n\u5207\u6362\u5730\u56fe \u4ee5\u53ca \u9635\u4ea1 \u4e0d\u4f1a\u6e05\u7a7a\u7d2f\u79ef\u7684 \u79d8\u6cd5\u706b\u82b1 \u548c \u8fc7\u8f7d\u5145\u80fd\u3002\r\n","icon":"https:\/\/static.gw2data.cn\/file\/B05A41DEB31164EBC835CA1562366D02512EB1FA\/2261377.png","rarity":"Rare","chat_link":"[&AgEZawEA]","gathering":[{"item_id":92892,"name":"\u51b0\u5ddd\u91c7\u77ff\u5de5\u5177","rarity":"Rare"}]}];
+
+function drawTable( data, get_tooltip ){
+    //初始化数据
+    for(var i in data){
+
+        if( data[i].name_en != '' ){
+            data[i].wiki = `<a href="https://wiki.guildwars2.com/wiki/?search=` + data[i].name_en + `" target="_blank" rel="nofollow noopener noreferrer">访问wiki</a>`;
+        }
+        else
+            data[i].wiki = '';
+
+        data[i].icon = `<div class="database-list-image gw2-tooltip gw2-info gw2-items" gw2-type="items" gw2-ids="` + data[i].id + `"></div>`;
+        data[i].name = `<a href="/database/item/` + data[i].id + `" class="color-` + data[i].rarity + `" target="_blank">` + data[i].name + `</a>`;
+
+        data[i].content_html = data[i].content_html ? `<div class="p-l-5 p-t-5 p-b-5" style="text-align: left">` + data[i].content_html + `</div>` : '';
+
+        data[i].gatherings = '';
+        for(var j in data[i].gathering){
+            data[i].gatherings += `
+            <div class="ingredient">
+                <div class="item-ingredient">
+                    <div class="gw2-tooltip gw2-info" gw2-type="gatherings" gw2-ids="` + data[i].gathering[j].item_id + `"></div>
+                </div>
+                <div class="item-ingredient-operator-text color-` + data[i].gathering[j].rarity + `">` + data[i].gathering[j].name + `</div>` +
+            `</div>`;
+        }
+    }
+
+    //清空表框
+    $('#list').empty();
+    $('#list').html(`
+    <table class="database-list-table" id="database-list-table">
+        <thead>
+            <tr>
+                <th width="80">ID</th>
+                <th width="80">图标</th>
+                <th width="100">雕文名称</th>
+                <th width="300">备注</th>
+                <th width="150">相关采集工具</th>
+                <th width="100">聊天代码</th>
+                <th width="70">wiki</th>
+            </tr>
+        </thead>
+    </table>`);
+
+    //绘制表
+    var tooltip = get_tooltip;
+    $('#database-list-table').DataTable( {
+        "lengthChange": false,
+        "searching": false,
+        "data": data,
+        "order": [[ 0, 'desc' ]],
+        "columns": [
+            { "data" : "id", class: "d-none d-md-table-cell"},
+            { "data" : "icon" , "orderable": false},
+            { "data" : "name"},
+            { "data" : "content_html", class: "d-none d-xl-table-cell recipe-table-text-td"},
+            { "data" : "gatherings", class: "d-none d-xl-table-cell recipe-table-td"},
+            { "data" : "chat_link"},
+            { "data" : "wiki" , "orderable": false}
+        ],
+        "deferRender": true,
+        "pageLength": 10,
+        "drawCallback": function(settings, json) {
+            $(document).ready(function(){
+                if( tooltip != 0 ){
+                    $('.gw2-info').empty();
+                    $('.gw2-tooltip').gw2tooltip('#tooltip-info');
+                    $('.gw2-info').gw2info();
+                }
+                    tooltip = 1;
+           });
+       }
+   });
+}
+drawTable(dataSource,1);
+
+    //表单提交
+    function submit_from(){
+        $.ajax({ 
+            type: 'POST',
+            url: "/frontend/database.glyphs/search", 
+            data: $('#form').serialize(),
+            success: function(data){
+                if( data.type == 'error' ){
+                    console.log(data.msg);
+                }
+                else if( data.type == 'success' ){
+                    drawTable(data.data,1);
+                }
+            }
+        });
+    }
+
+    document.onkeydown = function(event){
+        switch(event.keyCode){
+            case 13: submit_from(); return false; 
+        }
+    };
+
+    $('#submit').click(function(){
+        submit_from();
+    });
+});
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

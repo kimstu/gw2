@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>常用符文获取 | 升华装备获取 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #e74c3c !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #e74c3c !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">升华装备获取</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">常用符文获取<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+常用符文获取 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;暴君之刃</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2020.06.29</div>
+
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div> </div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li>杜绝奸商炒作，避免被割韭菜，自力更生，艰苦奋斗！</li>
+<li>如果你没有这些配方，也可以找有配方的老玩家帮忙制作。</li>
+<li>使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86549"></span><span>无尽升级提取器</span>
+</span> 或 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20349"></span><span>升级提取器</span>
+</span> 可以将护甲上的符文拆下来。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">直伤</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">症状</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">治疗</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">防御</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">功能型</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">超级学者符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24836"></span><span>超级学者符文</span>
+</span> 是直伤毕业级符文，制作成本较高，无法通过掉落的装备拆出。</li>
+</ul>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">法印</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th>配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24836"></span><span>超级学者符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 8<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89103"></span><span>光辉符咒</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td>探索解锁</td>
+</tr>
+</tbody>
+</table>
+<p><br><br><br></p>
+<h2 id="-">超级狼群符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24702"></span><span>超级狼群符文</span>
+</span> 主要是刷增益的辅助使用，属于毕业级符文。</li>
+</ul>
+<hr>
+<ul>
+<li>从以下护甲上可以拆出 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24702"></span><span>超级狼群符文</span>
+</span>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">非账号绑定护甲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">艾登（护甲类别）<br>狼群狂战士（护甲类别）<br>狼群腐朽（护甲类别）<br> 狼群传教士（护甲类别）<br>狼群恐怖（护甲类别）<br>狼群暴怒者（护甲类别）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>通过制作获得（不推荐）：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th style="text-align:left">配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24702"></span><span>超级狼群符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70851"></span><span>充能化石</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89216"></span><span>技能符咒</span>
+</span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td style="text-align:left">从各大主城的护甲类副职业商人处购买，<br>花费：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89216"></span><span>技能符咒</span>
+</span> × 5</td>
+</tr>
+</tbody>
+</table>
+<p><br><br><br></p>
+<h2 id="-">超级食人魔符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24756"></span><span>超级食人魔符文</span>
+</span> 是直伤职业的过渡型符文，进入战斗后，可以召唤一只 <strong>岩犬</strong>（7,300 血量，持续 60秒，400 移速）。</li>
+<li>岩犬的普攻攻击链：第一击，1000 - 1150 伤害；第二击，500 伤害，并造成 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="14"></span><span>流血</span>
+</span>。攻击 2 - 3秒触发一次。常规魔像测试中，岩犬大约拥有 400 dps。 </li>
+</ul>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">法印</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th>配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24756"></span><span>超级食人魔符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 8<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24310"></span><span>玛瑙磁石</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）</td>
+<td>探索解锁</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24310"></span><span>玛瑙磁石</span>
+</span> 可以从神秘熔炉合成：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24309"></span><span>玛瑙内核</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19663"></span><span>瓶装伊伦娜酒</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span></li>
+</ul>
+<p><br><br><br></p>
+<h2 id="-">超级力量符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24714"></span><span>超级力量符文</span>
+</span> 是一种野外单兵作战的直伤过渡型符文，适用于可为自身提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span> 的直伤配置。</li>
+</ul>
+<hr>
+<ul>
+<li>从以下护甲上可以拆出 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24714"></span><span>超级力量符文</span>
+</span>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">非账号绑定护甲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">力量狂战士（护甲类别）<br>力量腐朽（护甲类别）<br>德佛娜（护甲类别）<br> 欧格登（护甲类别）<br>力量暴怒者（护甲类别）<br>力量定居者（护甲类别）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th style="text-align:left">配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24714"></span><span>超级力量符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 12<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37897"></span><span>喀壳虫壳</span>
+ </span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td style="text-align:left">从各大主城的护甲类副职业商人处购买，<br>花费：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 5</td>
+</tr>
+</tbody>
+</table>
+<p><br><br><br></p>
+<h2 id="-">超级魔像师符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24785"></span><span>超级魔像师符文</span>
+</span> 是一种直伤过渡型符文，进入战斗后，可以召唤一台 <strong>马克I型魔像</strong>（50,000 血量，持续 60秒），魔像具有两个技能：旋风打击、拳击。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>狮子拱门 - 马里纳堡垒传送点</strong> [&amp;BDAEAAA=]</li>
+<li><strong>地下城商人</strong> 处购买，每个花费：120 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="14"></span><span>知识水晶</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="377" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>永恒熔炉</strong> 副本位置：<strong>漩涡山 - 永恒熔炉传送点</strong> [&amp;BEIFAAA=]</li>
+<li><strong>永恒熔炉</strong> 副本通关奖励 20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="14"></span><span>知识水晶</span>
+</span>，每完成一条路线奖励 80 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="14"></span><span>知识水晶</span>
+</span>，每天不可重复获得</li>
+</ul>
+<p><img class="gw2-image" image-id="378" image-compress-type="1" alt=""> <img class="gw2-image" image-id="379" image-compress-type="1" alt=""></p>
+<ul>
+<li>使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86804"></span><span>泰瑞亚兑换奖券</span>
+</span> 可以兑换 300 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="14"></span><span>知识水晶</span>
+</span></li>
+</ul>
+<p><br><br><br></p>
+<h2 id="-">超级雄鹰符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24723"></span><span>超级雄鹰符文</span>
+</span> 适合严重缺乏精准的职业，如：<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="1"></span><span>元素使</span>
+</span>、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="2"></span><span>战士</span>
+</span></li>
+</ul>
+<hr>
+<ul>
+<li>从以下护甲上可以拆出 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24723"></span><span>超级雄鹰符文</span>
+</span>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">非账号绑定护甲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">雄鹰狂战士（护甲类别）<br>雄鹰腐朽（护甲类别）<br>雄鹰传教士（护甲类别）<br> 雄鹰恐怖（护甲类别）<br>雄鹰定居者（护甲类别）<br>厄洛（护甲类别）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>通过制作获得（不推荐）：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th style="text-align:left">配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24723"></span><span>超级雄鹰符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 8<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="66933"></span><span>狐火簇</span>
+</span> × 25<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89103"></span><span>光辉符咒</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td style="text-align:left">从各大主城的护甲类副职业商人处购买，<br>花费：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89103"></span><span>光辉符咒</span>
+</span> × 5</td>
+</tr>
+</tbody>
+</table>
+<p><br><br><br></p>
+<h2 id="-">超级游侠符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24815"></span><span>超级游侠符文</span>
+</span> 适合常驻召唤的直伤职业野外使用，如：<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="3"></span><span>游侠</span>
+</span>、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="4"></span><span>唤灵师</span>
+</span></li>
+<li>注意：游戏内将玩家召唤出的NPC视作 “伙伴”，这包括并不限于战斗宠物、仆从、幻影、法印触发的召唤物、消耗品产生的召唤物。但是战斗宠物必须为存活状态，并且不处于合体时才能出发该符文。</li>
+</ul>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th style="text-align:left">配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24815"></span><span>超级游侠符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 12<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24357"></span><span>恶毒牙齿</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89216"></span><span>技能符咒</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）</td>
+<td style="text-align:left">探索解锁</td>
+</tr>
+</tbody>
+</table>
+<p><br><br><br></p>
+<h2 id="-">超级霍布雷克符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24729"></span><span>超级霍布雷克符文</span>
+</span> 直伤防御型符文，适合野外使用。</li>
+</ul>
+<hr>
+<ul>
+<li>从以下护甲上可以拆出 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24729"></span><span>超级霍布雷克符文</span>
+</span>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">非账号绑定护甲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">霍布雷克定居者（护甲类别）<br>霍布雷克暴怒者（护甲类别）<br>霍布雷克腐朽（护甲类别）<br> 霍布雷克狂战士（护甲类别）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>通过制作获得（不推荐）：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th style="text-align:left">配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24729"></span><span>超级霍布雷克符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="42010"></span><span>蓝铜宝珠</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td style="text-align:left">从各大主城的护甲类副职业商人处购买，<br>花费：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">超级元素使符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24800"></span><span>超级元素使符文</span>
+</span> 适用于自带症状延长功能的症状职业，如：<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="24"></span><span>灾厄师</span>
+</span>、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span>，无法通过掉落的装备拆出。</li>
+</ul>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th>配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24800"></span><span>超级元素使符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 12<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24325"></span><span>毁灭者磁石</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89103"></span><span>光辉符咒</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+ </span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td>探索解锁</td>
+</tr>
+</tbody>
+</table>
+<p><br><br><br></p>
+<h2 id="-">超级龙魂使符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="83502"></span><span>超级龙魂使符文</span>
+</span> 适用于完全不需要延长症状持续时间的症状职业，如：<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="12"></span><span>狂战士</span>
+</span></li>
+</ul>
+<hr>
+<ul>
+<li>通过战场商人 <strong>英雄公证员</strong> 购买，花费：20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> + 75 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="36"></span><span>英雄证词</span>
+</span></li>
+</ul>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th>配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="83502"></span><span>超级龙魂使符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69370"></span><span>超级魂武者符文</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68942"></span><span>常青磁石</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="83103"></span><span>克米尔之眼</span>
+</span> × 50</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td>在有角色解锁 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="29"></span><span>龙魂使</span>
+</span> 特性的前提下（一点即可），<br>前往 <strong>伊伦河湾 - 奥利沙的绿洲营地传送点</strong> [&amp;BCgKAAA=] 南部的停尸房，<br>完成以下任意一个事件后获得配方：<br>①、<strong>帮助厄兰突袭停尸房以拯救他的妻子安玛</strong><br>②、<strong>释放埃玛拉和其他囚犯，击败典狱长贾巴里</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69370"></span><span>超级魂武者符文</span>
+</span> 由 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span>（400）探索解锁，配方如下：</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 4，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74328"></span><span>叶子化石</span>
+</span> × 5，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 3</li>
+</ul>
+<p><br><br><br></p>
+<h2 id="-">超级蛇妖符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24762"></span><span>超级蛇妖符文</span>
+</span> 适用于主要依赖 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="14"></span><span>流血</span>
+</span> 输出的症状职业，如：<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>魂兽师</span>
+</span></li>
+</ul>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th>配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24762"></span><span>超级蛇妖符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 12<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24335"></span><span>腐烂精华</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89103"></span><span>光辉符咒</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span>（400）</td>
+<td>探索解锁</td>
+</tr>
+</tbody>
+</table>
+<p><br><br><br></p>
+<h2 id="-">超级噩梦符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24848"></span><span>超级噩梦符文</span>
+</span> 适用于不带症状延长功能的症状职业，如：<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="28"></span><span>幻象术士</span>
+</span>、<span class="mini-professions_icon"> 
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="29"></span><span>龙魂使</span>
+</span></li>
+</ul>
+<hr>
+<ul>
+<li><strong>狮子拱门 - 马里纳堡垒传送点</strong> [&amp;BDAEAAA=]</li>
+<li><strong>地下城商人</strong> 处购买，每个花费：120 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="11"></span><span>死亡之花</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="377" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>暮光之根</strong> 副本位置：<strong>卡勒顿之森 - 暮光之根传送点</strong> [&amp;BEEFAAA=]</li>
+<li><strong>暮光之根</strong> 副本通关奖励 20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="11"></span><span>死亡之花</span>
+</span>，每完成一条路线奖励 80 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="11"></span><span>死亡之花</span>
+</span>，每天不可重复获得</li>
+</ul>
+<p><img class="gw2-image" image-id="380" image-compress-type="1" alt=""> <img class="gw2-image" image-id="381" image-compress-type="1" alt=""></p>
+<ul>
+<li>使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86804"></span><span>泰瑞亚兑换奖券</span>
+</span> 可以兑换 300 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="11"></span><span>死亡之花</span>
+</span></li>
+</ul>
+<p><br><br><br></p>
+<h2 id="-">超级巴萨泽符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24765"></span><span>超级巴萨泽符文</span>
+</span> 适用于主要依赖 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="22"></span><span>燃烧</span>
+</span> 输出的症状职业，如：<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="27"></span><span>燃火者</span>
+</span></li>
+</ul>
+<hr>
+<ul>
+<li>从以下护甲上可以拆出 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24765"></span><span>超级巴萨泽符文</span>
+</span>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">非账号绑定护甲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">以太（护甲分类）<br>诺古（护甲分类）<br>高斯（护甲分类）<br>巴萨泽狂战士（护甲分类）<br>巴萨泽腐朽（护甲分类）<br>巴萨泽恐怖（护甲分类）<br>巴萨泽暴怒者（护甲分类）<br>巴萨泽定居者（护甲分类）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th>配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24765"></span><span>超级巴萨泽符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 12<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24508"></span><span>红宝石宝珠</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td>以下途径有极小几率获得：<br>①、<strong>马尔科之跃</strong> 完成事件 <strong>在牧师巴尔萨扎召唤一大群复生军前击败他</strong> 后，有几率获得。<br>②、<strong>海妖平台</strong> 完成事件 <strong>为西北神殿充能</strong> 后，开启 <strong>浸水的宝箱</strong> 有几率获得。<br>③、从水晶沙漠爱心商人处购买的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="83554"></span><span>达乌德家族皮革箱</span>
+</span> 有几率开出<br>④、击败塑形军队</td>
+</tr>
+</tbody>
+</table>
+<p><br><br><br></p>
+<h2 id="-">超级巫妖符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24688"></span><span>超级巫妖符文</span>
+</span> 适用于不带症状延长功能的症状职业，并能提供体力属性。</li>
+</ul>
+<hr>
+<ul>
+<li>从以下护甲上可以拆出 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24688"></span><span>超级巫妖符文</span>
+</span>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">非账号绑定护甲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">巫妖腐朽（护甲分类）<br>巫妖传教士（护甲分类）<br>巫妖狂战士（护甲分类）<br>巫妖定居者（护甲分类）<br>齐伯恩（护甲分类）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th>配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24688"></span><span>超级巫妖符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 12<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76491"></span><span>黑钻</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89103"></span><span>光辉符咒</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td><strong>跳跳乐：维齐尔塔</strong> 终点宝箱有几率开出</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">超级僧侣符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24842"></span><span>超级僧侣符文</span>
+</span> 是治疗职业的毕业级符文，治疗加成效果最高。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>狮子拱门 - 马里纳堡垒传送点</strong> [&amp;BDAEAAA=]</li>
+<li><strong>地下城商人</strong> 处购买，每个花费：120 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="5"></span><span>阿斯卡隆之泪</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="377" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>阿斯卡隆墓穴</strong> 副本位置：<strong>阿什福德平原 - 阿斯卡隆墓穴传送点</strong> [&amp;BIYBAAA=]</li>
+<li><strong>阿斯卡隆墓穴</strong> 副本通关奖励 20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="5"></span><span>阿斯卡隆之泪</span>
+</span>，每完成一条路线奖励 80 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="5"></span><span>阿斯卡隆之泪</span>
+</span>，每天不可重复获得</li>
+</ul>
+<p><img class="gw2-image" image-id="382" image-compress-type="1" alt=""></p>
+<ul>
+<li>使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86804"></span><span>泰瑞亚兑换奖券</span>
+</span> 可以兑换 300 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="5"></span><span>阿斯卡隆之泪</span>
+</span></li>
+</ul>
+<p><br><br><br></p>
+<h2 id="-">超级流水符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24839"></span><span>超级流水符文</span>
+</span> 清症型治疗符文，适用于世界之战的治疗职业，无法通过掉落的装备拆出。</li>
+</ul>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th style="text-align:left">配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24839"></span><span>超级流水符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24320"></span><span>冰川磁石</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89216"></span><span>技能符咒</span>
+</span>× 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td style="text-align:left">探索解锁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">超级耐久符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73653"></span><span>超级耐久符文</span>
+</span> </li>
+</ul>
+<hr>
+<ul>
+<li>主要通过商人购买</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">NPC</th>
+<th style="text-align:left">位置</th>
+<th style="text-align:left">花费</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">尊者专精商贩</td>
+<td style="text-align:left"><strong>赤金盆地 - 遗忘之都传送点</strong> [&amp;BMYHAAA=]</td>
+<td style="text-align:left">2 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span> + 150 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="22"></span><span>块状赤金元素</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left">英雄公证员</td>
+<td style="text-align:left"><strong>世界之战</strong></td>
+<td style="text-align:left">12 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> + 75 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="36"></span><span>英雄证词</span>
+</span><br>12 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> + 75 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="31"></span><span>英雄证明</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><br><br><br></p>
+<h2 id="-">超级庇护符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24857"></span><span>超级庇护符文</span>
+</span> 可以将受到的 20%治疗转化为屏障。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>狮子拱门 - 马里纳堡垒传送点</strong> [&amp;BDAEAAA=]</li>
+<li><strong>地下城商人</strong> 处购买，每个花费：120 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="12"></span><span>克达之符</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="377" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>海浪之誉</strong> 副本位置：<strong>霜谷之音 - 海浪之誉传送点</strong> [&amp;BEMFAAA=]</li>
+<li><strong>海浪之誉</strong> 副本通关奖励 20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="12"></span><span>克达之符</span>
+</span>，每完成一条路线奖励 80 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="12"></span><span>克达之符</span>
+</span>，每天不可重复获得</li>
+</ul>
+<p><img class="gw2-image" image-id="383" image-compress-type="1" alt=""></p>
+<ul>
+<li>使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86804"></span><span>泰瑞亚兑换奖券</span>
+</span> 可以兑换 300 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="12"></span><span>克达之符</span>
+</span></li>
+</ul>
+<p><br><br><br></p>
+<h2 id="-">超级防御者符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67912"></span><span>超级防御者符文</span>
+</span> 适用于有大量格挡技能的职业。</li>
+</ul>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">符文</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th style="text-align:left">配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67912"></span><span>超级防御者符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67832"></span><span>充能灰黄琥珀薄板</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="46"></span><span>工艺制作师</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="53"></span><span>武器锻造师</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span>（400）</td>
+<td style="text-align:left">强盗宝箱有几率开出</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">超级吸血符文</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24711"></span><span>超级吸血符文</span>
+</span> 是野外续航型符文，由于激战2中没有血药，增强续航能力将成为野外持续战斗的关键。</li>
+</ul>
+<hr>
+<ul>
+<li>从以下护甲上可以拆出 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24711"></span><span>超级吸血符文</span>
+</span>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">非账号绑定护甲</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">吸血狂战士（护甲类别）<br>吸血腐朽（护甲类别）<br>吸血暴怒者（护甲类别）<br> 吸血萨满（护甲类别）<br>卢瑞克（护甲类别）</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>通过制作获得：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">法印</th>
+<th style="text-align:left">配方</th>
+<th style="text-align:left">副职业</th>
+<th>配方获取方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24711"></span><span>超级吸血符文</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89271"></span><span>透明水晶堆</span>
+</span> × 12<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75322"></span><span>充能荆棘</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 1<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+ </span>（400）<br><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span>（400）</td>
+<td>从各大主城的护甲类副职业商人处购买，<br>花费：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89258"></span><span>潜能符咒</span>
+</span> × 5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

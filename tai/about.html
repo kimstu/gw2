@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>关于我们 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+ </ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg header-bg-about">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<link href="static/css/horizontal-timeline.css" rel="stylesheet">
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/guildwars-18x975-1920.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/guildwars-18x975-1920.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #e74c3c !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.about-content{
+    position: relative;
+}
+.about-content img {
+    height: 130px;
+    display: inline-block;
+    cursor: pointer;
+}
+.about-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.about-content table img.original-size {
+    height: auto;
+}
+
+
+@media(max-width: 576px){
+    .about-content img {
+        width: 100%;
+        height: auto;
+    }
+    .about-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.about-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.about-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.about-content .events-content h1:before, .about-content .events-content h2:before, .about-content .events-content h3:before{
+    content: "# ";
+}
+.about-content h1:first-child, .about-content h2:first-child, .about-content h3:first-child{
+    margin-top: 0;
+}
+.about-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #e74c3c !important;
+}
+
+.about-content blockquote{
+    border-left: 5px solid #e74c3c !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.about-content blockquote h1, .about-content blockquote h2, .about-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.about-content blockquote h1:before, .about-content blockquote h2:before, .about-content blockquote h3:before{
+    content: "";
+}
+.about-content table{
+    margin-bottom: 20px;
+}
+.cd-horizontal-timeline .events a {
+    padding-bottom: 6px;
+    color: #e74c3c;
+}
+.cd-horizontal-timeline .events a.selected::after {
+    background-color: #e74c3c;
+    border-color: #c0392b;
+}
+.cd-horizontal-timeline .events a.older-event::after{
+    border-color: #c0392b;
+}
+.cd-horizontal-timeline .filling-line{
+    background-color: #e74c3c;
+}
+.cd-horizontal-timeline a, .cd-horizontal-timeline a:hover, .cd-horizontal-timeline a:focus{
+    color: #e74c3c;
+}
+.cd-horizontal-timeline a:hover, .cd-horizontal-timeline a:focus{
+    border-color: #c0392b;
+}
+</style>
+<div class="row page-titles bg-lg bg-lg-about m-b-10 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="color-database"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active"><a href="explorer.html" class="color-database">关于我们</a></li>
+</ol>
+<h1 class="page-title article-font-color p-b-30">
+「泰瑞亚探险家协会」
+</h1>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row m-t-30">
+<div class="col-md-12 main-content">
+<div class="card card-box-shadow overflow-hidden">
+<div class="card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item"> <a href="#about" class="nav-link article-button-color active" data-toggle="tab"><span>简介</span></a> </li>
+<li class="nav-item"> <a href="#milepost" class="nav-link article-button-color" data-toggle="tab"><span>里程碑</span></a> </li>
+<li class="nav-item"> <a href="#members" class="nav-link article-button-color" data-toggle="tab"><span>协会成员</span></a> </li>
+
+<li class="nav-item"> <a href="#blogroll" class="nav-link article-button-color" data-toggle="tab"><span>友情合作</span></a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="about" class="tab-pane build-info-content about-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<ul>
+<li>「泰瑞亚探险家协会」是一个完全由玩家群体自发成立的 激战2游戏资料站点。</li>
+<li>自 2017年网站上线以来，「泰瑞亚探险家协会」已经成长为一个集合各类攻略资料于一体的门户型 激战2 资料分享平台，月访问量也呈几何倍数增长，这些访问量的增长不仅反映了广大玩家对我们的支持与认可，也增涨了我们将平台运营更出色的决心与动力。</li>
+<li>平台维护人员持续增加，使得我们可以将更多优质的游戏攻略分享给大家，同时我们也欢迎更多玩家加入到我们的团队阵容中来。</li>
+<li>我们的团队职位招募已经开启，想要扩充自己的阅历或者释放对激战2的游戏热情吗？无论你想要加入「泰瑞亚探险家协会」的理由是什么，这里都欢迎你！</li>
+<li>我们鼓励玩家、团队或是公会帮助平台扩充内容，作为回报，这些创作者将获得更深层的团队合作、平台宣传、网站维护经验，以及与其他创作者互动的机会。</li>
+<li>对于未来网站的运营内容，您可以通过以下QQ群加入到我们的讨论中来。</li>
+</ul>
+<hr>
+<ul>
+<li>激友群（1群）：<a href="javascript:window.open('https://shang.qq.com/wpa/qunwpa?idkey=5617b2581f8ba428c02ced1122ba959bb802b45f471595ed2dce3ab351974921');" target="_blank" rel="nofollow noopener noreferrer">304035847</a></li>
+<li>激友群（2群）：<a href="javascript:window.open('https://shang.qq.com/wpa/qunwpa?idkey=ac30c030b66d385fd87f3ff24a1d83df9b945cd8d5768b0a338303b67bac300b');" target="_blank" rel="nofollow noopener noreferrer">479132996</a></li>
+<li>激友群（3群）：<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=sqbsyFyG');" target="_blank" rel="nofollow noopener noreferrer">1126562619</a></li>
+<li>激友群（4群）：<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" rel="nofollow noopener noreferrer">1128662309</a></li>
+<li>副本进阶交流群：<a target="_blank" href="javascript:window.open('https://shang.qq.com/wpa/qunwpa?idkey=23c785398cc20d56e374b7218827db5ee330440a7c17a2562afd5b3b7d53482c');">923508924</a>（代练勿扰）</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="milepost" class="tab-pane about-content" aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<section class="cd-horizontal-timeline">
+<div class="timeline">
+<div class="events-wrapper">
+<div class="events">
+<ol>
+<li><a href="#0" data-date="01/05/2017" class="selected">2017.05</a></li>
+<li><a href="#0" data-date="01/07/2017">07</a></li>
+<li><a href="#0" data-date="01/08/2017">08</a></li>
+<li><a href="#0" data-date="01/09/2017">09</a></li>
+<li><a href="#0" data-date="01/10/2017">10</a></li>
+<li><a href="#0" data-date="01/01/2018">2018.01</a></li>
+<li><a href="#0" data-date="01/04/2018">04</a></li>
+<li><a href="#0" data-date="01/10/2018">10</a></li>
+<li><a href="#0" data-date="01/03/2019">2019.03</a></li>
+<li><a href="#0" data-date="01/10/2019">10</a></li>
+<li><a href="#0" data-date="01/11/2019">11</a></li>
+<li><a href="#0" data-date="01/03/2020">2020.03</a></li>
+<li><a href="#0" data-date="01/05/2020">05</a></li>
+<li><a href="#0" data-date="01/08/2020">08</a></li>
+</ol>
+<span class="filling-line" aria-hidden="true"></span>
+</div>
+
+</div>
+
+<ul class="cd-timeline-navigation">
+<li><a href="#0" class="prev inactive">Prev</a></li>
+<li><a href="#0" class="next">Next</a></li>
+</ul>
+
+ </div>
+
+<div class="events-content">
+<ol>
+<li class="selected" data-date="01/05/2017">
+<h2>站点开始建设<br></h2>
+<p class="m-t-40 p-t-10">
+2017.05.16 - 站点开始建设<br>
+创站最初的冲动来源于欧服PVE公会 [Quantify] 的网站：qtfy.eu<br>
+这是激战2玩家第一次看到，由硬核玩家群体将自己的BD配置制作成内容分享出来。
+</p>
+</li>
+<li data-date="01/07/2017">
+<h2>网站定名 及 测试<br></h2>
+<p class="m-t-40 p-t-10">
+2017.07.21 - 网站定名为 “泰瑞亚探险家协会”，并开始测试<br>
+站点集成了激战2官方API，我们将数据可视化为游戏内部的样式，就像 gw2armory.com 那样。<br>
+测试期间，我们发现 Anet 的图片访问速度过慢，遂直接使用图床服务器采集图片并存储。
+</p>
+</li>
+<li data-date="01/08/2017">
+<h2>网站正式上线<br></h2>
+<p class="m-t-40 p-t-10">
+2017.08.11 - 网站正式上线<br>
+这个版本的网站在前端搭载了编辑工具，方便攻略创作者快速检索特性、技能、装备等。<br><br>
+2017.08.14 - 物品数据库上线<br>
+继激战2国服关闭对外API接口后，物品数据库再次展现在玩家面前，但这次采用美服API。<br>
+服务器端使用了由加州大学伯克利分校开发的 PostgreSQL，这个数据库集成诸多现代特性。
+</p>
+</li>
+<li data-date="01/09/2017">
+<h2>手机站点 和 事件计时器<br></h2>
+<p class="m-t-40 p-t-10">
+2017.09.04 - 手机站点上线<br>
+2017.09.12 - 事件计时器上线<br>
+感谢激战2中文维基维护小组的 Mayne 分享并提供这些内容。
+</p>
+</li>
+<li data-date="01/10/2017">
+<h2>技能与特性可视化面板<br></h2>
+<p class="m-t-40 p-t-10">
+2017.10.05 - 技能与特性可视化面板上线<br>
+伴随资料片《烈焰征途》的上线，「泰协」赶在国服上线资料片前，将美服汉化后的API数据进行了可视化展示。
+</p>
+ </li>
+<li data-date="01/01/2018">
+<h2>大更新<br></h2>
+<p class="m-t-40 p-t-10">
+2018.01.06 - 后端框架升级<br>
+2018.01.07 - 物品数据库搜索功能扩展<br>
+2018.01.17 - 文档模块上线<br>
+这样就可以从「泰协」后台发布图文并茂的攻略了。<br><br>
+</p>
+</li>
+<li data-date="01/04/2018">
+<h2>站点界面重做<br></h2>
+<p class="m-t-40 p-t-10">
+2018.04.02 - 站点界面重做<br>
+重新设计布局，以一种大气磅礴的姿态重新展示内容。
+</p>
+</li>
+<li data-date="01/10/2018">
+<h2>「泰协 2.0」规划与设计<br></h2>
+<p class="m-t-40 p-t-10">
+2018.10.01 - 开始规划设计<br>
+</p>
+</li>
+<li data-date="01/03/2019">
+<h2>「泰协 2.0」新站上线<br></h2>
+<p class="m-t-40 p-t-10">
+2018.03.25 - 新站点上线<br>
+后端重制数据库，并采用 Radis 缓存部分数据，以加快前端页面渲染速度。<br>
+</p>
+</li>
+<li data-date="01/10/2019">
+<h2>皮肤数据库<br></h2>
+<p class="m-t-40 p-t-10">
+2019.10.11 - 皮肤数据库上线<br>
+神说要有「皮肤数据库」，于是就有了「皮肤数据库」。<br>
+它具备反查询装备的功能。
+</p>
+</li>
+<li data-date="01/11/2019">
+<h2>物价数据库<br></h2>
+<p class="m-t-40 p-t-10">
+2019.11.10 - 物价数据库上线<br>
+结合人工录入，得以实现这一功能。<br>
+物价进行计算后，可以得出最低成本冲级副职业路线。
+</p>
+</li>
+<li data-date="01/03/2020">
+<h2>大量内容更新<br></h2>
+<p class="m-t-40 p-t-10">
+2020.03 - 包括入门指引、传奇装备、副本攻略、成就合集等多个栏目进行内容更新。
+</p>
+ </li>
+<li data-date="01/05/2020">
+<h2>公会任务 和 常用NPC位置<br></h2>
+<p class="m-t-40 p-t-10">
+2020.05.01 - 公会任务功能上线<br>
+涵盖 赏金、跋涉、竞速 三大任务类别，可进行快速检索 并 查阅地图路线。<br><br>
+2020.05.11 - 常用NPC位置功能上线<br>
+通过激战2官方WIKI获取这些NPC位置，方便玩家快速完成任务 或 收藏。
+</p>
+</li>
+<li data-date="01/08/2020">
+<h2>会员功能上线<br></h2>
+<p class="m-t-40 p-t-10">
+2020.08.15 - 会员功能上线<br>
+会员功能包含配置评分、评论、上传攻略、新闻撰稿等功能。
+</p>
+</li>
+</ol>
+</div>
+
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="members" class="tab-pane about-content" aria-expanded="false">
+<div class="card m-b-20">
+<div class="card-body p-b-0">
+<div class="row">
+<div class="col-lg-12 col-md-12">
+<div class="alert alert-info">不忘初心，乘风破浪，砥砺前行。</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/baojunzhiren.jpg" alt="user"></div>
+<h3 class="m-b-0">暴君之刃</h3>
+<p>站长 &amp; 攻略作者</p>
+<a href="javascript:window.open('https://www.douyu.com/5186460');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-warning btn-rounded">斗鱼</a><a href="javascript:window.open('https://space.bilibili.com/67286577');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+ <div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/panghudamowang.jpg" alt="user"></div>
+<h3 class="m-b-0">胖虎大魔王</h3>
+<p>安全运维</p>
+<a href="javascript:window.open('http://www.xiyu.pro/');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-info btn-rounded">个人博客</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/jieyuansuzhe.jpg" alt="user"></div>
+<h3 class="m-b-0">杰元素者</h3>
+<p>软件测试</p>
+<a href="javascript:;" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-secondary btn-rounded">未开通</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/liangjingjing_feng.jpg" alt="user"></div>
+<h3 class="m-b-0">亮晶晶丶峰</h3>
+<p>公会活动管理</p>
+<a href="javascript:window.open('https://www.douyu.com/2814281');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-warning btn-rounded">斗鱼</a><a href="javascript:window.open('https://space.bilibili.com/33504812');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/zy_.jpg" alt="user"></div>
+<h3 class="m-b-0">Zy</h3>
+<p>外宣</p>
+<a href="javascript:window.open('https://www.douyu.com/3462772');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-warning btn-rounded">斗鱼</a><a href="javascript:window.open('https://space.bilibili.com/87231760');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/hyido_huoming.jpg" alt="user"></div>
+<h3 class="m-b-0">Hyido丶或名</h3>
+<p>原创BD作者</p>
+<a href="javascript:window.open('https://www.huya.com/22011087');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-primary btn-rounded">虎牙</a><a href="javascript:window.open('https://space.bilibili.com/75392413');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/jiaotangdamowang.jpg" alt="user"></div>
+<h3 class="m-b-0">焦糖大魔王</h3>
+<p>原创BD作者</p>
+<a href="javascript:window.open('https://www.douyu.com/5829978');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-warning btn-rounded">斗鱼</a><a href="javascript:window.open('https://space.bilibili.com/3471898');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/fengyue.jpg" alt="user"></div>
+<h3 class="m-b-0">风月</h3>
+<p>PvE原创BD作者</p>
+<a href="javascript:window.open('https://space.bilibili.com/3350718');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+ </div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/luoyuliangcheng.jpg" alt="user"></div>
+<h3 class="m-b-0">落雨丶凉城</h3>
+<p>PvE原创BD作者</p>
+<a href="javascript:window.open('https://www.douyu.com/7199972');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-warning btn-rounded">斗鱼</a><a href="javascript:window.open('https://space.bilibili.com/349034978');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/zitianlong.jpg" alt="user"></div>
+<h3 class="m-b-0">紫天龙</h3>
+<p>PvP原创BD作者</p>
+<a href="javascript:window.open('https://space.bilibili.com/12727533');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/chaomian.jpg" alt="user"></div>
+<h3 class="m-b-0">炒面</h3>
+<p>WvW原创BD作者</p>
+<a href="javascript:window.open('https://space.bilibili.com/113264286');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/lengyu.jpg" alt="user"></div>
+<h3 class="m-b-0">冷语</h3>
+<p>WvW原创BD作者</p>
+<a href="javascript:;" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-secondary btn-rounded">未开通</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/xiaolongcha.jpg" alt="user"></div>
+<h3 class="m-b-0">小龙猹</h3>
+<p>原创攻略作者</p>
+<a href="javascript:;" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-secondary btn-rounded">未开通</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/mingxiaoqiu.jpg" alt="user"></div>
+<h3 class="m-b-0">明小球</h3>
+<p>原创攻略作者</p>
+<a href="javascript:;" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-secondary btn-rounded">未开通</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/liemaren.jpg" alt="user"></div>
+<h3 class="m-b-0">猎妈人</h3>
+<p>原创攻略作者</p>
+<a href="javascript:;" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-secondary btn-rounded">未开通</a>
+</div>
+ </div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/hanshuai.jpg" alt="user"></div>
+<h3 class="m-b-0">憨帅</h3>
+<p>攻略 &amp; 原创视频作者</p>
+<a href="javascript:window.open('https://www.douyu.com/2909286');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-warning btn-rounded">斗鱼</a><a href="javascript:window.open('https://space.bilibili.com/488585815');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/nanguo.jpg" alt="user"></div>
+<h3 class="m-b-0">南国</h3>
+<p>原创攻略作者</p>
+<a href="javascript:window.open('https://space.bilibili.com/89252146');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/nanhaiyouguanyin.jpg" alt="user"></div>
+<h3 class="m-b-0">南海有观音</h3>
+<p>原创攻略作者</p>
+<a href="javascript:;" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-secondary btn-rounded">未开通</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/longyinqing.jpg" alt="user"></div>
+<h3 class="m-b-0">龙吟清</h3>
+<p>原创视频作者</p>
+<a href="javascript:window.open('https://space.bilibili.com/659917');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/chuanchuanhe.jpg" alt="user"></div>
+<h3 class="m-b-0">川川禾</h3>
+<p>原创视频作者</p>
+<a href="javascript:window.open('https://space.bilibili.com/88810609');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/xunlinke.jpg" alt="user"></div>
+<h3 class="m-b-0">巡林客</h3>
+<p>乐器大师 &amp; 原创视频作者</p>
+<a href="javascript:window.open('https://space.bilibili.com/455772743');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-xlg-2 col-md-5">
+<div class="card m-b-20">
+<img class="card-img-top" src="static/picture/profile-bg.jpg" alt="Card image cap">
+<div class="card-body little-profile text-center p-b-30">
+<div class="pro-img"><img src="static/picture/chenkai.jpg" alt="user"></div>
+<h3 class="m-b-0">尘凯</h3>
+<p>新闻撰稿</p>
+<a href="javascript:window.open('https://space.bilibili.com/43332236');" target="_blank" rel="nofollow noopener noreferrer" class="m-t-10 m-l-5 m-r-5 waves-effect waves-dark btn btn-danger btn-rounded">Bilibili</a>
+</div>
+</div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="static/js/horizontal-timeline.js"></script>
+<script>
+$(document).ready(function() {
+    
+});
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

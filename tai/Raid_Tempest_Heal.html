@@ -1,0 +1,2298 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>治疗暴风使 | 元素使 | 职业配置 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+ <li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg header-bg-build-Elementalist">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<div class="row page-titles bg-lg bg-lg-Elementalist m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="color-Elementalist pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">职业配置</li>
+<li class="breadcrumb-item active"><a href="javascript:window.open('https://www.gw2data.cn/build/Elementalist');" class="color-Elementalist pjax-link">元素使</a></li>
+<li class="breadcrumb-item active"><span class="color-Elementalist">治疗暴风使<span></span></span></li>
+</ol>
+<h2 class="page-title color-Elementalist m-t-15">
+<i class="profession-icon icon-profession icon-Tempest"></i> . 暴风使 . Tempest </h2>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title color-Elementalist m-t-20 m-b-20">
+治疗暴风使 </h1>
+<div class="page-titles-details">
+
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;落雨丶凉城 [InS]</div>
+<div class="view" title="编辑"><i class="mdi mdi-account-edit"></i>&nbsp;&nbsp;泰协内容维护小组</div>
+<div class="updatetime" title="最后更新"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2021.01.18</div>
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div>
+</div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30 p-b-10">
+<div class="card-text">
+<label class="label label-position bg-color-profession bg-color-Elementalist">大型地下城</label><label class="label label-position bg-color-profession bg-color-Elementalist">辅助</label><label class="label label-position bg-color-profession bg-color-Elementalist">治疗</label><label class="label label-position bg-color-profession bg-color-Elementalist">机制位</label> </div>
+</div>
+<div class="card card-body m-t-30">
+<div class="row">
+<div class="col-lg-8 build-overview-wrap">
+<h3 class="card-title">概述</h3>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="11"></span><span>治疗暴风使</span>
+</span> 是一套极其灵活的辅助型配置，它可以提供持续型治疗 和 爆发型治疗，同时还可以提供多种增益。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="11"></span><span>治疗暴风使</span>
+</span> 可以作为团队中继 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="13"></span><span>治疗德鲁伊</span>
+</span> 之后的第二个治疗配置使用。</li>
+<li>使用 匕号 可以利用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29548"></span><span>热力同步</span>
+</span> 为小队成员传播增益，亦可使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29453"></span><span>砂石狂啸</span>
+</span> 为整队成员延长增益持续时间，并提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span>。</li>
+<li>可以利用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29968"></span><span>&quot;五行归元！&quot;</span>
+</span> 应对一些致命机制，在点出 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1891"></span><span>暴风咏叹</span>
+</span> 时，可将作用目标扩展至 10名队友。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="11"></span><span>治疗暴风使</span>
+</span> 需要一定的实战经验，略微修改配置以适应小队的各种需求，推荐开荒 或 路人队伍使用。</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 build-raid-boss-wrap">
+<h3 class="card-title">BOSS 适用性（S > A > B > C > D）</h3>
+<hr>
+<div class="build-info-content article-content">
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="01 . 山谷守护者">
+<div class="icon-raid-boss icon-raid-boss-01"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="02 . 多变藤 哥瑟瓦尔">
+<div class="icon-raid-boss icon-raid-boss-02"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="03 . 破坏者 萨蓓莎">
+<div class="icon-raid-boss icon-raid-boss-03"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="04 . 斯洛萨索">
+<div class="icon-raid-boss icon-raid-boss-04"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="05 . 囚犯集中营">
+<div class="icon-raid-boss icon-raid-boss-05"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-A" data-toggle="tooltip" data-placement="top" title="06 . 马蒂亚斯 加布瑞尔">
+<div class="icon-raid-boss icon-raid-boss-06"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">A</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-C" data-toggle="tooltip" data-placement="top" title="07 . 沉默的麦克劳德">
+<div class="icon-raid-boss icon-raid-boss-07"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">C</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="08 . 要塞构造体">
+<div class="icon-raid-boss icon-raid-boss-08"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="09 . 琦拉">
+<div class="icon-raid-boss icon-raid-boss-09"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="10 . 不屈的凯玲">
+<div class="icon-raid-boss icon-raid-boss-10"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-A" data-toggle="tooltip" data-placement="top" title="11 . 末世魔监工">
+<div class="icon-raid-boss icon-raid-boss-11"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">A</div>
+</div>
+<div class="build-raid-boss raid-boss-score-C" data-toggle="tooltip" data-placement="top" title="12 . 萨玛洛格">
+<div class="icon-raid-boss icon-raid-boss-12"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">C</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="13 . 戴莫斯">
+<div class="icon-raid-boss icon-raid-boss-13"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="14 . 无魂惧魔">
+<div class="icon-raid-boss icon-raid-boss-14"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="15 . 魂河">
+<div class="icon-raid-boss icon-raid-boss-15"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="16 . 古兰斯雕像">
+<div class="icon-raid-boss icon-raid-boss-16"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="17 . 德姆">
+<div class="icon-raid-boss icon-raid-boss-17"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-C" data-toggle="tooltip" data-placement="top" title="18 . 咒术融合体">
+<div class="icon-raid-boss icon-raid-boss-18"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">C</div>
+</div>
+<div class="build-raid-boss raid-boss-score-C" data-toggle="tooltip" data-placement="top" title="19 . 双胞胎蝶翼人">
+<div class="icon-raid-boss icon-raid-boss-19"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">C</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="20 . 卡迪姆">
+<div class="icon-raid-boss icon-raid-boss-20"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-A" data-toggle="tooltip" data-placement="top" title="21 . 基石守护者 萨比尔（风）">
+<div class="icon-raid-boss icon-raid-boss-21"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">A</div>
+</div>
+<div class="build-raid-boss raid-boss-score-C" data-toggle="tooltip" data-placement="top" title="22 . 基石守护者 艾迪娜（土）">
+ <div class="icon-raid-boss icon-raid-boss-22"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">C</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="23 . 无可匹敌的卡迪姆">
+<div class="icon-raid-boss icon-raid-boss-23"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-box-shadow  m-t-30">
+<div class="card-body p-b-0">
+<h3 class="card-title">特性 与 技能</h3>
+<hr>
+<ul class="nav nav-pills m-t-20 m-b-20">
+<li class="nav-item"> <a href="#traits-skills-1" class="nav-link nav-link-Elementalist active" data-toggle="tab" aria-expanded="true">法杖（激怒和治疗）</a> </li>
+<li class="nav-item"> <a href="#traits-skills-2" class="nav-link nav-link-Elementalist" data-toggle="tab" aria-expanded="false">法杖（保护和治疗）</a> </li>
+<li class="nav-item"> <a href="#traits-skills-3" class="nav-link nav-link-Elementalist" data-toggle="tab" aria-expanded="false">法杖（强力治疗）</a> </li>
+<li class="nav-item"> <a href="#traits-skills-4" class="nav-link nav-link-Elementalist" data-toggle="tab" aria-expanded="false">法杖（强力清症）</a> </li>
+<li class="nav-item"> <a href="#traits-skills-5" class="nav-link nav-link-Elementalist" data-toggle="tab" aria-expanded="false">匕号（强力治疗）</a> </li>
+<li class="nav-item"> <a href="#traits-skills-6" class="nav-link nav-link-Elementalist" data-toggle="tab" aria-expanded="false">匕号（输出治疗）</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="traits-skills-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">特性说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<p>适用于 单德 + 奶元素 或 双奶元素 等需要奶元素提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>、<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="5"></span><span>激怒</span>
+</span> 等增益的阵容，例如：双奶元素 对抗 基石守护者 萨比尔</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+ <div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">特性
+<button type="button" id="trait_code_200_md" class="btn waves-effect waves-light btn-xs float-right d-md-none copy-build-code" data-clipboard-text="治疗暴风使 法杖（激怒和治疗） [&DQYRKykpMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<button type="button" id="trait_code_200" class="btn waves-effect waves-light btn-xs float-right d-none d-md-inline-block copy-build-code" data-clipboard-text="[&DQYRKykpMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<input type="text" value="[&DQYRKykpMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]" class="copy-build-code-text float-right" readonly="">
+</h4>
+</div>
+<div class="card-body">
+<div class="specializations-box">
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="17" gw2-specializations-traits="360,358,361"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="41" gw2-specializations-traits="227,214,1503"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="48" gw2-specializations-traits="1886,1891,1986"></div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="363"></span><span>碎冰穿刺</span>
+</span> 和 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="349"></span><span>行云流水</span>
+</span>，可以点出，以便进一步提高自身输出。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">技能</h4>
+</div>
+<div class="card-body">
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29535"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29948"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30662"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30432"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29968"></div>
+</div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<p>通用技能（可选）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30047"></span><span>&quot;风暴护体！&quot;</span>
+</span>，可用于 AOE解除硬控，在对抗如：斯洛萨索、马蒂亚斯、要塞构造体、咒术融合体 时，可以用于解除 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="23"></span><span>恐惧</span>
+</span> 或 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="31"></span><span>击倒</span>
+</span>。同时该技能提供的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="39"></span><span>奔驰疾速</span>
+</span> 在 围攻要塞、魂河，以及应对 无魂惧魔的鬼墙、德姆的各种机制 时都非常有用。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="traits-skills-2" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">特性
+<button type="button" id="trait_code_204_md" class="btn waves-effect waves-light btn-xs float-right d-md-none copy-build-code" data-clipboard-text="治疗暴风使 法杖（保护和治疗） [&DQYRKxobMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<button type="button" id="trait_code_204" class="btn waves-effect waves-light btn-xs float-right d-none d-md-inline-block copy-build-code" data-clipboard-text="[&DQYRKxobMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<input type="text" value="[&DQYRKxobMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]" class="copy-build-code-text float-right" readonly="">
+</h4>
+</div>
+<div class="card-body">
+<div class="specializations-box">
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="17" gw2-specializations-traits="360,358,361"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="26" gw2-specializations-traits="289,281,1508"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="48" gw2-specializations-traits="1886,1891,1986"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">技能</h4>
+</div>
+<div class="card-body">
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29535"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29948"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30662"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30432"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29968"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="traits-skills-3" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">特性
+<button type="button" id="trait_code_274_md" class="btn waves-effect waves-light btn-xs float-right d-md-none copy-build-code" data-clipboard-text="治疗暴风使 法杖（强力治疗） [&DQYRLSUXMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<button type="button" id="trait_code_274" class="btn waves-effect waves-light btn-xs float-right d-none d-md-inline-block copy-build-code" data-clipboard-text="[&DQYRLSUXMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<input type="text" value="[&DQYRLSUXMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]" class="copy-build-code-text float-right" readonly="">
+</h4>
+</div>
+<div class="card-body">
+<div class="specializations-box">
+ <div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="17" gw2-specializations-traits="348,349,361"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="37" gw2-specializations-traits="1487,265,238"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="48" gw2-specializations-traits="1886,1891,1986"></div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2028"></span><span>抚伤之力</span>
+</span>，在长时间的对战中可提升的治疗量要高于 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="361"></span><span>强效光环</span>
+</span>，但不能在短时间内提供巨额治疗。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2015"></span><span>活力洪流</span>
+</span>，若你的团队中没有 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="13"></span><span>德鲁伊</span>
+</span> 的 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12498"></span><span>旭日精魂</span>
+</span>（<span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1038"></span><span>自然之仇</span>
+</span>）提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="8"></span><span>活力</span>
+</span>，并且也没有带出 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30047"></span><span>&quot;风暴护体！&quot;</span>
+</span>，则可以使用 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2015"></span><span>活力洪流</span>
+</span> 替换 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1891"></span><span>暴风咏叹</span>
+</span>。 </li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1487"></span><span>秘法复苏</span>
+</span> 只能为自身提供治疗。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="253"></span><span>秘法精准</span>
+</span> 可以堆叠 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="17"></span><span>易伤</span>
+</span>。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="266"></span><span>活力充沛</span>
+</span> 可以提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="8"></span><span>活力</span>
+</span>，在没有 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="13"></span><span>德鲁伊</span>
+</span> 的 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12498"></span><span>旭日精魂</span>
+</span>（<span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1038"></span><span>自然之仇</span>
+</span>）提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="8"></span><span>活力</span>
+</span> 时，可以连同 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2015"></span><span>活力洪流</span>
+</span> 一起点出。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">技能</h4>
+</div>
+<div class="card-body">
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29535"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29948"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30662"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30432"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29968"></div>
+</div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<p>通用技能（可选）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30047"></span><span>&quot;风暴护体！&quot;</span>
+</span>，可用于 AOE解除硬控，在对抗如：斯洛萨索、马蒂亚斯、要塞构造体、咒术融合体 时，可以用于解除 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="23"></span><span>恐惧</span>
+</span> 或 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="31"></span><span>击倒</span>
+</span>。同时该技能提供的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="39"></span><span>奔驰疾速</span>
+</span> 在 围攻要塞、魂河，以及应对 无魂惧魔的鬼墙、德姆的各种机制 时都非常有用。这个技能可作用于 10名队友（<span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1891"></span><span>暴风咏叹</span>
+</span>）。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="traits-skills-4" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+ <div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">特性
+<button type="button" id="trait_code_70_md" class="btn waves-effect waves-light btn-xs float-right d-md-none copy-build-code" data-clipboard-text="治疗暴风使 法杖（强力清症） [&DQYRGyUXMDXHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<button type="button" id="trait_code_70" class="btn waves-effect waves-light btn-xs float-right d-none d-md-inline-block copy-build-code" data-clipboard-text="[&DQYRGyUXMDXHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<input type="text" value="[&DQYRGyUXMDXHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]" class="copy-build-code-text float-right" readonly="">
+</h4>
+</div>
+<div class="card-body">
+<div class="specializations-box">
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="17" gw2-specializations-traits="360,358,362"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="37" gw2-specializations-traits="1487,265,238"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="48" gw2-specializations-traits="1952,1891,1986"></div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="348"></span><span>抚伤寒冰</span>
+</span>：不需要清除 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="22"></span><span>燃烧</span>
+</span> 和 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="21"></span><span>冰冻</span>
+</span> 时，可以替换 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="360"></span><span>复原翻滚</span>
+</span>。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="363"></span><span>碎冰穿刺</span>
+</span> 和 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="349"></span><span>行云流水</span>
+</span>：可以点出，以便进一步提高自身输出。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1952"></span><span>狂风之歌</span>
+</span>：战吼技能可以为队友解除昏迷。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1962"></span><span>精力暗涌</span>
+</span> 或 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1886"></span><span>动荡传导</span>
+</span>：不需要解除昏迷可以选用该特性为队友提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="8"></span><span>活力</span>
+</span>。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">技能</h4>
+</div>
+<div class="card-body">
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29535"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29948"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30662"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30432"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29968"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="traits-skills-5" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">特性
+<button type="button" id="trait_code_273_md" class="btn waves-effect waves-light btn-xs float-right d-md-none copy-build-code" data-clipboard-text="治疗暴风使 匕号（强力治疗） [&DQYRKSUXMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<button type="button" id="trait_code_273" class="btn waves-effect waves-light btn-xs float-right d-none d-md-inline-block copy-build-code" data-clipboard-text="[&DQYRKSUXMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<input type="text" value="[&DQYRKSUXMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]" class="copy-build-code-text float-right" readonly="">
+</h4>
+</div>
+<div class="card-body">
+<div class="specializations-box">
+ <div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="17" gw2-specializations-traits="348,358,361"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="37" gw2-specializations-traits="1487,265,238"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="48" gw2-specializations-traits="1886,1891,1986"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">技能</h4>
+</div>
+<div class="card-body">
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29535"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29948"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30662"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30432"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29968"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="traits-skills-6" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">特性
+<button type="button" id="trait_code_17_md" class="btn waves-effect waves-light btn-xs float-right d-md-none copy-build-code" data-clipboard-text="治疗暴风使 匕号（输出治疗） [&DQYRKh8ZMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<button type="button" id="trait_code_17" class="btn waves-effect waves-light btn-xs float-right d-none d-md-inline-block copy-build-code" data-clipboard-text="[&DQYRKh8ZMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<input type="text" value="[&DQYRKh8ZMDfHEgAApRIAAMMSAAB0EgAAmRIAAAAAAAAAAAAAAAAAAAAAAAA=]" class="copy-build-code-text float-right" readonly="">
+</h4>
+</div>
+<div class="card-body">
+<div class="specializations-box">
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="17" gw2-specializations-traits="363,358,361"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="31" gw2-specializations-traits="296,340,1510"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="48" gw2-specializations-traits="1886,1891,1986"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">技能</h4>
+</div>
+<div class="card-body">
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29535"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29948"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30662"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="30432"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="29968"></div>
+</div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<p>通用技能（可选）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30047"></span><span>&quot;风暴护体！&quot;</span>
+</span>，可用于 AOE解除硬控，在对抗如：斯洛萨索、马蒂亚斯、要塞构造体、咒术融合体 时，可以用于解除 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="23"></span><span>恐惧</span>
+</span> 或 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="31"></span><span>击倒</span>
+</span>。同时该技能提供的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="39"></span><span>奔驰疾速</span>
+</span> 在 围攻要塞、魂河，以及应对 无魂惧魔的鬼墙、德姆的各种机制 时都非常有用。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-box-shadow  m-t-30">
+<div class="card-body p-b-0">
+<h3 class="card-title">装备 与 消耗品</h3>
+<hr>
+<ul class="nav nav-pills m-t-20 m-b-20">
+<li class="nav-item"> <a href="#gear-food-1" class="nav-link nav-link-Elementalist active" data-toggle="tab" aria-expanded="true">法杖（通用治疗）</a> </li>
+<li class="nav-item"> <a href="#gear-food-2" class="nav-link nav-link-Elementalist" data-toggle="tab" aria-expanded="false">匕号（输出治疗）</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="gear-food-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">装备说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<p>适用于马蒂亚斯清症、凯玲主T、戴莫斯黑水 或 鬼手、德姆2号上天 + 拉信使 等需要一定坚韧的容错型配装</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">武器</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Staff_Ascended_33"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 法杖 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="74326"></div>
+</div>
+<div class="build-info-suffix-title">超级转移法印</div>
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="72339"></div>
+</div>
+<div class="build-info-suffix-title">超级专注法印</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li>属性搭配需要增益时间、治疗效果、一定的坚韧。</li>
+<li>如需更强的清症能力，可以使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24827"></span><span>超级骁骑兵符文</span>
+</span>。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">护甲</h4>
+</div>
+ <div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Helm_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 头部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Shoulders_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 肩部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Coat_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 胸部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Gloves_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 手部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Leggings_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 腿部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Boots_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 足部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">背部 与 首饰</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Back_Ascended_25" gw2-itemstats="25"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">吟游诗人 - 背部</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Amulet_Ascended_25" gw2-itemstats="25"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">吟游诗人 - 项链</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_25_Left" gw2-itemstats="25"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">吟游诗人 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_25_Right" gw2-itemstats="25"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">吟游诗人 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_25_Left" gw2-itemstats="25"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">吟游诗人 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_25_Right" gw2-itemstats="25"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">吟游诗人 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">消耗品 与 灌注</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-food black-border" gw2-type="food" gw2-ids="68634"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">美味饭团</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-ascended_food black-border" gw2-type="ascended_food" gw2-ids="91690"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">碗装薄荷配菜水果沙拉</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">升华食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-utility black-border" gw2-type="utility" gw2-ids="77632"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">薄荷保养油</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">通用效果</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-infusions black-border" gw2-type="infusions" gw2-ids="37125"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">+9治疗痛苦灌注<span> × 18</span></div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">土豪可选用+16属性以上的灌注</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="gear-food-2" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">武器</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Dagger_Ascended_33"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 匕首 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="72339"></div>
+</div>
+<div class="build-info-suffix-title">超级专注法印</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Warhorn_Ascended_33"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 战号 - 副手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="74326"></div>
+</div>
+<div class="build-info-suffix-title">超级转移法印</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">护甲</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Helm_Ascended_12_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">贤者 - 哈隆克 - 轻甲 - 头部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Shoulders_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 肩部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Coat_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 胸部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Gloves_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 手部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Leggings_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 腿部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Boots_Ascended_33_Light"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 泽图卡 - 轻甲 - 足部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24842"></div>
+</div>
+<div class="build-info-suffix-title">超级僧侣符文</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">背部 与 首饰</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Back_Ascended_12" gw2-itemstats="12"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">贤者 - 背部</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Amulet_Ascended_33" gw2-itemstats="33"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 项链</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_33_Left" gw2-itemstats="33"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_33_Right" gw2-itemstats="33"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_33_Left" gw2-itemstats="33"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_33_Right" gw2-itemstats="33"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">猎兔犬 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">消耗品 与 灌注</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-food black-border" gw2-type="food" gw2-ids="68634"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">美味饭团</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-ascended_food black-border" gw2-type="ascended_food" gw2-ids="91690"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">碗装薄荷配菜水果沙拉</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">升华食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-utility black-border" gw2-type="utility" gw2-ids="67528"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">富饶保养油</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">通用效果</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-infusions black-border" gw2-type="infusions" gw2-ids="37125"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">+9治疗痛苦灌注<span> × 17</span></div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">土豪可选用+16属性以上的灌注</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-infusions black-border" gw2-type="infusions" gw2-ids="86180"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Elementalist">+9神秘痛苦灌注<span> × 1</span></div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">土豪可选用+16属性以上的灌注</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-box-shadow  m-t-30">
+<div class="card-body p-b-0">
+<h3 class="card-title">配置说明</h3>
+<hr>
+<ul class="nav nav-pills m-t-20 m-b-20">
+<li class="nav-item"> <a href="#content-1" class="nav-link nav-link-Elementalist active" data-toggle="tab" aria-expanded="true">法杖</a> </li>
+<li class="nav-item"> <a href="#content-2" class="nav-link nav-link-Elementalist" data-toggle="tab" aria-expanded="false">匕号</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">治疗 和 清症</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ul>
+<li>切换到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5493"></span><span>流水协调</span>
+</span> 时，尽可能贴近 boss 使用 <span class="mini-skills">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5549"></span><span>流水爆弹</span>
+</span> 。</li>
+<li>在必要时，可以使用战吼类技能来获得一些额外的治疗，以及 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="10"></span><span>再生</span>
+</span> 和 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="8"></span><span>活力</span>
+</span>。</li>
+<li>使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5681"></span><span>间歇温泉</span>
+</span> 来进行远距离的治疗。注意，点出特性 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="265"></span><span>秘法复活</span>
+</span>（秘法）后，该技能可以用来为倒地队友加血，如果团队中有人即将倒地（血量极少），应看情况保留该技能。</li>
+<li>使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5551"></span><span>治疗之雨</span>
+</span> 来进行小额群体性治疗（用于治愈团队损失的小额生命值），使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29415"></span><span>流水过载</span>
+</span> 来进行巨幅群体性治疗。并且它们在吟唱时，将持续清除队友身上的症状。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5681"></span><span>间歇温泉</span>
+</span> 和 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5551"></span><span>治疗之雨</span>
+</span> 施放后可以提供 流水区域，与 爆炸类技能（如 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5550"></span><span>寒冰尖刺</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30432"></span><span>&quot;天崩地裂！&quot;</span>
+</span>）触发组合技，可以提供群体治疗。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29535"></span><span>&quot;抚慰伤痛！&quot;</span>
+</span> 有三段治疗效果，第一段范围较小但治疗量最高，后两段范围逐渐增大但治疗量较低，在吟唱完毕后，还能移除附近队友一个症状。</li>
+<li>在点出 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="360"></span><span>复原翻滚</span>
+</span> 的情况下，可以使用闪避清除队友身上的冰冻及燃烧效果。</li>
+</ul>
+<hr>
+<ul>
+<li>法杖 治疗 + 组合技 小循环：</li>
+</ul>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5550"></span><span>寒冰尖刺</span>
+</span>，在冰刺未落地前，衔接下一个技能</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5551"></span><span>治疗之雨</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5681"></span><span>间歇温泉</span>
+</span> 或 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5515"></span><span>寒冰禁地</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5495"></span><span>大地协调</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="44"></span><span>闪避</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5528"></span><span>大地喷发</span>
+</span></li>
+<li>若 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5493"></span><span>流水协调</span>
+</span> 已冷却完毕则切换</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5551"></span><span>治疗之雨</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5681"></span><span>间歇温泉</span>
+</span> 或 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5515"></span><span>寒冰禁地</span>
+</span></li>
+</ol>
+<p>这套小循环中，你可以使用 流水+爆炸 组合技，获得3次额外治疗。</p>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">主要增益提供</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><p>说明：</p>
+<ul>
+<li>点出特性 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1891"></span><span>暴风咏叹</span>
+</span>（暴风使）时，战吼技能可以将作用目标扩大至10名玩家。</li>
+<li>使用 大地+流水 或 空气+流水 特性分支时，注意要将 流水 分支下的 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="361"></span><span>强效光环</span>
+</span> 点出。</li>
+<li>以下统计出的持续时间需要装备及消耗品提供 100% 的增益持续时间。</li>
+</ul>
+<hr>
+<p><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29706"></span><span>火焰过载</span>
+</span>：在读条过程中它就能源源不断的为队友提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>，施法完毕后会在地上留下一片火焰区域，并为进入其中的队友继续提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>。最终可提供 10层 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>（32秒）。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30662"></span><span>&quot;炽火燎原！&quot;</span>
+</span>：5层（本身3层 + <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1891"></span><span>暴风咏叹</span>
+</span> 2层）（20秒）。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1891"></span><span>暴风咏叹</span>
+</span>（暴风使）：每个战吼技能可提供 2层（20秒）。</li>
+<li>火焰区域（如 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5548"></span><span>熔岩喷泉</span>
+</span>、 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29706"></span><span>火焰过载</span>
+</span>）+ 爆炸终结技（如 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30432"></span><span>&quot;天崩地裂！&quot;</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5550"></span><span>寒冰尖刺</span>
+</span>），每次触发可提供 3层（40秒）。</li>
+<li>在 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5493"></span><span>流水协调</span>
+</span> 时先施放 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5550"></span><span>寒冰尖刺</span>
+</span>，在冰刺未落地时，立即切换至 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5492"></span><span>火焰协调</span>
+</span> 并施放 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5548"></span><span>熔岩喷泉</span>
+</span> 可以触发组合技叠加 3层 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>（40秒）。</li>
+</ul>
+<ul>
+<li>法杖堆叠 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span> 小循环：</li>
+</ul>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29706"></span><span>火焰过载</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5548"></span><span>熔岩喷泉</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5495"></span><span>大地协调</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="44"></span><span>闪避</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5528"></span><span>大地喷发</span>
+</span>（如果 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5492"></span><span>火焰协调</span>
+</span> 可用）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29618"></span><span>大地过载</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5492"></span><span>火焰协调</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="44"></span><span>闪避</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5548"></span><span>熔岩喷泉</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29706"></span><span>火焰过载</span>
+</span></li>
+</ol>
+<hr>
+<p><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="5"></span><span>激怒</span>
+</span>：</p>
+<ul>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="227"></span><span>和风增益</span>
+</span>（空气）：所有可提供光环的技能，都可用于叠加 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="5"></span><span>激怒</span>
+</span>（10秒） 和 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span>（10秒）。</li>
+</ul>
+<hr>
+<p><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span>：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29618"></span><span>大地过载</span>
+</span>：在读条过程中它就能源源不断的为队友提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span>，施法完毕后会在地上留下一片区域，并为进入其中的队友继续提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span>。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="289"></span><span>元素护盾</span>
+</span>（大地）：所有可提供光环的技能，都可用于叠加 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span>（6秒）。</li>
+</ul>
+<hr>
+<p><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="10"></span><span>再生</span>
+</span>：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5551"></span><span>治疗之雨</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29415"></span><span>流水过载</span>
+</span>（技能施展完毕时提供）、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29948"></span><span>&quot;极寒冰结！&quot;</span>
+</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content"><p>光环：</p>
+<ul>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="227"></span><span>和风增益</span>
+</span>（空气）和 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="289"></span><span>元素护盾</span>
+</span>（大地）可以依靠光环为队友提供 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="5"></span><span>激怒</span>
+</span>、<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span> 和 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span></li>
+<li>由于特性 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="361"></span><span>强效光环</span> 
+</span>（流水），使得每一个自己获得的光环也能给予附近的队友，这不仅仅局限于技能提供的光环，通过组合技获得的光环也能给予附近队友，例如：使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5550"></span><span>寒冰尖刺</span>
+</span> 作用于 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5515"></span><span>寒冰禁地</span>
+</span> 可以获得 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5520"></span><span>冰霜光环</span>
+</span> 并分享给附近队友。注意，倒地的队友无法获得光环。</li>
+<li>该配置的光环获得方式：<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5527"></span><span>电击光环</span>
+</span> 主要由 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29719"></span><span>空气过载</span>
+</span> 产生。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5520"></span><span>冰霜光环</span>
+</span> 主要由 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29415"></span><span>流水过载</span>
+</span>、<span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1986"></span><span>元素棱堡</span>
+</span>、<span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="348"></span><span>抚伤寒冰</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29948"></span><span>&quot;极寒冰结！&quot;</span>
+</span> 产生。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5678"></span><span>火焰护盾</span>
+</span> 主要由 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29706"></span><span>火焰过载</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30662"></span><span>&quot;炽火燎原！&quot;</span>
+</span> 产生</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5685"></span><span>磁力光环</span>
+</span> 主要由 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29618"></span><span>大地过载</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30432"></span><span>&quot;天崩地裂！&quot;</span>
+</span> 产生。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29968"></span><span>&quot;五行归元！&quot;</span>
+</span> 可以在对应协调下产生相应的光环。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>免死：</p>
+<p><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="11"></span><span>治疗暴风使</span>
+</span> 有两种方法可以避免队友阵亡：</p>
+<p>1、<span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="265"></span><span>秘法复活</span>
+</span> 使得你在复活队友时，可以在原地触发 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5681"></span><span>间歇温泉</span>
+</span>，在使用法杖时，你还可以主动使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5681"></span><span>间歇温泉</span>
+</span> 来获得该技能双倍复活的效果。<br>2、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29968"></span><span>&quot;五行归元！&quot;</span>
+</span></p>
+<hr>
+<p>控制（破蔑视）：</p>
+<ul>
+<li>切换到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5494"></span><span>空气协调</span>
+</span>，施放 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5553"></span><span>疾风爆发</span>
+</span> 。</li>
+<li>切换到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5495"></span><span>大地协调</span>
+</span>，在 BOSS 的移动路线上施放 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5683"></span><span>大地动荡</span>
+</span> 和 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5686"></span><span>地能波动</span>
+</span>。如果不能直接切换回 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5493"></span><span>流水协调</span>
+</span>，还可以继续使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29618"></span><span>大地过载</span>
+</span>。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5515"></span><span>寒冰禁地</span>
+</span>（法杖4）可以提供一部分破蔑视能力，但注意不要放置在 流水区域 上，否则会影响组合技优先级顺序。</li>
+<li>使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30432"></span><span>&quot;天崩地裂！&quot;</span>
+</span> 时，请留意与流水区域触发组合技 。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">兼顾输出的循环</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><table>
+<thead>
+<tr>
+<th style="text-align:left">协调</th>
+<th style="text-align:left">技能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5492"></span><span>火焰协调</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5644"></span><span>炽焰疾步</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29533"></span><span>荒火哀嚎</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5496"></span><span>龙蜥吐息</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29706"></span><span>火焰过载</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5495"></span><span>大地协调</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29453"></span><span>砂石狂啸</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30336"></span><span>沙尘风暴</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5493"></span><span>流水协调</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30864"></span><span>潮汐激荡</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30446"></span><span>流水宝珠</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5494"></span><span>空气协调</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30795"></span><span>闪电宝珠</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30008"></span><span>气流漩涡</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5646"></span><span>能量汇聚</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29719"></span><span>空气过载</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5493"></span><span>流水协调</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5537"></span><span>冰锥喷射</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5494"></span><span>空气协调</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5646"></span><span>能量汇聚</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29719"></span><span>空气过载</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30795"></span><span>闪电宝珠</span>
+</span><br><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30008"></span><span>气流漩涡</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">治疗 + 组合技 小循环</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30446"></span><span>流水宝珠</span>
+</span>（注意宝珠移动的位置）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5487"></span><span>冰封爆裂</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5495"></span><span>大地协调</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="44"></span><span>闪避</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29453"></span><span>砂石狂啸</span>
+</span></li>
+</ol>
+<p><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30432"></span><span>&quot;天崩地裂！&quot;</span>
+</span> 可随时被用于再触发一次额外的组合技治疗，而无需担心处于何种协调中。</p>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">堆叠威能小循环</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29533"></span><span>荒火哀嚎</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30662"></span><span>&quot;炽火燎原！&quot;</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29948"></span><span>&quot;极寒冰结！&quot;</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29706"></span><span>火焰过载</span>
+</span> 甚至使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5487"></span><span>冰封爆裂</span>
+</span> 来达到 15层 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29548"></span><span>热力同步</span>
+</span> 和 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29453"></span><span>砂石狂啸</span>
+</span>（无需担心先后顺序）</li>
+</ol>
+<p>冷却完毕后可再次使用这些技能，具体情形视队友身上的威能层数，有时仅需使用个别技能补满 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span> 即可。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">视频 与 日志</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<ul>
+<li><a class="doc-link" href="javascript:window.open('https://www.bilibili.com/video/av801141029
+?p=14');" target="_blank" rel="nofollow noopener noreferrer">暴风使 - 直伤治疗（匕号 三种BD） - 超大体积 - [SC.Roul] 直伤治疗（匕号 三种BD）- 超大体积 - [SC.Roul] - GW2 - 2020.07</a></li>
+<li><a class="doc-link" href="javascript:window.open('https://dps.report/8Qlu-20200321-124412_golem');" target="_blank" rel="nofollow noopener noreferrer">治疗暴风使 - 日志（空气）</a></li>
+ <li><a class="doc-link" href="javascript:window.open('https://dps.report/lok0-20200321-124737_golem');" target="_blank" rel="nofollow noopener noreferrer">治疗暴风使 - 日志（秘法）</a></li>
+<li><a class="doc-link" href="javascript:window.open('https://dps.report/wNjb-20200321-131218_golem');" target="_blank" rel="nofollow noopener noreferrer">治疗暴风使 - 日志（火焰）</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Elementalist">
+<h4 class="m-b-0 text-white">说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content"><ul>
+<li>魔像测试时，可以开启脉冲伤害以便检测自身的承伤及治疗能力。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29948"></span><span>&quot;极寒冰结！&quot;</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30662"></span><span>&quot;炽火燎原！&quot;</span>
+</span>、<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30432"></span><span>&quot;天崩地裂！&quot;</span>
+</span> 冷却即用。</li>
+<li>如果需要反射即将到来的攻击，请施放 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30432"></span><span>&quot;天崩地裂！&quot;</span>
+</span>。</li>
+<li>尽可能在小队中心使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29706"></span><span>火焰过载</span>
+</span> 和 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29618"></span><span>大地过载</span>
+</span>，以确保队友可以从这些技能中获得 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span> 和 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span>。</li>
+<li>切换到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5493"></span><span>流水协调</span>
+</span> 时，可以对面前的队友使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5537"></span><span>冰锥喷射</span>
+</span>，在攻击敌人的同时亦可治疗队友。每次切换到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5493"></span><span>流水协调</span>
+</span> 时，<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30446"></span><span>流水宝珠</span>
+</span> 都会冷却完毕，该技能也可用于治疗队友。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function() {
+    $(".copy-build-code").click(function(){
+        if( $(this).attr('data-clipboard-text') == "" ){
+            layer.msg('未添加模板代码！', {time: 1500, icon: 0});
+        }
+        else{
+            var clipboard = new ClipboardJS( "#" + $(this).attr('id') );
+            clipboard.on('success', function(e) {
+                e.clearSelection();
+                layer.msg('复制成功！', {time: 1000, icon: 1});
+                clipboard.destroy();
+            });
+            clipboard.on('error', function(e) {
+                layer.msg('复制失败，请使用 Ctrl + C 手动复制！', {time: 1500, icon: 2});
+            });
+        }
+    });
+
+    eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('6(5.8.7!=\'2.1.4\'){$(\'.3-e-d-0\').g(\'\');$(\'f a\').9(\'c-b-0\',\'\')}',17,17,'text|gw2data|www|copy|cn|window|if|host|location|attr|button|clipboard|data|code|build|h4|val'.split('|'),0,{}))
+
+
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

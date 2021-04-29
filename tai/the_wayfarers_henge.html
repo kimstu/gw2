@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>旅者圆石 | 收藏攻略 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+ 
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/d86f4b1d7f02-1920x1200.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/d86f4b1d7f02-1920x1200.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #e74c3c !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #e74c3c !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">收藏攻略</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">旅者圆石<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+旅者圆石 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;暴君之刃</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2020.01.20</div>
+
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div> </div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li><strong>旅者圆石</strong> 是 <strong>世界动态第三季 - 闪点</strong>（地图：巨龙之山）的一个收藏粉色背部，支持全属性选择。</li>
+<li>需要完成个人史诗 <strong>世界动态第三季 - 闪点</strong> 后，才能解锁收藏。</li>
+<li>完成第三、四步收藏中种植 <strong>火兰花种子</strong> 后，这些位置的土地，每天都可以前往采集一次 <strong>原始兰花</strong>。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">概览</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">德鲁伊之石</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">唤醒德鲁伊之石</a> </li>
+ <li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">种植德鲁伊之石</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">背井离乡</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<ul>
+<li>需要依次完成4个收藏成就方可获得 <strong>旅者圆石</strong>：<span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3402"></span><span>德鲁伊之石</span>
+</span>、<span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3445"></span><span>唤醒德鲁伊之石</span>
+</span>、<span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3447"></span><span>种植德鲁伊之石</span>
+</span>、<span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3436"></span><span>背井离乡</span>
+</span></li>
+<li>收藏过程中，任何 <strong>遗失的收藏物品</strong> 都可以从 <strong>水手码头传送点</strong> [&amp;BL0JAAA=] 附近的魔法商人处花费 250 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span> 购买。</li>
+<li>完成整个收藏最低耗时 16天，其中预估消耗 67200 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span> 和 16000 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span>。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">概览</h2>
+<ul>
+<li><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3402"></span><span>德鲁伊之石</span>
+</span>，预计耗时 1天。</li>
+</ul>
+<h2 id="1-">1、火山之心</h2>
+<ul>
+<li>完成 <strong>世界动态第三季</strong> 个人史诗 <strong>闪点</strong> 后获得。</li>
+</ul>
+<h2 id="2-">2、德鲁伊符文石</h2>
+<p>①、<strong>巨龙之山</strong> 4个爱心完成后花费 1050 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+ </span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81111"></span><span>德鲁伊符文石碎片</span>
+</span>，每个爱心每日限购一次，每天可通过爱心获得 4个。<br>②、<strong>水手码头传送点</strong> [&amp;BL0JAAA=] 附近的魔法商人，花费 1000 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81111"></span><span>德鲁伊符文石碎片</span>
+</span>，每日限购一次。</p>
+<ul>
+<li>将 5个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81111"></span><span>德鲁伊符文石碎片</span>
+</span> 双击合成一个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>。</li>
+<li>后续收藏需要用到很多 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，牢记它的获取方法。</li>
+</ul>
+<h2 id="3-">3、德鲁伊的故事</h2>
+<ul>
+<li>携带一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span> 将它献给 <strong>木灵</strong>。</li>
+<li>从 <strong>异教徒据点传送点</strong> [&amp;BM0JAAA=] 飞到下层悬崖边，能看到蛆虫山洞入口，进入山洞按下图路线走即可找到 <strong>木灵</strong>。</li>
+<li>3和 4可以一起做。</li>
+</ul>
+<p><img class="gw2-image" image-id="1584" image-compress-type="1" alt=""></p>
+<h2 id="4-">4、献给木灵的花</h2>
+<ul>
+<li>将一个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 送给 <strong>木灵</strong> 即可获得。</li>
+<li>后续几步收藏还会让你来找 <strong>木灵</strong>，牢记它的位置。</li>
+</ul>
+<h2 id="5-">5、献给鹅掌楸的花</h2>
+<ul>
+<li>将一个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 送给 <strong>鹅掌楸</strong> 即可获得。</li>
+<li>从 <strong>异教徒据点传送点</strong> [&amp;BM0JAAA=] 往下飞，走到 <strong>平和之地</strong> [&amp;BMkJAAA=] 即可找到 <strong>鹅掌楸</strong>。</li>
+<li>后续几步收藏还会让你来找 <strong>鹅掌楸</strong>，牢记它的位置。</li>
+</ul>
+<p><img class="gw2-image" image-id="1585" image-compress-type="1" alt=""></p>
+<h2 id="6-">6、献给阔叶树的花</h2>
+<ul>
+<li>将一个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 送给 <strong>阔叶树</strong> 即可获得。</li>
+<li>从 <strong>异教徒据点传送点</strong> [&amp;BM0JAAA=] 的北边的热能管道到达 <strong>灼热之坡</strong>，按下图路线飞即可找到 <strong>阔叶树</strong>。</li>
+<li>后续几步收藏还会让你来找 <strong>阔叶树</strong>，牢记它的位置。</li>
+</ul>
+<p><img class="gw2-image" image-id="1586" image-compress-type="1" alt=""></p>
+<h2 id="7-">7、献给花梨木的花</h2>
+<ul>
+<li>将一个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 送给 <strong>花梨木</strong> 即可获得。</li>
+<li>从 <strong>远古洞窟传送点</strong> [&amp;BNUJAAA=] 踩弹跳菇上去就能看到 <strong>花梨木</strong>。</li>
+<li>后续几步收藏还会让你来找 <strong>花梨木</strong>，牢记它的位置。</li>
+</ul>
+<p><img class="gw2-image" image-id="1587" image-compress-type="1" alt=""> <img class="gw2-image" image-id="1588" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">概览</h2>
+<ul>
+<li><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3445"></span><span>唤醒德鲁伊之石</span>
+</span>，预计耗时 3天。</li>
+</ul>
+<h2 id="1-">1、德鲁伊之石</h2>
+<ul>
+<li>完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3402"></span><span>德鲁伊之石</span>
+</span> 已获得。</li>
+</ul>
+<h2 id="2-4-">2 ~ 4、守护树枝元素、守护树枝符文石、守护树枝安息之地</h2>
+<ul>
+<li><strong>巨龙之山 - 侦察空地</strong> [&amp;BNAJAAA=] 爱心附近找到 <strong>队长佩伦</strong>，对话触发事件 <strong>护送守夜人小队前往远古废墟</strong>。</li>
+<li>完成后续事件 <strong>在守夜人小队调查远古废墟时保护他们</strong> 后，会在 <strong>永恒之池</strong> 刷出目标首领 <strong>巨大的自然之魂</strong>，击杀即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81052"></span><span>守护树枝元素</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1338" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81052"></span><span>守护树枝元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81168"></span><span>守护树枝符文石</span>
+</span>。</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81168"></span><span>守护树枝符文石</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>守护树枝安息之地</strong>。</li>
+</ul>
+<h2 id="5-7-">5 ~ 7、树精灵元素、树精灵符文石、树精灵安息之地</h2>
+<ul>
+<li><strong>布里斯班野地 - 炽天使观察者传送点</strong> [&amp;BGIAAAA=] 下方的 <strong>英雄点</strong>，交流即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81114"></span><span>树精灵元素</span>
+ </span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1589" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81114"></span><span>树精灵元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81062"></span><span>树精灵符文石</span>
+</span>。</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81062"></span><span>树精灵符文石</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>树精灵安息之地</strong>。</li>
+</ul>
+<h2 id="8-10-">8 ~ 10、橡树之心元素、橡树之心符文石、橡心之眠</h2>
+<ul>
+<li><strong>女王谷 - 菲尼传送点</strong> [&amp;BPMAAAA=]，前往左侧的 <strong>雄心林地</strong> 击杀首领 <strong>腐烂远古橡树之心</strong> 即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81050"></span><span>橡树之心元素</span>
+</span>。</li>
+<li>找不到 <strong>腐烂远古橡树之心</strong> 就是被别人击杀了，等等就会刷新。</li>
+</ul>
+<p><img class="gw2-image" image-id="1590" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81050"></span><span>橡树之心元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81064"></span><span>橡树之心符文石</span>
+</span>。</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81064"></span><span>橡树之心符文石</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>橡心之眠</strong>。</li>
+</ul>
+<h2 id="11-">11、献给木灵的花束</h2>
+<ul>
+<li>将 3朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 送给 <strong>木灵</strong> 即可获得。</li>
+</ul>
+<h2 id="12-">12、献给鹅掌楸的花束</h2>
+<ul>
+<li>将 3朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 送给 <strong>鹅掌楸</strong> 即可获得。</li>
+</ul>
+<h2 id="13-">13、献给阔叶树的花束</h2>
+<ul>
+<li>将 3朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 送给 <strong>阔叶树</strong> 即可获得。</li>
+</ul>
+<h2 id="14-">14、献给花梨木的花束</h2>
+<ul>
+<li>将 3朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 送给 <strong>花梨木</strong> 即可获得。</li>
+</ul>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">概览</h2>
+<ul>
+<li><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3447"></span><span>种植德鲁伊之石</span>
+</span>，预计耗时 5天。</li>
+<li>从这一步开始，采集 <strong>原始兰花</strong> 有可能会获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81190"></span><span>火兰花种子</span>
+</span>，留着不要乱丢，后续收藏会用到。</li>
+</ul>
+<h2 id="1-">1、活化的德鲁伊之石</h2>
+<ul>
+<li>完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3445"></span><span>唤醒德鲁伊之石</span>
+</span> 已获得。</li>
+</ul>
+<h2 id="2-4-">2 ~ 4、蜥蜴元素、蜥蜴符文石、蜥蜴之眠</h2>
+<ul>
+<li><strong>巨龙之山 - 蛮荒高地</strong> 附近找到 <strong>守夜人侦察兵普利姆霍克</strong>，对话触发事件 <strong>帮助护送幼崽躲避搜索队伍</strong>。</li>
+<li>护送至终点后会刷出首领 <strong>石首蜥国王</strong>，击杀即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81010"></span><span>蜥蜴元素</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1591" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81010"></span><span>蜥蜴元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81033"></span><span>蜥蜴符文石</span>
+</span>。</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81033"></span><span>蜥蜴符文石</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>蜥蜴之眠</strong>。</li>
+</ul>
+<h2 id="5-7-">5 ~ 7、帝国元素、帝国符文石、帝国安息之地</h2>
+<ul>
+<li><strong>巨龙之山 - 远古洞窟传送点</strong> [&amp;BNUJAAA=]，往右走就能看到首领 <strong>帝王团簇菇</strong>，击杀即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81174"></span><span>帝国元素</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1592" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81174"></span><span>帝国元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81032"></span><span>帝国符文石</span>
+</span>。</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81032"></span><span>帝国符文石</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>帝国安息之地</strong>。</li>
+</ul>
+<h2 id="8-10-">8 ~ 10、蛛网元素、蛛网符文石、蛛网之眠</h2>
+<ul>
+<li><strong>巨龙之山 - 远古洞窟传送点</strong> [&amp;BNUJAAA=]，往左上方走就能看到首领 <strong>蛛网育母</strong>，击杀即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81043"></span><span>蛛网元素</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="1593" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81043"></span><span>蛛网元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81146"></span><span>蛛网符文石</span>
+</span>。</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81146"></span><span>蛛网符文石</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>蛛网之眠</strong>。</li>
+</ul>
+<h2 id="11-13-">11 ~ 13、地虫元素、地虫符文石、地虫安息之地</h2>
+<ul>
+<li><strong>巨龙之山 - 异教徒据点传送点</strong> [&amp;BM0JAAA=]，在北边的 <strong>地虫熔炉</strong> 完成事件 <strong>阻止雇佣兵用血石魔法为岩浆充能</strong>。</li>
+<li>随后会在 <strong>地虫熔炉</strong> 中心刷出目标首领 <strong>血石充能熔岩地虫</strong>，击杀即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81015"></span><span>地虫元素</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1337" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81015"></span><span>地虫元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81059"></span><span>地虫符文石</span>
+</span>。</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81059"></span><span>地虫符文石</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>地虫安息之地</strong>。</li>
+</ul>
+<h2 id="14-16-">14 ~ 16、秘境元素、 秘境符文石、秘境之眠</h2>
+<ul>
+<li><strong>巨龙之山 - 异教徒据点传送点</strong> [&amp;BM0JAAA=]，使用 <strong>热能管道</strong> 飞到 <strong>拉塔秘境</strong>。</li>
+<li>击杀 <strong>审讯团</strong> 获得钥匙关闭星门，完成前置事件后，会刷出目标首领 <strong>审讯团动力机甲马克III型</strong>，击杀即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81083"></span><span>秘境元素</span>
+</span></li>
+</ul>
+<p><img class="gw2-image" image-id="1594" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81083"></span><span>秘境元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81196"></span><span>秘境符文石</span>
+</span>。</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81196"></span><span>秘境符文石</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>秘境之眠</strong>。</li>
+</ul>
+<h2 id="17-">17、献给木灵的充能花束</h2>
+<ul>
+<li>将 5朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 和 1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24305"></span><span>充能磁石</span>
+</span> 送给 <strong>木灵</strong> 即可获得。</li>
+</ul>
+<h2 id="18-">18、献给鹅掌楸的充能花束</h2>
+<ul>
+<li>将 5朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 和 1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24320"></span><span>冰川磁石</span>
+</span> 送给 <strong>鹅掌楸</strong> 即可获得。</li>
+</ul>
+<h2 id="19-">19、献给阔叶树的充能花束</h2>
+<ul>
+<li>将 5朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 和 1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24310"></span><span>玛瑙磁石</span>
+</span> 送给 <strong>阔叶树</strong> 即可获得。</li>
+</ul>
+<h2 id="20-">20、献给花梨木的充能花束</h2>
+<ul>
+<li>将 5朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 和 1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24315"></span><span>熔火磁石</span>
+</span> 送给 <strong>花梨木</strong> 即可获得。</li>
+</ul>
+<h2 id="21-">21、培育火焰兰花</h2>
+<ul>
+<li>将先前采集 <strong>原始兰花</strong> 时获得的 1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81190"></span><span>火兰花种子</span>
+</span> 种在 <strong>木灵</strong> 旁 <strong>亚麻地</strong> 南边 <strong>肥沃的土壤</strong> 上，即可完成。</li>
+</ul>
+<p><img class="gw2-image" image-id="1595" image-compress-type="1" alt=""> <img class="gw2-image" image-id="1596" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">概览</h2>
+<ul>
+<li><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3436"></span><span>背井离乡</span>
+</span>，预计耗时 7天。</li>
+</ul>
+<h2 id="1-">1、绽放的德鲁伊之石</h2>
+<ul>
+<li>完成 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3447"></span><span>种植德鲁伊之石</span>
+</span> 已获得。</li>
+</ul>
+<h2 id="2-">2、重型犬皮斗篷</h2>
+<ul>
+<li>方法1：完成成就 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3442"></span><span>闪点专精</span>
+</span>（20个成就）获得。</li>
+<li>方法2：完成个人史诗 <strong>闪点</strong> 后，通过 PVP 或 战场 分支奖励最终宝箱获得该物品。</li>
+</ul>
+<h2 id="3-5-">3 ~ 5、阿斯图斯元素、伊格尼丝元素、亵渎者元素</h2>
+<ul>
+<li>消灭地图上 7处 <strong>聚集起来的毁灭者</strong>，再消灭后续刷出的 4处 <strong>熔火亵渎者</strong>，即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81041"></span><span>亵渎者元素</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1335" image-compress-type="1" alt=""></p>
+<ul>
+<li>之后会在地图底层的 <strong>沸腾之柱</strong> 和 <strong>泡沫基座</strong> 同时刷出这两个副官（阿斯图斯 和 伊格尼丝），拥有15分钟的击杀限时。</li>
+<li>建议组 5 ~ 10名高输出的玩家，萌新玩家太多有可能导致不能一次事件击杀两个副官。</li>
+<li>两个副官击杀后可分别获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81058"></span><span>阿斯图斯元素</span>
+</span> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81110"></span><span>伊格尼丝元素</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1336" image-compress-type="1" alt=""></p>
+<h2 id="6-9-">6 ~ 9、阿斯图斯符文石、伊格尼丝符文石、亵渎者符文石、毁灭者安息之地</h2>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81058"></span><span>阿斯图斯元素</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81110"></span><span>伊格尼丝元素</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81041"></span><span>亵渎者元素</span>
+</span> 和 三块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>。</li>
+<li>双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81047"></span><span>阿斯图斯符文石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81165"></span><span>伊格尼丝符文石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81066"></span><span>亵渎者符文石</span>
+</span>。</li>
+<li>将它们带给 <strong>木灵</strong>，即可完成 <strong>毁灭者安息之地</strong>。</li>
+</ul>
+<h2 id="10-11-">10 ~ 11、火山元素、火山符文石</h2>
+<ul>
+<li>击杀 <strong>余烬</strong> 或 <strong>熔岩元素</strong> 有几率掉落 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81118"></span><span>火山元素</span>
+</span>，推荐 <strong>巨龙之山 - 异教徒据点传送点</strong> [&amp;BM0JAAA=] 附近击杀。</li>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81118"></span><span>火山元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81023"></span><span>火山符文石</span>
+</span>。</li>
+</ul>
+<h2 id="12-13-">12 ~ 13、流水元素、冰川符文石</h2>
+<ul>
+<li>击杀 <strong>寒冰元素</strong> 有几率掉落 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81094"></span><span>流水元素</span>
+</span>，推荐 <strong>甘达拉战区 - 冰门传送点</strong> [&amp;BJMBAAA=] 附近击杀。</li>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81094"></span><span>流水元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81195"></span><span>冰川符文石</span>
+</span>。</li>
+</ul>
+<h2 id="14-15-">14 ~ 15、空气元素、充能符文石</h2>
+<ul>
+<li>击杀 <strong>空气元素</strong> 或 <strong>电力体</strong> 有几率掉落 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80999"></span><span>空气元素</span>
+</span>，推荐 <strong>罗纳通道 - 石墟传送点</strong> [&amp;BJcBAAA=] 南边击杀。</li>
+</ul>
+<p><img class="gw2-image" image-id="1597" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80999"></span><span>空气元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81086"></span><span>充能符文石</span>
+</span>。</li>
+</ul>
+<h2 id="16-17-">16 ~ 17、大地元素、大地符文石</h2>
+<ul>
+<li>击杀 <strong>大地元素</strong> 有几率掉落 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81105"></span><span>大地元素</span>
+</span>，推荐 <strong>罗纳通道 - 石墟传送点</strong> [&amp;BJcBAAA=] 南边击杀。</li>
+</ul>
+<p><img class="gw2-image" image-id="1598" image-compress-type="1" alt=""></p>
+<ul>
+<li>准备好 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81105"></span><span>大地元素</span>
+</span> 和 一块 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81140"></span><span>德鲁伊符文石</span>
+</span>，双击即可获得 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81160"></span><span>大地符文石</span>
+</span>。</li>
+</ul>
+<h2 id="18-">18、元素安息之地</h2>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81023"></span><span>火山符文石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81195"></span><span>冰川符文石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81086"></span><span>充能符文石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81160"></span><span>大地符文石</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>元素安息之地</strong>。</li>
+</ul>
+<h2 id="19-">19、德鲁伊的幻景</h2>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46746"></span><span>幻景水晶</span>
+</span> 带给 <strong>木灵</strong>，即可完成 <strong>德鲁伊的幻景</strong>。</li>
+</ul>
+<h2 id="20-">20、献给木灵的风暴花束</h2>
+<ul>
+<li>将 10朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 和 5个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24305"></span><span>充能磁石</span>
+</span> 送给 <strong>木灵</strong> 即可获得。</li>
+</ul>
+<h2 id="21-">21、献给鹅掌楸的冰冻花束</h2>
+<ul>
+<li>将 10朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 和 5个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24320"></span><span>冰川磁石</span>
+</span> 送给 <strong>鹅掌楸</strong> 即可获得。</li>
+</ul>
+<h2 id="22-">22、献给阔叶树的大地花束</h2>
+<ul>
+<li>将 10朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 和 5个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24310"></span><span>玛瑙磁石</span>
+</span> 送给 <strong>阔叶树</strong> 即可获得。</li>
+</ul>
+<h2 id="23-">23、献给花梨木的地狱花束</h2>
+<ul>
+<li>将 10朵 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span> 和 5个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24315"></span><span>熔火磁石</span>
+</span> 送给 <strong>花梨木</strong> 即可获得。</li>
+</ul>
+<h2 id="24-">24、迪德里的果园</h2>
+<ul>
+<li>在 <strong>旋窝山</strong> 击杀任意一个元素守护者即可开启通往 <strong>迪德里之阶</strong>（隐秘花园跳跳乐）的传送门。</li>
+</ul>
+<p>①、<strong>欧文岛传送点</strong> [&amp;BNICAAA=] ，东边击杀 风之守护者（68级）<br>②、<strong>准则传送点</strong> [&amp;BMkCAAA=] ，东南方击杀 大地守护者（63级）<br>③、<strong>阿瓦兰传送点</strong> [&amp;BM8CAAA=] ，北边击杀 光之守护者（65级）<br>④、<strong>牛辔岛传送点</strong> [&amp;BNECAAA=] ，北边击杀 波涛守护者（68级）</p>
+<ul>
+<li>位置见下图4个首领标记点：</li>
+</ul>
+<p><img class="gw2-image" image-id="969" image-compress-type="1" alt=""></p>
+<ul>
+<li>按照下图，找到 <strong>肥沃的土壤</strong> 种植3个 <strong>火兰花种子</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1599" image-compress-type="1" alt=""></p>
+<h2 id="25-">25、迈古玛的果园</h2>
+<ul>
+<li><strong>干涸高地 - 藤桥传送点</strong> [&amp;BIYHAAA=]，往北走，找到 <strong>肥沃的土壤</strong> 种植3个 <strong>火兰花种子</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1600" image-compress-type="1" alt=""></p>
+<h2 id="26-">26、梅兰朵的果园</h2>
+<ul>
+<li><strong>诅咒海岸 - 干预者传送点</strong> [&amp;BB4DAAA=]，往北走，找到 <strong>肥沃的土壤</strong> 种植3个 <strong>火兰花种子</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1601" image-compress-type="1" alt=""></p>
+<h2 id="27-">27、海岸培育地</h2>
+<ul>
+<li><strong>巨龙之山 - 水手码头传送点</strong> [&amp;BL0JAAA=]，按下图路线找到 <strong>肥沃的土壤</strong> 种植1个 <strong>火兰花种子</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1602" image-compress-type="1" alt=""></p>
+<h2 id="28-">28、风水母暗礁培育地</h2>
+<ul>
+<li><strong>巨龙之山 - 远古洞窟传送点</strong> [&amp;BNUJAAA=]，按下图路线找到 <strong>肥沃的土壤</strong> 种植1个 <strong>火兰花种子</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1603" image-compress-type="1" alt=""></p>
+<h2 id="29-">29、拉塔秘城培育地</h2>
+<ul>
+<li><strong>巨龙之山 - 异教徒据点传送点</strong> [&amp;BM0JAAA=]，按下图路线找到 <strong>肥沃的土壤</strong> 种植1个 <strong>火兰花种子</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1604" image-compress-type="1" alt=""> <img class="gw2-image" image-id="1605" image-compress-type="1" alt=""> <img class="gw2-image" image-id="1606" image-compress-type="1" alt=""></p>
+<h2 id="30-">30、海岸礁石培育地</h2>
+<ul>
+<li><strong>巨龙之山 - 异教徒据点传送点</strong> [&amp;BM0JAAA=]，往下层飞到洞口位置，进去找到 <strong>肥沃的土壤</strong> 种植1个 <strong>火兰花种子</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1607" image-compress-type="1" alt=""> <img class="gw2-image" image-id="1608" image-compress-type="1" alt=""></p>
+<h2 id="31-">31、努二世培育地</h2>
+<ul>
+<li><strong>巨龙之山 - 异教徒据点传送点</strong> [&amp;BM0JAAA=]，按下图路线找到找到 <strong>肥沃的土壤</strong> 种植1个 <strong>火兰花种子</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="1609" image-compress-type="1" alt=""> <img class="gw2-image" image-id="1610" image-compress-type="1" alt=""> <img class="gw2-image" image-id="1611" image-compress-type="1" alt=""></p>
+<h2 id="32-">32、远古洞窟培育地</h2>
+<ul>
+<li><strong>巨龙之山 - 远古洞窟传送点</strong> [&amp;BNUJAAA=]，按下图路线找到找到 <strong>肥沃的土壤</strong> 种植1个 <strong>火兰花种子</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="706" image-compress-type="1" alt=""> <img class="gw2-image" image-id="707" image-compress-type="1" alt=""> <img class="gw2-image" image-id="1612" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

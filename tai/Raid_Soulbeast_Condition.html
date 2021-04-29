@@ -1,0 +1,3303 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>症状魂兽师 | 游侠 | 职业配置 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg header-bg-build-Ranger">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<div class="row page-titles bg-lg bg-lg-Ranger m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="color-Ranger pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">职业配置</li>
+<li class="breadcrumb-item active"><a href="javascript:window.open('https://www.gw2data.cn/build/Ranger');" class="color-Ranger pjax-link">游侠</a></li>
+<li class="breadcrumb-item active"><span class="color-Ranger">症状魂兽师<span></span></span></li>
+</ol>
+<h2 class="page-title color-Ranger m-t-15">
+<i class="profession-icon icon-profession icon-Soulbeast"></i> . 魂兽师 . Soulbeast </h2>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title color-Ranger m-t-20 m-b-20">
+症状魂兽师 </h1>
+<div class="page-titles-details">
+
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;皮皮茶 [DxD]</div>
+<div class="view" title="编辑"><i class="mdi mdi-account-edit"></i>&nbsp;&nbsp;泰协内容维护小组</div>
+<div class="updatetime" title="最后更新"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2021.01.18</div>
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div>
+</div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30 p-b-10">
+<div class="card-text">
+<label class="label label-position bg-color-profession bg-color-Ranger">大型地下城</label><label class="label label-position bg-color-profession bg-color-Ranger">症状</label><label class="label label-position bg-color-profession bg-color-Ranger">单体输出</label> </div>
+</div>
+<div class="card card-body m-t-30">
+<div class="row">
+<div class="col-lg-8 build-overview-wrap">
+<h3 class="card-title">概述</h3>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>症状魂兽师</span>
+</span> 是一套基于症状输出的配置，输出循环简单，适合初学者选择。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>症状魂兽师</span>
+</span> 由于伤害主要依赖 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="14"></span><span>流血</span>
+</span> 和 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="15"></span><span>中毒</span>
+</span>，并且实战必须从目标背后或侧翼才能打出较高输出，使得实战输出潜力相对 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="28"></span><span>症状幻象术士</span>
+</span>、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="27"></span><span>症状燃火者</span>
+</span>、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="29"></span><span>症状龙魂使</span>
+</span> 要低一些。如果你期望在实战中追求更高输出，可以选择上述几个配置。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>症状魂兽师</span>
+</span> 可以携带一个精魂技能，这样做能帮助队内 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="13"></span><span>德鲁伊</span>
+</span> 解放一个通用技能栏位。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>症状魂兽师（单短弓）</span>
+</span> 更适用于初学者，因为技能循环简单，有清晰的技能优先级顺序，并且可以长时间进行远距离输出。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>症状魂兽师（匕火/斧匕）</span>
+</span> 在熟练掌握后，输出上限比 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>症状魂兽师（单短弓）</span>
+</span> 的上限略高。</li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 build-raid-boss-wrap">
+<h3 class="card-title">BOSS 适用性（S > A > B > C > D）</h3>
+<hr>
+<div class="build-info-content article-content">
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-A" data-toggle="tooltip" data-placement="top" title="01 . 山谷守护者">
+<div class="icon-raid-boss icon-raid-boss-01"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">A</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="02 . 多变藤 哥瑟瓦尔">
+<div class="icon-raid-boss icon-raid-boss-02"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="03 . 破坏者 萨蓓莎">
+<div class="icon-raid-boss icon-raid-boss-03"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-D" data-toggle="tooltip" data-placement="top" title="04 . 斯洛萨索">
+<div class="icon-raid-boss icon-raid-boss-04"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">D</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="05 . 囚犯集中营">
+<div class="icon-raid-boss icon-raid-boss-05"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-S" data-toggle="tooltip" data-placement="top" title="06 . 马蒂亚斯 加布瑞尔">
+<div class="icon-raid-boss icon-raid-boss-06"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">S</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-A" data-toggle="tooltip" data-placement="top" title="07 . 沉默的麦克劳德">
+<div class="icon-raid-boss icon-raid-boss-07"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">A</div>
+</div>
+<div class="build-raid-boss raid-boss-score-D" data-toggle="tooltip" data-placement="top" title="08 . 要塞构造体">
+<div class="icon-raid-boss icon-raid-boss-08"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">D</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="09 . 琦拉">
+<div class="icon-raid-boss icon-raid-boss-09"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="10 . 不屈的凯玲">
+<div class="icon-raid-boss icon-raid-boss-10"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-S" data-toggle="tooltip" data-placement="top" title="11 . 末世魔监工">
+<div class="icon-raid-boss icon-raid-boss-11"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">S</div>
+</div>
+<div class="build-raid-boss raid-boss-score-D" data-toggle="tooltip" data-placement="top" title="12 . 萨玛洛格">
+<div class="icon-raid-boss icon-raid-boss-12"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">D</div>
+</div>
+<div class="build-raid-boss raid-boss-score-C" data-toggle="tooltip" data-placement="top" title="13 . 戴莫斯">
+<div class="icon-raid-boss icon-raid-boss-13"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">C</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-A" data-toggle="tooltip" data-placement="top" title="14 . 无魂惧魔">
+<div class="icon-raid-boss icon-raid-boss-14"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">A</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="15 . 魂河">
+<div class="icon-raid-boss icon-raid-boss-15"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="16 . 古兰斯雕像">
+<div class="icon-raid-boss icon-raid-boss-16"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="17 . 德姆">
+<div class="icon-raid-boss icon-raid-boss-17"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+ </div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-D" data-toggle="tooltip" data-placement="top" title="18 . 咒术融合体">
+<div class="icon-raid-boss icon-raid-boss-18"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">D</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="19 . 双胞胎蝶翼人">
+<div class="icon-raid-boss icon-raid-boss-19"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+<div class="build-raid-boss raid-boss-score-C" data-toggle="tooltip" data-placement="top" title="20 . 卡迪姆">
+<div class="icon-raid-boss icon-raid-boss-20"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">C</div>
+</div>
+</div>
+<div class="build-raid-wing">
+<div class="build-raid-boss raid-boss-score-A" data-toggle="tooltip" data-placement="top" title="21 . 基石守护者 萨比尔（风）">
+<div class="icon-raid-boss icon-raid-boss-21"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">A</div>
+</div>
+<div class="build-raid-boss raid-boss-score-D" data-toggle="tooltip" data-placement="top" title="22 . 基石守护者 艾迪娜（土）">
+<div class="icon-raid-boss icon-raid-boss-22"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">D</div>
+</div>
+<div class="build-raid-boss raid-boss-score-B" data-toggle="tooltip" data-placement="top" title="23 . 无可匹敌的卡迪姆">
+<div class="icon-raid-boss icon-raid-boss-23"></div>
+<div class="icon-raid-boss-cover"></div>
+<div class="icon-raid-boss-score">B</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-box-shadow  m-t-30">
+<div class="card-body p-b-0">
+<h3 class="card-title">特性 与 技能</h3>
+<hr>
+<ul class="nav nav-pills m-t-20 m-b-20">
+<li class="nav-item"> <a href="#traits-skills-1" class="nav-link nav-link-Ranger active" data-toggle="tab" aria-expanded="true">匕火</a> </li>
+<li class="nav-item"> <a href="#traits-skills-2" class="nav-link nav-link-Ranger" data-toggle="tab" aria-expanded="false">单短弓</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="traits-skills-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">特性
+<button type="button" id="trait_code_29_md" class="btn waves-effect waves-light btn-xs float-right d-md-none copy-build-code" data-clipboard-text="症状魂兽师 匕火 [&DQQeHSE3Ny55AAAAugAAAOkWAAC/AAAALhYAAAM0AAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<button type="button" id="trait_code_29" class="btn waves-effect waves-light btn-xs float-right d-none d-md-inline-block copy-build-code" data-clipboard-text="[&DQQeHSE3Ny55AAAAugAAAOkWAAC/AAAALhYAAAM0AAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<input type="text" value="[&DQQeHSE3Ny55AAAAugAAAOkWAAC/AAAALhYAAAM0AAAAAAAAAAAAAAAAAAA=]" class="copy-build-code-text float-right" readonly="">
+</h4>
+</div>
+<div class="card-body">
+<div class="specializations-box">
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="30" gw2-specializations-traits="1069,1846,1064"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="33" gw2-specializations-traits="1099,1101,1701"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="55" gw2-specializations-traits="2071,2161,2128"></div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2143"></span><span>压迫优势</span>
+</span>：如果队伍中有多名 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>症状魂兽师</span>
+</span>，不需要 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2128"></span><span>群体领袖</span>
+</span> 分享姿态，可以选用该特性进一步提高单体输出。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">技能</h4>
+</div>
+ <div class="card-body">
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-pets " gw2-type="pets" gw2-ids="3"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-pets " gw2-type="pets" gw2-ids="52"></div>
+</div>
+</div>
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="31914"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="12496"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="40498"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="12537"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="45717"></div>
+</div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">宠物</th>
+<th style="text-align:center">#1</th>
+<th style="text-align:center">#2</th>
+<th style="text-align:center">#3</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span class="mini-pets mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40625"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44514"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span></span></td>
+<td style="text-align:left">常规选择。</td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-pets mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="61"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44384"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40111"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span></span></td>
+<td style="text-align:left">可以造成 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="25"></span><span>困惑</span>
+</span>，<br>在对抗攻击频率较高的 BOSS 时，<br>伤害潜力高于 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span>，<br>如：<span class="mini-raid_boss">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="raid_boss" gw2-ids="10"></span><span>不屈的凯玲</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>治疗技能（可选）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="21773"></span><span>流水精魂</span>
+</span>，队伍中没有 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="13"></span><span>德鲁伊</span>
+</span> 提供该技能时，可选用。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12489"></span><span>治疗之泉</span>
+</span>，队伍需要额外的症状清除能力，可选用。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44948"></span><span>熊灵姿态</span>
+</span>，队伍需要额外的症状清除能力，并且实战中队友比较分散，可选用。</li>
+</ul>
+<hr>
+<p>通用技能（可选）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="51395"></span><span>尖刺陷阱</span>
+</span>，受冷却时间影响，在短阶段需要爆发输出的战斗中使用，效果更好。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12498"></span><span>旭日精魂</span>
+</span>，实战中无人携带 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12498"></span><span>旭日精魂</span>
+</span>，可以将 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12496"></span><span>毒蛇巢穴</span>
+</span> 替换为该技能，从而帮助团队获得更高输出。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="traits-skills-2" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">特性说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<ul>
+<li>单短弓的配置，可以长时间保持远距离输出。</li>
+<li>若实战中，很难保持 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2127"></span><span>狂暴双体</span>
+</span> 的状态，或者你是一名初学者，也可以考虑将 兽王 改为 生存 特性分支，例如在对抗 <span class="mini-raid_boss">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="raid_boss" gw2-ids="19"></span><span>双胞胎蝶翼人</span>
+</span> 时，一般很难保持 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2127"></span><span>狂暴双体</span>
+</span>。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">特性
+<button type="button" id="trait_code_30_md" class="btn waves-effect waves-light btn-xs float-right d-md-none copy-build-code" data-clipboard-text="症状魂兽师 单短弓 [&DQQeLSAfNy55AAAApQEAAOkWAAC/AAAALhYAAAM0AAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<button type="button" id="trait_code_30" class="btn waves-effect waves-light btn-xs float-right d-none d-md-inline-block copy-build-code" data-clipboard-text="[&DQQeLSAfNy55AAAApQEAAOkWAAC/AAAALhYAAAM0AAAAAAAAAAAAAAAAAAA=]">复制代码</button>
+<input type="text" value="[&DQQeLSAfNy55AAAApQEAAOkWAAC/AAAALhYAAAM0AAAAAAAAAAAAAAAAAAA=]" class="copy-build-code-text float-right" readonly="">
+</h4>
+</div>
+<div class="card-body">
+<div class="specializations-box">
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="30" gw2-specializations-traits="1069,1846,1912"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="32" gw2-specializations-traits="1606,970,1945"></div>
+<div class="gw2-tooltip gw2-info gw2-specializations" gw2-type="specializations" gw2-ids="55" gw2-specializations-traits="2071,2161,2128"></div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<ul>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2127"></span><span>狂暴双体</span>
+</span>，可以由 短弓5技能 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12508"></span><span>震荡射击</span>
+</span> 以及 宠物技能触发特性 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1945"></span><span>蛮兽监守</span>
+</span> 施加的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="26"></span><span>嘲讽</span>
+</span> 来获得。</li>
+<li><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2143"></span><span>压迫优势</span>
+</span>：如果队伍中有多名 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>症状魂兽师</span>
+</span>，不需要 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2128"></span><span>群体领袖</span>
+</span> 分享姿态，可以选用该特性进一步提高单体输出。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">技能</h4>
+</div>
+<div class="card-body">
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-pets " gw2-type="pets" gw2-ids="3"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-pets " gw2-type="pets" gw2-ids="52"></div>
+</div>
+</div>
+<div class="build-skills-box">
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="31914"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="12633"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="40498"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="12537"></div>
+</div>
+<div class="build-icon build-skill-icon">
+<div class="gw2-tooltip gw2-info gw2-skills black-border" gw2-type="skills" gw2-ids="45717"></div>
+</div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">宠物</th>
+<th style="text-align:center">#1</th>
+<th style="text-align:center">#2</th>
+<th style="text-align:center">#3</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span class="mini-pets mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40625"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44514"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span></span></td>
+<td style="text-align:left">常规选择。</td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-pets mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="61"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44384"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40111"></span></span></td>
+<td style="text-align:center"><span class="mini-skills mini-big-icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span></span></td>
+<td style="text-align:left">可以造成 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="25"></span><span>困惑</span>
+</span>，<br>在对抗攻击频率较高的 BOSS 时，<br>伤害潜力高于 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span>，<br>如：<span class="mini-raid_boss">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="raid_boss" gw2-ids="10"></span><span>不屈的凯玲</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>治疗技能（可选）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="21773"></span><span>流水精魂</span>
+</span>，队伍中没有 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="13"></span><span>德鲁伊</span>
+</span> 提供该技能时，可选用。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12489"></span><span>治疗之泉</span>
+</span>，队伍需要额外的症状清除能力，可选用。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44948"></span><span>熊灵姿态</span>
+</span>，队伍需要额外的症状清除能力，并且实战中队友比较分散，可选用。</li>
+</ul>
+<hr>
+<p>通用技能（可选）：</p>
+<ul>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="51395"></span><span>尖刺陷阱</span>
+</span>，受冷却时间影响，在短阶段需要爆发输出的战斗中使用，效果更好。</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12498"></span><span>旭日精魂</span>
+</span>，实战中无人携带 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12498"></span><span>旭日精魂</span>
+</span>，可以将 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12496"></span><span>毒蛇巢穴</span>
+</span> 替换为该技能，从而帮助团队获得更高输出。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-box-shadow  m-t-30">
+<div class="card-body p-b-0">
+<h3 class="card-title">装备 与 消耗品</h3>
+<hr>
+<ul class="nav nav-pills m-t-20 m-b-20">
+<li class="nav-item"> <a href="#gear-food-1" class="nav-link nav-link-Ranger active" data-toggle="tab" aria-expanded="true">匕火 / 斧匕（猞猁）</a> </li>
+<li class="nav-item"> <a href="#gear-food-2" class="nav-link nav-link-Ranger" data-toggle="tab" aria-expanded="false">匕火 / 斧匕（伊波茄）</a> </li>
+<li class="nav-item"> <a href="#gear-food-3" class="nav-link nav-link-Ranger" data-toggle="tab" aria-expanded="false">匕火 / 短弓（猞猁）</a> </li>
+<li class="nav-item"> <a href="#gear-food-4" class="nav-link nav-link-Ranger" data-toggle="tab" aria-expanded="false">单短弓</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="gear-food-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">武器</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Dagger_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 匕首 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="44944"></div>
+</div>
+<div class="build-info-suffix-title">超级渴求法印</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Torch_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 火炬 - 副手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24560"></div>
+</div>
+<div class="build-info-suffix-title">超级大地法印</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Axe_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 斧 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="44944"></div>
+</div>
+<div class="build-info-suffix-title">超级渴求法印</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Dagger_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 匕首 - 副手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24560"></div>
+</div>
+<div class="build-info-suffix-title">超级大地法印</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">护甲</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Helm_Ascended_24_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">凶恶 - 维瑞塔 - 中甲 - 头部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Shoulders_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 肩部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Coat_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 胸部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Gloves_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 手部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Leggings_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 腿部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Boots_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 足部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">背部 与 首饰</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Back_Ascended_2" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 背部</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Amulet_Ascended_2" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 项链</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_2_Left" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_2_Right" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_2_Left" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_2_Right" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">消耗品 与 灌注</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-food black-border" gw2-type="food" gw2-ids="86997"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">盘装牛肉仁当</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-ascended_food black-border" gw2-type="ascended_food" gw2-ids="91878"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">芫荽与熏肉薄饼</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">升华食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-utility black-border" gw2-type="utility" gw2-ids="48917"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">剧毒聚能水晶</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">通用效果</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-infusions black-border" gw2-type="infusions" gw2-ids="37130"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">+9恶意痛苦灌注<span> × 18</span></div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">土豪可选用+16属性以上的灌注</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="gear-food-2" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xl-12 col-lg-12 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">装备说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<ul>
+<li>这套配装拥有 100% 的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="14"></span><span>流血</span>
+</span> 持续时间，90% 的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="15"></span><span>中毒</span>
+</span> 持续时间。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">武器</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Dagger_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 匕首 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="44950"></div>
+</div>
+<div class="build-info-suffix-title">超级恶毒法印</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Torch_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 火炬 - 副手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24560"></div>
+</div>
+<div class="build-info-suffix-title">超级大地法印</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Axe_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 斧 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+ <div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="44950"></div>
+</div>
+<div class="build-info-suffix-title">超级恶毒法印</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Dagger_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 匕首 - 副手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24560"></div>
+</div>
+<div class="build-info-suffix-title">超级大地法印</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">护甲</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Helm_Ascended_24_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">凶恶 - 维瑞塔 - 中甲 - 头部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24687"></div>
+</div>
+<div class="build-info-suffix-title">超级苦痛符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Shoulders_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 肩部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24687"></div>
+</div>
+<div class="build-info-suffix-title">超级苦痛符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Coat_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 胸部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24687"></div>
+</div>
+<div class="build-info-suffix-title">超级苦痛符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Gloves_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 手部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24687"></div>
+</div>
+<div class="build-info-suffix-title">超级苦痛符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Leggings_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 腿部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24687"></div>
+</div>
+<div class="build-info-suffix-title">超级苦痛符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Boots_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 足部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24687"></div>
+</div>
+<div class="build-info-suffix-title">超级苦痛符文</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">背部 与 首饰</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Back_Ascended_2" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 背部</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Amulet_Ascended_2" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 项链</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_2_Left" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_2_Right" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_2_Left" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_2_Right" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">消耗品 与 灌注</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-food black-border" gw2-type="food" gw2-ids="86997"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">盘装牛肉仁当</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-ascended_food black-border" gw2-type="ascended_food" gw2-ids="91878"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">芫荽与熏肉薄饼</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">升华食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-utility black-border" gw2-type="utility" gw2-ids="48917"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">剧毒聚能水晶</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">通用效果</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-infusions black-border" gw2-type="infusions" gw2-ids="86113"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">+9险恶痛苦灌注<span> × 18</span></div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">土豪可选用+16属性以上的灌注</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="gear-food-3" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">武器</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Dagger_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 匕首 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="44944"></div>
+</div>
+<div class="build-info-suffix-title">超级渴求法印</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="Torch_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 火炬 - 副手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24560"></div>
+</div>
+<div class="build-info-suffix-title">超级大地法印</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="ShortBow_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 短弓 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="44944"></div>
+</div>
+<div class="build-info-suffix-title">超级渴求法印</div>
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24560"></div>
+</div>
+<div class="build-info-suffix-title">超级大地法印</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">护甲</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Helm_Ascended_24_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">凶恶 - 维瑞塔 - 中甲 - 头部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Shoulders_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 肩部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Coat_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 胸部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Gloves_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 手部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Leggings_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 腿部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Boots_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 足部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">背部 与 首饰</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Back_Ascended_2" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 背部</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Amulet_Ascended_2" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 项链</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_2_Left" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 饰品</div>
+<div class="build-info-suffix">
+ </div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_2_Right" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_2_Left" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_2_Right" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">消耗品 与 灌注</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-food black-border" gw2-type="food" gw2-ids="86997"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">盘装牛肉仁当</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-ascended_food black-border" gw2-type="ascended_food" gw2-ids="91878"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">芫荽与熏肉薄饼</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">升华食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-utility black-border" gw2-type="utility" gw2-ids="48917"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">剧毒聚能水晶</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">通用效果</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-infusions black-border" gw2-type="infusions" gw2-ids="37130"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">+9恶意痛苦灌注<span> × 18</span></div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">土豪可选用+16属性以上的灌注</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="gear-food-4" class="tab-pane " aria-expanded="false">
+ <div class="row">
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">武器</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-weapons" gw2-type="weapons" gw2-ids="ShortBow_Ascended_2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 短弓 - 主手</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="44944"></div>
+</div>
+<div class="build-info-suffix-title">超级渴求法印</div>
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-sigils no-border" gw2-type="sigils" gw2-ids="24560"></div>
+</div>
+<div class="build-info-suffix-title">超级大地法印</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">护甲</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Helm_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 头部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Shoulders_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 肩部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Coat_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 胸部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+ <div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Gloves_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 手部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Leggings_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 腿部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-armors" gw2-type="armors" gw2-ids="Boots_Ascended_2_Medium"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 亚西斯 - 中甲 - 足部</div>
+<div class="build-info-suffix">
+<div class="build-sm-icon">
+<div class="gw2-tooltip gw2-info gw2-runes no-border" gw2-type="runes" gw2-ids="24762"></div>
+</div>
+<div class="build-info-suffix-title">超级蛇妖符文</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">背部 与 首饰</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Back_Ascended_2" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 背部</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Amulet_Ascended_2" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 项链</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_2_Left" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Accessory_Ascended_2_Right" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 饰品</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_2_Left" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-trinkets" gw2-type="trinkets" gw2-ids="Ring_Ascended_2_Right" gw2-itemstats="2"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">毒蛇 - 戒指</div>
+<div class="build-info-suffix">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">消耗品 与 灌注</h4>
+</div>
+<div class="card-body">
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-food black-border" gw2-type="food" gw2-ids="84550"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">红扁豆浓汤</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-ascended_food black-border" gw2-type="ascended_food" gw2-ids="91876"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">沙拉配素菜薄饼</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">升华食物</div>
+</div>
+</div>
+</div>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-utility black-border" gw2-type="utility" gw2-ids="48917"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">剧毒聚能水晶</div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">通用效果</div>
+</div>
+</div>
+</div>
+<hr>
+<div class="build-info-content article-content">
+<p>食物（可选）：</p>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43361"></span><span>锦鲤蛋糕</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12464"></span><span>稀有素菜披萨</span>
+</span></li>
+</ul>
+<hr>
+<p>通用效果（可选）：</p>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77567"></span><span>协调冰柱</span>
+</span></li>
+</ul>
+</div>
+<hr>
+<div class="build-info-box">
+<div class="build-icon">
+<div class="gw2-tooltip gw2-info gw2-infusions black-border" gw2-type="infusions" gw2-ids="37130"></div>
+</div>
+<div class="build-info-right">
+<div class="build-info-title color-Ranger">+9恶意痛苦灌注<span> × 18</span></div>
+<div class="build-info-suffix">
+<div class="build-info-suffix-title">土豪可选用+16属性以上的灌注</div>
+</div>
+</div>
+</div>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card card-box-shadow  m-t-30">
+<div class="card-body p-b-0">
+<h3 class="card-title">配置说明</h3>
+<hr>
+<ul class="nav nav-pills m-t-20 m-b-20">
+<li class="nav-item"> <a href="#content-1" class="nav-link nav-link-Ranger active" data-toggle="tab" aria-expanded="true">匕火 / 斧匕（猞猁）</a> </li>
+<li class="nav-item"> <a href="#content-2" class="nav-link nav-link-Ranger" data-toggle="tab" aria-expanded="false">匕火 / 斧匕（伊波茄）</a> </li>
+<li class="nav-item"> <a href="#content-3" class="nav-link nav-link-Ranger" data-toggle="tab" aria-expanded="false">匕火 / 短弓（猞猁）</a> </li>
+<li class="nav-item"> <a href="#content-4" class="nav-link nav-link-Ranger" data-toggle="tab" aria-expanded="false">匕火 / 短弓（伊波茄）</a> </li>
+<li class="nav-item"> <a href="#content-5" class="nav-link nav-link-Ranger" data-toggle="tab" aria-expanded="false">单短弓（猞猁）</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane active" aria-expanded="true">
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">开场</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li>战宠切换至 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12496"></span><span>毒蛇巢穴</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12478"></span><span>追猎之击</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12490"></span><span>寒冬撕咬</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12477"></span><span>致残之爪</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">输出循环</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12504"></span><span>灼燃火堆</span>
+</span></li>
+<li><span class="mini-skills">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12635"></span><span>投掷火炬</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span>（#4 ~ #8 首次循环时在此处使用，后续循环为冷却即用）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44514"></span><span>撕扯</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45426"></span><span>挖凿地基</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40301"></span><span>斜掠横扫</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41800"></span><span>巨蛇戳刺</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44278"></span><span>致命重伤</span>
+</span>（×2）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12504"></span><span>灼燃火堆</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45426"></span><span>挖凿地基</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40301"></span><span>斜掠横扫</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41800"></span><span>巨蛇戳刺</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44278"></span><span>致命重伤</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12635"></span><span>投掷火炬</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12477"></span><span>致残之爪</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12478"></span><span>追猎之击</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12490"></span><span>寒冬撕咬</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12477"></span><span>致残之爪</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12466"></span><span>回旋飞斧</span>
+</span>（直到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span> 就绪）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12478"></span><span>追猎之击</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12490"></span><span>寒冬撕咬</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12477"></span><span>致残之爪</span>
+</span>（有则使用，无则跳过）</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">视频 与 日志</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<ul>
+<li><a class="doc-link" href="javascript:window.open('https://www.bilibili.com/video/av801141029
+?p=29');" target="_blank" rel="nofollow noopener noreferrer">魂兽师 - 症状（斧匕 匕火 猞猁） - 小体积 - 35.8k - [DxD.皮皮茶] - GW2 - 2020.07.10</a></li>
+<li><a class="doc-link" href="javascript:window.open('https://dps.report/gSW5-20200718-073108_golem');" target="_blank" rel="nofollow noopener noreferrer">日志 - 魂兽师 - 症状（斧匕 匕火 猞猁） - 小体积 - 35.8k - [DxD.皮皮茶] - GW2 - 2020.07.10</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content"><p>开场铺垫1</p>
+<p>在开场前，可以先与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> 并使用以下技能进行铺垫，以提升开场伤害：</p>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span></li>
+</ol>
+<hr>
+<p>开场铺垫2</p>
+<p>可以进一步铺垫技能：</p>
+<ol>
+<li>与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="52"></span><span>幼龄钢背兽</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span>，并使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45479"></span><span>尖锐脊刺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43014"></span><span>离开野兽模式</span>
+</span> 与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span></li>
+<li>衔接 开场铺垫1</li>
+</ol>
+<hr>
+<ul>
+<li>尽可能站在目标身后输出，以便通过 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1068"></span><span>捕猎战术</span>
+</span> 提升伤害。</li>
+<li>有时你不得不使用匕首做普攻输出，因为火炬技能都进入了冷却。</li>
+<li>武器技能冷却即用（武器技能优先级最高），并在武器技能未就绪时，根据下述优先级施放技能：</li>
+</ul>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12496"></span><span>毒蛇巢穴</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44514"></span><span>撕扯</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">开场</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li>战宠切换至 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="61"></span><span>幼龄伊波茄</span>
+</span> 进入<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12496"></span><span>毒蛇巢穴</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12478"></span><span>追猎之击</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12490"></span><span>寒冬撕咬</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12477"></span><span>致残之爪</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">输出循环</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12504"></span><span>灼燃火堆</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12635"></span><span>投掷火炬</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span>（#4 ~ #8 首次循环时在此处使用，后续循环为冷却即用）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40111"></span><span>困惑孢子</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44384"></span><span>致残苦痛</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45426"></span><span>挖凿地基</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40301"></span><span>斜掠横扫</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41800"></span><span>巨蛇戳刺</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44278"></span><span>致命重伤</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12504"></span><span>灼燃火堆</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45426"></span><span>挖凿地基</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40301"></span><span>斜掠横扫</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41800"></span><span>巨蛇戳刺</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44278"></span><span>致命重伤</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44384"></span><span>致残苦痛</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45426"></span><span>挖凿地基</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40301"></span><span>斜掠横扫</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41800"></span><span>巨蛇戳刺</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44278"></span><span>致命重伤</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12635"></span><span>投掷火炬</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12477"></span><span>致残之爪</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12490"></span><span>寒冬撕咬</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12478"></span><span>追猎之击</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12477"></span><span>致残之爪</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12466"></span><span>回旋飞斧</span>
+</span>（直到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span> 就绪）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12480"></span><span>分裂之刃</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12478"></span><span>追猎之击</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12490"></span><span>寒冬撕咬</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12477"></span><span>致残之爪</span>
+</span>（有则使用，无则跳过）</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">视频 与 日志</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<ul>
+<li><a class="doc-link" href="javascript:window.open('https://www.bilibili.com/video/av801141029
+?p=30');" target="_blank" rel="nofollow noopener noreferrer">魂兽师 - 症状（斧匕 匕火 伊波茄 压迫优势） - 小体积 - 32.7k - [DxD.皮皮茶] - GW2 - 2020.07.10</a></li>
+<li><a class="doc-link" href="javascript:window.open('https://dps.report/8NdB-20200811-214426_golem');" target="_blank" rel="nofollow noopener noreferrer">日志 - 魂兽师 - 症状（斧匕 匕火 伊波茄 压迫优势） - 小体积 - 32.7k - [DxD.皮皮茶] - GW2 - 2020.07.10</a></li>
+<li><a class="doc-link" href="javascript:window.open('https://www.bilibili.com/video/av801141029
+?p=31');" target="_blank" rel="nofollow noopener noreferrer">魂兽师 - 症状（斧匕 匕火 伊波茄 群体领袖） - 小体积 - 31.8k - [CnD.ShèènaFujibayashi] - GW2 - 2020.07</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content"><p>开场铺垫1</p>
+<p>在开场前，可以先与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> 并使用以下技能进行铺垫，以提升开场伤害：</p>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span></li>
+</ol>
+<hr>
+<p>开场铺垫2</p>
+<p>可以进一步铺垫技能：</p>
+<ol>
+<li>与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="52"></span><span>幼龄钢背兽</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span>，并使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45479"></span><span>尖锐脊刺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43014"></span><span>离开野兽模式</span>
+</span> 与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span></li>
+<li>衔接 开场铺垫1</li>
+</ol>
+<hr>
+<ul>
+<li>尽可能站在目标身后输出，以使短弓技能伤害最大化，并通过 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1068"></span><span>捕猎战术</span>
+</span> 提升伤害。</li>
+<li>有时你不得不使用匕首做普攻输出，因为火炬技能都进入了冷却。</li>
+<li>武器技能冷却即用（武器技能优先级最高），并在武器技能未就绪时，根据下述优先级施放技能：</li>
+</ul>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12496"></span><span>毒蛇巢穴</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44384"></span><span>致残苦痛</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40111"></span><span>困惑孢子</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">开场</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li>战宠切换至 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12496"></span><span>毒蛇巢穴</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">输出循环</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12504"></span><span>灼燃火堆</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12635"></span><span>投掷火炬</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span>（#4 ~ #8 首次循环时在此处使用，后续循环为冷却即用）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44514"></span><span>撕扯</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45426"></span><span>挖凿地基</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40301"></span><span>斜掠横扫</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41800"></span><span>巨蛇戳刺</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44278"></span><span>致命重伤</span>
+</span>（×2）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12504"></span><span>灼燃火堆</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45426"></span><span>挖凿地基</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40301"></span><span>斜掠横扫</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41800"></span><span>巨蛇戳刺</span>
+</span> → <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44278"></span><span>致命重伤</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12635"></span><span>投掷火炬</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12508"></span><span>震荡射击</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12470"></span><span>左右开弓</span>
+</span>（直到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span> 就绪）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12470"></span><span>左右开弓</span>
+</span>（直到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span> 就绪）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span></li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">视频 与 日志</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<ul>
+<li><a class="doc-link" href="javascript:window.open('https://www.bilibili.com/video/av801141029
+?p=28');" target="_blank" rel="nofollow noopener noreferrer">魂兽师 - 症状（匕火 短弓 猞猁）- 小体积 - 34.6k - [DxD.皮皮茶] - GW2 - 2020.07.10</a></li>
+<li><a class="doc-link" href="javascript:window.open('https://dps.report/nteg-20200723-200712_golem');" target="_blank" rel="nofollow noopener noreferrer">日志 - 魂兽师 - 症状（匕火 短弓 猞猁）- 小体积 - 34.6k - [DxD.皮皮茶] - GW2 - 2020.07.10</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content"><p>开场铺垫1</p>
+<p>在开场前，可以先与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> 并使用以下技能进行铺垫，以提升开场伤害：</p>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span></li>
+</ol>
+<hr>
+<p>开场铺垫2</p>
+<p>可以进一步铺垫技能：</p>
+<ol>
+<li>与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="52"></span><span>幼龄钢背兽</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span>，并使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45479"></span><span>尖锐脊刺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43014"></span><span>离开野兽模式</span>
+</span> 与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span></li>
+<li>衔接 开场铺垫1</li>
+</ol>
+<hr>
+<ul>
+<li>尽可能站在目标身后输出，以使短弓技能伤害最大化，并通过 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1068"></span><span>捕猎战术</span>
+</span> 提升伤害。</li>
+<li>有时你不得不使用匕首做普攻输出，因为火炬技能都进入了冷却。</li>
+<li>武器技能冷却即用（武器技能优先级最高），并在武器技能未就绪时，根据下述优先级施放技能：</li>
+</ul>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12496"></span><span>毒蛇巢穴</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44514"></span><span>撕扯</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">开场</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li>战宠切换至 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="61"></span><span>幼龄伊波茄</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12499"></span><span>烈焰陷阱</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span> </li>
+<li><span class="mini-skills">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12508"></span><span>震荡射击</span>
+</span> </li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">输出循环</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12504"></span><span>灼燃火堆</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12635"></span><span>投掷火炬</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40111"></span><span>困惑孢子</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44384"></span><span>致残苦痛</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45426"></span><span>挖凿地基</span>
+</span>→<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40301"></span><span>斜掠横扫</span>
+</span>→<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41800"></span><span>巨蛇戳刺</span>
+</span>→<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44278"></span><span>致命重伤</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12504"></span><span>灼燃火堆</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45426"></span><span>挖凿地基</span>
+</span>→<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40301"></span><span>斜掠横扫</span>
+</span>→<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="41800"></span><span>巨蛇戳刺</span>
+</span>→<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44278"></span><span>致命重伤</span>
+</span>（×2）</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12635"></span><span>投掷火炬</span>
+</span> </li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44384"></span><span>致残苦痛</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40111"></span><span>困惑孢子</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43014"></span><span>离开野兽模式</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12508"></span><span>震荡射击</span>
+</span> </li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="1"></span><span>切换武器</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content"><p>开场铺垫1</p>
+<p>在开场前，可以先与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="61"></span><span>幼龄伊波茄</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> 并使用以下技能进行铺垫，以提升开场伤害：</p>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span></li>
+</ol>
+<hr>
+<p>开场铺垫2</p>
+<p>可以进一步铺垫技能：</p>
+<ol>
+<li>与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="52"></span><span>幼龄钢背兽</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span>，并使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45479"></span><span>尖锐脊刺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43014"></span><span>离开野兽模式</span>
+</span> 与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="61"></span><span>幼龄伊波茄</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span></li>
+<li>衔接 开场铺垫1</li>
+</ol>
+<hr>
+<ul>
+<li>尽可能站在目标身后输出，以使短弓技能伤害最大化，并通过 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1068"></span><span>捕猎战术</span>
+</span> 提升伤害。</li>
+<li>有时你不得不使用匕首做普攻输出，因为火炬技能都进入了冷却。</li>
+<li>武器技能冷却即用（武器技能优先级最高），并在武器技能未就绪时，根据下述优先级施放技能：</li>
+</ul>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12499"></span><span>烈焰陷阱</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44384"></span><span>致残苦痛</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40111"></span><span>困惑孢子</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane " aria-expanded="false">
+<div class="row">
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">开场</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li>战宠切换至 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12633"></span><span>&quot;干掉他们！&quot;</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12508"></span><span>震荡射击</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44514"></span><span>撕扯</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span> </li>
+</ol>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">技能优先级</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content build-info-content-tempest"><ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40498"></span><span>秃鹰姿态</span>
+</span> 瞬发技能</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span> 瞬发技能</li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45717"></span><span>独狼之力</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12468"></span><span>毒箭连射</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12633"></span><span>&quot;干掉他们！&quot;</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="44514"></span><span>撕扯</span>
+</span> </li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="40588"></span><span>原始怒吼</span>
+</span> </li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 col-lg-6 col-md-12">
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">视频 与 日志</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content">
+<ul>
+<li><a class="doc-link" href="javascript:window.open('https://www.bilibili.com/video/av801141029
+?p=32');" target="_blank" rel="nofollow noopener noreferrer">魂兽师 - 症状（单短弓 猞猁） - 小体积 - 33.6k - [DxD.皮皮茶] - GW2 - 2020.07.10</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card ">
+<div class="card-header bg-color-Ranger">
+<h4 class="m-b-0 text-white">说明</h4>
+</div>
+<div class="card-body">
+<div class="build-info-content article-content"><p>开场铺垫1</p>
+<p>在开场前，可以先与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> 并使用以下技能进行铺垫，以提升开场伤害：</p>
+<ol>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12537"></span><span>锋开磨砺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43536"></span><span>双重弧光</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12507"></span><span>致残射击</span>
+</span></li>
+</ol>
+<hr>
+<p>开场铺垫2</p>
+<p>可以进一步铺垫技能：</p>
+<ol>
+<li>与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="52"></span><span>幼龄钢背兽</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span>，并使用 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45479"></span><span>尖锐脊刺</span>
+</span></li>
+<li><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43014"></span><span>离开野兽模式</span>
+</span> 与 <span class="mini-pets">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pets" gw2-ids="3"></span><span>幼龄猞猁</span>
+</span> 进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span></li>
+<li>衔接 开场铺垫1</li>
+</ol>
+<hr>
+<ul>
+<li>尽可能站在目标身后输出，以使短弓技能伤害最大化，并通过 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1068"></span><span>捕猎战术</span>
+</span> 提升伤害。</li>
+<li>特性 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2127"></span><span>狂暴双体</span>
+</span>，可以由 短弓5技能 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12508"></span><span>震荡射击</span>
+</span> 以及 宠物技能触发特性 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1945"></span><span>蛮兽监守</span>
+</span> 施加的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="26"></span><span>嘲讽</span>
+</span> 来获得。全程保持 <span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2127"></span><span>狂暴双体</span>
+</span> 为激活状态是本套配置玩法的核心。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function() {
+    $(".copy-build-code").click(function(){
+        if( $(this).attr('data-clipboard-text') == "" ){
+            layer.msg('未添加模板代码！', {time: 1500, icon: 0});
+        }
+        else{
+            var clipboard = new ClipboardJS( "#" + $(this).attr('id') );
+            clipboard.on('success', function(e) {
+                e.clearSelection();
+                layer.msg('复制成功！', {time: 1000, icon: 1});
+                clipboard.destroy();
+            });
+            clipboard.on('error', function(e) {
+                layer.msg('复制失败，请使用 Ctrl + C 手动复制！', {time: 1500, icon: 2});
+            });
+        }
+    });
+
+    eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('6(5.8.7!=\'2.1.4\'){$(\'.3-e-d-0\').g(\'\');$(\'f a\').9(\'c-b-0\',\'\')}',17,17,'text|gw2data|www|copy|cn|window|if|host|location|attr|button|clipboard|data|code|build|h4|val'.split('|'),0,{}))
+
+
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

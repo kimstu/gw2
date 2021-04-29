@@ -1,0 +1,2841 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>灌注 和 富集 | 升华装备获取 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #c5433b !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #c5433b !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">升华装备获取</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">灌注 和 富集<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+灌注 和 富集 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;泰协内容维护小组</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2019.11.12</div>
+
+</div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li><strong>灌注</strong> 和 <strong>富集</strong> 是升华 或 传奇装备使用的升级组件。</li>
+<li><strong>灌注</strong> 可以提供属性和痛苦抗性，<strong>富集</strong> 可以提供一些通用型效果。</li>
+<li><strong>灌注</strong> 可以安插在除项链以外的 升华 及 传奇 品质装备上，<strong>富集</strong> 只能安插在 升华 或 传奇 项链上。</li>
+<li>可以使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20349"></span><span>升级提取器</span>
+</span> 或 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76409"></span><span>灌注提取装置</span>
+</span> 将已安插的 <strong>灌注</strong> 或 <strong>富集</strong> 从装备上取下。<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76409"></span><span>灌注提取装置</span>
+</span> 可从迷雾碎层商人 <strong>灌注魔像 5959</strong> 处使用 <strong>24 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span></strong> 购买。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">灌注</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">富集</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">灌注属性转换</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">开放世界特效灌注</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">节日特效灌注</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-6" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">大型地下城特效灌注</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-7" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">迷雾碎层特效灌注</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-8" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">神秘熔炉特效灌注</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-9" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">特效富集</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">灌注</h2>
+<ul>
+<li><strong>灌注</strong> 是一类增加属性和痛苦抗性的升级组件，它们可以安插在除项链以外的任意 升华 及 传奇 品质装备的灌注槽上。</li>
+<li><strong>灌注</strong> 主要分为 <strong>痛苦灌注</strong>、<strong>属性灌注</strong>、<strong>世界之战灌注</strong>、<strong>游泳速度灌注</strong> 和 <strong>特效灌注</strong>，<strong>痛苦灌注</strong> 也是 <strong>痛苦抗性</strong> 的主要来源，这对于高层的碎层至关重要。</li>
+</ul>
+<h2 id="-">痛苦灌注</h2>
+<ul>
+<li><strong>痛苦灌注</strong> 主要用于对抗迷雾碎层中的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="58"></span><span>痛苦</span>
+</span> 机制，它能提供痛苦抗性，以保护玩家减免痛苦伤害。</li>
+<li><strong>基础痛苦灌注</strong> 提供 +1 至 +30 的痛苦抗性，通过 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="46"></span><span>工艺制作师</span>
+</span> 可以将两个 <strong>痛苦灌注</strong> 与 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span> 探索合成更高一级的 <strong>痛苦灌注</strong>，也能从碎层商人 <strong>灌注魔像 5959</strong> 处直接购买高级别的痛苦灌注。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49424"></span><span>+1痛苦灌注</span>
+</span> 通过碎层宝箱获得 或 拍卖行购买，高级别的 <strong>痛苦灌注</strong> 也能通过拍卖行购买。</li>
+<li><strong>标准属性灌注</strong> 能同时提供 <strong>痛苦抗性</strong> 和 <strong>属性</strong>。</li>
+</ul>
+<h2 id="-">属性灌注</h2>
+<ul>
+<li><strong>属性灌注</strong> 提供的属性包括 威力、精准、症状伤害、坚韧、体力、治疗效果、增益效果、症状效果。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>基础属性灌注</strong> 提供 +4属性，可以使用 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span> 从桂冠商人处购买。</li>
+<li>国服可以通过 <strong>宗师级制作师</strong> 制作并探索更高属性的灌注。</li>
+<li>在制作台处使用两个 +1属性灌注 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span> 可以探索或合成 +2属性灌注，以此类推。</li>
+<li>以下列出全部可合成的灌注及配方：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">属性</th>
+<th style="text-align:center">副职业</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威能灌注</td>
+<td style="text-align:center">威力</td>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="53"></span><span>武器锻造师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> + 合成木材 + 合成锭 + 合成血瓶</td>
+</tr>
+<tr>
+<td style="text-align:center">强韧灌注</td>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="45"></span><span>盔甲锻造师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> + 合成木材 + 合成锭 + 合成鳞片</td>
+</tr>
+<tr>
+<td style="text-align:center">凶猛灌注</td>
+<td style="text-align:center">暴击伤害</td>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="46"></span><span>工艺制作师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> + 合成木材 + 合成锭 + 合成牙齿</td>
+</tr>
+<tr>
+<td style="text-align:center">恶意灌注</td>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="46"></span><span>工艺制作师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> + 合成木材 + 合成锭 + 合成毒囊</td>
+</tr>
+<tr>
+<td style="text-align:center">治疗灌注</td>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="52"></span><span>裁缝</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> + 合成木材 + 合成锭 + 合成图腾</td>
+</tr>
+<tr>
+<td style="text-align:center">精准灌注</td>
+<td style="text-align:center">精准</td>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="48"></span><span>猎手</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> + 合成木材 + 合成锭 + 合成钩爪</td>
+</tr>
+<tr>
+<td style="text-align:center">体力灌注</td>
+<td style="text-align:center">体力</td>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="50"></span><span>皮革匠</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> + 合成木材 + 合成锭 + 合成骨骼</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>其中的 <strong>合成木材</strong>、<strong>合成锭</strong> 以及其他 <strong>合成材料</strong> 使用 T1 ~ T4 级别的原材料制作而成。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>标准属性灌注</strong> 提供 +5属性，并能提供 +5、+7 或 +9 的痛苦抗性，可以从碎层商人 <strong>灌注魔像 5959</strong> 处使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span> 和 金币购买。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">基础属性灌注</th>
+<th style="text-align:center">+5 标准属性灌注</th>
+<th style="text-align:center">+7 标准属性灌注</th>
+<th style="text-align:center">+9 标准属性灌注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39336"></span><span>威能灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39620"></span><span>+5力量痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37127"></span><span>+7力量痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37131"></span><span>+9力量痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39335"></span><span>精准灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39621"></span><span>+5精准痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37128"></span><span>+7精准痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37132"></span><span>+9精准痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39337"></span><span>恶意灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39619"></span><span>+5恶意痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37129"></span><span>+7恶意痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37130"></span><span>+9恶意痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39339"></span><span>强韧灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39617"></span><span>+5强韧痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37133"></span><span>+7强韧痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37135"></span><span>+9强韧痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39338"></span><span>体力灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39618"></span><span>+5体力痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37134"></span><span>+7体力痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37136"></span><span>+9体力痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39340"></span><span>治疗灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39616"></span><span>+5治疗痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37123"></span><span>+7治疗痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37125"></span><span>+9治疗痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86338"></span><span>+5神秘痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="85881"></span><span>+7神秘痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86180"></span><span>+9神秘痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">-</td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="85971"></span><span>+5险恶痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86150"></span><span>+7险恶痛苦灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86113"></span><span>+9险恶痛苦灌注</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">特效灌注</h2>
+<ul>
+<li><strong>特效灌注</strong> 是一类具有特殊视觉效果的灌注。</li>
+<li><strong>特效灌注</strong> 的视觉效果，会伴随安插同种灌注的数量而增强，但你必须使用不同属性的灌注，否则视觉效果不叠加。</li>
+<li>点击顶部按钮查阅各种 <strong>特效灌注</strong> 的详细信息。</li>
+</ul>
+<h2 id="-">世界之战灌注</h2>
+<ul>
+<li><strong>世界之战灌注</strong> 分为 进攻型灌注 和 防御型灌注，可以从战场的桂冠商人处使用 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span> 和 125 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span> 购买。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">进攻型世界之战灌注</th>
+<th style="text-align:center">防御型世界之战灌注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43254"></span><span>世界之战威能灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43251"></span><span>世界之战强韧灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43255"></span><span>世界之战精准灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43252"></span><span>世界之战体力灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43253"></span><span>世界之战恶意灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43250"></span><span>世界之战治愈灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87218"></span><span>世界之战症状效果灌注</span>
+</span></td>
+<td style="text-align:center"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86986"></span><span>世界之战增益效果灌注</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">游泳速度灌注</h2>
+<ul>
+<li><strong>游泳速度灌注</strong> 是一种安插于呼吸器上的特定灌注，最低为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87528"></span><span>游泳速度灌注+10</span>
+</span>，最高 +30， 可以在狮子拱门同 <strong>跳水大师亚斯特拉</strong> 购买 <strong>游泳速度灌注</strong>。</li>
+<li><strong>跳水大师亚斯特拉</strong> 位置：<strong>避风港传送点</strong> [&amp;BC8EAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="389" image-compress-type="1" alt=""></p>
+<ul>
+<li>在 <strong>跳水大师亚斯特拉</strong> 处可以使用两个低等级的 <strong>游泳速度灌注</strong> 购买高一级的 <strong>游泳速度灌注</strong>。</li>
+<li>每 1点游泳速度属性，提高 1%的游泳速度。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">富集</h2>
+<ul>
+<li><strong>富集</strong> 是一类增加通用型效果的升级组件，例如可以 提升业力获取、击杀经验、金币掉落 等效果。</li>
+<li><strong>富集</strong> 只能安插于 <strong>富集槽</strong> 中，只有 升华 品质的项链拥有一个 <strong>富集槽</strong>，因此一个角色同一时间只能使用一种富集。</li>
+</ul>
+<h2 id="-">富集分类</h2>
+<ul>
+<li><strong>基础富集</strong>，可以从各大主城的桂冠商人处购买，狮子拱门桂冠商人，位置：<strong>马里纳堡垒传送点</strong> [&amp;BDAEAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="390" image-compress-type="1" alt=""></p>
+<ul>
+<li>左侧第二排往下拉</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39331"></span><span>金晶富集</span>
+</span>，花费：20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39333"></span><span>魔法富集</span>
+</span>，花费：20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39330"></span><span>经验富集</span>
+</span>，花费：10 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39332"></span><span>业力富集</span>
+</span>，花费：10 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span></li>
+</ul>
+<hr>
+<ul>
+<li><strong>世界之战富集</strong>，可以从世界之战桂冠商人处购买。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87417"></span><span>世界之战经验富集</span>
+</span>，花费：5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span>，125 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span> </li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87398"></span><span>世界之战奖励富集</span>
+</span>，花费：5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span>，125 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span> </li>
+</ul>
+<hr>
+<ul>
+<li><strong>成就解锁富集</strong>，通过完成成就获得。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79926"></span><span>克丹温暖富集</span>
+</span>，完成成就 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3239"></span><span>克达的祝福</span>
+</span> 后获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="391" image-compress-type="1" alt=""> <img class="gw2-image" image-id="392" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">常规特效灌注 属性转换配方</h2>
+<p>可以使用此配方的灌注包括：</p>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81825"></span><span>查克虫灌注</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81715"></span><span>液体赤金灌注</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81663"></span><span>蜂后灌注</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81653"></span><span>复合冷光波纹灌注（青色）</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="82013"></span><span>复合冷光波纹灌注（黑色）</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81678"></span><span>复合冷光波纹灌注（绿色）</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81864"></span><span>复合冷光波纹灌注（橙色）</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78028"></span><span>墨托的不稳定玩意灌注：红色</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78052"></span><span>墨托的不稳定玩意灌注：蓝色</span>
+</span></li>
+<li><strong>晶化灌注</strong> 无坚韧属性配方</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77310"></span><span>幽灵灌注</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91202"></span><span>无可匹敌灌注</span>
+</span></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74202"></span><span>倒刺荆棘</span>
+</span> × 150</td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74328"></span><span>叶子化石</span>
+</span> × 150</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">迷雾碎层灌注 属性转换配方</h2>
+<p>可以使用此配方的灌注包括：</p>
+<ul>
+<li>+5属性+9痛苦灌注，如 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37131"></span><span>+9力量痛苦灌注</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81919"></span><span>天界灌注（蓝色）</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81783"></span><span>天界灌注（红色）</span>
+</span></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74202"></span><span>倒刺荆棘</span>
+</span> × 150</td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span> × 2 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74328"></span><span>叶子化石</span>
+</span> × 150</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">万圣节灌注 属性转换配方</h2>
+<p>可以使用此配方的灌注包括：</p>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89065"></span><span>余烬灌注</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="85885"></span><span>暗冷磷光灌注</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89007"></span><span>复合冷光波纹灌注（灰色）</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89070"></span><span>复合冷光波纹灌注（紫色）</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89071"></span><span>复合冷光波纹灌注（红色）</span>
+</span></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73430"></span><span>破碎蝙蝠翅膀</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73430"></span><span>破碎蝙蝠翅膀</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73430"></span><span>破碎蝙蝠翅膀</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73430"></span><span>破碎蝙蝠翅膀</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73430"></span><span>破碎蝙蝠翅膀</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73430"></span><span>破碎蝙蝠翅膀</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73430"></span><span>破碎蝙蝠翅膀</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74202"></span><span>倒刺荆棘</span>
+</span> × 150</td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73430"></span><span>破碎蝙蝠翅膀</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74328"></span><span>叶子化石</span>
+</span> × 150</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">冬幕节灌注 属性转换配方</h2>
+<p>可以使用此配方的灌注包括：</p>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79978"></span><span>寒冬之心灌注</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86405"></span><span>雪钻灌注</span>
+</span></li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89426"></span><span>玩具外壳灌注</span>
+</span></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74202"></span><span>倒刺荆棘</span>
+</span> × 150</td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left">已有灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 250 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74328"></span><span>叶子化石</span>
+</span> × 150</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">节日彩纸灌注 属性转换配方</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left">节日彩纸灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84696"></span><span>丘牙兽脊骨</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left">节日彩纸灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84696"></span><span>丘牙兽脊骨</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left">节日彩纸灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84696"></span><span>丘牙兽脊骨</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left">节日彩纸灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84696"></span><span>丘牙兽脊骨</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left">节日彩纸灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84696"></span><span>丘牙兽脊骨</span>
+ </span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left">节日彩纸灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84696"></span><span>丘牙兽脊骨</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left">节日彩纸灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84696"></span><span>丘牙兽脊骨</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74202"></span><span>倒刺荆棘</span>
+</span> × 150</td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left">节日彩纸灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84696"></span><span>丘牙兽脊骨</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74328"></span><span>叶子化石</span>
+</span> × 150</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">可汗之心 属性转换配方</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left">可汗之心灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left">可汗之心灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left">可汗之心灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left">可汗之心灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left">可汗之心灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left">可汗之心灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left">可汗之心灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74202"></span><span>倒刺荆棘</span>
+</span> × 150</td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left">可汗之心灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span> × 100 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74328"></span><span>叶子化石</span>
+</span> × 150</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">神秘灌注 属性转换配方</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left">神秘灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90974"></span><span>灵质石块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24295"></span><span>强力血瓶</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left">神秘灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90974"></span><span>灵质石块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left">神秘灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90974"></span><span>灵质石块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24283"></span><span>强力毒囊</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left">神秘灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90974"></span><span>灵质石块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24300"></span><span>精美图腾</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left">神秘灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90974"></span><span>灵质石块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24289"></span><span>装甲鳞片</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left">神秘灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90974"></span><span>灵质石块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24358"></span><span>远古骨骼</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left">神秘灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90974"></span><span>灵质石块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74202"></span><span>倒刺荆棘</span>
+</span> × 150</td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left">神秘灌注 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="69953"></span><span>英雄选集</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90974"></span><span>灵质石块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74328"></span><span>叶子化石</span>
+</span> × 150</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">查克虫灌注</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81825"></span><span>查克虫灌注</span>
+</span> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> 有相同的特效外观，其视觉效果为角色被蓝色和粉色的光球包围，并在移动时具有拖尾效果。</li>
+</ul>
+<p><img class="gw2-image" image-id="393" image-compress-type="1" alt=""> <img class="gw2-image" image-id="394" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81825"></span><span>查克虫灌注</span>
+</span>，在神秘熔炉使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> 合成，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37131"></span><span>+9力量痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37132"></span><span>+9精准痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37130"></span><span>+9恶意痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37135"></span><span>+9强韧痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37136"></span><span>+9体力痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37125"></span><span>+9治疗痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86180"></span><span>+9神秘痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86113"></span><span>+9险恶痛苦灌注</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72021"></span><span>查克虫卵囊</span>
+</span> 是从 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73893"></span><span>充能石英星陨项链查克虫</span>
+</span> 上拆解得到，请务必使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67283"></span><span>黑狮拆解工具包</span>
+</span> 进行升级组件的回收。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73893"></span><span>充能石英星陨项链查克虫</span>
+</span> 通过 <strong>缠藤深渊</strong> 查克虫王大型地图事件 的最终大宝箱开出（极小几率）。</li>
+</ul>
+<h2 id="-">液体赤金灌注</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81715"></span><span>液体赤金灌注</span>
+</span> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> 有相同的特效外观，其视觉效果为角色的周围不断出现金色微粒并闪烁金光。</li>
+</ul>
+<p><img class="gw2-image" image-id="395" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81715"></span><span>液体赤金灌注</span>
+</span>，在神秘熔炉使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> 合成，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37131"></span><span>+9力量痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37132"></span><span>+9精准痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37130"></span><span>+9恶意痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37135"></span><span>+9强韧痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37136"></span><span>+9体力痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37125"></span><span>+9治疗痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86180"></span><span>+9神秘痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86113"></span><span>+9险恶痛苦灌注</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76063"></span><span>瓶装液体赤金元素</span>
+</span> 是从 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72360"></span><span>充能石英星陨项链尊者</span>
+</span> 上拆解得到，请务必使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67283"></span><span>黑狮拆解工具包</span>
+</span> 进行升级组件的回收。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72360"></span><span>充能石英星陨项链尊者</span>
+</span> 通过 <strong>赤金盆地</strong> 塔瑞尔之战（四门）大型地图事件 的大宝箱开出（极小几率）。</li>
+</ul>
+<p><img class="gw2-image" image-id="396" image-compress-type="1" alt=""></p>
+<h2 id="-">蜂后灌注</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81663"></span><span>蜂后灌注</span>
+</span> 和 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> 有相同的特效外观，其视觉效果为角色被蜜蜂包围，并在移动时出现蜂巢状拖尾。</li>
+</ul>
+<p><img class="gw2-image" image-id="397" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81663"></span><span>蜂后灌注</span>
+</span>，在神秘熔炉使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> 合成，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+ </span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37131"></span><span>+9力量痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37132"></span><span>+9精准痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37130"></span><span>+9恶意痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37135"></span><span>+9强韧痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37136"></span><span>+9体力痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37125"></span><span>+9治疗痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86180"></span><span>+9神秘痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86113"></span><span>+9险恶痛苦灌注</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68440"></span><span>蜂后琥珀标本</span>
+</span> 是从 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68441"></span><span>充能石英星陨项链蜂巢</span>
+</span> 上拆解得到，请务必使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67283"></span><span>黑狮拆解工具包</span>
+</span> 进行升级组件的回收。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68441"></span><span>充能石英星陨项链蜂巢</span>
+</span> 通过 <strong>白银荒地</strong> 突破后击杀 <strong>墨德摩暴怒藤</strong> 有几率掉落（极小几率）。</li>
+</ul>
+<p><img class="gw2-image" image-id="398" image-compress-type="1" alt=""></p>
+<h2 id="-">节日彩纸灌注</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84882"></span><span>节日彩纸灌注</span>
+</span> 是通过完成 <strong>水晶绿洲</strong> 的地图事件 <strong>赌场闪电战</strong> 后从宝箱中开出（极小几率），也可以在 <strong>四风节</strong> 活动的宝箱中开出（极小几率）。</li>
+</ul>
+<p><img class="gw2-image" image-id="399" image-compress-type="1" alt=""> <img class="gw2-image" image-id="400" image-compress-type="1" alt=""> <img class="gw2-image" image-id="401" image-compress-type="1" alt=""></p>
+<h2 id="-">晶化灌注</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88771"></span><span>晶化灌注</span>
+</span> 是通过击杀 <strong>亚哈悬崖</strong> 的地图事件首领 <strong>死亡碎裂巨兽</strong> 后从宝箱中开出（极小几率）。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88771"></span><span>晶化灌注</span>
+</span> 有7种属性：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88771"></span><span>威力晶化灌注</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88871"></span><span>精准晶化灌注</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88732"></span><span>症状伤害晶化灌注</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88603"></span><span>治疗晶化灌注</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88522"></span><span>体力晶化灌注</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88876"></span><span>症状持续时间晶化灌注</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88770"></span><span>增益持续时间晶化灌注</span>
+</span>。没有坚韧属性。</li>
+<li>下图为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88771"></span><span>晶化灌注</span>
+</span> 与 <strong>哈克蛙药剂</strong> 组合使用的效果，从左至右依次为：原色、蓝色、绿色、黄色、橙色、红色</li>
+</ul>
+<p><img class="gw2-image" image-id="402" image-compress-type="1" alt=""></p>
+<h2 id="-">可汗之心</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91930"></span><span>可汗之心</span>
+</span> 是通过完成 <strong>戈瑟玛山谷</strong> 的地图的4个事件获得4把钥匙，然后从可汗宝库的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91922"></span><span>&quot;找回的&quot;夏尔圣器</span>
+</span> 中开出（极小几率）。</li>
+</ul>
+<p><img class="gw2-image" image-id="403" image-compress-type="1" alt=""></p>
+<h2 id="-">冰霜军团灌注</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93720"></span><span>冰霜军团灌注</span>
+</span> 有以下几种获取方式：</li>
+</ul>
+<hr>
+<ul>
+<li>方式1：<strong>雨森海岸 - 寒霜壁垒</strong> 进攻事件后，开启 <strong>华丽宝箱</strong> 有极低概率获得。</li>
+</ul>
+<hr>
+<ul>
+<li>方式2：通过消耗 500 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93751"></span><span>冰巢腐化合剂</span>
+</span> 后，完成成就 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="5372"></span><span>道路尽头</span>
+</span> 后获得。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93751"></span><span>冰巢腐化合剂</span>
+</span> 可从神秘熔炉合成，有以下两种合成方式：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">合成物品</th>
+<th style="text-align:left">材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93751"></span><span>冰巢腐化合剂</span>
+</span> × 10</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93734"></span><span>晶化卓玛血液碎片</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93734"></span><span>晶化卓玛血液碎片</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 200<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75075"></span><span>块状玻璃</span>
+</span> × 250</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93751"></span><span>冰巢腐化合剂</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93734"></span><span>晶化卓玛血液碎片</span>
+</span> × 25<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93734"></span><span>晶化卓玛血液碎片</span>
+</span> × 25<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 20<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75075"></span><span>块状玻璃</span>
+</span> × 25</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75075"></span><span>块状玻璃</span>
+</span> 由 400级 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="49"></span><span>珠宝匠</span>
+</span> 制作，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">合成物品</th>
+<th style="text-align:left">材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75075"></span><span>块状玻璃</span>
+ </span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71641"></span><span>粗糙沙堆</span>
+</span> × 3，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span> × 1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>方式3：神秘熔炉合成</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">合成物品</th>
+<th style="text-align:left">材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93720"></span><span>冰霜军团灌注</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93751"></span><span>冰巢腐化合剂</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93751"></span><span>冰巢腐化合剂</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span> × 250<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92687"></span><span>合成龙族磁石</span>
+</span> × 5</td>
+</tr>
+</tbody>
+</table>
+<p>总计材料消耗：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">数量</th>
+<th style="text-align:left">材料</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">10250</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">25000</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93734"></span><span>晶化卓玛血液碎片</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">50</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24325"></span><span>毁灭者磁石</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">50</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24330"></span><span>水晶磁石</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">50</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24340"></span><span>腐化磁石</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">50</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70842"></span><span>墨德摩藤磁石</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">37500</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71641"></span><span>粗糙沙堆</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:right">12500</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46747"></span><span>热电催化试剂</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>下图为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93720"></span><span>冰霜军团灌注</span>
+</span> 的效果：</li>
+</ul>
+<p><img class="gw2-image" image-id="2069" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">余烬灌注（万圣节）</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89065"></span><span>余烬灌注</span>
+</span> 通过万圣节的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36038"></span><span>捣蛋包</span>
+</span> 开出（极小几率），默认的开出属性为症状伤害。</li>
+</ul>
+<hr>
+<ul>
+<li>下图为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89065"></span><span>余烬灌注</span>
+</span> 与 <strong>复合冷光波纹灌注</strong> 或 <strong>哈克蛙药剂</strong> 联合使用的效果：</li>
+<li>第一排从左到右依次为：原色、黑色、蓝色、青色；</li>
+<li>第二排从左到右依次为：绿色、黄色、橙色、红色；</li>
+</ul>
+<p><img class="gw2-image" image-id="404" image-compress-type="1" alt=""></p>
+<ul>
+<li>下图为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89065"></span><span>余烬灌注</span>
+</span> 与 <strong>寒冬之心灌注</strong>（左）和 <strong>雪钻灌注</strong>（右）联合使用的效果：</li>
+</ul>
+<p><img class="gw2-image" image-id="405" image-compress-type="1" alt=""></p>
+<h2 id="-">暗冷磷光灌注（万圣节）</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="85885"></span><span>暗冷磷光灌注</span>
+</span> 通过万圣节的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36038"></span><span>捣蛋包</span>
+</span> 开出（极小几率），默认的开出属性为症状伤害。</li>
+</ul>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="85885"></span><span>暗冷磷光灌注</span>
+</span> 会影响皮肤和头发的颜色，它会覆盖 <strong>复合冷光波纹灌注 / 透镜</strong> 或 <strong>哈克蛙药剂</strong> 作用下的头发和皮肤颜色，但护甲和眼睛不受影响。</li>
+<li>任何经过图像设置的玩家都可以在 WvW模式 下看到发光效果，但 PvP模式 下禁用发光。</li>
+<li>下图为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="85885"></span><span>暗冷磷光灌注</span>
+</span> 与 <strong>复合冷光波纹灌注 / 透镜（青色、黑色、绿色、橙色）</strong> 或 <strong>哈克蛙药剂</strong> 联合使用的效果：</li>
+<li>第一排从左到右依次为：原色、黑色、蓝色、青色；第二排从左到右依次为：绿色、黄色、橙色、红色；</li>
+</ul>
+<p><img class="gw2-image" image-id="406" image-compress-type="1" alt=""></p>
+<h2 id="-">复合冷光波纹灌注（灰色、紫色、红色）（万圣节）</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89007"></span><span>复合冷光波纹灌注（灰色）</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89070"></span><span>复合冷光波纹灌注（紫色）</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89071"></span><span>复合冷光波纹灌注（红色）</span>
+</span> 通过万圣节的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36038"></span><span>捣蛋包</span>
+</span> 开出（极小几率），默认的开出属性为症状伤害。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>复合冷光波纹灌注（灰色、紫色、红色）</strong> 与 <strong>哈克蛙药剂</strong> 和 <strong>复合冷光波纹灌注 / 透镜（青色、黑色、绿色、橙色）</strong> 有相同的效果优先级，最后一个穿戴的将会覆盖其他效果。脱下最后穿戴的装备，将会在其他同级效果中随机使用一种。</li>
+<li>该效果不会影响角色的皮肤、背部、武器、滑翔翼。个别发型以及夏尔的犄角不受影响。</li>
+<li>下图从左到右依次为：灰色、紫色、红色</li>
+</ul>
+<p><img class="gw2-image" image-id="407" image-compress-type="1" alt=""></p>
+<h2 id="-">复合冷光波纹灌注（青色、黑色、绿色、橙色）（万圣节）</h2>
+<ul>
+<li><strong>复合冷光波纹灌注（青色、黑色、绿色、橙色）</strong>，在神秘熔炉使用 <strong>复合冷光波纹透镜（青色、黑色、绿色、橙色）</strong> 合成，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">神秘熔炉配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">威力</td>
+<td style="text-align:left">复合冷光波纹透镜 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37131"></span><span>+9力量痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">精准</td>
+<td style="text-align:left">复合冷光波纹透镜 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37132"></span><span>+9精准痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">症状伤害</td>
+<td style="text-align:left">复合冷光波纹透镜 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37130"></span><span>+9恶意痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">坚韧</td>
+<td style="text-align:left">复合冷光波纹透镜 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37135"></span><span>+9强韧痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">体力</td>
+<td style="text-align:left">复合冷光波纹透镜 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37136"></span><span>+9体力痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">治疗效果</td>
+<td style="text-align:left">复合冷光波纹透镜 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="37125"></span><span>+9治疗痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">增益效果</td>
+<td style="text-align:left">复合冷光波纹透镜 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86180"></span><span>+9神秘痛苦灌注</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:center">症状效果</td>
+<td style="text-align:left">复合冷光波纹透镜 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20799"></span><span>神秘水晶</span>
+</span> × 5 + <span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38023"></span><span>球形凝固迷雾精华</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86113"></span><span>+9险恶痛苦灌注</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>复合冷光波纹透镜（青色、黑色、绿色、橙色）</strong> 分别是从 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79675"></span><span>昂茨的吊链鬼魂的</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67376"></span><span>昂茨的吊链食尸鬼</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67373"></span><span>昂茨的吊链灵猫</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67361"></span><span>昂茨的吊链南瓜</span>
+</span> 上拆解得到，请务必使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67283"></span><span>黑狮拆解工具包</span>
+</span> 进行升级组件的回收。这些物品可以通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36038"></span><span>捣蛋包</span>
+</span> 开出（极小几率）。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>复合冷光波纹灌注 / 透镜（青色、黑色、绿色、橙色）</strong> 与 <strong>哈克蛙药剂</strong> 和 <strong>复合冷光波纹灌注（灰色、紫色、红色）</strong> 有相同的效果优先级，最后一个穿戴的将会覆盖其他效果。脱下最后穿戴的装备，将会在其他同级效果中随机使用一种。</li>
+<li>由于 <strong>复合冷光波纹灌注（灰色、紫色、红色）</strong> 不会影响皮肤，因此与 <strong>复合冷光波纹灌注 / 透镜（青色、黑色、绿色、橙色）</strong> 联合使用时，皮肤不会被覆盖，但护甲和头发会受影响。</li>
+<li>该效果不会影响角色的 背部、武器、滑翔翼。</li>
+<li>下图依次为：青色、黑色、绿色、橙色 复合冷光波纹灌注 与 黑色、棕色、白色染料 联合使用的效果。</li>
+</ul>
+<p><img class="gw2-image" image-id="408" image-compress-type="1" alt=""> <img class="gw2-image" image-id="409" image-compress-type="1" alt=""> <img class="gw2-image" image-id="410" image-compress-type="1" alt=""> <img class="gw2-image" image-id="411" image-compress-type="1" alt=""></p>
+<h2 id="-">寒冬之心灌注（冬幕节）</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79978"></span><span>寒冬之心灌注</span>
+</span> 通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77604"></span><span>冬幕节礼物</span>
+</span>（包括各类冬幕节礼包）或 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92832"></span><span>德拉克的宝藏</span>
+</span> 开出（极小几率），默认的开出属性为治疗效果。</li>
+</ul>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79978"></span><span>寒冬之心灌注</span>
+ </span> 会使角色皮肤变白，并且周围出现雾气效果，头发和眼睛颜色变为冰蓝色。</li>
+</ul>
+<p><img class="gw2-image" image-id="412" image-compress-type="1" alt=""> <img class="gw2-image" image-id="413" image-compress-type="1" alt=""></p>
+<h2 id="-">雪钻灌注（冬幕节）</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86405"></span><span>雪钻灌注</span>
+</span> 通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77604"></span><span>冬幕节礼物</span>
+</span> 开出（极小几率），默认的开出属性为治疗效果。</li>
+</ul>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86405"></span><span>雪钻灌注</span>
+</span> 会使角色皮肤呈现钻石质感 和 深蓝色的冰霜效果，并拥有白色眼睛 和 蓝色头发。</li>
+</ul>
+<p><img class="gw2-image" image-id="414" image-compress-type="1" alt=""></p>
+<h2 id="-">玩具外壳灌注（冬幕节）</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89426"></span><span>玩具外壳灌注</span>
+</span> 通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77604"></span><span>冬幕节礼物</span>
+</span> 开出（极小几率），默认的开出属性为治疗效果。</li>
+</ul>
+<p><img class="gw2-image" image-id="415" image-compress-type="1" alt=""></p>
+<h2 id="-">墨托的不稳定玩意灌注：红色（超级冒险盒子）</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78028"></span><span>墨托的不稳定玩意灌注：红色</span>
+</span> 附着在 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78071"></span><span>凯撒毒蛇武器盒</span>
+</span>（蛤蟆王版本）开出的升华武器上，默认属性为威力。<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78071"></span><span>凯撒毒蛇武器盒</span>
+</span> 需要完成 <strong>超级冒险盒子</strong> 收藏成就 <strong>蛤蟆王</strong> 获得。</li>
+<li>完成收藏成就 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="3393"></span><span>深红刺客</span>
+</span> 获得的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90102"></span><span>超级刺客背包</span>
+</span> 上也有一个威力属性的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78028"></span><span>墨托的不稳定玩意灌注：红色</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="416" image-compress-type="1" alt=""></p>
+<h2 id="-">墨托的不稳定玩意灌注：蓝色（超级冒险盒子）</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78052"></span><span>墨托的不稳定玩意灌注：蓝色</span>
+</span> 附着在 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78071"></span><span>凯撒毒蛇武器盒</span>
+ </span>（风暴巫师版本）开出的升华武器上，默认属性为威力。<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78071"></span><span>凯撒毒蛇武器盒</span>
+</span> 需要完成 <strong>超级冒险盒子</strong> 收藏成就 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2860"></span><span>风暴巫师</span>
+</span> 获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="417" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-6" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">幽灵灌注</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77310"></span><span>幽灵灌注</span>
+</span> 的视觉效果为人物被深蓝色的火焰包围。需要 <strong>图像选项 - 高级设置 - 动画效果</strong> 设置为 中 以上时才能看到特效。</li>
+<li>友情提示，阿苏拉的特效非常不明显。</li>
+</ul>
+<p><img class="gw2-image" image-id="418" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="77310"></span><span>幽灵灌注</span>
+</span>，有两种获取方法：</li>
+</ul>
+<p>1、击败 <strong>灵魂山谷</strong> 2号 BOSS <strong>多变藤 哥瑟瓦尔</strong> 后，有几率从宝箱中开出。<br>2、成功击败一次 <strong>多变藤 哥瑟瓦尔</strong> 后，使用 <strong>1000 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="28"></span><span>磁铁碎块</span>
+</span></strong> 和 <strong>20金币</strong> 在灵魂山谷副本内的 <strong>学者格里娜</strong> 处购买。</p>
+<ul>
+<li>你也可以通过游戏内的 拍卖行 或 线下交易 购买获得。</li>
+</ul>
+<h2 id="-">无可匹敌灌注</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91202"></span><span>无可匹敌灌注</span>
+</span> 的视觉效果为人物被淡紫色光球包裹，并附带紫色火焰。</li>
+</ul>
+<p><img class="gw2-image" image-id="419" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91202"></span><span>无可匹敌灌注</span>
+</span>，有三种获取方法：</li>
+</ul>
+<p>1、击败 <strong>阿达西姆之钥</strong> 3号 BOSS <strong>无可匹敌的卡迪姆</strong> 后，有几率从宝箱中开出。<br>2、成功击败一次 <strong>无可匹敌的卡迪姆</strong> 后，使用 <strong>2000 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="39"></span><span>盖廷水晶</span>
+</span></strong>和 <strong>20金币</strong> 在阿达西姆之钥副本内的 <strong>学者格里娜</strong> 处购买。<br>3、从阿达西姆之钥副本内的 <strong>学者格里娜</strong> 或 副本外的 <strong>基础磁铁碎片交易专员</strong> 处购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91174"></span><span>巨灵能量簇</span>
+</span> 有几率开出。</p>
+<ul>
+<li>你也可以通过游戏内的 拍卖行 或 线下交易 购买获得。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-7" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">天界灌注（蓝色）</h2>
+<ul>
+<li>获取方式1：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81919"></span><span>天界灌注（蓝色）</span>
+</span> 通过 <strong>破碎观测台（挑战微尘）</strong> 有几率掉落。</li>
+<li>获取方式2：从 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72303"></span><span>碎层大师宝箱</span>
+</span> 中有极小几率开出，属性随机。</li>
+</ul>
+<hr>
+<ul>
+<li>下图为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81919"></span><span>天界灌注（蓝色）</span>
+</span> 和 <strong>复合冷光波纹灌注</strong> 联合使用时的特效，从左至右依次为：原色、黑色、绿色、橙色、青色</li>
+</ul>
+<p><img class="gw2-image" image-id="420" image-compress-type="1" alt=""></p>
+<h2 id="-">天界灌注（红色）</h2>
+<ul>
+<li>获取方式1：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81783"></span><span>天界灌注（红色）</span>
+</span> 通过 <strong>破碎观测台（挑战微尘）</strong> 有几率掉落:</li>
+<li>获取方式2：成功完成一次 <strong>破碎观测台（微尘挑战）</strong> 后，从 <strong>迷雾碎层</strong> 的商人 <strong>BLING-9009</strong> 处购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81790"></span><span>天界灌注宝箱</span>
+</span> 获得，花费：30 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73248"></span><span>稳定基质</span>
+</span>，450 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="94020"></span><span>不稳定碎层精华</span>
+</span>。</li>
+</ul>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81783"></span><span>天界灌注（红色）</span>
+</span> 拾取绑定，无法在玩家间进行交易。</li>
+<li>下图为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81783"></span><span>天界灌注（红色）</span>
+</span> 和 <strong>复合冷光波纹灌注</strong> 联合使用时的特效，从左至右依次为：原色、黑色、绿色、橙色、青色</li>
+</ul>
+<p><img class="gw2-image" image-id="421" image-compress-type="1" alt=""></p>
+<h2 id="-">深渊灌注</h2>
+<ul>
+<li>获取方式：成功完成一次 <strong>桑泉峰（微尘挑战）</strong> 后，从 <strong>迷雾碎层</strong> 的商人 <strong>BLING-9009</strong> 处购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="94017"></span><span>深渊灌注箱</span>
+</span> 获得，花费：30 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73248"></span><span>稳定基质</span>
+</span>，3 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75439"></span><span>碎层日记</span>
+</span>，200 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19721"></span><span>球形灵质</span>
+</span>，1680 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="94020"></span><span>不稳定碎层精华</span>
+</span>。</li>
+</ul>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="94010"></span><span>深渊灌注</span>
+</span> 拾取绑定，无法在玩家间进行交易。</li>
+<li>下图为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="94010"></span><span>深渊灌注</span>
+</span> 特效外观。</li>
+</ul>
+<p><img class="gw2-image" image-id="2068" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-8" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">神秘灌注</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90966"></span><span>神秘灌注</span>
+</span>，使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90974"></span><span>灵质石块</span>
+</span> 和 3个 特异或稀有 品质的 武器或护甲 有几率合成。直接合成的为体力属性。</li>
+</ul>
+<p><img class="gw2-image" image-id="422" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-9" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

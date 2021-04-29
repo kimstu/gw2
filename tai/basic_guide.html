@@ -1,0 +1,2299 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>基础游戏机制 | 游戏攻略 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #c5433b !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #c5433b !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">游戏攻略</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">基础游戏机制<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+基础游戏机制 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;暴君之刃</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2019.10.28</div>
+
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div> </div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li>本文将详细介绍 <strong>激战2</strong> 区别于其他游戏的一些常用机制。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">蔑视条</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">蔑视条减少值</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">属性</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">增益</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">症状</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-6" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">组合技</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-7" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">直接伤害</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-8" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">症状伤害</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-9" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">生命虹吸</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-10" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">移动速度</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">蔑视条</h2>
+<ul>
+<li><strong>蔑视条</strong> 是一些怪物的特殊指示条，它会出现在血条的下方。</li>
+<li>玩家的控制技能对带有蔑视条的怪物不起直接作用，而是减少蔑视条。</li>
+<li>大多数的首领怪物都拥有蔑视条。</li>
+</ul>
+<h2 id="-">蔑视条的三种形态</h2>
+<p><img class="gw2-image" image-id="110" image-compress-type="1" alt=""></p>
+<p>1、灰色蔑视条</p>
+<ul>
+<li>灰色蔑视条表明该怪物不受控制技能影响。</li>
+<li>如果怪物的蔑视被清空，也会呈现此形态。</li>
+</ul>
+<hr>
+<p>2、蓝绿色蔑视条</p>
+<ul>
+<li>大多数首领怪及个别小怪拥有此状态，大多数怪物在拥有此状态时，可以施放特殊技能。</li>
+<li>怪物受到移动限制效果 或 硬控制时，会逐步减少蓝绿色蔑视条。</li>
+<li>如果控制技能施放的不够连贯，短时间内没有再减少蔑视条，怪物会逐步恢复蔑视条，直到再次施放控制。</li>
+<li>一旦蔑视条被清空，怪物就会进入被打破状态，之后转为橙色蔑视条。</li>
+</ul>
+<hr>
+<p>3、橙色蔑视条</p>
+<ul>
+<li>打破状态结束后，蔑视条会呈现橙色，并逐步增长，此时使用控制技能将无法减少蔑视条，直到蔑视条被填满，变为蓝绿色为止。</li>
+</ul>
+<h2 id="-">蔑视条机制</h2>
+<p>1、蔑视条被打破后，怪物可能发生其中一种或几种状态：</p>
+<ul>
+<li>施法被打断 或 停止当前动作，这是最常见的一种状态。</li>
+<li>施加 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="28"></span><span>晕眩</span>
+</span>，使怪物昏迷几秒。</li>
+<li>被 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="31"></span><span>击倒</span>
+</span>。</li>
+<li>施加 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="57"></span><span>暴露</span>
+</span>，使怪物在 5秒内受到的伤害提高 50%。</li>
+<li>一些首领怪物会出现不同的状态，具体请查看： <a href="javascript:window.open('https://wiki.guildwars2.com/wiki/Defiance_bar#Mob-specific_defiance_bars');" target="_blank" rel="nofollow noopener noreferrer" target="_blank" rel="nofollow noopener noreferrer">点击前往</a></li>
+</ul>
+<hr>
+<p>2、蔑视条恢复</p>
+<ul>
+<li>蔑视条受损后，如果一段时间内不再施加控制，将导致蔑视条再生，此时再使用控制技能即可减缓或阻止恢复。</li>
+<li>怪物从打破状态结束后，会出现橙色蔑视条，并逐步增长，此时使用控制技能将无法减少蔑视条，直到蔑视条被填满，变为蓝绿色为止。</li>
+<li>个别的怪物，在蔑视条被打破后不会开始恢复，而是在下次使用特殊技能时，才出现新的蓝绿色蔑视条。</li>
+<li>极少数的怪物，在蔑视条被打破后不会再出现新蔑视条。</li>
+</ul>
+<hr>
+<p>3、动态缩放</p>
+<ul>
+<li>伴随着越来越多的玩家参与击杀怪物，会导致怪物的蔑视值出现缩放，以 600点蔑视值的怪物为例，随着玩家数量的增长将呈现以下变化：</li>
+</ul>
+<p><img class="gw2-image" image-id="111" image-compress-type="1" alt=""></p>
+<hr>
+<p>4、打断奇效</p>
+<ul>
+<li>在对抗部分 BOSS 时，BOSS 达到预定血量可以施放的 <strong>特殊技能</strong> 或 <strong>特殊机制</strong>，有时可以在该时刻破掉蔑视，让 BOSS 进入昏迷状态，从而使 <strong>特殊技能</strong> 或 <strong>特殊机制</strong> 不会被施放。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">症状类控制</h2>
+<ul>
+<li>症状类的被动效果将无法附加给怪物，转而变为减少蔑视条。</li>
+<li>注意症状类控制减少蔑视条会每 0.24秒结算一次，因此，这种破蔑视的方法是将蔑视条逐渐减少。</li>
+<li><p>以下列出症状类控制对蔑视条的具体减少数值。</p>
+</li>
+<li><p><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="23"></span><span>恐惧</span>
+</span>，100点 / 秒</p>
+</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="26"></span><span>嘲讽</span>
+</span>，75 点 / 秒</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="27"></span><span>定身</span>
+</span>，50 点 / 秒</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="24"></span><span>迟缓</span>
+</span>，50 点 / 秒</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="21"></span><span>冰冻</span>
+</span>，33 点 / 秒</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="20"></span><span>目盲</span>
+</span>，20 点 / 秒</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="19"></span><span>虚弱</span>
+</span>，20 点 / 秒</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="18"></span><span>残废</span>
+</span>，15 点 / 秒</li>
+</ul>
+<h2 id="-">硬控</h2>
+<ul>
+<li>硬控会在施加给怪物的瞬间，一次性降低一段蔑视条，减少的具体数值根据以下公式计算：</li>
+</ul>
+<blockquote>
+<p>蔑视条减少值 = 100 × 控制效果持续时间</p>
+</blockquote>
+<ul>
+<li>按此公式计算的硬控效果包括 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="28"></span><span>晕眩</span>
+</span>、<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="35"></span><span>昏迷</span>
+</span>、<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="31"></span><span>击倒</span>
+</span>、<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="29"></span><span>上浮</span>
+</span>、<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="34"></span><span>下沉</span>
+</span>，以及技能施加的 冻结（如 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5721"></span><span>深度冻结</span>
+</span>）、变形（如 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="29519"></span><span>谦逊纹章</span>
+</span>）、石化（如 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13132"></span><span>石蜥毒液</span>
+</span>）。</li>
+<li>控制持续时间不足 1秒的技能，蔑视条减少值固定为 100。超过一秒的非整数持续时间，按照上述公式计算，例如 1.5秒持续时间的技能，蔑视条减少值为 100 × 1.5 = 150。</li>
+<li>特性 及 法印 延长控制时间，可以提高蔑视条减少值。</li>
+</ul>
+<hr>
+<ul>
+<li>一些没有持续时间的控制技能蔑视值如下：</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="30"></span><span>击退</span>
+</span>：150</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="33"></span><span>拉拽</span>
+</span>：150</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="32"></span><span>击飞</span>
+</span>：232</li>
+</ul>
+<hr>
+<ul>
+<li>一些壁障类技能（如 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30273"></span><span>巨龙之咽</span>
+</span>），会根据怪物试图穿过的次数进行结算，具体公式如下：</li>
+</ul>
+<blockquote>
+<p>蔑视条减少值 = 150 × 怪物试图穿过的次数</p>
+</blockquote>
+<ul>
+<li>对于硬控破蔑视的详细说明，请参阅激战2官方wiki： <a href="javascript:window.open('https://wiki.guildwars2.com/wiki/Defiance_bar#Skill_details');" target="_blank" rel="nofollow noopener noreferrer" target="_blank" rel="nofollow noopener noreferrer">点击前往</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">属性</h2>
+<ul>
+<li><strong>属性</strong> 是角色与宠物战斗能力的数值化显示。核心属性有 15种，各属性提供的基本值换算对每个职业都是相同的，但各职业的 <strong>基础生命值</strong> 不同。</li>
+<li><strong>属性</strong> 可以通过装备、升级组件、消耗品 以及某些 特性 或 技能 增加。当高级别的角色前往低等级的地图时，<strong>属性值</strong> 会经过动态缩放。</li>
+</ul>
+<h2 id="-">主属性</h2>
+<ul>
+<li><strong>主属性</strong> 分为四种，两个进攻属性，两个防御属性。</li>
+<li><strong>主属性</strong> 会根据角色等级提升而增加，角色10级以前每次升级都增加，10级后每逢偶数级增加一次，1级时4个主属性各有 37点，80级时，4个主属性 各有1000点。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>威力</strong>，提升直接伤害。</li>
+<li><strong>精准</strong>，增加暴击率。</li>
+<li><strong>坚韧</strong>，增加护甲值。</li>
+<li><strong>体力</strong>，增加生命值。</li>
+</ul>
+<h2 id="-">次属性</h2>
+<ul>
+<li><strong>次属性</strong> 不会跟随角色等级而增加数值，并且基础值为 0。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>暴击效果</strong>，增加暴击伤害。</li>
+<li><strong>增益效果</strong>，延长增益持续时间。</li>
+<li><strong>症状伤害</strong>，增加症状造成的伤害。</li>
+<li><strong>症状效果</strong>，延长症状持续时间。</li>
+<li><strong>治疗效果</strong>，提高角色治疗量，包括自我治疗。</li>
+</ul>
+<h2 id="-">派生属性</h2>
+<ul>
+<li><strong>派生属性</strong> 根据 <strong>主属性</strong> 和 <strong>次属性</strong> 计算得到，<strong>派生属性</strong> 不能作为装备中的属性组合，但可以通过部分职业特性技能、法印符文 以及 消耗品 直接提高数值。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>护甲</strong>，减少直接伤害，通过 <strong>坚韧</strong> 和 装备的 <strong>防御</strong> 提升。</li>
+<li><strong>增益持续时间</strong>，增加所有应用型增益的持续时间，基础值为 0%，每15点 <strong>增益效果</strong> 可以提高 1% 的 <strong>增益持续时间</strong>。</li>
+<li><strong>暴击率</strong>，在 80级时，基础值为 5%，每 21点 <strong>精准</strong> 可以提高 1% 的 <strong>暴击率</strong>。</li>
+<li><strong>暴击伤害</strong>，暴击时所能造成的额外伤害，基础值为 150%，每 15点 <strong>暴击效果</strong> 可以提高 1% <strong>暴击伤害</strong>。</li>
+<li><strong>症状持续时间</strong>，增加所能造成症状的持续时间，基础值为 0%，每 15点 <strong>症状效果</strong> 可以提高 1% <strong>症状持续时间</strong>。</li>
+<li><strong>生命值</strong>，角色的最大生命值，基础值由职业决定，并跟随等级而提升，每 1点 <strong>体力</strong> 提高 10点 <strong>生命值</strong>。</li>
+</ul>
+<h2 id="-">职业属性</h2>
+<ul>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="1"></span><span>元素使</span>
+</span>，<strong>协调冷却速度</strong>，减少 4个协调的冷却时间。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="2"></span><span>战士</span>
+</span>，<strong>爆发技能冷却速度</strong>，减少爆发技能的冷却时间。</li>
+<li><span class="mini-professions_icon">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="3"></span><span>游侠</span>
+</span>，<strong>宠物属性奖励</strong>，改善宠物的属性值。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="4"></span><span>唤灵师</span>
+</span>，<strong>生命力池</strong>，增加生命之力的容量。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="5"></span><span>潜行者</span>
+</span>，<strong>顺手牵羊冷却速度</strong>，减少 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13014"></span><span>顺手牵羊</span>
+</span> 的冷却时间。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="6"></span><span>工程师</span>
+</span>，<strong>工具带冷却速度</strong>，减少工具带技能的冷却时间。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="7"></span><span>守护者</span>
+</span>，<strong>美德冷却速度</strong>，减少美德技能的冷却时间。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="8"></span><span>幻术师</span>
+</span>，<strong>粉碎技能冷却速度</strong>，减少粉碎技能的冷却时间。</li>
+<li><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="9"></span><span>魂武者</span>
+</span>，没有职业属性。</li>
+</ul>
+<h2 id="-">其他属性</h2>
+<ul>
+<li><strong>武器威力</strong>，增加武器技能的直接伤害，只能通过武器获得。</li>
+<li><strong>防御</strong>，增加 <strong>护甲</strong> 值，只能通过护甲和盾牌获得。</li>
+<li><strong>耐力</strong>，角色翻滚闪避需要的能量。</li>
+<li><strong>移动速度</strong>。</li>
+<li><strong>对外治疗效果</strong>，提升对他人的治疗量，但不能提升对自身的治疗量。通过一些特性、符文 和 消耗品获得。</li>
+</ul>
+<h2 id="-">特殊属性</h2>
+<ul>
+<li>这些属性只能在特定的情形下有用。</li>
+</ul>
+<hr>
+<ul>
+<li><strong>痛苦抗性</strong>，提高对痛苦伤害的减免效果，有碎层专精后，痛苦抗性可以按照比例提供 <strong>次属性</strong>，仅在迷雾碎层内有效。</li>
+<li><strong>金币获取率</strong>，增加击败敌人后获得的金币，属于账号加成。</li>
+<li><strong>业力获取率</strong>，增加完成任务后获得的业力，属于账号加成。</li>
+<li><strong>经验寻获率</strong>，增加消灭敌人后获取的经验值，属于账号加成。</li>
+<li><strong>宝物寻获率</strong>，提高找到稀有物品的几率，属于账号加成，也在 <strong>英雄：装备</strong> 面板中显示。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">增益</h2>
+<ul>
+<li><strong>增益</strong> 即一般网游中所说的 buff，它们可以来源于职业技能提供，或是通过触发 <strong>法印</strong>、<strong>符文</strong>、<strong>消耗品</strong> 及 <strong>技能组合技</strong> 获得，个别技能甚至可以将症状转化为增益。</li>
+</ul>
+<h2 id="-">增益 与 症状 类型</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">增益名称</th>
+<th style="text-align:left">效果堆叠<br>最高可堆叠</th>
+<th style="text-align:left">持续时间堆叠<br>最高可堆叠</th>
+<th style="text-align:left">增益说明</th>
+<th style="text-align:left">增益被腐化后的症状</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="9"></span><span>圣盾</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">9层</td>
+<td style="text-align:left">格挡下次攻击。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="22"></span><span>燃烧</span>
+</span>（1层 3秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="13"></span><span>敏捷</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">9层</td>
+<td style="text-align:left">覆盖时间内每秒减少原先 1.25秒的冷却时间，全程覆盖时相当于缩减 20%的冷却时间。<br><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1978"></span><span>强化敏捷</span>
+</span>（幻术师） 特性可以将每秒减少时间提高至 1.5秒，全程覆盖时相当于缩减 33%的冷却时间。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="21"></span><span>冰冻</span>
+</span>（3秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="5"></span><span>激怒</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">9层</td>
+<td style="text-align:left">暴击率提高20%。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="20"></span><span>目盲</span>
+</span>（5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span></td>
+<td style="text-align:left">25层</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">80级时，每层提高 30 威力 和 症状伤害，25层即 750 威力 和 症状伤害。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="19"></span><span>虚弱</span>
+</span>（5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">受到的直伤伤害降低33%，对于 症状伤害 和 坠落伤害 不能减少。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="17"></span><span>易伤</span>
+</span>（3层 8秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="2"></span><span>急速</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">技能施法速度 和 行动速度加快 50%。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="24"></span><span>迟缓</span>
+</span>（3秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="10"></span><span>再生</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">每秒获得生命值，根据施法者的 治疗效果 影响治疗量。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="15"></span><span>中毒</span>
+</span>（6秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="4"></span><span>抗性</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">持续时间内的 症状伤害 及 症状控制效果 将暂时失效。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="21"></span><span>冰冻</span>
+</span>（3秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="11"></span><span>反弹</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">将攻击的直伤伤害反馈给攻击者，若攻击丢失，则不会触发反馈。<br>拥有反弹的玩家在遭受攻击后，并不能豁免伤害。<br>反馈伤害与攻击者的 等级 及其 威力 有关。<br>PvP 和 WvW 模式下会减少三分之一的伤害。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="25"></span><span>困惑</span>
+</span>（3层 5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="6"></span><span>稳固</span>
+</span></td>
+<td style="text-align:left">25层</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">不会被击倒、击退、拉拽、击飞、昏迷、晕眩、上浮、下沉、恐惧或嘲讽。<br>每层抵消一次硬控，症状类软控制除外（它们的效果依然生效）：残废、冰冻、定身、迟缓。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="23"></span><span>恐惧</span>
+</span>（5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">9层</td>
+<td style="text-align:left">移动速度提高 33%。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="18"></span><span>残废</span>
+</span>（10秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="8"></span><span>活力</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">耐力（闪避条）恢复速度提高 50%。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="14"></span><span>流血</span>
+</span>（2层 8秒）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>增益持续时间可以被施法者的 <strong>增益效果</strong> 延长时间，最高可延长至原始效果 100% 的持续时间。</li>
+<li>效果堆叠仅能叠加 1层的 <strong>时间堆叠</strong> 类的增益，总持续时间等于 全部层的持续时间之和，先叠加的层，持续时间先被消耗。</li>
+<li>无论是 <strong>效果堆叠</strong> 还是 <strong>持续时间堆叠</strong> 的增益，每层都有单独持续时间，满层后再堆叠，会先判断新叠加的持续时间 是否高于持续时间最低的层，如果新叠加的更高，则会将持续时间最低的层移除，转而将新叠加层追加到堆栈末尾，否则新叠加的会被遗弃。</li>
+<li>详细堆叠说明可以查看此贴：<a href="javascript:window.open('https://tieba.baidu.com/p/5980150766');" target="_blank" rel="nofollow noopener noreferrer" target="_blank" rel="nofollow noopener noreferrer">点击前往</a></li>
+<li>增益分享的优先级为：<strong>小队成员</strong>＞<strong>团队成员</strong>＞<strong>非组队成员</strong>＞<strong>自己的召唤物</strong>＞<strong>团队的召唤物</strong>＞<strong>所有绿名盟友（包括NPC）</strong></li>
+</ul>
+<h2 id="-">需要经过计算的增益</h2>
+<ul>
+<li>有效等级：即你在当前地图平衡后的等级。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">增益名称</th>
+<th style="text-align:left">说明</th>
+<th style="text-align:left">计算公式</th>
+<th style="text-align:left">80级简化公式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span></td>
+<td style="text-align:left">每层所能提供的威力 或 症状伤害</td>
+<td style="text-align:left">0.3125 × 有效等级 + 5</td>
+<td style="text-align:left">30</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="10"></span><span>再生</span>
+</span></td>
+<td style="text-align:left">每秒治疗量</td>
+<td style="text-align:left">(5 + (1.5625 × 有效等级)) + (0.125 × 治疗效果)</td>
+<td style="text-align:left">130 + (0.125 × 施法者治疗效果)</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="11"></span><span>反弹</span>
+</span>（PvE）</td>
+<td style="text-align:left">每次反弹伤害</td>
+<td style="text-align:left">(0.075 × 攻击者威力) + (0.03 * (攻击者有效等级 ^ 2)) + 8</td>
+<td style="text-align:left">(0.075 × 攻击者威力) + 200</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="11"></span><span>反弹</span>
+</span>（PvP / WvW）</td>
+<td style="text-align:left">每次反弹伤害</td>
+<td style="text-align:left">(0.05 × 攻击者威力) + (0.02 * (攻击者有效等级 ^ 2)) + 8</td>
+<td style="text-align:left">(0.05 × 攻击者威力) + 136</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">症状</h2>
+<ul>
+<li><strong>症状</strong> 即一般网游中所说的 debuff 和 dot伤害，它们可以来源于职业技能提供，或是通过触发 <strong>法印</strong>、<strong>符文</strong>、<strong>消耗品</strong> 及 <strong>技能组合技</strong> 获得，个别技能甚至可以将增益转化为症状。</li>
+</ul>
+<h2 id="-">症状类型</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">症状名称</th>
+<th style="text-align:left">效果堆叠<br>最高可堆叠</th>
+<th style="text-align:left">持续时间堆叠<br>最高可堆叠</th>
+<th style="text-align:left">症状说明</th>
+<th style="text-align:left">对应增益<br>症状被转化后的增益</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="14"></span><span>流血</span>
+</span></td>
+<td style="text-align:left">1500层</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">每秒造成伤害。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="8"></span><span>活力</span>
+</span>（10秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="22"></span><span>燃烧</span>
+</span></td>
+<td style="text-align:left">1500层</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">每秒造成伤害。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="9"></span><span>圣盾</span>
+</span>（5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="25"></span><span>困惑</span>
+</span></td>
+<td style="text-align:left">1500层</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">技能激活时受到伤害。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="11"></span><span>反弹</span>
+</span>（5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="15"></span><span>中毒</span>
+</span></td>
+<td style="text-align:left">1500层</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">每秒造成伤害，治疗效果降低 33%。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="10"></span><span>再生</span>
+</span>（5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="16"></span><span>折磨</span>
+</span></td>
+<td style="text-align:left">1500层</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">每秒造成伤害，对移动的敌人造成额外伤害。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>（1层10秒）</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="20"></span><span>目盲</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">9层</td>
+<td style="text-align:left">下次 攻击 或 施放的技能 无法命中。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="5"></span><span>激怒</span>
+</span>（5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="21"></span><span>冰冻</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">移速降低 66%，技能冷却时间增加 66%。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="13"></span><span>敏捷</span>
+</span>（2秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="18"></span><span>残废</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">移速降低 50%。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span>（10秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="23"></span><span>恐惧</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">背对施法者逃跑，可以被解除昏迷类技能打破状态。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="6"></span><span>稳固</span>
+</span>（1层 3秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="27"></span><span>定身</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">3层</td>
+<td style="text-align:left">无法移动。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="4"></span><span>抗性</span>
+</span>（2秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="24"></span><span>迟缓</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">9层</td>
+<td style="text-align:left">技能读条速度 和 攻击速度 降低 50%，在此期间，闪避速度及移速也降低。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="2"></span><span>急速</span>
+</span>（3秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="26"></span><span>嘲讽</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">强制攻击施法者，可以被解除昏迷类技能打破状态。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="4"></span><span>抗性</span>
+</span>（2秒）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="19"></span><span>虚弱</span>
+</span></td>
+<td style="text-align:left">1层</td>
+<td style="text-align:left">5层</td>
+<td style="text-align:left">耐力恢复速度降低50%，50%的几率攻击偏斜（仅造成50%伤害）。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>（1层10秒）</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="17"></span><span>易伤</span>
+</span></td>
+<td style="text-align:left">25层</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">每层增加 1%受到的 直伤 和 症状伤害。</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span>（3秒）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>症状持续时间可以被施法者的 <strong>症状效果</strong> 延长时间，可以通过提升症状效果、特性以及各种升级组件、食物等来延长症状持续时间，但最多不会超过 100%。</li>
+<li>伤害型症状每秒造成的伤害与施法者的 <strong>症状伤害</strong> 属性有关，具体请通过顶部的 <strong>症状伤害</strong> 按钮查看。</li>
+<li>效果堆叠仅能叠加 1层的 <strong>时间堆叠</strong> 类 症状，总持续时间等于 全部层的持续时间之和，先叠加的层，持续时间先被消耗。</li>
+<li>无论是 <strong>效果堆叠</strong> 还是 <strong>持续时间堆叠</strong> 的 症状，每层都有单独持续时间，满层后再堆叠，会先判断新叠加的持续时间 是否高于持续时间最低的层，如果新叠加的更高，则会将持续时间最低的层移除，转而将新叠加层追加到堆栈末尾，否则新叠加的会被遗弃。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-6" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">组合技</h2>
+<ul>
+<li><strong>组合技 (Combo)</strong>，是指 <strong>组合终结技</strong> 作用于 <strong>组合技区域</strong> 时，可以产生额外的附加效果。这些组合效果在一些特殊情况下，可以发挥巨大的作用。</li>
+<li>在 激战2 的职业技能中有 9类 <strong>组合技区域</strong> 技能，分别是黑暗、幻光、火焰、寒冰、流水、光明、闪电、毒素、烟雾；4类 <strong>组合终结技</strong>：爆炸，跳跃，物理投射物，旋风。</li>
+</ul>
+<h2 id="-">组合终结技</h2>
+<ul>
+<li><strong>爆炸</strong>：组合效果将作用于爆炸触发区域附近的 敌人 或 盟友，范围360。</li>
+<li><strong>跳跃</strong>：将组合效果作用于 目标敌人 或 自身。</li>
+<li><strong>物理投射物</strong>：作用于 目标敌人 或 目标240范围内的盟友。常见的投射物技能会标示出每次弹道投射有20%的几率产生效果，而未标示的则为100%。</li>
+<li><strong>旋风</strong>：随机向四周发射多个物理投射物，每一束投射物都相当于 <strong>物理投射物</strong>。</li>
+</ul>
+<h2 id="-">组合效果</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">组合技区域</th>
+<th style="text-align:left">爆炸</th>
+<th style="text-align:left">跳跃</th>
+<th style="text-align:left">物理投射物</th>
+<th style="text-align:left">旋风</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">黑暗</td>
+<td style="text-align:left">范围性 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="20"></span><span>目盲</span>
+</span>（3秒）</td>
+<td style="text-align:left">黑暗光环（5秒）</td>
+<td style="text-align:left">生命偷取</td>
+<td style="text-align:left">生命偷取</td>
+</tr>
+<tr>
+<td style="text-align:left">幻光</td>
+<td style="text-align:left">范围性 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="10331"></span><span>混乱护甲</span>
+</span>（3秒）</td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="10331"></span><span>混乱护甲</span>
+</span>（5秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="25"></span><span>困惑</span>
+</span>（5秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="25"></span><span>困惑</span>
+</span>（5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left">火焰</td>
+<td style="text-align:left">范围性 <span class="mini-skills_icon">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>（3层 20秒）</td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5678"></span><span>火焰护盾</span>
+</span>（5秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="22"></span><span>燃烧</span>
+</span>（1秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="22"></span><span>燃烧</span>
+</span>（1秒）</td>
+</tr>
+<tr>
+<td style="text-align:left">寒冰</td>
+<td style="text-align:left">范围性 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5520"></span><span>冰霜光环</span>
+</span>（3秒）</td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5520"></span><span>冰霜光环</span>
+</span>（5秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="21"></span><span>冰冻</span>
+</span>（1秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="21"></span><span>冰冻</span>
+</span>（1秒）</td>
+</tr>
+<tr>
+<td style="text-align:left">光明</td>
+<td style="text-align:left">范围性 症状清除</td>
+<td style="text-align:left">明亮光环（5秒）</td>
+<td style="text-align:left">症状清除</td>
+<td style="text-align:left">症状清除</td>
+</tr>
+<tr>
+<td style="text-align:left">闪电</td>
+<td style="text-align:left">范围性 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span>（10秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="28"></span><span>晕眩</span>
+</span>（1秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="17"></span><span>易伤</span>
+</span>（2层 5秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="17"></span><span>易伤</span>
+</span>（2层 5秒）</td>
+</tr>
+<tr>
+<td style="text-align:left">毒素</td>
+<td style="text-align:left">范围性 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="19"></span><span>虚弱</span>
+</span>（3秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="19"></span><span>虚弱</span>
+</span>（8秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="15"></span><span>中毒</span>
+</span>（2秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="15"></span><span>中毒</span>
+</span>（2秒）</td>
+</tr>
+<tr>
+<td style="text-align:left">烟雾</td>
+<td style="text-align:left">范围性 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="37"></span><span>潜行</span>
+</span>（3秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="37"></span><span>潜行</span>
+</span>（3秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="20"></span><span>目盲</span>
+</span>（3秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="20"></span><span>目盲</span>
+</span>（3秒）</td>
+</tr>
+<tr>
+<td style="text-align:left">流水</td>
+<td style="text-align:left">范围性 治疗</td>
+<td style="text-align:left">治疗</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="10"></span><span>再生</span>
+</span>（2秒）</td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="10"></span><span>再生</span>
+</span>（2秒）</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>两个组合技区域重叠，会有组合优先级顺序。</li>
+<li>黑暗光环：在黑暗光环的包围下，每次受到攻击时都会降低受到的伤害，并反馈 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="16"></span><span>折磨</span>
+</span>。（对每名攻击者有1秒内置CD）</li>
+<li>明亮光环：参见 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43176"></span><span>闪耀火花</span>
+</span>（全息师），受到伤害时会获得 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="11"></span><span>反弹</span>
+</span>，并减少10%受到的症状伤害。（对每名攻击者有1秒内置CD）</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-7" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">直接伤害</h2>
+<ul>
+<li><strong>直接伤害</strong>，即直伤，指由技能或特性直接造成的伤害，可以暴击，并可被目标的护甲减免伤害。</li>
+</ul>
+<h2 id="-">直伤理论伤害计算</h2>
+<blockquote>
+<p>直伤理论伤害值 = 武器威力 × 威力 × 技能伤害系数 / 目标护甲</p>
+</blockquote>
+<ul>
+<li><strong>武器威力</strong>：即所佩戴武器的“武器威力”随机分布数。通用技能及精英技能通常不由武器威力影响伤害，而是基于玩家等级来计算。武器威力在技能的持续时间内是固定的，特别是脉冲类技能和引导类技能。</li>
+<li><strong>威力</strong>：玩家属性面板上的威力值。</li>
+<li><strong>技能伤害系数</strong>：每项技能都有一个独特的系数来计算造成的伤害。游戏中并不直接显示伤害系数，我们的技能数据库中对伤害系数有额外标注。</li>
+<li><strong>目标护甲</strong>：目标属性面板上的护甲值。</li>
+</ul>
+<hr>
+<p>直伤的最终伤害值会因为以下效果增强或削弱：</p>
+<ul>
+<li>暴击会增加直接伤害，暴击的默认伤害为 150% 的基础伤害值，这个百分比可以由暴击效果属性来提高。暴击率最高为 100%。</li>
+<li>叠加在自身的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="12"></span><span>威能</span>
+</span>、<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="5"></span><span>激怒</span>
+</span> 会通过改变属性，提高直伤伤害。</li>
+<li>可以通过食物、通用效果、升级组件提高角色属性，从而提高伤害。</li>
+<li>一些目标在蔑视条被打破后，可以提高对其造成的直接伤害。</li>
+<li>攻击偏斜会导致直接伤害减少 50%。偏斜通常由角色的等级差以及 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="19"></span><span>虚弱</span>
+</span> 导致。</li>
+<li>目标身上的每层 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="17"></span><span>易伤</span>
+</span> 都可以提高 1% 的直接伤害。</li>
+<li>目标身上的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="3"></span><span>保护</span>
+</span> 将降低 33% 的直接伤害。</li>
+</ul>
+<hr>
+<p>为了稳定的造成直伤伤害，应尽量避免以下情况发生：</p>
+<ul>
+<li>自身被 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="20"></span><span>目盲</span>
+</span> 影响，将导致攻击或技能丢失。</li>
+<li>目标被其他单位阻挡或处于闪避状态。</li>
+<li>超出攻击或技能范围。</li>
+<li>目标被地形或物体阻隔。</li>
+<li>目标处于 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="36"></span><span>无敌</span>
+</span> 状态下。</li>
+</ul>
+<h2 id="-">直伤实际伤害计算</h2>
+<ul>
+<li>游戏中，直伤的技能通常会标注参考伤害值（由图标 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="41"></span><span>伤害</span>
+</span> 标识），这个伤害基于以下公式计算得出：</li>
+</ul>
+<blockquote>
+<p>参考伤害值 = 攻击次数 × [ 武器威力平均值 × 威力 × 每一击伤害系数 / 基于目标等级的参照护甲 ]</p>
+</blockquote>
+<ul>
+<li>方括号中的计算结果是经过四舍五入的。</li>
+<li>武器威力平均值，是由“武器威力”的 （最大值+最小值 / 2） 得出。通用技能及精英技能通常不由武器威力影响伤害，而是基于玩家等级来计算。</li>
+<li>基于目标等级的参照护甲，是由等级决定的，80级时的参考护甲值为 2597。</li>
+<li>由于一些技能可能会有多段伤害，每段伤害在实战中，将基于是否命中来计算总伤害量，而非参考的总伤害值。</li>
+<li>一些症状为主的技能往往也拥有一个直接伤害。</li>
+</ul>
+<h2 id="-">技能伤害系数</h2>
+<ul>
+<li>游戏中并未直接列出伤害系数，可以通过以下公式反推算出供参考系数值（仅供80级角色使用，并且由于伤害可能是经过四舍五入后的结果，反推的系数值往往会略有偏差）：</li>
+</ul>
+<blockquote>
+<p>直伤伤害系数 = 2597 × 参考伤害值 / （武器威力 * 威力）</p>
+</blockquote>
+<ul>
+<li>由于一些技能可能会有多段伤害，此时应基于游戏内的提示伤害公式来反推系数值。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-8" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">症状伤害</h2>
+<ul>
+<li><strong>症状伤害</strong> 是由各种症状造成的持续性伤害，该伤害无法暴击，并且不能被目标的护甲减免伤害。</li>
+</ul>
+<h2 id="-">症状伤害计算</h2>
+<ul>
+<li>症状伤害不会因为护甲及坚韧降低伤害值，并且可以通过提升症状效果、特性以及各种升级组件、食物等来延长症状持续时间，但最多不会超过 100%。 </li>
+<li>每层症状的 <strong>持续时间</strong> 和 <strong>秒伤</strong> 在施加给目标的瞬间即被锁定，症状持续期间改变角色属性面板的 <strong>症状持续时间</strong> 和 <strong>症状伤害</strong> 均无法影响这一层的持续时间和伤害。</li>
+<li>以下列出各类症状的伤害计算公式，其中 <strong>症状伤害</strong> 是指角色属性的症状伤害，<strong>有效等级</strong> 即角色在当前地图平衡后的等级。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">症状名称</th>
+<th style="text-align:left">计算公式（每层每秒伤害）</th>
+<th style="text-align:left">80级简化公式（每层每秒伤害）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="14"></span><span>流血</span>
+</span></td>
+<td style="text-align:left">(0.06 × 症状伤害) + (0.25 × 有效等级) + 2</td>
+<td style="text-align:left">(0.06 × 症状伤害) + 22</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="22"></span><span>燃烧</span>
+</span></td>
+<td style="text-align:left">(0.155 × 症状伤害) + (1.55 × 有效等级) + 7.5</td>
+<td style="text-align:left">(0.155 × 症状伤害) + 131.5</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="15"></span><span>中毒</span>
+</span></td>
+<td style="text-align:left">(0.06 × 症状伤害) + (0.375 × 有效等级) + 3.5</td>
+<td style="text-align:left">(0.06 × 症状伤害) + 33.5</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="25"></span><span>困惑</span>
+</span>（技能未激活）</td>
+<td style="text-align:left">0.1 × 有效等级 + 2</td>
+<td style="text-align:left">10</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="25"></span><span>困惑</span>
+</span>（玩家 技能激活）</td>
+<td style="text-align:left">(0.0975 × 症状伤害) + (0.575 × 有效等级) + 3.5</td>
+<td style="text-align:left">(0.0975 × 症状伤害) + 49.5</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="25"></span><span>困惑</span>
+</span>（NPC 技能激活）</td>
+<td style="text-align:left">(0.195 × 症状伤害) + (1.15 × 有效等级) + 3.5</td>
+<td style="text-align:left">(0.195 × 症状伤害) + 95.5</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="23"></span><span>恐惧</span>
+</span></td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">(0.55 × 症状伤害) + 540</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="16"></span><span>折磨</span>
+</span>（PvE，静止）</td>
+<td style="text-align:left">0.06 × 症状伤害 + 0.25 × 等级 + 2</td>
+<td style="text-align:left">0.045 × 症状伤害 + 22</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="16"></span><span>折磨</span>
+</span>（PvP / WvW，静止）</td>
+<td style="text-align:left">0.045 × 症状伤害 + 0.18 × 等级 + 1.5</td>
+<td style="text-align:left">0.045 × 症状伤害 + 15.9</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="16"></span><span>折磨</span>
+</span>（移动）</td>
+<td style="text-align:left">0.09 × 症状伤害 + 0.36 × 等级 + 3</td>
+<td style="text-align:left">0.09 × 症状伤害 + 31.8</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-9" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">生命虹吸</h2>
+<ul>
+<li><strong>生命虹吸</strong> 是一种伤害敌人治疗自己的行为，一些技能或特性可以提供该效果。例如：<span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="45773"></span><span>断魂之峰</span>
+</span></li>
+<li><strong>生命虹吸</strong> 分为两部分：<strong>生命虹吸伤害</strong> 和 <strong>生命虹吸治疗</strong>，它们的数值是单独结算的。</li>
+<li><strong>生命虹吸伤害</strong> 受威力影响，但不会暴击，不受目标护甲减免伤害。</li>
+<li><strong>生命虹吸治疗</strong> 受治疗效果影响，并且不受 <strong>生命虹吸伤害</strong> 数值大小影响。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-10" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">移动速度</h2>
+<ul>
+<li><strong>移动速度</strong> 以 <strong>单位 / 秒</strong> 进行计量。</li>
+<li><strong>侧向移动</strong>、<strong>后退移动</strong> 都要比 <strong>向前移动</strong> 速度慢许多。</li>
+<li>战斗中 <strong>向前移动</strong> 的速度会降低 30%。</li>
+<li><strong>移动速度</strong> 会受到增加移动速度状态的影响，有多个状态时，只有最大加成会生效。例如，角色同时受到 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5572"></span><span>空气纹章</span>
+</span> 和 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span> 影响，此时只会获得 33% 的移速提升。</li>
+</ul>
+<h2 id="-">基础移动速度</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">非战斗移速</th>
+<th style="text-align:left">战斗移速</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">极限移速</td>
+<td style="text-align:left">400</td>
+<td style="text-align:left">400</td>
+</tr>
+<tr>
+<td style="text-align:left">向前移动</td>
+<td style="text-align:left">294</td>
+<td style="text-align:left">210</td>
+</tr>
+<tr>
+<td style="text-align:left">侧向移动</td>
+<td style="text-align:left">180</td>
+<td style="text-align:left">180</td>
+</tr>
+<tr>
+<td style="text-align:left">后退移动</td>
+<td style="text-align:left">105</td>
+<td style="text-align:left">105</td>
+</tr>
+<tr>
+<td style="text-align:left">行走</td>
+<td style="text-align:left">80</td>
+<td style="text-align:left">80</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>移动速度</strong> 的封顶值为 400 单位 / 秒。在非战斗状态下，你需要有 36% 以上的移速加成才能达到这一速度，而战斗状态下，需要有 90% 以上的移速加成才能达到这一速度。</li>
+<li><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="39"></span><span>奔驰疾速</span>
+</span> 可以提供 100%的移速加成，这意味着在战斗中，<span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="39"></span><span>奔驰疾速</span>
+</span> 可使你直接达到 <strong>极限移速</strong>（前提是不受到移速削减类 BUFF 影响）。</li>
+<li><strong>侧向移动</strong> 和 <strong>后退移动</strong> 不能通过任何途径获得超出其基准值的移速。</li>
+</ul>
+<h2 id="-">斜坡移动速度</h2>
+<ul>
+<li>在坡地上，上述的 <strong>基础移动速度</strong> 基准值将转变为坡地上的 <strong>倾斜移速</strong>（包括水平移速 + 垂直移速），因此，水平方向的移速会降低。</li>
+</ul>
+<h2 id="-">水下游泳速度</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">移速</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">基准值</td>
+<td style="text-align:left">约 300</td>
+</tr>
+<tr>
+<td style="text-align:left">+16游泳速度灌注</td>
+<td style="text-align:left">约 350</td>
+</tr>
+<tr>
+<td style="text-align:left">特性提升 25</td>
+<td style="text-align:left">约 380</td>
+</tr>
+<tr>
+<td style="text-align:left">合计</td>
+<td style="text-align:left">约 430</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">滑翔速度</h2>
+<ul>
+<li>滑翔时，水平移速为 294 单位 / 秒，倾斜飞行为 390 单位 / 秒。两种情形下的垂直移速都为 113 单位 / 秒。</li>
+</ul>
+<h2 id="-">坐骑移速</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">移速</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">肉食鸟</td>
+<td style="text-align:left">600</td>
+</tr>
+<tr>
+<td style="text-align:left">弹跳兔</td>
+<td style="text-align:left">575</td>
+</tr>
+<tr>
+<td style="text-align:left">飞鱼（陆地）</td>
+<td style="text-align:left">550</td>
+</tr>
+<tr>
+<td style="text-align:left">飞鱼（水面）</td>
+<td style="text-align:left">850</td>
+</tr>
+<tr>
+<td style="text-align:left">胡狼</td>
+<td style="text-align:left">625</td>
+</tr>
+<tr>
+<td style="text-align:left">狮鹫（普通）</td>
+<td style="text-align:left">500</td>
+</tr>
+<tr>
+<td style="text-align:left">狮鹫（升空）</td>
+<td style="text-align:left">624</td>
+</tr>
+<tr>
+<td style="text-align:left">狮鹫（俯冲）</td>
+<td style="text-align:left">1200</td>
+</tr>
+<tr>
+<td style="text-align:left">狮鹫（抬升）</td>
+<td style="text-align:left">2000</td>
+</tr>
+<tr>
+<td style="text-align:left">翻滚甲虫</td>
+<td style="text-align:left">0 - 1800，平坦地面 610</td>
+</tr>
+<tr>
+<td style="text-align:left">战爪</td>
+<td style="text-align:left">550</td>
+</tr>
+<tr>
+<td style="text-align:left">飞天鳞龙</td>
+<td style="text-align:left">500</td>
+</tr>
+<tr>
+<td style="text-align:left">飞天鳞龙（升空）</td>
+<td style="text-align:left">抬升 300，向前飞行 612，下降 650</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>有关坐骑的更多移速研究报告，请参阅 激战2官方wiki：<a href="javascript:window.open('https://wiki.guildwars2.com/wiki/Mount/Mount_speed_research');" target="_blank" rel="nofollow noopener noreferrer">点击查看</a></li>
+</ul>
+<h2 id="-buff">相关 BUFF</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">BUFF</th>
+<th style="text-align:left">移速影响</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="112" image-compress-type="1" class="original-size"> 奔驰疾速</td>
+<td style="text-align:left">+100%</td>
+<td style="text-align:left">各类技能、特性、符文提供</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="113" image-compress-type="1" class="original-size"> 迷雾形态</td>
+<td style="text-align:left">+66%</td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5554"></span><span>迷雾形态</span>
+</span>（<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="1"></span><span>元素使</span>
+</span>）</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="114" image-compress-type="1" class="original-size"> 编织空气</td>
+<td style="text-align:left">+50%</td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43638"></span><span>自我编织</span>
+</span>（<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span>）</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="115" image-compress-type="1" class="original-size"> 极速菇</td>
+<td style="text-align:left">+40%</td>
+<td style="text-align:left">通过触碰 <strong>极速菇</strong> 获得，需要 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="55"></span><span>决战迈古玛专精</span>
+</span>：精伊策尔蛙知识 - 极速菇。<br>该 BUFF 持续 20秒，不可堆叠持续时间，再次触碰 <strong>极速菇</strong> 会重置为 20秒持续时间。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="116" image-compress-type="1" class="original-size"> 元素祝福</td>
+<td style="text-align:left">+40%</td>
+<td style="text-align:left"><strong>世界之战 - 沙漠边境之地</strong> 地图中的 <strong>元素祭坛</strong> 互动获得。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="116" image-compress-type="1" class="original-size"> 火焰拥抱</td>
+<td style="text-align:left">+40%</td>
+<td style="text-align:left"><strong>世界之战 - 沙漠边境之地</strong> 地图中，所在阵营占领两座 <strong>元素祭坛</strong> 获得。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="117" image-compress-type="1" class="original-size"> 迅捷</td>
+<td style="text-align:left">+33%</td>
+<td style="text-align:left">各类技能、特性、符文提供</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="118" image-compress-type="1" class="original-size"> 契约团领袖</td>
+<td style="text-align:left">+5%（I）<br>+15%（II）<br>+33%（III）</td>
+<td style="text-align:left">需要 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="54"></span><span>泰瑞亚中心专精</span>
+</span>：契约团指挥官 - 契约团导师（I）、补给管理（II）、高级后勤（III）。<br>所在的队伍在城市中拥有永久迅捷奖励。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="119" image-compress-type="1" class="original-size"> 速度增益</td>
+<td style="text-align:left">+15%</td>
+<td style="text-align:left">从主城中的 <strong>速度增益</strong> NPC处获取，每次持续 5分钟。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="120" image-compress-type="1" class="original-size"> 升腾动能</td>
+<td style="text-align:left">+5%</td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1716"></span><span>升腾动能</span>
+</span>（ <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="19"></span><span>预告者</span>
+</span>），基于维持点出提供移速。</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="121" image-compress-type="1" class="original-size"> 挑筋断骨</td>
+<td style="text-align:left">-1 ~ -75%</td>
+<td style="text-align:left"><strong>迷雾碎层 - 雾锁异变 - 挑筋断骨</strong>，每损失 1%生命值 降低 0.75%移速，最多降低 75%。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="121" image-compress-type="1" class="original-size"> 沉重的负担</td>
+<td style="text-align:left">-1 ~ -99%</td>
+<td style="text-align:left"><strong>大型地下城 - 不屈的凯玲</strong> 环境机制，每叠加一层降低 1%移速，最多可堆叠99层。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="122" image-compress-type="1" class="original-size"> 腐败粘液</td>
+<td style="text-align:left">-33%</td>
+<td style="text-align:left">来自 <strong>复生幼龙</strong> 的喷吐。</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="123" image-compress-type="1" class="original-size"> 残废</td>
+<td style="text-align:left">-50%</td>
+<td style="text-align:left">各类技能、特性提供</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="124" image-compress-type="1" class="original-size"> 冰冻</td>
+<td style="text-align:left">-66%</td>
+<td style="text-align:left">各类技能、特性提供</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="125" image-compress-type="1" class="original-size"> 流沙</td>
+<td style="text-align:left">-90%</td>
+<td style="text-align:left">陷入流沙地形后获得</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="126" image-compress-type="1" class="original-size"> 定身</td>
+<td style="text-align:left">无法移动</td>
+<td style="text-align:left">各类技能、特性提供</td>
+</tr>
+<tr>
+<td style="text-align:left"><img class="gw2-image" image-id="127" image-compress-type="1" class="original-size"> 昏迷</td>
+<td style="text-align:left">无法移动</td>
+<td style="text-align:left">各类技能提供</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">职业技能</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">职业</th>
+<th style="text-align:left">技能</th>
+<th style="text-align:left">移速影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="1"></span><span>元素使</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5554"></span><span>迷雾形态</span>
+</span></td>
+<td style="text-align:left">+66%，3秒</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="1"></span><span>元素使</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5572"></span><span>空气纹章</span>
+</span></td>
+<td style="text-align:left">+25%，永久</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43638"></span><span>自我编织</span>
+</span></td>
+<td style="text-align:left">+50%，开启 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="43638"></span><span>自我编织</span>
+</span> 后，切换至 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5494"></span><span>空气协调</span>
+</span> 获得</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="4"></span><span>唤灵师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="10612"></span><span>蝗虫纹章</span>
+</span></td>
+<td style="text-align:left">+25%，永久</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="3"></span><span>游侠</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="12542"></span><span>狩猎纹章</span>
+</span></td>
+<td style="text-align:left">+25%，永久，玩家和战宠可同时获得移速加成</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="5"></span><span>潜行者</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13085"></span><span>匕首风暴</span>
+</span></td>
+<td style="text-align:left">+100%，4秒</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="5"></span><span>潜行者</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="13060"></span><span>暗影纹章</span>
+</span></td>
+<td style="text-align:left">+25%，永久</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="2"></span><span>战士</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="14399"></span><span>回旋斧斩</span>
+</span></td>
+<td style="text-align:left">+50%，旋转时提供</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="9"></span><span>魂武者</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="27107"></span><span>压倒优势</span>
+</span></td>
+<td style="text-align:left">+50%，激活时提供</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">职业特性</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">职业</th>
+<th style="text-align:left">特性</th>
+<th style="text-align:left">移速影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="1"></span><span>元素使</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="221"></span><span>和风疾速</span>
+</span></td>
+<td style="text-align:left">+25% 移速，切换至 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="5494"></span><span>空气协调</span>
+</span> 时触发</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="21"></span><span>编织者</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2090"></span><span>穿梭滑步</span>
+</span></td>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span> 效果提升 20%</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="18"></span><span>时空术士</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1859"></span><span>时流不息</span>
+</span></td>
+<td style="text-align:left">+25% 移速，减少移速限制类症状 25%的持续时间</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="4"></span><span>唤灵师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="788"></span><span>疾速渴嗜</span>
+</span></td>
+<td style="text-align:left">携带匕首，并且生命值高于 75% 时，+ 25%移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="13"></span><span>德鲁伊</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="2056"></span><span>自然神行</span>
+</span></td>
+<td style="text-align:left">没有移速限制类症状时 +33% 移速，减少移速限制类症状 33%的持续时间</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="23"></span><span>魂兽师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1065"></span><span>宠物威勇</span>
+</span></td>
+<td style="text-align:left">进入 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="42944"></span><span>野兽模式</span>
+</span> 后，+30% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="5"></span><span>潜行者</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1284"></span><span>隐秘潜行</span>
+</span></td>
+<td style="text-align:left">进入 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="37"></span><span>潜行</span>
+</span> 后，+50% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="2"></span><span>战士</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1413"></span><span>战士冲锋</span>
+</span></td>
+<td style="text-align:left">持有近战武器时，+25% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="17"></span><span>猎龙者</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1911"></span><span>毁灭高翔</span>
+</span></td>
+<td style="text-align:left">当 <span class="mini-skills">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills" gw2-ids="30083"></span><span>决心之翼</span>
+</span> 未冷却时，+25% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="19"></span><span>预告者</span>
+</span></td>
+<td style="text-align:left"><span class="mini-traits">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="traits" gw2-ids="1716"></span><span>升腾动能</span>
+</span></td>
+<td style="text-align:left">每点维持点数 +5%移速，可与其他移速加成效果叠加</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">相关装备</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">装备</th>
+<th style="text-align:left">移速影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24720"></span><span>超级速度符文</span>
+</span></td>
+<td style="text-align:left">拥有 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="7"></span><span>迅捷</span>
+</span> 时，+66% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24691"></span><span>超级旅者符文</span>
+</span></td>
+<td style="text-align:left">+25% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89999"></span><span>超级烟花符文</span>
+</span></td>
+<td style="text-align:left">+25% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="76813"></span><span>超级激荡符文</span>
+</span></td>
+<td style="text-align:left">+25% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-pvp_runes">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="pvp_runes" gw2-ids="42"></span><span>猞猁符文</span>
+</span>（PvP）</td>
+<td style="text-align:left">+25% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87528"></span><span>游泳速度灌注+10</span>
+</span></td>
+<td style="text-align:left">+10% 游泳速度，灌注属性每提升1点，增加 1%游泳速度，最高可加 30点属性</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">相关消耗品</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">消耗品</th>
+<th style="text-align:left">移速影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71691"></span><span>大师速度令状</span>
+</span></td>
+<td style="text-align:left">+25% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74920"></span><span>专业速度令状</span>
+</span></td>
+<td style="text-align:left">+15% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71928"></span><span>基础速度令状</span>
+</span></td>
+<td style="text-align:left">+10% 移速</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="50083"></span><span>陆行鸟迅羽</span>
+</span></td>
+<td style="text-align:left">+10% 移速</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

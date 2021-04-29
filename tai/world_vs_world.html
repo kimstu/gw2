@@ -1,0 +1,3300 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>世界之战 | 游戏攻略 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+ 
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/guild-wars-2-43823-2880x1800.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/guild-wars-2-43823-2880x1800.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #c5433b !important;
+}
+.article-button-color.active{
+    background-color: #c0392b !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #c5433b !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #c5433b !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #c0392b !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">游戏攻略</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">世界之战<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+世界之战 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;泰协内容维护小组</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2020.04.01</div>
+
+</div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li><strong>世界之战</strong> 是一种大型 PvP 游戏模式，参与的玩家来自三组不同的世界服务器。</li>
+<li>在 <strong>世界之战</strong> 中玩家可以使用攻城器械，与其他服务器的玩家交战，并夺取营地、塔楼、要塞及城堡，来让自己的服务器持续获得积分。</li>
+<li>在 <strong>世界之战</strong> 中，请不要随意对其他玩家进行辱骂，跳尸体，盖器械等不文明行为！</li>
+<li>文明游戏，严禁打击利用第三方软件进行不正当获利，如果你在 <strong>世界之战</strong> 中看到玩家利用BUG或者外挂等进行破坏游戏平衡的行为，请进行举报。如果条件允许可以进行相应的视频录制。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">等级与经验</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">世界之战经验增幅</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">争夺目标</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">攻城器械</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-5" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">突袭奖励</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-6" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">世界之战奖励分支</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-7" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">世界之战奖励分支增幅</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-8" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">世界之战能力</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">概述</h2>
+<ul>
+<li><strong>世界之战等级</strong> 独立于角色等级，主要通过参与 <strong>世界之战</strong> 相关活动（例如占领争夺点、击杀敌对玩家等）获得积分，而增加积分将使角色获得 <strong>世界之战经验</strong>。</li>
+<li><strong>世界之战等级</strong> 每升一级需要 5000点 <strong>世界之战经验</strong>（只有前 4级升级需要 1000、2000、3000、4000 点经验），每提升一级都会给予一点 <strong>世界之战能力点</strong> 和一个 <strong>奖励宝箱</strong>。</li>
+<li>一个账号下的全部角色共享 <strong>世界之战等级</strong>。但不同角色间的 <strong>世界之战能力点</strong> 是独立分配的。</li>
+<li><strong>世界之战等级</strong> 最高可升至 10000级。</li>
+</ul>
+<h2 id="-">升级奖励</h2>
+<ul>
+<li><strong>世界之战等级</strong> 每提升一级，将获得奖励。</li>
+</ul>
+<p><img class="gw2-image" image-id="493" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>世界之战能力点</strong>，用于提升世界之战能力，最多可获得 10000点。当 <strong>世界之战等级</strong> 达到 10000级后将不再获得 <strong>世界之战能力点</strong>。</li>
+<li><strong>世界之战升级宝箱</strong>，每个升级宝箱都包含 少许钱币 和 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span>，此外还有几率获得其他奖励：</li>
+</ul>
+<p>① 、升华戒指、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49208"></span><span>升华武器宝箱</span>
+</span> 或 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49208"></span><span>升华护甲宝箱</span>
+</span><br>② 、稀有 或 特异 品质的 武器 或 护甲，有几率开出传奇前置武器<br>③ 、普通 或 高级 攻城器械蓝图<br>④ 、陷阱<br>⑤ 、世界之战消耗品 或 增幅剂</p>
+<h2 id="-">等级与称号</h2>
+<ul>
+<li>在达到相应世界之战等级后，根据下表所示组合称号，例如：青铜步兵、黄金斥候。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">后缀</th>
+<th style="text-align:right">无</th>
+<th style="text-align:right">青铜</th>
+<th style="text-align:right">白银</th>
+<th style="text-align:right">黄金</th>
+<th style="text-align:right">白金</th>
+<th style="text-align:right">秘银</th>
+<th style="text-align:right">钻石</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">入侵者</td>
+<td style="text-align:right">1</td>
+<td style="text-align:right">150</td>
+<td style="text-align:right">620</td>
+<td style="text-align:right">1395</td>
+<td style="text-align:right">2545</td>
+<td style="text-align:right">4095</td>
+<td style="text-align:right">6445</td>
+</tr>
+<tr>
+<td style="text-align:center">突击兵</td>
+<td style="text-align:right">5</td>
+<td style="text-align:right">180</td>
+<td style="text-align:right">670</td>
+<td style="text-align:right">1470</td>
+<td style="text-align:right">2645</td>
+<td style="text-align:right">4245</td>
+<td style="text-align:right">6695</td>
+</tr>
+<tr>
+<td style="text-align:center">掠夺者</td>
+<td style="text-align:right">10</td>
+<td style="text-align:right">210</td>
+<td style="text-align:right">720</td>
+<td style="text-align:right">1545</td>
+<td style="text-align:right">2745</td>
+<td style="text-align:right">4395</td>
+<td style="text-align:right">6945</td>
+</tr>
+<tr>
+<td style="text-align:center">新兵</td>
+<td style="text-align:right">15</td>
+<td style="text-align:right">240</td>
+<td style="text-align:right">770</td>
+<td style="text-align:right">16620</td>
+<td style="text-align:right">2845</td>
+<td style="text-align:right">4545</td>
+<td style="text-align:right">7195</td>
+</tr>
+<tr>
+<td style="text-align:center">斥候</td>
+<td style="text-align:right">20</td>
+<td style="text-align:right">270</td>
+<td style="text-align:right">820</td>
+<td style="text-align:right">1695</td>
+<td style="text-align:right">2945</td>
+<td style="text-align:right">4695</td>
+<td style="text-align:right">7445</td>
+</tr>
+<tr>
+<td style="text-align:center">士兵</td>
+<td style="text-align:right">30</td>
+<td style="text-align:right">300</td>
+<td style="text-align:right">870</td>
+<td style="text-align:right">1770</td>
+<td style="text-align:right">3045</td>
+<td style="text-align:right">4845</td>
+<td style="text-align:right">7695</td>
+</tr>
+<tr>
+<td style="text-align:center">侍卫</td>
+<td style="text-align:right">40</td>
+<td style="text-align:right">330</td>
+<td style="text-align:right">920</td>
+<td style="text-align:right">1845</td>
+<td style="text-align:right">3145</td>
+<td style="text-align:right">4995</td>
+<td style="text-align:right">7945</td>
+</tr>
+<tr>
+<td style="text-align:center">步兵</td>
+<td style="text-align:right">50</td>
+<td style="text-align:right">360</td>
+<td style="text-align:right">970</td>
+<td style="text-align:right">1920</td>
+<td style="text-align:right">3245</td>
+<td style="text-align:right">5145</td>
+<td style="text-align:right">8195</td>
+</tr>
+<tr>
+<td style="text-align:center">骑士</td>
+<td style="text-align:right">60</td>
+<td style="text-align:right">390</td>
+<td style="text-align:right">1020</td>
+<td style="text-align:right">1995</td>
+<td style="text-align:right">3345</td>
+<td style="text-align:right">5295</td>
+<td style="text-align:right">8445</td>
+</tr>
+<tr>
+<td style="text-align:center">少校</td>
+<td style="text-align:right">70</td>
+<td style="text-align:right">420</td>
+<td style="text-align:right">1070</td>
+<td style="text-align:right">2070</td>
+<td style="text-align:right">3445</td>
+<td style="text-align:right">5445</td>
+<td style="text-align:right">8695</td>
+</tr>
+<tr>
+<td style="text-align:center">上校</td>
+<td style="text-align:right">80</td>
+<td style="text-align:right">450</td>
+<td style="text-align:right">1120</td>
+<td style="text-align:right">2145</td>
+<td style="text-align:right">3545</td>
+<td style="text-align:right">5595</td>
+<td style="text-align:right">8945</td>
+</tr>
+<tr>
+<td style="text-align:center">将军</td>
+<td style="text-align:right">90</td>
+<td style="text-align:right">480</td>
+<td style="text-align:right">1170</td>
+<td style="text-align:right">2220</td>
+<td style="text-align:right">3645</td>
+<td style="text-align:right">5745</td>
+<td style="text-align:right">9195</td>
+</tr>
+<tr>
+<td style="text-align:center">老兵</td>
+<td style="text-align:right">100</td>
+<td style="text-align:right">510</td>
+<td style="text-align:right">1220</td>
+<td style="text-align:right">2295</td>
+<td style="text-align:right">3745</td>
+<td style="text-align:right">5895</td>
+<td style="text-align:right">9445</td>
+</tr>
+<tr>
+<td style="text-align:center">勇士</td>
+<td style="text-align:right">110</td>
+<td style="text-align:right">540</td>
+<td style="text-align:right">1270</td>
+<td style="text-align:right">2370</td>
+<td style="text-align:right">3845</td>
+<td style="text-align:right">6045</td>
+<td style="text-align:right">9695</td>
+</tr>
+<tr>
+<td style="text-align:center">传奇</td>
+<td style="text-align:right">120</td>
+<td style="text-align:right">570</td>
+<td style="text-align:right">1320</td>
+<td style="text-align:right">2445</td>
+<td style="text-align:right">3945</td>
+<td style="text-align:right">6195</td>
+<td style="text-align:right">9945</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">经验值</h2>
+<ul>
+<li>在 <strong>世界之战</strong> 中，敌对玩家存活时间越长，被击杀后可以获得的战场经验值就越多。</li>
+<li>完成事件后，根据参与度进行评估（青铜、白银、黄金），评估等级越高，获得的 <strong>世界之战经验值</strong> 就越多。</li>
+<li>下表根据具体参与活动，列出未经增幅效果加成的标准经验值：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">目标</th>
+<th style="text-align:left">经验值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">击杀敌人</td>
+<td>击杀玩家</td>
+<td>0 ~ 60</td>
+</tr>
+<tr>
+<td>击杀守卫</td>
+<td>20</td>
+</tr>
+<tr>
+<td>击杀监管员 或 领主</td>
+<td>30（营地）、50（塔楼）、75（要塞）、100（石云堡）</td>
+</tr>
+<tr>
+<td>击杀石牦牛</td>
+<td>50</td>
+</tr>
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="4">摧毁攻城器械、<br>摧毁防御设施</td>
+<td>摧毁弓箭车、烈焰撞锤、弩炮、投石车</td>
+<td>15</td>
+</tr>
+<tr>
+<td>摧毁抛石机、攻城魔像</td>
+<td>30</td>
+</tr>
+<tr>
+<td>摧毁大门</td>
+<td>50（塔楼）、80（要塞）</td>
+</tr>
+<tr>
+<td>摧毁墙壁</td>
+<td>120（塔楼）、150（要塞）、180（石云堡）</td>
+</tr>
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="7">占领争夺点</td>
+<td>废墟遗址</td>
+<td>0</td>
+</tr>
+<tr>
+<td>岗哨</td>
+<td>100</td>
+</tr>
+<tr>
+<td>祭坛（沙漠边境）</td>
+<td>100</td>
+</tr>
+<tr>
+<td>营地</td>
+<td>200</td>
+</tr>
+<tr>
+<td>塔楼</td>
+<td>400</td>
+</tr>
+<tr>
+<td>要塞</td>
+<td>800</td>
+</tr>
+<tr>
+<td>石云堡</td>
+ <td>1000</td>
+</tr>
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="4">防守目标</td>
+<td>岗哨</td>
+<td>0</td>
+</tr>
+<tr>
+<td>营地</td>
+<td>85</td>
+</tr>
+<tr>
+<td>塔楼</td>
+<td>150</td>
+</tr>
+<tr>
+<td>要塞、石云堡</td>
+<td>200</td>
+</tr>
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="2">永恒战场雇佣兵</td>
+<td>获得雇佣兵</td>
+<td>200</td>
+</tr>
+<tr>
+<td>消灭敌对雇佣兵</td>
+<td>200</td>
+</tr>
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="3">完成事件</td>
+<td>清除杂草事件</td>
+<td>600</td>
+</tr>
+<tr>
+<td>消灭暴怒的橡树之心</td>
+<td>600</td>
+</tr>
+<tr>
+<td>精英怪</td>
+<td>200</td>
+</tr>
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="2">杂项</td>
+<td>维修大门、墙壁</td>
+<td>每修理一次获得 2点经验值</td>
+</tr>
+<tr>
+<td>完成世界之战中的跳跳乐</td>
+<td>0</td>
+</tr>
+<tr>
+<td colspan="3">&nbsp;</td>
+</tr>
+<tr>
+<td rowspan="5">消耗品</td>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71819"></span><span>滴状即用世界之战经验</span>
+</span></td>
+<td>250</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72485"></span><span>针剂即用世界之战经验</span>
+</span></td>
+<td>2500</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72135"></span><span>小口即用世界之战经验</span>
+</span></td>
+<td>5000</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75635"></span><span>大口即用世界之战经验</span>
+</span></td>
+<td>10000</td>
+</tr>
+<tr>
+<td><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70567"></span><span>桶装即用世界之战经验</span>
+</span></td>
+<td>25000</td>
+</tr>
+</tbody>
+</table> </div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">世界之战经验增幅</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">Buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">相关物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="494" image-compress-type="1" class="original-size"> 经验增幅剂</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70235"></span><span>经验增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20005"></span><span>英雄增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67393"></span><span>玉米糖大胃王</span>
+</span></td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="495" image-compress-type="1" class="original-size"> 50％WvW经验奖励</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45057"></span><span>世界之战经验增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43485"></span><span>迷你世界之战经验增幅剂</span>
+</span></td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="496" image-compress-type="1" class="original-size"> 欢庆加成</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45003"></span><span>生日增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67836"></span><span>庆典增幅剂</span>
+</span></td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="497" image-compress-type="1" class="original-size"> 升华食物</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">各类升华食物</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">地图机制</td>
+<td style="text-align:left"><img class="gw2-image" image-id="498" image-compress-type="1" class="original-size"> 领地光环2：世界之战经验（或更高）</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">领地光环</td>
+<td style="text-align:left">具有 <strong>领地光环2：世界之战经验</strong> 的公会宣夺目标后，在所属区域内活动时获得</td>
+</tr>
+<tr>
+<td style="text-align:left">地图机制</td>
+<td style="text-align:left"><img class="gw2-image" image-id="499" image-compress-type="1" class="original-size"> 寡不敌众</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅当在永恒战场、边境之地、黑曜石庇护所、迷雾边界敌方兵力远高于我方时自动触发，<br>将持续保持到下次 5分钟间隔结算后，才再次判定是否符合要求。<br>获得该 buff 后切换战场地图，将导致 buff 丢失。</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="498" image-compress-type="1" class="original-size"> 周末奖励</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅在 <strong>开放世界地图</strong> 与 <strong>战场地图</strong> 有效</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="500" image-compress-type="1" class="original-size"> 征战号角</td>
+<td style="text-align:right">100%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅在活动期间参与 <strong>世界之战</strong> 有效，<strong>迷雾之地</strong> 地图除外</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="500" image-compress-type="1" class="original-size"> 迷雾之战召唤</td>
+<td style="text-align:right">15%</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅在活动期间参与 <strong>世界之战</strong> 有效，<strong>迷雾之地</strong> 地图除外</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="501" image-compress-type="1" class="original-size"> 公会世界之战经验获得</td>
+<td style="text-align:right">3 ~ 10％</td>
+<td style="text-align:left">公会世界之战经验获得</td>
+<td style="text-align:left">公会大厅内，酒保处购买，基于公会强化的等级决定增加幅度</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="502" image-compress-type="1" class="original-size"> 世界之战经验富集</td>
+<td style="text-align:right">10％</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87417"></span><span>世界之战经验富集</span>
+</span></td>
+<td style="text-align:left">在战场内的桂冠商人处花费 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span>、125 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span> 购买，<br>安插于 <strong>升华</strong> 或 <strong>传奇</strong> 品质的项链上</td>
+</tr>
+<tr>
+<td style="text-align:left">其他</td>
+<td style="text-align:left"><img class="gw2-image" image-id="503" image-compress-type="1" class="original-size"> 石牦牛祝福</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">石牦牛比赛雕像</td>
+<td style="text-align:left">与庇护所内的石牦牛雕像互动获得，每个账号仅限获取一次</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">争夺点</h2> 
+<ul>
+<li>下表列出每张地图 <strong>争夺点</strong> 数量：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">地图</th>
+<th style="text-align:center">营地 <img class="gw2-image" image-id="504" image-compress-type="1" class="original-size"></th>
+<th style="text-align:center">塔楼 <img class="gw2-image" image-id="505" image-compress-type="1" class="original-size"></th>
+<th style="text-align:center">要塞 <img class="gw2-image" image-id="506" image-compress-type="1" class="original-size"></th>
+<th style="text-align:center">城堡 <img class="gw2-image" image-id="507" image-compress-type="1" class="original-size"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">世界之战</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">绿色边境</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">蓝色边境</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">红色边境</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">战争分数</h2>
+<ul>
+<li>每 5分钟，系统会根据每个世界的控制的 <strong>争夺点</strong> 进行分数结算，并累加到所属世界的 <strong>战争分数</strong> 上。</li>
+</ul>
+<p><img class="gw2-image" image-id="508" image-compress-type="1" alt=""></p>
+<ul>
+<li>分数是在下一次 5分钟间隔开始时进行结算的，因此当倒计时显示为 <strong>--:--</strong> 时，占领的 <strong>争夺点</strong> 也会被累加入 <strong>战争分数</strong> 内。</li>
+<li><strong>争夺点</strong> 及其升级后，进行结算的分数如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">争夺点</th>
+<th style="text-align:center">标准</th>
+<th style="text-align:center">安全升级</th>
+<th style="text-align:center">加固升级</th>
+<th style="text-align:center">强化升级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">营地 <img class="gw2-image" image-id="504" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">塔楼 <img class="gw2-image" image-id="505" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td style="text-align:center">要塞 <img class="gw2-image" image-id="506" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">20</td>
+</tr>
+<tr>
+<td style="text-align:center">城堡 <img class="gw2-image" image-id="507" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">30</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">占据争夺点</h2>
+<ul>
+<li>玩家必须击败 <strong>争夺点</strong> 中的 <strong>监管员</strong> 或 <strong>领主</strong>，以便使 <strong>争夺点</strong> 出现 <strong>可占据区域</strong>。</li>
+<li>进行 30秒的占据后，可以将该 <strong>争夺点</strong> 从 <strong>敌对势力</strong> 状态，变更为 <strong>己方势力</strong> 状态。</li>
+<li><strong>敌对守卫</strong> 以及 <strong>敌对玩家</strong> 在进入 <strong>可占据区域</strong> 时，可以阻止进度条增长，直到将其击杀 或 移出 <strong>可占据区域</strong>，才能使进度条持续增长。</li>
+<li>占据 <strong>争夺点</strong>，将根据 <strong>争夺点</strong> 的升级，来为所在世界获得 <strong>战争分数</strong>。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">争夺点</th>
+<th style="text-align:center">标准</th>
+<th style="text-align:center">安全升级</th>
+<th style="text-align:center">加固升级</th>
+<th style="text-align:center">强化升级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">营地 <img class="gw2-image" image-id="504" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:center">塔楼 <img class="gw2-image" image-id="505" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td style="text-align:center">要塞 <img class="gw2-image" image-id="506" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">20</td>
+</tr>
+<tr>
+<td style="text-align:center">城堡 <img class="gw2-image" image-id="507" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">12</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">24</td>
+<td style="text-align:center">30</td>
+</tr>
+</tbody>
+</table>
+<p>占据争夺点后：</p>
+<ul>
+<li>地图中的每个玩家都可以看到占据争夺点的公告。</li>
+<li>除了 <strong>营地</strong> 中的 <strong>石牦牛商队</strong> 外，所有 <strong>守卫</strong> 都恢复为初始状态。</li>
+<li>删除 <strong>争夺点</strong> 的升级，并恢复墙壁和大门。</li>
+<li>变更 <strong>争夺点</strong> 的旗帜颜色为对应世界的颜色。</li>
+<li>计时器开始解锁 <strong>目标升级</strong>。</li>
+<li><strong>争夺点</strong> 首领获得 5分钟 <strong>义愤填膺</strong> BUFF，即 5分钟的无敌状态，防止 <strong>争夺点</strong> 在被短暂占领后夺回。</li>
+<li>公会可以对 <strong>争夺点</strong> 进行宣夺。</li>
+</ul>
+<h2 id="-">争夺点防御措施</h2>
+<ul>
+<li>下表列出各种 <strong>争夺点</strong> 的防御措施：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">防御措施</th>
+<th style="text-align:center">营地 <img class="gw2-image" image-id="504" image-compress-type="1" class="original-size"></th>
+<th style="text-align:center">塔楼 <img class="gw2-image" image-id="505" image-compress-type="1" class="original-size"></th>
+<th style="text-align:center">要塞 <img class="gw2-image" image-id="506" image-compress-type="1" class="original-size"></th>
+<th style="text-align:center">城堡 <img class="gw2-image" image-id="507" image-compress-type="1" class="original-size"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">守卫</td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td style="text-align:center">外墙 / 大门</td>
+<td style="text-align:center"><img class="gw2-image" image-id="510" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td style="text-align:center">领主</td>
+<td style="text-align:center"><img class="gw2-image" image-id="510" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td style="text-align:center">内墙</td>
+<td style="text-align:center"><img class="gw2-image" image-id="510" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="510" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center"><img class="gw2-image" image-id="509" image-compress-type="1" class="original-size"></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>同一个世界占据 <strong>争夺点</strong> 的时间越久，<strong>争夺点</strong> 获得的升级越多，就越难被攻占。</li>
+</ul>
+<h2 id="-">目标升级</h2>
+<ul>
+<li>通过 <strong>争夺点</strong> 获取积分的时间越长，</li>
+</ul>
+<h2 id="-">公会宣夺</h2>
+<ul>
+<li>公会可以对 <strong>争夺点</strong> 进行宣夺。</li>
+<li>公会宣夺 <strong>争夺点</strong> 后，会将自己的徽印展示在 <strong>争夺点</strong> 周围的旗帜上。</li>
+<li>如果公会已经解锁宣夺，则可以在 <strong>争夺点</strong> 使用 战术、改良 以及 公会光环。</li>
+<li>每个公会仅限在每张站场地图上宣夺一次，并在宣夺后，在 <strong>争夺点</strong> 的地图图标上增加一个黄色盾牌以作标识。</li>
+</ul>
+<hr>
+<ul>
+<li>所属公会必须解锁相应升级，并且玩家具有相应的公会权限处于激活状态：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th style="text-align:left">名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="511" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">WvW公会宣夺：营地</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="512" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">WvW公会宣夺：塔楼</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="513" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">WvW公会宣夺：要塞</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="514" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">WvW公会宣夺：石云堡</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>公会领地光环：</p>
+<ul>
+<li><strong>公会领地光环</strong> 是未锁定效果，可以在 <strong>公会宣夺</strong> 后的所属 <strong>争夺点</strong> 区域内，为盟友增加属性 或 其他效果。</li>
+<li>每个效果均按等级解锁，并保持先前解锁效果能力。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="515" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">领地光环1：补给能力</td>
+<td style="text-align:left">+5 补给携带量</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="516" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">领地光环2：世界之战经验</td>
+<td style="text-align:left">+10% 世界之战经验</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="517" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">领地光环3：移动速度</td>
+<td style="text-align:left">+25% 移动速度</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="518" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">领地光环4：威力</td>
+<td style="text-align:left">+100 威力</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="519" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">领地光环5：精准</td>
+<td style="text-align:left">+100 精准</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="520" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">领地光环6：坚韧</td>
+<td style="text-align:left">+100 坚韧</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="521" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">领地光环7：体力</td>
+<td style="text-align:left">+100 体力</td>
+</tr>
+<tr>
+<td style="text-align:center"><img class="gw2-image" image-id="522" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">领地光环8：宝物寻获率</td>
+<td style="text-align:left">+20% 宝物寻获率</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">概述</h2>
+<ul>
+<li><strong>攻城器械</strong> 是 WvW 模式下使用的环境武器，需要经过投放图纸后，由玩家消耗补给进行建造，这些器械只能由同阵营的玩家使用。</li>
+<li><strong>攻城器械</strong> 对于 WvW 的进攻和防御都很重要，它通常是赢得一场战斗的关键。</li>
+</ul>
+<p><img class="gw2-image" image-id="523" image-compress-type="1" alt=""></p>
+<ul>
+<li>投放 <strong>攻城器械</strong> 图纸后，会在地面上创建一个 <strong>建造点</strong>，并由同阵营的玩家，消耗所携带补给进行建造。</li>
+<li>若玩家处于团队中，可以通过团队列表左侧查看整个队伍所携带的 <strong>补给量</strong>。</li>
+<li>在未建造完成前，<strong>建造点</strong> 可以被敌对玩家攻击并减少生命值，减少的生命值越多，需要投入以完成建造的补给就越多。</li>
+<li>若建造未完成，<strong>建造点</strong> 被敌对玩家摧毁，则将失去投入的全部补给。</li>
+<li><strong>攻城器械</strong> 的攻击敌对目标数，取决于器械种类，通常分为 10、20 或 50个目标。而玩家技能的最多敌对目标数为 5个。</li>
+</ul>
+<h2 id="-">攻城器械类型</h2>
+<ul>
+<li>玩家可以建造七种 <strong>攻城器械</strong>。<strong>攻城器械</strong> 需要放置对应的图纸才能建造，由战场内的 <strong>攻城商人</strong> 出售图纸，也可以通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> 开出，或击杀敌对势力的 NPC后有几率掉落。</li>
+<li><strong>攻城器械</strong> 图纸为非账号绑定物品，可以通过拍卖行购买。</li>
+<li>每种 <strong>攻城器械</strong> 都对应一个升级版，建造时需要花费更多补给，并且威力提升 50%。唯一例外的是 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="21159"></span><span>阿尔法攻城魔像蓝图</span>
+</span>，它升级到 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="21259"></span><span>欧米加攻城魔像蓝图</span>
+</span> 后将具备远程攻击能力。<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="21259"></span><span>欧米加攻城魔像蓝图</span>
+</span> 可以从 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78194"></span><span>超级攻城机械蓝图箱</span>
+</span> 中开出，或通过神秘熔炉合成，配方如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">神秘熔炉合成配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="21259"></span><span>欧米加攻城魔像蓝图</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="21159"></span><span>阿尔法攻城魔像蓝图</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20798"></span><span>攻城初学者指南</span>
+</span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19700"></span><span>秘银矿石</span>
+</span> × 10<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19722"></span><span>上古原木</span>
+</span> × 10</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>每种 <strong>攻城器械</strong> 还会对应一种公会版本的图纸，其能力与升级版的 <strong>攻城器械</strong> 相同，但花费更少。它们可以从公会的 <strong>储藏室 - 消耗品</strong> 选项卡中直接激活，有些也可以从供应商处购买。</li>
+</ul>
+<p><img class="gw2-image" image-id="524" image-compress-type="1" alt=""></p>
+<h2 id="-">进攻型器械 建造消耗</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">武器类型</th>
+<th style="text-align:center">标准版</th>
+<th style="text-align:center">升级版</th>
+<th style="text-align:center">公会版</th>
+<th style="text-align:right">攻击射程 或 有效范围</th>
+<th style="text-align:right">攻击最大目标数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">烈焰桩锤</td>
+<td style="text-align:center">40 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">50 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">40 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">360</td>
+<td style="text-align:right">50</td>
+<td style="text-align:left">对大门造成严重破坏</td>
+</tr>
+<tr>
+<td style="text-align:right">弓箭车</td>
+<td style="text-align:center">40 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">50 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">40 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">2500</td>
+<td style="text-align:right">25</td>
+<td style="text-align:left">对步兵造成严重伤害</td>
+</tr>
+<tr>
+<td style="text-align:right">弩炮</td>
+<td style="text-align:center">30 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">40 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">30 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">3000</td>
+<td style="text-align:right">10</td>
+<td style="text-align:left">对攻城装备和步兵造成严重的单目标伤害</td>
+</tr>
+<tr>
+<td style="text-align:right">投石车</td>
+<td style="text-align:center">40 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">50 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">40 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">4000</td>
+<td style="text-align:right">50</td>
+<td style="text-align:left">对墙壁造成大面积破坏，对大门造成中等破坏</td>
+</tr>
+<tr>
+<td style="text-align:right">抛石机</td>
+<td style="text-align:center">100 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">120 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">100 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">10,000</td>
+<td style="text-align:right">50</td>
+<td style="text-align:left">对墙壁造成大面积破坏，对大门造成中等破坏</td>
+</tr>
+<tr>
+<td style="text-align:right">攻城魔像</td>
+<td style="text-align:center">100 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">150 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">50 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">225</td>
+<td style="text-align:right">10</td>
+<td style="text-align:left">对大门造成严重伤害，这是唯一可移动的攻城器械</td>
+</tr>
+<tr>
+<td style="text-align:right">护盾生成器</td>
+<td style="text-align:center">40 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">50 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">40 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">2200</td>
+<td style="text-align:right">50</td>
+<td style="text-align:left">投射力场以打乱敌人的行动并支援盟友</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>注意：<strong>护盾生成器</strong> 的升级版有效范围为 3300，公会版有效范围为 3750。</li>
+</ul>
+<h2 id="-">防御型器械 建造消耗</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">武器类型</th>
+<th style="text-align:center">争夺点必要等级</th>
+<th style="text-align:center">消耗补给</th>
+<th style="text-align:right">攻击范围</th>
+<th style="text-align:right">攻击最大目标数</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">燃油</td>
+<td style="text-align:center">标准等级</td>
+<td style="text-align:center">50 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">600</td>
+<td style="text-align:right">50</td>
+<td style="text-align:left">对步兵造成严重伤害</td>
+</tr>
+<tr>
+<td style="text-align:right">大炮</td>
+<td style="text-align:center">安全升级</td>
+<td style="text-align:center">50 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">3750</td>
+<td style="text-align:right">50</td>
+<td style="text-align:left">对步兵造成严重伤害</td>
+</tr>
+<tr>
+<td style="text-align:right">迫击炮</td>
+<td style="text-align:center">强化升级</td>
+<td style="text-align:center">50 <img class="gw2-image" image-id="525" image-compress-type="1" class="original-size"></td>
+<td style="text-align:right">9400</td>
+<td style="text-align:right">50</td>
+<td style="text-align:left">对攻城装备和步兵造成大面积伤害</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">攻城器械的限制</h2>
+<ul>
+<li>放置 <strong>攻城器械</strong> 的玩家被视为其拥有者，尽管任何盟友都可以使用 <strong>攻城器械</strong>，但拥有者可以随时取回该器械的控制权。</li>
+<li>在取出并手持 <strong>攻城器械蓝图</strong> 后，玩家可以通过放下武器的操作，使 <strong>攻城器械蓝图</strong> 收回背包内。</li>
+<li>角色属性不影响 <strong>攻城器械</strong> 的伤害，但其他玩家对操作者施加的 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="13"></span><span>敏捷</span>
+</span>，可以减少 <strong>攻城器械</strong> 技能的冷却时间。</li>
+</ul>
+<hr>
+<p>攻城器械持续时间：</p>
+<ul>
+<li>如果 <strong>攻城器械</strong> 在建成后 60分钟内无人值守，则该器械会自动消失。剩余时间由器械上 <strong>攻城衰减计时器</strong> BUFF 所标示，玩家可以通过使用该器械来重置倒计时。</li>
+<li><strong>攻城器械</strong> 的建造点有 2分钟的持续时间，每次玩家在其上消耗补给建造，可以将倒计时重置为 10分钟。</li>
+<li><strong>防御型器械</strong> 在被敌对玩家摧毁后，其建造点不会消失。</li>
+</ul>
+<hr>
+<p>攻城器械建造限制：</p>
+<ul>
+<li>可以在任意 1000个单位半径内投放最多 5个器械。如果在已达数量限制的地点继续投放，则会提示放置失败，玩家依然会手持该蓝图。</li>
+<li>单张战场地图上，每个阵营可以放置每种器械最多 100个，而 <strong>攻城魔像</strong> 则被限制为最多 65个。</li>
+<li>在阵营的避难所中，禁止建造 <strong>攻城器械</strong>。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-5" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">概览</h2>
+<ul>
+<li>在 <strong>世界之战</strong> 中战斗的玩家，可获得 <strong>突袭奖励</strong>。可以在 <strong>世界之战 - 比赛总览</strong> 中查看当前 <strong>突袭奖励</strong> 的进度。</li>
+</ul>
+<p><img class="gw2-image" image-id="526" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>突袭奖励</strong> 只能在 <strong>永恒战场</strong> 以及三张 <strong>边境地图</strong> 中获取，在 <strong>迷雾边界</strong> 玩家不会获得任何点数。</li>
+<li>每周最多可通过 <strong>突袭奖励</strong> 获得 365 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span>，需要共计 1450 <strong>突袭点数</strong>。</li>
+<li>国服会在每周五下午 18时进行每周 <strong>突袭奖励</strong> 重置。</li>
+<li>更换 <strong>世界服务器</strong>（转服）后，需要等待重置两次 <strong>突袭奖励</strong>，才能赚取 <strong>突袭点数</strong>。这意味着转服后需要等待最少 8天才能重新获得 <strong>突袭点数</strong>。</li>
+</ul>
+<h2 id="-">获得突袭点数</h2>
+<ul>
+<li>只有在等于或高于 3级战场参与度时，才能每 5分钟获得一次 <strong>突袭点数</strong>。</li>
+<li>所属世界的 <strong>突袭分数</strong> 会每两小时结算一次，并显示在顶部 <strong>突袭详情</strong> 的面板中。</li>
+<li>每 5分钟获得的 <strong>突袭点数</strong> 将基于以下标准结算：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">分类</th>
+<th style="text-align:center">加点</th>
+<th style="text-align:center">图标</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">战争分数排名</td>
+<td style="text-align:center">+3</td>
+<td style="text-align:center"><img class="gw2-image" image-id="527" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">你的世界在当前的突袭战斗中拥有最少的战争分数。</td>
+</tr>
+<tr>
+<td style="text-align:center">战争分数排名</td>
+<td style="text-align:center">+4</td>
+<td style="text-align:center"><img class="gw2-image" image-id="528" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">你的世界在当前的突袭战斗中拥有第二多的战争分数。</td>
+</tr>
+<tr>
+<td style="text-align:center">战争分数排名</td>
+<td style="text-align:center">+5</td>
+<td style="text-align:center"><img class="gw2-image" image-id="529" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">你的世界在当前的突袭战斗中拥有最多的战争分数。</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center">世界之战等级</td>
+<td style="text-align:center">+1</td>
+<td style="text-align:center"><img class="gw2-image" image-id="530" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">青铜世界之战等级（150-619）</td>
+</tr>
+<tr>
+<td style="text-align:center">世界之战等级</td>
+<td style="text-align:center">+2</td>
+<td style="text-align:center"><img class="gw2-image" image-id="531" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">白银世界之战等级（620-1394）</td>
+</tr>
+<tr>
+<td style="text-align:center">世界之战等级</td>
+<td style="text-align:center">+3</td>
+<td style="text-align:center"><img class="gw2-image" image-id="532" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">黄金世界之战等级（1395-2544）</td>
+</tr>
+<tr>
+<td style="text-align:center">世界之战等级</td>
+<td style="text-align:center">+4</td>
+<td style="text-align:center"><img class="gw2-image" image-id="533" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">白金世界之战等级（2545-4094）</td>
+</tr>
+<tr>
+<td style="text-align:center">世界之战等级</td>
+<td style="text-align:center">+5</td>
+<td style="text-align:center"><img class="gw2-image" image-id="534" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">秘银世界之战等级（4095-6444）</td>
+</tr>
+<tr>
+<td style="text-align:center">世界之战等级</td>
+<td style="text-align:center">+6</td>
+<td style="text-align:center"><img class="gw2-image" image-id="535" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">钻石世界之战等级（6445-9999）</td>
+</tr>
+<tr>
+<td style="text-align:center">世界之战等级</td>
+<td style="text-align:center">+7</td>
+<td style="text-align:center"><img class="gw2-image" image-id="536" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">最高世界之战等级（10000）</td>
+</tr>
+<tr>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:center">指挥官</td>
+<td style="text-align:center">+1</td>
+<td style="text-align:center"><img class="gw2-image" image-id="537" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">指挥一个至少为5人的团队。</td>
+</tr>
+<tr>
+<td style="text-align:center">公共指挥官</td>
+<td style="text-align:center">+3</td>
+<td style="text-align:center"><img class="gw2-image" image-id="538" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">指挥至少包含10人的公共团队。</td>
+</tr>
+<tr>
+<td style="text-align:center">忠诚</td>
+<td style="text-align:center">+1</td>
+<td style="text-align:center"><img class="gw2-image" image-id="539" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">在上一周达到原木阶段。</td>
+</tr>
+<tr>
+<td style="text-align:center">寡不敌众</td>
+<td style="text-align:center">+5</td>
+<td style="text-align:center"><img class="gw2-image" image-id="540" image-compress-type="1" class="original-size"></td>
+<td style="text-align:left">在寡不敌众的地图上战斗。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">突袭奖励</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">分类</th>
+<th style="text-align:center">图标</th>
+<th style="text-align:center">层数</th>
+<th style="text-align:center">每层所需<br>突袭点数</th>
+<th style="text-align:center">总计所需<br>突袭点数</th>
+<th style="text-align:left">普通层奖励</th>
+<th style="text-align:left">最终层奖励</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">原木</td>
+<td style="text-align:center"><img class="gw2-image" image-id="541" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">100</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 3</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 8</td>
+</tr>
+<tr>
+<td style="text-align:center">青铜</td>
+<td style="text-align:center"><img class="gw2-image" image-id="542" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">30</td>
+<td style="text-align:center">120</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 5</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87557"></span><span>宗师印记碎片</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92923"></span><span>战争领主护甲盒</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 10</td>
+</tr>
+<tr>
+<td style="text-align:center">白银</td>
+<td style="text-align:center"><img class="gw2-image" image-id="543" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">35</td>
+<td style="text-align:center">175</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 7</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81524"></span><span>迷雾扭曲袋</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87557"></span><span>宗师印记碎片</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 12</td>
+</tr>
+<tr>
+<td style="text-align:center">黄金</td>
+<td style="text-align:center"><img class="gw2-image" image-id="544" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">200</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 9</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 6<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87557"></span><span>宗师印记碎片</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 14</td>
+</tr>
+<tr>
+<td style="text-align:center">白金</td>
+<td style="text-align:center"><img class="gw2-image" image-id="545" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">45</td>
+<td style="text-align:center">225</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 5<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span> × 2<br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 11</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 6<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 6<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span> × 2<br> <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81524"></span><span>迷雾扭曲袋</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 16</td>
+</tr>
+<tr>
+<td style="text-align:center">秘银</td>
+<td style="text-align:center"><img class="gw2-image" image-id="546" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">300</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 3<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 6<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span> × 2<br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 13</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 7<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 7<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span> × 2<br> <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81524"></span><span>迷雾扭曲袋</span>
+</span><br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 18</td>
+</tr>
+<tr>
+<td style="text-align:center">钻石</td>
+<td style="text-align:center"><img class="gw2-image" image-id="547" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">55</td>
+<td style="text-align:center">330</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 7<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span> × 2<br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 14</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 8<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 8<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span> × 2<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19976"></span><span>神秘硬币</span>
+</span> × 4<br><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="26"></span><span>世界之战突袭兑换劵</span>
+</span> × 20</td>
+</tr>
+<tr>
+<td style="text-align:center">钻石（重复）</td>
+<td style="text-align:center"><img class="gw2-image" image-id="547" image-compress-type="1" class="original-size"></td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">55</td>
+<td style="text-align:center">330</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 7<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span> × 2</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84966"></span><span>突袭宝箱</span>
+</span><br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71581"></span><span>战斗回忆录</span>
+</span> × 4<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> × 7<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81479"></span><span>迷雾扭曲包</span>
+</span> × 2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-6" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">奖励分支进度</h2>
+<ul>
+<li>每条奖励分支拥有 8个小进度条，每个小进度条奖励包含 4个次要奖励 和 1个主要奖励。</li>
+<li>每条奖励分支共计包含 40个奖励：32个次要奖励 和 8个主要奖励，主要奖励通常比次要奖励更为丰厚。</li>
+<li>完成一整条奖励分支总计需要 20000奖励点，每 500奖励点可获得一次奖励。</li>
+<li>根据玩家当前的参与度 和 所在战场地图，每 5分钟结算的分支奖励点数如下：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">0级参与</th>
+<th style="text-align:left">1级参与</th>
+<th style="text-align:left">2级参与</th>
+<th style="text-align:left">3级参与</th>
+<th style="text-align:left">4级参与</th>
+<th style="text-align:left">5级参与</th>
+<th style="text-align:left">6级参与</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">世界之战 和 边境地图</td>
+<td style="text-align:left">+0</td>
+<td style="text-align:left">+25</td>
+<td style="text-align:left">+60</td>
+<td style="text-align:left">+95</td>
+<td style="text-align:left">+125</td>
+<td style="text-align:left">+160</td>
+<td style="text-align:left">+195</td>
+</tr>
+<tr>
+<td style="text-align:left">迷雾边界</td>
+<td style="text-align:left">+0</td>
+<td style="text-align:left">+19</td>
+<td style="text-align:left">+46</td>
+<td style="text-align:left">+76</td>
+<td style="text-align:left">+90</td>
+<td style="text-align:left">+120</td>
+<td style="text-align:left">+146</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>在没有 <strong>世界之战奖励分支增幅</strong> 影响的情况下，完成一整条奖励分支最低耗时为 8小时 35分钟（每 5分钟 195 奖励点），有增幅影响的情况下，完成一整条奖励分支最低耗时为 3小时 50分钟（需要 42次每 5分钟奖励点结算）。</li>
+<li>使用全部可用的增幅后，每 5分钟奖励点结算可从 195点增加到 438点。</li>
+</ul>
+<hr>
+<ul>
+<li>每次获得奖励点后，只能作用于一条奖励分支上。切换奖励分支会保存奖励进度，玩家可以随时切回原先的奖励分支进度，而不必从头开始。</li>
+<li>除非勾选分支上的可重复按钮（并非所有的奖励分支都有重复按钮），否则整条奖励分支填满后，会自动切换至奖励进度最高的那条分支（若有多条奖励进度相同，则随机选择）。</li>
+</ul>
+<p><img class="gw2-image" image-id="548" image-compress-type="1" alt=""></p>
+<h2 id="-">分支进度药剂</h2>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78600"></span><span>世界之战奖励药剂</span>
+</span> 或 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> 使用后可直接提升一小段分支进度。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78600"></span><span>世界之战奖励药剂</span>
+</span> 主要通过世界之战日常任务获得，每个药剂在使用后可提升 250点进度。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81275"></span><span>即用奖励分支进度</span>
+</span> 主要通过世界之战突袭奖励获得，每个即用奖励获得后可提升 25点进度。</li>
+<li>两种分支进度药剂都不能通过 <strong>世界之战奖励分支增幅</strong> 获得额外的奖励点。</li>
+</ul>
+<h2 id="-">参与度</h2>
+<ul>
+<li>参与度可以通过以下两种方式增加：</li>
+</ul>
+<p>1、通过积极参与事件，保护目标 或 击杀敌人。参与度提升取决于参与的任务，以及当前参与度等级。<br>2、通过加入团队可获得共享参与度，队伍中每拥有 5名玩家可以标记 1名玩家获得共享参与度。该功能主要用于团队在发起进攻的同时，由单独的几名玩家负责侦查及保护工作。</p>
+<ul>
+<li>每个等级的参与度达到 100%后，可将参与度提升一个等级，升级后，原先获取多余的参与度，将根据下一等级的要求进行参与度提升百分比结算。</li>
+</ul>
+<hr>
+<p><strong>参与度</strong> 有一个非活跃计时器，它将根据以下规则进行计算：</p>
+<ul>
+<li><p>计时器的时间可以从参与度进度条上查看，进度条颜色将根据所剩时间进行区分：</p>
+<ul>
+<li>当倒计时时间大于 90秒时，进度条呈现绿色；</li>
+<li>当倒计时时间大于 60秒、小于 90秒时，进度条呈现橙色；</li>
+<li>当倒计时时间小于 60秒时，进度条呈现红色；</li>
+</ul>
+</li>
+<li><p>当计时器时间降至 0秒后，参与度进度条会快速衰减，并且会在当前等级的参与度将至 0后，降低参与度等级。此时计时器会显示剩余参与度被降低至 0级 0%所需的时间。</p>
+<ul>
+<li>计时器始终会从 15分钟开始进行倒计时，而与参与度无关。</li>
+</ul>
+</li>
+<li><p>可以通过参与事件重置计时器，并且计时器会选择倒计时间最长的进行取舍。</p>
+</li>
+<li>进入任何非战场地图，将会停止倒计时。</li>
+<li>在战场地图之间切换地图 或 切换角色 会保持参与状态，尽量不要在每 5分钟结算时进行切换地图，若因读图太慢导致该时间段内进行了结算，读图完毕后玩家将不会获得结算奖励。</li>
+<li><strong>迷雾边界</strong> 地图有独立的参与度进度，但参与度工作机制与 <strong>世界之战</strong> 地图相同。</li>
+</ul>
+<hr>
+<ul>
+<li>参与不同事件，可获得的参与进度如下所示（部分数据有缺失）：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">事件</th>
+<th style="text-align:left">0级参与</th>
+<th style="text-align:left">1级参与</th>
+<th style="text-align:left">2级参与</th>
+<th style="text-align:left">3级参与</th>
+<th style="text-align:left">4级参与</th>
+<th style="text-align:left">5级参与</th>
+<th style="text-align:left">6级参与</th>
+<th style="text-align:left">倒计时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">占领石云堡</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">10分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">占领要塞</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">10分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">占领塔楼</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">125％</td>
+<td style="text-align:left">75％</td>
+<td style="text-align:left">53.75％</td>
+<td style="text-align:left">41.25％</td>
+<td style="text-align:left">34.375％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">10分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">占领营地</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">125％</td>
+<td style="text-align:left">75％</td>
+<td style="text-align:left">53.75％</td>
+<td style="text-align:left">41.25％</td>
+<td style="text-align:left">34.375％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">10分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击杀入侵者</td>
+<td style="text-align:left">75％</td>
+<td style="text-align:left">25％</td>
+<td style="text-align:left">15％</td>
+<td style="text-align:left">11.25％</td>
+<td style="text-align:left">8.75％</td>
+<td style="text-align:left">7.5％</td>
+<td style="text-align:left">5.3125％</td>
+<td style="text-align:left">10分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击败城堡领主</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击败要塞领主</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击败塔楼领主</td>
+<td style="text-align:left">25％</td>
+<td style="text-align:left">7.5％</td>
+<td style="text-align:left">5％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">2.5％</td>
+<td style="text-align:left">1.25％</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击败营地监管员</td>
+<td style="text-align:left">25％</td>
+<td style="text-align:left">7.5％</td>
+<td style="text-align:left">5％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">2.5％</td>
+<td style="text-align:left">1.25％</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">攻城摧毁（摧毁大门、墙壁等）</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">41.25％</td>
+<td style="text-align:left">27.5％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">15％</td>
+<td style="text-align:left">12.5％</td>
+<td style="text-align:left">8.75％</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">维修器械（每20补给）</td>
+<td style="text-align:left">125％</td>
+<td style="text-align:left">42.5％</td>
+<td style="text-align:left">25％</td>
+<td style="text-align:left">17.5％</td>
+<td style="text-align:left">15％</td>
+<td style="text-align:left">10.625％</td>
+<td style="text-align:left">8.75％</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">打退进攻敌人</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">7.5％</td>
+<td style="text-align:left">6.25％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">护送石牦牛</td>
+<td style="text-align:left">75％</td>
+<td style="text-align:left">25％</td>
+<td style="text-align:left">15％</td>
+<td style="text-align:left">11.25％</td>
+<td style="text-align:left">8.75％</td>
+<td style="text-align:left">7.5％</td>
+<td style="text-align:left">5.3125％</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">占领哨卫</td>
+<td style="text-align:left">93.75％</td>
+<td style="text-align:left">41.25％</td>
+<td style="text-align:left">25％</td>
+<td style="text-align:left">17.5％</td>
+<td style="text-align:left">13.75％</td>
+<td style="text-align:left">11.25％</td>
+<td style="text-align:left">8.75％</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击杀精锐生物</td>
+<td style="text-align:left">75％</td>
+<td style="text-align:left">25％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">帮助雇佣兵</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击败敌对雇佣兵</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">占领祭坛</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">5分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">占领废墟</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">2分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">攻城（攻击大门、墙壁、玩家）</td>
+<td style="text-align:left">7.5％</td>
+<td style="text-align:left">2.5％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">1.25％</td>
+<td style="text-align:left">0.625％</td>
+<td style="text-align:left">0.25％</td>
+<td style="text-align:left">2分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击败商队</td>
+<td style="text-align:left">75％</td>
+<td style="text-align:left">25％</td>
+<td style="text-align:left">15％</td>
+<td style="text-align:left">11.25％</td>
+<td style="text-align:left">8.75％</td>
+<td style="text-align:left">7.5％</td>
+<td style="text-align:left">5.3125％</td>
+<td style="text-align:left">2分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击败哨兵、侦察兵、弓箭手</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">2分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击败精锐守卫</td>
+<td style="text-align:left">25％</td>
+<td style="text-align:left">7.5％</td>
+<td style="text-align:left">5％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">2.5％</td>
+<td style="text-align:left">1.25％</td>
+<td style="text-align:left">2分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">击败军需官</td>
+<td style="text-align:left">12.5％</td>
+<td style="text-align:left">3.75％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">1.25％</td>
+<td style="text-align:left">0.625％</td>
+<td style="text-align:left">2分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">复活雇佣兵</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">0％</td>
+<td style="text-align:left">1分钟</td>
+</tr>
+<tr>
+<td style="text-align:left">清除杂草事件</td>
+<td style="text-align:left">75％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">消灭暴怒的橡树之心</td>
+<td style="text-align:left">75％</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">--</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-7" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">世界之战奖励分支增幅</h2>
+<ul>
+<li>使用下列分支增幅后，世界之战地图最高每 5分钟可获得 439分支奖励点，迷雾边界地图最高每 5分钟可获得 329分支奖励点。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">分类</th>
+<th style="text-align:left">Buff</th>
+<th style="text-align:right">增加幅度</th>
+<th style="text-align:left">持续时间</th>
+<th style="text-align:left">相关物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="494" image-compress-type="1" class="original-size"> 经验增幅剂</td>
+<td style="text-align:right">50%</td>
+<td style="text-align:left">30分钟 或 2小时</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="70235"></span><span>经验增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20005"></span><span>英雄增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67393"></span><span>玉米糖大胃王</span>
+</span></td>
+<td style="text-align:left">持续时间可叠加</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="496" image-compress-type="1" class="original-size"> 欢庆加成</td>
+<td style="text-align:right">10%</td>
+<td style="text-align:left">1小时 或 24小时</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="45003"></span><span>生日增幅剂</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67836"></span><span>庆典增幅剂</span>
+</span></td>
+<td style="text-align:left">持续时间可堆叠</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="549" image-compress-type="1" class="original-size"> 黑狮增幅剂</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">30分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="82060"></span><span>黑狮增幅剂</span>
+</span></td>
+<td style="text-align:left">持续时间可叠加</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="550" image-compress-type="1" class="original-size"> 冬幕节增幅剂</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">15分钟</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92553"></span><span>雪花吞食者的祝福</span>
+</span></td>
+<td style="text-align:left">持续时间可堆叠至 24小时，<br>黑狮商城购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92585"></span><span>雪花吞食者</span>
+</span>，双击消耗 5 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> 随机提供</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="551" image-compress-type="1" class="original-size"> 公会世界之战奖励分支增幅</td>
+<td style="text-align:right">4% ~ 10%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78979"></span><span>公会世界之战奖励分支增幅</span>
+</span></td>
+<td style="text-align:left">公会酒保处免费提供，根据公会升级决定提供的百分比</td>
+</tr>
+<tr>
+<td style="text-align:left">消耗品</td>
+<td style="text-align:left"><img class="gw2-image" image-id="552" image-compress-type="1" class="original-size"> 世界之战奖励富集</td>
+<td style="text-align:right">5%</td>
+<td style="text-align:left">永久</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87398"></span><span>世界之战奖励富集</span>
+</span></td>
+<td style="text-align:left">花费 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span>，125 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span> 从战场桂冠商人处购买，<br>安插在升华 或 传奇项链上</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:right">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left">特定时段</td>
+<td style="text-align:left"><img class="gw2-image" image-id="500" image-compress-type="1" class="original-size"> 征战号角</td>
+<td style="text-align:right">25%</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">自动获得</td>
+<td style="text-align:left">仅在活动期间参与 <strong>世界之战</strong> 有效，<strong>迷雾之地</strong> 地图除外</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-8" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<table>
+<thead>
+<tr>
+<th style="text-align:left; width: 60px; text-align: center;">图标</th>
+<th style="text-align:left">升级</th>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">等级</th>
+<th style="text-align:left">能力</th>
+<th style="text-align:left">消耗点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="553" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">佣兵之祸</td>
+<td rowspan="5">攻击佣兵时伤害提升，同时减少受到的伤害。</td>
+<td>1</td>
+<td>对佣兵的伤害和防御能力提升4%</td>
+<td style="text-align:right">1 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>对佣兵的伤害和防御能力提升8%（总共）</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>对佣兵的伤害和防御能力提升12%（总共）</td>
+<td style="text-align:right">6 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>对佣兵的伤害和防御能力提升16%（总共）</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>对佣兵的伤害和防御能力提升20%（总共）</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="6"><img class="gw2-image" image-id="555" image-compress-type="1" class="original-size"></td>
+<td rowspan="6">供给大师</td>
+<td rowspan="6">提高你获得战利品的能力，使你可以购买便携供给官的货物。</td>
+<td>1</td>
+<td>允许你向任意世界之战用品商人，购买一个便携供给官。<br>这件物品可以让你在任何地方购买攻城武器蓝图。</td>
+<td style="text-align:right">1 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>你可以从便携式供给官处购买特技和陷阱。</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>同时也可以购买食物和消耗品。</td>
+<td style="text-align:right">6 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>学习后自动拾取死亡敌人身上的战利品。</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>增加从死亡敌人身上拾取的荣誉徽章数量。</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>6</td>
+<td>在英雄公证员商贩处解锁《决战迈古玛》资料片中的配方、法印和符文。</td>
+<td style="text-align:right">20 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="4"><img class="gw2-image" image-id="556" image-compress-type="1" class="original-size"></td>
+<td rowspan="4">修理大师</td>
+<td rowspan="4">提升你的修理能力。</td>
+<td>1</td>
+<td>修理时每次花费4点补给。</td>
+<td style="text-align:right">1 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>修理时每次花费6点补给。</td>
+<td style="text-align:right">2 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>修理时每次花费8点补给。</td>
+<td style="text-align:right">4 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>修理时每次花费10点补给。</td>
+<td style="text-align:right">8 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="557" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">加农炮专精</td>
+<td rowspan="5">提升你使用加农炮时的技能效果。</td>
+<td>1</td>
+<td>基础射击移除增益</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>提升加农炮伤害</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>霰弹造成更多流血伤害</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>增加所有爆炸半径</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>增加冰冻持续时间</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="558" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">守卫天敌</td>
+<td rowspan="5">提升对敌方守卫的伤害。</td>
+<td>1</td>
+<td>对守卫的伤害提升4%</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>对守卫的伤害提升8%（总共）</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>对守卫的伤害提升12%（总共）</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>对守卫的伤害提升16%（总共）。<br>所有守卫天敌加成对敌方领主和监管员也能产生影响。</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>对守卫、领主和监管员的伤害提升20%（总共）。<br>消灭守卫、领主和监管员可以回复50%的耐力。</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="559" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">守卫对抗</td>
+<td rowspan="5">减少来自敌方守卫的伤害。</td>
+<td>1</td>
+<td>来自守卫的伤害减少4%</td>
+<td style="text-align:right">1 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>来自守卫的伤害减少8%（总共）</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>来自守卫的伤害减少12%（总共）</td>
+<td style="text-align:right">6 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>来自守卫的伤害减少16%（总共）。<br>所有守卫对抗加成对敌方领主和监管员也能产生影响。</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>来自守卫、领主和监管员的伤害减少20%（总共）。<br>当你受到来自守卫、领主和监管员的伤害时获得反弹，持续10秒。此效果每20秒只能触发一次。</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="4"><img class="gw2-image" image-id="560" image-compress-type="1" class="original-size"></td>
+<td rowspan="4">建造大师</td>
+<td rowspan="4">提升你的建造能力。</td>
+<td>1</td>
+<td>建造攻城机械时每次花费4点补给</td>
+<td style="text-align:right">1 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>建造攻城机械时每次花费6点补给</td>
+<td style="text-align:right">2 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>建造攻城机械时每次花费8点补给</td>
+<td style="text-align:right">4 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>建造攻城机械时每次花费10点补给</td>
+<td style="text-align:right">8 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="553" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">弓箭车专精</td>
+<td rowspan="5">提升你使用弓箭车时的技能效果。</td>
+<td>1</td>
+<td>增加所有弓箭车技能的射程</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>增加所有弓箭车技能的伤害</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>增加施加症状的效果</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>增加所有弓箭车技能的效果半径</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>技能：毒素揭露射击 —— 移除潜行并使目标中毒</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="561" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">弩炮专精</td>
+<td rowspan="5">提升你使用弩炮时的技能效果。</td>
+<td>1</td>
+<td>技能：防空箭矢 —— 发射一只将敌人击落并定身的箭矢。让敌人离开坐骑。</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>提升弩炮伤害</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>发射速度更快的箭矢</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>增加弩炮射程</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>增加碎裂射击效果半径</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="562" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">战争滑翔专精</td>
+<td rowspan="5">在世界上各个区域内滑翔。</td>
+<td>1</td>
+<td>可以在已占领区域的上空滑翔。</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>你可以在半空中减速。</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>你可以向前倾斜，提高滑翔速度。</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>你可以在滑翔时闪避。</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>提升滑翔技巧，仅当前倾斜飞行时才消耗耐力。</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="7"><img class="gw2-image" image-id="563" image-compress-type="1" class="original-size"></td>
+<td rowspan="7">战爪专精</td>
+<td rowspan="7">解锁战爪坐骑，及其技能与能力。</td>
+<td>1</td>
+<td>解锁战爪同伴成就。</td>
+<td style="text-align:right">1 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>骑上坐骑时，每隔一段时间让附近盟友获得战爪的移动速度。</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>你的战爪获得一个额外的耐力条。</td>
+<td style="text-align:right">20 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>斗技巨锤现在可以终结倒地的敌人。</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>解锁第二个技能，使你的战爪可以侦测敌人。</td>
+<td style="text-align:right">30 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>6</td>
+<td>解锁第三个技能，使你的战爪可以拖拽大门，对其造成伤害。</td>
+<td style="text-align:right">35 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>7</td>
+<td>解锁第四个技能，向骑乘玩家投掷长矛，使你和对方离开坐骑。</td>
+<td style="text-align:right">40 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="564" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">投石车专精</td>
+<td rowspan="5">提升你使用投石车时的技能效果。</td>
+<td>1</td>
+<td>对城墙的伤害提升20%。</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>碎石射击可施加流血</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>增加投石车技能效果半径</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>提升投石车伤害</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>技能：护城防护 —— 创造一个会自动摧毁投射物攻击的护罩</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="565" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">抛石车专精</td>
+<td rowspan="5">提升你使用抛石车时的技能效果。</td>
+<td>1</td>
+<td>增加抛石车的技能伤害</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>牛弹可消耗地方玩家的补给</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>抛石车技能的效果半径增加</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>技能：治愈深渊 —— 创造一个流水力场治疗盟友</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>基础射击击中补给仓后会消耗其补给</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="566" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">护盾生成器专精</td>
+<td rowspan="5">提升你使用护盾生成器技能效果。</td>
+<td>1</td>
+<td>原力球体给予盟友圣盾</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>原力穹隆每次脉冲给予稳固层数翻倍</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>提升所有护盾生成器技能的效果半径</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>提升原力墙体和原力穹隆的持续时间，提升原力球体的弹射次数</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>弓箭车无法对原力穹隆中的盟友造成伤害</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="567" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">攻城之力</td>
+<td rowspan="5">提升攻城武器的伤害。</td>
+<td>1</td>
+<td>攻城伤害提升2%</td>
+<td style="text-align:right">1 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>攻城伤害提升4%（总共）</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>攻城伤害提升6%（总共）</td>
+<td style="text-align:right">6 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>攻城伤害提升8%（总共）</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>攻城伤害提升10%（总共）</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="568" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">攻城防御</td>
+<td rowspan="5">减少你受到的攻城伤害。</td>
+<td>1</td>
+<td>来自攻城武器的伤害减少2%</td>
+<td style="text-align:right">1 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>来自攻城武器的伤害减少4%（总共）</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>来自攻城武器的伤害减少6%（总共）</td>
+<td style="text-align:right">6 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>来自攻城武器的伤害减少8%（总共）</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>来自攻城武器的伤害减少10%（总共）</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="569" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">攻城魔像专精</td>
+<td rowspan="5">改善攻城魔像的技能。</td>
+<td>1</td>
+<td>摧毁大门或城墙后，驾驶的魔像移动速度提升，持续15秒。</td>
+<td style="text-align:right">3<img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>驾驶魔像的基础威力和精准提升10%</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>护盾气泡技能现在还能治疗附近的盟友</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>驾驶魔像的基础体力和坚韧提升15%</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>魔像被击败后将你安全弹出</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="570" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">烈焰桩槌专精</td>
+<td rowspan="5">提升你使用烈焰桩槌时的技能效果。</td>
+<td>1</td>
+<td>使用烈焰桩槌时获得铁皮</td>
+<td style="text-align:right">3<img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>烈焰冲撞现在会对大门造成结构易伤</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>缩短烈焰桩槌技能冷却时间</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>技能：猛力冲击 —— 击飞大门另一侧的敌人</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>技能：钢铁意志 —— 为附近盟友施加铁皮</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="571" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">燃油专精</td>
+<td rowspan="5">提升你使用燃油时的技能效果，解锁新技能。</td>
+<td>1</td>
+<td>燃油效果半径增加25%</td>
+<td style="text-align:right">3<img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>燃油伤害提升</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>使用燃油时降低油锅和玩家受到的伤害。<br>使用者不能被击倒、击退、拉拽、击飞、昏迷、晕眩、上浮、下沉、恐惧或嘲讽。</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>使用基础燃油供给烧毁目标的1点补给</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>技能：燃烧甲壳 —— 创造一个反射投射物的火焰护罩</td>
+ <td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="572" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">补给大师</td>
+<td rowspan="5">增加你收集、使用和运输补给的能力。</td>
+<td>1</td>
+<td>拾取补给速度加快。</td>
+<td style="text-align:right">1<img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>当你花费完所有补给时获得迅捷。</td>
+<td style="text-align:right">2 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>拾取补给时获得强化迅捷。</td>
+<td style="text-align:right">3 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>花费补给后有可能回收一部分补给。</td>
+<td style="text-align:right">4 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>你部署的攻城武器点在短时间内无敌。</td>
+<td style="text-align:right">5 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="573" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">补给能力</td>
+<td rowspan="5">增加你可携带的补给数量。</td>
+<td>1</td>
+<td>补给携带量增加1点</td>
+<td style="text-align:right">5<img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>补给携带量增加2点（总共）</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>补给携带量增加3点（总共）</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>补给携带量增加4点（总共）</td>
+<td style="text-align:right">40 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>补给携带量增加5点（总共）</td>
+<td style="text-align:right">60 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td rowspan="5"><img class="gw2-image" image-id="574" image-compress-type="1" class="original-size"></td>
+<td rowspan="5">迫击炮专精</td>
+<td rowspan="5">提升你使用迫击炮时的技能效果。</td>
+<td>1</td>
+<td>增加所有迫击炮技能的爆炸半径</td>
+<td style="text-align:right">3<img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>增加迫击炮燃烧持续时间</td>
+<td style="text-align:right">7 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>缩短所有迫击炮技能的冷却时间。</td>
+<td style="text-align:right">10 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>所有迫击炮技能的伤害提升</td>
+<td style="text-align:right">15 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>5</td>
+<td>技能：震荡弹幕 —— 发射一簇弹药，击退敌人</td>
+<td style="text-align:right">25 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td colspan="3">总计</td>
+<td colspan="2" style="text-align:right">1226 <img class="gw2-image" image-id="554" image-compress-type="1" class="original-size"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

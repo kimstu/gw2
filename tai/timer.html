@@ -1,0 +1,4788 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>事件计时器 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+ <li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg header-bg-service">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<div class="row page-titles bg-lg bg-lg-service m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="color-database"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">工具</li>
+<li class="breadcrumb-item active"><a href="item.html" class="color-database">事件计时器</a></li>
+</ol>
+<h1 class="page-title color-write-linear-gradient">
+事件计时器
+</h1>
+</div>
+<div class="page-titles-description col-md-12 m-t-30">
+<div class="card">
+<div class="card-body collapse show p-t-10 p-b-10 p-l-20 p-r-20">
+<div class="row">
+<div class="col-md-12 col-12 text-content m-t-5 page-titles-description-small">
+<p>本计时器以 北京时间（GMT+8）为准，本地时间 获取自您的设备，请确保其准确性。</p>
+<p>以下事件中列出的收益均为每日仅可获得一次。</p>
+<p>请将以下时间轴内的代码，复制进游戏内的聊天窗口使用。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row ad-bar">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+
+</div>
+</div>
+</div>
+<style>
+.timer-wrap{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    font-size: .875rem;
+}
+.timer-title{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2.5rem 1rem 1rem;
+    z-index: 1;
+}
+.timer-main{
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    padding: 2.5rem 0 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.timer-main::-webkit-scrollbar{  
+    width: 5px;  
+    height:13px;     
+    background-color: #b5b1b1;
+
+}  
+.timer-main::-webkit-scrollbar-track{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    background-color: #333;    
+    
+}
+.timer-main::-webkit-scrollbar-thumb{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #b5b1b1;
+} 
+.time-line{
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #c62828;
+    z-index: 99;
+    top: 0;
+    color: #ffffff;
+    z-index: 9;
+}
+.time-line > span {
+    position: absolute;
+    padding: 0.25rem 0.375rem;
+    font-size: .75rem;
+}
+.time-line > span strong {
+    position: absolute;
+    top: 1.85rem;
+    font-weight: normal;
+    font-size: .722rem;
+    color: #bbb;
+    width: 10rem;
+}
+.time-line > .time-server {
+    right: 0.125rem;
+    background-color: #303030;
+    color: #ddd;
+    border-top-left-radius: .125rem;
+    border-bottom-left-radius: .125rem;
+}
+.time-line > span.time-server strong {
+    right: 0.375rem;
+    text-align: right;
+}
+.time-line > .time-local {
+    left: 0;
+    background-color: #c62828;
+    color: #fff;
+    border-top-right-radius: .125rem;
+    border-bottom-right-radius: .125rem;
+}
+.time-line > span.time-local strong {
+    left: 0.375rem;
+}
+
+/* timer-content */
+
+.timer-content{
+    position: relative;
+    width: calc( 19200px + 800px );
+    min-height: 50px;
+    font-size: 0.75rem;
+}
+.timer-meta{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.timer-name{
+    position: absolute;
+    width: 300px;
+    margin: 0 0 0.5rem 1rem;
+    color: #fff;
+    font-size: .875rem;
+}
+.timer-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc( 19200px + 800px );
+    min-height: 58px;
+    z-index: 2;
+}
+.timer-phase{
+    position: absolute;
+    height: 100%;
+    padding: 0.5rem;
+    margin: 0 .125rem;
+    border-radius: .125rem;
+    font-size: .875rem;
+    color: #222222;
+    font-weight: normal !important;
+    overflow: hidden;
+    display: inline-block;
+}
+.phase-time{
+    font-weight: 600;
+    overflow: hidden;
+}
+.phase-name{
+    overflow: hidden;
+}
+.icon-trophies{
+    display: inline-block;
+    position: relative;
+    bottom: -2px;
+    width: 16px;
+    height: 16px;
+    margin-left: 2px;
+    margin-right: 5px;
+    background-size: 100%;
+}
+.icon-gold {
+    background-image: url(static/image/Gold_coin.png);
+}
+.icon-amalgamated-gemstone {
+    background-image: url(static/image/919363.png);
+}
+.icon-mystic-coin {
+    background-image: url(static/image/62864.png);
+}
+
+.icon-light-of-deldrimor-plate-top-half {
+    background-image: url(static/image/2083070.png);
+}
+.icon-light-of-deldrimor-plate-bottom-half {
+    background-image: url(static/image/2083071.png);
+}
+
+.icon-flame-legion-key {
+    background-image: url(static/image/2199421.png);
+}
+.icon-iron-legion-key {
+    background-image: url(static/image/2199422.png);
+}
+.icon-blood-legion-key {
+    background-image: url(static/image/2199420.png);
+}
+.icon-ash-legion-key {
+    background-image: url(static/image/2199419.png);
+}
+
+</style>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-box-shadow overflow-hidden">
+<div id="app-timer">
+<div class="card-body">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10" v-for="(category,index) in categories_data">
+<a href="javascript:;" :class="[index == active ? 'nav-link nav-link-Elementalist active' : 'nav-link nav-link-Elementalist']" @click="changeCategory(index,category.id)">{{ category.name }}</a>
+</li>
+</ul>
+<div class="row">
+<div class="col-md-12">
+<div class="card  m-b-0">
+<div class="card-body">
+<div class="timer-wrap" ref="timer_wrap">
+<div class="timer-main" ref="timer_main">
+<div class="time-line" :style="{'left': timer_line_left + 'px', transition: transition_left}">
+<span class="time-server">
+<span>{{ server_time }}</span>
+<strong>游戏时间</strong>
+</span>
+<span class="time-local">
+<span>{{ local_time }}</span>
+<strong>本地时间</strong>
+</span>
+</div>
+<div class="timer-content">
+<template v-for="meta in meta_data">
+<template v-if="meta.category_id == active_id || meta.category_id == 1 && meta.order == 1">
+<div class="timer-meta" :style="{'height': 'calc(' + meta.bar_height + 'px + 1.7rem)'}">
+<div class="timer-bar" :style="{'height': meta.bar_height + 'px'}">
+<template v-if="meta.data">
+<template v-for="phase in meta.data.last_data">
+<div class="timer-phase" :style="{
+                                                                            'background': phase.start_color == phase.end_color ? phase.start_color : 'linear-gradient(to right,' + phase.start_color + ',' + phase.end_color + ')', 
+                                                                            'color': phase.font_color, 
+                                                                            'width': 'calc(' + ( Number(phase.long_time.substr(0,2)) + Number(phase.long_time.substr(3,2)) / 60 ) * 800 + 'px - .25rem)',
+                                                                            'left': 'calc(' + (( Number(phase.start_time.substr(0,2)) + Number(phase.start_time.substr(3,2)) / 60 ) * 800 - 23.5 * 800) + 'px'
+                                                                        }">
+<div class="phase-time">{{ phase.start_time }}</div>
+<div class="phase-name">{{ phase.name }}</div>
+<template v-if="phase.trophies">
+<div class="phase-name border-top">
+收益:<template v-for="trophy in phase.trophies">
+{{ trophy.num }}×<i :class="{ 
+                                                                                            'icon-trophies': true, 
+                                                                                            'icon-gold': trophy.class == 'gold',
+                                                                                            'icon-amalgamated-gemstone': trophy.class == 'amalgamated-gemstone',
+                                                                                            'icon-mystic-coin': trophy.class == 'mystic-coin',
+                                                                                            'icon-light-of-deldrimor-plate-top-half': trophy.class == 'light-of-deldrimor-plate-top-half',
+                                                                                            'icon-light-of-deldrimor-plate-bottom-half': trophy.class == 'light-of-deldrimor-plate-bottom-half',
+                                                                                            'icon-flame-legion-key': trophy.class == 'flame-legion-key',
+                                                                                            'icon-iron-legion-key': trophy.class == 'iron-legion-key',
+                                                                                            'icon-blood-legion-key': trophy.class == 'blood-legion-key',
+                                                                                            'icon-ash-legion-key': trophy.class == 'ash-legion-key'
+                                                                                        }" :title="trophy.title"></i>
+</template>
+ </div>
+</template>
+<div class="phase-name">{{ phase.chat_link }}</div>
+</div>
+</template>
+<template v-for="n in meta.data.loop_times">
+<template v-for="phase in meta.data.loop_data">
+<div class="timer-phase" :style="{
+                                                                                'background': phase.start_color == phase.end_color ? phase.start_color : 'linear-gradient(to right,' + phase.start_color + ',' + phase.end_color + ')', 
+                                                                                'color': phase.font_color, 
+                                                                                'width': 'calc(' + ( Number(phase.long_time.substr(0,2)) + Number(phase.long_time.substr(3,2)) / 60 ) * 800 + 'px - .25rem)',
+                                                                                'left': 'calc(' + ( (n - 1 ) * meta.data.loop_add + Number(phase.start_time.substr(0,2)) + Number(phase.start_time.substr(3,2)) / 60 ) * 800 + 'px + 400px'
+                                                                            }">
+<div class="phase-time"><template v-if="(n - 1) * meta.data.loop_add + Number(phase.start_time.substr(0,2)) < 10">0</template>{{ (n - 1) * meta.data.loop_add + Number(phase.start_time.substr(0,2)) + phase.start_time.substr(2,3) }}</div>
+<div class="phase-name">{{ phase.name }}</div>
+<template v-if="phase.trophies">
+<div class="phase-name border-top">
+收益:<template v-for="trophy in phase.trophies">
+{{ trophy.num }}×<i :class="{ 
+                                                                                            'icon-trophies': true, 
+                                                                                            'icon-gold': trophy.class == 'gold',
+                                                                                            'icon-amalgamated-gemstone': trophy.class == 'amalgamated-gemstone',
+                                                                                            'icon-mystic-coin': trophy.class == 'mystic-coin',
+                                                                                            'icon-light-of-deldrimor-plate-top-half': trophy.class == 'light-of-deldrimor-plate-top-half',
+                                                                                            'icon-light-of-deldrimor-plate-bottom-half': trophy.class == 'light-of-deldrimor-plate-bottom-half',
+                                                                                            'icon-flame-legion-key': trophy.class == 'flame-legion-key',
+                                                                                            'icon-iron-legion-key': trophy.class == 'iron-legion-key',
+                                                                                            'icon-blood-legion-key': trophy.class == 'blood-legion-key',
+                                                                                            'icon-ash-legion-key': trophy.class == 'ash-legion-key'
+                                                                                        }" :title="trophy.title"></i>
+</template>
+</div>
+</template>
+<div class="phase-name">{{ phase.chat_link }}</div>
+</div>
+</template>
+</template>
+<template v-for="phase in meta.data.next_data">
+<div class="timer-phase" :style="{
+                                                                            'background': phase.start_color == phase.end_color ? phase.start_color : 'linear-gradient(to right,' + phase.start_color + ',' + phase.end_color + ')', 
+                                                                            'color': phase.font_color, 
+                                                                            'width': 'calc(' + ( Number(phase.long_time.substr(0,2)) + Number(phase.long_time.substr(3,2)) / 60 ) * 800 + 'px - .25rem)',
+                                                                            'left': 'calc(' + ((( Number(phase.start_time.substr(0,2)) == 0 ? 24 : ( Number(phase.start_time.substr(0,2))) )  + Number(phase.start_time.substr(3,2)) / 60 ) * 800 + 400) + 'px'
+                                                                        }">
+<div class="phase-time">{{ phase.start_time }}</div>
+<div class="phase-name">{{ phase.name }}</div>
+<template v-if="phase.trophies">
+<div class="phase-name border-top">
+收益:<template v-for="trophy in phase.trophies">
+{{ trophy.num }}×<i :class="{ 
+                                                                                            'icon-trophies': true, 
+                                                                                            'icon-gold': trophy.class == 'gold',
+                                                                                            'icon-amalgamated-gemstone': trophy.class == 'amalgamated-gemstone',
+                                                                                            'icon-mystic-coin': trophy.class == 'mystic-coin',
+                                                                                            'icon-light-of-deldrimor-plate-top-half': trophy.class == 'light-of-deldrimor-plate-top-half',
+                                                                                            'icon-light-of-deldrimor-plate-bottom-half': trophy.class == 'light-of-deldrimor-plate-bottom-half',
+                                                                                            'icon-flame-legion-key': trophy.class == 'flame-legion-key',
+                                                                                            'icon-iron-legion-key': trophy.class == 'iron-legion-key',
+                                                                                            'icon-blood-legion-key': trophy.class == 'blood-legion-key',
+                                                                                            'icon-ash-legion-key': trophy.class == 'ash-legion-key'
+                                                                                        }" :title="trophy.title"></i>
+</template>
+</div>
+</template>
+<div class="phase-name">{{ phase.chat_link }}</div>
+</div>
+</template>
+</template>
+<template v-if="meta.week_data">
+<template v-for="data in meta.week_data">
+<template v-if="data.day == today_day">
+<template v-for="phase in data.last_data">
+<div class="timer-phase" :style="{
+                                                                                    'background': phase.start_color == phase.end_color ? phase.start_color : 'linear-gradient(to right,' + phase.start_color + ',' + phase.end_color + ')', 
+                                                                                    'color': phase.font_color, 
+                                                                                    'width': 'calc(' + ( Number(phase.long_time.substr(0,2)) + Number(phase.long_time.substr(3,2)) / 60 ) * 800 + 'px - .25rem)',
+                                                                                    'left': 'calc(' + 
+                                                                                    ( ( Number(phase.start_time.substr(0,2)) > 12 ) ? 
+                                                                                    ( ( Number(phase.start_time.substr(0,2)) + Number(phase.start_time.substr(3,2)) / 60 ) * 800 - 23.5 * 800 )
+                                                                                    : ( ( Number(phase.start_time.substr(0,2)) + Number(phase.start_time.substr(3,2)) / 60 ) * 800 + 400 ) ) + 'px'
+                                                                                }">
+<div class="phase-time">{{ phase.start_time }}<template v-if="phase.start_time == '23:30'"> ({{ yesterday_day_cn }})</template></div>
+<div class="phase-name">{{ phase.name }}</div>
+<div class="phase-name">{{ phase.chat_link }}</div>
+</div>
+</template>
+<template v-for="n in data.loop_times">
+<template v-for="phase in data.loop_data">
+<div class="timer-phase" :style="{
+                                                                                        'background': phase.start_color == phase.end_color ? phase.start_color : 'linear-gradient(to right,' + phase.start_color + ',' + phase.end_color + ')', 
+                                                                                        'color': phase.font_color, 
+                                                                                        'width': 'calc(' + ( Number(phase.long_time.substr(0,2)) + Number(phase.long_time.substr(3,2)) / 60 ) * 800 + 'px - .25rem)',
+                                                                                        'left': 'calc(' + ( (n - 1 ) * data.loop_add + Number(phase.start_time.substr(0,2)) + Number(phase.start_time.substr(3,2)) / 60 ) * 800 + 'px + 400px'
+                                                                                    }">
+<div class="phase-time"><template v-if="(n - 1) * data.loop_add + Number(phase.start_time.substr(0,2)) < 10">0</template>{{ (n - 1) * data.loop_add + Number(phase.start_time.substr(0,2)) + phase.start_time.substr(2,3) }}</div>
+<div class="phase-name">{{ phase.name }}</div>
+<div class="phase-name">{{ phase.chat_link }}</div>
+</div>
+</template>
+</template>
+<template v-for="phase in data.next_data">
+<div class="timer-phase" :style="{
+                                                                                    'background': phase.start_color == phase.end_color ? phase.start_color : 'linear-gradient(to right,' + phase.start_color + ',' + phase.end_color + ')', 
+                                                                                    'color': phase.font_color, 
+                                                                                    'width': 'calc(' + ( Number(phase.long_time.substr(0,2)) + Number(phase.long_time.substr(3,2)) / 60 ) * 800 + 'px - .25rem)',
+                                                                                    'left': 'calc(' + ((( Number(phase.start_time.substr(0,2)) == 0 ? 24 : ( Number(phase.start_time.substr(0,2))) )  + Number(phase.start_time.substr(3,2)) / 60 ) * 800 + 400) + 'px'
+                                                                                }">
+<div class="phase-time">{{ phase.start_time }}<template v-if="phase.start_time == '00:00'"> ({{ tomorrow_day_cn }})</template></div>
+<div class="phase-name">{{ phase.name }}</div>
+<div class="phase-name">{{ phase.chat_link }}</div>
+</div>
+</template>
+</template>
+</template>
+</template>
+</div>
+</div>
+</template>
+</template>
+</div>
+</div>
+<div class="timer-title">
+<template v-for="meta in meta_data">
+<template v-if="meta.category_id == active_id || meta.category_id == 1 && meta.order == 1">
+<div class="timer-meta" :style="{'height': 'calc(' + meta.bar_height + 'px + 1.7rem)'}">
+<div class="timer-name">{{ meta.name }}
+<template v-if="meta.week_data">（{{ today_day_cn }}）</template>
+</div>
+</div>
+</template>
+</template>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var app_timer = new Vue({
+    el: '#app-timer',
+    data: {
+        "active": 0,
+        "active_id": 1,
+        "timer_line_left": 0,
+        "scroll_left": 0,
+        "transition_left": '',
+        "server_time": "00:00",
+        "local_time": "00:00",
+        "today_day": "",
+        "today_day_cn": "",
+        "yesterday_day_cn": "",
+        "tomorrow_day_cn": "",
+        "weekday": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        "weekday_cn": ["周日", "周一", "周二", "周三", "周四", "周五", "周六"],
+        "categories_data": [
+                        {
+                "id": 1,
+                "name": '泰瑞亚中心',
+                "order": '1'
+            },
+                        {
+                "id": 9,
+                "name": '世界动态第二季',
+                "order": '2'
+            },
+                        {
+                "id": 2,
+                "name": '决战迈古玛',
+                "order": '3'
+            },
+                        {
+                "id": 10,
+                "name": '世界动态第三季',
+                "order": '4'
+            },
+                        {
+                "id": 3,
+                "name": '烈焰征途',
+                "order": '5'
+            },
+                        {
+                "id": 11,
+                "name": '世界动态第四季',
+                "order": '6'
+            },
+                        {
+                "id": 12,
+                "name": '冰巢传说',
+                "order": '7'
+            },
+                        {
+                "id": 4,
+                "name": '其他',
+                "order": '9'
+            },
+                    ],
+        "meta_data": [
+                        { 
+    "name": "",
+    "category_id": 1,
+    "order": 1,
+    "bar_height": 58,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "破晓",
+                "start_time": "00:25",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#555555",
+                "end_color": "#aaaaaa",
+                "font_color": "#333"
+            },
+            {
+                "name": "白天",
+                "start_time": "00:30",
+                "long_time": "01:10",
+                "chat_link": "",
+                "start_color": "#aaaaaa",
+                "end_color": "#aaaaaa",
+                "font_color": "#333"
+            },
+            {
+                "name": "薄暮",
+                "start_time": "01:40",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#aaaaaa",
+                "end_color": "#555555",
+                "font_color": "#333"
+            },
+            {
+                "name": "夜晚",
+                "start_time": "01:45",
+                "long_time": "00:40",
+                "chat_link": "",
+                "start_color": "#555555",
+                "end_color": "#555555",
+                "font_color": "#ddd"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "白天",
+                "start_time": "23:30",
+                "long_time": "00:10",
+                "chat_link": "",
+                "start_color": "#aaaaaa",
+                "end_color": "#aaaaaa",
+                "font_color": "#333"
+            },
+            {
+                "name": "薄暮",
+                "start_time": "23:40",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#aaaaaa",
+                "end_color": "#555555",
+                "font_color": "#333"
+            },
+            {
+                "name": "夜晚",
+                "start_time": "23:45",
+                "long_time": "00:40",
+                "chat_link": "",
+                "start_color": "#555555",
+                "end_color": "#555555",
+                "font_color": "#ddd"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "破晓",
+                "start_time": "00:25",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#555555",
+                "end_color": "#aaaaaa",
+                "font_color": "#333"
+            }
+        ]
+    }
+    
+},
+                        {
+    "name": "世界BOSS",
+    "category_id": 1,
+    "bar_height": 79,
+    "data": {
+        "loop_times": 2,
+        "loop_add": 12,
+        "loop_data": [
+            {
+                "name": "碎裂巨兽",
+                "start_time": "00:00",
+                "long_time": "00:15",
+                "chat_link": "[&BE4DAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "斯瓦尼亚萨满",
+                "start_time": "00:15",
+                "long_time": "00:15",
+                "chat_link": "[&BH4BAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "莫迪尔沃尔格斯",
+                "start_time": "00:30",
+                "long_time": "00:15",
+                "chat_link": "[&BLEAAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "火焰元素",
+                "start_time": "00:45",
+                "long_time": "00:15",
+                "chat_link": "[&BEYAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "魔像马克II型",
+                "start_time": "01:00",
+                "long_time": "00:15",
+                "chat_link": "[&BNQCAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "巨型丛林地虫",
+                "start_time": "01:15",
+                "long_time": "00:15",
+                "chat_link": "[&BEEFAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "卓玛之爪",
+                "start_time": "01:30",
+                "long_time": "00:15",
+                "chat_link": "[&BHoCAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "暗影巨兽",
+                "start_time": "01:45",
+                "long_time": "00:15",
+                "chat_link": "[&BPwAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "泰达·科文顿",
+                "start_time": "02:00",
+                "long_time": "00:15",
+                "chat_link": "[&BKgBAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "斯瓦尼亚萨满",
+                "start_time": "02:15",
+                "long_time": "00:15",
+                "chat_link": "[&BH4BAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "超能毁灭者",
+                "start_time": "02:30",
+                "long_time": "00:15",
+                "chat_link": "[&BM0CAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "火焰元素",
+                "start_time": "02:45",
+                "long_time": "00:15",
+                "chat_link": "[&BEYAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "碎裂巨兽",
+                "start_time": "03:00",
+                "long_time": "00:15",
+                "chat_link": "[&BE4DAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "巨型丛林地虫",
+                "start_time": "03:15",
+                "long_time": "00:15",
+                "chat_link": "[&BEEFAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "莫迪尔沃尔格斯",
+                "start_time": "03:30",
+                "long_time": "00:15",
+                "chat_link": "[&BLEAAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "暗影巨兽",
+                "start_time": "03:45",
+                "long_time": "00:15",
+                "chat_link": "[&BPwAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "魔像马克II型",
+                "start_time": "04:00",
+                "long_time": "00:15",
+                "chat_link": "[&BNQCAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "斯瓦尼亚萨满",
+                "start_time": "04:15",
+                "long_time": "00:15",
+                "chat_link": "[&BH4BAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "卓玛之爪",
+                "start_time": "04:30",
+                "long_time": "00:15",
+                "chat_link": "[&BHoCAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "火焰元素",
+                "start_time": "04:45",
+                "long_time": "00:15",
+                "chat_link": "[&BEYAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "泰达·科文顿",
+                "start_time": "05:00",
+                "long_time": "00:15",
+                "chat_link": "[&BKgBAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "巨型丛林地虫",
+                "start_time": "05:15",
+                "long_time": "00:15",
+                "chat_link": "[&BEEFAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "超能毁灭者",
+                "start_time": "05:30",
+                "long_time": "00:15",
+                "chat_link": "[&BM0CAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "暗影巨兽",
+                "start_time": "05:45",
+                "long_time": "00:15",
+                "chat_link": "[&BPwAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "碎裂巨兽",
+                "start_time": "06:00",
+                "long_time": "00:15",
+                "chat_link": "[&BE4DAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "斯瓦尼亚萨满",
+                "start_time": "06:15",
+                "long_time": "00:15",
+                "chat_link": "[&BH4BAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "莫迪尔沃尔格斯",
+                "start_time": "06:30",
+                "long_time": "00:15",
+                "chat_link": "[&BLEAAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "火焰元素",
+                "start_time": "06:45",
+                "long_time": "00:15",
+                "chat_link": "[&BEYAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "魔像马克II型",
+                "start_time": "07:00",
+                "long_time": "00:15",
+                "chat_link": "[&BNQCAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "巨型丛林地虫",
+                "start_time": "07:15",
+                "long_time": "00:15",
+                "chat_link": "[&BEEFAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "卓玛之爪",
+                "start_time": "07:30",
+                "long_time": "00:15",
+                "chat_link": "[&BHoCAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "暗影巨兽",
+                "start_time": "07:45",
+                "long_time": "00:15",
+                "chat_link": "[&BPwAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "泰达·科文顿",
+                "start_time": "08:00",
+                "long_time": "00:15",
+                "chat_link": "[&BKgBAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "斯瓦尼亚萨满",
+                "start_time": "08:15",
+                "long_time": "00:15",
+                "chat_link": "[&BH4BAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "超能毁灭者",
+                "start_time": "08:30",
+                "long_time": "00:15",
+                "chat_link": "[&BM0CAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "火焰元素",
+                "start_time": "08:45",
+                "long_time": "00:15",
+                "chat_link": "[&BEYAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "碎裂巨兽",
+                "start_time": "09:00",
+                "long_time": "00:15",
+                "chat_link": "[&BE4DAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "巨型丛林地虫",
+                "start_time": "09:15",
+                "long_time": "00:15",
+                "chat_link": "[&BEEFAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "莫迪尔沃尔格斯",
+                "start_time": "09:30",
+                "long_time": "00:15",
+                "chat_link": "[&BLEAAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "暗影巨兽",
+                "start_time": "09:45",
+                "long_time": "00:15",
+                "chat_link": "[&BPwAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "魔像马克II型",
+                "start_time": "10:00",
+                "long_time": "00:15",
+                "chat_link": "[&BNQCAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "斯瓦尼亚萨满",
+                "start_time": "10:15",
+                "long_time": "00:15",
+                "chat_link": "[&BH4BAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "卓玛之爪",
+                "start_time": "10:30",
+                "long_time": "00:15",
+                "chat_link": "[&BHoCAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "火焰元素",
+                "start_time": "10:45",
+                "long_time": "00:15",
+                "chat_link": "[&BEYAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "泰达·科文顿",
+                "start_time": "11:00",
+                "long_time": "00:15",
+                "chat_link": "[&BKgBAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "巨型丛林地虫",
+                "start_time": "11:15",
+                "long_time": "00:15",
+                "chat_link": "[&BEEFAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            },
+            {
+                "name": "超能毁灭者",
+                "start_time": "11:30",
+                "long_time": "00:15",
+                "chat_link": "[&BM0CAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "暗影巨兽",
+                "start_time": "11:45",
+                "long_time": "00:15",
+                "chat_link": "[&BPwAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "超能毁灭者",
+                "start_time": "23:30",
+                "long_time": "00:15",
+                "chat_link": "[&BM0CAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "暗影巨兽",
+                "start_time": "23:45",
+                "long_time": "00:15",
+                "chat_link": "[&BPwAAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "碎裂巨兽",
+                "start_time": "00:00",
+                "long_time": "00:15",
+                "chat_link": "[&BE4DAAA=]",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "斯瓦尼亚萨满",
+                "start_time": "00:15",
+                "long_time": "00:15",
+                "chat_link": "[&BH4BAAA=]",
+                "start_color": "#FFA850",
+                "end_color": "#FFA850"
+            }
+        ]
+    }
+},
+                        {
+    "name": "世界BOSS（大型团队事件）",
+    "category_id": 1,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 1,
+        "loop_add": 24,
+        "loop_data": [
+            {
+                "name": "吞噬托（僵尸龙）",
+                "start_time": "00:00",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "gold",
+                        "title": "金币",
+                        "num": 2
+                    }
+                ],
+                "chat_link": "[&BNABAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "00:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "三重麻烦",
+                "start_time": "01:00",
+                "long_time": "00:15",
+                "chat_link": "[&BKoBAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "01:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "喀壳虫女王",
+                "start_time": "02:00",
+                "long_time": "00:15",
+                "chat_link": "[&BNcGAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "02:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "吞噬托（僵尸龙）",
+                "start_time": "03:00",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "gold",
+                        "title": "金币",
+                        "num": 2
+                    }
+                ],
+                "chat_link": "[&BNABAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "03:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "三重麻烦",
+                "start_time": "04:00",
+                "long_time": "00:15",
+                "chat_link": "[&BKoBAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "04:15",
+                "long_time": "02:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "喀壳虫女王",
+                "start_time": "07:00",
+                "long_time": "00:15",
+                "chat_link": "[&BNcGAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "07:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "吞噬托（僵尸龙）",
+                "start_time": "08:00",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "gold",
+                        "title": "金币",
+                        "num": 2
+                    }
+                ],
+                "chat_link": "[&BNABAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "08:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "三重麻烦",
+                "start_time": "09:00",
+                "long_time": "00:15",
+                "chat_link": "[&BKoBAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "09:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "喀壳虫女王",
+                "start_time": "10:00",
+                "long_time": "00:15",
+                "chat_link": "[&BNcGAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "10:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "吞噬托（僵尸龙）",
+                "start_time": "11:00",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "gold",
+                        "title": "金币",
+                        "num": 2
+                    }
+                ],
+                "chat_link": "[&BNABAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "11:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "三重麻烦",
+                "start_time": "12:00",
+                "long_time": "00:15",
+                "chat_link": "[&BKoBAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "12:15",
+                "long_time": "01:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "喀壳虫女王",
+                "start_time": "14:00",
+                "long_time": "00:15",
+                "chat_link": "[&BNcGAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "14:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "吞噬托（僵尸龙）",
+                "start_time": "15:00",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "gold",
+                        "title": "金币",
+                        "num": 2
+                    }
+                ],
+                "chat_link": "[&BNABAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "15:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "三重麻烦",
+                "start_time": "16:00",
+                "long_time": "00:15",
+                "chat_link": "[&BKoBAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "16:15",
+                "long_time": "02:15",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "喀壳虫女王",
+                "start_time": "18:30",
+                "long_time": "00:15",
+                "chat_link": "[&BNcGAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "18:45",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "吞噬托（僵尸龙）",
+                "start_time": "19:30",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "gold",
+                        "title": "金币",
+                        "num": 2
+                    }
+                ],
+                "chat_link": "[&BNABAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "19:45",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "三重麻烦",
+                "start_time": "20:30",
+                "long_time": "00:15",
+                "chat_link": "[&BKoBAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "20:45",
+                "long_time": "02:15",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            },
+            {
+                "name": "喀壳虫女王",
+                "start_time": "23:00",
+                "long_time": "00:15",
+                "chat_link": "[&BNcGAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "23:15",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            }
+
+        ],
+        "last_data": [
+            {
+                "name": " ",
+                "start_time": "23:30",
+                "long_time": "00:30",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "吞噬托（僵尸龙）",
+                "start_time": "00:00",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "gold",
+                        "title": "金币",
+                        "num": 2
+                    }
+                ],
+                "chat_link": "[&BNABAAA=]",
+                "start_color": "#EA788F",
+                "end_color": "#EA788F"
+            },
+            {
+                "name": " ",
+                "start_time": "00:15",
+                "long_time": "00:15",
+                "chat_link": "",
+                "start_color": "#E9A9B8",
+                "end_color": "#E9A9B8"
+            }
+        ]
+    }
+        
+},
+                        {
+    "name": "PvP锦标赛",
+    "category_id": 1,
+    "bar_height": 60,
+    "data": {
+        "loop_times": 2,
+        "loop_add": 12,
+        "loop_data": [
+            {
+                "name": "",
+                "start_time": "00:00",
+                "long_time": "02:00",
+                "chat_link": "",
+                "start_color": "#FBC784",
+                "end_color": "#FBC784"
+            },
+            {
+                "name": "梅兰朵的比赛",
+                "start_time": "02:00",
+                "long_time": "01:00",
+                "chat_link": "",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "",
+                "start_time": "03:00",
+                "long_time": "02:00",
+                "chat_link": "",
+                "start_color": "#FBC784",
+                "end_color": "#FBC784"
+            },
+            {
+                "name": "丽莎军团",
+                "start_time": "05:00",
+                "long_time": "01:00",
+                "chat_link": "",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "",
+                "start_time": "06:00",
+                "long_time": "02:00",
+                "chat_link": "",
+                "start_color": "#FBC784",
+                "end_color": "#FBC784"
+            },
+            {
+                "name": "巴萨泽之拳",
+                "start_time": "08:00",
+                "long_time": "01:00",
+                "chat_link": "",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            },
+            {
+                "name": "",
+                "start_time": "09:00",
+                "long_time": "02:00",
+                "chat_link": "",
+                "start_color": "#FBC784",
+                "end_color": "#FBC784"
+            },
+            {
+                "name": "古兰斯的游戏",
+                "start_time": "11:00",
+                "long_time": "01:00",
+                "chat_link": "",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "古兰斯的游戏",
+                "start_time": "23:30",
+                "long_time": "00:30",
+                "chat_link": "",
+                "start_color": "#FF8550",
+                "end_color": "#FF8550"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "",
+                "start_time": "00:00",
+                "long_time": "00:30",
+                "chat_link": "",
+                "start_color": "#FBC784",
+                "end_color": "#FBC784"
+            }
+        ]
+    }
+        
+},
+                        { 
+    "name": "苍翠边界",
+    "category_id": 2,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "夜晚BOSS（母龙、翼龙等）",
+                "start_time": "00:10",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BAgIAAA=]",
+                "start_color": "#6DAC2F",
+                "end_color": "#6DAC2F"
+            },
+            {
+                "name": "白天，精锐石首蜥",
+                "start_time": "00:30",
+                "long_time": "01:15",
+                "chat_link": "[&BN4HAAA=]",
+                "start_color": "#C4E2A5",
+                "end_color": "#C4E2A5"
+            },
+            {
+                "name": "夜晚",
+                "start_time": "01:45",
+                "long_time": "00:25",
+                "chat_link": "",
+                "start_color": "#84C147",
+                "end_color": "#84C147"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "白天，精锐石首蜥",
+                "start_time": "23:30",
+                "long_time": "00:15",
+                "chat_link": "",
+                "start_color": "#C4E2A5",
+                "end_color": "#C4E2A5"
+            },
+            {
+                "name": "夜晚",
+                "start_time": "23:45",
+                "long_time": "00:25",
+                "chat_link": "",
+                "start_color": "#84C147",
+                "end_color": "#84C147"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "夜晚BOSS（母龙、翼龙等）",
+                "start_time": "00:10",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BAgIAAA=]",
+                "start_color": "#6DAC2F",
+                "end_color": "#6DAC2F"
+            }
+        ]
+    }
+    
+},
+                        { 
+    "name": "赤金盆地",
+    "category_id": 2,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 11,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "火焰试炼（守望哨站挑战）",
+                "start_time": "00:45",
+                "long_time": "00:15",
+                "chat_link": "",
+                "start_color": "#FFD53D",
+                "end_color": "#FFD53D"
+            },
+            {
+                "name": "塔瑞尔之战（四门）",
+                "start_time": "01:00",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BGwIAAA=]",
+                "start_color": "#EAB700",
+                "end_color": "#EAB700"
+            },
+            {
+                "name": "重置",
+                "start_time": "01:20",
+                "long_time": "00:10",
+                "chat_link": "",
+                "start_color": "#FFF1C1",
+                "end_color": "#FFF1C1"
+            },
+            {
+                "name": "守望哨站",
+                "start_time": "01:30",
+                "long_time": "01:15",
+                "chat_link": "",
+                "start_color": "#FFE37F",
+                "end_color": "#FFE37F"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "守望哨站",
+                "start_time": "23:30",
+                "long_time": "01:15",
+                "chat_link": "",
+                "start_color": "#FFE37F",
+                "end_color": "#FFE37F"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "火焰试炼（守望哨站挑战）",
+                "start_time": "22:45",
+                "long_time": "00:15",
+                "chat_link": "",
+                "start_color": "#FFD53D",
+                "end_color": "#FFD53D"
+            },
+            {
+                "name": "塔瑞尔之战（四门）",
+                "start_time": "23:00",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BGwIAAA=]",
+                "start_color": "#EAB700",
+                "end_color": "#EAB700"
+            },
+            {
+                "name": "重置",
+                "start_time": "23:20",
+                "long_time": "00:10",
+                "chat_link": "",
+                "start_color": "#FFF1C1",
+                "end_color": "#FFF1C1"
+            },
+            {
+                "name": "守望哨站",
+                "start_time": "23:30",
+                "long_time": "01:00",
+                "chat_link": "",
+                "start_color": "#FFE37F",
+                "end_color": "#FFE37F"
+            }
+        ]
+    }    
+},
+                        { 
+    "name": "缠藤深渊",
+    "category_id": 2,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "准备",
+                "start_time": "00:25",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#FFBDBD",
+                "end_color": "#FFBDBD"
+            },
+            {
+                "name": "丛林之王（虫王）",
+                "start_time": "00:30",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BPUHAAA=]",
+                "start_color": "#F99",
+                "end_color": "#F99"
+            },
+            {
+                "name": "前哨事件",
+                "start_time": "00:50",
+                "long_time": "01:35",
+                "chat_link": "",
+                "start_color": "#FFD7D7",
+                "end_color": "#FFD7D7"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "前哨事件",
+                "start_time": "23:30",
+                "long_time": "00:55",
+                "chat_link": "",
+                "start_color": "#FFD7D7",
+                "end_color": "#FFD7D7"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "准备",
+                "start_time": "00:25",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#FFBDBD",
+                "end_color": "#FFBDBD"
+            }
+        ]
+    }     
+},
+                        { 
+    "name": "巨龙阵地",
+    "category_id": 2,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 11,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "巨龙新一轮开始",
+                "start_time": "01:30",
+                "long_time": "02:00",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BBAIAAA=]",
+                "start_color": "#9f99cc",
+                "end_color": "#c8c5e5"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "巨龙新一轮开始",
+                "start_time": "23:30",
+                "long_time": "02:00",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BBAIAAA=]",
+                "start_color": "#9f99cc",
+                "end_color": "#c8c5e5"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "巨龙新一轮开始",
+                "start_time": "23:30",
+                "long_time": "01:00",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BBAIAAA=]",
+                "start_color": "#9f99cc",
+                "end_color": "#c8c5e5"
+            }
+        ]
+    }
+    
+},
+                        { 
+    "name": "水晶绿洲",
+    "category_id": 3,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "赌场闪电战 1 ~ 3",
+                "start_time": "00:05",
+                "long_time": "00:16",
+                "chat_link": "[&BLsKAAA=]",
+                "start_color": "#64C147",
+                "end_color": "#64C147"
+            },
+            {
+                "name": "丘牙兽彩罐",
+                "start_time": "00:21",
+                "long_time": "00:09",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BLsKAAA=]",
+                "start_color": "#6DAC2F",
+                "end_color": "#6DAC2F"
+            },
+            {
+                "name": " ",
+                "start_time": "00:30",
+                "long_time": "01:35",
+                "chat_link": "",
+                "start_color": "#C4E2A5",
+                "end_color": "#C4E2A5"
+            }
+        ],
+        "last_data": [
+            {
+                "name": " ",
+                "start_time": "23:30",
+                "long_time": "00:35",
+                "chat_link": "",
+                "start_color": "#C4E2A5",
+                "end_color": "#C4E2A5"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "赌场闪电战 1 ~ 3",
+                "start_time": "00:05",
+                "long_time": "00:16",
+                "chat_link": "[&BLsKAAA=]",
+                "start_color": "#64C147",
+                "end_color": "#64C147"
+            },
+            {
+                "name": "丘牙兽彩罐",
+                "start_time": "00:21",
+                "long_time": "00:09",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BLsKAAA=]",
+                "start_color": "#6DAC2F",
+                "end_color": "#6DAC2F"
+            }
+        ]
+    }
+},
+                        { 
+    "name": "沙漠高地",
+    "category_id": 3,
+    "bar_height": 79,
+    "data": {
+        "loop_times": 11,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "寻找埋藏的宝藏",
+                "start_time": "01:00",
+                "long_time": "00:20",
+                "chat_link": "[&BGsKAAA=]",
+                "start_color": "#FFA726",
+                "end_color": "#FFA726"
+            },
+            {
+                "name": " ",
+                "start_time": "01:20",
+                "long_time": "01:40",
+                "chat_link": "",
+                "start_color": "#FFCC80",
+                "end_color": "#FFCC80"
+            }
+        ],
+        "last_data": [
+            {
+                "name": " ",
+                "start_time": "23:30",
+                "long_time": "01:30",
+                "chat_link": "",
+                "start_color": "#FFCC80",
+                "end_color": "#FFCC80"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "寻找埋藏的宝藏",
+                "start_time": "23:00",
+                "long_time": "00:20",
+                "chat_link": "[&BGsKAAA=]",
+                "start_color": "#FFA726",
+                "end_color": "#FFA726"
+            },
+            {
+                "name": " ",
+                "start_time": "23:20",
+                "long_time": "01:10",
+                "chat_link": "",
+                "start_color": "#FFCC80",
+                "end_color": "#FFCC80"
+            }
+        ]
+    }
+},
+                        { 
+    "name": "伊伦河湾",
+    "category_id": 3,
+    "bar_height": 100,
+    "data": {
+         "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": " ",
+                "start_time": "00:15",
+                "long_time": "01:15",
+                "chat_link": "",
+                "start_color": "#4FC3F7",
+                "end_color": "#4FC3F7"
+            },
+            {
+                "name": "预言之石：晋升之路",
+                "start_time": "01:30",
+                "long_time": "00:25",
+                "chat_link": "[&BFMKAAA=]",
+                "start_color": "#039BE5",
+                "end_color": "#039BE5"
+            },
+            {
+                "name": "疯狂的分身",
+                "start_time": "01:55",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BCgKAAA=]",
+                "start_color": "#039BE5",
+                "end_color": "#039BE5"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "预言之石：晋升之路",
+                "start_time": "23:30",
+                "long_time": "00:25",
+                "chat_link": "[&BFMKAAA=]",
+                "start_color": "#039BE5",
+                "end_color": "#039BE5"
+            },
+            {
+                "name": "疯狂的分身",
+                "start_time": "23:55",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BCgKAAA=]",
+                "start_color": "#039BE5",
+                "end_color": "#039BE5"
+            }
+        ],
+        "next_data": [
+            {
+                "name": " ",
+                "start_time": "00:15",
+                "long_time": "00:15",
+                "chat_link": "",
+                "start_color": "#4FC3F7",
+                "end_color": "#4FC3F7"
+            }
+        ]
+    }
+},
+                        { 
+    "name": "荒芜之地",
+    "category_id": 3,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "巨努多地虫",
+                "start_time": "00:30",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BFgKAAA=]",
+                "start_color": "#795548",
+                "end_color": "#795548",
+                "font_color": "#fff"
+            },
+            {
+                "name": " ",
+                "start_time": "00:50",
+                "long_time": "00:10",
+                "chat_link": "",
+                "start_color": "#A1887F",
+                "end_color": "#A1887F"
+            },
+            {
+                "name": "磨难之口",
+                "start_time": "01:00",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BGQKAAA=]",
+                "start_color": "#4D3732",
+                "end_color": "#4D3732",
+                "font_color": "#fff"
+            },
+            {
+                "name": " ",
+                "start_time": "01:20",
+                "long_time": "00:10",
+                "chat_link": "",
+                "start_color": "#A1887F",
+                "end_color": "#A1887F"
+            },
+            {
+                "name": "巨努多地虫",
+                "start_time": "01:30",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BFgKAAA=]",
+                "start_color": "#795548",
+                "end_color": "#795548",
+                "font_color": "#fff"
+            },
+            {
+                "name": " ",
+                "start_time": "01:50",
+                "long_time": "00:40",
+                "chat_link": "",
+                "start_color": "#A1887F",
+                "end_color": "#A1887F"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "巨努多地虫",
+                "start_time": "23:30",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BFgKAAA=]",
+                "start_color": "#795548",
+                "end_color": "#795548",
+                "font_color": "#fff"
+            },
+            {
+                "name": " ",
+                "start_time": "23:50",
+                "long_time": "00:40",
+                "chat_link": "",
+                "start_color": "#A1887F",
+                "end_color": "#A1887F"
+            }
+        ],
+        "next_data": [
+            
+        ]
+    }
+},
+                        { 
+    "name": "瓦比领域",
+    "category_id": 3,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "烈焰塑形（双狗）",
+                "start_time": "00:00",
+                "long_time": "00:30",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BG0KAAA=]",
+                "start_color": "#8E24AA",
+                "end_color": "#8E24AA",
+                "font_color": "#fff"
+            },
+            {
+                "name": "巨蛇之怒",
+                "start_time": "00:30",
+                "long_time": "00:30",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BPIKAAA=]",
+                "start_color": "#5A249C",
+                "end_color": "#5A249C",
+                "font_color": "#fff"
+            },
+            {
+                "name": "烈焰塑形（双狗）",
+                "start_time": "01:00",
+                "long_time": "00:30",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BG0KAAA=]",
+                "start_color": "#8E24AA",
+                "end_color": "#8E24AA",
+                "font_color": "#fff"
+            },
+            {
+                "name": " ",
+                "start_time": "01:30",
+                "long_time": "00:30",
+                "chat_link": "",
+                "start_color": "#B64CD2",
+                "end_color": "#B64CD2",
+                "font_color": "#fff"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "烈焰塑形（双狗）",
+                "start_time": "23:00",
+                "long_time": "00:30",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BG0KAAA=]",
+                "start_color": "#8E24AA",
+                "end_color": "#8E24AA",
+                "font_color": "#fff"
+            },
+            {
+                "name": " ",
+                "start_time": "23:30",
+                "long_time": "00:30",
+                "chat_link": "",
+                "start_color": "#B64CD2",
+                "end_color": "#B64CD2",
+                "font_color": "#fff"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "烈焰塑形（双狗）",
+                "start_time": "00:00",
+                "long_time": "00:30",
+                "trophies": [
+                    {
+                        "class": "amalgamated-gemstone",
+                        "title": "合成宝石",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BG0KAAA=]",
+                "start_color": "#8E24AA",
+                "end_color": "#8E24AA",
+                "font_color": "#fff"
+            }
+        ]
+    }
+},
+                        {},
+                        { 
+    "name": "魔径异常体（跑男）",
+    "category_id": 4,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 4,
+        "loop_add": 6,
+        "loop_data": [
+            {
+                "name": "甘达拉战区",
+                "start_time": "00:20",
+                "long_time": "00:40",
+                "trophies": [
+                    {
+                        "class": "mystic-coin",
+                        "title": "神秘硬币",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BJEBAAA=]",
+                "start_color": "#ED7575",
+                "end_color": "#ED7575"
+            },
+            {
+                "name": " ",
+                "start_time": "01:00",
+                "long_time": "01:20",
+                "chat_link": " ",
+                "start_color": "#FDB5B5",
+                "end_color": "#FDB5B5"
+            },
+            {
+                "name": "林线瀑布",
+                "start_time": "02:20",
+                "long_time": "00:40",
+                "trophies": [
+                    {
+                        "class": "mystic-coin",
+                        "title": "神秘硬币",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BEwCAAA=]",
+                "start_color": "#ED7575",
+                "end_color": "#ED7575"
+            },
+            {
+                "name": " ",
+                "start_time": "03:00",
+                "long_time": "01:20",
+                "chat_link": " ",
+                "start_color": "#FDB5B5",
+                "end_color": "#FDB5B5"
+            },
+            {
+                "name": "钢铁平原",
+                "start_time": "04:20",
+                "long_time": "00:40",
+                "trophies": [
+                    {
+                        "class": "mystic-coin",
+                        "title": "神秘硬币",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BOYBAAA=]",
+                "start_color": "#ED7575",
+                "end_color": "#ED7575"
+            },
+            {
+                "name": " ",
+                "start_time": "05:00",
+                "long_time": "01:20",
+                "chat_link": " ",
+                "start_color": "#FDB5B5",
+                "end_color": "#FDB5B5"
+            }
+        ],
+        "last_data": [
+            {
+                "name": " ",
+                "start_time": "23:30",
+                "long_time": "00:50",
+                "chat_link": " ",
+                "start_color": "#FDB5B5",
+                "end_color": "#FDB5B5"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "甘达拉战区",
+                "start_time": "00:20",
+                "long_time": "00:10",
+                "trophies": [
+                    {
+                        "class": "mystic-coin",
+                        "title": "神秘硬币",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BJEBAAA=]",
+                "start_color": "#ED7575",
+                "end_color": "#ED7575"
+            }
+        ]
+    }
+},
+                        { 
+    "name": "区域防守",
+    "category_id": 4,
+    "bar_height": 79,
+    "week_data": [
+        {
+            "day": "Mon",
+            "loop_times": 3,
+            "loop_add": 7,
+            "loop_data": [
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "00:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "01:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "01:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "02:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "02:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "03:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "03:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "04:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "04:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "05:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "05:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "06:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "06:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "last_data": [
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "next_data": [
+                {
+                    "name": " ",
+                    "start_time": "21:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "21:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "22:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "22:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "23:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                }
+            ]
+        },
+        {
+            "day": "Tue",
+            "loop_times": 3,
+            "loop_add": 7,
+            "loop_data": [
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "00:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "01:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "01:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "02:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "02:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "03:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "03:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "04:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "04:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "05:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "05:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "06:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "06:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "last_data": [
+                {
+                    "name": "度量领域",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "next_data": [
+                {
+                    "name": " ",
+                    "start_time": "21:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "21:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "22:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "22:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "23:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                }
+            ]
+        },
+        {
+            "day": "Wed",
+            "loop_times": 3,
+            "loop_add": 7,
+            "loop_data": [
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "00:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "01:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "01:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "02:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "02:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "03:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "03:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "04:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "04:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+                ,{
+                    "name": " ",
+                    "start_time": "05:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "05:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "06:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "06:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "last_data": [
+                {
+                    "name": "度量领域",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "next_data": [
+                {
+                    "name": " ",
+                    "start_time": "21:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "21:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "22:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "22:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "23:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                }
+            ]
+        },
+        {
+            "day": "Thu",
+            "loop_times": 3,
+            "loop_add": 7,
+            "loop_data": [
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "00:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "01:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "01:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "02:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "02:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "03:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "03:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "04:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "04:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "05:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "05:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "06:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "06:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "last_data": [
+                {
+                    "name": "南阳海湾",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "next_data": [
+                {
+                    "name": " ",
+                    "start_time": "21:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "21:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "22:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "22:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "23:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                }
+            ]
+        },
+        {
+            "day": "Fri",
+            "loop_times": 3,
+            "loop_add": 7,
+            "loop_data": [
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "00:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "01:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "01:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "02:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "02:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "03:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "03:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "04:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "04:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "05:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "05:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "06:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "06:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "last_data": [
+                {
+                    "name": "女王谷",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "next_data": [
+                {
+                    "name": " ",
+                    "start_time": "21:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "21:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "22:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "22:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "23:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                }
+            ]
+        },
+        {
+            "day": "Sat",
+            "loop_times": 3,
+            "loop_add": 7,
+            "loop_data": [
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "00:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "01:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "01:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "02:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "02:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "03:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "03:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "04:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "04:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "05:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "05:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "06:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "06:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "last_data": [
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "next_data": [
+                {
+                    "name": " ",
+                    "start_time": "21:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "21:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "22:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "22:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "23:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                }
+            ]
+        },
+        {
+            "day": "Sun",
+            "loop_times": 3,
+            "loop_add": 7,
+            "loop_data": [
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "00:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "01:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "01:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "02:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "02:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "03:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "甘达拉战区",
+                    "start_time": "03:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BM0DAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "04:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "南阳海湾",
+                    "start_time": "04:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BNUGAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "05:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "度量领域",
+                    "start_time": "05:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BEgAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "06:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "06:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "last_data": [
+                {
+                    "name": "卡勒顿之森",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BDcBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                }
+            ],
+            "next_data": [
+                {
+                    "name": " ",
+                    "start_time": "21:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "女王谷",
+                    "start_time": "21:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BPEAAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "22:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "旅者丘陵",
+                    "start_time": "22:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BHYBAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "23:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                },
+                {
+                    "name": "阿什福德平原",
+                    "start_time": "23:30",
+                    "long_time": "00:30",
+                    "chat_link": "[&BH8BAAA=]",
+                    "start_color": "#CD853F",
+                    "end_color": "#CD853F"
+                },
+                {
+                    "name": " ",
+                    "start_time": "00:00",
+                    "long_time": "00:30",
+                    "chat_link": "",
+                    "start_color": "#DEB887",
+                    "end_color": "#DEB887"
+                }
+            ]
+        }
+    ]  
+},
+                        { 
+    "name": "干涸高地",
+    "category_id": 9,
+    "bar_height": 79,
+    "data": {
+        "loop_times": 24,
+        "loop_add": 1,
+        "loop_data": [
+            {
+                "name": "坠毁点",
+                "start_time": "00:00",
+                "long_time": "00:40",
+                "chat_link": "",
+                "start_color": "#FCFADC",
+                "end_color": "#FCFADC"
+            },
+            {
+                "name": "沙尘暴",
+                "start_time": "00:40",
+                "long_time": "00:20",
+                "chat_link": "[&BIAHAAA=]",
+                "start_color": "#DED98A",
+                "end_color": "#DED98A"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "坠毁点",
+                "start_time": "23:30",
+                "long_time": "00:10",
+                "chat_link": "",
+                "start_color": "#FCFADC",
+                "end_color": "#FCFADC"
+            },
+            {
+                "name": "沙尘暴",
+                "start_time": "23:40",
+                "long_time": "00:20",
+                "chat_link": "[&BIAHAAA=]",
+                "start_color": "#DED98A",
+                "end_color": "#DED98A"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "坠毁点",
+                "start_time": "00:00",
+                "long_time": "00:30",
+                "chat_link": "",
+                "start_color": "#FCFADC",
+                "end_color": "#FCFADC"
+            }
+        ]
+    }
+},
+                        { 
+    "name": "多里克湖（第3章 - 罪恶首领）",
+    "category_id": 10,
+    "bar_height": 79,
+    "data": {
+        "loop_times": 11,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "诺兰山庄：伊梅尔霍夫",
+                "start_time": "00:30",
+                "long_time": "00:30",
+                "chat_link": "[&BKsJAAA=]",
+                "start_color": "#FF7043",
+                "end_color": "#FF7043"
+            },
+            {
+                "name": "塞德拉避难所：阿格莎",
+                "start_time": "01:00",
+                "long_time": "00:45",
+                "chat_link": "[&BKQJAAA=]",
+                "start_color": "#FF5722",
+                "end_color": "#FF5722"
+            },
+            {
+                "name": "新沃土之森：女王杀手凯玲",
+                "start_time": "01:45",
+                "long_time": "00:45",
+                "chat_link": "[&BK4JAAA=]",
+                "start_color": "#FF8A65",
+                "end_color": "#FF8A65"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "塞德拉避难所：阿格莎",
+                "start_time": "23:30",
+                "long_time": "00:15",
+                "chat_link": "[&BKQJAAA=]",
+                "start_color": "#FF5722",
+                "end_color": "#FF5722"
+            },
+            {
+                "name": "新沃土之森：女王杀手凯玲",
+                "start_time": "23:45",
+                "long_time": "00:45",
+                "chat_link": "[&BK4JAAA=]",
+                "start_color": "#FF8A65",
+                "end_color": "#FF8A65"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "诺兰山庄：伊梅尔霍夫",
+                "start_time": "22:30",
+                "long_time": "00:30",
+                "chat_link": "[&BKsJAAA=]",
+                "start_color": "#FF7043",
+                "end_color": "#FF7043"
+            },
+            {
+                "name": "塞德拉避难所：阿格莎",
+                "start_time": "23:00",
+                "long_time": "00:45",
+                "chat_link": "[&BKQJAAA=]",
+                "start_color": "#FF5722",
+                "end_color": "#FF5722"
+            },
+            {
+                "name": "新沃土之森：女王杀手凯玲",
+                "start_time": "23:45",
+                "long_time": "00:45",
+                "chat_link": "[&BK4JAAA=]",
+                "start_color": "#FF8A65",
+                "end_color": "#FF8A65"
+            }
+        ]
+    }
+},
+                        { 
+    "name": "伊斯坦领域（第1章 - 黎明将至）",
+    "category_id": 11,
+    "bar_height": 79,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": " ",
+                "start_time": "00:15",
+                "long_time": "01:30",
+                "chat_link": "",
+                "start_color": "#FFB74D",
+                "end_color": "#FFB74D"
+            },
+            {
+                "name": "帕拉瓦",
+                "start_time": "01:45",
+                "long_time": "00:30",
+                "chat_link": "[&BPcKAAA=]",
+                "start_color": "#EF6C00",
+                "end_color": "#EF6C00"
+            }
+        ],
+        "last_data": [
+            {
+                "name": " ",
+                "start_time": "23:30",
+                "long_time": "00:15",
+                "chat_link": "",
+                "start_color": "#FFB74D",
+                "end_color": "#FFB74D"
+            },
+            {
+                "name": "帕拉瓦",
+                "start_time": "23:45",
+                "long_time": "00:30",
+                "chat_link": "[&BPcKAAA=]",
+                "start_color": "#EF6C00",
+                "end_color": "#EF6C00"
+            }
+        ],
+        "next_data": [
+            {
+                "name": " ",
+                "start_time": "00:15",
+                "long_time": "00:15",
+                "chat_link": "",
+                "start_color": "#FFB74D",
+                "end_color": "#FFB74D"
+            }
+        ]
+    }
+},
+                        { 
+    "name": "亚哈悬崖（第4章 - 指路之星）",
+    "category_id": 11,
+    "bar_height": 79,
+    "data": {
+        "loop_times": 11,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "护送灭龙车",
+                "start_time": "01:00",
+                "long_time": "00:15",
+                "chat_link": "[&BHALAAA=]",
+                "start_color": "#B19ABF",
+                "end_color": "#B19ABF"
+            },
+            {
+                "name": "死亡碎裂巨兽",
+                "start_time": "01:15",
+                "long_time": "00:15",
+                "chat_link": "[&BHALAAA=]",
+                "start_color": "#9A73AF",
+                "end_color": "#9A73AF"
+            },
+            {
+                "name": " ",
+                "start_time": "01:30",
+                "long_time": "00:90",
+                "chat_link": "",
+                "start_color": "#C3B7BA",
+                "end_color": "#C3B7BA"
+            }
+        ],
+        "last_data": [
+            {
+                "name": " ",
+                "start_time": "23:30",
+                "long_time": "00:90",
+                "chat_link": "",
+                "start_color": "#C3B7BA",
+                "end_color": "#C3B7BA"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "护送灭龙车",
+                "start_time": "23:00",
+                "long_time": "00:15",
+                "chat_link": "[&BHALAAA=]",
+                "start_color": "#B19ABF",
+                "end_color": "#B19ABF"
+            },
+            {
+                "name": "死亡碎裂巨兽",
+                "start_time": "23:15",
+                "long_time": "00:15",
+                "chat_link": "[&BHALAAA=]",
+                "start_color": "#9A73AF",
+                "end_color": "#9A73AF"
+            },
+            {
+                "name": " ",
+                "start_time": "23:30",
+                "long_time": "00:60",
+                "chat_link": "",
+                "start_color": "#C3B7BA",
+                "end_color": "#C3B7BA"
+            }
+        ]
+    }
+},
+                        { 
+    "name": "雷云高峰（第5章 - 孤注一掷）",
+    "category_id": 11,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": " ",
+                "start_time": "00:00",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#CCC",
+                "end_color": "#CCC"
+            },
+            {
+                "name": "油料浮冰：烈性油料黏体怪",
+                "start_time": "00:45",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "light-of-deldrimor-plate-bottom-half",
+                        "title": "德里莫之光石板——下半部分",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BKYLAAA=]",
+                "start_color": "#999",
+                "end_color": "#999"
+            },
+            {
+                "name": " ",
+                "start_time": "01:00",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#CCC",
+                "end_color": "#CCC"
+            },
+            {
+                "name": "雷云要塞：愤怒使者",
+                "start_time": "01:45",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "light-of-deldrimor-plate-top-half",
+                        "title": "德里莫之光石板——上半部分",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BLsLAAA=]",
+                "start_color": "#999",
+                "end_color": "#999"
+            }
+        ],
+        "last_data": [
+            {
+                "name": " ",
+                "start_time": "23:30",
+                "long_time": "00:15",
+                "chat_link": "",
+                "start_color": "#CCC",
+                "end_color": "#CCC"
+            },
+            {
+                "name": "雷云要塞：愤怒使者",
+                "start_time": "23:45",
+                "long_time": "00:15",
+                "trophies": [
+                    {
+                        "class": "light-of-deldrimor-plate-top-half",
+                        "title": "德里莫之光石板——上半部分",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BLsLAAA=]",
+                "start_color": "#999",
+                "end_color": "#999"
+            }
+        ],
+        "next_data": [
+            {
+                "name": " ",
+                "start_time": "00:00",
+                "long_time": "00:30",
+                "chat_link": "",
+                "start_color": "#CCC",
+                "end_color": "#CCC"
+            }
+        ]
+    }
+},
+                        { 
+    "name": "戈瑟玛山谷（序章 - 血脉相连）",
+    "category_id": 12,
+    "bar_height": 100,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "烈焰军团营地：神圣烈焰仪式",
+                "start_time": "00:10",
+                "long_time": "00:28",
+                "trophies": [
+                    {
+                        "class": "flame-legion-key",
+                        "title": "烈焰军团钥匙",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BA4MAAA=]",
+                "start_color": "#FFCC80",
+                "end_color": "#FFCC80"
+            },
+            {
+                "name": "厄运传说废墟：闹鬼的厄运传说圣坛",
+                "start_time": "00:38",
+                "long_time": "00:27",
+                "trophies": [
+                    {
+                        "class": "ash-legion-key",
+                        "title": "灰烬军团钥匙",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BA4MAAA=]",
+                "start_color": "#FFA726",
+                "end_color": "#FFA726"
+            },
+            {
+                "name": "软泥怪坑：软泥斗坑试炼",
+                "start_time": "01:05",
+                "long_time": "00:34",
+                "trophies": [
+                    {
+                        "class": "blood-legion-key",
+                        "title": "鲜血军团钥匙",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BPgLAAA=]",
+                "start_color": "#FFCC80",
+                "end_color": "#FFCC80"
+            },
+            {
+                "name": "峭壁：金属音乐会",
+                "start_time": "01:39",
+                "long_time": "00:31",
+                "trophies": [
+                    {
+                        "class": "iron-legion-key",
+                        "title": "钢铁军团钥匙",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BPgLAAA=]",
+                "start_color": "#FFA726",
+                "end_color": "#FFA726"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "软泥怪坑",
+                "start_time": "23:30",
+                "long_time": "00:09",
+                "trophies": [
+                    {
+                        "class": "blood-legion-key",
+                        "title": "鲜血军团钥匙",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BPgLAAA=]",
+                "start_color": "#FFCC80",
+                "end_color": "#FFCC80"
+            },
+            {
+                "name": "峭壁：金属音乐会",
+                "start_time": "23:39",
+                "long_time": "00:31",
+                "trophies": [
+                    {
+                        "class": "iron-legion-key",
+                        "title": "钢铁军团钥匙",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BPgLAAA=]",
+                "start_color": "#FFA726",
+                "end_color": "#FFA726"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "烈焰军团营地：神圣烈焰仪式",
+                "start_time": "00:10",
+                "long_time": "00:20",
+                "trophies": [
+                    {
+                        "class": "flame-legion-key",
+                        "title": "烈焰军团钥匙",
+                        "num": 1
+                    }
+                ],
+                "chat_link": "[&BA4MAAA=]",
+                "start_color": "#FFCC80",
+                "end_color": "#FFCC80"
+            }
+        ]
+    }  
+},
+                        { 
+    "name": "波卓拉边境（第1章、第2章）",
+    "category_id": 12,
+    "bar_height": 79,
+    "data": {
+        "loop_times": 12,
+        "loop_add": 2,
+        "loop_data": [
+            {
+                "name": "腐化碎片,弩炮",
+                "start_time": "00:00",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#487eb0",
+                "end_color": "#487eb0",
+                "font_color": "#ffffff"
+            },
+            {
+                "name": "冬季风暴：冰巢构造体",
+                "start_time": "00:05",
+                "long_time": "00:15",
+                "chat_link": "[&BCcMAAA=]",
+                "start_color": "#40739e",
+                "end_color": "#40739e",
+                "font_color": "#ffffff"
+            },
+            {
+                "name": "",
+                "start_time": "00:20",
+                "long_time": "00:45",
+                "chat_link": "",
+                "start_color": "#45aaf2",
+                "end_color": "#45aaf2",
+                "font_color": "#ffffff"
+            },
+            {
+                "name": "冰霜巨龙的首领：德拉克和野性之灵",
+                "start_time": "01:05",
+                "long_time": "00:35",
+                "chat_link": "[&BDkMAAA=]",
+                "start_color": "#40739e",
+                "end_color": "#40739e",
+                "font_color": "#ffffff"
+            },
+            {
+                "name": "",
+                "start_time": "01:40",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#45aaf2",
+                "end_color": "#45aaf2",
+                "font_color": "#ffffff"
+            },
+            {
+                "name": "冬季风暴：保卫鸦灵圣坛",
+                "start_time": "01:45",
+                "long_time": "00:15",
+                "chat_link": "[&BCcMAAA=]",
+                "start_color": "#487eb0",
+                "end_color": "#487eb0",
+                "font_color": "#ffffff"
+            }
+        ],
+        "last_data": [
+            {
+                "name": "德拉克",
+                "start_time": "23:30",
+                "long_time": "00:10",
+                "chat_link": "[&BDkMAAA=]",
+                "start_color": "#40739e",
+                "end_color": "#40739e",
+                "font_color": "#ffffff"
+            },
+            {
+                "name": "",
+                "start_time": "23:40",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#45aaf2",
+                "end_color": "#45aaf2",
+                "font_color": "#ffffff"
+            },
+            {
+                "name": "冬季风暴：保卫鸦灵圣坛",
+                "start_time": "23:45",
+                "long_time": "00:15",
+                "chat_link": "[&BCcMAAA=]",
+                "start_color": "#487eb0",
+                "end_color": "#487eb0",
+                "font_color": "#ffffff"
+            }
+        ],
+        "next_data": [
+            {
+                "name": "腐化碎片,弩炮",
+                "start_time": "00:00",
+                "long_time": "00:05",
+                "chat_link": "",
+                "start_color": "#487eb0",
+                "end_color": "#487eb0",
+                "font_color": "#ffffff"
+            },
+            {
+                "name": "冬季风暴：冰巢构造体",
+                "start_time": "00:05",
+                "long_time": "00:15",
+                "chat_link": "[&BCcMAAA=]",
+                "start_color": "#40739e",
+                "end_color": "#40739e",
+                "font_color": "#ffffff"
+            },
+            {
+                "name": "",
+                "start_time": "00:20",
+                "long_time": "00:10",
+                "chat_link": "",
+                "start_color": "#45aaf2",
+                "end_color": "#45aaf2",
+                "font_color": "#ffffff"
+            }
+        ]
+    }  
+},
+                    ]
+    },
+    mounted: function(){
+        this.getTime();
+        this.updateTime();
+        this.getDay();
+        this.setLineLeft();
+        this.setMainLeft(true);
+    },
+    methods: {
+        changeCategory(i,c_id){
+            this.active = i;
+            this.active_id = c_id;
+            this.setMainLeft(true);
+        },
+        getTime(){
+            this.server_time = this.getServerTime();
+            this.local_time = this.getLocalTime();
+        },
+        updateTime(){
+            window.setInterval(() => {
+                this.getTime();
+                this.setLineLeft();
+                this.setMainLeft();
+                this.transition_left = 'left 1s ease-in-out';
+            },1000);
+        },
+        getLocalTime(){
+            var t = new Date();
+            var hour = t.getHours() >= 10 ? t.getHours() : '0' + t.getHours();
+            var min = t.getMinutes() >= 10 ? t.getMinutes() : '0' + t.getMinutes();
+            var sec = t.getSeconds() >= 10 ? t.getSeconds() : '0' + t.getSeconds();
+            if( t.getHours() == 0 && t.getMinutes() == 0 && t.getSeconds() == 0 )
+                this.getDay();
+            if( hour == '00' && min == '00' )
+                this.setLineLeft();
+            return hour + ':' + min + ':' + sec;
+        },
+        getServerTime(){
+            var u = new Date();
+            var localTime = u.getTime();
+            var localOffset = u.getTimezoneOffset() * 60000;
+            var utc = localTime + localOffset;
+            var t = new Date(utc);
+            var hour = t.getHours() >= 10 ? t.getHours() : '0' + t.getHours();
+            var min = t.getMinutes() >= 10 ? t.getMinutes() : '0' + t.getMinutes();
+            var sec = t.getSeconds() >= 10 ? t.getSeconds() : '0' + t.getSeconds();
+            return hour + ':' + min + ':' + sec;
+        },
+        getDay(){
+            var td = new Date();
+            this.today_day = this.weekday[td.getDay()];
+            this.today_day_cn = this.weekday_cn[td.getDay()];
+
+            var yd = new Date(td.getTime() - 24 * 3600000);
+            this.yesterday_day_cn = this.weekday_cn[yd.getDay()];
+
+            var tm = new Date(td.getTime() + 24 * 3600000);
+            this.tomorrow_day_cn = this.weekday_cn[tm.getDay()];
+        },
+        setLineLeft(){
+            var t = new Date();
+            this.timer_line_left = t.getHours() * 800 + ( t.getMinutes() / 60 * 800 ) + 400;
+        },
+        setMainLeft(f){
+            var t = new Date();
+            if( f || ( t.getHours() == 0 && t.getMinutes() == 0 ) ){
+                this.$refs.timer_main.scrollLeft = t.getHours() * 800 + ( t.getMinutes() / 60 * 800 ) + 398 - this.$refs.timer_wrap.clientWidth * 0.382;
+            }
+            else if( t.getSeconds() == 0 ){
+                this.$refs.timer_main.scrollLeft += 800 / 60;
+            }
+        }
+    }
+});
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

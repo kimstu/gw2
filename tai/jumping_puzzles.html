@@ -1,0 +1,2663 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>成就合集：跳跳乐 | 成就合集 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="home_instance.html" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg header-bg-jumping_puzzles">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<div class="row page-titles bg-lg bg-lg-jumping_puzzles m-b-10 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="color-database"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">成就合集</li>
+<li class="breadcrumb-item active"><a href="" class="color-database">成就合集：跳跳乐</a></li>
+</ol>
+<h1 class="page-title color-jumping-puzzles">
+成就合集：跳跳乐 </h1>
+</div>
+<div class="page-titles-description col-md-12 m-t-30">
+<div class="card no-border">
+<div class="card-body collapse show p-t-10 p-b-10 p-l-20 p-r-20">
+<div class="row">
+<div class="col-md-12 col-12 text-content m-t-5 page-titles-description-small">
+<p><strong>跳跳乐</strong> 是开放世界的解谜小游戏，它要求玩家寻找通往终点的正确路线。<br><strong>跳跳乐</strong> 初次完成会获得相应成就，并且奖励宝箱每天都会重置。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row m-t-30">
+<div class="col-md-12 main-content">
+<div class="card card-box-shadow overflow-hidden">
+<div class="card-body p-b-0">
+<ul class="nav nav-pills">
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles active" data-filter="All"><span>全部</span></a> </li>
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles" data-filter="Tyrian"><span>泰瑞亚中心</span></a> </li>
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles" data-filter="LWS2"><span>世界动态第二季</span></a> </li>
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles" data-filter="Maguuma"><span>决战迈古玛</span></a> </li>
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles" data-filter="LWS3"><span>世界动态第三季</span></a> </li>
+
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles" data-filter="LWS4"><span>世界动态第四季</span></a> </li>
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles" data-filter="Icebrood_Saga"><span>冰巢传说</span></a> </li>
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles" data-filter="WvW"><span>世界之战</span></a> </li>
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles" data-filter="Fractal"><span>迷雾碎层</span></a> </li>
+<li class="nav-item"> <a href="javascript:;" class="nav-link button-color-jumping-puzzles" data-filter="Festival"><span>节日</span></a> </li>
+</ul>
+<div class="p-l-5 p-r-5">
+<div class="row m-t-20">
+<div class="col-xl-12 p-l-10 p-r-10">
+<input type="text" class="achievement-search" placeholder="输入文字查询">
+</div>
+</div>
+<div class="row m-t-20 achievement-wrap">
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Demongrub_Pits.jpg" width="100%" alt="魔蛆矿坑">
+</div>
+<div class="content-right">
+<div class="title">魔蛆矿坑</div>
+<div class="map m-t-5">女王谷（1 - 15）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-1"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-1" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">魔蛆矿坑</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122175831.jpg" class="achievement-map" alt="魔蛆矿坑">
+</div>
+<div class="content">
+<p>地图 : 女王谷（1 - 15）</p>
+ <p>传送 : 迷神传送点 —— [&BPwAAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=2');" alt="【憨总】跳跳乐捷径版：魔蛆矿坑" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：魔蛆矿坑</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Spelunkers_Delve.jpg" width="100%" alt="探险洞窟">
+</div>
+<div class="content-right">
+<div class="title">探险洞窟</div>
+<div class="map m-t-5">卡勒顿之森（1 - 15）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-2"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-2" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">探险洞窟</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122180839.jpg" class="achievement-map" alt="探险洞窟">
+</div>
+<div class="content">
+<p>地图 : 卡勒顿之森（1 - 15）</p>
+<p>传送 : 斯雷弗传送点 —— [&BP4FAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=6');" alt="【憨总】跳跳乐捷径版：探险洞窟" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：探险洞窟</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Morgans_Leap.jpg" width="100%" alt="摩根之跃">
+</div>
+<div class="content-right">
+<div class="title">摩根之跃</div>
+<div class="map m-t-5">卡勒顿之森（1 - 15）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-3"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-3" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">摩根之跃</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122182548.jpg" class="achievement-map" alt="摩根之跃">
+</div>
+<div class="content">
+<p>地图 : 卡勒顿之森（1 - 15）</p>
+<p>传送 : 摩根传送点 —— [&BDUBAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=3');" alt="【憨总】跳跳乐捷径版：摩根之跃" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：摩根之跃</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Dreamdark_Enclave.jpg" width="100%" alt="黑暗狂欢">
+</div>
+<div class="content-right">
+ <div class="title">黑暗狂欢</div>
+<div class="map m-t-5">卡勒顿之森（1 - 15）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-4"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-4" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">黑暗狂欢</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/Dark_Reverie_map2.jpg" class="achievement-map" alt="黑暗狂欢">
+</div>
+<div class="content">
+<p>地图 : 卡勒顿之森（1 - 15）</p>
+<p>传送 : 摩根传送点 —— [&BDUBAAA=]</p>
+<p>提示 : 完成 摩根之跃 跳跳乐后，衔接 黑暗狂欢</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=4');" alt="【憨总】跳跳乐捷径版：黑暗狂欢" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：黑暗狂欢</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Spekks_Laboratory.jpg" width="100%" alt="斯派克斯的研究所">
+</div>
+<div class="content-right">
+<div class="title">斯派克斯的研究所</div>
+<div class="map m-t-5">卡勒顿之森（1 - 15）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-5"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-5" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+ <div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">斯派克斯的研究所</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122190621.jpg" class="achievement-map" alt="斯派克斯的研究所">
+</div>
+<div class="content">
+<p>地图 : 卡勒顿之森（1 - 15）</p>
+<p>传送 : 拾穗者峡谷传送点 —— [&BDcBAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=5');" alt="【憨总】跳跳乐捷径版：斯派克斯的研究所" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：斯派克斯的研究所</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Loreclaw_Expanse_(jumping_.jpg" width="100%" alt="钳抓岩地">
+</div>
+<div class="content-right">
+<div class="title">钳抓岩地</div>
+<div class="map m-t-5">阿什福德平原（1 - 15）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-6"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-6" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">钳抓岩地</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122181254.jpg" class="achievement-map" alt="钳抓岩地">
+</div>
+<div class="content">
+<p>地图 : 阿什福德平原（1 - 15）</p>
+<p>传送 : 钳抓传送点 —— [&BMcDAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=8');" alt="【憨总】跳跳乐捷径版：钳抓岩地" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：钳抓岩地</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Shamans_Rookery.jpg" width="100%" alt="萨满巢窟">
+</div>
+<div class="content-right">
+<div class="title">萨满巢窟</div>
+<div class="map m-t-5">旅者丘陵（1 - 15）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-7"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-7" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">萨满巢窟</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123003137.jpg" class="achievement-map" alt="萨满巢窟">
+</div>
+<div class="content">
+<p>地图 : 旅者丘陵（1 - 15）</p>
+<p>传送 : 泽里奇温泉传送点 —— [&BHcBAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=9');" alt="【憨总】跳跳乐捷径版：萨满巢窟" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：萨满巢窟</a></p>
+ </div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Goemms_Lab.jpg" width="100%" alt="格姆的实验室">
+</div>
+<div class="content-right">
+<div class="title">格姆的实验室</div>
+<div class="map m-t-5">度量领域（1 - 15）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-8"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-8" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">格姆的实验室</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122185743.jpg" class="achievement-map" alt="格姆的实验室">
+</div>
+<div class="content">
+<p>地图 : 度量领域（1 - 15）</p>
+<p>传送 : 贪吃托传送点 —— [&BLIEAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=7');" alt="【憨总】跳跳乐捷径版：格姆的实验室" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：格姆的实验室</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+ <img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Crimson_Plateau.jpg" width="100%" alt="猩红高地">
+</div>
+<div class="content-right">
+<div class="title">猩红高地</div>
+<div class="map m-t-5">底耶沙高地（15 - 25）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-9"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-9" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">猩红高地</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122192809.jpg" class="achievement-map" alt="猩红高地">
+</div>
+<div class="content">
+<p>地图 : 底耶沙高地（15 - 25）</p>
+<p>传送 : 红刃作坊传送点 —— [&BMYDAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=11');" alt="【憨总】跳跳乐捷径版：猩红高地" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：猩红高地</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-The_Breached_Wall.jpg" width="100%" alt="断墙闪电战">
+</div>
+<div class="content-right">
+<div class="title">断墙闪电战</div>
+<div class="map m-t-5">底耶沙高地（15 - 25）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-10"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-10" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">断墙闪电战</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/Wall_Breach_Blitz_map.jpg" class="achievement-map" alt="断墙闪电战">
+</div>
+<div class="content">
+<p>地图 : 底耶沙高地（15 - 25）</p>
+<p>传送 : 损毁之墙传送点 —— [&BGEBAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=10');" alt="【憨总】跳跳乐捷径版：断墙闪电战" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：断墙闪电战</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Grendich_Gamble.jpg" width="100%" alt="格兰蒂冒险">
+</div>
+<div class="content-right">
+<div class="title">格兰蒂冒险</div>
+<div class="map m-t-5">底耶沙高地（15 - 25）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-11"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-11" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">格兰蒂冒险</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122195423.jpg" class="achievement-map" alt="格兰蒂冒险">
+</div>
+<div class="content">
+<p>地图 : 底耶沙高地（15 - 25）</p>
+<p>传送 : 诅咒泥地传送点 —— [&BNoAAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=12');" alt="【憨总】跳跳乐捷径版：格兰蒂冒险" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：格兰蒂冒险</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-The_Collapsed_Observatory.jpg" width="100%" alt="崩塌的观测站">
+</div>
+<div class="content-right">
+<div class="title">崩塌的观测站</div>
+<div class="map m-t-5">凯席斯山（15 - 25）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-12"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-12" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">崩塌的观测站</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122200418.jpg" class="achievement-map" alt="崩塌的观测站">
+</div>
+<div class="content">
+<p>地图 : 凯席斯山（15 - 25）</p>
+<p>传送 : 瑟拉波斯传送点 —— [&BBIAAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=14');" alt="【憨总】跳跳乐捷径版：崩塌的观测站" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：崩塌的观测站</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-King_Jalis_Refuge.jpg" width="100%" alt="加里斯国王的避难所">
+</div>
+<div class="content-right">
+<div class="title">加里斯国王的避难所</div>
+<div class="map m-t-5">漂流雪境（15 - 25）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-13"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-13" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">加里斯国王的避难所</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122213522.jpg" class="achievement-map" alt="加里斯国王的避难所">
+</div>
+<div class="content">
+<p>地图 : 漂流雪境（15 - 25）</p>
+<p>传送 : 天道避难所传送点 —— [&BLUAAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=15');" alt="【憨总】跳跳乐捷径版：加里斯国王的避难所" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：加里斯国王的避难所</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Swashbucklers_Cove.jpg" width="100%" alt="亡命峡湾">
+</div>
+<div class="content-right">
+<div class="title">亡命峡湾</div>
+<div class="map m-t-5">甘达拉战区（25 - 35）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-14"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-14" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">亡命峡湾</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122214729.jpg" class="achievement-map" alt="亡命峡湾">
+</div>
+<div class="content">
+<p>地图 : 甘达拉战区（25 - 35）</p>
+<p>传送 : 丰饶之地传送点 —— [&BOMAAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=17');" alt="【憨总】跳跳乐捷径版：亡命峡湾" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：亡命峡湾</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Not_So_Secret.jpg" width="100%" alt="轻松揭秘">
+</div>
+<div class="content-right">
+<div class="title">轻松揭秘</div>
+<div class="map m-t-5">甘达拉战区（25 - 35）</div>
+ <button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-15"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-15" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">轻松揭秘</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122215636.jpg" class="achievement-map" alt="轻松揭秘">
+</div>
+<div class="content">
+<p>地图 : 甘达拉战区（25 - 35）</p>
+<p>传送 : 巨窟传送点 —— [&BOEAAAA=]</p>
+<p>提示 : 利用蒸汽板跳到上方，入口处的石墙可以通行</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=13');" alt="【憨总】跳跳乐捷径版：轻松揭秘" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：轻松揭秘</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Griffonrook_Run.jpg" width="100%" alt="狮鹫喙峡">
+</div>
+<div class="content-right">
+<div class="title">狮鹫喙峡</div>
+<div class="map m-t-5">罗纳通道（25 - 40）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-16"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-16" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">狮鹫喙峡</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122220942.jpg" class="achievement-map" alt="狮鹫喙峡">
+</div>
+<div class="content">
+<p>地图 : 罗纳通道（25 - 40）</p>
+<p>传送 : 错湖传送点 —— [&BOgAAAA=]</p>
+<p>提示 : 入口在水下，从最右边的那个小洞进。可以顺手将 探险家成就 饥肠辘辘 也完成。</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=19');" alt="【憨总】跳跳乐捷径版：狮鹫喙峡" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：狮鹫喙峡</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Branded_Mine.jpg" width="100%" alt="烙印矿洞">
+</div>
+<div class="content-right">
+<div class="title">烙印矿洞</div>
+<div class="map m-t-5">废墟原野（30 - 40）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-17"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-17" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">烙印矿洞</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122221927.jpg" class="achievement-map" alt="烙印矿洞">
+ </div>
+<div class="content">
+<p>地图 : 废墟原野（30 - 40）</p>
+<p>传送 : 阴晦传送点 —— [&BNcAAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=20');" alt="【憨总】跳跳乐捷径版：烙印矿洞" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：烙印矿洞</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Fawcetts_Bounty.jpg" width="100%" alt="佛赛特的复仇 & 宝藏">
+</div>
+<div class="content-right">
+<div class="title">佛赛特的复仇 & 宝藏</div>
+<div class="map m-t-5">哈拉希腹地（35 - 45）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-18"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-18" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">佛赛特的复仇 & 宝藏</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191122223607.jpg" class="achievement-map" alt="佛赛特的复仇 & 宝藏">
+</div>
+<div class="content">
+<p>地图 : 哈拉希腹地（35 - 45）</p>
+<p>传送 : 阿卡传送点 —— [&BLIAAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=21');" alt="【憨总】跳跳乐捷径版：佛赛特的复仇 & 佛赛特的宝藏" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：佛赛特的复仇 & 佛赛特的宝藏</a></p>
+ </div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Sector_Zuhl.jpg" width="100%" alt="扎尔探秘">
+</div>
+<div class="content-right">
+<div class="title">扎尔探秘</div>
+<div class="map m-t-5">林线瀑布（40 - 50）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-19"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-19" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">扎尔探秘</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123002154.jpg" class="achievement-map" alt="扎尔探秘">
+</div>
+<div class="content">
+<p>地图 : 林线瀑布（40 - 50）</p>
+<p>传送 : 86号基地传送点 —— [&BE4CAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=29');" alt="【憨总】跳跳乐捷径版：扎尔探秘" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：扎尔探秘</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+ <div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Chaos_Crystal_Cavern.jpg" width="100%" alt="混乱晶窟">
+</div>
+<div class="content-right">
+<div class="title">混乱晶窟</div>
+<div class="map m-t-5">钢铁平原（40 - 50）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-20"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-20" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">混乱晶窟</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123002642.jpg" class="achievement-map" alt="混乱晶窟">
+</div>
+<div class="content">
+<p>地图 : 钢铁平原（40 - 50）</p>
+<p>传送 : 派肯遗迹传送点 —— [&BOQBAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=28');" alt="【憨总】跳跳乐捷径版：混乱晶窟" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：混乱晶窟</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Behem_Gauntlet_(jumping_pu.jpg" width="100%" alt="贝亨试炼场">
+</div>
+<div class="content-right">
+<div class="title">贝亨试炼场</div>
+<div class="map m-t-5">裂脊草原（40 - 50）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-21"><span>查看详情</span></button>
+</div>
+ </div>
+<div class="modal fade bs-modal-21" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">贝亨试炼场</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123100106.jpg" class="achievement-map" alt="贝亨试炼场">
+</div>
+<div class="content">
+<p>地图 : 裂脊草原（40 - 50）</p>
+<p>传送 : 贝亨传送点 —— [&BP0BAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=16');" alt="【憨总】跳跳乐捷径版：贝亨试炼场" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：贝亨试炼场</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Crazes_Folly_(jumping_puzz.jpg" width="100%" alt="疯雷泽的愚行">
+</div>
+<div class="content-right">
+<div class="title">疯雷泽的愚行</div>
+<div class="map m-t-5">裂脊草原（40 - 50）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-22"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-22" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">疯雷泽的愚行</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+ <img src="static/picture/loadimg.jpg" data-original="static/picture/20191123100617.jpg" class="achievement-map" alt="疯雷泽的愚行">
+</div>
+<div class="content">
+<p>地图 : 裂脊草原（40 - 50）</p>
+<p>传送 : 卡伦达之地传送点 —— [&BAECAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=18');" alt="【憨总】跳跳乐捷径版：疯雷泽的愚行" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：疯雷泽的愚行</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Tribulation_Rift_Scaffoldi.jpg" width="100%" alt="苦难岩架 & 山洞">
+</div>
+<div class="content-right">
+<div class="title">苦难岩架 & 山洞</div>
+<div class="map m-t-5">掘洞悬崖（40 - 50）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-23"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-23" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">苦难岩架 & 山洞</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123102039.jpg" class="achievement-map" alt="苦难岩架 & 山洞">
+</div>
+<div class="content">
+<p>地图 : 掘洞悬崖（40 - 50）</p>
+<p>传送 : 悲伤之拥传送点 —— [&BD8FAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=22');" alt="【憨总】跳跳乐捷径版：苦难岩架&苦难山洞" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：苦难岩架&苦难山洞</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Professor_Portmatts_Lab.jpg" width="100%" alt="波特马特教授的实验室">
+</div>
+<div class="content-right">
+<div class="title">波特马特教授的实验室</div>
+<div class="map m-t-5">血潮海岸（45 - 55）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-24"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-24" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">波特马特教授的实验室</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123102631.jpg" class="achievement-map" alt="波特马特教授的实验室">
+</div>
+<div class="content">
+<p>地图 : 血潮海岸（45 - 55）</p>
+<p>传送 : 悲音传送点 —— [&BKQBAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=27');" alt="【憨总】跳跳乐捷径版：波特马特教授的实验室" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：波特马特教授的实验室</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+ </div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Coddlers_Cove.jpg" width="100%" alt="溺爱海湾">
+</div>
+<div class="content-right">
+<div class="title">溺爱海湾</div>
+<div class="map m-t-5">林线瀑布（50 - 60）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-25"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-25" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">溺爱海湾</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123103521.jpg" class="achievement-map" alt="溺爱海湾">
+</div>
+<div class="content">
+<p>地图 : 林线瀑布（50 - 60）</p>
+<p>传送 : 游丝传送点 —— [&BEcCAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=30');" alt="【憨总】跳跳乐捷径版：溺爱海岸" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：溺爱海岸</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Hexfoundry_Unhinged.jpg" width="100%" alt="解封禁术工厂">
+</div>
+<div class="content-right">
+<div class="title">解封禁术工厂</div>
+ <div class="map m-t-5">闪萤沼泽（55 - 65）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-26"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-26" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">解封禁术工厂</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123104716.jpg" class="achievement-map" alt="解封禁术工厂">
+</div>
+<div class="content">
+<p>地图 : 闪萤沼泽（55 - 65）</p>
+<p>传送 : 黑天传送点 —— [&BM0BAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=31');" alt="【憨总】跳跳乐捷径版：解封禁术工厂" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：解封禁术工厂</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Cubular_Fells.jpg" width="100%" alt="方块迷阵">
+</div>
+<div class="content-right">
+<div class="title">方块迷阵</div>
+<div class="map m-t-5">旋窝山（60 - 70）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-27"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-27" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">方块迷阵</h4>
+ <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123105237.jpg" class="achievement-map" alt="方块迷阵">
+</div>
+<div class="content">
+<p>地图 : 旋窝山（60 - 70）</p>
+<p>传送 : 格沃冉传送点 —— [&BMgCAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=32');" alt="【憨总】跳跳乐捷径版：方块迷阵" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：方块迷阵</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Dierdres_Steps.jpg" width="100%" alt="隐秘花园">
+</div>
+<div class="content-right">
+<div class="title">隐秘花园</div>
+<div class="map m-t-5">旋窝山（60 - 70）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-28"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-28" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">隐秘花园</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123111147.jpg" class="achievement-map" alt="隐秘花园">
+</div>
+<div class="content">
+<p>地图 : 旋窝山（60 - 70）</p>
+ <p>提示 : 在 旋窝山 击杀任意一个元素守护者即可开启通往 隐秘花园 的传送门。</p>
+<p>传送 : 欧文岛传送点 —— [&BNICAAA=] ，东边击杀 风之守护者（68级） </p>
+<p>传送 : 准则传送点 —— [&BMkCAAA=] ，东南方击杀 大地守护者（63级） </p>
+<p>传送 : 阿瓦兰传送点 —— [&BM8CAAA=] ，北边击杀 光之守护者（65级） </p>
+<p>传送 : 牛辔岛传送点 —— [&BNECAAA=] ，北边击杀 波涛守护者（68级） </p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=33');" alt="【憨总】跳跳乐捷径版：隐秘花园" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：隐秘花园</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Pig_Iron_Quarry.jpg" width="100%" alt="生铁采矿场">
+</div>
+<div class="content-right">
+<div class="title">生铁采矿场</div>
+<div class="map m-t-5">炎心高地（60 - 70）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-29"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-29" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">生铁采矿场</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+ <img src="static/picture/loadimg.jpg" data-original="static/picture/20191123114603.jpg" class="achievement-map" alt="生铁采矿场">
+</div>
+<div class="content">
+<p>地图 : 炎心高地（60 - 70）</p>
+<p>传送 : 生铁传送点 —— [&BBcCAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=34');" alt="【憨总】跳跳乐捷径版：生铁采矿场" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：生铁采矿场</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-The_Viziers_Tower.jpg" width="100%" alt="维齐尔塔">
+</div>
+<div class="content-right">
+<div class="title">维齐尔塔</div>
+<div class="map m-t-5">浩劫海峡（70 - 75）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-30"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-30" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">维齐尔塔</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123120253.jpg" class="achievement-map" alt="维齐尔塔">
+</div>
+<div class="content">
+<p>地图 : 浩劫海峡（70 - 75）</p>
+<p>传送 : 生铁传送点 —— [&BPcCAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=36');" alt="【憨总】跳跳乐捷径版：维齐尔塔" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：维齐尔塔</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Shattered_Ice_Ruins.jpg" width="100%" alt="碎冰遗迹">
+</div>
+<div class="content-right">
+<div class="title">碎冰遗迹</div>
+<div class="map m-t-5">霜谷之音（70 - 80）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-31"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-31" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">碎冰遗迹</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123122353.jpg" class="achievement-map" alt="碎冰遗迹">
+</div>
+<div class="content">
+<p>地图 : 霜谷之音（70 - 80）</p>
+<p>传送 : 浮冰传送点 —— [&BH4CAAA=]</p>
+<p>提示 : 入口在水下</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=35');" alt="【憨总】跳跳乐捷径版：碎冰遗迹" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：碎冰遗迹</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Antre_of_Adjournment.jpg" width="100%" alt="度假密窟">
+</div>
+<div class="content-right">
+<div class="title">度假密窟</div>
+<div class="map m-t-5">马尔科之跃（75 - 80）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-32"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-32" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">度假密窟</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123125943.jpg" class="achievement-map" alt="度假密窟">
+</div>
+<div class="content">
+<p>地图 : 马尔科之跃（75 - 80）</p>
+<p>传送 : 帕加传送点 —— [&BKYCAAA=]</p>
+<p>提示 : 下边的洞内</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=37');" alt="【憨总】跳跳乐捷径版：度假密窟" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：度假密窟</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Scavengers_Chasm.jpg" width="100%" alt="拾荒者峡谷（无视频）">
+</div>
+<div class="content-right">
+<div class="title">拾荒者峡谷（无视频）</div>
+<div class="map m-t-5">马尔科之跃（75 - 80）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-33"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-33" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">拾荒者峡谷（无视频）</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123125713.jpg" class="achievement-map" alt="拾荒者峡谷（无视频）">
+</div>
+<div class="content">
+<p>地图 : 马尔科之跃（75 - 80）</p>
+<p>传送 : 帕加传送点 —— [&BKYCAAA=]</p>
+<p>提示 : 希望瀑布 东边的山洞内</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=33');" alt="【憨总】跳跳乐捷径版：拾荒者峡谷" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：拾荒者峡谷</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Skipping_Stones.jpg" width="100%" alt="趵突泉">
+</div>
+<div class="content-right">
+<div class="title">趵突泉</div>
+<div class="map m-t-5">南阳海湾（80）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-34"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-34" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">趵突泉</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123130757.jpg" class="achievement-map" alt="趵突泉">
+</div>
+<div class="content">
+<p>地图 : 南阳海湾（80）</p>
+<p>传送 : 雄狮岬角传送点 —— [&BNAGAAA=]</p>
+<p>提示 : 南阳海湾 通过 狮子拱门 - 星门广场传送点 - [&BBEEAAA=] 北边的传送门进入</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=26');" alt="【憨总】跳跳乐捷径版：趵突泉" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：趵突泉</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Under_New_Management.jpg" width="100%" alt="更换物业">
+</div>
+<div class="content-right">
+<div class="title">更换物业</div>
+<div class="map m-t-5">南阳海湾（80）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-35"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-35" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">更换物业</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123133642.jpg" class="achievement-map" alt="更换物业">
+</div>
+<div class="content">
+<p>地图 : 南阳海湾（80）</p>
+<p>传送 : 明珠屿传送点 —— [&BNUGAAA=]</p>
+<p>提示 : 南阳海湾 通过 狮子拱门 - 星门广场传送点 - [&BBEEAAA=] 北边的传送门进入，跳跳乐入口在守卫右边的木板处</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=25');" alt="【憨总】跳跳乐捷径版：更换物业" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：更换物业</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Weyandts_Revenge.jpg" width="100%" alt="魏安特的复仇">
+</div>
+<div class="content-right">
+<div class="title">魏安特的复仇</div>
+<div class="map m-t-5">狮子拱门（80）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-36"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-36" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">魏安特的复仇</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123134406.jpg" class="achievement-map" alt="魏安特的复仇">
+</div>
+<div class="content">
+<p>地图 : 狮子拱门（80）</p>
+<p>传送 : 远岸区传送点 —— [&BDMEAAA=]</p>
+ <p>提示 : 曲径幽深</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=24');" alt="【憨总】跳跳乐捷径版：魏安特的复仇" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：魏安特的复仇</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Urmaugs_Secret.jpg" width="100%" alt="乌玛格的秘密">
+</div>
+<div class="content-right">
+<div class="title">乌玛格的秘密</div>
+<div class="map m-t-5">狮子拱门（80）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-37"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-37" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">乌玛格的秘密</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123135024.jpg" class="achievement-map" alt="乌玛格的秘密">
+</div>
+<div class="content">
+<p>地图 : 狮子拱门（80）</p>
+<p>传送 : 公会断崖传送点 —— [&BA0EAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=39');" alt="【憨总】跳跳乐捷径版：乌玛格的秘密" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：乌玛格的秘密</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Trolls_Revenge.jpg" width="100%" alt="巨魔复仇之路">
+</div>
+<div class="content-right">
+<div class="title">巨魔复仇之路</div>
+<div class="map m-t-5">狮子拱门（80）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-38"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-38" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">巨魔复仇之路</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20200324205929.jpg" class="achievement-map" alt="巨魔复仇之路">
+</div>
+<div class="content">
+<p>地图 : 狮子拱门（80）</p>
+<p>传送 : 避风港传送点 —— [&BC8EAAA=]</p>
+<p>提示 : 该跳跳乐分为四小节，每一节完成后获得一个 洛兰的钥匙碎片，集齐三个钥匙碎片，双击合成 洛兰的钥匙，打开最终宝箱（蓝色方块位置）。可使用坐骑。</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=40');" alt="【憨总】跳跳乐捷径版：巨魔复仇之路" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：巨魔复仇之路</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Tyrian">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Buried_Archives.jpg" width="100%" alt="尘封档案室">
+</div>
+<div class="content-right">
+<div class="title">尘封档案室</div>
+<div class="map m-t-5">诅咒海岸（80）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-39"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-39" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+ <div class="modal-header">
+<h4 class="modal-title">尘封档案室</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123141402.jpg" class="achievement-map" alt="尘封档案室">
+</div>
+<div class="content">
+<p>地图 : 诅咒海岸（80）</p>
+<p>传送 : 沉船岩传送点 —— [&BOQGAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=38');" alt="【憨总】跳跳乐捷径版：尘封档案室" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：尘封档案室</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item LWS2">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Prospect_Valley.jpg" width="100%" alt="远景山谷坠毁点攀爬者">
+</div>
+<div class="content-right">
+<div class="title">远景山谷坠毁点攀爬者</div>
+<div class="map m-t-5">干涸高地</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-40"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-40" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">远景山谷坠毁点攀爬者</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/Ships_Fall_map.jpg" class="achievement-map" alt="远景山谷坠毁点攀爬者">
+ </div>
+<div class="content">
+<p>地图 : 干涸高地</p>
+<p>传送 : 干涸高地入口传送点 —— [&BIAHAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=45');" alt="【憨总】跳跳乐捷径版：远景山谷坠毁点攀爬者" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：远景山谷坠毁点攀爬者</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item LWS2">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Quarrel_Gully.jpg" width="100%" alt="百转千回">
+</div>
+<div class="content-right">
+<div class="title">百转千回</div>
+<div class="map m-t-5">白银荒地</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-41"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-41" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">百转千回</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123155014.jpg" class="achievement-map" alt="百转千回">
+</div>
+<div class="content">
+<p>地图 : 白银荒地</p>
+<p>传送 : 旱乌岩穴传送点 —— [&BLoHAAA=]</p>
+<p>提示 : 没开 旱乌岩穴传送点，则从 决心营地传送点 [&BH8HAAA=] 按上图中红线走，到达终点后做事件帮助斯克鼠赶走强盗，即可打开地穴大门，再沿蓝线走到 百转千回 跳跳乐起点。</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=46');" alt="【憨总】跳跳乐捷径版：百转千回&旱坞岩地 红色专精" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：百转千回&旱坞岩地 红色专精</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Maguuma">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Highest_Gear.jpg" width="100%" alt="效能全开">
+</div>
+<div class="content-right">
+<div class="title">效能全开</div>
+<div class="map m-t-5">赤金盆地</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-42"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-42" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">效能全开</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123162010.jpg" class="achievement-map" alt="效能全开">
+</div>
+<div class="content">
+<p>地图 : 赤金盆地</p>
+<p>传送 : 西部守望哨站传送点 —— [&BAYIAAA=]</p>
+<p>提示 : 跳跳乐起点在 大瀑布 左边的技能点山洞里。上图红线与蓝线交界处的粗树枝上使用 弹跳兔 跳上高墙。</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=47');" alt="【憨总】跳跳乐捷径版：效能全开" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：效能全开</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Maguuma">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Egg_Bearer.jpg" width="100%" alt="龙蛋护使">
+</div>
+<div class="content-right">
+<div class="title">龙蛋护使</div>
+<div class="map m-t-5">赤金盆地</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-43"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-43" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">龙蛋护使</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123173354.jpg" class="achievement-map" alt="龙蛋护使">
+</div>
+<div class="content">
+<p>地图 : 赤金盆地</p>
+<p>传送 : 遗忘之都传送点 —— [&BMYHAAA=]</p>
+<p>提示 : 赤金盆地 - 遗忘之都塔瑞尔 - 龙蛋室，跳跳乐起点在 圣所攀高 尊者旁边，沿着龙蛋室墙壁螺旋向上攀爬到顶点即可看到宝箱。</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=48');" alt="【憨总】跳跳乐捷径版：龙蛋护使" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：龙蛋护使</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Maguuma">
+<div class="achievement-item">
+<div class="thumb">
+ <img src="static/picture/loadimg.jpg" data-original="static/picture/20191123170246.jpg" width="100%" alt="攀爬飞船">
+</div>
+<div class="content-right">
+<div class="title">攀爬飞船</div>
+<div class="map m-t-5">缠藤深渊</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-44"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-44" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">攀爬飞船</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123170635.jpg" class="achievement-map" alt="攀爬飞船">
+</div>
+<div class="content">
+<p>地图 : 缠藤深渊</p>
+<p>传送 : 食人魔营地传送点 —— [&BMwHAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=49');" alt="【憨总】跳跳乐捷径版：攀爬飞船" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：攀爬飞船</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Maguuma">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Disco_Dancing_Delver.jpg" width="100%" alt="山洞热舞">
+</div>
+<div class="content-right">
+<div class="title">山洞热舞</div>
+<div class="map m-t-5">缠藤深渊</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-45"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-45" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">山洞热舞</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123172124.jpg" class="achievement-map" alt="山洞热舞">
+</div>
+<div class="content">
+<p>地图 : 缠藤深渊</p>
+<p>传送 : 巨龙通道传送点 —— [&BIgIAAA=]</p>
+<p>提示 : 从 巨龙通道传送点 北边的下水点下去，一直沿橙线走在拐弯处往上游。山洞里的机器人要你说出名字，选择 “我是举世闻名的津恩。马上给我开门！”</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=50');" alt="【憨总】跳跳乐捷径版：山洞热舞" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：山洞热舞</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item LWS3">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Sopor_Titanum.jpg" width="100%" alt="跳过火山">
+</div>
+<div class="content-right">
+<div class="title">跳过火山</div>
+<div class="map m-t-5">余烬海湾（升腾烈焰）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-46"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-46" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">跳过火山</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+ <div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123183244.jpg" class="achievement-map" alt="跳过火山">
+</div>
+<div class="content">
+<p>地图 : 余烬海湾（升腾烈焰）</p>
+<p>传送 : 被困的旅行马戏团传送点 —— [&BHgJAAA=]</p>
+<p>提示 : 该跳跳乐有5个进度存档点，离开该图时，存档点将被重置。</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=51');" alt="【憨总】跳跳乐捷径版：跳过火山" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：跳过火山</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item LWS3">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123184119.jpg" width="100%" alt="那是个陷阱">
+</div>
+<div class="content-right">
+<div class="title">那是个陷阱</div>
+<div class="map m-t-5">多里克湖（罪恶首领）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-47"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-47" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">那是个陷阱</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123183514.jpg" class="achievement-map" alt="那是个陷阱">
+</div>
+<div class="content">
+<p>地图 : 多里克湖（罪恶首领）</p>
+<p>传送 : 红叶撤退点传送点 —— [&BK8JAAA=]</p>
+<p>提示 : 完成旁边的爱心后，购买 诺兰秘密宝箱钥匙，才能在跳到终点后开启宝箱。</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=52');" alt="【憨总】跳跳乐捷径版：那是个陷阱" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：那是个陷阱</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item LWS3">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/299px-Searing_Ascent.jpg" width="100%" alt="灼热之坡">
+</div>
+<div class="content-right">
+<div class="title">灼热之坡</div>
+<div class="map m-t-5">巨龙之山（闪点）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-48"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-48" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">灼热之坡</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123185601.jpg" class="achievement-map" alt="灼热之坡">
+</div>
+<div class="content">
+<p>地图 : 巨龙之山（闪点）</p>
+<p>传送 : 异教徒据点传送点 —— [&BM0JAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=53');" alt="【憨总】跳跳乐捷径版：灼热之坡" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：灼热之坡</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item LWS3">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/Abaddons_Ascent.jpg" width="100%" alt="攀登阿伯顿">
+</div>
+<div class="content-right">
+<div class="title">攀登阿伯顿</div>
+<div class="map m-t-5">海妖平台（穷途末路）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-49"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-49" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">攀登阿伯顿</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20200708013750.jpg" class="achievement-map" alt="攀登阿伯顿">
+</div>
+<div class="content">
+<p>地图 : 海妖平台（穷途末路）</p>
+<p>传送 : 回收营地传送点 —— [&BO8JAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=54');" alt="【憨总】跳跳乐捷径版：攀登阿伯顿" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：攀登阿伯顿</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item LWS4">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Displaced_Viziers_Tower.jpg" width="100%" alt="创造历史">
+</div>
+<div class="content-right">
+<div class="title">创造历史</div>
+<div class="map m-t-5">亚哈悬崖（指路之星）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-50"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-50" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">创造历史</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123181436.jpg" class="achievement-map" alt="创造历史">
+</div>
+<div class="content">
+<p>地图 : 亚哈悬崖（指路之星）</p>
+<p>传送 : 亚坦迪村庄传送点 —— [&BH4LAAA=]</p>
+<p>提示 : 使用弹跳兔跳到 错位的维齐尔塔 顶端即可完成，非常简单</p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Icebrood_Saga">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123191532.jpg" width="100%" alt="热辣脚步">
+</div>
+<div class="content-right">
+<div class="title">热辣脚步</div>
+<div class="map m-t-5">戈瑟玛山谷（序章:血脉相连）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-51"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-51" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">热辣脚步</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123191218.jpg" class="achievement-map" alt="热辣脚步">
+</div>
+<div class="content">
+<p>地图 : 戈瑟玛山谷（序章:血脉相连）</p>
+<p>传送 : 鲜血要塞传送点 —— [&BBsMAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=55');" alt="【憨总】跳跳乐捷径版：热辣脚步" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：热辣脚步</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Icebrood_Saga">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123193256.jpg" width="100%" alt="可汗右爪">
+</div>
+<div class="content-right">
+<div class="title">可汗右爪</div>
+<div class="map m-t-5">戈瑟玛山谷（序章:血脉相连）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-52"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-52" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">可汗右爪</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123193056.jpg" class="achievement-map" alt="可汗右爪">
+</div>
+<div class="content">
+<p>地图 : 戈瑟玛山谷（序章:血脉相连）</p>
+<p>传送 : 达拉达森林传送点 —— [&BA4MAAA=]</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=56');" alt="【憨总】跳跳乐捷径版：可汗右爪" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：可汗右爪</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item WvW">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Obsidian_Sanctum.jpg" width="100%" alt="黑耀石庇护所">
+</div>
+<div class="content-right">
+<div class="title">黑耀石庇护所</div>
+<div class="map m-t-5">黑曜石庇护所（战场）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-53"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-53" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">黑耀石庇护所</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123142222.jpg" class="achievement-map" alt="黑耀石庇护所">
+</div>
+<div class="content">
+<p>地图 : 黑曜石庇护所（战场）</p>
+<p>传送 : 黑曜石庇护所传送点 —— 以阵营为准</p>
+<p>提示 : 阵营不同，传送点位置不同</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=42');" alt="【憨总】跳跳乐捷径版：黑耀石庇护所" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：黑耀石庇护所</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item WvW">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Mistwrought_Vault_2.jpg" width="100%" alt="蓝宝石 & 翡翠庇护所">
+</div>
+<div class="content-right">
+<div class="title">蓝宝石 & 翡翠庇护所</div>
+<div class="map m-t-5">高地边境之地（战场）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-54"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-54" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">蓝宝石 & 翡翠庇护所</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123145034.jpg" class="achievement-map" alt="蓝宝石 & 翡翠庇护所">
+</div>
+<div class="content">
+<p>地图 : 高地边境之地（战场）</p>
+<p>传送 : 堡垒传送点 —— 以阵营为准</p>
+<p>提示 : 入口在两个高地边境之地战场左上角的 旭光之丘（蓝宝石）或 荒木岗（翡翠）的西边，两个跳跳乐流程完全相同。</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=41');" alt="【憨总】跳跳乐捷径版：翡翠庇护所&蓝宝石庇护所" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：翡翠庇护所&蓝宝石庇护所</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item WvW">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Armistice_Bastion.jpg" width="100%" alt="休战堡垒">
+</div>
+<div class="content-right">
+<div class="title">休战堡垒</div>
+<div class="map m-t-5">休战堡垒（战场）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-55"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-55" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">休战堡垒</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123151730.jpg" class="achievement-map" alt="休战堡垒">
+</div>
+<div class="content">
+<p>地图 : 休战堡垒（战场）</p>
+<p>传送 : 休憩中庭传送点 —— [&BMcLAAA=]</p>
+<p>提示 : 需要 休战堡垒通行证 方可进入</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=57');" alt="【憨总】跳跳乐捷径版：休战堡垒" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：休战堡垒</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Fractal">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Mistlock_Mountaineer.jpg" width="100%" alt="雾锁登山者">
+</div>
+<div class="content-right">
+<div class="title">雾锁登山者</div>
+<div class="map m-t-5">迷雾碎层</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-56"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-56" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">雾锁登山者</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/20191123153841.jpg" class="achievement-map" alt="雾锁登山者">
+</div>
+<div class="content">
+<p>地图 : 迷雾碎层</p>
+<p>视频 : <a href="javascript:window.open('https://www.bilibili.com/video/BV1jK4y147wj?p=42');" alt="【憨总】跳跳乐捷径版：雾锁登山者 + 跳水" target="_blank" rel="nofollow noopener noreferrer">【憨总】跳跳乐捷径版：雾锁登山者 + 跳水</a></p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Festival">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Mad_Kings_Clock_Tower.jpg" width="100%" alt="疯王钟楼">
+</div>
+<div class="content-right">
+<div class="title">疯王钟楼</div>
+<div class="map m-t-5">狮子拱门（万圣节）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-57"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-57" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">疯王钟楼</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/800px-Mad_Kings_Clock_Tower.jpg" class="achievement-map" alt="疯王钟楼">
+</div>
+<div class="content">
+<p>地图 : 狮子拱门（万圣节）</p>
+<p>传送 : 商人广场传送点 —— [&BBAEAAA=]</p>
+<p>提示 : 跳跳乐从 狮子拱门 神秘熔炉 旁的 疯王钟楼 传送门进入</p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-6 p-b-20 achievement-item-wrap p-l-10 p-r-10 item Festival">
+<div class="achievement-item">
+<div class="thumb">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/320px-Winter_Wonderland_02.jpg" width="100%" alt="冬日仙境大师">
+</div>
+<div class="content-right">
+<div class="title">冬日仙境大师</div>
+<div class="map m-t-5">神佑之城（冬幕节）</div>
+<button class="btn btn-xs btn-color-jumping-puzzles m-t-20" data-toggle="modal" data-target=".bs-modal-58"><span>查看详情</span></button>
+</div>
+</div>
+<div class="modal fade bs-modal-58" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+<div class="modal-dialog">
+<div class="modal-content bg-gray">
+<div class="modal-header">
+<h4 class="modal-title">冬日仙境大师</h4>
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+</div>
+<div class="modal-body">
+<div class="content-map">
+<img src="static/picture/loadimg.jpg" data-original="static/picture/800px-Winter_Wonderland.jpg" class="achievement-map" alt="冬日仙境大师">
+</div>
+<div class="content">
+<p>地图 : 神佑之城（冬幕节）</p>
+<p>传送 : 皇冠高阁传送点 —— [&BCwDAAA=]</p>
+<p>提示 : 与传送点旁 欢乐的孩子 对话，进入跳跳乐地图。该跳跳乐分三条线三个难度（鲲艮 < 雪人 < 姜饼），难度越高奖励越丰厚。</p>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+$(document).ready(function() {
+    $(".achievement-item .thumb img").lazyload({
+      	placeholder : "https://www.gw2data.cn/images/loadimg.jpg", //用图片提前占位
+    });
+
+    var $grid = $('.achievement-wrap').isotope();
+
+    $(".nav-item a").click(function(){
+        $(".nav-item a.active").removeClass("active");
+        $(this).addClass("active");
+
+        if( $(this).attr('data-filter') == 'All' )
+            $grid.isotope({ filter: '*' });
+        else{
+            if( $(this).attr('data-filter') != 'Tyrian' ){
+                for( i = 0 ; i <= $('.achievement-wrap .' + $(this).attr('data-filter')).length - 1 ; i++ ){
+
+                    $img_data_original = $('.achievement-wrap .' + $(this).attr('data-filter') + ':eq(' + i + ')' + ' .achievement-item .thumb img').attr('data-original');
+
+                    if( $('.achievement-wrap .' + $(this).attr('data-filter') + ':eq(' + i + ')' + ' .achievement-item .thumb img').src != $img_data_original )
+                        $('.achievement-wrap .' + $(this).attr('data-filter') + ':eq(' + i + ')' + ' .achievement-item .thumb img').attr(
+                            'src', 
+                            $img_data_original
+                        );
+                }
+                $('.' + $(this).attr('data-filter')).attr('src', )
+            }
+            $grid.isotope({ filter: '.' + $(this).attr('data-filter') });
+        }
+    });
+
+    $(".achievement-wrap .item").click(function(){
+        var data_original = $(this).find('.achievement-map').attr('data-original');
+        $(this).find('.achievement-map').attr('src', data_original);
+    });
+
+    $(".achievement-search").bind('input propertychange', function(){
+        var search = $(".achievement-search").val();
+
+        if( search == '' ){
+            $grid.isotope({ filter: '*' });
+        }
+        else{
+            $grid.isotope({ filter: function() {
+                    var name = $(this).find('.title').text();
+                    selected = name.indexOf(search) >= 0 ? true : false;
+                    if( selected ){
+                        if( $(this).find('.thumb').find('img').src != $(this).find('.thumb').find('img').attr('data-original') )
+                            $(this).find('.thumb').find('img').attr('src', $(this).find('.thumb').find('img').attr('data-original'));
+                    }
+                    return selected;
+                } 
+            }); 
+        }
+    });
+});
+</script>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>

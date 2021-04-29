@@ -1,0 +1,3572 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<script data-ad-client="ca-pub-2787907297523705" async="" src="static/js/adsbygoogle.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta name="description" content="泰瑞亚探险家协会，是激战2中文社区，拥有全面的激战2数据库，激战2游戏指南，攻略内容已涵盖全新版本烈焰征途、冰巢传说">
+<meta name="author" content="Thanatos.">
+
+
+<title>家园副本 | 游戏攻略 | 激战2 泰瑞亚探险家协会 | 职业BD | 数据库 | 激战2中文社区</title>
+
+
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="static/css/sweetalert.css" rel="stylesheet" type="text/css">
+
+<link href="static/css/viewer.min-2020.07.07.css" rel="stylesheet">
+<link href="static/css/steps.css" rel="stylesheet">
+
+<link href="static/css/style-2020.07.31.css" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/swiper.min.css">
+
+<link href="static/css/default-dark.css" id="theme" rel="stylesheet">
+
+<link rel="stylesheet" href="static/css/frontend-style-2020.08.05.css">
+<link rel="stylesheet" href="static/css/background-images-2021.01.18.css">
+<link rel="stylesheet" href="static/css/index-2020.07.29.css">
+<link rel="stylesheet" href="static/css/ad-2020.07.29.css">
+<link rel="stylesheet" href="static/css/gw2style-2020.10.01.css">
+<link rel="stylesheet" href="static/css/tooltip-2020.07.07.css">
+
+
+<!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="static/js/jquery.min.js"></script>
+
+
+
+<script src="static/js/vue.min.js"></script>
+
+<script src="static/js/vue-resource.min.js"></script>
+<script src="static/js/axios.min.js"></script>
+</head>
+<body class="fix-header fix-sidebar card-no-border">
+
+
+
+<div class="preloader">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+
+
+
+<div id="main-wrapper">
+ 
+
+
+<header class="topbar">
+<nav class="navbar top-navbar navbar-expand-md navbar-light">
+
+
+
+<div class="navbar-header">
+<a class="navbar-brand pjax-link" href="index.html">
+<b>
+
+
+<img src="static/picture/logo-icon.png" width="38" height="36" alt="homepage" class="dark-logo">
+</b>
+
+
+<span>
+<img src="static/picture/logo-dark-text.png" alt="泰瑞亚探险家协会" title="泰瑞亚探险家协会">
+</span>
+</a>
+</div>
+
+
+
+<div class="navbar-collapse">
+
+
+
+<ul class="navbar-nav mr-auto mt-md-0">
+
+<li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+<li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+<ul class="navbar-nav my-lg-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="nav-item dropdown user-avatar-box" id="user-avatar-box">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="static/picture/avatar-not-login.jpg" alt="" class="profile-pic">
+</a>
+<div class="dropdown-menu dropdown-menu-right scale-up">
+<ul class="dropdown-user">
+<li><a href="login.html" class="pjax-link login-link"><i class="mdi mdi-account-circle"></i>&nbsp; 登录</a></li>
+<li><a href="register.html" class="pjax-link login-link"><i class="mdi mdi-account-card-details"></i>&nbsp; 注册</a></li>
+</ul>
+</div>
+</li>
+
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-cn"></i></a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+
+
+
+
+
+<aside class="left-sidebar">
+
+<div class="scroll-sidebar">
+
+<nav class="sidebar-nav">
+<ul id="sidebarnav">
+<li class="nav-small-cap">配置 / Builds</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-hexagon-multiple"></i><span class="hide-menu">职业配置</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="elementalist.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Elementalist"></i>元素使</a></li>
+<li><a href="warrior.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Warrior"></i>战&nbsp;&nbsp;&nbsp;士</a></li>
+<li><a href="ranger.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Ranger"></i>游&nbsp;&nbsp;&nbsp;侠</a></li>
+<li><a href="necromancer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Necromancer"></i>唤灵师</a></li>
+<li><a href="guardian.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Guardian"></i>守护者</a></li>
+<li><a href="thief.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Thief"></i>潜行者</a></li>
+<li><a href="engineer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Engineer"></i>工程师</a></li>
+<li><a href="mesmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Mesmer"></i>幻术师</a></li>
+<li><a href="revenant.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-profession icon-Revenant"></i>魂武者</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-flash"></i><span class="hide-menu">副本DPS测试</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="benchmarks.html" class="pjax-link">测试列表 - 2021.01.07</a></li>
+<li><a href="buffs.html" class="pjax-link">BUFF使用说明</a></li>
+</ul>
+</li>
+
+<li class="nav-devider"></li>
+<li class="nav-small-cap">工具 / Tools</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-today"></i><span class="hide-menu">日常成就</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="daily_today.html" class="pjax-link">今日日常 - Today</a></li>
+<li><a href="daily_tomorrow.html" class="pjax-link">明日日常 - Tomorrow</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="timer.html" aria-expanded="false"><i class="mdi mdi-theme-light-dark"></i><span class="hide-menu">事件计时器</span></a></li>
+<li> <a class="waves-effect waves-dark pjax-link" href="npc.html" aria-expanded="false"><i class="mdi mdi-apple-safari"></i><span class="hide-menu">常用NPC位置</span></a></li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-database"></i><span class="hide-menu">数据库</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="item.html" class="pjax-link">物品 - Items</a></li>
+<li><a href="recipe.html" class="pjax-link">配方 - Recipes</a></li>
+
+<li><a href="equipment.html" class="pjax-link">装备 - Equipments</a></li>
+<li><a href="skin.html" class="pjax-link">皮肤 - Skins</a></li>
+
+
+<li><a href="dye_kit.html" class="pjax-link">染料包 - Dye Kits</a></li>
+<li><a href="glyph.html" class="pjax-link">采集雕文 - Glyphs</a></li>
+<li><a href="bonus.html" class="pjax-link">加成效果 - Bonus</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-elevation-decline"></i><span class="hide-menu">副职物价浮动升级</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guide.html" class="pjax-link">副职业 升级前必读</a></li>
+<li><a href="chef.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-chef"></i>厨师</a></li>
+<li><a href="weaponsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-weaponsmith"></i>武器锻造师</a></li>
+<li><a href="armorsmith.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-armorsmith"></i>盔甲锻造师</a></li>
+<li><a href="artificer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-artificer"></i>工艺制作师</a></li>
+<li><a href="tailor.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-tailor"></i>裁缝</a></li>
+<li><a href="huntsman.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-huntsman"></i>猎手</a></li>
+<li><a href="leatherworker.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-leatherworker"></i>皮革匠</a></li>
+<li><a href="jeweler.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-crafting icon-jeweler"></i>珠宝匠</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-map"></i><span class="hide-menu">地图服务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('http://gw2timer.com/?enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer离线地图</a></li>
+<li><a href="javascript:window.open('http://gw2timer.com/?page=Map&section=Resource&enu_Language=zh');" target="_blank" rel="nofollow noopener noreferrer">Gw2timer富采集点</a></li>
+<li><a href="javascript:window.open('http://gw2sy.top/gw2/');" target="_blank" rel="nofollow noopener noreferrer">神油离线地图</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-calendar-range"></i><span class="hide-menu">公会任务</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild_bounty.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-bounty"></i>公会任务：赏金</a></li>
+<li><a href="guild_trek.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-trek"></i>公会任务：跋涉</a></li>
+<li><a href="guild_race.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-guild-race"></i>公会任务：竞速</a></li>
+
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-puzzle"></i><span class="hide-menu">游戏插件</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="javascript:window.open('https://gw2sy.top/');" target="_blank" rel="nofollow noopener noreferrer">神油插件合辑</a></li>
+<li><a href="Arcdps.html" class="pjax-link">Arcdps - 团队DPS监控</a></li>
+<li><a href="YoloMouse.html" class="pjax-link">YoloMouse - 光标替换</a></li>
+<li><a href="ReShade.html" class="pjax-link">ReShade - 滤镜</a></li>
+<li><a href="D912pxy.html" class="pjax-link">D912pxy - 提帧工具</a></li>
+</ul>
+</li>
+<li class="nav-devider"></li>
+<li class="nav-small-cap">文档 / Documents</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-routes"></i><span class="hide-menu">入门指引</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="guild.html" class="pjax-link">入门指引</a></li>
+<li><a href="basic_guide.html" class="pjax-link">基础游戏机制</a></li>
+<li><a href="world_vs_world.html" class="pjax-link">世界之战</a></li>
+<li><a href="" class="pjax-link">家园副本</a></li>
+<li><a href="pets.html" class="pjax-link">游侠宠物捕捉点</a></li>
+<li><a href="treasure_mushroom.html" class="pjax-link">宝藏菇位置</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1DD4y1D7sj');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 1</a></li>
+<li><a href="javascript:window.open('https://www.bilibili.com/video/BV1Sz411i7Td');" target="_blank" rel="nofollow noopener noreferrer">【川川禾】萌新常识 2</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-gnome"></i><span class="hide-menu">坐骑获取</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="mounts.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-raptor"></i>基础坐骑</a></li>
+<li><a href="skimmer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skimmer"></i>飞&nbsp;鱼</a></li>
+<li><a href="griffon.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-griffon"></i>狮&nbsp;鹫</a></li>
+<li><a href="roller_beetle.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-roller-beetle"></i>翻滚甲虫</a></li>
+<li><a href="warclaw.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-warclaw"></i>战&nbsp;爪</a></li>
+<li><a href="skyscale.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-mount icon-skyscale"></i>飞天鳞龙</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-airballoon"></i><span class="hide-menu">升华装备</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="ascended_equipment.html" class="pjax-link">升华装备 和 获取</a></li>
+<li><a href="equipment_stats.html" class="pjax-link">铭文徽章 及 属性转换</a></li>
+<li><a href="infusion_enrichment.html" class="pjax-link">灌注 和 富集</a></li>
+<li><a href="infusion_slot.html" class="pjax-link">灌注槽配方</a></li>
+<li><a href="sigil.html" class="pjax-link">常用法印获取</a></li>
+<li><a href="rune.html" class="pjax-link">常用符文获取</a></li>
+<hr>
+<li><a href="icebrood_saga_trinket.html" class="pjax-link">冰巢传说首饰</a></li>
+<li><a href="ruriks_engagement_ring.html" class="pjax-link">卢瑞克的订婚戒指</a></li>
+<li><a href="vial_of_salt.html" class="pjax-link">盐瓶（升华项链）</a></li>
+<li><a href="old_back.html" class="pjax-link">万千箭袋（升华背部）</a></li>
+</ul>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="legendary_equipment.html" aria-expanded="false"><i class="mdi mdi-shield"></i><span class="hide-menu">传奇装备</span></a>
+</li>
+<li> <a class="waves-effect waves-dark pjax-link" href="collection.html" aria-expanded="false"><i class="mdi mdi-terrain"></i><span class="hide-menu">收藏攻略</span></a>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-sword"></i><span class="hide-menu">副本攻略</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="fractal.html" class="pjax-link">迷雾碎层</a></li>
+<li><a href="raid.html" class="pjax-link">大型地下城</a></li>
+<li><a href="strike_mission.html" class="pjax-link">进攻任务</a></li>
+</ul>
+</li>
+<li> <a class="has-arrow waves-effect waves-dark" href="javascript:;" aria-expanded="false"><i class="mdi mdi-book-multiple-variant"></i><span class="hide-menu">成就合集</span></a>
+<ul aria-expanded="false" class="collapse">
+<li><a href="jumping_puzzles.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-jumping-puzzle"></i>跳跳乐</a></li>
+<li><a href="explorer.html" class="sidebar-icon-link pjax-link"><i class="sidebar-icon icon-achievement icon-explorer"></i>探险家</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+</div>
+
+
+<div class="sidebar-footer">
+<a href="about.html" class="link pjax-link" data-toggle="tooltip" title="关于我们"><i class="mdi mdi-bank"></i></a>
+<a href="donate.html" class="link pjax-link" data-toggle="tooltip" title="友情赞助"><i class="mdi mdi-arrow-up-bold-hexagon-outline"></i></a>
+<a href="javascript:window.open('https://jq.qq.com/?_wv=1027&k=tVnJuJXa');" target="_blank" class="link" data-toggle="tooltip" title="联系我们"><i class="mdi mdi-qqchat"></i></a>
+</div>
+
+</aside>
+
+
+
+
+
+
+<div class="page-wrapper" id="page-wrapper">
+
+
+
+<div class="preloader" style="display:none">
+<svg class="circular" viewbox="25 25 50 50">
+<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+</div>
+<div id="container-fluid">
+<div class="header-bg ">
+<div class="header-bg-shadow"></div>
+</div>
+<div class="container-fluid">
+<script>
+$(document).ready(function(){
+
+	$('.select2-container').remove();
+
+	$('.bootstrap-switch .bootstrap-switch-container input').each(function(index){
+		var s = $(this);
+	    s.parents('.bootstrap-switch').replaceWith(s);
+	});
+
+	$('.floating-labels .form-control').on('focus blur', function (e) {
+        $(this).parents('.form-group').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+    }).trigger('blur');
+	
+	$('.show-sidebar').removeClass('show-sidebar');
+	$('.gw2-tooltip').gw2tooltip('#tooltip-info');
+	$('.gw2-info').gw2info();
+	$('.gw2-image').gw2image();
+
+	//手机端点击信息框隐藏
+	$('.tooltip-info').click(function(){
+		$(this).hide();
+	});
+
+	//统计
+	$('#tongji_box').append(`<iframe src="/t?url=` + window.location.pathname + `" frameborder="0"></iframe>`);
+});
+</script>
+<div style="display: none" id="tongji_box"></div>
+<style type="text/css">
+.header-bg:before{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -50px;
+}
+.page-titles{
+    background-image: url(static/image/NewPlayerAccidence_bg.jpg);
+    background-position: center -150px;
+}
+.article-font-color{
+    color: #e74c3c !important;
+}
+.article-button-color.active{
+    background-color: #e74c3c !important;
+}
+.article-content{
+    position: relative;
+}
+.article-content img {
+    max-height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content li img {
+    max-height: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.article-content table img {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.article-content img.original-size {
+    height: auto;
+    max-width: 600px;
+    margin: 5px 0 5px 0;
+}
+
+
+@media(max-width: 576px){
+    .article-content img {
+        width: 100%;
+        height: auto;
+    }
+    .article-content table img {
+        width: auto;
+        height: auto;
+    }
+}
+
+.article-content h1{
+    margin: 6rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.8rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h2{
+    margin: 5rem 0 10px;
+    padding-bottom: 0.7rem;
+    font-size: 1.5rem !important;
+    font-family: STXihei;
+    color: #e74c3c !important;
+    border-bottom: 1px solid rgba(236,236,236,.11);
+}
+.article-content h1:before, .article-content h2:before, .article-content h3:before{
+    content: "# ";
+}
+.article-content h1:first-child, .article-content h2:first-child, .article-content h3:first-child{
+    margin-top: 0;
+}
+.article-content strong{
+    background-color: #252525;
+    padding: 4px 6px;
+    border-radius: 4px;
+    color: #e74c3c !important;
+}
+
+.article-content blockquote{
+    border-left: 5px solid #e74c3c !important;
+    background-color: #252525;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.article-content blockquote h1, .article-content blockquote h2, .article-content blockquote h3{
+    border: 0;
+    margin-bottom: 0;
+}
+.article-content blockquote h1:before, .article-content blockquote h2:before, .article-content blockquote h3:before{
+    content: "";
+}
+.article-content table{
+    margin-bottom: 20px;
+}
+</style>
+<div class="row page-titles bg-lg m-b-0 p-b-0">
+<div class="page-titles-content col-md-5 col-12 align-self-center">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="index.html" class="article-font-color pjax-link"><i class="fa fa-home"></i></a></li>
+<li class="breadcrumb-item active">文档</li>
+<li class="breadcrumb-item active"><span class="article-font-color pjax-link">游戏攻略</span></li>
+<li class="breadcrumb-item active"><span class="article-font-color">家园副本<span></span></span></li>
+</ol>
+</div>
+<div class="page-titles-head col-md-12 m-t-30 p-b-15">
+<h1 class="page-titles-title article-font-color m-t-30 m-b-30">
+家园副本 </h1>
+<div class="page-titles-details">
+<div class="view" title="原创作者"><i class="mdi mdi-feather"></i>&nbsp;&nbsp;暴君之刃</div>
+<div class="updatetime" title="发布时间"><i class="mdi mdi-clock"></i>&nbsp;&nbsp;2020.01.24</div>
+
+<div class="updatetime" title="未经作者授权，禁止转载"><i class="mdi mdi-block-helper color-Elementalist"></i>&nbsp;&nbsp;未经作者授权，禁止转载</div> </div>
+</div>
+<div class="bg-lg-shadow"></div>
+</div>
+<div class="row">
+<div class="col-md-12 main-content">
+<div class="card card-body m-t-30">
+<iframe src="tip.html" frameborder="0" height="50" scrolling="no" style="border:0px;"></iframe>
+</div>
+<div class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body">
+<h3 class="card-title">简介</h3>
+<hr>
+<div class="build-info-content article-content">
+
+
+<ul>
+<li><strong>家园副本</strong> 是一块从种族主城中独立出来的副本区域，它会伴随着玩家在开放世界中对 <strong>家园副本</strong> 的升级而变化，并且这种变化全角色通用。</li>
+<li><strong>家园副本</strong> 可以通过升级解锁特定的采集节点、NPC、种植园、家园宠物，甚至特定的建筑物。</li>
+<li>其他玩家可以通过组队进入自己的 <strong>家园副本</strong>，并且他们可以与大多数的家园升级点互动。</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div id="article-content" class="card card-box-shadow overflow-hidden m-t-30">
+<div class="bg-gray card-body p-b-0">
+<ul class="nav nav-pills m-b-20">
+<li class="nav-item m-r-10"> <a href="#content-1" class="nav-link article-button-color active" data-toggle="tab" aria-expanded="true">家园入口</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-2" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">家园副本节点</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-3" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">辛勤园丁</a> </li>
+<li class="nav-item m-r-10"> <a href="#content-4" class="nav-link article-button-color " data-toggle="tab" aria-expanded="false">饥饿的猫</a> </li>
+</ul>
+<div class="tab-content br-n pn">
+<div id="content-1" class="tab-pane build-info-content article-content active" aria-expanded="true">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<table>
+<thead>
+<tr>
+<th style="text-align:center">种族</th>
+<th style="text-align:center">地图</th>
+<th style="text-align:left">最近的传送点</th>
+<th style="text-align:left">副本名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="60"></span><span>人类</span>
+</span></td>
+<td style="text-align:center">神佑之城</td>
+<td style="text-align:left"><strong>萨尔玛传送点</strong> [&amp;BC4DAAA=]</td>
+<td style="text-align:left">萨尔玛区</td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="59"></span><span>阿苏拉</span>
+</span></td>
+<td style="text-align:center">拉塔索姆</td>
+<td style="text-align:left"><strong>魔术庭院传送点</strong> [&amp;BLQEAAA=]</td>
+<td style="text-align:left">应用研发实验室</td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="61"></span><span>夏尔</span>
+</span></td>
+<td style="text-align:center">黑烟壁垒</td>
+<td style="text-align:left"><strong>聚集地传送点</strong> [&amp;BKUDAAA=]</td>
+<td style="text-align:left">英雄区</td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="62"></span><span>诺恩</span>
+</span></td>
+<td style="text-align:center">霍布雷克</td>
+<td style="text-align:left"><strong>大酒馆传送点</strong> [&amp;BNUDAAA=]</td>
+<td style="text-align:left">猎人火炉</td>
+</tr>
+<tr>
+<td style="text-align:center"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="63"></span><span>希尔瓦里</span>
+</span></td>
+<td style="text-align:center">圣林之地</td>
+<td style="text-align:left"><strong>罗南传送点</strong> [&amp;BLwEAAA=]</td>
+<td style="text-align:left">梦旅平台</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>家园副本</strong> 不与 <strong>角色种族</strong> 绑定，例如你的角色是人类，也可以去阿苏拉的主城访问 <strong>家园副本</strong>。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-2" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">说明</h2>
+<ul>
+<li>节点升级后，会添加到该账号下的所有角色的 <strong>家园副本</strong> 中。</li>
+<li>组队进入 <strong>家园副本</strong> 时，小队成员可以收集节点，但每种节点每天只能收获一次，无法再次进入自己或他人的 <strong>家园副本</strong> 重复收获。</li>
+</ul>
+<h2 id="-">宝石商店节点</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">节点名称</th>
+<th style="text-align:center">采集分类</th>
+<th style="text-align:left">收获物品</th>
+<th style="text-align:left">原价</th>
+<th style="text-align:left">爵位价</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="44884"></span><span>基础矿石节点套件</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19697"></span><span>铜矿石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19703"></span><span>银矿石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19698"></span><span>金矿石</span>
+</span>、低等级珠宝</td>
+<td style="text-align:left">1698 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+<td style="text-align:left">1529 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="66769"></span><span>基础木材采集点套件</span>
+</span></td>
+<td style="text-align:center">伐木</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19723"></span><span>新生原木</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19726"></span><span>软芯原木</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19727"></span><span>风干原木</span>
+</span>、低等级附带作物</td>
+<td style="text-align:left">1698 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+<td style="text-align:left">1529 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67290"></span><span>基础食材采集点套件</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left">各种植物</td>
+<td style="text-align:left">1698 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+<td style="text-align:left">1529 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67842"></span><span>基础布料架</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19718"></span><span>黄麻碎料</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19739"></span><span>羊毛碎料</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19741"></span><span>棉布碎料</span>
+</span></td>
+<td style="text-align:left">1698 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+<td style="text-align:left">1529 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78019"></span><span>基础皮革架</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19719"></span><span>生皮皮革边料</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19728"></span><span>薄皮皮革边料</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19730"></span><span>粗糙皮革边料</span>
+</span></td>
+<td style="text-align:left">1698 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+<td style="text-align:left">1529 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92427"></span><span>黑狮工业合同</span>
+</span></td>
+<td style="text-align:center">邮件</td>
+<td style="text-align:left">衣物废料、皮革边料、金属矿石、原木、珠宝</td>
+<td style="text-align:left">3288 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+<td style="text-align:left">2960 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81594"></span><span>黑狮猎手合同</span>
+</span></td>
+<td style="text-align:center">邮件</td>
+<td style="text-align:left">T1 ~ T6 中级制作材料（血瓶、牙齿、鳞片等）<br>每天可收取一类两种材料</td>
+<td style="text-align:left">2498 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+<td style="text-align:left">2249 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88979"></span><span>第3季探险合同</span>
+</span></td>
+<td style="text-align:center">邮件</td>
+<td style="text-align:left">第二季、第三季地图代币</td>
+<td style="text-align:left">3288 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+<td style="text-align:left">2960 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91060"></span><span>第4季探险合同</span>
+</span></td>
+<td style="text-align:center">邮件</td>
+<td style="text-align:left">第四季地图代币</td>
+<td style="text-align:left">3288 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+<td style="text-align:left">2960 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92427"></span><span>黑狮工业合同</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81594"></span><span>黑狮猎手合同</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88979"></span><span>第3季探险合同</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91060"></span><span>第4季探险合同</span>
+</span> 仅限 <strong>家园副本</strong> 所有者收获物品，如果拥有其中多个合同，收获物品会打包进一个邮件中。</li>
+</ul>
+<h2 id="-">黑狮宝箱节点</h2>
+<ul>
+<li>可以通过 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span> 购买这些升级，也可以从 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20316"></span><span>黑狮宝箱（上锁）</span>
+</span>（预览为准）中开出这些升级节点。</li>
+<li>这些节点也可以通过 <strong>拍卖行</strong> 购买。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">节点名称</th>
+<th style="text-align:center">采集分类</th>
+<th style="text-align:left">收获物品</th>
+<th style="text-align:left">花费</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81852"></span><span>高级皮革架</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19731"></span><span>耐磨皮革边料</span>
+</span>、<span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19729"></span><span>厚实皮革边料</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19732"></span><span>硬质皮革边料</span>
+</span></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81853"></span><span>高级布料架</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19743"></span><span>亚麻碎料</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19748"></span><span>丝绸碎料</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19745"></span><span>薄纱碎料</span>
+</span></td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79085"></span><span>硬质木采集节点</span>
+</span></td>
+<td style="text-align:center">伐木</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19724"></span><span>硬质原木</span>
+</span>、附带作物</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68090"></span><span>上古原木采集节点</span>
+</span></td>
+<td style="text-align:center">伐木</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19722"></span><span>上古原木</span>
+</span>、附带作物</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68091"></span><span>远古原木采集节点</span>
+</span></td>
+<td style="text-align:center">伐木</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19725"></span><span>远古原木</span>
+</span>、附带作物</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79260"></span><span>铁矿采集点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19699"></span><span>铁矿石</span>
+</span>、珠宝</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68097"></span><span>白金采集节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19702"></span><span>白金矿石</span>
+</span>、珠宝</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68098"></span><span>秘银采集节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19700"></span><span>秘银矿石</span>
+</span>、珠宝</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68094"></span><span>星陨采集节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19701"></span><span>星陨矿石</span>
+</span>、珠宝</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68089"></span><span>怪异莓采集节点</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12128"></span><span>怪异莓</span>
+</span>、染料</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68092"></span><span>雪地松露采集节点</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12144"></span><span>雪地松露</span>
+</span>、染料</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68096"></span><span>莲花采集节点</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="75759"></span><span>莲花</span>
+</span>、染料</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68095"></span><span>欧尔松露采集节点</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12545"></span><span>欧尔松露</span>
+</span>、染料</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68093"></span><span>断魂椒采集节点</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12479"></span><span>断魂椒</span>
+</span>、染料</td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79063"></span><span>亚麻籽采集节点</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74090"></span><span>亚麻种子堆</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74988"></span><span>亚麻花</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="9266"></span><span>隐藏的秘宝</span>
+</span></td>
+<td style="text-align:left">100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86694"></span><span>黑狮小雕像</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">成就奖励节点</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">节点名称</th>
+<th style="text-align:center">采集分类</th>
+<th style="text-align:left">收获物品</th>
+<th>成就</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73798"></span><span>赤金元素节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="22"></span><span>块状赤金元素</span>
+</span>、珠宝</td>
+<td><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2602"></span><span>面具迷踪</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67234"></span><span>附魔宝箱</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left">随机各种物品</td>
+<td><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="1711"></span><span>寻宝猎人</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86786"></span><span>黑狮花园地契</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left">种植作物</td>
+<td><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="4896"></span><span>美食家训练</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="48804"></span><span>玉米糖礼赠</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36041"></span><span>玉米糖块</span>
+</span></td>
+<td><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="1005"></span><span>乖乖回箱子里去</span>
+</span>（绝版）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68367"></span><span>雅量礼赠</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38310"></span><span>小型冬幕节礼物</span>
+</span></td>
+<td><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2030"></span><span>帮助孤儿！</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43902"></span><span>石英礼赠</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43773"></span><span>石英晶体</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43772"></span><span>充能石英晶体</span>
+</span></td>
+<td><span class="mini-achievements">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="696"></span><span>集市大使</span>
+</span>（绝版）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49825"></span><span>扣链齿轮礼赠</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="44941"></span><span>钟表扣链齿轮</span>
+</span></td>
+<td><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="1317"></span><span>疯狂之源完美主义者</span>
+</span>（绝版）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="48875"></span><span>蛇妖方尖塔碎片</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left">将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43773"></span><span>石英晶体</span>
+</span> 充能为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43772"></span><span>充能石英晶体</span>
+</span></td>
+<td><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="1099"></span><span>噩梦之塔</span>
+</span>（绝版）</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68495"></span><span>私人强盗宝箱</span>
+</span></td>
+<td style="text-align:center">互动（需要钥匙）</td>
+<td style="text-align:left">随机各种物品</td>
+<td><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="2060"></span><span>背水一战</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67234"></span><span>附魔宝箱</span>
+</span> 只有在自己拥有后，访问他人的 <strong>家园副本</strong> 才能开启。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="48804"></span><span>玉米糖礼赠</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43902"></span><span>石英礼赠</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49825"></span><span>扣链齿轮礼赠</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="48875"></span><span>蛇妖方尖塔碎片</span>
+</span> 属于历史成就奖励物品，但可以在下列商人处购买：<ul>
+<li>桂冠商人 - 世界动态第1季奖励，花费 25 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="3"></span><span>桂冠</span>
+</span>、15 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span><span>金币</span>
+</span></li>
+<li>节日奖励商人，花费 400 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="50"></span><span>节日徽记</span>
+</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="-">节日期间购买节点</h2>
+<ul>
+<li>仅限节日期间购买的节点，这些节点账号绑定：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">节点名称</th>
+<th style="text-align:center">采集分类</th>
+<th style="text-align:left">收获物品</th>
+<th style="text-align:left">节日</th>
+<th style="text-align:left">NPC</th>
+<th style="text-align:left">NPC 位置</th>
+<th style="text-align:left">花费</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87324"></span><span>玩意采集系统</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="39752"></span><span>小玩意</span>
+</span></td>
+<td style="text-align:left">超级冒险节（4月1日）</td>
+<td style="text-align:left">超级冒险盒子交易商</td>
+<td style="text-align:left">拉塔索姆 - 占星庭院传送点 [&amp;BBQEAAA=]</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="41886"></span><span>玩意气泡</span>
+</span> × 32</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="93686"></span><span>纪念巨龙彩罐</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43319"></span><span>泽坦太妃糖块</span>
+</span></td>
+<td style="text-align:left">斗龙节（6月底 - 7月初）</td>
+<td style="text-align:left">斗龙节商人</td>
+<td style="text-align:left">霍布雷克 - 全力之核传送点 [&amp;BIUDAAA=]</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="43320"></span><span>卓玛硬糖</span>
+</span> × 10</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79646"></span><span>大型玉米糖礼赠</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36041"></span><span>玉米糖块</span>
+</span></td>
+<td style="text-align:left">万圣节</td>
+<td style="text-align:left">玉米糖交易商</td>
+<td style="text-align:left">狮子拱门 - 商人广场传送点 [&amp;BBAEAAA=]</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="47909"></span><span>玉米糖果棒</span>
+</span> × 5</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>注意：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79646"></span><span>大型玉米糖礼赠</span>
+</span> 会覆盖 <span class="mini-items">
+ <span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="48804"></span><span>玉米糖礼赠</span>
+</span> 的节点。</li>
+</ul>
+<h2 id="-npc-">开放世界NPC购买节点</h2>
+<ul>
+<li>这些节点账号绑定：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">节点名称</th>
+<th style="text-align:center">采集分类</th>
+<th style="text-align:left">收获物品</th>
+<th style="text-align:left">NPC</th>
+<th style="text-align:left">NPC 位置</th>
+<th style="text-align:left">花费</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78468"></span><span>个人飞船货物奖券</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left">各种物品</td>
+<td style="text-align:left">伊策尔蛙专精商贩</td>
+<td style="text-align:left">苍翠边界 - 空难峰传送点 [&amp;BN4HAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="19"></span><span>飞船部件</span>
+</span> × 250</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78582"></span><span>个人尊者宝箱奖券</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left">各种物品</td>
+<td style="text-align:left">尊者专精商贩</td>
+<td style="text-align:left">赤金盆地 - 遗忘之都传送点 [&amp;BMYHAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="22"></span><span>块状赤金元素</span>
+</span> × 250</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78549"></span><span>个人晶化补给箱奖券</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left">各种物品</td>
+<td style="text-align:left">奴霍奇蛙专精商贩</td>
+<td style="text-align:left">缠藤深渊 - 密语教团营地传送点 [&amp;BA4IAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="20"></span><span>魔径水晶</span>
+</span> × 250</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79217"></span><span>血石节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79280"></span><span>血色红宝石</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46731"></span><span>血石尘</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span></td>
+<td style="text-align:left">纳托</td>
+<td style="text-align:left">血石沼泽 - 守魂者的飞船传送点 [&amp;BEsJAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79898"></span><span>石化之木节点</span>
+</span></td>
+<td style="text-align:center">伐木</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79469"></span><span>石化之木</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46735"></span><span>至纯裂片</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span></td>
+<td style="text-align:left">学者苏拉</td>
+<td style="text-align:left">余烬海湾 - 海角传送点 [&amp;BF8JAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79903"></span><span>冬浆果节点</span>
+</span></td>
+<td style="text-align:center">采集</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79899"></span><span>新鲜的冬浆果</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46733"></span><span>龙岩矿</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span></td>
+<td style="text-align:left">嘶噜素</td>
+<td style="text-align:left">酷寒前线 - 悲伤之蚀传送点 [&amp;BH0JAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80450"></span><span>翠玉碎片节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80332"></span><span>翠玉碎片</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46731"></span><span>血石尘</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span></td>
+<td style="text-align:left">军需官希钦斯</td>
+<td style="text-align:left">多里克湖 - 多里克平台传送点 [&amp;BK0JAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81115"></span><span>火兰花节点</span>
+</span></td>
+<td style="text-align:center">伐木</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81127"></span><span>火兰花</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46735"></span><span>至纯裂片</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span></td>
+<td style="text-align:left">供需官韩卓</td>
+<td style="text-align:left">巨龙之山 - 水手码头传送点 [&amp;BL0JAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81696"></span><span>欧尔牡蛎节点</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81706"></span><span>欧尔珍珠</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81837"></span><span>牡蛎</span>
+</span>、<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46733"></span><span>龙岩矿</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span></td>
+<td style="text-align:left">供应官韩卓</td>
+<td style="text-align:left">海妖平台 - 回收营地传送点 [&amp;BO8JAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="32"></span><span>未受约束的魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86297"></span><span>烙印石节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86069"></span><span>巨龙水晶矿</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86269"></span><span>玫瑰水晶粉末</span>
+</span>、<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86316"></span><span>玫瑰水晶</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span></td>
+<td style="text-align:left">阿拉勒</td>
+<td style="text-align:left">伊斯坦领域 - 查隆码头传送点 [&amp;BAkLAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87132"></span><span>氟化水晶簇节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86977"></span><span>氟化水晶</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46735"></span><span>至纯裂片</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span></td>
+<td style="text-align:left">伊萨尔</td>
+<td style="text-align:left">沙掠群岛 - 阿索尔玛传送点 [&amp;BEMLAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87889"></span><span>补给箱</span>
+</span></td>
+<td style="text-align:center">互动</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="87645"></span><span>铭文碎片</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46735"></span><span>至纯裂片</span>
+</span>、装备等</td>
+<td style="text-align:left">纳菈</td>
+<td style="text-align:left">克南领域 - 盟军营地传送点 [&amp;BFcLAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88828"></span><span>迷雾络合物节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="88955"></span><span>块状迷雾络合物</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46733"></span><span>龙岩矿</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span></td>
+<td style="text-align:left">商人哈亚辛斯</td>
+<td style="text-align:left">亚坦迪村庄传送点 [&amp;BH4LAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89786"></span><span>巨龙水晶家园副本节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="89537"></span><span>烙印碎块</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46733"></span><span>龙岩矿</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span></td>
+<td style="text-align:left">凯农</td>
+<td style="text-align:left">雷云高峰 - 了望甲板传送点 [&amp;BLkLAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90773"></span><span>雾凝微尘家园副本节点</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="90783"></span><span>雾凝微尘</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46735"></span><span>至纯裂片</span>
+</span>、<span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span></td>
+<td style="text-align:left">水晶绽放军需官<br>（即最左侧的烈性魔法商人）</td>
+<td style="text-align:left">坠龙之地 - 契约团指挥部传送点 [&amp;BN4LAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span> × 10000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:center">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92035"></span><span>绑定的孵化辣椒家园节点</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span></td>
+<td style="text-align:left">集会供给官</td>
+<td style="text-align:left">戈瑟玛山谷 - 鲜血要塞传送点 [&amp;BBsMAAA=]</td>
+<td style="text-align:left"><span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="45"></span><span>烈性魔法</span>
+</span> × 5000、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92361"></span><span>永恒之冰碎片家园副本节点</span>
+</span></td>
+<td style="text-align:center">采矿</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92272"></span><span>永恒之冰碎片</span>
+</span></td>
+<td style="text-align:left">阿妮特·艾默德之女</td>
+<td style="text-align:left">波卓拉边境 - 卓拉要塞传送点 [&amp;BCcMAAA=]</td>
+<td style="text-align:left">245,000 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span>、50 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>注意：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92035"></span><span>绑定的孵化辣椒家园节点</span>
+</span> 不建议从 NPC 处购买，你可以直接从拍卖行购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92054"></span><span>孵化辣椒丛</span>
+</span>，其效果与 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92035"></span><span>绑定的孵化辣椒家园节点</span>
+</span> 完全相同。</li>
+</ul>
+<h2 id="-">战利品节点</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">节点名称</th>
+<th style="text-align:center">采集分类</th>
+<th style="text-align:left">收获物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92054"></span><span>孵化辣椒丛</span>
+</span></td>
+<td style="text-align:center">收割</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92072"></span><span>孵化辣椒</span>
+</span></td>
+<td style="text-align:left">可通过拍卖行购买。<br>使用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92082"></span><span>烈焰军团钥匙</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92077"></span><span>钢铁军团钥匙</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92052"></span><span>鲜血军团钥匙</span>
+</span>、 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="92037"></span><span>灰烬军团钥匙</span>
+</span> 开启可汗宝库的大宝箱有几率获得。</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-3" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+<h2 id="-">概览</h2>
+<ul>
+<li>从 <strong>黑狮商城</strong> 购买一个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86786"></span><span>黑狮花园地契</span>
+</span>（原价：2198 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span>，爵位价：1979 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="4"></span></span>），使用后即可解锁 <span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="4063"></span><span>辛勤园丁</span>
+</span>。</li>
+<li><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="4063"></span><span>辛勤园丁</span>
+</span> 要求你从泰瑞亚各地采集特定植物完成收藏，并且这些植物收藏解锁后，可以从 <strong>家园副本</strong> 的 <strong>园丁</strong> 处购买这些植物种子来种植。</li>
+<li><span class="mini-achievements">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="achievements" gw2-ids="4063"></span><span>辛勤园丁</span>
+</span> 成就完成后，将允许你通过 <strong>家园副本</strong> 中的园丁NPC 购买特殊植物种子，并获得以下物品配方。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">副职业</th>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="46"></span><span>工艺制作师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86835"></span><span>小瓶装代谢促进剂</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86840"></span><span>克达之花花瓣</span>
+</span> × 8 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86890"></span><span>科瑞塔紫露草之花</span>
+</span> × 8 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="46"></span><span>工艺制作师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86872"></span><span>小瓶装通用促进剂</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86798"></span><span>阿斯卡隆皇室鸢尾花</span>
+</span> × 8 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86843"></span><span>星岬岛兰花花瓣</span>
+</span> × 8 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86746"></span><span>解锁固定蓝绿染料</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86798"></span><span>阿斯卡隆皇室鸢尾花</span>
+</span> × 24 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12255"></span><span>蓝莓</span>
+</span> × 25 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12512"></span><span>洋蓟</span>
+</span> × 25 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12241"></span><span>菠菜叶</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86758"></span><span>解锁固定黄橙染料</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86890"></span><span>科瑞塔紫露草之花</span>
+</span> × 24 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12142"></span><span>洋葱</span>
+</span> × 25 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12511"></span><span>冬南瓜</span>
+</span> × 25 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12329"></span><span>番薯</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86829"></span><span>解锁固定紫灰染料</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86843"></span><span>星岬岛兰花花瓣</span>
+</span> × 24 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12341"></span><span>葡萄</span>
+</span> × 25 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12255"></span><span>蓝莓</span>
+</span> × 25 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="91693"></span><span>香菜种子</span>
+</span> × 25</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86855"></span><span>解锁固定红棕染料</span>
+</span></td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86840"></span><span>克达之花花瓣</span>
+</span> × 24 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12135"></span><span>马铃薯</span>
+</span> × 25 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12334"></span><span>洋菇</span>
+</span> × 25 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12331"></span><span>红辣椒</span>
+</span> × 25</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-">1、洋蓟花园种子</h2>
+<ul>
+<li>位置1：<strong>漩涡山 - 牛辔岛传送点</strong> [&amp;BNECAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="591" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置2：<strong>浩劫海峡 - 基座林传送点</strong> [&amp;BFgGAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="592" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置3：<strong>瓦比领域 - 魂都传送点</strong> [&amp;BEoKAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="593" image-compress-type="1" alt=""></p>
+<h2 id="2-">2、黑莓花园种子</h2>
+<ul>
+<li><strong>黑莓</strong> 没有密集分布点，主要分散分布于以下位置：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">位置</th>
+<th style="text-align:left">最近的传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>钢铁平原</strong></td>
+<td style="text-align:left">沉沦之心</td>
+<td style="text-align:left">格罗斯托栅栏传送点 [&amp;BO8BAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>钢铁平原</strong></td>
+<td style="text-align:left">兰普利石窟</td>
+<td style="text-align:left">战犬村传送点 [&amp;BOUBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>钢铁平原</strong></td>
+<td style="text-align:left">冠军之盾</td>
+<td style="text-align:left">派肯遗迹传送点 [&amp;BOQBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>钢铁平原</strong></td>
+<td style="text-align:left">碎石荒野眺望台</td>
+<td style="text-align:left">潮爪传送点 [&amp;BOIBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>闪萤沼泽</strong></td>
+<td style="text-align:left">卡登斯堡垒</td>
+<td style="text-align:left">卡登斯堡垒传送点 [&amp;BMUBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>闪萤沼泽</strong></td>
+<td style="text-align:left">黑天高地</td>
+<td style="text-align:left">黑天传送点 [&amp;BM0BAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>林线瀑布</strong></td>
+<td style="text-align:left">柔水河</td>
+<td style="text-align:left">柔水河传送点 [&amp;BFACAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>林线瀑布</strong></td>
+<td style="text-align:left">疾旋环流</td>
+<td style="text-align:left">康考迪亚传送点 [&amp;BFUCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>林线瀑布</strong></td>
+<td style="text-align:left">陆行鸟禁湖</td>
+<td style="text-align:left">陆行鸟禁湖传送点 [&amp;BEkCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>林线瀑布</strong></td>
+<td style="text-align:left">鳞爪湖滨</td>
+<td style="text-align:left">游丝传送点 [&amp;BEcCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>林线瀑布</strong></td>
+<td style="text-align:left">猎手滩</td>
+<td style="text-align:left">鲜血托领地传送点 [&amp;BEoCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>林线瀑布</strong></td>
+<td style="text-align:left">毒蛇之石</td>
+<td style="text-align:left">毒蛇传送点 [&amp;BEUCAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-">3、冬南瓜花园种子</h2>
+<ul>
+<li>位置1：<strong>炎心高地 - 叛变者传送点</strong> [&amp;BB0CAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="594" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置2：<strong>霜谷之音 - 阿鲁顿传送点</strong> [&amp;BHgCAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="595" image-compress-type="1" alt=""></p>
+<h2 id="4-">4、仙人掌花园种子</h2>
+<ul>
+<li>主要分布于 <strong>干涸高地</strong>（干涸高地入口传送点 [&amp;BIAHAAA=]）和 <strong>白银荒地</strong>（决心营地传送点 [&amp;BH8HAAA=]）。</li>
+</ul>
+<h2 id="5-">5、卡宴辣椒花园种子</h2>
+<ul>
+<li><strong>卡宴辣椒</strong> 没有密集分布点，主要分散分布于以下位置：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">位置</th>
+<th style="text-align:left">最近的传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">熔炉平原</td>
+<td style="text-align:left">浩劫传送点 [&amp;BBsCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">浩劫草原</td>
+<td style="text-align:left">浩劫传送点 [&amp;BBsCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">守护者圣堂</td>
+<td style="text-align:left">守护者传送点 [&amp;BCYCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">斯莫林地</td>
+<td style="text-align:left">守护者传送点 [&amp;BCYCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>浩劫海峡</strong></td>
+<td style="text-align:left">荆棘林道</td>
+<td style="text-align:left">基座林传送点 [&amp;BFgGAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>浩劫海峡</strong></td>
+<td style="text-align:left">基座林</td>
+<td style="text-align:left">基座林传送点 [&amp;BFgGAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>浩劫海峡</strong></td>
+<td style="text-align:left">半圆湾</td>
+<td style="text-align:left">幽径传送点 [&amp;BFkGAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>浩劫海峡</strong></td>
+<td style="text-align:left">三体堡垒</td>
+<td style="text-align:left">三体堡垒传送点 [&amp;BO4CAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>浩劫海峡</strong></td>
+<td style="text-align:left">狂风尖顶</td>
+<td style="text-align:left">雷云传送点 [&amp;BPACAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>浩劫海峡</strong></td>
+<td style="text-align:left">瘟疫战场</td>
+<td style="text-align:left">绝壁传送点 [&amp;BPgCAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="6-">6、丁香花园种子</h2>
+<ul>
+<li><strong>丁香</strong> 从 <strong>青翠草药</strong> 和 <strong>成熟草药</strong> 采集获得，主要分布于以下地图：</li>
+<li><strong>青翠草药</strong> 主要分布于以下地图：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>闪萤沼泽</strong></td>
+<td style="text-align:left">水居托神圣领地传送点 [&amp;BMgBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">吟游诗人传送点 [&amp;BMwCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>酷寒前线</strong></td>
+<td style="text-align:left">悲伤之蚀传送点 [&amp;BH0JAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>雷云高峰</strong></td>
+<td style="text-align:left">历史终结传送点 [&amp;BLsLAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>多里克湖</strong></td>
+<td style="text-align:left">湖边集市传送点 [&amp;BLQJAAA=]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>成熟草药</strong> 主要分布于以下地图：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>裂脊草原</strong></td>
+<td style="text-align:left">卡伦达之地传送点 [&amp;BAECAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>钢铁平原</strong></td>
+<td style="text-align:left">观火营地传送点 [&amp;BO0BAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>钢铁平原</strong></td>
+<td style="text-align:left">鳞爪村传送点 [&amp;BOcBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>血潮海岸</strong></td>
+<td style="text-align:left">湿地守卫避难所传送点 [&amp;BKYBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>林线瀑布</strong></td>
+<td style="text-align:left">柔水河传送点 [&amp;BFACAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="7-">7、大蒜花园种子</h2>
+<ul>
+<li><strong>大蒜</strong> 从 <strong>青翠草药</strong> 和 <strong>草药籽</strong> 采集获得，主要分布于以下地图：</li>
+<li><strong>青翠草药</strong> 主要分布于以下地图：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>闪萤沼泽</strong></td>
+<td style="text-align:left">水居托神圣领地传送点 [&amp;BMgBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">吟游诗人传送点 [&amp;BMwCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>酷寒前线</strong></td>
+<td style="text-align:left">悲伤之蚀传送点 [&amp;BH0JAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>雷云高峰</strong></td>
+<td style="text-align:left">历史终结传送点 [&amp;BLsLAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>多里克湖</strong></td>
+<td style="text-align:left">湖边集市传送点 [&amp;BLQJAAA=]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>草药籽</strong> 主要分布于以下地图：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>女王谷</strong></td>
+<td style="text-align:left">渡口传送点 [&amp;BPIAAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>底耶沙高地</strong></td>
+<td style="text-align:left">夏拉迪斯营地传送点 [&amp;BGABAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>阿什福德平原</strong></td>
+<td style="text-align:left">坦帕斯点传送点 [&amp;BIMBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>布里斯班野地</strong></td>
+<td style="text-align:left">乌塔超魔会传送点 [&amp;BGUAAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>卡勒顿森林</strong></td>
+<td style="text-align:left">斯雷弗传送点 [&amp;BP4FAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>度量领域</strong></td>
+<td style="text-align:left">动脉角传送点 [&amp;BLMEAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>旅者丘陵</strong></td>
+<td style="text-align:left">英雄大会传送点 [&amp;BHMBAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-">8、葡萄花园种子</h2>
+<ul>
+<li>位置1：<strong>废墟原野 - 食人魔之路传送点</strong> [&amp;BE8BAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="596" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置2：<strong>罗纳通道 - 恶魔血口传送点</strong> [&amp;BOYAAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="597" image-compress-type="1" alt=""></p>
+<h2 id="9-">9、花园甘蓝种子</h2>
+<ul>
+<li><strong>甘蓝</strong> 没有密集分布点，主要分散分布于以下位置：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">位置</th>
+<th style="text-align:left">最近的传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>裂脊草原</strong></td>
+<td style="text-align:left">烟尘之路</td>
+<td style="text-align:left">烟尘之路传送点 [&amp;BFIDAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>裂脊草原</strong></td>
+<td style="text-align:left">孪生姐妹十字路口</td>
+<td style="text-align:left">孪生姐妹传送点 [&amp;BPwBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>废墟原野</strong></td>
+<td style="text-align:left">攻城平原</td>
+<td style="text-align:left">秃鹰传送点 [&amp;BE0BAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>废墟原野</strong></td>
+<td style="text-align:left">秃鹰掠地</td>
+<td style="text-align:left">秃鹰传送点 [&amp;BE0BAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>废墟原野</strong></td>
+<td style="text-align:left">战士之冠</td>
+<td style="text-align:left">至高传送点 [&amp;BNUAAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="10-">10、花园大葱种子</h2>
+<ul>
+<li><strong>大葱</strong> 从 <strong>青葱</strong> 采集获得，主要分布于以下地图：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>闪萤沼泽</strong></td>
+<td style="text-align:left">水居托神圣领地传送点 [&amp;BMgBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>漩涡山</strong></td>
+<td style="text-align:left">破火堡垒传送点 [&amp;BMoCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">地震传送点 [&amp;BHoCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>酷寒前线</strong></td>
+<td style="text-align:left">悲伤之蚀传送点 [&amp;BH0JAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="11-">11、柠檬草花园种子</h2>
+<ul>
+<li><strong>柠檬草</strong> 从 <strong>草药簇</strong> 采集获得，主要分布于以下位置：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">位置</th>
+<th style="text-align:left">最近的传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>浩劫海峡</strong></td>
+<td style="text-align:left">基座林</td>
+<td style="text-align:left">荆棘小径传送点 [&amp;BO8CAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="12-">12、防风草花园种子</h2>
+<ul>
+<li><strong>防风草</strong> 从 <strong>寒带根菜</strong> 采集获得，主要分布于以下地图：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">牦牛拐角传送点 [&amp;BIQCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>酷寒前线</strong></td>
+<td style="text-align:left">悲伤之蚀传送点 [&amp;BH0JAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>雷云高峰</strong></td>
+<td style="text-align:left">历史终结传送点 [&amp;BLsLAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="13-">13、西番莲果花园种子</h2>
+<ul>
+<li><strong>西番莲</strong> 没有密集分布点，主要分散分布于以下位置：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>南阳海湾</strong></td>
+<td style="text-align:left">明珠屿传送点 [&amp;BNUGAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>余烬海湾</strong></td>
+<td style="text-align:left">被困的旅行马戏团传送点 [&amp;BHgJAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>沙掠群岛</strong></td>
+<td style="text-align:left">阿索尔玛传送点 [&amp;BEMLAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="14-">14、马铃薯花园种子</h2>
+<ul>
+<li>位置1：<strong>阿什福德平原 - 钳爪传送点</strong> [&amp;BMcDAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="598" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置2：<strong>度量领域 - 阿克野原传送点</strong> [&amp;BEIAAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="599" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置3：<strong>水晶绿洲 - 安努传送点</strong> [&amp;BLsKAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="600" image-compress-type="1" alt=""></p>
+<h2 id="15-">15、覆盆子花园种子</h2>
+<ul>
+<li><strong>树莓</strong> 没有密集分布点，主要分散分布于以下位置：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">位置</th>
+<th style="text-align:left">最近的传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">富勒水壑</td>
+<td style="text-align:left">萨提传送点 [&amp;BBYCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">闷热峡谷</td>
+<td style="text-align:left">沃格斯要塞传送点 [&amp;BCICAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">硬石岗</td>
+<td style="text-align:left">沃格斯要塞传送点 [&amp;BCICAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">冰矛岩地</td>
+<td style="text-align:left">雪岭营传送点 [&amp;BCECAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">生铁矿区</td>
+<td style="text-align:left">生铁传送点 [&amp;BBcCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">锈碗</td>
+<td style="text-align:left">锈碗传送点 [&amp;BB4CAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+<td style="text-align:left">&nbsp;</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">阿鲁顿山谷</td>
+<td style="text-align:left">阿鲁顿传送点 [&amp;BHgCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">山极峰</td>
+<td style="text-align:left">阿鲁顿传送点 [&amp;BHgCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">霜行苔原</td>
+<td style="text-align:left">地震传送点 [&amp;BHoCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">冰川崖</td>
+<td style="text-align:left">牦牛拐角传送点 [&amp;BIQCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">不羁险径</td>
+<td style="text-align:left">脊石营地传送点 [&amp;BIMCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">玲珑晶格</td>
+<td style="text-align:left">地震传送点 [&amp;BHoCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">豹尾谷</td>
+<td style="text-align:left">远空山庄传送点 [&amp;BIECAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">避难海岸</td>
+<td style="text-align:left">远空山庄传送点 [&amp;BIECAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>霜谷之音</strong></td>
+<td style="text-align:left">破碎冰川</td>
+<td style="text-align:left">浮冰传送点 [&amp;BH4CAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="16-">16、藏红花花园种子</h2>
+<ul>
+<li><strong>藏红花</strong> 从 <strong>黑番红花</strong> 采集获得，主要分布于以下位置：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>马尔科之跃</strong></td>
+<td style="text-align:left">雷恩传送点 [&amp;BKwCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>诅咒海岸</strong></td>
+<td style="text-align:left">影落城堡传送点 [&amp;BCEDAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>海妖平台</strong></td>
+<td style="text-align:left">回收营地传送点 [&amp;BO8JAAA=]<br>分布在：长街废墟 [&amp;BPEJAAA=]、看守者栖木 [&amp;BOwJAAA=]、被遗忘者广场 [&amp;BOsJAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>亚哈悬崖</strong></td>
+<td style="text-align:left">错位的维齐尔塔 [&amp;BG0LAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="17-">17、菠菜花园种子</h2>
+<ul>
+<li>位置1：<strong>甘达拉战区 - 誓言海岸传送点</strong> [&amp;BOQAAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="601" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置2:：<strong>布里斯班野地 - 警戒源传送点</strong> [&amp;BFwAAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="602" image-compress-type="1" alt=""></p>
+<h2 id="18-">18、草莓花园种子</h2>
+<ul>
+<li>位置1：<strong>底耶沙高地 - 诺兰传送点 </strong> [&amp;BN4AAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="603" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置2：<strong>沙漠高地 - 亮水传送点</strong> [&amp;BJEKAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="604" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置3：<strong>凯西斯山 - 瑟拉波斯传送点</strong> [&amp;BBIAAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="605" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置4：<strong>飘流雪境 - 掠夺者传送点</strong> [&amp;BMAAAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="606" image-compress-type="1" alt=""></p>
+<h2 id="19-">19、甜南瓜花园种子</h2>
+<ul>
+<li>位置1：<strong>钢铁平原 - 壁垒传送点</strong> [&amp;BOwBAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="607" image-compress-type="1" alt=""></p>
+<ul>
+<li>位置2：<strong>血潮海岸 - 雷曼达盐沼传送点</strong> [&amp;BKcBAAA=]</li>
+</ul>
+<p><img class="gw2-image" image-id="608" image-compress-type="1" alt=""></p>
+<h2 id="20-">20、龙蒿花园种子</h2>
+<ul>
+<li><strong>龙蒿叶</strong> 从 <strong>草药簇</strong> 或 <strong>青翠草药</strong> 采集获得，主要分布于以下位置：</li>
+<li><strong>草药簇</strong> 主要分布于以下位置：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">位置</th>
+<th style="text-align:left">最近的传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>浩劫海峡</strong></td>
+<td style="text-align:left">基座林</td>
+<td style="text-align:left">荆棘小径传送点 [&amp;BO8CAAA=]</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>青翠草药</strong> 主要分布于以下地图：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">传送点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>闪萤沼泽</strong></td>
+<td style="text-align:left">水居托神圣领地传送点 [&amp;BMgBAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>炎心高地</strong></td>
+<td style="text-align:left">吟游诗人传送点 [&amp;BMwCAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>酷寒前线</strong></td>
+<td style="text-align:left">悲伤之蚀传送点 [&amp;BH0JAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>雷云高峰</strong></td>
+<td style="text-align:left">历史终结传送点 [&amp;BLsLAAA=]</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>多里克湖</strong></td>
+<td style="text-align:left">湖边集市传送点 [&amp;BLQJAAA=]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="21-">21、黑狮花园地契</h2>
+<ul>
+<li>已获得。</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content-4" class="tab-pane build-info-content article-content " aria-expanded="false">
+<div class="row">
+<div class="col-md-12">
+<div class="card m-b-20">
+<div class="card-body">
+ <h2 id="-">概述</h2>
+<ul>
+<li>使用 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span> 制作各种食物，从泰瑞亚各地喂食饥饿的猫，即可将这些猫领养进自己的 <strong>家园副本</strong>。</li>
+<li>由于 <strong>饥饿的猫</strong> 会在未来的游戏版本中进行持续更新，为了便于日后收藏的跟进完成，以内容下将根据任务在游戏内的添加时间递增排序。</li>
+</ul>
+<h2 id="-">开放世界</h2>
+<p>1、<strong>狮子拱门 - 东区传送点</strong> [&amp;BDEEAAA=] —— 2016年8月9日</p>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12209"></span><span>铁板鸟肉</span>
+</span>（可拍卖行购买）喂给灰猫。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12209"></span><span>铁板鸟肉</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12178"></span><span>椒盐堆</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><img class="gw2-image" image-id="609" image-compress-type="1" alt=""> <img class="gw2-image" image-id="610" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>2、<strong>女王谷 - 甲虫郡传送点</strong> [&amp;BPoAAAA=] —— 2016年8月9日</p>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span>（可拍卖行购买）喂给灰猫。</li>
+<li>注意：家园副本中只能拥有一只灰猫，如果 <strong>狮子拱门 - 东区传送点</strong> 的猫已被喂养，则该猫不能被再喂。</li>
+</ul>
+<p><img class="gw2-image" image-id="611" image-compress-type="1" alt=""> <img class="gw2-image" image-id="612" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>3、<strong>神佑之城 - 平民区传送点</strong> [&amp;BCoDAAA=] —— 2016年8月23日</p>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12466"></span><span>碟装火焰牛腩排</span>
+</span>（可拍卖行购买）喂给橘猫。</li>
+<li>这里游戏内有显示有问题，给猫喂食 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12466"></span><span>碟装火焰牛腩排</span>
+</span> 即可完成。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12466"></span><span>碟装火焰牛腩排</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12331"></span><span>红辣椒</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><img class="gw2-image" image-id="613" image-compress-type="1" alt=""> <img class="gw2-image" image-id="614" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>4、<strong>干涸高地 - 干涸高地入口传送点</strong> [&amp;BIAHAAA=] —— 2016年8月23日</p>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="66539"></span><span>碗装仙人球果冰糕</span>
+</span>（账号绑定）喂给黑猫。</li>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="66440"></span><span>配方：仙人球果冰糕</span>
+</span> 在 <strong>干涸高地</strong> 等级达到 T2 及 以上后，从晶块商人处购买，花费约 90 ~ 165 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="25"></span><span>晶块</span>
+</span>。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="66539"></span><span>碗装仙人球果冰糕</span>
+</span></td>
+<td style="text-align:left">消耗配方卷轴解锁</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="66522"></span><span>仙人球果</span>
+</span> × 5 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38216"></span><span>碗装冰淇淋底料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24318"></span><span>冰川碎块</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12339"></span><span>青柠</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><img class="gw2-image" image-id="615" image-compress-type="1" alt=""> <img class="gw2-image" image-id="616" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>5、<strong>干涸高地 - 繁盛之地传送点</strong> [&amp;BHoHAAA=] —— 2016年8月23日</p>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38213"></span><span>碗装青柠姜冰淇淋</span>
+</span>（可拍卖行购买）喂给黑猫。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38213"></span><span>碗装青柠姜冰淇淋</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 4 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38216"></span><span>碗装冰淇淋底料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12328"></span><span>姜根</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12339"></span><span>青柠</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><img class="gw2-image" image-id="617" image-compress-type="1" alt=""> <img class="gw2-image" image-id="618" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>6、<strong>废墟原野 - 鹰门传送点</strong> [&amp;BNMAAAA=] —— 2016年8月23日</p>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12429"></span><span>火辣牛腩排</span>
+</span>（可拍卖行购买）喂给橘猫。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12429"></span><span>火辣牛腩排</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12504"></span><span>卡宴辣椒</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><img class="gw2-image" image-id="619" image-compress-type="1" alt=""> <img class="gw2-image" image-id="620" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>7、<strong>圣林之地 - 罗南传送点</strong> [&amp;BLwEAAA=] —— 2016年8月23日</p>
+<ul>
+<li>在夜晚（单数点45分 ~ 双数点30分），将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span>（可拍卖行购买）喂给猫咪。</li>
+</ul>
+<p><img class="gw2-image" image-id="621" image-compress-type="1" alt=""> <img class="gw2-image" image-id="622" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>8、<strong>圣林之地 - 罗南传送点</strong> [&amp;BLwEAAA=] —— 2016年8月23日</p>
+<ul>
+<li>在白天（双数点30分 ~ 单数点40分，不能是 破晓 和 薄暮 时间），将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span>（可拍卖行购买）喂给猫咪。</li>
+</ul>
+<p><img class="gw2-image" image-id="623" image-compress-type="1" alt=""> <img class="gw2-image" image-id="624" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>9、<strong>狮子拱门 - 商人广场传送点</strong> [&amp;BBAEAAA=] —— 2016年8月23日</p>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12148"></span><span>辛辣牛腩排</span>
+</span>（可拍卖行购买）喂给橘猫。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12148"></span><span>辛辣牛腩排</span>
+ </span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12178"></span><span>椒盐堆</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12331"></span><span>红辣椒</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><img class="gw2-image" image-id="625" image-compress-type="1" alt=""> <img class="gw2-image" image-id="626" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>10、<strong>白银荒地 - 决心营地</strong> [&amp;BKcHAAA=] —— 2016年8月23日</p>
+<ul>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38210"></span><span>碗装藏红花芒果冰淇淋</span>
+</span>（可拍卖行购买）喂给黑猫。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38210"></span><span>碗装藏红花芒果冰淇淋</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 32 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38216"></span><span>碗装冰淇淋底料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12543"></span><span>芒果</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12547"></span><span>藏红花纤维</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12543"></span><span>芒果</span>
+</span> 从 <strong>浩劫海峡 - 三体堡垒传送点</strong> [&amp;BO4CAAA=] 附近的业力商人处购买。</li>
+</ul>
+<p><img class="gw2-image" image-id="627" image-compress-type="1" alt=""> <img class="gw2-image" image-id="628" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>11、<strong>白银荒地 - 决心营地</strong> [&amp;BKcHAAA=] —— 2016年8月23日</p>
+<ul>
+<li>白银荒地突破后，将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38211"></span><span>碗装搅拌树莓蜜桃冰淇淋</span>
+</span>（可拍卖行购买）喂给黑猫。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38211"></span><span>碗装搅拌树莓蜜桃冰淇淋</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="86601"></span><span>雪花</span>
+</span> × 16 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="38216"></span><span>碗装冰淇淋底料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12254"></span><span>树莓</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12503"></span><span>蜜桃</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12503"></span><span>蜜桃</span>
+</span> 从 <strong>炎心高地 - 叛变者传送点</strong> [&amp;BB0CAAA=] 北边爱心（诺罗克酋长）处购买。</li>
+</ul>
+<p><img class="gw2-image" image-id="629" image-compress-type="1" alt=""> <img class="gw2-image" image-id="630" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>12、<strong>余烬海湾 - 被困的旅行马戏团传送点</strong> [&amp;BHgJAAA=] —— 2016年9月20日</p>
+<ul>
+<li>将 3个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12544"></span><span>断魂椒</span>
+</span>（可拍卖行购买）喂给橘猫。</li>
+<li>注意：用 alt 拆分出 3个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12544"></span><span>断魂椒</span>
+</span>，将多余的放入仓库或银行，否则猫不吃。</li>
+</ul>
+<p><img class="gw2-image" image-id="631" image-compress-type="1" alt=""> <img class="gw2-image" image-id="632" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>13、<strong>余烬海湾 - 地洞大门传送点</strong> [&amp;BFUJAAA=] —— 2016年9月20日</p>
+<ul>
+<li>从附近抱起一只 <strong>被困的斯克鼠</strong>，然后将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12466"></span><span>碟装火焰牛腩排</span>
+</span>（可拍卖行购买）喂给橘猫。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12466"></span><span>碟装火焰牛腩排</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12331"></span><span>红辣椒</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><img class="gw2-image" image-id="633" image-compress-type="1" alt=""> <img class="gw2-image" image-id="634" image-compress-type="1" alt=""> <img class="gw2-image" image-id="635" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>14、<strong>血潮海岸 - 亚盛海角传送点</strong> [&amp;BKMBAAA=] —— 2016年10月18日</p>
+<ul>
+<li>首先，完成该收藏前，家园里至少要有一只猫。</li>
+<li>花费 721 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+ </span> 从左下角爱心处购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="23763"></span><span>罐装青蛙</span>
+</span>（绿色品质，灵魂绑定）</li>
+</ul>
+<p><img class="gw2-image" image-id="636" image-compress-type="1" alt=""></p>
+<ul>
+<li>找一名拥有 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49932"></span><span>附魔扫帚</span>
+</span>（购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36379"></span><span>女巫套装</span>
+</span> 附赠）的玩家，在任意一个地点（雾锁庇护所除外）使用 5技能 <strong>召唤魔宠</strong> 召唤出 <strong>灵猫魔宠</strong>。</li>
+<li>此时位于 <strong>灵猫魔宠</strong> 附近的玩家偶尔会获得特殊行动技能 <strong>沟通猫咪</strong>，使用该技能后，将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="23763"></span><span>罐装青蛙</span>
+</span> 喂给 <strong>灵猫魔宠</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="637" image-compress-type="1" alt=""> <img class="gw2-image" image-id="638" image-compress-type="1" alt=""></p>
+<ul>
+<li>喂食后，你背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="23763"></span><span>罐装青蛙</span>
+</span> 会转变为 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67192"></span><span>迷失灵魂罐子</span>
+</span>，即青蛙被 <strong>灵猫魔宠</strong> 吃掉了，此时 <strong>灵猫魔宠</strong> 将会添加进你的家园中。</li>
+</ul>
+<p><br></p>
+<hr>
+<p>15、<strong>酷寒前线 - 悲伤之蚀传送点</strong> [&amp;BH0JAAA=] —— 2016年11月21日</p>
+<ul>
+<li>从地图右下角的 <strong>沸腾熔炉</strong> 制作抗寒试剂，然后携带一个五层的 <strong>克达火器</strong> 前往地图右上角的 <strong>刺骨严寒</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="639" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>抗寒试剂</strong> 配方如下，你必须使用做过 <strong>寒冰上的裂隙</strong> 史诗的角色，携带下列物品（要放在背包内），前往 <strong>沸腾熔炉</strong> 才能提示可以制作 <strong>抗寒试剂</strong>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79733"></span><span>穴居人火焰石</span>
+</span></td>
+<td style="text-align:left">灵魂绑定，地图北边的穴居人洞穴爱心处花费 1050 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="2"></span><span>业力</span>
+</span> 购买，每日限购一次</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79899"></span><span>新鲜的冬浆果</span>
+</span> × 12</td>
+<td style="text-align:left">地图采集</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79835"></span><span>块状冰冻油脂</span>
+</span> × 8</td>
+<td style="text-align:left">灵魂绑定，击杀冰巢怪或腐化怪获得</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79765"></span><span>耐寒蛋壳</span>
+</span> × 3</td>
+<td style="text-align:left">灵魂绑定，地图西边树林里的爱心处，将遗弃的狮鹫蛋放入孵化器后，拾取蛋壳</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>服用 <strong>抗寒试剂</strong>，携带 <strong>克达火器</strong>（地图左下角 <strong>克达之拥传送点</strong> [&amp;BIEJAAA=] 位置有火堆，需要 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="55"></span><span>决战迈古玛专精</span>
+</span>：远古魔法 克达之焰）前往 <strong>刺骨严寒</strong> 上方的山洞，将冻住 <strong>雪豹幼崽</strong> 的冰晶融化，即可将 <strong>雪豹幼崽</strong> 添加进 <strong>家园副本</strong>。</li>
+<li>注意携带 <strong>克达火器</strong> 后可以骑乘坐骑，但不要进入水中，否则火器会消失。</li>
+</ul>
+<p><img class="gw2-image" image-id="640" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>16 ~ 19、2016年12月13日</p>
+<ul>
+<li>用 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="47"></span><span>厨师</span>
+</span> 制作 或 拍卖行购买以下食物。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12444"></span><span>碗装鸟肉大葱汤</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12268"></span><span>碗装奶油汤底料</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12508"></span><span>大葱</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12480"></span><span>碗装藏红花炙鸟肉汤</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12490"></span><span>碗装香草鸟肉汤</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12547"></span><span>藏红花纤维</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12443"></span><span>碗装鸟肉冬菜汤</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12490"></span><span>碗装香草鸟肉汤</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12501"></span><span>碗装冬菜杂烩</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12167"></span><span>碗装蔬菜原汤</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12481"></span><span>碗装柠檬草鸟肉汤</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12490"></span><span>碗装香草鸟肉汤</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12350"></span><span>椰子</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12546"></span><span>柠檬草</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24360"></span><span>厚鸟肉</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>携带它们前往 <strong>漩涡传送点</strong> [&amp;BM0CAAA=]</li>
+<li>按下图路线走，找到 <strong>毁灭者之心</strong> 将它们加热为 <strong>超烫食物</strong>（<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80050"></span><span>超烫鸟肉大葱汤</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80056"></span><span>超烫藏红花炙鸟肉汤</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80060"></span><span>超烫鸟肉冬菜汤</span>
+</span>、<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79988"></span><span>超烫柠檬草鸟肉汤</span>
+</span>）。</li>
+</ul>
+<p><img class="gw2-image" image-id="641" image-compress-type="1" alt=""> <img class="gw2-image" image-id="642" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><strong>黑烟壁垒 - 废料场传送点</strong> [&amp;BDcEAAA=]</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80050"></span><span>超烫鸟肉大葱汤</span>
+</span> 喂给被冻住的猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="643" image-compress-type="1" alt=""> <img class="gw2-image" image-id="644" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><strong>圣林之地 - 罗南传送点</strong> [&amp;BLwEAAA=]</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80056"></span><span>超烫藏红花炙鸟肉汤</span>
+</span> 喂给被冻住的猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="645" image-compress-type="1" alt=""> <img class="gw2-image" image-id="646" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><strong>霍布雷克 - 豹灵传送点</strong> [&amp;BIcDAAA=]</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="80060"></span><span>超烫鸟肉冬菜汤</span>
+</span> 喂给被冻住的猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="647" image-compress-type="1" alt=""> <img class="gw2-image" image-id="648" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><strong>拉塔索姆 - 研究传送点</strong> [&amp;BLgEAAA=]</li>
+<li>将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79988"></span><span>超烫柠檬草鸟肉汤</span>
+</span> 喂给被冻住的猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="649" image-compress-type="1" alt=""> <img class="gw2-image" image-id="650" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>20、<strong>多里克湖 - 红叶撤退点传送点</strong> [&amp;BK8JAAA=] —— 2017年1月8日</p>
+<ul>
+<li>拍卖行购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36076"></span><span>草莓幽灵</span>
+</span> 或 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36083"></span><span>怪异莓幽灵</span>
+</span>。</li>
+<li>在夜晚（单数点45分 ~ 双数点30分），<strong>幽灵猫</strong> 会随机出现在森林中的某个位置。</li>
+<li>食用 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36076"></span><span>草莓幽灵</span>
+</span> 或 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36083"></span><span>怪异莓幽灵</span>
+</span> 转变为幽灵形态。<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36076"></span><span>草莓幽灵</span>
+</span> 有几率转变，<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36083"></span><span>怪异莓幽灵</span>
+</span> 必定转变。</li>
+<li>在幽灵形态下找到 <strong>幽灵猫</strong>，将 1个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36076"></span><span>草莓幽灵</span>
+</span> 或 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36083"></span><span>怪异莓幽灵</span>
+</span> 喂给猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="651" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>21、<strong>拉塔索姆 - 研究传送点</strong> [&amp;BLgEAAA=] —— 2017年8月8日</p>
+<ul>
+<li>在下图位置找到 <strong>全息师奈托</strong>，花费 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="84314"></span><span>全息猫咪</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="652" image-compress-type="1" alt=""> <img class="gw2-image" image-id="653" image-compress-type="1" alt=""></p>
+<h2 id="-">特定职业喂养</h2>
+<p>1、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="1"></span><span>元素使</span>
+</span> —— 2016年10月4日</p>
+<ul>
+<li>从 <strong>神佑之城</strong> 北边的 <strong>巡演艺人埃斯塔</strong> 处购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="8517"></span><span>彩虹蛋糕片</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="654" image-compress-type="1" alt=""> <img class="gw2-image" image-id="655" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>卡勒顿之森 - 星空村传送点</strong> [&amp;BDQBAAA=]</li>
+<li>使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="1"></span><span>元素使</span>
+</span> 角色将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="8517"></span><span>彩虹蛋糕片</span>
+</span>（账号绑定）喂给黑猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="656" image-compress-type="1" alt=""> <img class="gw2-image" image-id="657" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>2、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="3"></span><span>游侠</span>
+</span> —— 2016年10月4日</p>
+<ul>
+<li><strong>甘达拉战区 - 旅行者山谷传送点</strong> [&amp;BN8AAAA=]</li>
+<li>完成事件 <strong>帮助丹通和大车把 将补给安全运出沼泽</strong>，随后从 <strong>耐受者丹通</strong> 处购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="8752"></span><span>治愈种荚</span>
+</span>（注意是灵魂绑定的，需要用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="3"></span><span>游侠</span>
+</span> 角色购买）。</li>
+</ul>
+<p><img class="gw2-image" image-id="658" image-compress-type="1" alt=""> <img class="gw2-image" image-id="659" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>卡勒顿之森 - 星空村传送点</strong> [&amp;BDQBAAA=]</li>
+<li>使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="3"></span><span>游侠</span>
+</span> 角色将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="8752"></span><span>治愈种荚</span>
+</span>（灵魂绑定）喂给黑猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="660" image-compress-type="1" alt=""> <img class="gw2-image" image-id="661" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>3、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="9"></span><span>魂武者</span>
+</span> —— 2016年10月4日</p>
+<ul>
+<li><strong>迷雾之心（PvP大厅） - 战斗训练传送点</strong> [&amp;BEoFAAA=]</li>
+<li>使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="9"></span><span>魂武者</span>
+</span> 角色将 39个 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12134"></span><span>胡萝卜</span>
+</span>（可拍卖行购买）喂给黑猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="662" image-compress-type="1" alt=""> <img class="gw2-image" image-id="663" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>4、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="7"></span><span>守护者</span>
+</span> —— 2016年10月4日</p>
+<ul>
+<li><strong>度量领域 - 索兰德拉传送点</strong> [&amp;BEAAAAA=]</li>
+<li>使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="7"></span><span>守护者</span>
+</span> 角色将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72575"></span><span>碗装咖喱淡菜汤</span>
+</span>（账号绑定）喂给黑猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="664" image-compress-type="1" alt=""> <img class="gw2-image" image-id="665" image-compress-type="1" alt=""></p>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74157"></span><span>配方：碗装咖喱淡菜汤</span>
+</span> 有以下三种获得方式：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">地图</th>
+<th style="text-align:left">商人</th>
+<th style="text-align:left">花费</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">巨龙阵地</td>
+<td style="text-align:left">密语守护者</td>
+<td style="text-align:left">20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> + 100 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46682"></span><span>晶石矿</span>
+</span></td>
+</tr>
+<tr>
+<td style="text-align:left">世界之战<br>边境之地<br>黑曜石庇护所<br>休战堡垒</td>
+<td style="text-align:left">英雄公证员</td>
+<td style="text-align:left">20 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> + 75 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="36"></span><span>英雄证词</span>
+</span>（或 75 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="31"></span><span>英雄证明</span>
+</span>）</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72575"></span><span>碗装咖喱淡菜汤</span>
+</span></td>
+<td style="text-align:left">消耗配方卷轴解锁</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12491"></span><span>碗装香草蔬菜汤</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="74266"></span><span>淡菜</span>
+</span> × 24 + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12542"></span><span>罐装红咖喱酱</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12350"></span><span>椰子</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<hr>
+<p>5、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="6"></span><span>工程师</span>
+</span> —— 2016年10月4日</p>
+<ul>
+<li><strong>阿什福德平原 - 烟囱镇传送点</strong> [&amp;BIABAAA=]</li>
+<li>从拍卖行购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="67371"></span><span>小瓶装南瓜油</span>
+</span>（万圣节开启 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="36038"></span><span>捣蛋包</span>
+</span> 获得），使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="6"></span><span>工程师</span>
+</span> 角色将它喂给黑猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="666" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>6、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="5"></span><span>潜行者</span>
+</span> —— 2016年10月4日</p>
+<ul>
+<li><strong>哈拉希腹地 - 阿卡传送点</strong> [&amp;BLIAAAA=]</li>
+<li>完成事件 <strong>保护斯克鼠小偷窃取鹰身女妖的蛋</strong>，击杀 <strong>精锐 鹰身女妖族母</strong>。</li>
+</ul>
+<p><img class="gw2-image" image-id="667" image-compress-type="1" alt=""> <img class="gw2-image" image-id="668" image-compress-type="1" alt=""></p>
+<ul>
+<li>随后使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="5"></span><span>潜行者</span>
+</span> 角色从桥头的 <strong>觅食者希奇提</strong> 处花费 40 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="23504"></span><span>鹰身女妖羽毛</span>
+</span>（灵魂绑定）</li>
+</ul>
+<p><img class="gw2-image" image-id="669" image-compress-type="1" alt=""> <img class="gw2-image" image-id="670" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>阿什福德平原 - 烟囱镇传送点</strong> [&amp;BIABAAA=]</li>
+<li>使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="5"></span><span>潜行者</span>
+</span> 角色将它喂给黑猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="671" image-compress-type="1" alt=""> <img class="gw2-image" image-id="672" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>7、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="8"></span><span>幻术师</span>
+</span> —— 2016年10月4日</p>
+<ul>
+<li>使用 400 <span class="mini-skills_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="skills_icon" gw2-ids="46"></span><span>工艺制作师</span>
+</span> 制作 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20318"></span><span>神秘合剂</span>
+</span>。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20318"></span><span>神秘合剂</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24277"></span><span>晶化尘堆</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24351"></span><span>恶毒钩爪</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24357"></span><span>恶毒牙齿</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12156"></span><span>罐装水</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>女王谷 - 夏摩尔传送点</strong> [&amp;BO8AAAA=]</li>
+<li>使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="8"></span><span>幻术师</span>
+</span> 角色将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="20318"></span><span>神秘合剂</span>
+</span>（账号绑定）喂给黑猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="673" image-compress-type="1" alt=""> <img class="gw2-image" image-id="674" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>8、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="2"></span><span>战士</span>
+</span> —— 2016年10月4日</p>
+<ul>
+<li><strong>女王谷 - 夏摩尔传送点</strong> [&amp;BO8AAAA=]</li>
+<li>使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="2"></span><span>战士</span>
+</span> 角色将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12213"></span><span>芝士汉堡</span>
+</span>（可拍卖行购买）喂给黑猫。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">食物</th>
+<th style="text-align:left">解锁方式</th>
+<th style="text-align:left">配方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12213"></span><span>芝士汉堡</span>
+</span></td>
+<td style="text-align:left">探索</td>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="24359"></span><span>厚红肉</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12132"></span><span>面包</span>
+</span> + <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="12159"></span><span>芝士块</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+<p><img class="gw2-image" image-id="675" image-compress-type="1" alt=""> <img class="gw2-image" image-id="676" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>9、<span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="4"></span><span>唤灵师</span>
+</span> —— 2016年10月4日</p>
+<ul>
+<li><strong>旅者丘陵 - 号令传送点</strong> [&amp;BHQBAAA=]</li>
+<li>使用 <span class="mini-professions_icon">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="professions_icon" gw2-ids="4"></span><span>唤灵师</span>
+</span> 角色将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="8535"></span><span>鸡蛋糕</span>
+</span>（可拍卖行购买）喂给黑猫。</li>
+</ul>
+<p><img class="gw2-image" image-id="677" image-compress-type="1" alt=""> <img class="gw2-image" image-id="678" image-compress-type="1" alt=""></p>
+<h2 id="-">副本</h2>
+<p>1、个人史诗 - 世界动态第三季 - 罪恶首领 - 忏悔者的末日 —— 2017年2月8日</p>
+<p>提前准备以下三件食材中的任意一件：</p>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78005"></span><span>碗装血石浓汤</span>
+</span></li>
+<li><strong>大型地下城 - 救赎小道</strong>，与魔径裂缝交流前往 <strong>救赎神庙</strong>，按下图路线走找到 <strong>汤罐</strong>，互动消耗 1 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="46731"></span><span>血石尘</span>
+</span> 获得。</li>
+</ul>
+<p><img class="gw2-image" image-id="679" image-compress-type="1" alt=""> <img class="gw2-image" image-id="680" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68409"></span><span>碗装血石炖牛肉</span>
+</span>，北京时间，周三下午16点0分 ~ 周四15点59分，前往 <strong>圣林之地 - 罗南传送点</strong> [&amp;BLwEAAA=]，找 <strong>瑟姆·牛骨</strong> 花费 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span> 购买。</li>
+</ul>
+<p><img class="gw2-image" image-id="681" image-compress-type="1" alt=""> <img class="gw2-image" image-id="682" image-compress-type="1" alt=""></p>
+<hr>
+<ul>
+<li><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="68404"></span><span>碗装血石冰淇淋</span>
+</span>，北京时间，周五下午16点0分 ~ 周六15点59分，前往 <strong>拉塔索姆 - 魔术庭院传送点</strong> [&amp;BLQEAAA=]，找 <strong>瑟姆·牛骨</strong> 花费 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span> 购买。</li>
+</ul>
+<p><img class="gw2-image" image-id="683" image-compress-type="1" alt=""> <img class="gw2-image" image-id="684" image-compress-type="1" alt=""></p>
+<ul>
+<li>然后前往个人史诗 <strong>世界动态第三季 - 罪恶首领 - 忏悔者的末日</strong>，第一次击退 <strong>考迪克斯</strong> 后，从右边楼梯上去，房间内找到 <strong>维斯特丽雅·维斯金顿女士</strong>，将上述一个食物喂给它即可。</li>
+<li>具体细节请参阅视频： <a href="javascript:window.open('https://www.bilibili.com/video/av13598510?p=10');" target="_blank" rel="nofollow noopener noreferrer">【小宇】血石猫女士</a></li>
+</ul>
+<p><img class="gw2-image" image-id="685" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>2、迷雾碎层 - 破碎观测台 —— 2017年7月25日</p>
+<ul>
+<li>提前准备以下五件物品：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">物品</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="79230"></span><span>集成碎层矩阵</span>
+</span></td>
+<td style="text-align:left">灌注魔像5959（红色）花费 15 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="7"></span><span>碎层古物</span>
+</span>、10 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73248"></span><span>稳定基质</span>
+</span> 购买</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="72936"></span><span>黄金碎层古物</span>
+</span></td>
+<td style="text-align:left">BLING-9009（棕色）花费 3 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span>、12 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="24"></span><span>原始碎层古物</span>
+</span> 购买</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49432"></span><span>+9痛苦灌注</span>
+</span></td>
+<td style="text-align:left">灌注魔像5959（红色）花费 3 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span> 81 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1002"></span></span> 44 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1003"></span></span>、256 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="49424"></span><span>+1痛苦灌注</span>
+</span> 购买</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73137"></span><span>稳定黑暗能量立方体</span>
+</span></td>
+<td style="text-align:left">武器或护甲类副职业制作：<span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71994"></span><span>黑暗能量球体</span>
+</span> + 75 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="73248"></span><span>稳定基质</span>
+</span>。<br><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="71994"></span><span>黑暗能量球体</span>
+</span> 主要通过拆解升华武器或护甲获得。</td>
+</tr>
+<tr>
+<td style="text-align:left"><span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="81743"></span><span>不稳定宇宙精华</span>
+</span></td>
+<td style="text-align:left">100层碎层 挑战微尘 完成后随机给 1 ~ 3个</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>然后进入 <strong>破碎观测台</strong> 碎层，击杀一号 BOSS <strong>碎裂的斯科瓦德</strong>，按下图路线走，找到猫咪 <strong>西蒙</strong>，将以上五件物品喂给他即可完成。</li>
+</ul>
+<p><img class="gw2-image" image-id="686" image-compress-type="1" alt=""> <img class="gw2-image" image-id="687" image-compress-type="1" alt=""></p>
+<h2 id="-">节日</h2>
+<p>1、超级冒险盒子 —— 2017年3月30日</p>
+<ul>
+<li>进入 <strong>世界2 - 2</strong>（仅限菜鸟、普通模式），从 <strong>食人鱼屋子</strong> 携带一只 <strong>食人鱼</strong>，喂给钟楼顶部的 <strong>猫</strong>（蜜蜂狗）即可完成。</li>
+<li>站在 <strong>食人鱼屋子</strong> 的底层门廊外，引一只 <strong>食人鱼</strong> 跳出来，等名字变红后使用普攻打它，即可拿在手上。</li>
+</ul>
+<p><img class="gw2-image" image-id="688" image-compress-type="1" alt=""></p>
+<ul>
+<li><strong>食人鱼</strong> 在手中停留超过 8秒后会挣脱，携带 <strong>食人鱼</strong> 走几步后，使用 <strong>切换武器</strong> 将食人鱼放在地上，然后等名字变红后使用普攻打它，再捡到手里，循环这样的动作，直到将它运送到钟楼。建议先将路线上的小怪清理干净，避免运送途中受到干扰。</li>
+</ul>
+<p><img class="gw2-image" image-id="689" image-compress-type="1" alt=""></p>
+<ul>
+<li>从 <strong>钟楼</strong> 的一层进去，上到顶层，就能看到一只名为 <strong>猫</strong> 的蜜蜂狗，将 <strong>食人鱼</strong> 喂给它即可在家园中添加进 <strong>猫</strong>（添加进家园的是一只橘猫）。</li>
+</ul>
+<p><img class="gw2-image" image-id="690" image-compress-type="1" alt=""> <img class="gw2-image" image-id="691" image-compress-type="1" alt=""></p>
+<h2 id="-">世界之战</h2>
+<p>1、高山边境之地 —— 2017年8月8日</p>
+<ul>
+<li>携带 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19678"></span><span>战斗礼赠</span>
+</span>，任选一个 <strong>高山边境之地</strong> 地图，前往左上角跳跳乐，从隐秘的山洞内找到 <strong>蓝色铲屎官</strong>，将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="19678"></span><span>战斗礼赠</span>
+</span> 喂给它。</li>
+<li>具体细节请参阅视频： <a href="javascript:window.open('https://www.bilibili.com/video/av13598510?p=12');" target="_blank" rel="nofollow noopener noreferrer">【小宇】蓝色指挥官猫</a></li>
+</ul>
+<p><img class="gw2-image" image-id="692" image-compress-type="1" alt=""></p>
+<p><br></p>
+<hr>
+<p>2、沙漠边境之地 —— 2017年8月8日</p>
+<ul>
+<li>首先，将 <strong>世界之战 - 等级与能力</strong> 中的 <strong>供给大师</strong> 点到 3级。</li>
+</ul>
+<p><img class="gw2-image" image-id="693" image-compress-type="1" alt=""></p>
+<ul>
+<li>找到战场中的 <strong>用品商人</strong>，花费 1 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="1001"></span></span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78177"></span><span>永久便携式供给官</span>
+</span>。</li>
+</ul>
+<p><img class="gw2-image" image-id="694" image-compress-type="1" alt=""></p>
+<ul>
+<li>双击背包内的 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78177"></span><span>永久便携式供给官</span>
+</span>，找到 <strong>食物和通用消耗品</strong> 分类，花费 5 <span class="mini-currencies">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="currencies" gw2-ids="15"></span><span>荣誉徽章</span>
+</span> 购买 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78320"></span><span>罐装辛辣烧肉辣酱汤</span>
+</span>。</li>
+<li>前往 <strong>鲲艮洞穴</strong> 将 <span class="mini-items">
+<span class="gw2-tooltip gw2-info no-border" gw2-type="items" gw2-ids="78320"></span><span>罐装辛辣烧肉辣酱汤</span>
+</span> 喂给 <strong>黄色铲屎官</strong>。</li>
+<li>具体细节请参阅视频： <a href="javascript:window.open('https://www.bilibili.com/video/av13598510?p=13');" target="_blank" rel="nofollow noopener noreferrer">【小宇】黄色指挥官猫</a></li>
+</ul>
+<p><img class="gw2-image" image-id="695" image-compress-type="1" alt=""></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<footer class="footer">
+<div class="footer-anet-logo"><a href="javascript:window.open('https://www.arena.net/');" target="_blank" rel="nofollow noopener noreferrer">&nbsp;</a></div>
+<p>本站所使用的 ArenaNet, NCsoft, Guild Wars, Guild Wars 2, Heart of Thorns, Guild Wars 2:Path of Fire 相关商标及设计均属于 NCsoft 公司商标或注册商标。所有其他商标均是各自所有者的财产。</p>
+<p class="copyright">© 2017-2020 山东魔笛手网络科技有限公司 版权所有 &nbsp;&nbsp; <a href="javascript:window.open('http://www.beian.gov.cn/portal/index.do');" target="_blank">鲁ICP备18052502号-7</a></p>
+</footer>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<a href="" id="turn-link" style="display: none;"></a>
+<div class="tooltip-info" id="tooltip-info">
+<div id="app-info"></div>
+</div>
+
+
+<script src="static/js/popper.min.js"></script>
+
+<script src="static/js/bootstrap.min.js"></script>
+
+<script src="static/js/jquery.slimscroll.js"></script>
+
+<script src="static/js/waves.js"></script>
+
+<script src="static/js/sidebarmenu.js"></script>
+<script src="static/js/sidebarmenuitem.js"></script>
+
+<script src="static/js/sticky-kit.min.js"></script>
+
+<script src="static/js/jquery.sparkline.min.js"></script>
+
+<script src="static/js/custom.js"></script>
+
+
+
+<script src="static/js/sweetalert.min.js"></script>
+<script src="static/js/jquery.sweet-alert.custom.js"></script>
+<script src="static/js/jquery.dataTables.min.js"></script>
+ 
+<script src="static/js/jquery.gw2tooltip.min-1.js"></script>
+<script src="static/js/jquery.gw2info.min-2020.08.31.js"></script>
+<script src="static/js/jquery.gw2image-2020.07.10.js"></script>
+
+
+
+
+
+
+
+
+<script src="static/js/jQuery.style.switcher.js"></script>
+
+<script src="static/js/jquery.lazyload.min.js"></script>
+
+<script src="static/js/viewer.min-2020.05.10.js"></script>
+
+<script src="static/js/clipboard.min.js"></script>
+
+<script src="static/js/layer.js"></script>
+
+<script src="static/js/swiper.min.js"></script>
+
+<script src="static/js/isotope.pkgd.min.js"></script>
+
+<script src="static/js/jquery.cookie.js"></script>
+
+
+<script src="static/js/jquery.pjax.min.js"></script>
+<script>
+$(document).ready(function() {
+
+    //dropdown-menu
+    $('.mega-dropdown-menu a').click(function(){
+        $('.mega-dropdown').removeClass('show');
+        $('.dropdown-menu').removeClass('show');
+    });
+
+    //pjax
+    $(document).pjax('a.pjax-link', '#container-fluid', {fragment:'#container-fluid', timeout:3000});
+
+    $(document).on('pjax:start', function() {
+        //other
+        window.scrollTo(0, 0); 
+        $('body').addClass('stop-scrolling');
+        $('#page-wrapper .preloader').show();
+    });
+    
+    $(document).on('pjax:end', function() { 
+        $('body').removeClass('stop-scrolling');
+        $('#page-wrapper .preloader').fadeOut(500);
+
+        //重新引导左侧菜单
+        $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+            
+            $("#sidebarnav>li.active").removeClass('active');
+            $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+            $(this).addClass('active');
+            $(this).parents('li').addClass('active');
+        });
+    });
+
+    //重新引导左侧菜单
+    $("#sidebarnav a:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").click(function(){
+        
+        $("#sidebarnav>li.active").removeClass('active');
+        $("#sidebarnav a.active:not(a[class='has-arrow waves-effect waves-dark'],a[class='has-arrow'])").removeClass('active');
+        $(this).addClass('active');
+        $(this).parents('li').addClass('active');
+    });
+})
+</script>
+
+<script async="" src="static/js/js-UA-168154605-1.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-168154605-1');
+</script>
+<a id="page-turn-link" href=""></a>
+</body>
+</html>
