@@ -10,7 +10,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <meta name="description" content="激战2事件计时器（曾经的泰协）">
+    <meta name="description" content="激战2事件计时器（修复版）">
     <meta name="author" content="Thanatos.">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="https://www.gw2data.cn/images/logo-mid-black.png">
@@ -302,7 +302,7 @@
                 <div class="row page-titles bg-lg bg-lg-tool m-b-0 p-b-0">
                     <div class="page-titles-content col-md-5 col-12 align-self-center">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item active">曾经泰协的工具仅此而已</li>
+                            <li class="breadcrumb-item active">感谢那些曾经为GW2付出的指挥官</li>
                         </ol>
                         <h1 class="page-title color-write-linear-gradient">
                             事件计时器工具
@@ -5765,7 +5765,7 @@
                                                             "class": "amalgamated-gemstone",
                                                             "title": "合成宝石",
                                                             "num": 1
-                                                        }
+                                                        }s
                                                     ],
                                                     "chat_link": "[&BG0KAAA=]",
                                                     "start_color": "#8E24AA",
@@ -5871,7 +5871,8 @@
                                                                                     <template v-if="phase.trophies">
                                                                                         <div class="phase-name border-top">
                                                                                             收益:<template v-for="trophy in phase.trophies">
-                                                                                                {{ trophy.num }}×<i :class="{
+                                                                                                {{ trophy.num }}×{{ trophy.title }}
+                                                                                                <i :class="{
                                                                                                     'icon-trophies': true,
                                                                                                     'icon-gold': trophy.class == 'gold',
                                                                                                     'icon-amalgamated-gemstone': trophy.class == 'amalgamated-gemstone',
@@ -5904,7 +5905,8 @@
                                                                                         <template v-if="phase.trophies">
                                                                                             <div class="phase-name border-top">
                                                                                             收益:<template v-for="trophy in phase.trophies">
-                                                                                                {{ trophy.num }}×<i :class="{
+                                                                                                {{ trophy.num }}×{{ trophy.title }}
+                                                                                                <i :class="{
                                                                                                     'icon-trophies': true,
                                                                                                     'icon-gold': trophy.class == 'gold',
                                                                                                     'icon-amalgamated-gemstone': trophy.class == 'amalgamated-gemstone',
@@ -5937,7 +5939,8 @@
                                                                                     <template v-if="phase.trophies">
                                                                                         <div class="phase-name border-top">
                                                                                             收益:<template v-for="trophy in phase.trophies">
-                                                                                                {{ trophy.num }}×<i :class="{
+                                                                                                {{ trophy.num }}×{{ trophy.title }}
+                                                                                                <i :class="{
                                                                                                     'icon-trophies': true,
                                                                                                     'icon-gold': trophy.class == 'gold',
                                                                                                     'icon-amalgamated-gemstone': trophy.class == 'amalgamated-gemstone',
@@ -6137,8 +6140,8 @@
         <footer class="footer">
             <div class="footer-anet-logo"><a href="https://www.arena.net/" target="_blank"
                                              rel="nofollow noopener noreferrer">&nbsp;</a></div>
-            <p>本站曾经是谁谁的不管了，为的就是给各位激战2玩家提供便利，不收费也不需要用爱发电！</p>
-            <p class="copyright">© 2021 &nbsp; <a href="http://www.beian.gov.cn/portal/index.do" target="_blank"
+            <p>源码是当时撸下来修复的，本身喜欢激战2，为这个游戏做点事，为的就是给各位激战2玩友和自己提供便利！</p>
+            <p class="copyright">2021 Kim修复版 <a href="http://www.beian.gov.cn/portal/index.do" target="_blank"
                                                   rel="nofollow noopener noreferrer"></a></p>
         </footer>
 
